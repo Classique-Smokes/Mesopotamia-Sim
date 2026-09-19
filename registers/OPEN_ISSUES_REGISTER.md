@@ -48,3 +48,15 @@ Only add an issue when it arises from current work, blocks or shapes a near-term
 - **Resolution criteria:**
 - **Resolution / date:** —
 - **Related artifacts:**
+
+### OQ-0003 — Subjective recognition and organizational legitimacy
+
+- **Status:** OPEN
+- **Question:** How should simulated actors represent and update recognition/belief about collective identity, legitimate roles, authority, and obligations so that social recognition can reinforce institutions without an engine-only classification becoming its own evidence?
+- **Why it matters now:** Decision 3 has converged on endogenous recognition as part of household institutionalization and continuity.
+- **What it blocks or influences:** Household formation/recognition, broker legitimacy, continuity, and later reputation/office/institution systems.
+- **What it does not decide:** Exact household thresholds, belief psychology, information-spread rates, contested-claim mechanics, or later political legitimacy systems.
+- **Owner:** Master Architect.
+- **Resolution criteria:** Distinguish objective state from actor knowledge/recognition and allow grounded feedback into behavior without global omniscience.
+- **Resolution / date:** —
+- **Related artifacts:** `architecture/working/WIP-0001_HOUSEHOLD_ORGANIZATION.md`, `decisions/DEC-0001_FOUNDATIONAL_SOCIAL_FABRIC.md`
