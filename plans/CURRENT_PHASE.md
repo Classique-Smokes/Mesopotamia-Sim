@@ -15,21 +15,25 @@ Reach a bounded specification for the first Social Fabric Laboratory without all
 - TRES-0001 technical reconnaissance completed.
 - ADR-0001 representation accepted.
 - ADR-0002 individual agency accepted.
+- Broad conceptual survey completed for household organization, execution/time, and history/recovery; these remain working/non-authoritative where not explicitly accepted.
 
 ## Active
 
-Decision 3 — Household organization architecture, with subjective recognition / organizational legitimacy / institutionalization as the current focused pass.
+**TRES-0002 — Architecture Horizon & Selection, Stage I independent discovery.**
 
-## Before coding
+The purpose is to discover implementation-architecture approaches from the accepted semantic requirements without treating the project's current technical toolbox as exhaustive.
 
-1. Finish Decision 3.
-2. Review execution/time.
-3. Review history/recovery.
-4. Run an independent **technology horizon scan** to seek credible implementation techniques and paradigms beyond those already surfaced by TRES-0001 or the architecture discussion.
-5. Reconcile the horizon scan against accepted semantics; subject the proposed implementation combination to an **adversarial architecture review**.
-6. Select implementation paradigm/language/stack against accepted requirements and reviewed alternatives.
-7. For any subsystem whose implementation remains unusually uncertain, complex, or performance-sensitive, commission a targeted technical-design/research pass before specifying it.
-8. Define narrow experimental social rules and verification scenarios.
-9. Prepare a PROJECT-CONTEXT implementation packet.
+Decision 3–5 working material remains the conceptual/semantic input to this research; it is not being promoted merely because research has begun.
+
+## Architecture-selection pipeline before coding
+
+1. Complete TRES-0002 Stage I independent horizon discovery.
+2. Master Architect reconciles the returns into a small number of coherent whole-system candidate architectures.
+3. Commission only targeted follow-up evidence/benchmarks needed to discriminate among viable candidates.
+4. Run fresh independent adversarial review against the candidate architectures.
+5. Prepare and obtain approval for the consequential implementation paradigm/language/stack architecture decision.
+6. Translate the chosen architecture and conceptual foundation into a bounded first-prototype rule specification and verification scenarios.
+7. For any subsystem whose implementation remains unusually uncertain, complex, or performance-sensitive, run its targeted technical-design/research pass before specification is finalized.
+8. Prepare a PROJECT-CONTEXT implementation packet.
 
 This Git repository is now the canonical working location for project artifacts. Conversation remains non-authoritative until promoted through the accepted process.
