@@ -18,19 +18,24 @@ A historically grounded autonomous simulation of ancient Mesopotamian society, b
 
 Conversation, brainstorming, research returns, proposals, roadmaps, and existing code are not authoritative merely because they exist.
 
-## Current state
+## Current phase
 
-Accepted constitutional foundation:
+**FOUNDATIONAL ARCHITECTURE — SOCIAL FABRIC LABORATORY**
+
+Accepted:
 - `DEC-0001` — Foundational Social-Fabric Model
 - `DEC-0002` — Master Architect Operating Guide
+- `ADR-0001 / DEC-0003` — Active Social-State Representation
+- `ADR-0002 / DEC-0004` — Hierarchical Individual Agency
 
-Foundational architecture review is active; no production implementation has started.
+Household organization is the active architectural problem. No production implementation has started.
 
 ## Where to look
 
 - Founding intent: `founding/00_MESOPOTAMIA_SIMULATION_PROJECT_SEED.md`
 - Master Architect behavior: `governance/MASTER_ARCHITECT_GUIDE.md`
 - Decision register: `decisions/DECISION_REGISTER.md`
+- Accepted architecture: `architecture/accepted/`
 - Open issues: `registers/OPEN_ISSUES_REGISTER.md`
 - Specifications: `specifications/`
 - Task templates: `tasks/`

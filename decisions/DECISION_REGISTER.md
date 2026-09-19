@@ -18,6 +18,8 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 |---|---|---|---|---|---|---|
 | DEC-0001 | Foundational Social-Fabric Model | ACCEPTED | Constitutional | 2026-09-19 | 2026-09-19 | `DEC-0001_FOUNDATIONAL_SOCIAL_FABRIC.md` |
 | DEC-0002 | Adopt the Master Architect Operating Guide | ACCEPTED | Constitutional | 2026-09-19 | 2026-09-19 | `DEC-0002_MASTER_ARCHITECT_GUIDE.md` |
+| DEC-0003 | Active Social-State Representation | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0001_ACTIVE_SOCIAL_STATE_REPRESENTATION.md` |
+| DEC-0004 | Hierarchical Individual Agency | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0002_HIERARCHICAL_INDIVIDUAL_AGENCY.md` |
 
 ## Accepted decision summaries
 
@@ -35,6 +37,16 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 
 - **Decision:** Adopt `governance/MASTER_ARCHITECT_GUIDE.md` as canonical operating policy for the Master Architect.
 - **Full accepted record:** `DEC-0002_MASTER_ARCHITECT_GUIDE.md`
+
+### DEC-0003 — Active Social-State Representation
+
+- **Decision:** Independently identified typed records with explicit references; prototype active state begins in indexed in-memory structures.
+- **Full accepted record:** `../architecture/accepted/ADR-0001_ACTIVE_SOCIAL_STATE_REPRESENTATION.md`
+
+### DEC-0004 — Hierarchical Individual Agency
+
+- **Decision:** Hierarchical soft-gated concern selection, contextual candidate generation, local component scoring, separate persistent goals, and later bounded planning.
+- **Full accepted record:** `../architecture/accepted/ADR-0002_HIERARCHICAL_INDIVIDUAL_AGENCY.md`
 
 ## Entry template
 
