@@ -21,14 +21,16 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0003 | Active Social-State Representation | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0001_ACTIVE_SOCIAL_STATE_REPRESENTATION.md` |
 | DEC-0004 | Hierarchical Individual Agency | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0002_HIERARCHICAL_INDIVIDUAL_AGENCY.md` |
 | DEC-0005 | Architecture Development Policy | ACCEPTED | Architectural process governance | 2026-09-19 | 2026-09-19 | `DEC-0005_ARCHITECTURE_DEVELOPMENT_POLICY.md` |
+| DEC-0006 | Progressive Derived-State Specialization | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0003_PROGRESSIVE_DERIVED_STATE_SPECIALIZATION.md` |
 
 ## Accepted summaries
 
-- **DEC-0001:** persistent individuals/relations/resources form a social fabric; households emerge and may become persistent causal actors without becoming primitive containers.
-- **DEC-0002:** the Master Architect carries process discipline, synthesis, delegation, authority, verification, and long-horizon coherence.
+- **DEC-0001:** social reality begins with persistent individuals, relations, resources, and processes; households emerge without becoming primitive containers.
+- **DEC-0002:** the Master Architect carries process discipline, synthesis, delegation, authority, verification, and continuity.
 - **DEC-0003:** simulation-relevant things use independently identified typed records with explicit references; prototype active state begins indexed in memory.
 - **DEC-0004:** individual agency uses soft hierarchical concerns, contextual candidate generation, local scoring, persistent goals, and later bounded planning.
 - **DEC-0005:** architecture evolves through semantic authority, simplest sufficient implementation, measured progressive specialization, and evidence-gated complexity.
+- **DEC-0006:** derived state uses the simplest sufficient maintenance strategy per subsystem and may graduate behind stable semantic boundaries when measured need justifies it.
 
 ## Entry template
 
