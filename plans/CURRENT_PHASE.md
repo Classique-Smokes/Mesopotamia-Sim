@@ -20,6 +20,8 @@ Select a maintainable implementation architecture and host runtime for the first
 
 **TRES-0002 Stage II — implementation architecture / host-runtime selection.**
 
+Host-independent kernel: `architecture/working/ADR-0004_REFERENCE_SIMULATION_KERNEL_PROPOSAL.md` — DEC-0007 PROPOSED.
+
 Active research spec: `research/technical/TRES-0002/HOST_RUNTIME_BAKEOFF.md`
 
 The earlier A-vs-B derived-state fork is resolved: start simple and promote individual derived-state subsystems to stronger incremental maintenance only when measured need justifies it.
