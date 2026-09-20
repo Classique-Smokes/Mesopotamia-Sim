@@ -7,6 +7,7 @@
 1. Representation — ADR-0001.
 2. Individual agency — ADR-0002.
 3. Progressive derived-state specialization — ADR-0003.
+4. Reference simulation kernel — ADR-0004.
 
 ## Working semantic foundation
 
@@ -18,7 +19,6 @@ Household organization, execution/time, and history/recovery have been conceptua
 
 - TRES-0002 Stage I horizon research: complete.
 - Derived-state architecture fork: resolved by ADR-0003.
-- Host-independent reference kernel: DEC-0007 PROPOSED.
 - Host/runtime bake-off and remaining implementation selection: active.
 - Adversarial review: pending.
 - Explicit architecture decision: pending.
