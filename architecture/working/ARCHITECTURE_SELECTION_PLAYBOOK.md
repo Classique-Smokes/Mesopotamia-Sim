@@ -7,95 +7,67 @@
 
 Turn the accepted semantic foundation and TRES-0002 evidence into one implementation-architecture decision without widening into an open-ended technology survey.
 
-## Stage II — Candidate synthesis
+## Current architecture rule
 
-The Master Architect produces **2–3 coherent whole-system candidates**, not a technology shopping list.
+ADR-0003 resolves the earlier derived-state fork: begin with the simplest sufficient maintenance strategy per subsystem and promote selected workloads to stronger dependency/incremental machinery only when measured need justifies it.
 
-Each candidate must explain:
+This is no longer a global A-vs-B architecture choice.
 
-- authoritative current state;
-- proposal/commit boundary;
-- time, activation, and persistent-process model;
-- subjective knowledge / cognition integration;
-- relationship and collective-state representation;
-- derived-state maintenance;
-- history/provenance and continuation saves;
+## Stage II — remaining selection
+
+The remaining consequential decision is the **host/runtime and concrete whole-system implementation structure**.
+
+A candidate must explain:
+
+- authoritative state and proposal/commit boundary;
+- time, activation, and serializable pending-process model;
+- cognition/subjective-state integration;
+- relation/collective-state representation;
+- semantic history and continuation saves;
 - reproducibility contract;
-- host language/runtime/toolchain assumptions;
-- scaling path;
+- host language/runtime/toolchain;
+- scaling and optimization path;
 - migration/escape paths;
-- main failure modes and complexity burden.
+- main failure modes and operational burden.
 
-A candidate may combine mechanisms from different research families only when the seams are explicit.
+## Evidence rule
 
-## Candidate construction rule
+Commission follow-up evidence only when it can change the selection.
 
-Prefer the least sophisticated mechanism that satisfies current semantic requirements **and** leaves credible migration paths.
+Current discriminator:
 
-Do not include a technology because it appeared in a research report. Include it only if it solves a stated problem in the candidate.
+**host/runtime fit on the same language-neutral workload**, including memory, branch-heavy local decisions, dynamic relations, scheduling/process churn, semantic-history emission, checkpoint/restore, deterministic verification, tooling, and AI-assisted maintainability.
 
-## Stage II — Discriminating unknowns
+Do not multiply every language by every possible scheduler, cache, history model, or framework.
 
-Commission follow-up work only when the answer could reverse the candidate choice.
+## Stage III — adversarial review
 
-Current likely discriminators:
+Fresh independent reviewers attack the surviving architecture for:
 
-1. **Derived-state break-even:** direct/recomputed values vs dependency tracking vs stronger incremental relational/dataflow machinery.
-2. **Workload shape:** activation density, candidate counts, graph/relation churn, dependency fan-out, conflicts, and history volume.
-3. **Host/runtime fit:** memory, branch-heavy local decisions, dynamic relations, event/process scheduling, instrumentation, checkpointing, and AI-assisted maintainability.
-4. **History/reproducibility contract:** how much exact replay, continuation, causal detail, and cross-version compatibility the first architecture must promise.
-
-## Validation rule
-
-Use small architecture-neutral kernels and synthetic workloads before building the Social Fabric prototype when the evidence can discriminate architecture.
-
-Keep semantic scenarios separate from performance kernels until the architecture is chosen.
-
-Where practical, require a simple reference result and compare optimized alternatives against it.
-
-## Stage III — Adversarial review
-
-Fresh independent reviewers receive the candidate architectures and accepted project constraints.
-
-They should attack:
-
-- semantic drift;
-- hidden sources of truth;
-- coupling between domain semantics and performance representation;
-- determinism/reproducibility weakness;
-- cache/incremental consistency failure;
-- double-counting/conservation hazards;
-- migration traps;
-- versioning/recovery burden;
+- semantic drift or hidden sources of truth;
+- coupling between domain semantics and runtime representation;
+- determinism/recovery weaknesses;
+- migration/versioning traps;
 - scaling assumptions;
 - dependency/framework maturity;
-- debugging/observability difficulty;
-- complexity disproportionate to project capability.
+- debugging and observability difficulty;
+- complexity disproportionate to project conditions.
 
 Reviewers do not select the architecture.
 
-## Stage IV — Decision
+## Stage IV — decision
 
-The Master Architect reconciles evidence and presents the Project Director with:
+The Master Architect presents:
 
-- viable candidates;
+- viable implementation candidate(s);
 - project-specific evidence;
-- recommendation;
-- important tradeoffs;
-- measured/known uncertainties;
+- recommendation and tradeoffs;
+- known uncertainties;
 - migration/reversibility;
-- what remains explicitly deferred.
+- explicitly deferred work.
 
-Approval creates concise ADR(s). Research reports and this playbook remain supporting material rather than implementation authority.
+Approval creates concise ADR(s).
 
 ## Anti-loop stop rule
 
-Do not commission additional architecture research unless at least one condition holds:
-
-- a candidate cannot be compared responsibly with current evidence;
-- a newly discovered technique could materially change the shortlist;
-- a benchmark exposes a previously hidden bottleneck or contradiction;
-- adversarial review finds a consequential unresolved risk;
-- implementation conditions change materially.
-
-Otherwise proceed to decision.
+Do not commission more architecture research unless new evidence could materially change the shortlist, expose a hidden contradiction, or resolve an adversarial-review blocker. Otherwise proceed.
