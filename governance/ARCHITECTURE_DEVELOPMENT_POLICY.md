@@ -28,13 +28,15 @@ Performance decisions must respond to representative workload properties such as
 
 Nominal population size alone is not a sufficient basis for architecture.
 
-### 4. Specialize progressively
+### 4. Specialize progressively and locally
 
 Default progression:
 
 **clear reference behavior → indexes/locality → active sets/batching → selective incremental maintenance → compiled/parallel hot paths → GPU/distributed execution when justified**
 
-This is a default, not a mandatory sequence. Evidence may justify skipping steps.
+This progression applies **per subsystem or workload**, not uniformly to the whole simulator. Different derived values may legitimately use different maintenance strategies at the same time.
+
+Promote a mechanism only when measured complexity or workload justifies the added machinery. Evidence may justify skipping steps.
 
 ### 5. Preserve a reference path where practical
 
@@ -45,6 +47,8 @@ Optimized paths should be checked against it with scenarios, invariants, state/e
 ### 6. Keep performance state rebuildable by default
 
 Indexes, caches, dependency graphs, projections, summaries, and similar accelerators should normally be reconstructible from authoritative semantic state.
+
+Derived-state implementations should sit behind stable semantic/query boundaries so a subsystem can move from recomputation to caching, dependency tracking, or stronger incremental maintenance without changing domain meaning.
 
 Making derived state independently authoritative requires an explicit architectural decision.
 
