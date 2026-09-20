@@ -47,7 +47,24 @@ run_rust() {
   echo "=== Rust ==="
   cd "$ROOT/benchmarks/rust"
   chmod +x scripts/*.sh
-  ./scripts/run_correctness.sh | tee "$OUT/rust/correctness.txt"
+
+  # Formatting/lint are useful maintainability evidence, but not semantic correctness gates.
+  cargo fmt --check > "$OUT/rust/rustfmt.txt" 2>&1 || echo "RUSTFMT_CHECK_FAILED" > "$OUT/rust/rustfmt-status.txt"
+  cargo clippy --all-targets --all-features -- -D warnings > "$OUT/rust/clippy.txt" 2>&1 || echo "CLIPPY_CHECK_FAILED" > "$OUT/rust/clippy-status.txt"
+
+  cargo test --all-targets | tee "$OUT/rust/tests.txt"
+  cargo build --release | tee "$OUT/rust/build.txt"
+
+  BIN="$PWD/target/release/tres0002i_rust_spike"
+  CHK="$OUT/rust/fixture.chk"
+  "$BIN" fixture | tee "$OUT/rust/fixture.txt"
+  grep -q "$EXPECTED" "$OUT/rust/fixture.txt"
+  "$BIN" fixture-save "$CHK" | tee "$OUT/rust/fixture-save.txt"
+  "$BIN" fixture-resume "$CHK" | tee "$OUT/rust/fixture-resume.txt"
+  grep -q "$EXPECTED" "$OUT/rust/fixture-resume.txt"
+  "$BIN" layout | tee "$OUT/rust/layout.txt"
+  rm -f "$CHK"
+
   REPS=4 RUN_P4=1 ./scripts/run_benchmarks.sh | tee "$OUT/rust/benchmark-driver.txt"
   cp -a evidence/bench "$OUT/rust/bench"
   cp -a evidence/benchmark_summary.json "$OUT/rust/benchmark_summary.json"
