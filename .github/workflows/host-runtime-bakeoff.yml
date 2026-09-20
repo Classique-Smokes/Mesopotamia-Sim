@@ -1,0 +1,134 @@
+name: Host Runtime Bakeoff
+
+on:
+  push:
+    branches:
+      - benchmark/host-runtime-bakeoff
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bakeoff:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout benchmark branch
+        uses: actions/checkout@v4
+
+      - name: Restore and verify benchmark source payloads
+        shell: bash
+        run: |
+          set -euo pipefail
+          TMP=/tmp/meso-bakeoff-payloads
+          mkdir -p "$TMP"
+
+          cp benchpayload/dotnet.b64 "$TMP/dotnet.b64"
+          cp benchpayload/jvm.b64 "$TMP/jvm.b64"
+          cat benchpayload/rust.part* > "$TMP/rust.b64"
+          cat benchpayload/python.part* > "$TMP/python.b64"
+          cat benchpayload/julia.part* > "$TMP/julia.b64"
+
+          cat > "$TMP/b64.sha256" <<'EOF'
+          80bdc277acc6bb309680a367974e3042497d2e2f55d6c6fee3065a7f129a9f45  dotnet.b64
+          e648e4c0dd17785cbd323403c98fd8d0e8216008a40b9e04d722f3131716c171  jvm.b64
+          4720b80a60af101b816c72927f0294340cbd048c9e5969b9d3bb9327c482e6cd  rust.b64
+          d868f33c49ba8794acf91e002c193976a9b9a4b699ff53ef807eca587a0e925a  python.b64
+          fec7e487bea8e949d444314e0fc076679d489763e099b04d6677379cb496b311  julia.b64
+          EOF
+          (cd "$TMP" && sha256sum -c b64.sha256)
+
+          for stack in dotnet jvm rust python julia; do
+            base64 --decode "$TMP/$stack.b64" > "$TMP/$stack.tar.gz"
+          done
+
+          cat > "$TMP/tar.sha256" <<'EOF'
+          816b4d08a78f50a75fd2e4688aa012d3debbfa71684ccbd0bc76841de36a471a  dotnet.tar.gz
+          6d69a2c17a991cac7b615c45fdb939e6f9711c6d402d9df66f1b7f49fe038207  jvm.tar.gz
+          88001deef639d3ea2464926b49216d01e5b2d6892bdbbf0021dca9a97fefae23  rust.tar.gz
+          0d4b7233de6dfe2b53355d67b05081a8a86fd5242a846c0dda643307f9bdc9b6  python.tar.gz
+          1494c5ddb2766c5eaaf83f2b89e8d66e6b96211c2b56e6f621f1080049b29edd  julia.tar.gz
+          EOF
+          (cd "$TMP" && sha256sum -c tar.sha256)
+
+          for stack in dotnet jvm rust python julia; do
+            tar -xzf "$TMP/$stack.tar.gz" -C "$GITHUB_WORKSPACE"
+          done
+
+          test -f benchmarks/dotnet/src/Tres0002G.DotNet/Tres0002G.DotNet.csproj
+          test -f benchmarks/jvm/src/tres/jvm/Main.java
+          test -f benchmarks/rust/Cargo.toml
+          test -f benchmarks/python/pyproject.toml
+          test -f benchmarks/julia/Project.toml
+
+      - name: Setup .NET 10.0.401
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.401'
+
+      - name: Setup Temurin JDK 25
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '25'
+
+      - name: Setup CPython 3.14
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+          check-latest: true
+
+      - name: Setup Julia 1.13.0
+        uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.13.0'
+          arch: x64
+
+      - name: Setup Rust 1.98.1
+        shell: bash
+        run: |
+          set -euo pipefail
+          rustup toolchain install 1.98.1 --profile minimal --component rustfmt --component clippy
+          rustup default 1.98.1
+
+      - name: Verify exact target runtimes
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "dotnet: $(dotnet --version)"
+          test "$(dotnet --version)" = "10.0.401"
+
+          java -version
+          javac -version
+          java -version 2>&1 | grep -E 'version "25([.]|")'
+
+          rustc --version
+          cargo --version
+          rustc --version | grep -F 'rustc 1.98.1'
+
+          python --version
+          python --version 2>&1 | grep -E '^Python 3[.]14[.]'
+
+          julia --version
+          julia --version | grep -F 'julia version 1.13.0'
+
+      - name: Run sequential common-machine bakeoff
+        shell: bash
+        env:
+          DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+          DOTNET_NOLOGO: '1'
+          JULIA_NUM_THREADS: '1'
+        run: |
+          chmod +x run_all.sh
+          ./run_all.sh
+
+      - name: Upload raw bakeoff evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: host-runtime-bakeoff-${{ github.run_attempt }}
+          path: artifacts/
+          if-no-files-found: warn
+          retention-days: 30
