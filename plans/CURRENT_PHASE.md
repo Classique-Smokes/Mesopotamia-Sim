@@ -4,7 +4,7 @@
 
 ## Goal
 
-Reach a bounded specification for the first Social Fabric Laboratory without allowing implementation to invent foundational social semantics.
+Select an implementation architecture for the first Social Fabric Laboratory without allowing implementation convenience or premature optimization to redefine accepted simulation semantics.
 
 ## Completed
 
@@ -16,24 +16,27 @@ Reach a bounded specification for the first Social Fabric Laboratory without all
 - ADR-0001 representation accepted.
 - ADR-0002 individual agency accepted.
 - Broad conceptual survey completed for household organization, execution/time, and history/recovery; these remain working/non-authoritative where not explicitly accepted.
+- TRES-0002 Stage I architecture horizon research completed and reconciled.
 
 ## Active
 
-**TRES-0002 — Architecture Horizon & Selection, Stage I independent discovery.**
+**TRES-0002 Stage II — Master Architect candidate synthesis.**
 
-The purpose is to discover implementation-architecture approaches from the accepted semantic requirements without treating the project's current technical toolbox as exhaustive.
+Supporting working artifacts:
 
-Decision 3–5 working material remains the conceptual/semantic input to this research; it is not being promoted merely because research has begun.
+- `research/technical/TRES-0002/STAGE_I_SYNTHESIS.md`
+- `architecture/working/ARCHITECTURE_SELECTION_PLAYBOOK.md`
+- `governance/ARCHITECTURE_DEVELOPMENT_POLICY.md` — PROPOSED under DEC-0005
 
 ## Architecture-selection pipeline before coding
 
-1. Complete TRES-0002 Stage I independent horizon discovery.
-2. Master Architect reconciles the returns into a small number of coherent whole-system candidate architectures.
-3. Commission only targeted follow-up evidence/benchmarks needed to discriminate among viable candidates.
-4. Run fresh independent adversarial review against the candidate architectures.
-5. Prepare and obtain approval for the consequential implementation paradigm/language/stack architecture decision.
-6. Translate the chosen architecture and conceptual foundation into a bounded first-prototype rule specification and verification scenarios.
-7. For any subsystem whose implementation remains unusually uncertain, complex, or performance-sensitive, run its targeted technical-design/research pass before specification is finalized.
+1. Construct 2–3 coherent whole-system candidate architectures.
+2. Identify only the unknowns capable of reversing the candidate choice.
+3. Commission targeted architecture-neutral benchmarks/research for those discriminators.
+4. Run fresh independent adversarial review against the surviving candidates.
+5. Prepare and obtain approval for the implementation architecture / host runtime / stack.
+6. Translate the selected architecture and conceptual foundation into a bounded first-prototype rule specification and verification scenarios.
+7. Run subsystem-specific technical design research only where unresolved complexity or performance risk still warrants it.
 8. Prepare a PROJECT-CONTEXT implementation packet.
 
-This Git repository is now the canonical working location for project artifacts. Conversation remains non-authoritative until promoted through the accepted process.
+No production implementation begins before the architecture decision and bounded prototype specification are accepted.
