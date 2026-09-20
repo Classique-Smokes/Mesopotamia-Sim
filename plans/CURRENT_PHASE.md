@@ -23,6 +23,7 @@ Select an implementation architecture for the first Social Fabric Laboratory wit
 Working procedure:
 - `architecture/working/ARCHITECTURE_SELECTION_PLAYBOOK.md`
 - `research/technical/TRES-0002/STAGE_I_SYNTHESIS.md`
+- `architecture/working/TRES-0002_CANDIDATE_ARCHITECTURES.md`
 
 ## Before coding
 
