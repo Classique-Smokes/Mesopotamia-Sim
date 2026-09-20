@@ -26,6 +26,8 @@ Active research spec: `research/technical/TRES-0002/HOST_RUNTIME_BAKEOFF.md`
 
 The earlier A-vs-B derived-state fork is resolved: start simple and promote individual derived-state subsystems to stronger incremental maintenance only when measured need justifies it.
 
+Approved downstream roadmap: `plans/FIRST_PROTOTYPE_DEVELOPMENT_ROADMAP.md`.
+
 ## Next
 
 1. Define a language-neutral benchmark/bake-off workload representing the accepted semantic kernel.
