@@ -22,6 +22,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0004 | Hierarchical Individual Agency | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0002_HIERARCHICAL_INDIVIDUAL_AGENCY.md` |
 | DEC-0005 | Architecture Development Policy | ACCEPTED | Architectural process governance | 2026-09-19 | 2026-09-19 | `DEC-0005_ARCHITECTURE_DEVELOPMENT_POLICY.md` |
 | DEC-0006 | Progressive Derived-State Specialization | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0003_PROGRESSIVE_DERIVED_STATE_SPECIALIZATION.md` |
+| DEC-0007 | Reference Simulation Kernel | PROPOSED | Architectural | 2026-09-20 | — | `DEC-0007_REFERENCE_SIMULATION_KERNEL_PROPOSAL.md` |
 
 ## Accepted summaries
 
