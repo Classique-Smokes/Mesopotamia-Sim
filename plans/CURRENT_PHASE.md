@@ -4,7 +4,7 @@
 
 ## Goal
 
-Select an implementation architecture for the first Social Fabric Laboratory without allowing implementation convenience or premature optimization to redefine accepted simulation semantics.
+Select a maintainable implementation architecture and host runtime for the first Social Fabric Laboratory without redefining accepted simulation semantics.
 
 ## Completed
 
@@ -12,28 +12,25 @@ Select an implementation architecture for the first Social Fabric Laboratory wit
 - DEC-0001 Social-Fabric Model accepted.
 - ADR-0001 representation and ADR-0002 individual agency accepted.
 - DEC-0005 Architecture Development Policy accepted.
-- RES-0001 and TRES-0001 completed.
+- ADR-0003 Progressive Derived-State Specialization accepted.
+- RES-0001, TRES-0001, and TRES-0002 Stage I completed.
 - Household organization, execution/time, and history/recovery conceptually surveyed as working semantic inputs.
-- TRES-0002 Stage I architecture horizon research completed and reconciled.
 
 ## Active
 
-**TRES-0002 Stage II — whole-system candidate synthesis.**
+**TRES-0002 Stage II — implementation architecture / host-runtime selection.**
 
-Working procedure:
-- `architecture/working/ARCHITECTURE_SELECTION_PLAYBOOK.md`
-- `research/technical/TRES-0002/STAGE_I_SYNTHESIS.md`
-- `architecture/working/TRES-0002_CANDIDATE_ARCHITECTURES.md`
+The earlier A-vs-B derived-state fork is resolved: start simple and promote individual derived-state subsystems to stronger incremental maintenance only when measured need justifies it.
 
-## Before coding
+## Next
 
-1. Construct the small set of coherent architecture candidates.
-2. Identify only discriminating unknowns capable of changing the selection.
-3. Run targeted architecture-neutral evidence/benchmarks.
+1. Define a language-neutral benchmark/bake-off workload representing the accepted semantic kernel.
+2. Compare the credible host/runtime finalists on that common workload.
+3. Reconcile the results into the implementation-architecture recommendation.
 4. Run fresh adversarial review.
-5. Obtain explicit approval for the implementation architecture / host runtime / stack.
+5. Obtain explicit approval for the host/runtime and whole-system implementation architecture.
 6. Write the bounded prototype rule specification and verification scenarios.
 7. Run subsystem-specific technical design research only where unresolved risk still warrants it.
 8. Prepare the PROJECT-CONTEXT implementation packet.
 
-No production implementation begins before architecture and prototype specification are accepted.
+Derived-state break-even benchmarking is deferred until a concrete subsystem needs promotion beyond simple maintenance; it is no longer a blocker for the first architecture.
