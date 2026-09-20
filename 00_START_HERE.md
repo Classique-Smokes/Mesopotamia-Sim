@@ -31,6 +31,7 @@ Accepted:
 - `ADR-0003 / DEC-0006` — Progressive Derived-State Specialization
 
 Active:
+- **DEC-0007 PROPOSED — Reference Simulation Kernel**
 - **TRES-0002 Stage II — host/runtime and implementation-architecture selection**
 - Household organization, execution/time, and history/recovery remain working semantic inputs where not explicitly accepted.
 
