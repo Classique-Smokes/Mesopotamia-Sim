@@ -6,35 +6,27 @@
 
 1. Representation — ADR-0001.
 2. Individual agency — ADR-0002.
+3. Progressive derived-state specialization — ADR-0003.
 
 ## Working semantic foundation
 
-3. Household organization — conceptually surveyed; WIP/non-authoritative.
-   - recognition / formation
-   - continuity / identity
-   - collective capacity
-   - internal roles / broker legitimacy
-   - subjective recognition / organizational legitimacy
-4. Execution and time — conceptually surveyed; WIP/non-authoritative.
-5. History and recovery — conceptually surveyed; WIP/non-authoritative.
-
-These working semantics constrain architecture research but are not accepted ADRs merely because they were used as research input.
+Household organization, execution/time, and history/recovery have been conceptually surveyed and remain non-authoritative where not explicitly accepted. They constrain implementation-architecture research but are not implementation specifications.
 
 ## Active architecture selection
 
-6. Implementation architecture / language / runtime / delivery structure.
-   - TRES-0002 Stage I horizon research: complete.
-   - Stage II candidate synthesis: active.
-   - Targeted discriminating benchmarks/research: next as needed.
-   - Stage III adversarial review: pending.
-   - Stage IV explicit architecture decision: pending.
-   - Working procedure: `ARCHITECTURE_SELECTION_PLAYBOOK.md`.
-   - Proposed development rules: `../../governance/ARCHITECTURE_DEVELOPMENT_POLICY.md` (DEC-0005 PROPOSED).
+**Implementation architecture / language / runtime / delivery structure**
+
+- TRES-0002 Stage I horizon research: complete.
+- Derived-state architecture fork: resolved by ADR-0003.
+- Host/runtime bake-off and whole-system implementation selection: active.
+- Adversarial review: pending.
+- Explicit architecture decision: pending.
+- Working procedure: `ARCHITECTURE_SELECTION_PLAYBOOK.md`.
 
 ## After architecture selection
 
-7. Prototype rule specification and verification scenarios.
-8. First bounded implementation packet.
+1. Prototype rule specification and verification scenarios.
+2. First bounded implementation packet.
 
 ## Scope guard
 
