@@ -1,6 +1,9 @@
 name: Host Runtime Bakeoff
 
 on:
+  push:
+    branches:
+      - benchmark/host-runtime-bakeoff
   workflow_dispatch:
 
 permissions:
@@ -23,7 +26,7 @@ jobs:
           mkdir -p "$TMP"
 
           cp benchpayload/dotnet.b64 "$TMP/dotnet.b64"
-          cp benchpayload/jvm.b64 "$TMP/jvm.b64"
+          cat benchpayload/jvm.part* > "$TMP/jvm.b64"
           cat benchpayload/rust.part* > "$TMP/rust.b64"
           cat benchpayload/python.part* > "$TMP/python.b64"
           cat benchpayload/julia.part* > "$TMP/julia.b64"
