@@ -65,9 +65,24 @@ run_rust() {
   "$BIN" layout | tee "$OUT/rust/layout.txt"
   rm -f "$CHK"
 
+  # The submitted benchmark helper has a known post-run summarizer filename bug.
+  # Preserve its raw measurements and record the helper failure without treating it
+  # as a semantic/runtime failure of the Rust candidate.
+  set +e
   REPS=4 RUN_P4=1 ./scripts/run_benchmarks.sh | tee "$OUT/rust/benchmark-driver.txt"
-  cp -a evidence/bench "$OUT/rust/bench"
-  cp -a evidence/benchmark_summary.json "$OUT/rust/benchmark_summary.json"
+  rust_bench_status=${PIPESTATUS[0]}
+  set -e
+  echo "$rust_bench_status" > "$OUT/rust/benchmark-helper-exit-code.txt"
+  if [[ -d evidence/bench ]]; then
+    cp -a evidence/bench "$OUT/rust/bench"
+  fi
+  if [[ -f evidence/benchmark_summary.json ]]; then
+    cp -a evidence/benchmark_summary.json "$OUT/rust/benchmark_summary.json"
+  fi
+  if [[ "$rust_bench_status" -ne 0 ]]; then
+    echo "AGENT_SUMMARIZER_FAILED_AFTER_RAW_RUNS" > "$OUT/rust/benchmark-helper-status.txt"
+  fi
+
   cargo run --release -- churn > "$OUT/rust/churn.txt"
   ./scripts/capture_environment.sh > "$OUT/rust/environment.txt" 2>&1 || true
 }
