@@ -24,6 +24,8 @@ Host-independent kernel accepted: `architecture/accepted/ADR-0004_REFERENCE_SIMU
 
 Active research spec: `research/technical/TRES-0002/HOST_RUNTIME_BAKEOFF.md`
 
+Adversarial host review: `research/technical/TRES-0002/CSHARP_DOTNET_ADVERSARIAL_REVIEW.md`.
+
 The earlier A-vs-B derived-state fork is resolved: start simple and promote individual derived-state subsystems to stronger incremental maintenance only when measured need justifies it.
 
 Approved downstream roadmap: `plans/FIRST_PROTOTYPE_DEVELOPMENT_ROADMAP.md`.
@@ -32,8 +34,8 @@ Approved downstream roadmap: `plans/FIRST_PROTOTYPE_DEVELOPMENT_ROADMAP.md`.
 
 1. Define a language-neutral benchmark/bake-off workload representing the accepted semantic kernel.
 2. Compare the credible host/runtime finalists on that common workload.
-3. Reconcile the results into the implementation-architecture recommendation.
-4. Run fresh adversarial review.
+3. Reconcile the results into the implementation-architecture recommendation. **Complete: C# 14 / .NET 10 LTS recommended.**
+4. Run fresh adversarial review. **Complete: no architecture-level blocker found.**
 5. Obtain explicit approval for the host/runtime and whole-system implementation architecture.
 6. Write the bounded prototype rule specification and verification scenarios.
 7. Run subsystem-specific technical design research only where unresolved risk still warrants it.
