@@ -29,8 +29,9 @@ Accepted:
 - `ADR-0002 / DEC-0004` — Hierarchical Individual Agency
 
 Active:
-- **Decision 3: Household Organization Architecture**
-- Next focused pass: subjective recognition, organizational legitimacy, and institutionalization (`OQ-0003`)
+- **TRES-0002 Stage II — architecture candidate synthesis**
+- **DEC-0005 PROPOSED — Architecture Development Policy**
+- Household organization, execution/time, and history/recovery remain working semantic inputs where not explicitly accepted.
 
 No production implementation has started.
 
@@ -38,13 +39,14 @@ No production implementation has started.
 
 - Founding intent: `founding/00_MESOPOTAMIA_SIMULATION_PROJECT_SEED.md`
 - Master Architect behavior: `governance/MASTER_ARCHITECT_GUIDE.md`
+- Proposed architecture-development rules: `governance/ARCHITECTURE_DEVELOPMENT_POLICY.md`
 - Decision register: `decisions/DECISION_REGISTER.md`
 - Accepted architecture: `architecture/accepted/`
-- Current architecture checkpoint: `architecture/working/WIP-0001_HOUSEHOLD_ORGANIZATION.md`
-- Review sequence: `architecture/working/ARCHITECTURE_REVIEW_SEQUENCE.md`
+- Current household checkpoint: `architecture/working/WIP-0001_HOUSEHOLD_ORGANIZATION.md`
+- Architecture selection playbook: `architecture/working/ARCHITECTURE_SELECTION_PLAYBOOK.md`
 - Current phase plan: `plans/CURRENT_PHASE.md`
+- TRES-0002 synthesis: `research/technical/TRES-0002/STAGE_I_SYNTHESIS.md`
 - Open issues: `registers/OPEN_ISSUES_REGISTER.md`
-- Technical evidence: `research/technical/TRES-0001/`
 - Historical evidence: `registers/HISTORICAL_EVIDENCE_REGISTER.md`
 - Specifications: `specifications/`
 - Task templates: `tasks/`
