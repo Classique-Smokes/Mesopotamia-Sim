@@ -7,31 +7,37 @@
 1. Representation — ADR-0001.
 2. Individual agency — ADR-0002.
 
-## Active
+## Working semantic foundation
 
-3. Household organization.
+3. Household organization — conceptually surveyed; WIP/non-authoritative.
    - recognition / formation
    - continuity / identity
    - collective capacity
    - internal roles / broker legitimacy
-   - focused pass: subjective recognition, organizational legitimacy, and institutionalization
+   - subjective recognition / organizational legitimacy
+4. Execution and time — conceptually surveyed; WIP/non-authoritative.
+5. History and recovery — conceptually surveyed; WIP/non-authoritative.
 
-## Pending
+These working semantics constrain architecture research but are not accepted ADRs merely because they were used as research input.
 
-4. Execution and time.
-5. History and recovery.
-6. Implementation paradigm / language / delivery structure.
-   - Before accepting this decision, run an **independent technology horizon scan** whose mandate is to identify credible implementation approaches not already present in the current toolbox.
-   - Then run an **adversarial architecture review** against the proposed combination, including maturity, performance, complexity, migration cost, observability, and fit to accepted simulation semantics.
+## Active architecture selection
+
+6. Implementation architecture / language / runtime / delivery structure.
+   - TRES-0002 Stage I horizon research: complete.
+   - Stage II candidate synthesis: active.
+   - Targeted discriminating benchmarks/research: next as needed.
+   - Stage III adversarial review: pending.
+   - Stage IV explicit architecture decision: pending.
+   - Working procedure: `ARCHITECTURE_SELECTION_PLAYBOOK.md`.
+   - Proposed development rules: `../../governance/ARCHITECTURE_DEVELOPMENT_POLICY.md` (DEC-0005 PROPOSED).
+
+## After architecture selection
+
 7. Prototype rule specification and verification scenarios.
 8. First bounded implementation packet.
 
-## Engineering-discovery rule
-
-The conceptual architecture pass defines the semantic requirements and relevant tool families. It does **not** assume that the currently named techniques exhaust the implementation landscape.
-
-Where a subsystem is unusually difficult or performance-sensitive, its later technical-design pass should include targeted research into established, emerging, and domain-specific approaches before implementation. Novelty alone is not a reason to adopt a technique; familiarity alone is not a reason to prefer one.
-
 ## Scope guard
 
-The first prototype is not required to implement complete demography, food production, ageing, reproduction, temples, palaces, cities, contested dynastic identity, general institutional emergence, or administrative specialization. Architecture should avoid unnecessary dead ends, but future-capability ideas are not current implementation requirements.
+The first prototype is not required to implement complete demography, food production, ageing, reproduction, temples, palaces, cities, contested dynastic identity, general institutional emergence, or administrative specialization.
+
+Future-capability ideas should inform migration paths, not become current implementation requirements.
