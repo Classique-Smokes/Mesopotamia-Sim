@@ -1,9 +1,6 @@
 name: Host Runtime Bakeoff
 
 on:
-  push:
-    branches:
-      - benchmark/host-runtime-bakeoff
   workflow_dispatch:
 
 permissions:
