@@ -29,9 +29,9 @@ Accepted:
 - `ADR-0002 / DEC-0004` — Hierarchical Individual Agency
 - `DEC-0005` — Architecture Development Policy
 - `ADR-0003 / DEC-0006` — Progressive Derived-State Specialization
+- `ADR-0004 / DEC-0007` — Reference Simulation Kernel
 
 Active:
-- **DEC-0007 PROPOSED — Reference Simulation Kernel**
 - **TRES-0002 Stage II — host/runtime and implementation-architecture selection**
 - Household organization, execution/time, and history/recovery remain working semantic inputs where not explicitly accepted.
 
