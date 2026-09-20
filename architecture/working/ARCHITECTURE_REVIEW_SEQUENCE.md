@@ -18,7 +18,8 @@ Household organization, execution/time, and history/recovery have been conceptua
 
 - TRES-0002 Stage I horizon research: complete.
 - Derived-state architecture fork: resolved by ADR-0003.
-- Host/runtime bake-off and whole-system implementation selection: active.
+- Host-independent reference kernel: DEC-0007 PROPOSED.
+- Host/runtime bake-off and remaining implementation selection: active.
 - Adversarial review: pending.
 - Explicit architecture decision: pending.
 - Working procedure: `ARCHITECTURE_SELECTION_PLAYBOOK.md`.
