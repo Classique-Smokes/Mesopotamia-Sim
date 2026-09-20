@@ -28,9 +28,10 @@ Accepted:
 - `ADR-0001 / DEC-0003` — Active Social-State Representation
 - `ADR-0002 / DEC-0004` — Hierarchical Individual Agency
 - `DEC-0005` — Architecture Development Policy
+- `ADR-0003 / DEC-0006` — Progressive Derived-State Specialization
 
 Active:
-- **TRES-0002 Stage II — whole-system candidate synthesis**
+- **TRES-0002 Stage II — host/runtime and implementation-architecture selection**
 - Household organization, execution/time, and history/recovery remain working semantic inputs where not explicitly accepted.
 
 No production implementation has started.
