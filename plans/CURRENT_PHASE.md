@@ -8,35 +8,31 @@ Select an implementation architecture for the first Social Fabric Laboratory wit
 
 ## Completed
 
-- Project governance established.
+- Project governance and Master Architect operating model established.
 - DEC-0001 Social-Fabric Model accepted.
-- DEC-0002 Master Architect Guide accepted.
-- RES-0001 historical research completed; reconciliation remains parallel/non-blocking.
-- TRES-0001 technical reconnaissance completed.
-- ADR-0001 representation accepted.
-- ADR-0002 individual agency accepted.
-- Broad conceptual survey completed for household organization, execution/time, and history/recovery; these remain working/non-authoritative where not explicitly accepted.
+- ADR-0001 representation and ADR-0002 individual agency accepted.
+- DEC-0005 Architecture Development Policy accepted.
+- RES-0001 and TRES-0001 completed.
+- Household organization, execution/time, and history/recovery conceptually surveyed as working semantic inputs.
 - TRES-0002 Stage I architecture horizon research completed and reconciled.
 
 ## Active
 
-**TRES-0002 Stage II — Master Architect candidate synthesis.**
+**TRES-0002 Stage II — whole-system candidate synthesis.**
 
-Supporting working artifacts:
-
-- `research/technical/TRES-0002/STAGE_I_SYNTHESIS.md`
+Working procedure:
 - `architecture/working/ARCHITECTURE_SELECTION_PLAYBOOK.md`
-- `governance/ARCHITECTURE_DEVELOPMENT_POLICY.md` — PROPOSED under DEC-0005
+- `research/technical/TRES-0002/STAGE_I_SYNTHESIS.md`
 
-## Architecture-selection pipeline before coding
+## Before coding
 
-1. Construct 2–3 coherent whole-system candidate architectures.
-2. Identify only the unknowns capable of reversing the candidate choice.
-3. Commission targeted architecture-neutral benchmarks/research for those discriminators.
-4. Run fresh independent adversarial review against the surviving candidates.
-5. Prepare and obtain approval for the implementation architecture / host runtime / stack.
-6. Translate the selected architecture and conceptual foundation into a bounded first-prototype rule specification and verification scenarios.
-7. Run subsystem-specific technical design research only where unresolved complexity or performance risk still warrants it.
-8. Prepare a PROJECT-CONTEXT implementation packet.
+1. Construct the small set of coherent architecture candidates.
+2. Identify only discriminating unknowns capable of changing the selection.
+3. Run targeted architecture-neutral evidence/benchmarks.
+4. Run fresh adversarial review.
+5. Obtain explicit approval for the implementation architecture / host runtime / stack.
+6. Write the bounded prototype rule specification and verification scenarios.
+7. Run subsystem-specific technical design research only where unresolved risk still warrants it.
+8. Prepare the PROJECT-CONTEXT implementation packet.
 
-No production implementation begins before the architecture decision and bounded prototype specification are accepted.
+No production implementation begins before architecture and prototype specification are accepted.
