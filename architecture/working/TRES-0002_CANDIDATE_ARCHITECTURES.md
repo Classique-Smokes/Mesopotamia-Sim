@@ -126,6 +126,24 @@ Only evidence capable of changing A vs B should block selection:
 4. **Maintainability** — Can the project reliably inspect, test, migrate, and debug the incremental layer with AI-assisted development?
 5. **Migration cost** — Can A introduce B later behind stable query/domain boundaries without major semantic rewrites?
 
+## Emerging progressive-hybrid hypothesis
+
+**Working / non-authoritative.**
+
+Director input currently favors starting from Candidate A's simple semantic implementation while preserving a deliberate promotion path for selected derived-state problems to Candidate B-style managed dependencies.
+
+This is technically plausible because A and B can coexist within one program:
+
+- one derived value may be recomputed on demand;
+- another may use a direct maintained delta;
+- another may use a dirty cache;
+- another may use explicit dependency tracking;
+- only sufficiently complex/high-value domains may justify stronger incremental relational/dataflow machinery.
+
+The architectural requirement is that these strategies sit behind stable semantic/query boundaries so promotion changes *how a derived result is maintained*, not what the result means.
+
+The next evidence should therefore test the **promotion seam and break-even surface**, not build two unrelated complete simulators.
+
 ## Next evidence
 
 Do not build the Social Fabric prototype to answer these questions.
