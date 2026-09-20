@@ -22,7 +22,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0004 | Hierarchical Individual Agency | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0002_HIERARCHICAL_INDIVIDUAL_AGENCY.md` |
 | DEC-0005 | Architecture Development Policy | ACCEPTED | Architectural process governance | 2026-09-19 | 2026-09-19 | `DEC-0005_ARCHITECTURE_DEVELOPMENT_POLICY.md` |
 | DEC-0006 | Progressive Derived-State Specialization | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0003_PROGRESSIVE_DERIVED_STATE_SPECIALIZATION.md` |
-| DEC-0007 | Reference Simulation Kernel | PROPOSED | Architectural | 2026-09-20 | — | `DEC-0007_REFERENCE_SIMULATION_KERNEL_PROPOSAL.md` |
+| DEC-0007 | Reference Simulation Kernel | ACCEPTED | Architectural | 2026-09-20 | 2026-09-20 | `DEC-0007_REFERENCE_SIMULATION_KERNEL.md` |
 
 ## Accepted summaries
 
@@ -32,6 +32,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 - **DEC-0004:** individual agency uses soft hierarchical concerns, contextual candidate generation, local scoring, persistent goals, and later bounded planning.
 - **DEC-0005:** architecture evolves through semantic authority, simplest sufficient implementation, measured progressive specialization, and evidence-gated complexity.
 - **DEC-0006:** derived state uses the simplest sufficient maintenance strategy per subsystem and may graduate behind stable semantic boundaries when measured need justifies it.
+- **DEC-0007:** the first laboratory uses a single-process deterministic reference kernel with proposal/commit mutation, explicit process state, controlled randomness, semantic history, and complete continuation checkpoints.
 
 ## Entry template
 
