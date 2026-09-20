@@ -20,7 +20,7 @@ Select a maintainable implementation architecture and host runtime for the first
 
 **TRES-0002 Stage II — implementation architecture / host-runtime selection.**
 
-Host-independent kernel: `architecture/working/ADR-0004_REFERENCE_SIMULATION_KERNEL_PROPOSAL.md` — DEC-0007 PROPOSED.
+Host-independent kernel accepted: `architecture/accepted/ADR-0004_REFERENCE_SIMULATION_KERNEL.md`.
 
 Active research spec: `research/technical/TRES-0002/HOST_RUNTIME_BAKEOFF.md`
 
