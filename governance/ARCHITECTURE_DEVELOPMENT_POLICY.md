@@ -91,6 +91,19 @@ External research and benchmarks establish possibilities and likely tradeoffs.
 
 Consequential performance or stack choices should rely on project-specific or workload-representative evidence when that evidence can materially change the decision.
 
+### 11. Accepted architecture artifacts constrain; working artifacts explain
+
+Working proposals and research may contain alternatives, rationale, examples, and exploration.
+
+Accepted architecture records should contain only:
+- the decision;
+- binding invariants/consequences;
+- essential rationale needed to preserve intent;
+- explicit exclusions or unresolved points;
+- references to supporting evidence when useful.
+
+Do not carry debate history, illustrative examples, speculative future possibilities, implementation trivia, or duplicated context into accepted architecture. If supporting explanation is still useful, keep it in working/research material and link to it rather than bloating authority.
+
 ## Decision gate
 
 Before recommending a consequential implementation architecture, the Master Architect must be able to explain:
