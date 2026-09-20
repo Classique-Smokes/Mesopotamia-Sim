@@ -20,6 +20,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0002 | Adopt the Master Architect Operating Guide | ACCEPTED | Constitutional | 2026-09-19 | 2026-09-19 | `DEC-0002_MASTER_ARCHITECT_GUIDE.md` |
 | DEC-0003 | Active Social-State Representation | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0001_ACTIVE_SOCIAL_STATE_REPRESENTATION.md` |
 | DEC-0004 | Hierarchical Individual Agency | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0002_HIERARCHICAL_INDIVIDUAL_AGENCY.md` |
+| DEC-0005 | Adopt the Architecture Development Policy | PROPOSED | Architectural process governance | 2026-09-19 | — | `DEC-0005_ARCHITECTURE_DEVELOPMENT_POLICY_PROPOSAL.md` |
 
 ## Accepted decision summaries
 
@@ -47,6 +48,14 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 
 - **Decision:** Hierarchical soft-gated concern selection, contextual candidate generation, local component scoring, separate persistent goals, and later bounded planning.
 - **Full accepted record:** `../architecture/accepted/ADR-0002_HIERARCHICAL_INDIVIDUAL_AGENCY.md`
+
+## Proposed decisions
+
+### DEC-0005 — Architecture Development Policy
+
+- **Proposal:** Adopt `governance/ARCHITECTURE_DEVELOPMENT_POLICY.md` as the durable policy for progressive, evidence-driven architecture evolution.
+- **Status:** PROPOSED; not yet binding.
+- **Full proposal:** `DEC-0005_ARCHITECTURE_DEVELOPMENT_POLICY_PROPOSAL.md`
 
 ## Entry template
 
