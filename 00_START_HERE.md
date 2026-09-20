@@ -27,10 +27,10 @@ Accepted:
 - `DEC-0002` — Master Architect Operating Guide
 - `ADR-0001 / DEC-0003` — Active Social-State Representation
 - `ADR-0002 / DEC-0004` — Hierarchical Individual Agency
+- `DEC-0005` — Architecture Development Policy
 
 Active:
-- **TRES-0002 Stage II — architecture candidate synthesis**
-- **DEC-0005 PROPOSED — Architecture Development Policy**
+- **TRES-0002 Stage II — whole-system candidate synthesis**
 - Household organization, execution/time, and history/recovery remain working semantic inputs where not explicitly accepted.
 
 No production implementation has started.
@@ -39,18 +39,17 @@ No production implementation has started.
 
 - Founding intent: `founding/00_MESOPOTAMIA_SIMULATION_PROJECT_SEED.md`
 - Master Architect behavior: `governance/MASTER_ARCHITECT_GUIDE.md`
-- Proposed architecture-development rules: `governance/ARCHITECTURE_DEVELOPMENT_POLICY.md`
+- Architecture development rules: `governance/ARCHITECTURE_DEVELOPMENT_POLICY.md`
 - Decision register: `decisions/DECISION_REGISTER.md`
 - Accepted architecture: `architecture/accepted/`
 - Current household checkpoint: `architecture/working/WIP-0001_HOUSEHOLD_ORGANIZATION.md`
-- Architecture selection playbook: `architecture/working/ARCHITECTURE_SELECTION_PLAYBOOK.md`
-- Current phase plan: `plans/CURRENT_PHASE.md`
+- Architecture selection: `architecture/working/ARCHITECTURE_SELECTION_PLAYBOOK.md`
+- Current phase: `plans/CURRENT_PHASE.md`
 - TRES-0002 synthesis: `research/technical/TRES-0002/STAGE_I_SYNTHESIS.md`
 - Open issues: `registers/OPEN_ISSUES_REGISTER.md`
-- Historical evidence: `registers/HISTORICAL_EVIDENCE_REGISTER.md`
 - Specifications: `specifications/`
 - Task templates: `tasks/`
 
 ## Repository discipline
 
-This Git repository is the canonical working location. Git keeps historical versions; current files should not accumulate stale version suffixes. Working design is explicitly marked non-authoritative until promoted through the accepted decision process.
+This Git repository is the canonical working location. Git preserves history; current canonical artifacts remain current. Working design stays explicitly non-authoritative until promoted.
