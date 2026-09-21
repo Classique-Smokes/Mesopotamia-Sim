@@ -15,7 +15,7 @@
 ## 1. Executive findings
 
 | Finding | Confidence | Chronological/context limit | Best supporting sources |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | “House” in a conveyance can identify a measured built plot; it does not enumerate a residential group. | HIGH | Specific Nippur property instruments | H-C01–02; T07, T11, T13 |
 | Shares, heirship and provision can be organized while a father is alive. | HIGH | BE 6/2, 28, Samsuiluna 8 | H-C04; T01 |
 | Kinship wording and legal affiliation overlap, but do not establish biology, age or co-residence on their own. | HIGH | Cited marriage/adoption instruments only | H-C05–06; T01–02, T14 |
@@ -154,7 +154,7 @@ The groups below organize this research return; they are not proposed indigenous
 | nam-geme₂ | Sumerian | Female slave status | [SAOC 44, 53, obv. 10–14](https://cdli.earth/P224357) | Status that heirs are barred from claiming under stated temporal conditions. | Surrounding clauses damaged. | Generic “dependent” would erase explicit slave-status wording; “free of all duties” would also overstate. | MODERATE |
 | [ama-ar-gi₄?] | Sumerian; restored reading | Release/freedom, if restoration correct | [SAOC 44, 53, obv. 4](https://cdli.earth/P224357) | Editor’s restoration in a freeing-related act. | Bracketed and queried, not fully preserved. | Do not quote it as a securely visible local technical term. | LOW for exact reading |
 | u₄ ti-la ... igi-ni-še₃ ... gub | Sumerian | During lifetime ... stand before/attend | [SAOC 44, 53, obv. 9](https://cdli.earth/P224357) | Continuing attendance/service provision. | Extent and coerciveness of performance unspecified. | Service, slavery and perpetual household membership are not identical propositions. | MODERATE |
-ner or scribe. | HIGH |
+| ARAD₂ + deity; ARAD₂ in personal name | Sumerian writing / name or seal formula | Servant of deity; theophoric name element | [SAOC 44, 25, seals](https://cdli.earth/P224340); [SAOC 44, 46, scribe name](https://cdli.earth/P283588) | Devotional and onomastic use. | Must distinguish full names from independent predicates. | Not independent evidence of an enslaved seal owner or scribe. | HIGH |
 | ARAD₂ + human personal name | Sumerian writing in a didactic text | Slave/servant of a named person | [PBS 8/2, 173, obv. 3; rev. 12′](https://cdli.earth/P230709) | Explicit human relation within a narrated case. | Does not independently prove the historical person’s status at the copy date. | Do not erase slavery, but do not count a school narrative as a status census. | MODERATE |
 | LUKUR Ninurta | Sumerian title spelling; often rendered nadītu in scholarship | Female deity-linked title | [PBS 8/2, 116, obv. 6](https://cdli.earth/P262151); [SAOC 44, 25, obv. 1–3](https://cdli.earth/P224340) | Title coexisting with kinship and property-related participation. | Akkadian conventional rendering is not a phonetic spelling in these clauses. | Not automatically “nun,” “prostitute,” slave, or the Sippar institution. | HIGH for title; MODERATE for institutional reconstruction |
 | še-ba; ì-ba; siki-ba | Sumerian | Grain, oil and wool allocations | [PBS 8/2, 116, obv. 7–12](https://cdli.earth/P262151) | Recurrent support entitlement. | “Rations” can sound administrative even in a family agreement. | An allocation does not itself identify an employee. | HIGH |
