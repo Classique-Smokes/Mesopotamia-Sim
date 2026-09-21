@@ -77,6 +77,25 @@ A two-founder card is retained only as a simpler smoke/mechanism-isolation case.
 
 Formation ablations must control alternate paths so the removed condition cannot regenerate during the observation horizon.
 
+## Continuity-family baseline
+
+Canonical continuity verification starts from the verified three-founder formation result and uses explicit warrant chaining rather than roster similarity.
+
+Required baseline:
+
+- A/B/C form H.
+- D enters through a ParticipationWarrant bridged by a current sustaining participant; one founder exits.
+- Repeat with E/F until no founder remains; H must remain the same identity through explicit continuity history.
+- Control run breaks the required bridge before entry; later similar organization cannot inherit H through that participation path.
+- 2+ sustaining participants = Active, 1 = Inactive, 0 = Dissolved as operational state only.
+- Inactive H may reactivate through a valid ParticipationWarrant bridged by its sole bearer.
+- Dissolved H cannot reactivate as the same identity.
+- Lifecycle assertions are made only at stable cycle closure.
+- If an accepted entry depends on a bridge who also exits that cycle, the entry/continuity handoff resolves before the bridge exit.
+- A valid continuity/participation path to non-Dissolved H takes precedence over fresh formation from the same evidence.
+
+Independent checks follow FormationWarrant -> ParticipationWarrant/ParticipationEnd -> ContinuationWarrant history; final participant overlap is never the oracle.
+
 ## Scenario families to specify
 
 1. household formation + four formation ablations;
