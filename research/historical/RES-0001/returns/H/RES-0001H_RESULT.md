@@ -300,3 +300,130 @@ These are candidates for expert reconciliation. Each preserves a narrow proposit
 **Uncertainty / disagreement:** Damaged obv. 9; actual delivery and broader motives unproved.  
 **Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
 **Limits on generalization:** One instrument; not a universal succession regime.  
+**Relevance to project question:** Separates allocation, affiliation, obligation and performance.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 4 — Kinship, cult title and support entitlement
+
+**Claim / proposition:** A woman’s kinship and deity-linked title can be stated together with a maintenance entitlement. (H-C07)  
+**Period:** Rim-Sin 50, II  
+**Geography / archive / social context:** Bēltani and four brothers/heirs  
+**Evidence type:** Primary  
+**Primary evidence:** [PBS 8/2, 116, obv. 1–13](https://cdli.earth/P262151)  
+**Secondary scholarship:** None independently required for this narrow textual observation.  
+**Interpretation(s):** nin₉ and LUKUR Ninurta are simultaneous descriptions.  
+**Uncertainty / disagreement:** Not all similarly named women are this person.  
+**Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** One agreement; no citywide rule for titled women.  
+**Relevance to project question:** Shows why kinship, title and entitlement should not be synonyms.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 5 — Annual dues are not inherently wages
+
+**Claim / proposition:** Annual payment terminology is not confined to remuneration for labor. (H-C09)  
+**Period:** Samsuiluna 27 and 8  
+**Geography / archive / social context:** House rental and parental-support instruments  
+**Evidence type:** Primary  
+**Primary evidence:** [SAOC 44, 14, obv. 1–7](https://cdli.earth/P257362); [BE 6/2, 28, rev. 1–6](https://cdli.earth/P266334)  
+**Secondary scholarship:** None independently required for this narrow textual observation.  
+**Interpretation(s):** a₂ with annual wording occurs in distinct obligation contexts.  
+**Uncertainty / disagreement:** Neither occurrence establishes an employer–employee relation.  
+**Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** These clauses; no full lexical history of a₂.  
+**Relevance to project question:** Prevents translating all support or rent as wages.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 6 — Release and continuing service require temporal analysis
+
+**Claim / proposition:** A manumission-related instrument distinguishes lifetime service from heirs’ later slave-status claims. (H-C11)  
+**Period:** Rim-Sin 51, VIII  
+**Geography / archive / social context:** Ur-dulkuga instrument; precise room unconfirmed  
+**Evidence type:** Mixed  
+**Primary evidence:** [SAOC 44, 53, obv. 4–16](https://cdli.earth/P224357)  
+**Secondary scholarship:** Stone 1987 indexes a freeing; surviving nam-geme₂ and temporal clauses support the distinction.  
+**Interpretation(s):** Stone 1987 indexes a freeing; surviving nam-geme₂ and temporal clauses support the distinction.  
+**Uncertainty / disagreement:** Release expression restored and queried; marriage/document clause damaged.  
+**Confidence + rationale:** MODERATE; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** One damaged act; not unrestricted freedom or a general law.  
+**Relevance to project question:** Separates juridical status, duties and time.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 7 — ARAD names and devotional formulas do not establish slavery
+
+**Claim / proposition:** ARAD in a divine seal formula or personal name is insufficient evidence of a person’s slave status. (H-C12)  
+**Period:** Samsuiluna 7 and 17  
+**Geography / archive / social context:** House account and house sale  
+**Evidence type:** Primary  
+**Primary evidence:** [SAOC 44, 25, seals](https://cdli.earth/P224340); [SAOC 44, 46, rev. witness list](https://cdli.earth/P283588)  
+**Secondary scholarship:** None independently required for this narrow textual observation.  
+**Interpretation(s):** Personal-name and devotional uses differ from an explicit status predication.  
+**Uncertainty / disagreement:** ARAD can denote human slavery in other contexts; the caution does not erase it.  
+**Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** These onomastic/formulaic occurrences.  
+**Relevance to project question:** Prevents false status assignments.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 8 — Transferable temple rights can be time-defined
+
+**Claim / proposition:** Temple-linked rights could be described in temporal portions and transferred. (H-C13)  
+**Period:** Rim-Sin 54; Samsuiluna 3  
+**Geography / archive / social context:** TA 184 and TB 75  
+**Evidence type:** Primary  
+**Primary evidence:** [SAOC 44, 11, obv. 1–13](https://cdli.earth/P257361); [SAOC 44, 69, obv. 1–13; rev. 1–2](https://cdli.earth/P257345); [SAOC 44, 70, envelope obv. 1–14](https://cdli.earth/P257344)  
+**Secondary scholarship:** None independently required for this narrow textual observation.  
+**Interpretation(s):** Four-month allocations and sales of day-defined entitlements differ from wages.  
+**Uncertainty / disagreement:** No proof of actual personal performance or net income.  
+**Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** These transactions; not every temple office.  
+**Relevance to project question:** Distinguishes rights, rotation, price and work.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 9 — Mixed writing is not evidence of a speaker’s vernacular
+
+**Claim / proposition:** A single instrument can combine Akkadian syntax/verbs with Sumerian-written legal expressions. (H-C16)  
+**Period:** Rim-Sin 59, X  
+**Geography / archive / social context:** SAOC 44, 20; room unknown  
+**Evidence type:** Primary  
+**Primary evidence:** [SAOC 44, 20, tablet obv. 1–9; envelope clauses](https://cdli.earth/P224335)  
+**Secondary scholarship:** None independently required for this narrow textual observation.  
+**Interpretation(s):** ana, kīma, ilqêma/inaddin coexist with logograms/formulae.  
+**Uncertainty / disagreement:** Spoken language and scribal bilingual competence are not recoverable from this alone.  
+**Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** Written linguistic behavior in this document.  
+**Relevance to project question:** Separates script, clause language and vernacular inference.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 10 — A didactic legal witness is not an event register
+
+**Claim / proposition:** A Nippur school witness can attest legal vocabulary without certifying a contemporary legal event. (H-C17)  
+**Period:** Old Babylonian; undated witness  
+**Geography / archive / social context:** CBS 07178, school court-case text  
+**Evidence type:** Primary  
+**Primary evidence:** [PBS 8/2, 173, obv. 1–11; rev. 2′–13′; left edge](https://cdli.earth/P230709)  
+**Secondary scholarship:** Spada 2014 lists the witness among Nippur school legal texts.  
+**Interpretation(s):** Spada 2014 lists the witness among Nippur school legal texts.  
+**Uncertainty / disagreement:** Didactic transmission need not imply entirely invented historical content.  
+**Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** Vocabulary and textual transmission; no event count.  
+**Relevance to project question:** Keeps model cases distinct from functional records.  
+**Design status:** NO DESIGN DECISION  
+
+## 9. Source ledger
+
+### 9A. Publications, corpora and access status
+
+Access date for this research pass: **19 September 2026**. “Partial direct” identifies selected passages actually consulted, not a claim to have read the entire work. “Indirect” identifies a reported interpretation whose original publication was not read. The URLs below are retrieval aids, not claims that the associated full publication was accessible.
+
+| Short citation | Full citation | Source type | Scope/provenance | Stable ID/DOI/URL | Consulted directly? | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| S01 Stone 1987 | Stone, Elizabeth C. 1987. Nippur Neighborhoods. Studies in Ancient Oriental Civilization 44. Chicago: Oriental Institute. | Excavation/text-context study and editions | OB Nippur TA/TB; selected passages, especially pp. 50–59 | https://isac.uchicago.edu/publications/nippur-neighborhoods | PARTIAL DIRECT | Selected searchable book text was accessible in an Academia reproduction whose webpage title misleadingly says Old Babylonian Contracts from Nippur I. Internal title identifies Nippur Neighborhoods. No independent inspection of all plans/copies. Reproduction: https://www.academia.edu/4764276/Old_Babylonian_Contracts_from_Nippur_I |
+| S02 Stone 1976 | Stone, Elizabeth C. 1976. Old Babylonian Contracts from Nippur: Selected Texts from the University Museum, University of Pennsylvania. Oriental Institute Microfiche Archives 1. Chicago: Oriental Institute. | Catalogue/microfiche publication | Nippur legal corpus | https://isac.uchicago.edu/publications/old-babylonian-contracts-nippur-selected-texts-university-museum-university | PARTIAL DIRECT | Publisher information and 41-page catalogue PDF consulted; cover and contents visually checked. Microfiche tablet editions were not thereby read. PDF: https://isac-assets.s3.amazonaws.com/isac-publications/old_babylonian_contracts.pdf |
+| S03 Poebel 1909 | Poebel, Arno. 1909. Babylonian Legal and Business Documents from the Time of the First Dynasty of Babylon, Chiefly from Nippur. The Babylonian Expedition of the University of Pennsylvania, Series A, 6/2. Philadelphia: University of Pennsylvania, Department of Archaeology. | Primary edition | BE 6/2, 28 directly; no. 23 through van Wyk only | https://cdli.earth/publications/90200 | SELECTED DIGITAL TEXT | T01 is a direct CDLI transliteration/translation consultation, not collation of the 1909 copy. |
+| S04 Chiera 1922 | Chiera, Edward. 1922. Old Babylonian Contracts. Publications of the Babylonian Section 8/2. Philadelphia: University Museum. | Primary edition | PBS 8/2, 116 and 173 | https://cdli.earth/P262151 ; https://cdli.earth/P230709 | SELECTED DIGITAL TEXT | T03 and T25 consulted via CDLI; functional agreement and school witness remain separate. |
+| S05 Stone–Owen 1991 | Stone, Elizabeth C., and David I. Owen, with John R. Mitchell. 1991. Adoption in Old Babylonian Nippur and the Archive of Mannum-mešu-liṣṣur. Mesopotamian Civilizations 3. Winona Lake, IN: Eisenbrauns. | Edition and interpretive study | Nippur adoption corpus | https://www.eisenbrauns.org/books/titles/978-0-931464-53-9.html ; https://cdli.earth/publications/1667211 | BIBLIOGRAPHY/CONCORDANCE ONLY FOR BOOK | Selected corresponding tablets consulted separately at CDLI. No claim to have read the full book; positions reported via van Wyk are attributed as mediated. |
+| S06 Spada 2014 | Spada, Gabriella. 2014. “Two Old Babylonian Model Contracts.” Cuneiform Digital Library Journal 2014:2. | Primary edition and commentary | Cotsen 52175; unprovenanced, Larsa/Kutalla attribution proposed; comparative Nippur references | https://cdli.earth/articles/cdlj/2014-2 | DIRECT HTML | Text, commentary and relevant notes examined. Used for genre, regional formula comparison and further text identification, not as a Nippur transaction. |
+| S07 Van Wyk 2014 | Van Wyk, Susandra J. 2014. “Lost in Translation: Present-day Terms in the Maintenance Texts of the Nadiātu from Old Babylonian Nippur.” Journal for Semitics 23(2i):443–483. | Interpretive article | Nippur maintenance texts; comparative material distinguished | doi:10.25159/1013-8471/3501 | PARTIAL DIRECT FULL-TEXT REPRODUCTION | Relevant discussion of terminology, PBS 8/2, 116 and property rights read in author-hosted Academia text; not a substitute for collating all cited tablets. Access: https://www.academia.edu/10368267/Lost_in_Translation_Present_day_Terms_in_the_Maintenance_Texts_of_the_Nadiatu_from_Old_Babylonian_Nippur |
+| S08 Van Wyk 2019a | Van Wyk, Susandra J. 2019. “Keeping Home and Hearth Together: A Scribe’s Adaptation of Adoption and Inheritance Division Templates from Old Babylonian Nippur Scribal Schools.” Journal for Semitics 28(1), article 4472, 34 pages. | Interpretive article with text discussion | BE 6/2, 23 dossier; reconstructed kinship disputed | doi:10.25159/2663-6573/4472 | PARTIAL DIRECT PDF | Opening, pertinent textual discussion, rival reconstructions and bibliography examined; printed p. 3 visually checked. Diagram not independently used. https://unisapressjournals.co.za/index.php/JSEM/article/download/4472/3737/29031 |
+| S09 Van Wyk 2019b | Van Wyk, Susandra J. 2019. “Towards a Typology of Old Babylonian Adoption Recordings.” Journal for Semitics 28(1), article 4247, 24 pages. | Interpretive article | OB adoption typologies; not all evidence Nippur | doi:10.25159/2663-6573/4247 | PARTIAL DIRECT PDF | Abstract and relevant typology discussion examined; opening page visually checked. https://unisapressjournals.co.za/index.php/JSEM/article/download/4247/3686/28360 |
+| S10 Stone 1982 | Stone, Elizabeth C. 1982. “The Social Role of Nadītu Women in Old Babylonian Nippur.” Journal of the Economic and Social History of the Orient 25(1):50–70. | Interpretive article | OB Nippur | doi:10.1163/156852082X00076 | INDIRECT | Bibliographic record verified; relevant positions encountered through Van Wyk 2014. Full article not read. |
+| S11 Stone 1981 | Stone, Elizabeth C. 1981. “Texts, Architecture and Ethnographic Analogy: Patterns of Residence in Old Babylonian Nippur.” Iraq 43:19–33. | Text/architecture study | OB Nippur | doi:10.1017/S0021088900004873 ; https://www.jstor.org/stable/4200131 | METADATA / INDIRECT | Title/page details checked; not a substitute for directly consulted selected Stone 1987 passages. |
