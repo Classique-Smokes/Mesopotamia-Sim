@@ -76,7 +76,7 @@ Fixed v0 updates:
 - refusal of ordinary request while requester is in genuine unmet need: requester -> refuser -5;
 - ordinary refusal without genuine need/accepted obligation: 0;
 - refusal of called favour: holder -> refuser -20;
-- knowingly retaining repayable debt while able: creditor -> debtor -10;
+- debt remaining unpaid at its social due cycle: creditor -> debtor -10 once;
 - breach of accepted commitment: affected counterparty -> breacher -20;
 - rejected marriage proposal: 0.
 
@@ -101,7 +101,10 @@ Debt is a quantitative grain claim.
 
 - loan creates creditor/debtor, original amount, remaining amount;
 - repayment may be partial;
-- no interest, due date, or automatic default penalty;
+- no interest, collection/default process, or automatic enforcement;
+- each loan has a **social due cycle 3 full cycles after loan commitment**;
+- if any balance remains at that due-cycle review, creditor -> debtor attitude changes -10 once, regardless of whether the debtor could materially repay;
+- the due cycle exists only for this relationship consequence; it does not reserve grain or force repayment;
 - repayment must leave the debtor with at least 2 grain;
 - debt does not compel unrelated action and is distinct from favour.
 
@@ -226,12 +229,25 @@ Recognition is not attitude, approval, or obedience.
 
 v0 requires:
 
+- candidate organization C is recognized as the same prospective founding organization;
 - household H exists/continues;
 - person P occupies head/representative role for H within scope.
 
 There is no universal subjective or objective primitive `MemberOf(H)` relation.
 
-### 6.3 Knowledge acquisition
+### 6.3 Candidate recognition
+
+`CandidateRecognition(C)` is an ephemeral, provenance-bearing recognition proposition for a pre-household candidate. It grants no household powers and is not household identity.
+
+A required founder recognizes candidate C only when that actor's own subjective state contains uncontested evidence sufficient to establish the objective formation predicate for the proposed founding core:
+
+- shared residence of that core;
+- a connected durable-tie structure for that core;
+- two qualifying committed support events on distinct cycles.
+
+The actor need not know that the other founders also recognize C. Candidate existence/label cannot count as evidence for itself.
+
+### 6.4 Knowledge acquisition
 
 Actors automatically know:
 
@@ -245,7 +261,7 @@ Other facts require valid event-specific observation or communication. Co-reside
 
 No deliberate lying, trust score, rumor mutation, or reputation system exists in v0.
 
-### 6.4 Staleness and conflict
+### 6.5 Staleness and conflict
 
 Subjective state does not passively synchronize.
 
@@ -256,7 +272,7 @@ Subjective state does not passively synchronize.
 
 Recognition does not decay with attitude.
 
-### 6.5 Failed attempts
+### 6.6 Failed attempts
 
 Direct participants learn failed-attempt outcomes:
 
@@ -295,13 +311,47 @@ Formation creates one persistent household identity plus a `FormationWarrant` re
 
 Successful formation also creates a provenance-bearing `SustainingParticipant` association for every person in the founding core, supported by that `FormationWarrant`.
 
+The founding-core participants directly recognize the resulting household from the formation event.
+
 ### 7.3 Household association
 
 There is no authoritative universal Members set.
 
 v0 uses provenance-bearing `SustainingParticipant`.
 
-### 7.4 Continuity
+### 7.4 Participation change after formation
+
+A nonparticipant may become a `SustainingParticipant` of active household H only through an explicit bilateral participation proposal:
+
+- a nonparticipant may `RequestHouseholdParticipation(H)` through a current sustaining participant; or
+- a current sustaining participant may `InviteHouseholdParticipation(P)`.
+
+The named counterpart must accept. The head has no general admission authority.
+
+At commit, a provenance-bearing `ParticipationWarrant` is required. It must establish that:
+
+- the newcomer recognizes H;
+- at least one current sustaining participant recognizes the same continuing H and serves as the continuity bridge;
+- newcomer and at least one current sustaining participant share residence;
+- newcomer has a durable tie (kinship, marriage, or mutual strong-like) to at least one current sustaining participant;
+- at least one qualifying committed support event occurred between the newcomer and a current sustaining participant after H already existed;
+- newcomer and the bridging participant both recognize/accept the newcomer's participation in H's sustaining organization.
+
+A valid `ParticipationWarrant` creates the `SustainingParticipant` association. It does not recreate or replace H.
+
+A current sustaining participant may voluntarily `EndHouseholdParticipation(H)`. The commit creates a `ParticipationEndWarrant` and ends only that typed association.
+
+Participation end:
+
+- does not erase residence, kinship, marriage, debt, favour, attitude, or historical records;
+- terminates that person's provision commitment to H, if any;
+- vacates H's head role if that person was the current head;
+- triggers household lifecycle/continuity reevaluation from the remaining sustaining organization;
+- remains historically queryable.
+
+Residence change alone does not automatically end participation.
+
+### 7.5 Continuity
 
 Household continuity requires an explicit historical transmission chain:
 
@@ -313,7 +363,7 @@ Snapshot similarity, residence, assets, kinship, or participant overlap alone ne
 
 Sequential transmission may replace every founder while preserving household identity.
 
-### 7.5 Lifecycle
+### 7.6 Lifecycle
 
 - Active: viable sustaining organization exists.
 - Inactive: no viable sustaining organization, but at least one live continuity bearer remains.
@@ -321,7 +371,7 @@ Sequential transmission may replace every founder while preserving household ide
 
 Inactive may reactivate through valid continuity. Dissolved cannot reactivate as the same identity.
 
-### 7.6 Controlled lineage cases
+### 7.7 Controlled lineage cases
 
 Division proof:
 
@@ -418,6 +468,8 @@ v0 household-mode concerns:
 Vacancy preserves household identity and provision commitments but suspends household-mode spending/marriage mediation.
 
 ## 9. Temporal / resolution / history contract
+
+Debt social-due review is scheduled exactly 3 full cycles after each loan commitment. It produces only the one-time relationship effect defined in §3.3 if any balance remains.
 
 ### 9.1 Time
 
@@ -599,3 +651,4 @@ Relevant:
 
 - 2026-09-21 — Accepted SFL v0 semantic specification after Passes A-G and targeted adversarial reviews TRES-0003/TRES-0004.
 - 2026-09-21 — Restorative Stage-3 errata: founding-core `SustainingParticipant` creation made explicit; previously approved head-nomination eligibility restored from the closed working record. No new social rule introduced.
+- 2026-09-21 — Director-approved Stage-3 semantic amendments: evidence-backed `CandidateRecognition`; bilateral invitation/request plus `ParticipationWarrant` and explicit participation end; loan social due cycle at +3 full cycles with one-time unpaid-balance attitude penalty.
