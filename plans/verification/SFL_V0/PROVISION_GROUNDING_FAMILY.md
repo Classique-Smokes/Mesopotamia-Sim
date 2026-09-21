@@ -132,8 +132,17 @@ On commit:
 - proposed dowry > current capacity -> no marriage commit through this route;
 - remove provision commitment -> no funded mediated commit;
 - groom already owes P a favour -> mediated route invalid;
+- groom == mediating head -> mediated route invalid;
 - remove groom's bride->H fact or H/head recognition -> mediated candidate unavailable;
 - use mutual-strong-like bypass instead -> no dowry spend and no groom->head favour.
+
+### Female-head self-mediation companion
+
+Use a female bride B who is also the valid head of H, with groom G distinct from B and every other mediated-route condition satisfied.
+
+- B may receive/resolve G's mediated proposal in her head role;
+- the route is not rejected merely because the bride is the head;
+- provision/dowry/favour accounting remains otherwise identical.
 
 ---
 
