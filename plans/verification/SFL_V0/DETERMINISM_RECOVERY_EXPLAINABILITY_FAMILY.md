@@ -54,6 +54,8 @@ Construct a stable world in which:
 
 Create a controlled resolution state with two otherwise semantically equal alternatives competing for one indivisible outcome after every modeled social/domain priority has been exhausted.
 
+For Slice 1, one canonical exercise may use two independently accepted, still-feasible Residence proposals that would change the same person's Residence to different dwellings, with no semantic priority distinguishing them.
+
 ### Assertions
 
 - identical initial state/IDs/input/configuration -> identical winner and history across repeated runs;
@@ -61,7 +63,8 @@ Create a controlled resolution state with two otherwise semantically equal alter
 - ordinary container/insertion iteration order permutation does not change the result;
 - renaming the relevant nonsemantic stable IDs is allowed to change which symmetric alternative wins;
 - such ID-permutation sensitivity is recorded as expected fallback sensitivity, not presented as a social preference;
-- if a meaningful domain asymmetry is added, that asymmetry decides and the fallback marker disappears.
+- if a meaningful domain asymmetry is added, that asymmetry decides and the fallback marker disappears;
+- in the Residence exercise, exactly one Residence transition commits and every non-winning accepted contender is `InvalidatedAtResolution(CompetingResidenceTransition)`.
 
 ### Nonclaim
 
