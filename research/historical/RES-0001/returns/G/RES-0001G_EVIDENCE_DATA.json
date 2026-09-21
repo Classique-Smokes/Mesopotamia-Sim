@@ -603,4 +603,88 @@
       "counter": "A transaction sequence may show local change without supporting a citywide trend.",
       "confidence": "HIGH for this research limit",
       "limit": "Neither stasis nor decline is inferred for unsampled intervals.",
-      "relevance": "Keeps time-specific interfaces from becoming timele
+      "relevance": "Keeps time-specific interfaces from becoming timeless institutions.",
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S16"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C15",
+      "claim": "BE 6/2 37 is a plausible but unverified antecedent for the exchange recalled in OBCN I 32.",
+      "date": "Samsuiluna 11/11/6 versus 28/11",
+      "context": "Nuska rights; similarly named Šumum-libši and Lu-Ešumeša",
+      "type": "Cross-document hypothesis",
+      "primary": "G-I03 and G-I11.",
+      "secondary": "Proposed by this return as a verification target, not an accepted concordance.",
+      "counter": "Titles, patronymics, exact asset identity and damaged periods require comparison with full editions.",
+      "confidence": "LOW",
+      "limit": "Do not merge the documents into one asset history yet.",
+      "relevance": "Potential evidence for multi-stage circulation, conditional on identity checks.",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C16",
+      "claim": "The documented household–institution interfaces are not reducible to a single relationship of family membership.",
+      "date": "Old Babylonian case set",
+      "context": "Different temples, actors and legal/documentary processes",
+      "type": "Analytical synthesis of distinct primary cases",
+      "primary": "G-I01–08 distinguish sale, family claim, recovery, adoption, legal referral and deed custody.",
+      "secondary": "This is not a claim that temples lacked households; it limits what these documents themselves establish.",
+      "counter": "Specific institutional households may exist and require separate evidence.",
+      "confidence": "MODERATE",
+      "limit": "No organizational chart, universal institution type or residence rule follows.",
+      "relevance": "Preserves different forms of institutional connection without designing their representation.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    }
+  ],
+  "register_candidate_ids": [
+    "G-C01",
+    "G-C02",
+    "G-C03",
+    "G-C05",
+    "G-C06",
+    "G-C07",
+    "G-C08",
+    "G-C09"
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "short": "Poebel 1909 / BE 6/2",
+      "citation": "Poebel, Arno. 1909. Babylonian Legal and Business Documents from the Time of the First Dynasty of Babylon, Chiefly from Nippur. The Babylonian Expedition of the University of Pennsylvania, Series A, vol. VI, part 2. Philadelphia: Department of Archaeology, University of Pennsylvania.",
+      "type": "Primary-text edition with translation and commentary; public-domain publication",
+      "scope": "Selected Nippur legal documents; volume also contains non-Nippur material.",
+      "stable": "BE 6/2; https://etana.org/sites/default/files/coretexts/14861.pdf ; catalogue: https://etana.org/node/610",
+      "access": "DIRECT, SELECTED TEXTUAL PASSAGES",
+      "notes": "Translations/transliterations and commentary for nos. 10, 36, 37, 39, 42, 45, 57, 66; controls nos. 4, 24, 28, 29, 51, 64. Introduction pp. 1–2 and selected catalogue entries also inspected. Parsed text accessible. Final-stage screenshots verified printed pp. 12 and 149–152; most other screenshot requests failed. Catalogue dates/numbers for nos. 36, 37, 39, 42, 45 and 57 were checked against those page images. No fresh collation of signs, photographs, or seals. Title-page year 1909 takes precedence over inconsistent repository metadata."
+    },
+    {
+      "id": "S02",
+      "short": "Stone 1976 / OBCN I",
+      "citation": "Stone, Elizabeth C., catalogue, with photographs by Paul E. Zimansky. 1976. Old Babylonian Contracts from Nippur I: Selected Texts from the University Museum, University of Pennsylvania. Oriental Institute Microfiche Archives 1. Chicago: Oriental Institute of the University of Chicago.",
+      "type": "Primary-object catalogue and photographic publication",
+      "scope": "Selected Philadelphia contracts; early excavations; joins with Istanbul texts.",
+      "stable": "DOI 10.83354/dqrs-h420; https://isac.uchicago.edu/publications/old-babylonian-contracts-nippur-selected-texts-university-museum-university",
+      "access": "DIRECT CATALOGUE; NOT THE MICROFICHE IMAGES",
+      "notes": "The accessible 41-page PDF supplies catalogue descriptions, not complete editions. Core entries nos. 19, 28, 29, 32. Printed p. 4 was also checked as a page image; Ni 9258/ARN 102 is a case fragment associated with the no. 28 tablet, not a tablet-to-tablet join. Nos. 43, 45, 69 retained only as discovery leads. OBCN is a local short label here, not a claim about standard sigla."
+    },
+    {
+      "id": "S03",
+      "short": "Goddeeris 2022",
+      "citation": "Goddeeris, Anne. 2022. “Women and Their Weight: Incorporating Weighted Edges in a Network Analysis of the Central Redistributive Household of Nippur (Eighteenth Century BCE).” In Katrien De Graef, Agnès Garcia-Ventura, Anne Goddeeris, and Beth Alpert Nakhai, eds., The Mummy under the Bed: Essays on Gender and Methodology in the Ancient Near East, 369–406. wEdge 1. Münster: Zaphon.",
+      "type": "Specialist research chapter; includes a primary edition and documentary tables",
+      "scope": "A reconstructed late-Rim-Sin administrative dossier from Nippur.",
+      "stable": "Institutional record https://biblio.ugent.be/publication/8756262 ; author-uploaded full text https://www.researchgate.net/publication/361319912_Women_and_Their_Weight_Incorporating_Weighted_Edges_in_a_Network_Analysis_of_the_Central_Redistributive_Household_of_Nippur_Eighteenth_Century_BCE",
+      "access": "DIRECT SELECTED SECTIONS OF AUTHOR-UPLOADED TEXT",
+      "notes": "Read archive/method sections, TMH 10 165 edition p. 385, relevant entries of tables 2–3 pp. 399–402, conclusions pp. 402–403, and bibliography. Institutional record verifies bibliographic identity. Graphs and cuneiform copy not visually verified; no independent replication of network result
