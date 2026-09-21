@@ -29,3 +29,5 @@ Before persistent implementation begins, replace this section with the exact roo
 ## Context discipline
 
 Prefer links and retrieval over copying large project history into context. Add rules here only when a recurrent agent failure shows that a durable root instruction is needed.
+
+For work that changes project scaffolding, tooling, CI, verification, delegation, or agent workflow, consult `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
