@@ -322,6 +322,8 @@ Reasons are bounded to what the interaction makes knowable; resolver omniscience
 
 Feasibility failures are not voluntary refusal and do not trigger refusal-attitude penalties.
 
+A proposed-but-uncommitted world effect never becomes an objective fact. The proposal/refusal/failure event itself may still be known to its direct participants.
+
 ## 7. Household formation and identity
 
 ### 7.1 Candidate organization
@@ -640,7 +642,7 @@ Cycle order:
 
 ### 9.2 Revalidation and conflicts
 
-Every proposal is revalidated immediately before commit.
+Every proposal is revalidated immediately before commit against **all action-relevant preconditions**, including applicable participant/status eligibility, relations/claims, household/head validity, provision/capacity, grain, and cooldown state.
 
 Only commitments whose semantics explicitly authorize/reserve current capacity receive material commitment priority. Debt/favour do not automatically reserve grain.
 
@@ -808,4 +810,4 @@ Relevant:
 - 2026-09-21 — Director-approved continuity cleanup after TRES-0006: operational lifecycle state (2+/1/0), Inactive reactivation through sole bearer, stable-cycle lifecycle evaluation, bridge-handoff priority, continuity-over-duplicate-formation precedence, and explicit two-person founding minimum. Restored compressed household authority/history details.
 - 2026-09-21 — Director-approved lineage semantics after TRES-0007: one behaviorally inert LineageWarrant per successor formation at most; direct predecessor provenance distinct from ancestry; fresh organizational evidence; narrow division/consolidation classifications; ambiguity withholds lineage rather than formation; no inherited causal state.
 - 2026-09-21 — Restored previously approved Pass-C information semantics lost during compression: communication initiative cost, event-provenance precedence, Contested handling, general household/role recognition action gating, outsider non-omniscience, and the mediated-marriage bride-to-household subjective route requirement.
-- 2026-09-21 — Pre-rule compression-audit restorations: fixture authority/no fixed actor count; cross-boundary/anti-shortcut constraints; attitude/kinship gate separation; debt-history retention; favour non-currency limits; residence independence from marriage; exact reference-scorer/separability semantics; recognition-state meanings; head-role prohibitions; reaction-closure termination condition.
+- 2026-09-21 — Pre-rule compression-audit restorations: fixture authority/no fixed actor count; cross-boundary/anti-shortcut constraints; attitude/kinship gate separation; debt-history retention; favour non-currency limits; residence independence from marriage; exact reference-scorer/separability semantics; recognition-state meanings; head-role prohibitions; reaction-closure termination condition; all action-relevant preconditions and uncommitted-effect knowledge semantics.
