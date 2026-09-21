@@ -8,26 +8,25 @@
 2. Individual agency — ADR-0002.
 3. Progressive derived-state specialization — ADR-0003.
 4. Reference simulation kernel — ADR-0004.
+5. Host runtime — ADR-0005.
 
 ## Working semantic foundation
 
 Household organization, execution/time, and history/recovery have been conceptually surveyed and remain non-authoritative where not explicitly accepted. They constrain implementation-architecture research but are not implementation specifications.
 
-## Active architecture selection
+## Architecture selection status
 
-**Implementation architecture / language / runtime / delivery structure**
+- TRES-0002 horizon research: complete.
+- Derived-state architecture: ADR-0003 accepted.
+- Reference kernel: ADR-0004 accepted.
+- Host/runtime bake-off and adversarial review: complete.
+- C# 14 / .NET 10 LTS host: ADR-0005 accepted.
 
-- TRES-0002 Stage I horizon research: complete.
-- Derived-state architecture fork: resolved by ADR-0003.
-- Host/runtime bake-off and remaining implementation selection: active.
-- Adversarial review: pending.
-- Explicit architecture decision: pending.
-- Working procedure: `ARCHITECTURE_SELECTION_PLAYBOOK.md`.
+## Active next stage
 
-## After architecture selection
-
-1. Prototype rule specification and verification scenarios.
-2. First bounded implementation packet.
+1. Social Fabric Laboratory v0 rule specification.
+2. Verification scenarios.
+3. First bounded implementation packet.
 
 ## Scope guard
 
