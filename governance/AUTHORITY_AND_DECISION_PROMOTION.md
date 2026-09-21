@@ -26,10 +26,11 @@ When classification is uncertain, judge by **scope, reversibility, persistence, 
 4. **Proposal** — if a consequential choice is timely, record it as `PROPOSED` in the Decision Register and create an ADR when architectural.
 5. **Authority check** — identify the level that may accept it.
 6. **Explicit acceptance** — constitutional/architectural approval must be clear and deliberate. Silence never counts. Engineering decisions may be accepted by the Master Architect within delegated bounds.
-7. **Canonical update** — mark the decision `ACCEPTED`; update affected specifications and links. Do not erase replaced rationale; use `SUPERSEDED` with references.
-8. **Implementation delegation** — create bounded tasks from accepted specifications/decisions.
-9. **Verification** — implementation reports changes, tests, assumptions, conflicts, and deviations.
-10. **Drift review** — compare Seed/Constitution → Accepted Decisions → Specifications → Implementation.
+7. **Semantic-preservation check** — before compressing approved working material, enumerate its binding commitments, preconditions, edge cases, exclusions, and deliberate delegated/open locks. After drafting the canonical rewrite, reconcile each item as **preserved**, **explicitly superseded/deferred**, or **recorded as an open erratum**. Rationale/examples may be dropped; operative meaning may not.
+8. **Canonical update** — mark the decision `ACCEPTED`; update affected specifications and links. Do not erase replaced rationale; use `SUPERSEDED` with references.
+9. **Implementation delegation** — create bounded tasks from accepted specifications/decisions.
+10. **Verification** — implementation reports changes, tests, assumptions, conflicts, and deviations.
+11. **Drift review** — compare Seed/Constitution → Accepted Decisions → Specifications → Implementation.
 
 ## Non-authoritative states
 
