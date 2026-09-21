@@ -4,7 +4,7 @@
 - **Owner:** Master Architect
 - **Date:** 2026-09-21
 - **Depends on accepted decisions:** DEC-0001, ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0005
-- **Known assumptions:** ASM-0001 through ASM-0007
+- **Known assumptions:** ASM-0001 through ASM-0009
 
 ## 1. Purpose and scope
 
@@ -207,6 +207,7 @@ Required action meanings include:
 - CallFavor / fulfil / refuse / reciprocal cancellation;
 - ProposeMarriage;
 - propose/respond to residence change;
+- RequestHouseholdParticipation / InviteHouseholdParticipation / EndHouseholdParticipation;
 - CommunicateClaim/Inform;
 - household-role actions defined below.
 
@@ -469,7 +470,7 @@ Vacancy preserves household identity and provision commitments but suspends hous
 
 ## 9. Temporal / resolution / history contract
 
-Debt social-due review is scheduled exactly 3 full cycles after each loan commitment. It produces only the one-time relationship effect defined in §3.3 if any balance remains.
+Debt social-due review occurs after ordinary proposal resolution and repayment opportunities in the **third subsequent full cycle** after the loan commits. Thus a loan committed in cycle N is reviewed after cycle N+3 decisions/commits. If any balance remains, the one-time relationship effect in §3.3 fires. No additional default/enforcement state is created.
 
 ### 9.1 Time
 
