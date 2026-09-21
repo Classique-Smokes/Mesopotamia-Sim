@@ -31,6 +31,7 @@ Working specification has now introduced controlled laboratory assumptions. They
 | ASM-0003 | ACTIVE | Farm yields 4 grain; consumption is 1 per cycle; typical initial stock is 4-8; debt repayment preserves a 2-grain reserve. | SFL v0 scarcity/debt behavior. | Verification, balance testing, or later economic subsystem. |
 | ASM-0004 | ACTIVE | Parent/child and sibling kinship both multiply the attitude-derived component of ordinary interpersonal choice by 1.5x. | SFL v0 kinship effect. | Historical evidence or verification showing type-specific/different treatment is required. |
 | ASM-0005 | ACTIVE | Initial v0 household formation requires shared residence plus a durable tie, two qualifying support events on separate cycles, and founding-core recognition. | SFL v0 household formation recognizer. | Historical evidence, verification, or later household model showing the gate is too narrow/broad. |
+| ASM-0006 | ACTIVE | Head appointment/succession requires unanimous sustaining-participant acceptance; provision spending uses 2-grain contributor reserve and largest-surplus-first allocation. | SFL v0 collective authority/resource mobilization. | Verification, historical evidence, or richer governance/accounting rules. |
 
 ### ASM-0001 — Reciprocity attitude gate
 
@@ -88,6 +89,18 @@ Working specification has now introduced controlled laboratory assumptions. They
 - **Scope / impact:** Candidate-to-household formation only; later continuity uses a different historical rule.
 - **Not authoritative for:** Old Babylonian household prevalence, universal household formation, later institutional or lifecycle models.
 - **Review / replacement trigger:** Historical evidence, verification results, or expansion beyond the first household laboratory.
+- **Introduced by:** Director / Master Architect working specification discussion
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
+
+### ASM-0006 — v0 household governance and allocation
+
+- **Status:** ACTIVE
+- **Assumption:** Head appointment/succession uses unanimous sustaining-participant acceptance. Provision commitments expose grain above the existing 2-grain personal reserve; collective expenditure draws largest available surplus first with stable-ID tie-break.
+- **Why temporarily needed:** v0 needs deterministic, inspectable authority and resource-allocation rules without a broader governance/accounting system.
+- **Scope / impact:** Household head legitimacy, collective support, dowry funding, and double-spend prevention.
+- **Not authoritative for:** Historical household governance, contribution shares, taxation, property, inheritance, or later office/accounting systems.
+- **Review / replacement trigger:** Verification, recovered historical evidence, or expansion to richer governance/resource systems.
 - **Introduced by:** Director / Master Architect working specification discussion
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
