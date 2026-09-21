@@ -161,40 +161,26 @@ The world must be rich enough for different proxies to disagree: co-residence al
 
 ## Pass C — Subjective recognition and information
 
-**Question:** How can actors recognize organization without global omniscience or engine self-confirmation?
+**Status:** WORKING-CONVERGED at semantic level.
 
-### Must answer
+**v0 result:**
 
-C1. What recognition propositions exist in v0?
-At minimum consider:
-- recognition of a continuing household identity;
-- recognition of a representative-role occupant / authority scope.
+- factual knowledge and social recognition are separate subjective layers;
+- recognition propositions cover continuing household identity and representative/head role + authority scope; no universal membership proposition;
+- recognition state is discrete: Unknown / Recognized / Contested, with evidence provenance;
+- recognition is independent of attitude, approval, and compliance;
+- own state, direct-party relations, and participated events are automatically known; other observation requires explicit witness/affected-observer rules;
+- `CommunicateClaim/Inform` transmits only propositions the sender currently holds, with source/event provenance; no lying, trust score, rumor mutation, or reputation in v0;
+- stale information persists; underlying event/observation time outranks message arrival time; unresolved incompatible evidence becomes Contested;
+- engine-side household existence never grants universal actor recognition;
+- household-specific candidate actions require the actor to recognize the household and, where relevant, its representative/scope;
+- household-mediated marriage therefore depends on the groom's subjective recognition of the applicable household/representative route;
+- recognition does not decay with attitude;
+- structural proxies may supply evidence but do not individually create household recognition.
 
-C2. Is recognition discrete, graded, or evidence-backed in some other minimal form?
+**Negative control:** same objective household state, different actor recognition -> different availability of household-specific actions.
 
-C3. What evidence may update an actor's recognition?
-Examples to evaluate:
-- experienced support/coordination;
-- observed fulfilled obligations;
-- participation in recurring arrangement;
-- witnessed role appointment/succession;
-- communicated claims from others.
-
-C4. What can an actor observe automatically because they participated in it, and what requires information transmission?
-
-C5. How do stale, absent, or contradictory observations behave in v0?
-
-C6. What causal effects can recognition have on candidate actions or evaluation?
-
-C7. What must *not* happen merely because the engine has created a household record?
-
-### Required negative control
-
-Construct a structurally similar candidate organization that the engine can detect but actors do not recognize; household-specific action possibilities must not appear merely from classification.
-
-### Deliverable
-
-**v0 Subjective Recognition Model**.
+**Delegated locks before implementation:** event-specific witness rules -> D/E/F; formation/continuity evidence -> D; representative scope/succession evidence -> E; total event ordering -> F; concrete data representation -> final implementation contract.
 
 ---
 
