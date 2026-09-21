@@ -25,6 +25,7 @@ Resolved semantic errata record:
 Open semantic erratum:
 
 - `specifications/working/SFL_V0_STAGE3_PROVISION_ALLOCATION_ERRATUM.md` — exact multi-contributor debit trace only
+- `specifications/working/SFL_V0_STAGE3_REFERENCE_SCORING_ERRATUM.md` — reference scorer aggregation/configuration contract
 
 ## Canonical scenario package
 
@@ -37,6 +38,8 @@ Open semantic erratum:
 - `plans/verification/SFL_V0/NO_SELF_CONFIRMATION_FAMILY.md`
 - `plans/verification/SFL_V0/HEAD_ROLE_AND_DUAL_MODE_FAMILY.md`
 - `plans/verification/SFL_V0/RESOLUTION_REACTION_FAMILY.md`
+- `plans/verification/SFL_V0/DETERMINISM_RECOVERY_EXPLAINABILITY_FAMILY.md`
+- `plans/verification/SFL_V0/CROSS_CUTTING_VERIFICATION_CONTRACT.md`
 
 ## Required outputs
 
