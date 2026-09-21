@@ -374,4 +374,99 @@
       "type": "Scholarly object catalogue and edition concordance",
       "scope": "Istanbul Ni 1919; Nippur; Samsu-iluna 18/IV/1",
       "id": "P283604; BE 6/2 48; MC 3 16",
-   
+      "url": "https://cdli.earth/artifacts/283604",
+      "direct": "YES: metadata and concordance.",
+      "notes": "A concordance does not constitute direct consultation of MC 3."
+    },
+    {
+      "key": "CDLI64",
+      "short": "CDLI P283606",
+      "full": "Cuneiform Digital Library Initiative. “BE 06/2, 064 (P283606).” Artifact entry, accessed 19 September 2026.",
+      "type": "Catalogue with textual content",
+      "scope": "Istanbul Ni 174; property redemption/sale",
+      "id": "P283606; BE 6/2 64; MC 3 52",
+      "url": "https://cdli.earth/artifacts/283606",
+      "direct": "YES: entry and textual content, used as an exclusion check.",
+      "notes": "This is not an adoption or a person’s manumission merely because it appears in an adoption/archive volume or is called “redemption.”"
+    },
+    {
+      "key": "CDLI4",
+      "short": "CDLI P266313",
+      "full": "Cuneiform Digital Library Initiative. “BE 06/2, 004 (P266313).” Artifact entry, accessed 19 September 2026.",
+      "type": "Scholarly object catalogue",
+      "scope": "CBS 11152; Rim-Sin 23/VI; adoption document",
+      "id": "P266313; BE 6/2 4",
+      "url": "https://cdli.earth/artifacts/266313",
+      "direct": "YES: metadata; Poebel’s edition separately read.",
+      "notes": "Occupational interpretation of the adopted woman is not established in this return."
+    },
+    {
+      "key": "T1998",
+      "short": "Tinney 1998",
+      "full": "Tinney, Steve. 1998. “Texts, Tablets, and Teaching: Scribal Education in Nippur and Ur.” Expedition 40(2): 40–50.",
+      "type": "Original study of educational tablets and their manufacture/use",
+      "scope": "Nippur and Ur; distinguish site-specific examples",
+      "id": "CBS 14156, p. 45 fig. 9",
+      "url": "https://www.penn.museum/documents/publications/expedition/40-2/Tinney.pdf",
+      "direct": "YES: all six PDF image pages visually read.",
+      "notes": "Used narrowly for evidence of instruction, not for an apprenticeship contract or student residence."
+    },
+    {
+      "key": "SP2021",
+      "short": "Spada 2021",
+      "full": "Spada, Gabriella. 2021. “I Want to Break Free: Model Contracts Recording Slave Self-Emancipation.” In dNisaba za₃-mí₂: Ancient Near Eastern Studies in Honor of Francesco Pomponio, edited by Palmiro Notizia, Annunziata Rositani, and Lorenzo Verderame, 283–300. Dubsar 19. Münster: Zaphon.",
+      "type": "Original edition/study of model contracts",
+      "scope": "Mixed and sometimes uncertain provenances; Nippur TMH 11 1 discussed by reference",
+      "id": "pp. 286–287, especially p. 287 n. 13; TMH 11 1",
+      "url": "https://www.academia.edu/49264064/_I_Want_to_Break_Free_Model_Contracts_Recording_Slave_Self_Emancipation",
+      "direct": "YES: accessible author-uploaded text; TMH 11 itself was NOT consulted.",
+      "notes": "Do not turn the five edited examples into five Nippur transactions. The study’s citation of BE 6/2 8 predates the 2026 provenance explanation."
+    },
+    {
+      "key": "VW2018",
+      "short": "Van Wyk 2018",
+      "full": "Van Wyk, Susandra J. 2018. “Inheritance Feuds in the Ur-Pabilsaĝa Archive from Old Babylonian Nippur.” Journal for Semitics 27(2), article 3989. 27 pages.",
+      "type": "Original archival/legal interpretation",
+      "scope": "Ur-Pabilsaĝa and interconnected Nippur family dossiers",
+      "id": "DOI 10.25159/1013-8471/3989",
+      "url": "https://unisapressjournals.co.za/index.php/JSEM/article/download/3989/3514/27186",
+      "direct": "YES: full text available; close reading focused on cases, disagreements, and references.",
+      "notes": "Used for the genealogy disagreement and discovery leads, not as a substitute for all cited editions."
+    },
+    {
+      "key": "S1982",
+      "short": "Stone 1982",
+      "full": "Stone, Elizabeth C. 1982. “The Social Role of the Nadītu Women in Old Babylonian Nippur.” Journal of the Economic and Social History of the Orient 25(1): 50–70.",
+      "type": "Original sociohistorical study",
+      "scope": "Property-visible Nippur nadītu women; comparison with Sippar",
+      "id": "DOI 10.1163/156852082X00076",
+      "url": "https://www.academia.edu/4764420/Elizabeth_C_Stone_The_Social_Role_of_the_Nad%C4%ABtu_Women_of_Nippur_Journal_of_the_Economic_and_Social_History_of_the_Orient_XXV_1982_50_70",
+      "direct": "YES: accessible author-uploaded text, selectively.",
+      "notes": "Primary texts ARN 29 and PBS 8/2 116 remain follow-up leads, not independently verified cases here."
+    },
+    {
+      "key": "C2011",
+      "short": "Culbertson, ed., 2011",
+      "full": "Culbertson, Laura, ed. 2011. Slaves and Households in the Near East. Oriental Institute Seminars 7. Chicago: The Oriental Institute of the University of Chicago.",
+      "type": "Specialist research collection",
+      "scope": "Different cities and periods; selected Andrea Seri and Jonathan Tenney contributions",
+      "id": "OIS 7",
+      "url": "https://isac-assets.s3.amazonaws.com/isac-publications/ois7.pdf?VersionId=Dc01_.QJyeviQBPD840A5LMYuvlDQVRR",
+      "direct": "YES, selected relevant passages only; not all chapters.",
+      "notes": "Comparative use. Sippar/Larsa examples and Kassite Nippur must not become OB Nippur facts."
+    },
+    {
+      "key": "S1987",
+      "short": "Stone 1987",
+      "full": "Stone, Elizabeth C. 1987. Nippur Neighborhoods. Studies in Ancient Oriental Civilization 44. Chicago: The Oriental Institute of the University of Chicago.",
+      "type": "Archaeological/archive monograph",
+      "scope": "Residential Nippur evidence",
+      "id": "SAOC 44",
+      "url": "https://isac.uchicago.edu/publications/nippur-neighborhoods",
+      "direct": "NO full text: publisher landing page and bibliographic information only.",
+      "notes": "The landing-page description is not a substitute for the book’s context catalogue. No room-level conclusion in this report rests on having read it."
+    },
+    {
+      "key": "SO1991",
+      "short": "Stone and Owen 1991",
+      "full"
