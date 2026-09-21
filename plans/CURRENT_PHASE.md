@@ -18,11 +18,16 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Build the reference prototype in vertical slices.**
+**Roadmap Stage 4 — Pre-implementation assurance gate before Slice 1 dispatch.**
 
-Active implementation packet:
+Prepared implementation packet — dispatch blocked:
 
 - `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+
+Active pre-implementation research gate:
+
+- `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
+- `research/technical/TRES-0010/README.md`
 
 Slice 1 objective:
 
@@ -45,7 +50,7 @@ Required C# engineering context:
 
 - `architecture/working/CSHARP_DOTNET_ENGINEERING_GUARDRAILS.md`
 
-Triggered implementation scaffolding:
+Armed implementation scaffolding for first code dispatch:
 
 - SCF-001 root verification sensors;
 - SCF-002 protected acceptance verification;
@@ -63,10 +68,11 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Execute IMP-0001 on an isolated implementation workspace/branch.
-2. Establish canonical root build/test/analyzer commands and CI as part of the slice.
-3. Implement the protected canonical acceptance surface for in-scope scenario IDs.
-4. Require the IMP-0001 completion report and verification evidence.
-5. Reconcile any implementation discovery before authorizing Slice 2.
+1. Dispatch TRES-0010 Wave-A adversarial review tasks.
+2. Reconcile/deduplicate Wave-A findings.
+3. Commission Wave-B prosecution/defense/experiment tasks only for serious unresolved findings.
+4. Repair/escalate any real pre-code blocker and update IMP-0001 if needed.
+5. Record the TRES-0010 dispatch/no-dispatch conclusion.
+6. Only then dispatch IMP-0001 and fire the first-code scaffolding requirements.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
