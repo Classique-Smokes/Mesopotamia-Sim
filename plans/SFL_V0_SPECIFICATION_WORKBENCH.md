@@ -172,6 +172,7 @@ The world must be rich enough for different proxies to disagree: co-residence al
 - own state, direct-party relations, and participated events are automatically known; other observation requires explicit witness/affected-observer rules;
 - `CommunicateClaim/Inform` transmits only propositions the sender currently holds, with source/event provenance; no lying, trust score, rumor mutation, or reputation in v0;
 - stale information persists; underlying event/observation time outranks message arrival time; unresolved incompatible evidence becomes Contested;
+- direct participants learn failed-attempt outcomes and bounded causal reasons (Declined / Unable / InvalidatedAtResolution), without resolver omniscience leaking unrelated private state;
 - engine-side household existence never grants universal actor recognition;
 - household-specific candidate actions require the actor to recognize the household and, where relevant, its representative/scope;
 - household-mediated marriage therefore depends on the groom's subjective recognition of the applicable household/representative route;
@@ -229,6 +230,8 @@ The world must be rich enough for different proxies to disagree: co-residence al
 ---
 
 ## Pass F — Temporal execution, processes, history, and continuation
+
+**Status:** ACTIVE. Narrow adversarial review: `research/technical/TRES-0003/PASS_F_TEMPORAL_RESOLUTION_ADVERSARIAL_REVIEW.md`.
 
 **Question:** What temporal/causal semantics are required for the social rules above to be exact and reproducible?
 
