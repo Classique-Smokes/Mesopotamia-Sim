@@ -26,6 +26,7 @@ Later higher-order collectives may also become persistent causal actors, but mus
 - Foundational design must preserve distinguishable relationships/claims and the histories that create, change, transmit, contest, fulfill, or terminate them.
 - Resource/place identity must be separable from claims, use, occupation, or benefit.
 - Household continuity must be capable of surviving turnover in particular people, assets, places, or relations.
+- **Social position is multidimensional:** no single scalar status hierarchy may silently substitute for distinguishable kinship, dependency, labor/service, property/claim, institutional affiliation, residence, or comparable typed relations.
 - Causal observability and historical legibility are architectural concerns, not presentation-only features.
 
 ## Not decided
