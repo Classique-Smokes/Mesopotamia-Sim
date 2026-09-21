@@ -1,7 +1,7 @@
 # C# / .NET Engineering Guardrails
 
-**Status:** WORKING CONTEXT NOTE  
-**Applies if:** C# / .NET is accepted as the host runtime.
+**Status:** ACTIVE ENGINEERING CONTEXT NOTE  
+**Applies to:** C# 14 / .NET 10 LTS host implementation.
 
 Keep these risks visible during implementation:
 
