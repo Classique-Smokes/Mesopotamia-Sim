@@ -268,4 +268,110 @@
       [
         "Ištar-rabiat — BE 8",
         "Enslaved before release; manumission recorded",
-        "No family of her own identified
+        "No family of her own identified",
+        "Before/after residence unknown",
+        "No continuing service clause identified in this text",
+        "Ten-shekel payment; its funding unknown",
+        "Status change explicit; spatial movement unknown",
+        "This payment evidenced; general property rights not established",
+        "E-C05; attributed Nippur, not secure house context"
+      ],
+      [
+        "Igi-šag — BE 43",
+        "Recipient of office/property rights; not thereby an enslaved or salaried worker",
+        "Son of Ina-Ekur-rabi; Sin-išmeanni identified as paternal uncle",
+        "House share mentioned; actual residence not established",
+        "Annual six-month office share; personal performance unknown",
+        "Office-associated livelihood land and other property",
+        "Rights allocated; no personal relocation recorded",
+        "Recipient in an estate division",
+        "E-C06; P1909 pp. 22–23"
+      ],
+      [
+        "Damu-idinnam — BE 29",
+        "Lessee; broader personal status unstated",
+        "No relevant kin connection established",
+        "Unknown",
+        "Field cultivation under a one-third-return lease",
+        "Land access and annual rent",
+        "Contractual access to land; mobility unknown",
+        "Party to this lease",
+        "E-C07; P1909 pp. 43–44"
+      ],
+      [
+        "Unnamed learner — CBS 14156",
+        "No legal status established",
+        "Unknown",
+        "Unknown",
+        "Instructional copying",
+        "Unknown",
+        "Unknown",
+        "Unknown",
+        "E-C09; T1998 p. 45 fig. 9"
+      ],
+      [
+        "Model-contract person — TMH 11 1",
+        "Didactic role, not an identified historical individual",
+        "Only as scripted in the model",
+        "Not historical residence evidence",
+        "Pedagogical scenario",
+        "Not an observed livelihood",
+        "Not an observed status transition",
+        "Not evidence of an actual act",
+        "E-C10; SP2021; primary edition not consulted"
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "key": "P1909",
+      "short": "Poebel 1909",
+      "full": "Poebel, Arno. 1909. Babylonian Legal and Business Documents from the Time of the First Dynasty of Babylon, Chiefly from Nippur. The Babylonian Expedition of the University of Pennsylvania, Series A: Cuneiform Texts 6/2. Philadelphia: University of Pennsylvania, Department of Archaeology.",
+      "type": "Primary-text edition and historical commentary; public domain",
+      "scope": "Chiefly Nippur, with explicitly non-Nippur material. Sumerian legal texts are the main evidentiary base here.",
+      "id": "BE 6/2; individual text and museum numbers in the evidence notes",
+      "url": "https://etana.org/sites/default/files/coretexts/14861.pdf",
+      "direct": "YES, selectively: published transliterations, translations, relevant commentary, and catalogue pages; not a new tablet collation.",
+      "notes": "Main passages: pp. 20–23, 27–39, 43–44; dates and museum concordances pp. 145–152. Distinguish the ancient clauses from the editor’s broader conclusions."
+    },
+    {
+      "key": "SZ1976",
+      "short": "Stone and Zimansky 1976",
+      "full": "Stone, Elizabeth C., and Paul E. Zimansky. 1976. Old Babylonian Contracts from Nippur: Selected Texts from the University Museum, University of Pennsylvania. Oriental Institute Microfiche Archives 1. Chicago: University of Chicago Press.",
+      "type": "Object catalogue with photographs",
+      "scope": "Nippur contract collection",
+      "id": "OIMA 1; DOI 10.83354/dqrs-h420",
+      "url": "https://isac.uchicago.edu/publications/old-babylonian-contracts-nippur-selected-texts-university-museum-university",
+      "direct": "YES: catalogue and selected photographic material, not an independent reading of every tablet.",
+      "notes": "Nos. 19, 24, 32, 44 relevant. This is not a full translation edition."
+    },
+    {
+      "key": "AMAS2026",
+      "short": "Al-Mutawalli and Sallaberger 2026",
+      "full": "Al-Mutawalli, Nawala, and Walther Sallaberger. 2026. “Umma Tablets from Archaeological Contexts: The City Centre in the Old Babylonian Period after the Iraqi Excavations of 1999–2002.” In Cuneiform Artefacts from Archaeological Contexts: New Research on Ancient Iraq, edited by Walther Sallaberger and Anna Krisztina Pintér, 113–134. Cuneiform Artefacts from Iraq 2. Wiesbaden: Harrassowitz.",
+      "type": "Original provenance research, author-hosted open-access chapter",
+      "scope": "Umma archaeological history; specific reassessment of BE 6/2 8 and 32 as Nippur documents",
+      "id": "DOI 10.13173/9783447125871.113; p. 116 nn. 7–8",
+      "url": "https://www.assyriologie.uni-muenchen.de/personen/professoren/sallaberger/publ_sallaberger/mutawalli_wasa_2026_cai_2_umma.pdf",
+      "direct": "YES, relevant provenance discussion, including visual check of p. 116.",
+      "notes": "Published 2026. Nippur attribution is argued from internal evidence; it is not a recovered house/locus assignment."
+    },
+    {
+      "key": "CDLI8",
+      "short": "CDLI P264577",
+      "full": "Cuneiform Digital Library Initiative. “BE 06/2, 008 (P264577).” Artifact entry, revised 13 August 2026; accessed 19 September 2026.",
+      "type": "Current scholarly catalogue metadata",
+      "scope": "CBS 9183; Rim-Sin 51/V; provenance note",
+      "id": "P264577; CBS 09183",
+      "url": "https://cdli.earth/artifacts/264577",
+      "direct": "YES: metadata, bibliography, and provenance explanation.",
+      "notes": "No new textual translation in this record was used. The generic heading “excavated in Nippur” is less qualified than the detailed provenance note."
+    },
+    {
+      "key": "CDLI48",
+      "short": "CDLI P283604",
+      "full": "Cuneiform Digital Library Initiative. “BE 06/2, 048 (P283604).” Artifact entry, accessed 19 September 2026.",
+      "type": "Scholarly object catalogue and edition concordance",
+      "scope": "Istanbul Ni 1919; Nippur; Samsu-iluna 18/IV/1",
+      "id": "P283604; BE 6/2 48; MC 3 16",
+   
