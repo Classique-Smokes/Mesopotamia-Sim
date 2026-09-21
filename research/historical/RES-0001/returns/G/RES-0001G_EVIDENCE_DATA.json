@@ -119,4 +119,116 @@
       "id": "G-I05",
       "person": "Mar-erṣetim (S01: Mar-irpitim) and Mutum-ilum; two branches of the Iškur-rabi/Ududu family",
       "institution": "Ninlil office and šuku field; Hammurabi, royal messenger, Nippur puhrum",
-      "relationship": "Dispute, referral, loc
+      "relationship": "Dispute, referral, local adjudication and property settlement",
+      "resource": "Earlier office/field transaction; eventual house/plot compensation",
+      "obligation": "Acceptance of settlement and renunciation of future claims",
+      "transfer": "Intergenerational claim; settlement transfers property between named family branches",
+      "evidence": "BE 6/2 10, especially lines 1–36; S01 pp. 46–48; P259799 concordance S12",
+      "confidence": "MODERATE for this documented legal route",
+      "date": "Hammurabi reign; exact regnal year not verified",
+      "context": "Nippur-linked lawsuit; no house archaeology securely attached",
+      "household": "Brothers, fathers and paternal uncle are expressly identified",
+      "overlap": "YES: temple rights, family claims, king, local council and house property intersect",
+      "access": "Primary transliteration/translation; CDLI identifier only indirectly checked",
+      "language": "Sumerian legal record with Akkadian terminology/personal names",
+      "source_ids": [
+        "S01",
+        "S12"
+      ],
+      "claim_ids": [
+        "G-C03",
+        "G-C08",
+        "G-C16"
+      ]
+    },
+    {
+      "id": "G-I06",
+      "person": "Sin-abušu, son of Nannar-luti → Nannartum, nu-eš → Aba-Enlil-dim",
+      "institution": "gala/kalû office; clerical witnesses as interpreted by the editor",
+      "relationship": "Transfer and subsequent receipt of office/inheritance deeds",
+      "resource": "Deeds concerning office and inheritance; payment or realized yield not specified",
+      "obligation": "Aba-Enlil-dim assumes responsibility for future claims against the deeds",
+      "transfer": "Two years after initial entrusting, and after Sin-abušu’s death; recipient’s kinship unstated",
+      "evidence": "BE 6/2 42; S01 pp. 45–46 and catalogue p. 150; Philadelphia CBM 6055 (as printed)",
+      "confidence": "MODERATE; corporate-temple disposition is an interpretation",
+      "date": "Samsuiluna 13/12; day unspecified (catalogue page image checked)",
+      "context": "Nippur; witness/seal interpretation mediated by S01",
+      "household": "Death and prior owner explicit; no warranted father–son link to recipient",
+      "overlap": "YES: succession, documentary custody and clerical participation meet",
+      "access": "Primary translation/transliteration; seal identities reported, not visually checked",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C09",
+        "G-C10",
+        "G-C16"
+      ]
+    },
+    {
+      "id": "G-I07",
+      "person": "Lamazum, daughter of Enlil-mansi ↔ Beltani, daughter of Enlil-galzu",
+      "institution": "Both designated SAL-ISḪIB of Ninurta in S01",
+      "relationship": "Land reacquisition by an institutionally titled woman",
+      "resource": "Field characterized as paternal-house property; 7 shekels silver",
+      "obligation": "Seller/heirs’ future-claim renunciation; cultic service not described",
+      "transfer": "Prior alienation followed by Lamazum’s recovery; title does not prove temple ownership of the field",
+      "evidence": "BE 6/2 45; S01 pp. 11–12 and catalogue p. 150; Istanbul 2001",
+      "confidence": "MODERATE",
+      "date": "Samsuiluna 14/12; day unspecified (catalogue page image checked)",
+      "context": "Nippur publication provenance; field setting, not excavated household",
+      "household": "Named father and explicit paternal-house claim; no relationship inferred between sellers",
+      "overlap": "YES: women’s religious titles accompany transactions in family land",
+      "access": "Primary transliteration/translation read; precise title translation left open",
+      "language": "Sumerian legal formulary; personal names retained close to S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C05",
+        "G-C07"
+      ]
+    },
+    {
+      "id": "G-I08",
+      "person": "Tab-balatu and Beltia adopt Habil-ahi; Ninurta-gamil is named elder brother; Ablum is a gala-priest",
+      "institution": "Office-linked rights and a sonship document associated with Ablum",
+      "relationship": "Adoption with differentiated property claims",
+      "resource": "Adoptive estate and separately protected office/field/house/garden assets",
+      "obligation": "Mutual adoption conditions; older brother barred from specified claims; no cultic performance clause established",
+      "transfer": "Contract creates kinship while shielding specified existing rights from the new sibling’s claim",
+      "evidence": "BE 6/2 57; S01 pp. 30–31 and catalogue p. 152; Istanbul 1995; later re-edition lead S09 p. 47 via S10",
+      "confidence": "MODERATE",
+      "date": "Samsuiluna 22/6/16 (catalogue page image checked)",
+      "context": "Nippur adoption document; no co-residential reconstruction",
+      "household": "Adoptive parents and brother expressly named; relationship to Ablum requires fuller modern checking",
+      "overlap": "YES: family affiliation changes without automatic merger of all office-linked assets",
+      "access": "Primary transliteration/translation; later edition not consulted directly",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01",
+        "S09",
+        "S10"
+      ],
+      "claim_ids": [
+        "G-C03",
+        "G-C06"
+      ]
+    },
+    {
+      "id": "G-I09",
+      "person": "Damu-iddinam ← Ubayatum",
+      "institution": "gudu4 office; temple name broken",
+      "relationship": "Sale",
+      "resource": "10-day term; 9 shekels silver",
+      "obligation": "Details unavailable",
+      "transfer": "Purchase; no kinship established",
+      "evidence": "OBCN I 19; N1118; S02 p. 3",
+      "confidence": "MODERATE",
+      "date": "Samsuiluna 11/12",
+      "context": "Nippur catalogue; locus unavailable",
+      "household": "Not established",
+      "overlap": "YES: purchasable temple-linked term",
+      "access": "Catalogue only",
+      "language": "Not independently
