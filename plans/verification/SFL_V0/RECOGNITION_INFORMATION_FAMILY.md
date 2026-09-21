@@ -49,7 +49,9 @@ G2 does not.
 
 ### Pinned decision profile
 
-Activate the marriage concern and hold all non-recognition scoring inputs equal. The profile must make the mediated-marriage candidate worth generating/evaluating if its subjective gates are satisfied.
+Use `SCORE-VP-001` from `REFERENCE_SCORING_PROFILES.md`.
+
+Bind `TargetBride = B`. Hold all non-recognition objective/subjective inputs equal between G1 and G2. The profile gives the mediated marriage candidate FinalScore 100 **only if production candidate generation/gates expose it**; the fixture does not inject the candidate or score.
 
 ### Assertions
 
