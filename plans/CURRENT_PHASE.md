@@ -17,6 +17,8 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - Complete canonical verification package: `plans/verification/SFL_V0/`.
 - TRES-0010 Wave A / Wave B / B2 research and adjudication completed.
 - Director-approved TRES-0010 B2 Slice-1 semantic repairs promoted losslessly into `SPEC-SFL-0001`, assumptions, and canonical verification; promotion audit passed 30/30 checks.
+- CallFavor Slice-1 action applicability mechanically derived and closed: current callable payloads are `Farm` and `RepayDebt`; no new semantic decision required.
+- Slice-1 acceptance manifest candidate authored and repository-audited: 158 unique AcceptanceIds; 120 REQUIRED / 32 DEFERRED / 3 N-A / 3 UNEXERCISED; no duplicate IDs.
 
 ## Active
 
@@ -73,8 +75,8 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Mechanically enumerate current Slice-1 action shapes against the approved response-closed CallFavor predicate.
-2. Author, freeze, and independently review the minimal `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md`.
+1. Run the fresh independent pre-code review of the committed Slice-1 acceptance manifest candidate from the frozen manifest-review baseline.
+2. If review blocks, repair only demonstrated manifest defects and rerun review; if it passes, freeze manifest metadata/version as Slice-1 acceptance authority.
 3. Amend IMP-0001 authority taxonomy, applicability/completion evidence, and local C# guardrails against the frozen manifest.
 4. Carry confirmed later-slice semantic/verification gaps into an explicit deferred ledger.
 5. Run one final TRES-0010 closure audit.
