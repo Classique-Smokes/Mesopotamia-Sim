@@ -17,10 +17,16 @@ Adversarial verification input:
 - `research/technical/TRES-0005/STAGE3_GUARDRAIL_SCENARIO_ADVERSARIAL_REVIEW.md`
 - `research/technical/TRES-0006/CONTINUITY_LIFECYCLE_SCENARIO_ADVERSARIAL_REVIEW.md`
 - `research/technical/TRES-0007/LINEAGE_WARRANT_ADVERSARIAL_REVIEW.md`
+- `research/technical/TRES-0008/STAGE3_FINAL_VERIFICATION_PACKAGE_ADVERSARIAL_REVIEW.md`
 
 Resolved semantic errata record:
 
 - `specifications/working/SPEC-SFL-0001_STAGE3_ERRATA.md`
+
+Open semantic errata:
+
+- `specifications/working/SFL_V0_STAGE3_RESPONSE_POLICY_ERRATUM.md`
+- `specifications/working/SFL_V0_STAGE3_COMMITMENT_BREACH_ERRATUM.md`
 
 Resolved semantic errata records:
 
@@ -42,6 +48,7 @@ Resolved semantic errata records:
 - `plans/verification/SFL_V0/DETERMINISM_RECOVERY_EXPLAINABILITY_FAMILY.md`
 - `plans/verification/SFL_V0/CROSS_CUTTING_VERIFICATION_CONTRACT.md`
 - `plans/verification/SFL_V0/REFERENCE_SCORING_PROFILES.md`
+- `plans/verification/SFL_V0/LOWER_LEVEL_SOCIAL_FABRIC_FAMILY.md`
 
 ## Required outputs
 
