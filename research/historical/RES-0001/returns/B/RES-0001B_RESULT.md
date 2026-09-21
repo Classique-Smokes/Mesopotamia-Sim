@@ -209,4 +209,87 @@ This is the required analytical matrix. “Direct evidence” identifies the evi
 | M11 | Co-residence and access to a dwelling | D11 identifies a resident; D19 records temporary rental access. | Ownership, financing and permission to use a house are separable. | No complete occupant list; contributors and witnesses are not all residents. | MODERATE | B-C16/C18 |
 | M12 | Relocation and cross-town ties | D12 names house property at Iahalpilum in a Nippur assemblage. | An individual’s resource associations may extend beyond one locality. | Ownership at another place is not proof of migration or ethnicity. | MODERATE for asset association; movement unresolved | B-C17 |
 | M13 | Non-kin affiliation | D11/D19/D20 provide resident, rental and dependency-related entry points. | Some relevant ties need not be defined by descent in the document. | Unstated kinship is not demonstrated non-kinship; non-kin co-residence prevalence remains unknown. | UNRESOLVED for a secure non-kin resident classification | B-C16/C18/C19 |
-| M14 | Manumission and changing status | D20 is catalogued as a release from slavery. | Legal dependency changes; other relationships require
+| M14 | Manumission and changing status | D20 is catalogued as a release from slavery. | Legal dependency changes; other relationships require separate evidence. | No automatic residential exit, severed employment or emancipation of an entire family inferred. | MODERATE | B-C19 |
+| M15 | Death, disappearance and final household exit | Maintenance and estate clauses anticipate changes over a life course; no complete death-to-relocation sequence audited. | Death may require redistribution or new provision, but each link needs evidence. | Last mention is not death; lost archives are not departed people. | UNRESOLVED for a general transition sequence | B-C05/C09/C13; §5 methodology |
+| M16 | Religious and civic affiliation | D05 combines kin and religious labels and a female witness; D03 is discussed in a ward context. | Institutional relationships may coexist with family ones. | A title or ward does not itself specify a separate household, cloister or reproductive rule. | HIGH for D05 labels; wider interpretation limited | B-C09/C10/C20; S07; S13 |
+
+## 5. Disagreement, ambiguity, and source limitations
+
+### 5.1 Disagreements that affect the historical proposition
+
+**Marital stage and payment category.** The interpretation of BE 6/2 40/47/58 is not harmonized here. A supplementary transfer can be read as a brideprice-related payment or an enlarged dowry, and the final settlement has been located at different marital stages. The competing interpretation associated with Westbrook is preserved even though the book was reached only through other scholars. It would be misleading either to suppress it or to claim that both original arguments were fully re-evaluated. [S05, manuscript pp. 13–14; S06, p. 144 §14; S12.]
+
+**Grammatical agent and sanctions.** Poebel’s explicit emendatory explanation in BE 6/2 40 is not treated as a transparent translation of the ancient scribe’s intention. For BE 6/2 48, the sale sanction is retained while the precise preceding bodily act is left unsettled. Neither disputed language nor conditional sanction is converted into a general rule or observed punishment. [S01, pp. 35–38.]
+
+**Bēltani’s field restriction.** The digital rendering of PBS 8/2 116 uses “his field,” while Stone discusses uncertainty about the referent and the relationship between the restricted asset and support security. The support duty does not depend on resolving every property detail; a claim about exactly whose land was inalienable does. The report therefore retains the former and does not canonize the latter. Stone’s description of the agreement as sworn was also not reproduced as a directly verified feature: a witness list and seal clause were found, but no explicit oath clause was identified in the displayed edition. [S04, p. 59; S13, tablet obv. 10–13, rev. 1–7; case rev. 5.]
+
+**Genealogies and chronologies.** The Ur-Pabilsaĝa network is a scholarly reconstruction using documents in a proposed order. Van Wyk expressly discusses alternative ordering; this report consulted the family outline and figure, not every primary text or all chronological arguments. The diagram can guide testing of connections but is not a directly preserved ancient family tree. Stone’s close-kin marriage hypothesis also rests on too few securely reconstructed cases to support a population norm. [S02, pp. 15–19; S14, pp. 1–4, fig. 1.]
+
+### 5.2 Concrete checks that prevented false precision
+
+| Issue | What remains uncertain | Treatment in this return |
+|---|---|---|
+| BE 6/2 40 date | OIMA catalogue gives day 26; the older OCR catalogue gives day 28. | Retain Samsu-iluna 13/1 and flag the day; no silent correction. [S01/S03] |
+| BE 6/2 48 number and date | Older heading/OCR can confuse text numbers; exact date not independently verified. | Use the body headed 48 and CDLI P283604/MC 3 16 concordance; do not invent a date. [S01/S11] |
+| SAOC 44 1 equivalence | Widow discussion uses the later MC numbering. | Verify MC 3 14 = SAOC 44 1; keep widow interpretation mediated. [S02/S06/S11] |
+| SAOC 44 25 contributors | Narrative and catalogue report different counts. | Say several contributors; do not resolve eight versus nine without the text. [S02, pp. 63, 217] |
+| SAOC 44 34 | Betrothal stage and father identification qualified. | Do not impose a universal ritual or mandatory consent rule. [S02/S05] |
+| SAOC 44 40 | “Boy” and the name Ipquga are not equally secure across catalogue and index. | Retain both question marks; do not infer appointed guardianship. [S02] |
+| Houses I/H | A clear legal share purchase does not settle every architectural assignment. | State buyer/seller direction from the catalogue; attribute the house reconstruction. [S02] |
+| OIMA 1 13 material | Some joins/duplicates are qualified in the catalogue. | Keep out of independent-attestation counts. [S03] |
+| Repository metadata | One web page title names the 1976 contracts publication but the body is the 1987 book. | Cite the work actually read; retain both access route and mismatch in the ledger. [S02] |
+
+### 5.3 Limits that more interpretation alone cannot remove
+
+**No new collation.** Correct identification of a publication is not equivalent to inspection of the clay or a current philological edition. Exact readings, damaged passages and older normalization require specialist rechecking. The report uses conservative personal-name forms and preserves consequential question marks.
+
+**No exhaustive or representative corpus.** There was no systematic retrieval of every Nippur marriage, rental, adoption, birth-related or maintenance document. This return is a case-based research synthesis with a recoverable inventory. Assertions about normality, frequency or demographic proportions would require a defined sampling frame and a wider corpus than this one.
+
+**No complete domestic archaeology audit.** Architectural connections were read in the scholarly discussion and catalogue. Plans, room functions and artifact distributions were not independently reassessed. Some find contexts involve foundations or material whose preservation history is not simply “the residents left their papers here.” [S02, especially Appendix IV; B-C23.]
+
+**No secure inference from silence alone.** A person’s omission from a contract can reflect irrelevance to that act; first appearance may reflect the first preserved transaction; last appearance may reflect documentary loss. These alternatives are not claims that loss definitely caused any particular absence. They identify why birth, entry, death or departure cannot be inferred without additional evidence.
+
+**Uneven relationships and time slices.** The report has much stronger case evidence for formally recorded marriage/maintenance/property ties than for infant care, guardianship, residential non-kin, widowers or the later part of the commissioned period. Negative findings are therefore expressed as “not established in the examined corpus,” not “unknown to Nippur” or “did not exist.”
+
+## 6. Comparative evidence outside Old Babylonian Nippur
+
+| Comparator | Place and date | What was actually consulted | Use here | Why it is not direct Nippur evidence |
+|---|---|---|---|---|
+| Cotsen 52175 / Education 78 | Unknown excavated provenience; Old Babylonian; oath suggests Larsa or its realm. | Spada’s edition and source-critical discussion, S08. | Shows why a foundling-adoption narrative on a school tablet must be labeled didactic. | Market origin, uncertain locality and model-contract genre; not an observed Nippur adoption. |
+| BM 80989 | Sippar; Samsu-ditana 4/9/1. | Selected edition/discussion in Richardson, S07. | Helps distinguish affinal terminology, service arrangements and a scholar’s widowhood inference. | Different city and documentary setting; cannot supply missing Nippur household rules. |
+| Broader marriage-law comparisons | Several Old Babylonian cities, dates varying by document. | Selected discussions in S05–S07/S10; S12 indirect only. | Identifies interpretive alternatives and warns against treating one formula as universal. | Legal rules, payment practices and statuses require local and chronological testing. |
+
+No comparative example is counted as an independent Nippur event in §3. In particular, a didactic adoption text has not been used to manufacture evidence of infant abandonment in the Nippur case sample. A model text can illuminate a scribal conception of a legal act without recording that the act occurred. [S08, §§1–2; S10, pp. 93–95.]
+
+The more directly relevant Nippur school-text lead is **CBS 11324**, published by Klein and Sharlach. Its edition was identified but not read in this research. Even once consulted, it would require the same genre separation; the word “Nippur” would settle neither historicity nor representativeness. [S20.]
+
+## 7. Unresolved questions / recommended follow-up research
+
+1. What do the current editions and, where necessary, tablet images of BE 6/2 40, 47 and 58 establish about their precise dates, personal identifications, payment terminology and marital sequence?
+2. Does the modern edition of BE 6/2 48 resolve the disputed sanction wording, date and circumstances of the constituted mother–sons relationship without assuming the sons’ ages or the earlier wife’s death?
+3. Which explicit phrases in MC 3 14 establish widowhood, and how do its seals, witnesses and prior-child relationships qualify the excavation catalogue of SAOC 44 1?
+4. What exactly is the legal issue in SAOC 44 40, and does a fresh reading support “boy,” an identifiable guardian, a kin relationship or a particular form of provision?
+5. What do the primary editions of ARN 29 and 101 add about dates, providers, representatives and outcomes, and which identifications with related documents are secure?
+6. How should the field restriction in PBS 8/2 116 be translated and related to its support obligation, and does a later text demonstrate performance or default?
+7. Which revisions, joins and chronological corrections in TMH 10 affect the Ur-Pabilsaĝa reconstruction and the sequence of marriages, adoptions and property dealings?
+8. Can archaeological records and document chains independently connect the SAOC 44 44/46/47 ownership changes to dated changes of residence, rather than merely changes of title?
+9. What does the full text of SAOC 44 25 show about its contributor count, Asirum’s status, the contributors’ relationships and the purpose of their grain payments?
+10. Which Nippur records explicitly identify unrelated co-residents, household workers, foster children or other affiliated persons, rather than merely omitting kinship labels?
+11. Which securely dated Nippur sources reveal widowerhood, caregiving, legal minority or life-stage transitions, and how do they differ from the eighteenth-century cases emphasized here?
+12. What corpus and source-preservation controls would be needed before estimating household size, marriage age, endogamy frequency or the prevalence of particular post-marital residence arrangements?
+
+## 8. Register-ready candidate claims
+
+These are candidates for review, not canonical register entries. They carry local claim references and do not receive canonical register numbers. Confidence attaches to the exact proposition, not to an expanded claim about all Nippur households.
+
+### Candidate 1 — Marriage contribution and differentiated consequences
+
+**Local references:** B-C01–B-C02  
+**Claim / proposition:** BE 6/2 40 records a woman’s nineteen-shekel marriage contribution and different treatment of that contribution under husband- versus wife-initiated repudiation.  
+**Period:** Samsu-iluna 13; c. 1737 BCE; exact day unresolved.  
+**Geography / archive / social context:** Nippur-attributed Ama-sukkal/Enlil-issu dossier; precise locus not established.  
+**Evidence type:** Primary  
+**Primary evidence:** D01; S01 p. 35, clauses A–C; case concordance S03 p. 3.  
+**Secondary scholarship:** S05; later dossier interpretation remains debated.  
+**Interpretation(s):** A contribution and conditional financial consequences are documented.  
+**Uncertainty / disagreement:** Neither divorce occurrence nor equal economic consequences follo
