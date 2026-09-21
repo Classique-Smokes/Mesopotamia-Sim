@@ -186,61 +186,23 @@ The world must be rich enough for different proxies to disagree: co-residence al
 
 ## Pass D — Household formation, persistent identity, and continuity
 
-**Question:** When does lower-level organization become a persistent household identity, and what lets that identity survive change?
+**Status:** WORKING-CONVERGED.
 
-### Must answer — formation
+**v0 result:**
 
-D1. What lower-level configuration creates a **candidate organization**?
+- Non-authoritative `CandidateOrganization` may collect evidence but has no causal powers.
+- Formation requires a connected founding core with shared residence, kinship/marriage/mutual-strong-like durable tie, two qualifying support events on separate cycles, and recognition by every required founder.
+- Formation creates one persistent household identity plus a provenance-bearing `FormationWarrant`; no universal `Members` set.
+- Current household association is `SustainingParticipant`.
+- Continuity requires explicit historical transmission through at least one sustaining participant plus recognition of the successor configuration as the same household; similarity alone never preserves identity.
+- Lifecycle: Active / Inactive / Dissolved. Inactive may reactivate through continuity; Dissolved cannot.
+- Controlled division: both branches may be descendants, but only one retains the old identity through an explicit continuity warrant; v0 uses representative-role continuity + sustaining-participant transmission.
+- Controlled consolidation: two active households form a new identity with `DerivedFrom(H1,H2)`.
+- Founders directly recognize the formed household; outsiders do not.
+- Preserve organization-start time separately from household-recognition/formation time.
+- Division/descendant behavior is a scenario-only v0 proof and must be revisited when mortality/lifecycle systems are introduced.
 
-D2. What distinguishes recurring organization from incidental co-presence or a temporary work group?
-
-D3. What role does actor recognition play in formation?
-
-D4. When is the persistent household identity record committed?
-
-D5. What evidence/provenance is retained explaining why formation occurred?
-
-D6. Is the household boundary a single membership set, multiple typed associations, or no universal membership field at all?
-
-### Must answer — continuity
-
-D7. What single continuity mechanism will v0 demonstrate?
-
-The full project may later support multiple continuity anchors; v0 should select only what it needs.
-
-D8. What explicit chain/warrant connects pre-change and post-change organization so continuity is historical rather than similarity-based?
-
-D9. Which changes are allowed while keeping identity:
-- one participant departure/replacement;
-- representative succession;
-- residence/resource change?
-
-D10. What change removes enough sustaining basis that the household becomes inactive/dissolved rather than drifting indefinitely?
-
-D11. What historical identity remains queryable after inactivity/dissolution?
-
-### Basic lifecycle transitions in v0
-
-v0 includes **one deliberately simple controlled division case** and **one deliberately simple controlled consolidation case** to prove that identity and lineage are not the same thing.
-
-### Explicitly defer beyond those controlled cases
-
-- general fission rules;
-- general consolidation/absorption rules;
-- reconsolidation;
-- contested simultaneous continuity claims;
-- multiple descendants/lineages;
-- household-specific heterogeneous continuity-anchor families.
-
-### Required negative controls
-
-- same members / similar snapshot but no transmitted organizing history → **not automatically same identity**;
-- turnover with an explicit continuity bridge → identity can persist;
-- property or residence partition alone → does not automatically force fission.
-
-### Deliverable
-
-**v0 Household Formation & Continuity Model**.
+**Dependencies:** representative-role chain -> E; exact event/witness ordering -> F.
 
 ---
 
