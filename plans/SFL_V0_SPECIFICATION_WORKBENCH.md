@@ -231,41 +231,22 @@ The world must be rich enough for different proxies to disagree: co-residence al
 
 ## Pass F — Temporal execution, processes, history, and continuation
 
-**Status:** ACTIVE. Narrow adversarial review: `research/technical/TRES-0003/PASS_F_TEMPORAL_RESOLUTION_ADVERSARIAL_REVIEW.md`.
+**Status:** WORKING-CONVERGED after `research/technical/TRES-0003/PASS_F_TEMPORAL_RESOLUTION_ADVERSARIAL_REVIEW.md`.
 
-**Question:** What temporal/causal semantics are required for the social rules above to be exact and reproducible?
+**v0 result:**
 
-### Must answer
-
-F1. Which v0 transitions are immediate and which require persistent process state?
-
-F2. Which conditions must be revalidated when delayed work becomes eligible?
-
-F3. Which same-time conflicts can actually occur in v0, and what domain rule resolves each rather than relying on container/insertion order?
-
-F4. What world state is visible to actors during proposal generation?
-
-F5. What information becomes subjectively known only after a committed event?
-
-F6. What semantic history record is required for each consequential commit?
-At minimum consider:
-- cause/trigger;
-- proposal/process reference;
-- affected entities/relations;
-- rule/resolution;
-- predecessor/successor references where relevant.
-
-F7. Which causal questions must be answerable from the history for the required verification scenarios?
-
-F8. What future-influencing state must a continuation checkpoint contain?
-
-F9. What derived indexes/caches can be rebuilt and therefore excluded from authority?
-
-F10. Do v0 scenarios require randomness? If yes, what is the reproducibility contract; if no, keep the boundary but do not add random behavior just to exercise it.
-
-### Deliverable
-
-**v0 Temporal / Causal / Continuation Contract**.
+- integer `Cycle` plus same-cycle `ReactionIndex`; common post-maintenance decision snapshot;
+- personal and household contexts deliberate from same snapshot; no same-cycle voluntary reactivation;
+- proposal response -> priority/conflict resolution -> commit-time revalidation -> commit/failure -> automatic reaction closure;
+- failure outcomes: Declined / Unable(reason) / InvalidatedAtResolution(reason); participants learn bounded reasons; feasibility failure is not social refusal;
+- consumption every cycle; attitude decay every 5 cycles; provision reconsideration cooldown 3 full cycles plus relevant context change;
+- only commitments that explicitly authorize/reserve current material capacity gain commitment priority; household NeedsGrain support outranks dowry, which outranks ordinary voluntary personal transfer for competing provision capacity;
+- equal-priority unresolved symmetry uses disclosed stable-ID technical fallback and is permutation-tested in G;
+- automatic reactions are cause-keyed/idempotent;
+- full v0 candidate/gate/score traces retained for diagnostics;
+- unrecoverable universal grain shortage is explicit `MaterialDeadlock`;
+- checkpoints only at stable cycle boundaries and include all future-influencing authoritative state; rebuildable derived indexes excluded;
+- exact restore must reproduce subsequent semantic state/history suffix.
 
 ---
 
