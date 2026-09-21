@@ -158,6 +158,76 @@ The magnitudes 20/40 are verification configuration only. This profile affects p
 
 ---
 
+## Response verification profiles
+
+These profiles exercise the accepted `ResponseDecisionContext`. They are deterministic laboratory configuration, not universal social preferences.
+
+### SCORE-RP-001 — Feasible accept preference
+
+**Context:** ResponseDecisionContext  
+**Valid for:** proposal types whose feasible voluntary response set is `Accept | Decline`.
+
+- `ResponsePreference`:
+  - Accept = +100;
+  - Decline = 0.
+- all other components = 0.
+
+Purpose: verify that a feasible response is actually chosen by the production response scorer rather than scripted by the fixture.
+
+---
+
+### SCORE-RP-002 — Feasible decline preference
+
+**Context:** ResponseDecisionContext  
+**Valid for:** proposal types whose feasible voluntary response set is `Accept | Decline`.
+
+- `ResponsePreference`:
+  - Accept = 0;
+  - Decline = +100.
+- all other components = 0.
+
+Purpose: produce a genuine voluntary `Declined` outcome through the reference response scorer.
+
+---
+
+### SCORE-RP-003 — Called-favour fulfil preference
+
+**Context:** ResponseDecisionContext  
+**Valid for:** feasible called-favour response.
+
+- `ObligationResponse`:
+  - FulfilCalledFavor = +100;
+  - RefuseCalledFavor = 0.
+- all other components = 0.
+
+---
+
+### SCORE-RP-004 — Called-favour refusal preference
+
+**Context:** ResponseDecisionContext  
+**Valid for:** feasible called-favour response.
+
+- `ObligationResponse`:
+  - FulfilCalledFavor = 0;
+  - RefuseCalledFavor = +100.
+- all other components = 0.
+
+---
+
+### SCORE-RP-005 — Role-scoped accept preference
+
+**Context:** ResponseDecisionContext with explicit role/household scope  
+**Valid for:** a feasible response whose authority derives from a recognized active role, such as head resolution of a mediated-marriage proposal.
+
+- `ScopedAuthorityResponse`:
+  - Accept = +100;
+  - Decline = 0.
+- all other components = 0.
+
+The profile never creates authority; role validity/scope is a categorical gate.
+
+---
+
 ## 3. Profile integrity rules
 
 - Configuration cannot waive categorical semantic gates.
@@ -166,3 +236,5 @@ The magnitudes 20/40 are verification configuration only. This profile affects p
 - Profiles are versioned and included in decision/history/checkpoint configuration state when active.
 - The independent oracle may sum the recorded integer components itself; it must not call the production scorer.
 - Closed-loop cards must name the exact profile/version they use.
+- Response profiles never bypass feasibility; an infeasible proposal yields `Unable(reason)` before response scoring.
+- A response profile cannot create a response meaning that is invalid for the proposal type or role scope.
