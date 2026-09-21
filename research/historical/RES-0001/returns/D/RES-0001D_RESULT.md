@@ -168,4 +168,56 @@ BE 6/2, 44 gives the two heirs matching listed allocations of new-house area, ol
 
 BE 6/2, 23 and 26 show why an inventory of “wealth” cannot be reduced to house area or silver alone. They distribute combinations of residential property, fields or gardens, named enslaved people, movable objects, and resource-related entitlements. Balancing transfers acknowledge differences between allotted resources. In no. 23, Narubtum and Ur-Pabilsagga each receive garden/property portions and separately identified enslaved persons; a field helps balance one part of the allocation. No. 26 includes doors or other wooden household items and grain/date-related portions. [S01, pp. 20–24; D-C05]
 
-Three limits follow from these examples. First, a listed quantity or valuation belongs to a particular transaction; it is not a general market price. Second, an omitted asset may have been absent, previously transferred, jointly retained, or outside the instrument’s purpose; the text alone does not decide among those possibilities. 
+Three limits follow from these examples. First, a listed quantity or valuation belongs to a particular transaction; it is not a general market price. Second, an omitted asset may have been absent, previously transferred, jointly retained, or outside the instrument’s purpose; the text alone does not decide among those possibilities.  Third, allocation of an enslaved person records the transferors’ and recipients’ claims over that person, not the person’s assent, ordinary working arrangements, or place of residence.
+
+The present return retains some movable-object and personal-name readings from the early edition. It does not recalculate the old acre conversions, normalize uncertain fractions, or combine damaged silver amounts into reconstructed estate values. This sacrifices an attractive total in favor of an auditable account of what can actually be read.
+
+### 4.5 Office, service, income, and land are related but not interchangeable
+
+BE 6/2, 39 makes a **bundle of Kusu-linked office entitlements, reckoned at two months per year,** part of an exchange against field and silver consideration. BE 6/2, 43 includes an Enlil-linked office entitlement reckoned as **six months in the year** within an inheritance arrangement. These are direct examples of rights expressed as annual portions rather than simply as possession of a building or area of land. [S01, pp. 15–16, 22–23; D-C06]
+
+“Prebend” is used here as a convenient scholarly designation for the relevant temple-linked office/resource entitlement, not as an assurance that every example had identical service conditions, remuneration, transfer restrictions, or institutional supervision. The entitlement, actual execution of its service, receipt of its produce, and ownership of any associated field must be distinguished unless the particular text joins them. Neither transaction transfers ownership of the deity’s temple merely because it transfers an office connected with it.
+
+The exchange evidence also warns against imagining a sealed boundary between a family’s land and temple-related rights. An individual could exchange one kind of claim for another. But this is not enough to reconstruct a unified temple balance sheet, treat all associated land as freely alienable, or declare that every office-holder personally performed every service. Those questions need the service and distribution records, not only the conveyance.
+
+Three reported loans naming Sîn or silver connected with the gate of Ninurta provide a possible institutional connection. They are **provisional** here: access was limited to indexed scholarly text. The reported contexts are TA fill and a disturbed TB deposit, not a securely demonstrated borrower’s floor archive. The named divine or gate connection cannot by itself identify the human intermediary’s office or establish a “temple bank.” [S08, selected indexed text around pp. 48–49; S07 not directly consulted; D-C21]
+
+### 4.6 Marriage and maintenance create different claims on the same resource history
+
+In **BE 6/2, 40**, Ama-sukkal’s contribution of **19 shekels** is separately identified. Under the edition’s reading, repudiation by Enlil-idzu requires returning that contribution and paying an additional half mina; repudiation by Ama-sukkal entails forfeiture and an additional payment. The quantities and the opposed clauses were checked in the page image. They are not evidence that either repudiation happened. [S01, p. 35; D-C08]
+
+For the task’s question, the important distinction is between bringing silver into a marriage and extinguishing every future personal claim to it. This agreement preserves conditional consequences linked to the contribution. It does not establish where the silver was stored, who spent it, whether its exact pieces remained intact, or what would have happened without this instrument. It therefore cannot be replaced by a single assertion that the husband owned it, that the wife continuously controlled it, or that it became an unrestricted common fund.
+
+**PBS 8/2, 116** links the inheritance of four brothers to support for their sister **Bēltani, a nadītu of Ninurta**. It specifies annual barley, oil, and wool; nonprovision carries a stipulated loss of inheritance entitlement. A further clause restricts an heir’s disposal of his field during her lifetime by attaching forfeiture consequences. Bēltani’s resource security is thus connected to the heirs’ property without being described as unrestricted ownership of every affected asset. [S02, tablet obv. 1–13 and rev. 1–5; D-C09–D-C10]
+
+The maintenance quantities in that document are retained in ancient units: **2 gur and 2 barig of barley, 8 sila of oil, and 8 minas of wool per year**. These are stipulated deliveries, not a complete household consumption budget or evidence of actual annual receipts. No speculative modern purchasing-power conversion is supplied. [S02]
+
+BE 6/2, 48 offers a different maintenance arrangement: the wife Naramtum’s recognized relation to Awīlīja’s sons and their obligation to support her are connected with inheritance. It supports the narrower conclusion that contractual arrangements could attach continuing support to succession. It does not make every relative responsible for every other relative or prove routine execution of the document’s conditional sanctions. [S01, pp. 35–38; D-C09]
+
+### 4.7 Gift and succession: preserve the date and the evidentiary route
+
+The clearest gift lead retained here is **OECT 8, 4**, through Meinhold’s analysis rather than direct consultation of Hunter’s edition. It recalls a house gift by Nanna-meša to his daughter Nin-kuzu and later inheritance claims or adjustments. The surviving waiver’s Hammurabi 31/05 date must not automatically date the earlier gift. The case is therefore entered as a **retrospective, secondary-mediated attestation**, not as a directly examined gift deed. [S05, discussion pp. 9–13; S13 not consulted; D-C19]
+
+That distinction is consequential. A later legal record may preserve a gift precisely because someone’s subsequent claim required clarification. Its survival need not measure the frequency of gifts, and the later dispute does not make the original gift invalid. A stronger reconstruction would require the full wording, the recipients of compensation, and the related instruments.
+
+### 4.8 Loans: separate advance, return medium, interest, and who undertakes the obligation
+
+The selected loans resist a single standardized description. **BE 6/2, 15** records 12 gur of grain advanced to two named recipients and marks the obligation as not bearing interest. **PBS 8/2, 130** explicitly marks a silver advance as interest-bearing, but gives no numerical rate. The former does not prove that no earlier charge was incorporated in the amount; the latter does not authorize importing a conventional rate from another city, legal collection, or unexamined text. [S01, pp. 40–42; S03; D-C11]
+
+The settlement medium is equally important. In PBS 8/2, 130, **Taribum receives silver from Ilšu-ibnīšu and is to return barley and interest at harvest**. A conversion price is not stated. The contract does not identify Taribum as a cultivator or explain what the silver financed. Grain at harvest is an express performance term, not proof of a borrower’s occupation or an emergency subsistence loan. [S03, obv. 1–8; D-C12]
+
+BE 6/2, 16, with its **qualified Nippur provenance**, combines grain principal with a specified silver interest obligation. Ḫabanatum and a son whose name is broken are the named recipients. BE 6/2, 21 concerns bricks to be returned in equivalent bricks. These examples should remain differentiated rather than being converted into a single monetary account with invented exchange rates. The uncertain principal of no. 16 is deliberately omitted. [S01, pp. 40–41, catalogue p. 147; D-C12]
+
+Joint receipt is also not synonymous with collective household liability. BE 6/2, 15 names two recipients without establishing their kin relationship. No. 16 relates a parent and son; the latter’s name is not fully preserved, and the parent is not independently identified here as female. Neither document assigns obligations to all co-residents or tells us the precise rules of recovery against one debtor when the other could not pay. Even “joint-and-several liability” would be a stronger technical proposition than the plural wording alone demonstrates. [S01; D-C13]
+
+The inspected loan texts commonly state future settlement, not the outcome. It would be equally unwarranted to infer repayment because a contract exists or default because a receipt is absent. A separate document linking the same obligation to discharge, renewal, settlement, or seizure would materially change the evidentiary position; none is securely established for these selected loan cases.
+
+### 4.9 Security, guarantees, and the limits of the evidence
+
+This is the weakest substantive part of the completed return. No **primary-verified actual Nippur third-party guarantee** or **matched loan-to-collateral-enforcement sequence** has been established. This is an access and sampling limit, not a finding that Old Babylonian Nippur lacked collateral, sureties, personal pledges, or recourse against assets. [D-C22; scope of S01–S03]
+
+The 2024 Spada/Hallo publication is important because its abstract identifies Nippur **model loan contracts**, including pledge arrangements. Its texts belong to a didactic corpus. They can demonstrate that scribes formulated such arrangements; without further evidence, they cannot be counted as loans actually advanced to the people named or as seizures that occurred. This return did not obtain the full edition and therefore does not reconstruct individual model clauses from its abstract. [S09]
+
+A final bibliographic check located **Spada 2023 on BM 110416**. Its accessible introduction discusses conflicting signs of a school exercise and an operative loan: possible dating traces on one side, tablet format and omitted witnesses on the other. Only that introduction was read; Nippur provenance was not established. The tablet therefore remains outside this return’s actual Nippur case inventory and does not close the security gap. [S16, p. 115]
+
+Similarly, an ePSD2 entry glossed “guarantee” or a lexical list containing an equivalent is not a guarantee instrument. A witness in a loa
