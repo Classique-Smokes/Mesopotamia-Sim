@@ -136,4 +136,177 @@ There is no defensible denominator here for women, children, enslaved persons, d
 
 ### 5.2 Limits of the present research
 
-**No independent epigraphic collation.** The return uses existing transliterations and translations. It does not certify every restoration, sign reading, seal attribution or kin term. An editorial translation 
+**No independent epigraphic collation.** The return uses existing transliterations and translations. It does not certify every restoration, sign reading, seal attribution or kin term. An editorial translation and a surviving sign are not the same level of evidence.
+
+**No independent complete stratigraphic reanalysis.** The report identifies important house/context routes but does not redraw the plans, verify every level correlation, assess all burials, or calculate household capacity from architecture. The source map cannot replace Task F’s detailed archaeological work.
+
+**No complete archival census.** Administrative, letter and unpublished holdings remain unevenly represented. The corpus descriptions in S02 and S10 are not substituted for direct examination of their full contents.
+
+**No automatic preference for recency.** A later study can introduce a correction, reinterpret an unchanged witness, or inherit an earlier error. A genuine new collation may strengthen a reading; a reprint alone does not. The actual witness and correction history matter more than how many citations repeat a conclusion [S08; A-C20].
+
+**No unqualified negative social findings.** Failure to find a practice or person in this purposive sample is not evidence that they were absent from Old Babylonian Nippur. A stronger negative argument would need a defined class of records in which the item would ordinarily be expected, adequate survival/access, and an assessment of alternative reasons for silence.
+
+## 6. Comparative evidence outside Old Babylonian Nippur
+
+### 6.1 Proposed Larsa sphere: Cotsen 52175 / Education 78
+
+Spada’s two model contracts are unprovenienced; the proposed Larsa connection rests on internal features, not an excavated Nippur context. They are useful comparative evidence that plausible legal wording and named participants can occur in exercises. They are **not direct evidence of Nippur adoption behavior, local transaction frequencies or household composition** [S16].
+
+### 6.2 Dūr-Abi-ešuh and other proposed origins
+
+Material attributed to Dūr-Abi-ešuh may bear on Nippur’s institutions and displaced people while remaining geographically external and archaeologically insecure. That relevance does not erase the distinction between ancient institutional affiliation, writing location, destination and findspot. LC01–LC02 retain both the Nippur connection and the attribution problems [S12, S14–S15].
+
+### 6.3 Lexical parallels from other places or periods
+
+The inheritance commentary invokes comparative lexical evidence, sometimes from later traditions. Such evidence may support a reading or expose semantic alternatives. Its date and place cannot be stripped away and its objects or practices counted in the Nippur sample [S09; A-C18].
+
+### 6.4 Later Babylonia and ethnographic analogy
+
+Prosobab’s **620–330 BCE** remit is far outside the approved period; its people and social patterns were not imported [S30]. Ethnographic analogy is an interpretive method associated with the residential scholarship, not a direct witness to Old Babylonian social organization [S05, bibliographic scope]. Any analogy must face the local evidence rather than supply missing family members or a default household type.
+
+## 7. Unresolved questions / recommended follow-up research
+
+1. Which OIP 78 plans, sections, field records and later corrections establish each text–room–phase association, and where do the different level-labeling systems disagree?
+2. Which portions of the TA and TB documentation can actually be compared within the same regnal horizon and a comparable exposure/survival regime?
+3. Which Mannum-mešu-liṣṣur dossier members are securely ancient holdings, earlier title deeds, uncertain additions or merely texts mentioning related people, after collation of the 1991 edition, its reviews and later corrections?
+4. Which proposed genealogical links survive fresh inspection of the relevant seals, damaged filiations and chronological constraints?
+5. What date range, institutional functions, named roles and internal recording units are actually present in the full Jena administrative grouping, and how do they intersect with the legal corpus?
+6. Can museum and excavation archives supply missing findspots for the city-attributed objects sampled here, and with what confidence?
+7. How do the complete House F studies distinguish original writing location, use, discard, reuse and final deposition, and which conclusions remain disputed?
+8. Does direct collation of HS 189 and the late cultic receipts strengthen, qualify or change the proposed sequence of Nippur’s reduced activity and final abandonment?
+9. What do Charpin’s complete argument and subsequent studies establish about relocated institutions as distinct from people physically remaining at Nippur?
+10. Which archive attributions change after applying the full NABU correction and any subsequent editions, and what independent evidence supports the proposed alternatives?
+11. How many apparently legal Nippur records are didactic, joined, parallel, re-edited, incompletely dated or associated with placeholder metadata once a defined corpus is examined consistently?
+12. What explicit corpus and counting unit could support a limited documentary frequency statement, and which populations would still remain outside its denominator?
+
+## 8. Register-ready candidate claims
+
+These are **candidates for review**, not accepted historical register entries. Each preserves a narrow proposition and the uncertainty attached to it.
+
+### A-RC01 — Separate city attribution from household context
+
+- **Claim / proposition:** A Nippur city attribution does not, without further evidence, establish a particular house, archive or resident group.
+- **Period:** Old Babylonian; exact dates vary.
+- **Geography / archive / social context:** The inspected city-attributed CDLI records.
+- **Evidence type:** Catalogue evidence plus source-critical comparison.
+- **Primary evidence:** S18–S22; A-C02.
+- **Secondary scholarship:** Contextual contrast with S01 and S07.
+- **Interpretation(s):** Treat a known city and an unknown house as different information, not as contradictory descriptions.
+- **Uncertainty / disagreement:** Missing catalogue fields may be recoverable from excavation or museum documentation.
+- **Confidence + rationale:** HIGH for this bounded distinction; multiple inspected records do not provide the finer context.
+- **Limits on generalization:** Does not deny a possible future house identification.
+- **Relevance to project question:** Prevents unsupported residence or membership claims.
+- **Design status:** NO DESIGN DECISION
+
+### A-RC02 — Preserve inferred dating and identification
+
+- **Claim / proposition:** The proposed date and archive connection of UM 29-16-672 must remain qualified rather than be treated as a preserved date formula and secure archive label.
+- **Period:** Proposed early Samsu-iluna.
+- **Geography / archive / social context:** Nippur-attributed fragment, not a verified excavated house archive.
+- **Evidence type:** Published primary edition with explicit inference.
+- **Primary evidence:** P257098; S09 introduction and §2.1; A-C08.
+- **Secondary scholarship:** Peterson’s dating and prosopographic discussion.
+- **Interpretation(s):** The combined indicators support a working attribution.
+- **Uncertainty / disagreement:** The date is not preserved; the person-identifications are proposed.
+- **Confidence + rationale:** MODERATE for the historical attribution; HIGH that the edition states it inferentially.
+- **Limits on generalization:** No exact year, house or complete family can be supplied.
+- **Relevance to project question:** Protects the difference between attestation and reconstruction.
+- **Design status:** NO DESIGN DECISION
+
+### A-RC03 — Retain bounded positive visibility
+
+- **Claim / proposition:** BE 6/2, 23 attests the participation identified in TX03; the observation does not establish a citywide rate or universal inheritance arrangement.
+- **Period:** Samsu-iluna 4, month 10, day 21, as catalogued.
+- **Geography / archive / social context:** City-attributed Nippur legal episode.
+- **Evidence type:** Existing transliteration and translation.
+- **Primary evidence:** P453321; S20; A-C09.
+- **Secondary scholarship:** No separate generalized legal theory is promoted.
+- **Interpretation(s):** Preserve the positive individual attestation.
+- **Uncertainty / disagreement:** Dependent on the edited reading; original tablet was not newly collated.
+- **Confidence + rationale:** HIGH for the narrow edited attestation.
+- **Limits on generalization:** No general claim about equal shares, legal universality, co-residence or household size.
+- **Relevance to project question:** Keeps an attested person visible without extrapolation.
+- **Design status:** NO DESIGN DECISION
+
+### A-RC04 — Do not count the model text as an act
+
+- **Claim / proposition:** P368911 is identified as didactic; its contract-like content is not itself proof that the depicted transaction occurred.
+- **Period:** Broad Old Babylonian dating.
+- **Geography / archive / social context:** Nippur-attributed model-contract/mathematical object.
+- **Evidence type:** Indexed catalogue and transliteration.
+- **Primary evidence:** S23; A-C10; TX06.
+- **Secondary scholarship:** ORACC model-contract corpus route, S17.
+- **Interpretation(s):** Use for scribal forms and categories, not an event count.
+- **Uncertainty / disagreement:** Direct fetch and image inspection were unavailable.
+- **Confidence + rationale:** HIGH for the explicit indexed identification, subject to record verification.
+- **Limits on generalization:** No claim that all undated or unsealed documents are exercises.
+- **Relevance to project question:** Prevents a specific source-genre error.
+- **Design status:** NO DESIGN DECISION
+
+### A-RC05 — Exclude placeholder seal links from historical identification
+
+- **Claim / proposition:** The P533185/S999999 link does not supply a shared historical seal owner for the inspected objects.
+- **Period:** Modern catalogue representation of Old Babylonian objects.
+- **Geography / archive / social context:** P256212 and P503174 records.
+- **Evidence type:** Explicit object metadata.
+- **Primary evidence:** S18–S19; A-C12.
+- **Secondary scholarship:** No additional historical theory required.
+- **Interpretation(s):** It is an unidentified-seal placeholder rather than a person identification.
+- **Uncertainty / disagreement:** Actual seal legends remain separately investigable.
+- **Confidence + rationale:** HIGH: the placeholder status is explicit.
+- **Limits on generalization:** Does not imply that either object lacks genuine seal impressions.
+- **Relevance to project question:** Prevents false prosopographic corroboration.
+- **Design status:** NO DESIGN DECISION
+
+### A-RC06 — Keep late activity distinct from neighborhood continuity
+
+- **Claim / proposition:** The late evidence discussed in LC01 prevents treating one early documentary cessation as a demonstrated end to every kind of Nippur activity.
+- **Period:** Late Old Babylonian.
+- **Geography / archive / social context:** Cultic/administrative evidence and Nippur connections, not every residential context.
+- **Evidence type:** Specialist reanalysis of primary texts.
+- **Primary evidence:** HS 189 and CUSAS texts through S12; A-C14.
+- **Secondary scholarship:** Béranger 2023a; Charpin alternative only through S12/S13.
+- **Interpretation(s):** Different kinds of continuity may have different endpoints.
+- **Uncertainty / disagreement:** No fresh collation; movement of archives and institutional place references remain relevant.
+- **Confidence + rationale:** MODERATE for the historical synthesis.
+- **Limits on generalization:** Does not certify uninterrupted household occupation or a universally accepted final date.
+- **Relevance to project question:** Prevents false temporal uniformity.
+- **Design status:** NO DESIGN DECISION
+
+### A-RC07 — Retain disputed market provenance
+
+- **Claim / proposition:** The four attributions identified in LC02 must not be cited as uncontested excavated origins.
+- **Period:** Late Old Babylonian.
+- **Geography / archive / social context:** Market material associated with Dūr-Abi-ešuh.
+- **Evidence type:** Original edition and subsequent correction.
+- **Primary evidence:** S14–S15; A-C15.
+- **Secondary scholarship:** Béranger’s objections to earlier attribution.
+- **Interpretation(s):** Use an explicit attribution dispute rather than an asserted findspot.
+- **Uncertainty / disagreement:** Alternative provenances are inferential too.
+- **Confidence + rationale:** HIGH for the documented dispute; lower for the proposed replacement origins.
+- **Limits on generalization:** Does not establish that all material attributed to the archive is wrongly assigned.
+- **Relevance to project question:** Prevents a contested corpus boundary from becoming a settled social fact.
+- **Design status:** NO DESIGN DECISION
+
+### A-RC08 — No demographic denominator from this return
+
+- **Claim / proposition:** The present purposive sample does not support citywide household frequencies, average household size or population shares.
+- **Period:** Approved research frame ca. 1900–1600 BCE.
+- **Geography / archive / social context:** Mixed selected documents, contexts and scholarship.
+- **Evidence type:** Research-coverage finding.
+- **Primary evidence:** Actual corpus in §2; A-C01, A-C11, A-C19.
+- **Secondary scholarship:** No single source is being treated as a census.
+- **Interpretation(s):** The appropriate conclusion is bounded attestations and explicit missing coverage.
+- **Uncertainty / disagreement:** A future explicitly delimited corpus may permit narrower documentary frequencies.
+- **Confidence + rationale:** HIGH concerning the current evidence and method.
+- **Limits on generalization:** Not a claim that demographic research is impossible in principle.
+- **Relevance to project question:** Prevents unsupported generalization while preserving useful positive evidence.
+- **Design status:** NO DESIGN DECISION
+
+## 9. Source ledger
+
+The “consulted directly” column refers to the level of material actually retrieved, not merely whether a web page was opened. A publisher abstract is not access to the book. An author-hosted original article is distinguished from automatically generated platform summaries. Bibliographic leads do not independently support historical conclusions.
+
+| Short citation | Full citation | Source type | Scope/provenance | Stable ID/DOI/URL | Consulted directly? | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| S01 — Stone 1987 | Elizabeth C. Stone. Nippur Neighborhoods. Studies in Ancient Oriental Civilization 44. Chicago: Oriental Institute, 1987. | Archaeological synthesis; text editions and concordances | Nippur TA/TB and selected residential/document contexts | DOI 10.83354/czh7-zk49; https://isac.uchicago.edu/publications/nippur-neighborhoods ; author text: https://www.academia.edu/4764262/Nippur_Neighborhoods | SELECTED FULL TEXT | Original book text in author-hosted HTML, not the platform summary. Selected house/archive discussions, pp. 75–77, 91–98, and relevant catalogue/con
