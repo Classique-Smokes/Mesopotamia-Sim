@@ -51,3 +51,8 @@ No return becomes canonical authority by being committed.
 ## Governance restructuring planning
 
 - `MASTER_ARCHITECT_RULEBOOK_RESTRUCTURING_PLAN.md` — non-authoritative, research-backed plan for restructuring the Master Architect rulebook after TRES-0010 closure.
+
+
+## Wave-B synthesis
+
+- `WAVE_B_ADJUDICATION_SYNTHESIS.md` — Master Architect finding-by-finding adjudication of all Wave-B returns, including confirmed Slice-1 repairs, later-slice gaps, rejected overreach, and bounded B2 work.
