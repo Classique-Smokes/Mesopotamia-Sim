@@ -19,6 +19,8 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - Director-approved TRES-0010 B2 Slice-1 semantic repairs promoted losslessly into `SPEC-SFL-0001`, assumptions, and canonical verification; promotion audit passed 30/30 checks.
 - CallFavor Slice-1 action applicability mechanically derived and closed: current callable payloads are `Farm` and `RepayDebt`; no new semantic decision required.
 - Slice-1 acceptance manifest candidate authored and repository-audited: 158 unique AcceptanceIds; 120 REQUIRED / 32 DEFERRED / 3 N-A / 3 UNEXERCISED; no duplicate IDs.
+- First independent manifest pre-code review returned **BLOCK**; no canonical semantics were reopened.
+- Manifest repair review commissioned as three mutually blind source-grounded audits: boundary completeness, semantic subordination/wording scope, and grain-ingress exhaustiveness.
 
 ## Active
 
@@ -75,12 +77,14 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Run the fresh independent pre-code review of the committed Slice-1 acceptance manifest candidate from the frozen manifest-review baseline.
-2. If review blocks, repair only demonstrated manifest defects and rerun review; if it passes, freeze manifest metadata/version as Slice-1 acceptance authority.
-3. Amend IMP-0001 authority taxonomy, applicability/completion evidence, and local C# guardrails against the frozen manifest.
-4. Carry confirmed later-slice semantic/verification gaps into an explicit deferred ledger.
-5. Run one final TRES-0010 closure audit.
-6. Reassess provisional process lessons and prepare the separate Master Architect rulebook refactor only after TRES-0010 closure.
-7. Record dispatch/no-dispatch conclusion; only then release IMP-0001.
+1. Run the three TRES-0010 Manifest Repair Review tasks from `tres-0010-manifest-repair-review-baseline`.
+2. Reconcile the three independent returns with the original manifest BLOCK report; do not edit the manifest before this synthesis.
+3. Draft the smallest source-faithful manifest correction set and freeze a new corrected review baseline.
+4. Re-run the independent pre-code manifest review. Only a PASS may authorize manifest freeze metadata/versioning.
+5. Amend IMP-0001 authority taxonomy, applicability/completion evidence, and local C# guardrails against the passed frozen manifest.
+6. Carry confirmed later-slice semantic/verification gaps into an explicit deferred ledger.
+7. Run one final TRES-0010 closure audit.
+8. Reassess provisional process lessons and prepare the separate Master Architect rulebook refactor only after TRES-0010 closure.
+9. Record dispatch/no-dispatch conclusion; only then release IMP-0001.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
