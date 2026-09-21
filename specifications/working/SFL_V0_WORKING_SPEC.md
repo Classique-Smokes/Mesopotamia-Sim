@@ -24,8 +24,9 @@ An implementation agent may choose ordinary code structure inside these boundari
 - **Pass A — Laboratory boundary:** WORKING-CONVERGED.
 - **Pass B — Lower-level social fabric + minimal agency:** WORKING-CONVERGED.
 - **Pass C — Subjective recognition + information:** WORKING-CONVERGED.
-- **Pass D — Household formation + continuity:** ACTIVE.
-- Passes E–G: not yet specified.
+- **Pass D — Household formation + continuity:** WORKING-CONVERGED.
+- **Pass E — Grounded collective capability + representative role:** ACTIVE.
+- Passes F–G: not yet specified.
 
 ---
 
@@ -475,7 +476,99 @@ These must be explicit before implementation authority is issued.
 
 ---
 
-# 10. Implementation autonomy boundary
+# 10. Pass D — household formation and continuity
+
+## 10.1 Candidate organization
+
+A `CandidateOrganization` may collect lower-level formation evidence before a household exists.
+
+- it has no causal powers;
+- it grants no resources, authority, actions, or household status;
+- it cannot count as evidence for itself.
+
+## 10.2 Formation warrant
+
+A v0 household forms only when a connected founding core has all of:
+
+- shared residence;
+- at least one durable tie connecting the core: kinship, marriage, or mutual strong-like attitude;
+- recurring material-support history: at least **two qualifying committed support events on different decision cycles**;
+- recognition of the candidate organization by every person whose ties are required for that founding core.
+
+Qualifying support events are accepted gift/help, loan provision, or favour fulfilment. Debt/favour existence alone is not sufficient.
+
+When satisfied, one persistent `Household` identity is created with a `FormationWarrant` retaining founding-core people, dwelling, supporting ties/events, recognition evidence, and formation time.
+
+The household record itself does not create resources, membership rights, or authority.
+
+## 10.3 Household association
+
+There is no authoritative universal `Members` set.
+
+v0 uses a provenance-bearing `SustainingParticipant` association for people currently participating in the lower-level organization that sustains the household. Additional association types are added only if later v0 mechanics require them.
+
+## 10.4 Continuity
+
+Household identity persists only through an explicit historical transmission chain.
+
+- at least one existing `SustainingParticipant` must bridge the prior and successor sustaining configuration;
+- that bridge must recognize the successor configuration as the same continuing household;
+- the transition creates a `ContinuationWarrant` linking prior state, transition evidence, and successor state;
+- snapshot similarity, residence, assets, kinship, or participant overlap alone never preserve identity.
+
+Sequential transmission may eventually replace every original founder while preserving the same household identity.
+
+## 10.5 Lifecycle state
+
+- **Active:** viable sustaining organization exists.
+- **Inactive:** no currently viable sustaining organization, but at least one live continuity bearer remains.
+- **Dissolved:** no live continuity bearer remains.
+
+Inactive households may reactivate through a valid continuation chain. Dissolved households cannot reactivate as the same identity; a later similar organization receives a new identity.
+
+Residence, resources, attitudes, marriage changes, representative succession, and one-by-one participant replacement do not by themselves break identity when a valid continuation chain exists.
+
+## 10.6 Controlled division
+
+For the v0 proof case, one household separates into two sustainable descendant organizations.
+
+- both may record `DerivedFrom(H)`;
+- only one may retain numerical identity `H`, and only through an explicit continuity warrant;
+- the controlled v0 continuation branch is the branch carrying both the valid representative-role chain (defined in Pass E) and sustaining-participant transmission;
+- the other branch receives a new household identity.
+
+Largest branch, asset share, residence, or graph overlap never decide continuity.
+
+This division/descendant case is a **scenario-controlled verification case**, not an expected naturally arising lifecycle in the first v0 runs. Because mortality and broader lifecycle systems are absent, descendant behavior must be revisited explicitly when those systems are introduced.
+
+## 10.7 Controlled consolidation
+
+For the v0 proof case, consolidation of two independent active households creates a new household identity `H3` with `DerivedFrom(H1,H2)`.
+
+Neither predecessor is automatically treated as the continuing identity of the consolidated household. General absorption/reconsolidation rules are deferred.
+
+## 10.8 Recognition and history
+
+Founding-core actors who directly participate in formation recognize the resulting household from that event. Outsiders do not automatically gain recognition.
+
+History preserves both:
+
+- when the lower-level sustaining organization began developing;
+- when sufficient evidence caused household formation/reification.
+
+## 10.9 Pass D closure
+
+Pass D is **WORKING-CONVERGED**.
+
+Deferred dependencies:
+
+- representative-role validity and succession -> Pass E;
+- exact witness/event-order mechanics -> Pass F;
+- general fission, absorption, reconsolidation, contested continuity, mortality-driven succession/descendant behavior -> future systems beyond the controlled v0 proof cases.
+
+---
+
+# 11. Implementation autonomy boundary
 
 Until this draft is complete, an implementation agent has **no authority** to decide any open item above.
 
