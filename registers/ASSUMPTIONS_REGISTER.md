@@ -33,6 +33,8 @@ Working specification has now introduced controlled laboratory assumptions. They
 | ASM-0005 | ACTIVE | Initial v0 household formation requires shared residence plus a durable tie, two qualifying support events on separate cycles, and founding-core recognition. | SFL v0 household formation recognizer. | Historical evidence, verification, or later household model showing the gate is too narrow/broad. |
 | ASM-0006 | ACTIVE | Head appointment/succession requires unanimous sustaining-participant acceptance; provision spending uses 2-grain contributor reserve and largest-surplus-first allocation. | SFL v0 collective authority/resource mobilization. | Verification, historical evidence, or richer governance/accounting rules. |
 | ASM-0007 | ACTIVE | v0 temporal lab parameters: attitude decay every 5 cycles; provision reconsideration cooldown 3 full cycles plus relevant context change; stable semantic ID as last-resort equal-priority tie-break. | SFL v0 timing/conflict resolution. | Verification sensitivity or later social priority/timing rules. |
+| ASM-0008 | ACTIVE | Loan social due review occurs after the third subsequent full cycle; any remaining balance causes one creditor->debtor -10 attitude event, regardless of ability to repay. | SFL v0 debt relationship dynamics. | Verification/model iteration or later debt/default institutions. |
+| ASM-0009 | ACTIVE | Established-household participation entry requires bilateral invitation/request plus recognition of H, a continuity bridge, shared residence, durable tie, and one qualifying post-formation support event; exit is explicit. | SFL v0 sustaining-participant turnover. | Verification or later household admission/exit norms. |
 
 ### ASM-0001 — Reciprocity attitude gate
 
@@ -117,6 +119,30 @@ Working specification has now introduced controlled laboratory assumptions. They
 - **Introduced by:** Director / Master Architect working specification discussion
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`; `research/technical/TRES-0003/PASS_F_TEMPORAL_RESOLUTION_ADVERSARIAL_REVIEW.md`
+
+### ASM-0008 — Debt social due cycle
+
+- **Status:** ACTIVE
+- **Assumption:** A loan's social due review occurs after the third subsequent full cycle after commitment. If any balance remains then, creditor -> debtor attitude changes -10 exactly once, regardless of ability to repay.
+- **Why temporarily needed:** v0 needs a simple relationship consequence for prolonged nonpayment without adding interest, default, enforcement, or collection mechanics.
+- **Scope / impact:** Debt-related attitude dynamics only.
+- **Not authoritative for:** Historical loan terms, due dates, enforcement, default law, interest, or repayment schedules.
+- **Review / replacement trigger:** Verification/model iteration or introduction of richer debt/institutional rules.
+- **Introduced by:** Director / Master Architect Stage-3 semantic errata resolution
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
+
+### ASM-0009 — Established-household participation gate
+
+- **Status:** ACTIVE
+- **Assumption:** A nonparticipant joins an active household only through a bilateral invitation/request backed by a ParticipationWarrant: newcomer recognizes H; a current sustaining participant bridges the same H; shared residence; durable tie; one qualifying post-formation support event; and mutual acceptance. Exit is an explicit participation-end commit.
+- **Why temporarily needed:** v0 must demonstrate real constituent turnover without a primitive membership write or arbitrary residence-based automatic admission/removal.
+- **Scope / impact:** SustainingParticipant entry/exit and household continuity.
+- **Not authoritative for:** Historical admission norms, dependency, slavery, marriage transfer, adoption, inheritance, or later institutional membership systems.
+- **Review / replacement trigger:** Verification/model iteration or richer household-status research/modeling.
+- **Introduced by:** Director / Master Architect Stage-3 semantic errata resolution
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `research/technical/TRES-0005/STAGE3_GUARDRAIL_SCENARIO_ADVERSARIAL_REVIEW.md`
 
 ## Entry template
 
