@@ -30,6 +30,7 @@ Accepted:
 - `DEC-0005` — Architecture Development Policy
 - `ADR-0003 / DEC-0006` — Progressive Derived-State Specialization
 - `ADR-0004 / DEC-0007` — Reference Simulation Kernel
+- `ADR-0005 / DEC-0008` — C# 14 / .NET 10 LTS Host Runtime
 
 Active:
 - **TRES-0002 Stage II — host/runtime and implementation-architecture selection**
