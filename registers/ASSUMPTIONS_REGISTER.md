@@ -30,6 +30,7 @@ Working specification has now introduced controlled laboratory assumptions. They
 | ASM-0002 | ACTIVE | v0 attitude events use fixed increments and natural drift of +attitude by 2 toward zero versus -attitude by 1 toward zero per decay event. | SFL v0 relationship dynamics. | Verification or historical/behavioral evidence showing the magnitudes distort the laboratory. |
 | ASM-0003 | ACTIVE | Farm yields 4 grain; consumption is 1 per cycle; typical initial stock is 4-8; debt repayment preserves a 2-grain reserve. | SFL v0 scarcity/debt behavior. | Verification, balance testing, or later economic subsystem. |
 | ASM-0004 | ACTIVE | Parent/child and sibling kinship both multiply the attitude-derived component of ordinary interpersonal choice by 1.5x. | SFL v0 kinship effect. | Historical evidence or verification showing type-specific/different treatment is required. |
+| ASM-0005 | ACTIVE | Initial v0 household formation requires shared residence plus a durable tie, two qualifying support events on separate cycles, and founding-core recognition. | SFL v0 household formation recognizer. | Historical evidence, verification, or later household model showing the gate is too narrow/broad. |
 
 ### ASM-0001 — Reciprocity attitude gate
 
@@ -75,6 +76,18 @@ Working specification has now introduced controlled laboratory assumptions. They
 - **Scope / impact:** Ordinary interpersonal action scoring.
 - **Not authoritative for:** Historical kin obligations, marriage rules beyond the explicit v0 exclusion, or relative strengths of kin categories.
 - **Review / replacement trigger:** Recovered historical research or verification showing the factor/type uniformity is inadequate.
+- **Introduced by:** Director / Master Architect working specification discussion
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
+
+### ASM-0005 — Household formation gate
+
+- **Status:** ACTIVE
+- **Assumption:** Initial v0 formation requires shared residence, a kinship/marriage/mutual-strong-like durable tie, two qualifying support events on separate cycles, and recognition by every required founding-core actor.
+- **Why temporarily needed:** v0 needs a falsifiable formation gate without claiming a universal or historical household definition.
+- **Scope / impact:** Candidate-to-household formation only; later continuity uses a different historical rule.
+- **Not authoritative for:** Old Babylonian household prevalence, universal household formation, later institutional or lifecycle models.
+- **Review / replacement trigger:** Historical evidence, verification results, or expansion beyond the first household laboratory.
 - **Introduced by:** Director / Master Architect working specification discussion
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
