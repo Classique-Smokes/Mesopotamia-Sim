@@ -4,7 +4,7 @@
 - **Owner:** Master Architect
 - **Date:** 2026-09-21
 - **Depends on accepted decisions:** DEC-0001, ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0005
-- **Known assumptions:** ASM-0001 through ASM-0010
+- **Known assumptions:** ASM-0001 through ASM-0011
 
 ## 1. Purpose and scope
 
@@ -382,23 +382,116 @@ Inactive may reactivate through a valid `ParticipationWarrant` bridged by its so
 
 Lifecycle state is evaluated/published only at stable cycle closure after compatible participation changes and their required continuity reactions have resolved. Transient within-cycle participant counts are historical microstate, not authoritative lifecycle state.
 
-### 7.7 Controlled lineage cases
+### 7.7 Controlled lineage and derivation
 
-Division proof:
+Lineage is historical derivation, not numerical identity.
 
-- both branches may record `DerivedFrom(H)`;
-- only one branch may retain H, through explicit continuation;
-- controlled v0 continuity uses representative-role chain plus sustaining-participant transmission;
-- other branch receives a new identity;
-- branch size, asset share, residence, or graph overlap never decide which branch retains H.
+A newly formed household may receive at most one authoritative, rule-versioned `LineageWarrant` as an automatic consequence of its already-valid `FormationWarrant`.
 
-Consolidation proof:
+A `LineageWarrant`:
 
-- independent H1 and H2 produce new H3;
-- H3 records `DerivedFrom(H1,H2)`;
-- neither predecessor is automatically the continuing identity.
+- never creates the successor household;
+- never substitutes for ordinary formation;
+- never preserves a predecessor's numerical identity;
+- has no independent behavioral power in v0;
+- transfers no resources, claims, obligations, authority, recognition, roles, residence, attitudes, pending processes, or lifecycle state.
 
-These are controlled v0 proof cases, not a general lifecycle/fission/merger theory.
+Person-level relations persist only through their own semantics.
+
+#### 7.7.1 Warrant contents and direct lineage
+
+A successful warrant records:
+
+- stable warrant ID;
+- successor Household ID;
+- successor FormationWarrant ID;
+- lineage kind: `DivisionDescendant` or `ConsolidationDescendant`;
+- unordered set of direct predecessor Household IDs;
+- founder-lineage sources, each containing founder ID, predecessor Household ID, and supporting `ParticipationEndWarrant` ID;
+- fresh organizational-evidence event reference(s);
+- commit `Cycle, ReactionIndex`;
+- rule/configuration version.
+
+There is zero or one `LineageWarrant` per successor FormationWarrant.
+
+For every direct predecessor in the warrant, `DerivedFrom(successor, predecessor)` is a rebuildable projection of that warrant rather than separate semantic authority.
+
+A separately named `AncestorOf(ancestor, descendant)` query may compute transitive ancestry over direct lineage edges. Direct derivation and transitive ancestry must remain distinguishable.
+
+Direct lineage must be:
+
+- irreflexive;
+- acyclic;
+- temporally forward: predecessor household and cited predecessor events must precede successor formation.
+
+If more than one predecessor-set/kind interpretation is equally valid under the v0 classifier, no lineage warrant is issued. The household still forms normally.
+
+No authoritative `DivisionTransformation` or `ConsolidationTransformation` object exists in v0. Such labels may be generated as derived historical summaries only.
+
+#### 7.7.2 Founder lineage sources
+
+Lineage provenance comes only from explicit ended predecessor participation.
+
+For each successor founder used by the lineage classifier:
+
+- the founder must have a relevant `ParticipationEndWarrant` for the claimed predecessor;
+- the warrant records that specific founder -> predecessor source;
+- overlapping or other household histories do not create a global exclusivity rule;
+- if those histories make the predecessor-source mapping ambiguous for the controlled v0 classifier, no lineage warrant is issued.
+
+#### 7.7.3 Fresh organizational evidence
+
+Former participation alone is insufficient for controlled v0 lineage.
+
+**Division descendant:** at least one qualifying ordinary person-person support event used as fresh lineage evidence must occur after all `ParticipationEndWarrant` events used as lineage sources for the successor founders.
+
+**Consolidation descendant:** at least one qualifying ordinary person-person support event must occur after both predecessor households are Dissolved and must be cross-predecessor: one participant maps to each predecessor.
+
+Household-originated support feedback cannot satisfy this fresh-lineage condition.
+
+This freshness rule affects only the v0 lineage classification. A household that independently satisfies ordinary formation may still form even when no lineage warrant is issued.
+
+#### 7.7.4 Controlled division
+
+For the v0 division proof:
+
+- predecessor H remains the same numerical H on one branch only through the existing continuity mechanism;
+- H must remain non-Dissolved when descendant H2 forms;
+- every H2 founder must map unambiguously to ended participation in H;
+- H2 must independently satisfy ordinary formation;
+- the fresh division evidence rule above must hold;
+- H2 receives one `LineageWarrant` of kind `DivisionDescendant` with direct predecessor set `{H}`;
+- only H2 has `DerivedFrom(H)`; continuing H does not derive from itself;
+- branch size, assets, residence, or graph overlap never determine continuation or lineage.
+
+The controlled v0 case covers one continuing H and one new descendant H2. Multiple descendants, disputed successor claims, absorption, and general reconsolidation remain deferred.
+
+#### 7.7.5 Controlled consolidation
+
+For the v0 consolidation proof:
+
+- H1 and H2 are independent predecessor households;
+- both H1 and H2 must be Dissolved before H3 forms;
+- every H3 founder must map unambiguously to ended participation in H1 or H2;
+- at least one H3 founder must map to each predecessor;
+- H3 must independently satisfy ordinary formation;
+- the fresh cross-predecessor evidence rule above must hold;
+- H3 receives one `LineageWarrant` of kind `ConsolidationDescendant` with unordered direct predecessor set `{H1,H2}`;
+- H3 is a new numerical identity; neither H1 nor H2 continues as H3.
+
+If a predecessor remains Active/Inactive, if founders have mixed/ambiguous origins outside this controlled scope, or if fresh cross-predecessor evidence is absent, H3 may still form normally but receives no controlled-v0 consolidation lineage classification.
+
+#### 7.7.6 Lineage persistence and observation
+
+A committed `LineageWarrant` is immutable historical provenance within one simulation run and remains queryable even if predecessor or successor households later dissolve.
+
+The warrant is evaluated from authoritative world history after successor formation and retains the rule/configuration version used. A later offline reinterpretation under a different model version is a separate analysis result, not a rewrite of the original run.
+
+v0 introduces no separate subjective `RecognizesLineage` state because no current action depends on lineage recognition. Actors learn relevant predecessor/formation events only through ordinary participation, observation, or communication.
+
+Lineage is evaluated as a causally downstream reaction to successor formation. Cycle-level division/consolidation summaries are published only at stable cycle closure.
+
+These are controlled v0 proof semantics, not a general theory of inheritance, fission, merger, absorption, or organizational ancestry.
 
 ## 8. Grounded household capability and head role
 
@@ -664,6 +757,7 @@ Relevant:
 - `research/technical/TRES-0001/`
 - `research/technical/TRES-0003/PASS_F_TEMPORAL_RESOLUTION_ADVERSARIAL_REVIEW.md`
 - `research/technical/TRES-0004/PASS_G_VERIFICATION_CLOSURE_ADVERSARIAL_REVIEW.md`
+- `research/technical/TRES-0007/LINEAGE_WARRANT_ADVERSARIAL_REVIEW.md`
 - `registers/ASSUMPTIONS_REGISTER.md`
 - working design record: `specifications/working/SFL_V0_WORKING_SPEC.md`
 
@@ -673,3 +767,4 @@ Relevant:
 - 2026-09-21 — Restorative Stage-3 errata: founding-core `SustainingParticipant` creation made explicit; previously approved head-nomination eligibility restored from the closed working record. No new social rule introduced.
 - 2026-09-21 — Director-approved Stage-3 semantic amendments: evidence-backed `CandidateRecognition`; bilateral invitation/request plus `ParticipationWarrant` and explicit participation end; loan social due cycle at +3 full cycles with one-time unpaid-balance attitude penalty.
 - 2026-09-21 — Director-approved continuity cleanup after TRES-0006: operational lifecycle state (2+/1/0), Inactive reactivation through sole bearer, stable-cycle lifecycle evaluation, bridge-handoff priority, continuity-over-duplicate-formation precedence, and explicit two-person founding minimum. Restored compressed household authority/history details.
+- 2026-09-21 — Director-approved lineage semantics after TRES-0007: one behaviorally inert LineageWarrant per successor formation at most; direct predecessor provenance distinct from ancestry; fresh organizational evidence; narrow division/consolidation classifications; ambiguity withholds lineage rather than formation; no inherited causal state.
