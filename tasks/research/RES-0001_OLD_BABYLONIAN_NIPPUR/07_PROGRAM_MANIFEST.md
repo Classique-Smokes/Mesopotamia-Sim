@@ -1,7 +1,7 @@
 # RES-0001 Program Manifest
 
 **Program:** Old Babylonian Nippur Household Foundations  
-**Status:** ACTIVE  
+**Status:** RETURNS COMPLETE / RECONCILIATION PENDING  
 **Approved frame date:** 2026-09-19
 
 ## Shared files
@@ -24,3 +24,8 @@
 - `RES-0001F_DOMESTIC_ARCHAEOLOGY_RESIDENCE_AND_NEIGHBORHOOD.md`
 - `RES-0001G_HOUSEHOLD_INSTITUTION_INTERFACES.md`
 - `RES-0001H_TERMINOLOGY_AND_HISTORICAL_CATEGORIES.md`
+
+
+## Return location
+
+All eight A–H research returns are present under `research/historical/RES-0001/returns/`. The archive index and provenance manifest are `research/historical/RES-0001/README.md` and `research/historical/RES-0001/MANIFEST.md`. RES-0001R reconciliation remains pending.
