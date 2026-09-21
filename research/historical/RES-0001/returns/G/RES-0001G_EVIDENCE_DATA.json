@@ -386,4 +386,114 @@
       "context": "Martu, Kusu and Nuska transactions",
       "type": "Primary",
       "primary": "G-I01–03: BE 6/2 36, 37, 39.",
-      "secondary": "S04 abstract identifies the topic, but is not
+      "secondary": "S04 abstract identifies the topic, but is not evidentiary support for the individual transactions.",
+      "counter": "No proof that all offices were freely alienable or that no eligibility/approval conditions existed.",
+      "confidence": "HIGH",
+      "limit": "Documented conveyances, not an unrestricted citywide market regime.",
+      "relevance": "Institutional connection could change through transactions as well as kinship.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C03",
+      "claim": "Office-linked rights could form part of family patrimony alongside other assets, without all family property necessarily merging.",
+      "date": "Old Babylonian; Samsuiluna-period examples",
+      "context": "Inherited Martu rights, paternal recovery, adoption and estate division",
+      "type": "Primary with catalogue corroboration",
+      "primary": "G-I01, G-I04, G-I08; G-I10 supplies catalogue-level corroboration.",
+      "secondary": "Archive-scale strategies are a further reconstruction, not directly stated.",
+      "counter": "A shared father does not prove co-residence; inheritance is not equivalent to inalienability.",
+      "confidence": "HIGH",
+      "limit": "Named property-holding cases; no prevalence estimate.",
+      "relevance": "Links institutional resources to durable family histories.",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C04",
+      "claim": "Two exchanges balance unequal office/land packages with silver, demonstrating negotiated equivalence in those transactions.",
+      "date": "BE 6/2 37 = Samsuiluna 11/11/6; no. 39 = 12/5/15",
+      "context": "Kusu and Nuska exchanges",
+      "type": "Primary",
+      "primary": "G-I02–03: BE 6/2 39 has 5 shekels; no. 37 has 2 shekels.",
+      "secondary": "No modern rate-of-return interpretation adopted.",
+      "counter": "Mixed assets, damaged terms and differing temples prevent a standardized price comparison.",
+      "confidence": "HIGH",
+      "limit": "Two transaction-specific adjustments; not annual earnings or a price index.",
+      "relevance": "Shows connections between office rights, land and liquid resources.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C05",
+      "claim": "Some Nippur reacquisitions explicitly characterize the recovered resource as belonging to the paternal house.",
+      "date": "BE 6/2 45 = Samsuiluna 14/12; no. 66 exact date not recovered",
+      "context": "Office recovery and a titled woman’s land recovery",
+      "type": "Primary",
+      "primary": "G-I04, G-I07: BE 6/2 66 and 45.",
+      "secondary": "Poebel calls these redemptions; a compulsory family redemption rule is not established.",
+      "counter": "His Biblical analogy cannot supply a Nippur legal rule; causes of the earlier alienations are unknown.",
+      "confidence": "HIGH for the family-recovery language; MODERATE for legal mechanism",
+      "limit": "Two deeds and their stated family reference, not all lineage property.",
+      "relevance": "Continuity may include reacquisition after alienation.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C06",
+      "claim": "A Nippur adoption deed protects specified office/property rights of the adoptee against claims by the named adoptive brother.",
+      "date": "Samsuiluna 22/6/16 (S01 catalogue p. 152)",
+      "context": "Tab-balatu/Beltia, Habil-ahi and Ninurta-gamil",
+      "type": "Primary",
+      "primary": "G-I08: BE 6/2 57, property and no-claim clauses.",
+      "secondary": "Later edition located but not read; identification of every earlier relationship remains provisional.",
+      "counter": "The deed does not establish that adoption transferred priestly qualification or actual cultic duty.",
+      "confidence": "MODERATE",
+      "limit": "One explicit contractual arrangement; not a standard motive for all adoption.",
+      "relevance": "Created kinship and institutional patrimony could be negotiated together.",
+      "sources": [
+        "S01",
+        "S09",
+        "S10"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C07",
+      "claim": "A woman bearing a Ninurta-related religious title is documented recovering paternal-house land from another similarly titled woman.",
+      "date": "Samsuiluna 14/12; day unspecified (S01 catalogue p. 150)",
+      "context": "Lamazum and Beltani in BE 6/2 45",
+      "type": "Primary",
+      "primary": "G-I07: title, patronymics, field recovery, silver consideration.",
+      "secondary": "Exact modern interpretation of SAL-ISḪIB is left open.",
+      "counter": "Religious affiliation does not make the field temple-owned or prove a female prebend sale.",
+      "confidence": "MODERATE",
+      "limit": "Named titled women; no statement about all women’s access to every office.",
+      "relevance": "Women’s institutional affiliation and family property action can coexist.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C08",
+      "claim": "One Ninlil-related family dispute records royal referral to Nippur’s council followed by a house/property settlement.",
+      "date": "Hammurabi reign",
+      "context": "Two explicitly related family branches",
+      "type": "Primary",
+      "primary": "G-I05: BE 6/2 10, lines 1–36; S12 identifies P259799.",
+      "secondary": "Poebel’s wider theory of the council is not adopted.",
+      "counter": "A recorded royal referral is not evidence that every dispute followed this route or that this was a modern appellate hierarchy.",
+      "confidence": "MODERATE",
+      "limit": "The route documented by this deed and its account of prior proceedings.",
+      "relevance": "Family-held institutional rights could involve multiple legal authorities.",
+      "sources": [
