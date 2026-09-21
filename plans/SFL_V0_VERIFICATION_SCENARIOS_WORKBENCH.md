@@ -43,6 +43,7 @@ Stage 3 must produce:
 - Failure results must distinguish semantic detection, survivor, unexercised, invalid/equivalent, crash, and timeout where applicable.
 - Stable-ID fallback is accepted v0 technical behavior but must be isolated through ID-permutation sensitivity tests.
 - Historical validation/calibration is outside Stage 3.
+- Completed-cycle assertions target stable cycle closure. Intermediate commits/reactions may be inspected as causal history but must not be treated as completed cycle state.
 
 ## Scenario-card conventions
 
