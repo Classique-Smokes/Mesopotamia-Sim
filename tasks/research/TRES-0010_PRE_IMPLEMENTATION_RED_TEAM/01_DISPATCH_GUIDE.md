@@ -8,22 +8,24 @@ Use **one fresh chat per Wave-A task**.
 
 Do not execute multiple Wave-A tasks in one conversation: shared conversational context weakens independence.
 
-All reviewers use the frozen review baseline declared in `00_PROGRAM_README.md`.
+All reviewers use the frozen review baseline `tres-0010-review-baseline` declared in `00_PROGRAM_README.md`.
+
+Do not review a moving `main` branch.
 
 ## 2. Task-number mapping
 
-| Human shorthand | Task ID | Packet |
-|---:|---|---|
-| 1 | TRES-0010A | `TRES-0010A_FOUNDATIONAL_ALIGNMENT_AUDIT.md` |
-| 2 | TRES-0010B | `TRES-0010B_SEMANTIC_REACHABILITY_AUDIT.md` |
-| 3 | TRES-0010C | `TRES-0010C_TEMPORAL_DETERMINISM_AUDIT.md` |
-| 4 | TRES-0010D | `TRES-0010D_VERIFICATION_CHEAT_RED_TEAM.md` |
-| 5 | TRES-0010E | `TRES-0010E_IMP0001_HANDOFF_AUDIT.md` |
-| 6 | TRES-0010F | `TRES-0010F_FUTURE_SLICE_COMPATIBILITY_AUDIT.md` |
-| 7 | TRES-0010G | `TRES-0010G_CSHARP_IMPLEMENTATION_HAZARD_REVIEW.md` |
-| 8 | TRES-0010H | `TRES-0010H_ADVERSARIAL_TRAJECTORY_DESIGN.md` |
-| 9 | TRES-0010I | `TRES-0010I_SCOPE_MINIMALITY_RED_TEAM.md` |
-| 10 | TRES-0010J | `TRES-0010J_FRESH_AGENT_RETRIEVAL_AUDIT.md` |
+| Human shorthand | Task ID | Packet | Dedicated return branch |
+|---:|---|---|---|
+| 1 | TRES-0010A | `TRES-0010A_FOUNDATIONAL_ALIGNMENT_AUDIT.md` | `tres-0010/a` |
+| 2 | TRES-0010B | `TRES-0010B_SEMANTIC_REACHABILITY_AUDIT.md` | `tres-0010/b` |
+| 3 | TRES-0010C | `TRES-0010C_TEMPORAL_DETERMINISM_AUDIT.md` | `tres-0010/c` |
+| 4 | TRES-0010D | `TRES-0010D_VERIFICATION_CHEAT_RED_TEAM.md` | `tres-0010/d` |
+| 5 | TRES-0010E | `TRES-0010E_IMP0001_HANDOFF_AUDIT.md` | `tres-0010/e` |
+| 6 | TRES-0010F | `TRES-0010F_FUTURE_SLICE_COMPATIBILITY_AUDIT.md` | `tres-0010/f` |
+| 7 | TRES-0010G | `TRES-0010G_CSHARP_IMPLEMENTATION_HAZARD_REVIEW.md` | `tres-0010/g` |
+| 8 | TRES-0010H | `TRES-0010H_ADVERSARIAL_TRAJECTORY_DESIGN.md` | `tres-0010/h` |
+| 9 | TRES-0010I | `TRES-0010I_SCOPE_MINIMALITY_RED_TEAM.md` | `tres-0010/i` |
+| 10 | TRES-0010J | `TRES-0010J_FRESH_AGENT_RETRIEVAL_AUDIT.md` | `tres-0010/j` |
 
 ## 3. Minimal dispatch instruction
 
@@ -41,7 +43,8 @@ Preferred order:
 2. Agent performs the assigned research independently.
 3. Agent finalizes its report **before** reading sibling Wave-A reports.
 4. If isolated-branch GitHub writes are available:
-   - create/use a branch dedicated to that task;
+   - use the task's pre-created dedicated branch from the table above;
+   - that branch starts from the frozen review baseline;
    - write only the assigned return under `research/technical/TRES-0010/returns/`;
    - report branch + commit SHA.
 5. If isolated writes are not available, return the complete report in chat; do not write to main.
@@ -91,3 +94,20 @@ The operator should not have to:
 The task packet + repository retrieval path carry that context.
 
 If an agent cannot locate or interpret its packet from the minimal instruction, that is itself evidence for TRES-0010J.
+
+
+## 9. Same-model caveat
+
+Using ten fresh chats of the same model is still worthwhile, but it is not ten statistically independent reviewers.
+
+The design controls this by:
+
+- one task per fresh chat;
+- materially different attack objectives;
+- different source restrictions;
+- sibling-report blindness;
+- frozen baseline;
+- sentinel reruns;
+- evidence-based rather than vote-based reconciliation.
+
+If another capable model/provider with equivalent repository/tool access is conveniently available, using it for one or both sentinel reruns adds useful diversity. It is optional, not a requirement.
