@@ -148,3 +148,87 @@ That combination is enough to reject an exclusively male description of every do
 
 The exact translation of the female title also remains a philological question. It is not replaced with a culturally loaded or mechanically specified role. The deed does not state a full schedule of duties, explain the participants’ religious careers, or provide a general rule for all similarly titled women. A modern edition and the full Meinhold article are needed before extending this finding to particular female-held prebends. [S01, no. 45; S04, access limitation]
 
+Beltia’s explicit participation as an adoptive parent in no. 57 is another female role in an arrangement touching office/property rights, but it is a different role. The report does not turn her into an officeholder merely because the adopted person’s protected assets have an institutional dimension. The distinction keeps the range of women’s observed participation visible without homogenizing it. [S01, no. 57]
+
+### 4.6 Authorities entered through specific disputes and instruments
+
+BE 6/2 10 connects family, temple-related rights and authorities in an unusually articulated sequence. The claimants are brothers, sons of Iškur-rabi. Their account invokes an earlier transaction involving their paternal uncle Ududu, a Ninlil office and a šuku field. They appear before Hammurabi; the record says the king and a royal messenger referred the matter to Nippur’s puhrum. The eventual instrument records a property settlement between the named family branches and a future-claim renunciation. [S01, pp. 46–48, no. 10, lines 1–36; G-I05]
+
+The case must be read in two temporal layers. The document’s account of the earlier transaction and proceedings is not the same evidentiary object as an independently preserved transcript of each earlier stage. The final conveyance is what the surviving deed authenticates most directly. This return consequently avoids a fully reconstructed ledger of which cousin owned every office and field at every point. It also does not use the old translation’s modern “acres” as a securely checked area conversion.
+
+What can be retained is a concrete legal route: a kin-based claim over institutional resources could be articulated through a king and messenger, local adjudication, and a settlement in other property. This differs from a transaction confined to a single temple’s internal personnel. It does not establish universal access to royal justice, a mandatory appellate procedure, or the modern separation of religious and secular courts. The text shows a route used in this account, not an administrative constitution. [G-C08]
+
+Royal oaths in other conveyances should likewise not be equated with active intervention by a king. An oath formula and a narrated referral are different degrees and kinds of royal involvement. The contrast is visible by comparing the closure of nos. 36–39 with the explicit sequence of no. 10. [S01, those texts]
+
+### 4.7 Deeds, custody and liability are not incidental to the interface
+
+BE 6/2 42 is not simply “another inheritance.” It records an initial entrusting of deeds concerning Sin-abušu’s gala office and inheritance to Nannartum. After a stated two-year interval, and after Sin-abušu has died, Aba-Enlil-dim receives the deeds and is assigned responsibility for future claims against them. [S01, pp. 45–46; G-I06]
+
+The distinction between handing over a document and creating a new substantive right matters. A deed can substantiate, preserve, or deliver evidence of a right, but the surviving wording does not by itself disclose all preceding allocations. Nor does death alone make the new recipient the deceased’s son. The case therefore supports a documentary succession interface while leaving the recipient’s kinship and the exact juridical transaction open.
+
+Poebel inferred a temple role in disposition from the reported clerical witnesses and seal pattern. This is an identifiable scholarly inference, not a direct statement that “the temple inherited the estate” or “a committee appointed the heir.” The primary event, the witness-based interpretation and an institutional reconstruction must remain distinct. Fresh seal/image review and comparison with a modern edition could materially change the last two layers. [S01, commentary to no. 42]
+
+For the commissioned question, the defensible point is that continuity could depend on more than a person’s claim to receive resources. Custody of instruments and liability for subsequent challenge also connected individuals to an office’s history. The case does not yield a universal procedure for all temples. [G-C09]
+
+### 4.8 Administrative evidence and the limits of a single “house” reconstruction
+
+The administrative supplement is deliberately small. The source-specific information is recorded in G-I12–14 rather than expanded into a reconstructed household budget. These records should not be silently joined to unrelated office-sale families.
+
+Goddeeris questions the inference that women appearing in the guennakkum-related dossier were necessarily his domestic dependents; her treatment of Damiqtum emphasizes agency in resource handling. Robertson’s earlier position is known here through that discussion, not independent full reading. This return adopts neither an all-encompassing male-headed household nor a replacement hierarchy headed by Damiqtum. [S03, pp. 399–403; S08, indirect access]
+
+That disagreement exposes a general identification problem: the subject of an allocation, the intermediary handling it, its ultimate beneficiary, a family member and an institutional superior need not be the same person. Evidence of one relation does not prove the others. A more connected name in a set of transactions is not, without further evidence, a household head. Conversely, uncertainty about membership should not erase a specifically documented action. These are limits on inference, not an organizational theory. [G-C11–12]
+
+### 4.9 Social variation and bias
+
+The legal core is heavily selected for assets important enough to be documented and preserved: offices, houses, fields, inheritances and claims. This makes it particularly informative about resource-holding individuals and particular family arrangements, but unsuitable for calculating what proportion of Nippur inhabitants held offices. Several relatives can appear in one deed; several deeds can concern one family; a title can occur on an instrument without identifying a whole household. None of these counts supplies the missing denominator. [S01–02; G-C13]
+
+It would also be premature to translate the legal sample into a binary “elite versus non-elite” classification. The ability to transact an office or litigate a claim is relevant evidence of access to resources or procedure, not a complete ranking of wealth or status. A person named with a priestly title may hold other property, and a person appearing as a worker in one record may have other relationships outside its scope. The present return therefore distinguishes **office/property transactions** from **task/allocation entries**, rather than treating those genres as exhaustive classes of people.
+
+No general patronage system was independently reconstructed. No matched series of household accounts shows the share of subsistence derived from an institution. No full set of obligations establishes how family labor was deployed to meet office service. These are material gaps, not findings that patronage, institutional maintenance or family performance were absent.
+
+### 4.10 Chronology: compare contexts before claiming change
+
+| Regnal/context cluster | Evidence actually used | What a comparison can establish | What it cannot establish |
+|---|---|---|---|
+| Earlier part of the approved ca. 1900–1600 BCE frame | Not adequately represented by the positive interface cases | A coverage gap in this return | Absence of the relationships in early Nippur |
+| Late-Rim-Sin administrative dossier | G-I12–14 through S03 | Additional forms of recorded action within a different genre | A continuous calendar conversion or direct before/after measure against the legal core |
+| Hammurabi | G-I05 explicitly invokes the king | A documented family/legal interface in that regnal setting | A universal procedure or the origin of the institution |
+| Samsuiluna 11 | G-I01, G-I03, G-I09 | Dated conveyances in a restricted cluster | A citywide volume of trade or a price level |
+| Samsuiluna 12, 13, 14, 22 | G-I02, G-I06–08; catalogue dates visually checked | Dated exchanges, deed receipt, land recovery and adoption | A matched series of the same institution or household |
+| Samsuiluna 25, 26, 28 | G-I10–11, catalogue access only | Later attestation of relevant transactions | A secure phase comparison with fully edited earlier cases |
+| Later interval toward ca. 1600 BCE | No adequately examined positive case set here | A further gap | Stasis, abandonment, institutional collapse or survival |
+
+The imbalance between genres and access levels is central: an administrative expenditure file and a set of conveyances answer different questions. A change in what a record describes is not automatically a change in the society. A defensible phase comparison would need matched institutions, comparable documents, tested person/asset identities and an account of preservation. Poebel’s early chronological or historical reconstructions are not imported as the current solution to those problems. [S01–03; G-C14]
+
+### 4.11 Private and institutional are overlapping questions, not interchangeable labels
+
+The cases show that an institutional connection can be anchored in a named temple, office, cultic title, legal authority or document history. A family connection can be anchored in an explicit father, sibling, adopted relationship or paternal-property description. A transaction can carry evidence of both. That does not make the two connections identical. [S01, core cases]
+
+The apparent overlap is most informative when specified: no. 36 conveys an inherited right with house property; no. 39 exchanges an institutional right against a field; no. 45 combines religious title and paternal-land recovery; no. 57 protects institutional patrimony within an adoption arrangement; no. 10 links a family claim with several authorities; no. 42 concerns office deeds and responsibility for claims. Calling all of these either “private” or “temple household” would discard their differences. [G-C16]
+
+The historical conclusion is therefore bounded but positive. Institutional resources were embedded in some family histories through particular transactions and legal arrangements. They could circulate, be disputed, be recovered, or be protected against particular family claims. The evidence does not establish the entire temple organization as one household, and it does not establish households as autonomous units insulated from institutions. It establishes the named interfaces and their limits.
+
+## 5. Disagreement, ambiguity, and source limitations
+
+| Issue | What is known in this return | What remains unsettled / consequence |
+|---|---|---|
+| Old editions and normalized names | Core wording read in S01; a few obvious old sign/name conventions normalized | No fresh philological edition; uncertain occupational glosses retained, not converted into job descriptions |
+| Photograph, seal and layout access | Text parsing available; Most screenshots failed; some printed text/catalogue pages became readable during final checks | No tablet/seal collation claimed. Catalogue dates for six core texts were visually checked; remaining unclear data stay unresolved |
+| BE 6/2 66 | Paternal-office recovery and silver consideration present | Opening annual-term figure and damaged/erased closing wording need checking; no definitive duration reconstructed |
+| BE 6/2 42 | Deed receipt after death and future-claim liability | Temple disposition is Poebel’s inference; kinship and payment remain unproved |
+| BE 6/2 57 | Adoption and restriction on the brother’s claims | The full earlier relationship to Ablum and the modern interpretation of garza need re-edition comparison |
+| BE 6/2 45 | Titled women and recovery of paternal-house land | Exact title function and source of income not established; not relabeled a female prebend transfer |
+| BE 6/2 37 → OBCN I 32 | Similar parties and Nuska exchange context | Asset identity not demonstrated. G-C15 remains LOW; no deduplicated chain accepted |
+| Household identification | Some kinship explicit; no secure house locus in this pass | No co-residence, complete membership list, or domestic budget inferred |
+| Administrative hierarchy | Different observations and interpretations are distinguishable | Co-occurrence/receipt is not a sufficient test of domestic dependence; full S08 not independently read |
+| Chronological coverage | Regnal anchors retained where safely recoverable | No full 1900–1600 BCE trend or numerical BCE conversion imposed |
+| Modern key works | S04, S06–09 verified at lower access levels | Their inaccessible details cannot resolve this report’s uncertainty by citation alone |
+
+A further source-critical warning concerns the temptation to “repair” inconsistent concordances. An apparent TMH/CBS cross-reference problem encountered in S03 was not silently resolved into an identity; the affected possible join is excluded from the main case set. The research notes preserve the issue for checking against TMH 10. This is a retrieval warning, not a proven correction to the published article.
+
+The source-access limitations materially constrain the result. They do not negate the directly read conveyances, but they do prevent this return from being called a complete modern prosopography or a definitive institutional reconstruction. Negative findings are worded as **not demonstrated by this corpus**, not **did not exist**.
+
+## 6. Comparative evidence outside Old Babylonian Nippur
+
+**Cotsen 52175 / Education 78 — unprovenanced Old Babylonian school text, proposed Larsa sphere.** Spada’s edition treats the adoption and orchard-sale passages as model contracts. Their possible provenance and formulary make them useful for comparison, but neither is counted as an actual Nippur transaction. A named religious woman in a model cannot supply a missing historical Nippur officeholder. [S05, §§1–2.2]
+
