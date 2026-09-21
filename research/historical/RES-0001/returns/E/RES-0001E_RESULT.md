@@ -84,4 +84,56 @@ The rows below describe people **in particular documents**. They are not social 
 | Ali-aḫuša and Iškur-rīm-ilī — BE 23 | Enslaved people allocated to Narubtum | Their own kin relations unknown | Unknown | Specific work unstated | Ownership context; maintenance terms unknown | Allocated in property division; physical move unrecorded | No own transactions stated | E-C03; P1909 pp. 20–22 |
 | Dumqi-Ištar and Taribum — BE 23 | Enslaved people allocated to Ur-Pabilsaĝa | Their own kin relations unknown | Unknown | Specific work unstated | Ownership context; maintenance terms unknown | Allocated in property division; physical move unrecorded | No own transactions stated | E-C03; P1909 pp. 20–22 |
 | Ili-idinnam and Ili-ummati — BE 24 | Adopted heirs; future sale threatened upon a specified breach | Brothers; children of Ea-idinnam and Kuritum by agreement | Unknown | Recognition obligation; no specific occupation stated | Inheritance prospects and breach penalties | Potential legal change, not an executed sale or relocation | Heirship/property allocation specified | E-C04; P1909 pp. 27–29 |
-| Ištar-rabiat — BE 8 | Enslaved before 
+| Ištar-rabiat — BE 8 | Enslaved before release; manumission recorded | No family of her own identified | Before/after residence unknown | No continuing service clause identified in this text | Ten-shekel payment; its funding unknown | Status change explicit; spatial movement unknown | This payment evidenced; general property rights not established | E-C05; attributed Nippur, not secure house context |
+| Igi-šag — BE 43 | Recipient of office/property rights; not thereby an enslaved or salaried worker | Son of Ina-Ekur-rabi; Sin-išmeanni identified as paternal uncle | House share mentioned; actual residence not established | Annual six-month office share; personal performance unknown | Office-associated livelihood land and other property | Rights allocated; no personal relocation recorded | Recipient in an estate division | E-C06; P1909 pp. 22–23 |
+| Damu-idinnam — BE 29 | Lessee; broader personal status unstated | No relevant kin connection established | Unknown | Field cultivation under a one-third-return lease | Land access and annual rent | Contractual access to land; mobility unknown | Party to this lease | E-C07; P1909 pp. 43–44 |
+| Unnamed learner — CBS 14156 | No legal status established | Unknown | Unknown | Instructional copying | Unknown | Unknown | Unknown | E-C09; T1998 p. 45 fig. 9 |
+| Model-contract person — TMH 11 1 | Didactic role, not an identified historical individual | Only as scripted in the model | Not historical residence evidence | Pedagogical scenario | Not an observed livelihood | Not an observed status transition | Not evidence of an actual act | E-C10; SP2021; primary edition not consulted |
+
+### 4.2 Kin support, hired work, and the production of household resources
+
+**Direct evidence.** In BE 28, Ibkuša’s adopted heir Ea-tayar and Ea-turam, described as the son by his wife, receive parallel property shares and undertake annual support in grain, wool, and oil. Failure to supply maintenance has a consequence for heirship. In BE 48, the legal arrangement between Awilia, Naramtum, and three sons also links filial recognition, property, and maintenance. These are enforceable relational provisions, not just kinship labels. [P1909, pp. 29–30, 35–38]
+
+**What follows.** Dependence is not necessarily one-directional. The person receiving support can possess a claim backed by property expectations; the obligated son can possess an inheritance interest while owing support. This is an analytical description of the recorded rights, not a claim that either person was economically independent in daily life. It also does not establish that maintenance was the only reason for adoption.
+
+**What does not follow.** Delivering wool is not evidence that the son personally tended sheep, spun wool, or employed a particular worker. Receiving grain does not establish inability to work, advanced age, disability, or permanent co-residence. Support could have been assembled through several processes that these clauses do not describe. The gap between a delivery obligation and the labor that produced its contents remains open.
+
+BE 51 provides a different relation: Idin-Ištar is hired from his father for an explicitly limited term and a monthly grain rate. Its presence alongside the support agreements blocks a simple division between “family” and “worker.” But it does **not** justify the opposite collapse, treating all familial support as hired labor. BE 51 actually records hire; BE 28 and 48 actually record support and inheritance-linked duties. Those textual differences should survive interpretation. [P1909, p. 43, compared with pp. 29–30, 35–38]
+
+The 80 qa rate in BE 51 is preserved in the edition’s unit rather than converted into a modern volume, money value, nutritional ration, or living standard. The task performed is unspecified. Without a comparable occupation, duration convention, payment recipient, and maintenance arrangement, this number cannot establish a normal Nippur wage. Poebel’s suggestion that payment was probably made at the end of service is an editorial inference, not another explicit contract term. [P1909, p. 43]
+
+### 4.3 Enslavement, ownership transfers, and missing work histories
+
+BE 23 is the clearest selected evidence for named enslaved people incorporated in family property allocation. Narubtum’s share includes Ali-aḫuša and Iškur-rīm-ilī; Ur-Pabilsaĝa’s includes Dumqi-Ištar and Taribum. The legal arrangement is directly visible even though the closing kinship reconstruction is contested. The text also uses a land component in balancing the allocation involving Iškur-rīm-ilī. [P1909, pp. 20–22]
+
+This is evidence about control over persons and its redistribution. It is **not** an employment description. The occurrence of houses and gardens in the same settlement does not itself make every named enslaved person a domestic attendant or agricultural worker. Nor does a share assigned to an heir prove that all its human and material components occupied one place. “Private/domestic context” should therefore mean a family property context here, not an independently demonstrated job inside a dwelling.
+
+There is a useful contrast with BE 48. Its prospective inheritance formulation mentions female and male enslaved persons among house, field, garden, and other property. That supports their inclusion among divisible property categories in this agreement, but it is not a list of named existing workers. Treating it as a census, or counting one person for each generic designation, would turn a clause into evidence it does not provide. [P1909, pp. 35–37]
+
+A small fragment catalogued as a slave sale, OIMA 1 no. 44, adds a transaction lead but little biography: the catalogue gives **N 1165b** and six shekels. It is not dated there. It contributes no reliable general price or household reconstruction. [SZ1976, p. 5 no. 44]
+
+The selected securely attributed documents do not independently identify spouses, parents, or children **of the enslaved individuals**. That is a limitation of this checked set, not a conclusion that enslaved families did not exist. It also explains why the kin dimension is left unknown for the BE 23 individuals rather than filled with the owner’s family relationships.
+
+### 4.4 Status change: distinguish creation, threatened change, and completed release
+
+Three different temporal situations must remain distinct.
+
+**A relationship created in the document:** BE 24 makes Ili-idinnam and Ili-ummati children and heirs of Ea-idinnam and Kuritum. The agreement specifies succession interests and reciprocal breach provisions. **A threatened change:** it provides for sale if the adoptees repudiate the parents. **A completed release:** BE 8 records manumission and a payment. These are not three interchangeable descriptions of dependence. [P1909, pp. 27–29, 38–39]
+
+A conditional sale clause demonstrates an envisaged coercive remedy. It does not show that the trigger occurred, that enforcement followed, or that the person was already enslaved at the agreement’s beginning. The same caution applies to BE 48’s marital breach provision. A subsequent lawsuit, sale deed, or linked personal dossier would be needed to establish an actual transition in those cases.
+
+In BE 8, Duššubtum releases Ištar-rabiat; ten shekels pass to the former owner; the document contains a forehead-cleansing formula and bars future claims by specified heirs. These particulars are explicit in the edition. No clause in the consulted text establishes the money’s source, an accumulated wage fund, unrestricted prior ownership of assets, or post-release residence. A person can be recorded making this payment without the document defining all capacities she possessed beforehand. [P1909, pp. 38–39]
+
+The named Ibi-Enlil and Amertum in the no-claim clause are associated with the succession of Nanna-zimu and Duššubtum. They must not be recast as Ištar-rabiat’s children. Likewise, the lack of an identified continuing-service clause in this tablet should not be filled from a school model. The observed release and the uncertainty about subsequent livelihood can both be preserved.
+
+**Status movement is not necessarily spatial movement.** None of these selected clauses supplies an itinerary between houses. A new owner, heir, or legal relation may imply changes in control; it does not by itself identify a new dwelling. This is why the status table has separate legal-change and residence columns.
+
+### 4.5 Gender and life course: observations without population-wide rules
+
+The selected evidence places women in different positions: Narubtum receives property including enslaved people; Ama-sukkal brings a recorded silver contribution into a marriage; Naramtum receives maintenance rights; Duššubtum acts as the owner releasing Ištar-rabiat; women also appear among the enslaved persons in BE 23. These are distinct documented roles, not a ranking of women’s overall autonomy. [P1909, pp. 20–22, 35–39]
+
+BE 40 is especially important beside BE 48. Both specify consequences for repudiation, but their provisions differ. In BE 40, the wife’s side of the clause involves forfeiture/payment; in BE 48, sale is prescribed. This contrast prevents the latter clause from establishing a universal condition of wives. It does not by itself explain the difference: chronology, negotiated circumstances, wealth, personal history, and legal formulation remain possible questions, not demonstrated causes. [P1909, pp. 35–38]
+
+For life course, the evidence is narrower still. A person identified as a son is not automatically a young child. An adopter receiving support is not automatically elderly. The hire agreement supplies no age for Idin-Ištar, and the adoption agreements used here do not supply a numerical age for their participants. Thus “child labor” and “retirement adoption” are not findings of this return. What is demonstrated is an intergenerational or legally constituted filial relation and, where stated, a support duty. [P1909, pp. 27–31, 43]
+
+Stone’s study of Nippur nadītu women brings additional maintenan
