@@ -56,3 +56,10 @@ No return becomes canonical authority by being committed.
 ## Wave-B synthesis
 
 - `WAVE_B_ADJUDICATION_SYNTHESIS.md` — Master Architect finding-by-finding adjudication of all Wave-B returns, including confirmed Slice-1 repairs, later-slice gaps, rejected overreach, and bounded B2 work.
+
+
+## Wave B2
+
+- B2 packets: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/B2/`
+- baseline: `tres-0010-b2-baseline` @ `0729e460af35668e5b911fa561bf8cec53204142`
+- scope: exactly three decision-support tasks — temporal composition, action/favour closure, and Slice-1 acceptance authority design.
