@@ -20,7 +20,7 @@ Conversation, brainstorming, research returns, proposals, roadmaps, working note
 
 ## Current phase
 
-**ROADMAP STAGE 3 — SFL v0 VERIFICATION DESIGN**
+**ROADMAP STAGE 4 — SFL v0 REFERENCE PROTOTYPE IMPLEMENTATION**
 
 Accepted foundation:
 
@@ -36,11 +36,11 @@ Accepted foundation:
 
 Active work:
 
-- `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
-- `plans/verification/SFL_V0/`
-- current verification focus: final review completed; Stage 3 is held on two semantic decisions—counterparty response policy and the orphan generic commitment-breach attitude rule
+- implementation packet: `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+- completed verification contract: `plans/verification/SFL_V0/`
+- Stage-3 closure review: `research/technical/TRES-0009/STAGE3_POST_REPAIR_CLOSURE_REVIEW.md`
 
-No production implementation has started.
+Persistent prototype implementation is now authorized through bounded Stage-4 task packets; accepted semantics/architecture remain fixed unless escalated.
 
 ## Where to look
 
@@ -58,6 +58,7 @@ No production implementation has started.
 - Verification workbench: `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
 - Canonical verification cards: `plans/verification/SFL_V0/`
 - C# implementation-risk guardrails for Stage 4: `architecture/working/CSHARP_DOTNET_ENGINEERING_GUARDRAILS.md`
+- Active implementation tasks: `tasks/implementation/README.md`
 - Task templates: `tasks/`
 
 ## Repository discipline
