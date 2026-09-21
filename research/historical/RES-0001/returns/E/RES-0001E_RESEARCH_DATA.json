@@ -469,4 +469,46 @@
     {
       "key": "SO1991",
       "short": "Stone and Owen 1991",
-      "full"
+      "full": "Stone, Elizabeth C., and David I. Owen, with a contribution by John R. Mitchell. 1991. Adoption in Old Babylonian Nippur and the Archive of Mannum-mešu-liṣṣur. Mesopotamian Civilizations 3. Winona Lake, IN: Eisenbrauns.",
+      "type": "Primary edition and archive study",
+      "scope": "Adoption and the Mannum-mešu-liṣṣur archive; individual provenances need checking",
+      "id": "MC 3; ISBN 9780931464539; CDLI publication 1667211",
+      "url": "https://www.eisenbrauns.org/books/titles/978-0-931464-53-9.html",
+      "direct": "NO full text: publisher information, catalogue concordances, and references in consulted scholarship only.",
+      "notes": "Do not describe every included text as an adoption; BE 6/2 64 is an immediate counterexample."
+    },
+    {
+      "key": "G2016",
+      "short": "Goddeeris 2016",
+      "full": "Goddeeris, Anne. 2016. The Old Babylonian Legal and Administrative Texts in the Hilprecht Collection Jena. Part 1: Texts, Seal Impressions, Studies. With a contribution by Ursula Seidl. Texte und Materialien der Frau Professor Hilprecht Collection of Babylonian Antiquities im Eigentum der Friedrich-Schiller-Universität Jena 10. Wiesbaden: Harrassowitz.",
+      "type": "Modern primary edition and archive study",
+      "scope": "Hilprecht collection, including Nippur",
+      "id": "TMH 10; relevant page references reported by Van Wyk 2018",
+      "url": "",
+      "direct": "NO: known through the consulted article and bibliography.",
+      "notes": "Modern readings and museum concordances require checking in the edition; do not count their secondhand citation as primary consultation."
+    },
+    {
+      "key": "SP2018",
+      "short": "Spada 2018",
+      "full": "Spada, Gabriella. 2018. Sumerian Model Contracts from the Old Babylonian Period in the Hilprecht Collection Jena. Texte und Materialien der Frau Professor Hilprecht Collection of Babylonian Antiquities im Eigentum der Friedrich-Schiller-Universität Jena 11. Wiesbaden: Harrassowitz.",
+      "type": "Primary edition of school/model contracts",
+      "scope": "Hilprecht collection; Nippur model-contract corpus",
+      "id": "TMH 11; ISBN 9783447110341",
+      "url": "",
+      "direct": "NO: identified through Spada 2021 and bibliographic records.",
+      "notes": "TMH 11 1, pp. 11–30, is the specific follow-up. TMH 10 and TMH 11 are different corpora."
+    },
+    {
+      "key": "G2023",
+      "short": "Goddeeris 2023",
+      "full": "Goddeeris, Anne. 2023. “Economic Life in the Scribal Quarter of Nippur.” In Back to School in Babylonia, edited by Susanne Paulus, 49–57. ISAC Museum Publications 1. Chicago: Institute for the Study of Ancient Cultures.",
+      "type": "Specialist contextual study",
+      "scope": "Nippur scribal-quarter economy",
+      "id": "UGent record 01HQT8SB9GFVDEV15V22126C2N",
+      "url": "https://biblio.ugent.be/publication/01HQT8SB9GFVDEV15V22126C2N",
+      "direct": "NO full text: institutional metadata only; listed PDF restricted to UGent.",
+      "notes": "A relevant missing source; its arguments have not been reconstructed from its title."
+    }
+  ]
+}
