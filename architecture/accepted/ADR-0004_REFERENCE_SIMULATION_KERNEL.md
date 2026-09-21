@@ -13,6 +13,7 @@ The first Social Fabric Laboratory uses a **single-process, single-threaded dete
 - Current typed in-memory records are authoritative execution state.
 - Agents/roles read committed state and emit attempts/proposals; authoritative mutation occurs only through validation/resolution/commit.
 - Ordinary execution follows explicit visibility phases: **read/activate → deliberate/propose → resolve → commit → refresh derived/index state → record semantic history → schedule future work**.
+- **A completed cycle state exists only at a stable cycle boundary after resolution and automatic reaction closure.** Individual commits within the cycle are authoritative for revalidation and causal reactions, but intermediate microstep states are not published as completed cycle state, exposed to a fresh voluntary activation, or treated as checkpoint-safe.
 - Simulated time is explicit. Delayed/interruptible work is represented by serializable process state with deterministic ordering and condition revalidation.
 - Randomness is accessed through an explicit simulation boundary sufficient for reproducible experiments and continuation.
 - Current state remains authoritative; consequential commits emit semantic history/provenance.
@@ -22,6 +23,7 @@ The first Social Fabric Laboratory uses a **single-process, single-threaded dete
 ## Consequences
 
 - Runtime iteration order, coroutine/task stacks, caches, and event logs do not silently become simulation authority.
+- Cycle-level classifications/summaries that depend on the cycle's combined effects are evaluated/published only at stable closure; transient within-cycle classifications may be recorded diagnostically but cannot determine behavior merely through mutation order.
 - Parallelism, GPU/distributed execution, event-sourced authority, and heavyweight simulation frameworks are deferred unless later evidence justifies architectural change.
 - Future optimizations must preserve these semantics or escalate explicitly.
 
