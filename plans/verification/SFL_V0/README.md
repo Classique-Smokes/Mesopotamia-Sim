@@ -49,3 +49,8 @@ Completed-cycle assertions are made only at stable cycle closure. Intermediate c
 TRES-0009 found no remaining semantic or architectural blocker in the Stage-3 package. These artifacts are the canonical implementation-facing verification design for SFL v0.
 
 Implementation may translate them into executable tests/harness code but may not weaken or reinterpret their semantic assertions without returning through the specification/authority process.
+
+## Slice-1 acceptance applicability
+
+- `SLICE1_ACCEPTANCE_MANIFEST.md` — **candidate / pre-code review required; not yet frozen acceptance authority**. It enumerates exact IMP-0001 REQUIRED / DEFERRED / N-A / UNEXERCISED obligations and remains subordinate to `SPEC-SFL-0001`.
+- Supporting CallFavor applicability derivation: `research/technical/TRES-0010/CALLFAVOR_SLICE1_APPLICABILITY_RECONCILIATION.md`.
