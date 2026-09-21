@@ -20,7 +20,7 @@ Complete Roadmap Stage 3: define executable verification scenarios, invariants, 
   - continuity/turnover;
   - controlled lineage;
   - recognition/subjective information;
-  - grounded provision/support/dowry (except exact multi-contributor debit trace);
+  - grounded provision/support/dowry including multi-contributor allocation;
   - no-self-confirmation;
   - head appointment/vacancy/succession and personal-vs-household dual mode;
   - central invalidation/failure knowledge, provision priority, and reaction closure.
@@ -55,11 +55,10 @@ Future Stage-4 engineering context:
 
 ## Next
 
-1. Resolve the narrow multi-contributor provision-allocation erratum.
-2. Resolve the reference-scoring aggregation/configuration contract and pin the required closed-loop scoring profiles.
-3. Complete the blocked multi-contributor provision card from the resolved allocation rule.
-4. Run final Stage-3 completeness/adversarial review over the full canonical verification package.
-5. Prepare the PROJECT-CONTEXT implementation packet.
-6. Begin Roadmap Stage 4 vertical-slice implementation.
+1. Run final Stage-3 completeness/adversarial review over the full canonical verification package.
+2. Repair any genuine verification/specification gap exposed by that review through normal authority rules.
+3. If no blocker remains, close Stage 3.
+4. Prepare the PROJECT-CONTEXT implementation packet.
+5. Begin Roadmap Stage 4 vertical-slice implementation.
 
 Historical model refinement/calibration remains a separate Director-led model-development concern and does not block the foundational v0 verification contract.
