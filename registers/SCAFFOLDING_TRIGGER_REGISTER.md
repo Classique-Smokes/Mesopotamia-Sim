@@ -11,9 +11,9 @@ When a trigger fires, **implement, reject, or explicitly defer** the item. Once 
 ## Triggers
 
 ### SCF-001 — Root verification sensors
-- **Status:** TRIGGERED — IMP-0001
+- **Status:** ARMED — fire on IMP-0001 dispatch
 - **Trigger:** First persistent prototype implementation.
-- **Action:** Establish canonical root build/test/analyzer commands and CI that executes them. Required by `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`.
+- **Action:** Establish canonical root build/test/analyzer commands and CI that executes them. Required by `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`; dispatch is currently blocked by TRES-0010.
 - **Evidence:** `research/technical/HARNESS_ENGINEERING_STUDY_SYNTHESIS.md`
 
 ### SCF-002 — Protected acceptance verification
