@@ -55,7 +55,7 @@ AI-specific process added to compensate for an observed model/tool limitation sh
 
 Obsolete or mechanically superseded instructions should be consolidated or retired rather than accumulating indefinitely.
 
-This point requires governance-level approval before promotion.
+This principle was approved and promoted into `governance/MASTER_ARCHITECT_GUIDE.md`; deferred concrete mechanisms are indexed in `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
 
 ## Deliberately not adopted now
 
