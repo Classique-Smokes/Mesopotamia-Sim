@@ -1,6 +1,6 @@
 # SFL v0 Verification Package
 
-**Status:** ACTIVE / ROADMAP STAGE 3  
+**Status:** COMPLETE / ROADMAP STAGE 3  
 **Authority:** Verification design only. Scenario cards test `SPEC-SFL-0001`; they do not redefine it.
 
 ## Card levels
@@ -42,3 +42,10 @@ Completed-cycle assertions are made only at stable cycle closure. Intermediate c
 - `CROSS_CUTTING_VERIFICATION_CONTRACT.md`
 - `REFERENCE_SCORING_PROFILES.md`
 - `LOWER_LEVEL_SOCIAL_FABRIC_FAMILY.md`
+- `RESPONSE_DECISION_FAMILY.md`
+
+## Closure
+
+TRES-0009 found no remaining semantic or architectural blocker in the Stage-3 package. These artifacts are the canonical implementation-facing verification design for SFL v0.
+
+Implementation may translate them into executable tests/harness code but may not weaken or reinterpret their semantic assertions without returning through the specification/authority process.
