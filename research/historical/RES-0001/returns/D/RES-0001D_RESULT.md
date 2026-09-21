@@ -220,4 +220,64 @@ The 2024 Spada/Hallo publication is important because its abstract identifies Ni
 
 A final bibliographic check located **Spada 2023 on BM 110416**. Its accessible introduction discusses conflicting signs of a school exercise and an operative loan: possible dating traces on one side, tablet format and omitted witnesses on the other. Only that introduction was read; Nippur provenance was not established. The tablet therefore remains outside this return’s actual Nippur case inventory and does not close the security gap. [S16, p. 115]
 
-Similarly, an ePSD2 entry glossed “guarantee” or a lexical list containing an equivalent is not a guarantee instrument. A witness in a loa
+Similarly, an ePSD2 entry glossed “guarantee” or a lexical list containing an equivalent is not a guarantee instrument. A witness in a loan’s witness list is not automatically a guarantor. A contractual warning about future claims is not automatically security for repayment. These distinctions are essential because otherwise the weakest parts of the corpus would appear artificially well documented. [S14–S15; PBS 8/2, 130 witness list, S03]
+
+The remedies actually present in the selected texts are more specific: loss of inheritance eligibility for nonprovision of support, prospective consequences of repudiation, a promise to meet title challenges, and a recorded adjudicated property settlement. They show obligations affecting property, but must not all be relabeled “mortgage,” “guarantee,” or “foreclosure.” [S01–S03; D-C08–D-C10, D-C16–D-C17]
+
+### 4.10 Actual receipts, adjudicated transfers, and heirs’ exposure
+
+**BE 6/2, 65** acknowledges receipt of house purchase money. Unlike a future loan repayment clause, it presents the payment as received. It is nevertheless not a loan discharge, and cannot be used to claim that one of the selected loans was repaid. Its value here is the evidentiary contrast: an undertaking and a receipt are different kinds of record. [S01, pp. 44–45; D-C15]
+
+**BE 6/2, 10** goes further than a hypothetical penalty. It narrates an appeal involving the heirs of Iškur-rabi and Ududu, intervention directing the matter to Nippur’s council, and a property settlement connected with an earlier Ninlil-office/field transaction. Its concluding clauses record conveyance and exclusion of future claims. The old translation leaves difficulties in the exact relation between built house and additional unbuilt ground, so the report calls the remedy **house/plot compensation** rather than reconstructing a precise architectural object. [S01, pp. 46–48; D-C16]
+
+The narrow conclusion is that this document records a property consequence following a dispute and adjudication. It is not evidence for a routine loan-foreclosure mechanism, nor an independent observation of the parties moving into the property. Because named successors are involved, it is also relevant to intergenerational exposure—but not a universal rule that all kin inherit unlimited obligations.
+
+A second, expressly mediated example is **OECT 8, 11 = MC 3, 31**, dated Samsu-iluna 10/09/03. Meinhold reports compensation in a monthly Enlil/Ninlil prebend for provisions supplied by Mannum-mēšu-liṣṣur to Ibbi-Enlil, with the latter’s sons implicated. The original was not checked. Its contractual basis must remain open rather than automatically classifying subsistence provision as a loan or assuming an unrecorded adoption. [S05, especially discussion and n. 12; D-C20]
+
+Finally, BE 6/2, 42 records transmission of office/inheritance title documents and responsibility for future challenges. It is useful because documentary custody and the obligation to respond are themselves made explicit. Poebel’s further explanation that the temple disposed of the titles is an interpretation based on the witnesses, not an explicit institutional sale adopted as fact in this return. [S01, pp. 45–46; D-C17]
+
+### 4.11 Cultivation, labor, and a resource’s actual user
+
+In **BE 6/2, 29**, Ibgatum is the lessor and Damu-iddinam is assigned cultivation of the field against an annually assessed share of its yield. The edition gives one-third of the returns as yearly rent; that wording does not by itself establish a fixed one-year lease duration. This allows the land-related claim, temporary use, and future produce claim to be distinguished. It does not establish the actual harvest, who supplied every input, or whether the rent was delivered. It also does not make the lessee a permanent owner or prove how widespread this tenancy arrangement was. [S01, pp. 43–44; D-C14]
+
+**BE 6/2, 51** separates the father who contracts, the son whose labor is hired, and the person hiring it, with grain remuneration specified. Its limited relevance here is that contractual agency, service, and benefit need not collapse into one person. No conclusion is drawn about the son’s age, consent, residence, or slave/free status, or about whether every resulting payment entered a pooled family fund. Those questions overlap with the labor workstream and require additional evidence. [S01, p. 43; D-C25]
+
+### 4.12 Repeat relationships, documentary custody, and wealth differentiation
+
+The strongest repeat-person analysis completed here is a **property sequence**, not a creditor network: BE 6/2, 32–35. The selected loan edges establish individual creditor/recipient relationships, but do not supply enough securely joined repeated pairs to measure borrowing networks, central creditors, debt concentration, or default contagion. Shared names, household association, and witness overlap would need independent identification before such a reconstruction.
+
+BE 6/2, 64 records repurchase of paternal property from a later holder’s family. It demonstrates a route by which family connection to a plot could reappear after transfer. It does not, by itself, prove that the original transfer was a pledge, that the later holder had to resell, or that no outsiders could buy family property. The proposed match with BE 6/2, 38 is disputed and is not treated as a secure two-deed chain. [S01, pp. 12–14; S04; D-C18]
+
+There is a second boundary: a modern family dossier is not automatically one ancient archive. A document mentioning a deceased person may have been made for a later acquirer. Meinhold’s correction of the Mannum dossier makes documentary custody an explicit question. The report therefore separates **who is mentioned**, **whose transaction is recorded**, and **who plausibly held the deed**. [S05; D-C23]
+
+The assets recorded can be compared at case level: one agreement concerns a small advance, another a portfolio, another an annual office portion. But none supplies a representative social sample or complete net worth. Asset stocks at different dates, liabilities, maintenance burdens, missing instruments, and resources outside a particular division are not commensurable merely because some carry silver valuations. The appropriate result is a **description of documented resource configurations**, not a ranking of households or a citywide wealth curve. [S01–S06; D-C24]
+
+## 5. Disagreement, ambiguity, and source limitations
+
+### 5.1 Corrections that materially affect interpretation
+
+**Four coheirs are not four brothers.** The BE 6/2, 32–35 sequence involves a nephew as well as brothers. Omitting that correction would incorrectly describe the succession structure. Its dates are Samsu-iluna **11**, not 13. BE 6/2, 29 is also Samsu-iluna **11** in the catalogue checked here. [S01, catalogue pp. 148–149; S04, p. 22]
+
+**Co-sale does not resolve the widow’s title.** Women’s involvement is directly visible, while the basis and extent of their rights can remain ambiguous. One should neither remove them as nominal witnesses nor automatically award them the same title as every son. The possible reasons for co-participation remain interpretations unless the individual instrument states them. [S01, nos. 11–12; S04]
+
+**Repurchase and a right to force repurchase are different.** BE 6/2, 64 records the former. Whether an earlier deed is the same parcel, and whether an enforceable redemption right explains the transaction, require separate arguments. The earlier-parcel dispute is retained rather than resolved by a repeated family name. [S01; S04]
+
+**An omitted rate does not establish one universal rate.** Poebel suggested that one understood interest rate explained its omission in his Nippur examples. That is an interpretation of the silence, not a term written into each contract. The inspected interest-bearing PBS loan supplies no number; the report therefore does not adopt a citywide rate from that omission. [S01, p. 42; S03]
+
+**An early functional translation is not a modern re-edition.** Poebel’s office labels, some personal names, and furniture identifications can be obsolete or uncertain. This report preserves the broad contractual distinction only where it does not depend on a contested fine reading. For claims that do depend on such detail, the confidence is reduced or the detail omitted. [S01]
+
+### 5.2 Numerical and chronological restraint
+
+Ancient quantities are retained only where sufficiently legible for the claim. The marriage contribution and half-mina clauses were visually checked. The principal in BE 6/2, 16 was not safely resolved from conflicting OCR and is omitted. Uncertain house-sale prices and legacy acre conversions are not used. No unified price series or purchasing-power estimate is created from mixed assets, dates, and transaction purposes. [S01]
+
+Regnal labels in the early catalogue are kept distinct from later normalized labels. A later waiver can date a dispute without dating the original gift. A year/month/day supplied by a secondary study is identified as such. No attempt has been made to synchronize all reigns into a new chronological table.
+
+### 5.3 Archaeology and physical archive reconstruction remain incomplete
+
+The intended residential-archaeological emphasis is only partly fulfilled. Stone’s full *Nippur Neighborhoods* and its plans/text editions were not obtained. None of the central rights claims in this return depends on an independently verified room-by-room reconstruction. Reported TA deposits in fill and a disturbed TB deposit remain exactly that; their location does not establish that a named borrower lived there or that all tablets in the area formed one household archive. [S07–S08]
+
+The CDLI records examined identify Nippur but leave house, locus, and stratigraphic fields blank. This is not evidence that the objects never had contextual information; it is a limit on what these consulted records supply. [S02–S03]
+
+### 5.4 Survival, genre, and publication bias
+
+The selected corpus privileges people and transactions that generated surviving legal instruments, became accessible through excavation or collecting, and received publication or 
