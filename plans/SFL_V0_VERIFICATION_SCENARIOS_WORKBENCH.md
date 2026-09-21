@@ -36,6 +36,7 @@ Open semantic erratum:
 - `plans/verification/SFL_V0/PROVISION_GROUNDING_FAMILY.md`
 - `plans/verification/SFL_V0/NO_SELF_CONFIRMATION_FAMILY.md`
 - `plans/verification/SFL_V0/HEAD_ROLE_AND_DUAL_MODE_FAMILY.md`
+- `plans/verification/SFL_V0/RESOLUTION_REACTION_FAMILY.md`
 
 ## Required outputs
 
@@ -139,6 +140,12 @@ Exact multi-contributor debit ordering remains gated on the open provision-alloc
 Canonical role verification covers headless formation, unanimous appointment, vacancy without identity loss, succession preserving role identity, scoped authority, separate personal/household decision traces, common-snapshot deliberation, and central conflict resolution.
 
 `VS-SFL-065` is also a canonical witness for NeedsGrain household-support priority over an incompatible ordinary personal transfer.
+
+## Resolution/reaction baseline
+
+Canonical central-resolution verification distinguishes Declined / Unable / InvalidatedAtResolution, checks bounded failure knowledge and no same-cycle retry, exercises support > dowry > personal-transfer priority with one contributor, and requires cause-keyed terminating reaction closure before stable cycle publication/checkpoint.
+
+Communication provenance ordering/Contested behavior remains cross-linked to the recognition family rather than duplicated.
 
 ## Scenario families to specify
 
