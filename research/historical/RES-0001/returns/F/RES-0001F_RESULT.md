@@ -382,4 +382,136 @@ Stone’s proposed citywide abandonment around 1720 BCE is not adopted as a resu
 | House I stratigraphy | Reassignment uses documentary chronology; relevant field notes absent in Stone’s account | Distinguish reported field attribution from reconstructed phase and absolute date |
 | House F subfloors | Published physical joins cross recorded rooms and floor subdivisions | Do not multiply households/teachers solely from subfloor labels |
 | House F later exchange | NN 12 is Ili-ma-ilu year 1; Stone supplies an absolute synchronism | Preserve the regnal date; do not use the BCE equivalent as an independent anchor |
-| Architectural area definitions | Published House I totals differ between presentations; House F usable versus selected roofed area also differs | Do not average them or estimate population; a new measured comparison would req
+| Architectural area definitions | Published House I totals differ between presentations; House F usable versus selected roofed area also differs | Do not average them or estimate population; a new measured comparison would require plans and a declared area definition |
+| Older records in later deposits | NN 16–17 and NN 35–37 are older than associated later legal material | Retention, reuse, and displacement remain alternatives; not every old text is automatically a teaching model |
+| School versus operative text | Some letters and older legal material may be exercises or models | Do not count an uncertain school/model document as a witnessed historical transaction |
+| Excavation/registration bias | Later disturbance, incomplete houses, and selected artifact registration in TA/TB | No frequency estimates for whole-city household types or commercial activities |
+| Access and publication dependence | Full OIP 78, original field notebooks, full Charpin review, relevant 2023 chapters, and specific tablet images not examined | Explicitly mediated citations; no claim of exhaustive current scholarship or epigraphic verification |
+
+A broader uncertainty concerns whether a property term refers to built space, an unbuilt plot, or a particular legal interest. This return does not flatten every catalogued “house,” *kislah*, or ruined plot into an equivalent floor-plan polygon. Nor does it treat all personal names in different documents as the same individual without supporting patronymics, dates, or related context.
+
+Absence requires similar care. No identified partition deed for a subdivided building is not evidence that inheritance never occurred. No house deed in an office archive is not evidence of institutional ownership. No identifiable earlier teacher in a later deposit is not evidence that instruction was absent. These are limits on what the surviving sample establishes.
+
+## 6. Comparative evidence outside Old Babylonian Nippur
+
+Comparisons below are methodological controls, not additional Nippur observations.
+
+**Twentieth-century Iranian village evidence.** Stone’s 1981 analysis uses modern household and spatial analogies. Such evidence can generate a possible explanation for division and recombination of space, but cannot establish that Old Babylonian Nippur had the same residence ideal, family cycle, room allocation, or people-per-room relationship. In this report, analogy supplies alternative hypotheses; it does not complete missing persons or prove a household composition. [S02, comparative discussion.]
+
+**Sippar-Amnanum/Tell ed-Der, later Old Babylonian period.** Robson compares House F with the house/archive associated with Ur-Utu and Inanna-mansum. The comparison is useful because school material can be evaluated alongside a separately identified household archive. The original excavation and text studies for that site were not independently consulted in this task. It therefore remains a reported comparison, not a second independently audited case, and no Sippar family pattern is imported into eighteenth-century Nippur. [S04, pp. 44–45 and references there.]
+
+**Ur, Old Babylonian domestic contexts.** References in the examined scholarship to school material in mixed or construction-related deposits provide a reason to test redeposition at Nippur. They do not decide the origin of a specific House F fragment or determine the function of its room. Likewise, a proposed domestic-chapel arrangement elsewhere does not identify the function or lineage of TB House C’s occupants. [S01, pp. 86–87; S04, contextual discussion and notes.]
+
+Earlier Nippur periods were not used to fill Old Babylonian gaps. In particular, a TB house letter without its level must not allow a Ur III archive to enter an Old Babylonian resident sequence. The older records listed in section 2 are analyzed as objects retained or deposited in later contexts, not as proof that the earlier household persisted.
+
+## 7. Unresolved questions / recommended follow-up research
+
+1. What does direct collation of NN 44 / 3N-T93 / A30141 establish about the area, and how does Charpin’s complete 1989 discussion revise the interpretation of NN 42–47?
+2. Can NN 47’s full wording, including its boundaries and transfer direction, resolve the tension between the catalog and the narrative assignment of the final House I property and archive holder?
+3. Which House I walls, doorways, floor levels, and renovations can be dated independently of the assumed legal sequence when the original OIP 78 plans, field drawings, and notebooks are compared?
+4. Does collection-level checking resolve the NN 42 regnal-date discrepancy and the NN 45 museum-number discrepancy, and what current CDLI or museum identifiers securely correspond to the six documents?
+5. How do the relevant chapters of *Back to School in Babylonia* (2023) revise House F’s architecture, tablet joins, economic context, and the proposed identities or dates of its users?
+6. What secure distinction can be made among operative documents, retained title records, and model exercises in House F’s later legal assemblage and its letter fragments?
+7. Can the Ili-ma-ilu year-1 exchange be synchronized independently, and does it actually concern the excavated House F rather than another property?
+8. Which TB House O objects and tablets belong to the same depositional episode, and is there evidence outside the cache identifying title to the building or Atta’s co-residents?
+9. Do TA House N’s older deeds belong to a demonstrable chain of title, reused teaching material, or redeposited objects, and how would each alternative change the proposed personal continuity?
+10. Can any TB House C subdivision be correlated with an independently dated named transaction, and can the disputed access points be resolved from original records?
+11. What contextual and osteological evidence dates the TA/TB burials relative to occupation and rebuilding, and does any independent evidence establish relationships among the buried individuals or to named people?
+12. What independently dated residential contexts outside TA/TB, especially for the later seventeenth century BCE, would test the representativeness and temporal reach of these conclusions?
+13. How do later occupation studies and the full arguments of Steinmeyer and de Boer change the relation between local terminal horizons and the city’s political and settlement chronology?
+
+## 8. Register-ready candidate claims
+
+### Candidate 1 — F-C01: Transferable interests without an identified resident census
+
+**Claim / proposition:** The six catalogued House I contracts record changing rights in house property through partition, sale, exchange, and transfer of a partner’s share; they do not establish a complete co-resident group.  
+**Period:** Si 8–18, conventionally 1742–1732 BCE.  
+**Geography / archive / social context:** TA House I; NN 42–47; final finds TA 178/185 XA-1.  
+**Evidence type:** Mixed: ancient legal documents through published catalog and archaeological interpretation.  
+**Primary evidence:** NN 42–47; excavation and museum identifiers in appendix A.  
+**Secondary scholarship:** S01, pp. 64–68, catalog p. 218; S02.  
+**Interpretation(s):** Changes in legal interests can be reconstructed; physical identification and residential implications require further steps.  
+**Uncertainty / disagreement:** NN 44 area; NN 47 catalog/narrative tension; proposed spatial correlation.  
+**Confidence + rationale:** MODERATE: coherent catalogued transactions, but uncollated readings and conditional building identification.  
+**Limits on generalization:** This group, not all Nippur property or family practice.  
+**Relevance to project question:** Distinguishes legal relationship from residential membership.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 2 — F-C02/F-C03: One final deposit is not successive named occupations
+
+**Claim / proposition:** The House I transaction sequence is associated with a final XA-1 assemblage; it does not provide six separately documented occupation phases.  
+**Period:** Texts Si 8–18; later XA-1 deposition.  
+**Geography / archive / social context:** TA 178 and 185, House I.  
+**Evidence type:** Mixed.  
+**Primary evidence:** Catalogued findspots of NN 42–47.  
+**Secondary scholarship:** S01, pp. 65–67.  
+**Interpretation(s):** Retained archive and possible intra-building dispersal; architectural phasing partly reconstructed from text dates.  
+**Uncertainty / disagreement:** Original deposit formation and reassigned phase chronology are not independently checked.  
+**Confidence + rationale:** MODERATE: consistent catalogued find attribution, but mediated stratigraphy.  
+**Limits on generalization:** Does not establish that the whole deposit was undisturbed or that all texts concern one building.  
+**Relevance to project question:** Prevents conversion of a property archive into an artificial resident succession.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 3 — F-C07/F-C09: Instructional activity does not identify the household
+
+**Claim / proposition:** TA House F’s earlier assemblage strongly supports instructional activity; its later legal texts do not establish the identity or household composition of the earlier teaching occupants.  
+**Period:** Earlier field level 10 / Stone XI, principally 1740s BCE; later XA-1 assemblage.  
+**Geography / archive / social context:** TA House F, not TB House F.  
+**Evidence type:** Mixed.  
+**Primary evidence:** Exercise tablets, installations, and joins in S04; later NN 11–17.  
+**Secondary scholarship:** S04, pp. 39–45, figs. 3–8 and p. 45 n. 14; S01, pp. 56–59.  
+**Interpretation(s):** Local teaching activity in a domestic-scale setting; no warranted backward projection of later legal parties.  
+**Uncertainty / disagreement:** Individual fragments may be reused; some letters may be exercises; 2023 updates not read.  
+**Confidence + rationale:** HIGH for teaching activity; MODERATE for the absence of an established cross-phase identity link. These are separate propositions, not a single HIGH claim about residents.  
+**Limits on generalization:** No teacher count, pupil count, household size, or citywide schooling model.  
+**Relevance to project question:** A building’s activity can involve people beyond a co-resident group.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 4 — F-C13/F-C14: Atta’s cache associates a person with a place, not title to it
+
+**Claim / proposition:** The cache in TB House O links a substantial temple-office dossier to Atta and to a specific deposit; the dossier does not establish ownership of the excavated building.  
+**Period:** TB E-2; dated Atta purchases include Si 3–24, 1747–1726 BCE.  
+**Geography / archive / social context:** TB 75 E-2, House O; NN 68–91.  
+**Evidence type:** Mixed.  
+**Primary evidence:** Concentrated cache and named transactions, especially NN 69–84.  
+**Secondary scholarship:** S01, pp. 91–98, catalog pp. 219–221; original Goetze edition not independently read.  
+**Interpretation(s):** Strong archive–person association, probable local use, possible overlap of domestic and documentary activities.  
+**Uncertainty / disagreement:** Full building unexcavated/disturbed; depositor, title, and co-residents not directly identified.  
+**Confidence + rationale:** MODERATE: convergent context and names, with incomplete architectural and archival verification.  
+**Limits on generalization:** Does not establish institutional tenancy, landlessness, or a typical TB household.  
+**Relevance to project question:** Distinguishes archive holder, activity, ownership, and residence.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 5 — F-C10/F-C15: Document biographies can outlast transactions
+
+**Claim / proposition:** Later deposits at Nippur include older legal records and, in a linked office sequence, records of a prior holder’s acquisition; the date and parties of a deed cannot automatically date or identify the deposit’s resident group.  
+**Period:** Older records in TA XI-2; office transfers Si 23–24.  
+**Geography / archive / social context:** TA House N, NN 35–37; TB House O, NN 83–84.  
+**Evidence type:** Mixed.  
+**Primary evidence:** Catalogued dates/findspots and linked parties.  
+**Secondary scholarship:** S01, catalog pp. 217–218, 220–221.  
+**Interpretation(s):** Retained legal documentation is plausible; old objects may also be displaced.  
+**Uncertainty / disagreement:** The mechanism of retention is not resolved for all House N records.  
+**Confidence + rationale:** MODERATE: multiple date/context contrasts, with differing depositional explanations.  
+**Limits on generalization:** No universal archival retention practice; no automatic resident succession.  
+**Relevance to project question:** Separates document history from household history.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 6 — F-C12: Physical subdivision need not disclose its legal cause
+
+**Claim / proposition:** TB House C’s published subdivision supports a change in spatial organization without establishing a corresponding named family partition.  
+**Period:** Local level II to I sequence.  
+**Geography / archive / social context:** TB House C/C-1/C-2.  
+**Evidence type:** Mixed, with excavation evidence mediated through reanalysis.  
+**Primary evidence:** Architectural changes reported in S01 from S06 and field documentation.  
+**Secondary scholarship:** S01, pp. 86–88.  
+**Interpretation(s):** Reorganization into smaller units; multiple legal or practical causes remain possible.  
+**Uncertainty / disagreement:** Access details vary between published plans and notes; no matching deed established.  
+**Confidence + rationale:** MODERATE for subdivision; LOW for any specific household-fission explanation.  
+**Limits on generalization:** This local sequence, not a citywide family cycle.  
+**Relevance to project question:** Material change can be retained without inventing a social event.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 7 — F-C06/F-C20: Legal relationships need not carry an archaeological address
+
+**Claim / proposition:** A house lease and sequential estate partitions identify legal relationships withou
