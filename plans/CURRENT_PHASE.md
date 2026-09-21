@@ -13,7 +13,7 @@ Complete Roadmap Stage 3: define executable verification scenarios, invariants, 
 - C# 14 / .NET 10 LTS host/runtime accepted.
 - Roadmap Stage 2 SFL v0 semantic specification.
 - Passes A-G completed.
-- Targeted adversarial reviews through TRES-0007.
+- Targeted adversarial reviews through TRES-0008.
 - Accepted specification: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`.
 - Canonical verification families completed so far:
   - formation;
@@ -55,10 +55,11 @@ Future Stage-4 engineering context:
 
 ## Next
 
-1. Run final Stage-3 completeness/adversarial review over the full canonical verification package.
-2. Repair any genuine verification/specification gap exposed by that review through normal authority rules.
-3. If no blocker remains, close Stage 3.
-4. Prepare the PROJECT-CONTEXT implementation packet.
-5. Begin Roadmap Stage 4 vertical-slice implementation.
+1. Resolve the deterministic response-decision policy erratum.
+2. Resolve the orphan generic commitment-breach attitude rule.
+3. Promote the approved resolutions losslessly, pin response profiles/cards, and rerun the final coverage check.
+4. If no blocker remains, close Stage 3.
+5. Prepare the PROJECT-CONTEXT implementation packet.
+6. Begin Roadmap Stage 4 vertical-slice implementation.
 
 Historical model refinement/calibration remains a separate Director-led model-development concern and does not block the foundational v0 verification contract.
