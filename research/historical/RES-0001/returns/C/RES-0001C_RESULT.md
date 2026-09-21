@@ -306,4 +306,105 @@ TIM 4, 13–14 are treated separately because their **Nippur attribution is unce
 
 **Where are care obligations independently observed after stipulation?** Are there receipts, accounts, complaints or settlements that connect a particular adoption clause to actual provision, rather than merely repeating the expected obligation? [D01, D08, D12, D26]
 
-**When did an heir acquire titl
+**When did an heir acquire title, enjoyment and managerial authority, and who retained each beforehand?** Which instruments or subsequent acts distinguish these stages explicitly rather than leaving them inferred? [D06–D07, D12, D26]
+
+**How were enslaved persons’ own relationships affected by division?** Do parallel contracts or later records identify continuing marriages, parent–child ties, manumission or movement after the allocations in the Narāmtum estate? [D12, D14–D15]
+
+### 7.3 Architecture and representativeness
+
+**Can a defensible tablet-to-house-to-phase chain be established for either principal dossier or the court case?** Which associations rest on excavation records rather than later ownership reconstruction, and do physical changes correspond to the legal subdivisions? [S08–S09; D18]
+
+**What would a complete, deduplicated Nippur adoption/partition corpus change?** Does the distribution vary by reign, institutional connection, gender, wealth or provenance, and is there a defensible observation base for any claim about frequency? [S05–S06; document ledger]
+
+## 8. Register-ready candidate claims
+
+The following are candidates for the Master Architect’s review, not canonical entries. Their local claim links preserve the fuller qualifications in §3. No canonical Historical Evidence Register numbers are assigned.
+
+### Candidate 1 — Heirship and lifetime provision could be linked
+
+- **Claim / proposition:** Some inspected adoption instruments combine heirship/property arrangements with obligations to provide support during the adopter’s lifetime. Local claim: C-C01.
+- **Period:** Lipit-Enlil d and Rīm-Sîn I 43; Old Babylonian.
+- **Geography / archive / social context:** Nippur-attributed Ur-Lumma/Lu-Bau and Narāmtum/Ur-Pabilsaga records; property-bearing parties.
+- **Evidence type:** Primary legal instruments, independently compared.
+- **Primary evidence:** OECT 8, 20 = MC 3, 23, P283648, rev. 3–8 (D01); TMH 10, 6, P504399, obv. 18–rev. 1 (D12).
+- **Secondary scholarship:** S05 and S06 through selected digital editions; S03 discussion; S04 collations where relevant.
+- **Interpretation(s):** The arrangements link a continuing personal obligation to a succession relationship; they need not have only one purpose.
+- **Uncertainty / disagreement:** Actual instalment delivery, adopter age, childlessness and co-residence are not established by these clauses.
+- **Confidence + rationale:** HIGH for the contractual linkage: converging provisions in two different dossiers.
+- **Limits on generalization:** Not a citywide frequency, universal adoption purpose, or rule that all transfers awaited death.
+- **Relevance to project question:** Shows one documented way rights and obligations were attached to relationships extending beyond an individual.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 2 — A female adopter’s assets had a prior gift history
+
+- **Claim / proposition:** Narāmtum, explicitly designated nadītu/lukur of Lugal-aba, adopted Ur-Pabilsaga using assets attributed to a gift from her father. Local claim: C-C02.
+- **Period:** Rīm-Sîn I 43, month 8.
+- **Geography / archive / social context:** Nippur; Narāmtum dossier; female religious-status property holder and male adoptee.
+- **Evidence type:** Primary adoption instrument.
+- **Primary evidence:** TMH 10, 6, P504399, HS 2213, obv. 1–17 (D12).
+- **Secondary scholarship:** Goddeeris 2016 selected edition (S06); Van Wyk 2019a (S03); Földi 2019, p. 251 (S04).
+- **Interpretation(s):** A woman’s own documented property history could form the basis of a new succession/support arrangement.
+- **Uncertainty / disagreement:** The wording identifies a paternal gift, not necessarily inheritance at the father’s death. Damaged dependent-person labels remain qualified.
+- **Confidence + rationale:** HIGH for adopter identity, explicit status and gift attribution in the instrument.
+- **Limits on generalization:** One woman of a particular status; does not establish all women’s capacities, motives, or the presence of female adoptees.
+- **Relevance to project question:** Preserves women’s documented agency in intergenerational arrangements without deriving a universal gender rule.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 3 — Mannum’s inheritance chronology must use the revised date
+
+- **Claim / proposition:** The published re-edition of MC 3, 51 dates the partition to Samsu-iluna 10, not the older year 23; an argument excluding inheritance because it occurred too late must therefore be reconsidered. Local claims: C-C06–C-C07.
+- **Period:** Samsu-iluna 10, month 3; related exchange on day 23.
+- **Geography / archive / social context:** Mannum-mešu-liṣṣur/Nuska-amaḫ dossier attributed to Nippur; MC 3, 51 catalogue provenience uncertain.
+- **Evidence type:** Published primary re-edition plus related legal text; bounded causal analysis.
+- **Primary evidence:** MC 3, 51 = CUSAS 15, 23, P270657 (D06), as re-edited by Meinhold; OECT 8, 16, P283643 (D07).
+- **Secondary scholarship:** Meinhold 2015, especially pp. 26–27 (S01), revising the earlier chronology of S05.
+- **Interpretation(s):** Inheritance belongs earlier in the sequence of resource formation; adoption cannot be assumed to explain every later acquisition.
+- **Uncertainty / disagreement:** No fresh clay collation was performed. Chronological precedence is not proof that inherited income financed a particular purchase.
+- **Confidence + rationale:** HIGH for the published date correction; MODERATE for the wider economic reconstruction.
+- **Limits on generalization:** One dossier. It does not settle all genealogical links or establish aggregate wealth and cash flows.
+- **Relevance to project question:** Prevents a misdated causal history from becoming an accepted proposition about household continuity.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 4 — Prior gifts could constrain later estate settlements
+
+- **Claim / proposition:** A lifetime gift to Nanna-meša’s daughter Nin-kuzu was acknowledged in a later settlement involving other family claimants, compensation and waiver. Local claim: C-C09.
+- **Period:** Hammurabi 31, month 5; earlier gift recalled but not independently dated here.
+- **Geography / archive / social context:** Nippur; earlier title/family material associated with the Mannum dossier.
+- **Evidence type:** Primary legal settlement with retrospective recital.
+- **Primary evidence:** OECT 8, 4 = MC 3, 25, P283650, Ashm 1926-0379, obv. 1–20 and rev. 1 (D04).
+- **Secondary scholarship:** Meinhold 2015 (S01); Hunter 1930 and Stone/Owen 1991 through selected digital edition (S13/S05).
+- **Interpretation(s):** Successors encountered rights already created during a predecessor’s life; division was not necessarily a distribution from an untouched estate.
+- **Uncertainty / disagreement:** The date of the later waiver is not the date of the original gift or a securely known death date. Broader kinship interpretations differ.
+- **Confidence + rationale:** HIGH for the recalled gift, compensation and renunciation recorded in this settlement.
+- **Limits on generalization:** No universal daughter’s share, dowry rule, equality rule, or proof of residence follows.
+- **Relevance to project question:** Shows how earlier acts remained consequential when parties and generations changed.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 5 — Inherited resources could change form through exchange
+
+- **Claim / proposition:** Mannum exchanged inherited and preferential built-property rights for fractions of recurring institutional rights. Local claim: C-C11.
+- **Period:** Samsu-iluna 10, month 3, day 23.
+- **Geography / archive / social context:** Nippur; Mannum-mešu-liṣṣur/Munawwirum transaction.
+- **Evidence type:** Primary exchange instrument.
+- **Primary evidence:** OECT 8, 16 = MC 3, 30, P283643, Ashm 1926-0384, obv. 1–12 and rev. 1–4 (D07).
+- **Secondary scholarship:** Meinhold 2015 (S01); Meinhold 2014 (S02).
+- **Interpretation(s):** Continuity of a successor’s resource position did not require retention of the same physical property bundle.
+- **Uncertainty / disagreement:** The text does not establish revenue received, personally performed service or residence. A seal-filiation discrepancy remains unresolved.
+- **Confidence + rationale:** HIGH for the exchange and categories of rights explicitly recorded.
+- **Limits on generalization:** A specific contractual transfer, not a model of the whole institutional economy or evidence of a house move.
+- **Relevance to project question:** Documents transformation within succession rather than equating continuity with unchanged possessions.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 6 — Earlier expense claims could affect later heirs
+
+- **Claim / proposition:** A settlement recognized Mannum’s earlier expenses for Ibbī-Enlil and transferred an institutional entitlement from the heirs. Local claim: C-C12.
+- **Period:** Samsu-iluna 10, month 9, day 3.
+- **Geography / archive / social context:** Nippur; Mannum and the named heirs of Ibbī-Enlil.
+- **Evidence type:** Primary retrospective settlement referring to examination of an expense record.
+- **Primary evidence:** OECT 8, 11 = MC 3, 31, P283642, Ashm 1926-0380 (D08); linked heir group in OECT 8, 19, P283646 (D25), with name variant retained.
+- **Secondary scholarship:** Meinhold 2015 (S01), discussion of these transactions.
+- **Interpretation(s):** An obligation or claim arising during an individual’s life could alter resources allocated by successors.
+- **Uncertainty / disagreement:** Recognition of a specific claim does not prove all support was performed, explain its motive, or establish an adoption relationship. Name/seal variants are flagged.
+- **Confidence + rationale:** HIGH for the recorded claim, examination and settlement; less certain for every cross-document family link.
+- **Limits on generalization:** Not a universal rule that all personal expenses or debts passed to all heirs.
+- **Relevance to project questio
