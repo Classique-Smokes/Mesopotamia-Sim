@@ -765,4 +765,59 @@
       "citation": "Cuneiform Digital Library Initiative. Catalogue and edition record P258016, CBS 565 and CBS 565a, designated ZA 73, p. 56; BE 6/2 82 (date only). Record consulted 19 September 2026.",
       "type": "Object catalogue and electronic edition",
       "scope": "Sippar-Yahrurum (uncertain), not Nippur; Samsuiluna 10/07/03.",
-      "stable": "http
+      "stable": "https://cdli.earth/artifacts/258016",
+      "access": "DIRECT OBJECT RECORD",
+      "notes": "Negative control: a BE 6/2 reference does not make a tablet Nippur evidence. Main edition credited to Claus Wilcke 1983, “Nachlese zu A. Poebels … Teil 1,” ZA 73: 48–66; Wilcke article itself not read."
+    },
+    {
+      "id": "S12",
+      "short": "CDLI P259799 concordance",
+      "citation": "Cuneiform Digital Library Initiative. Update event 104576, entry for BE 06/2, 010 (P259799). Retrieved through the search index on 19 September 2026.",
+      "type": "Catalogue maintenance/concordance record",
+      "scope": "Identifier support for BE 6/2 10.",
+      "stable": "https://cdli.earth/update-events/104576 ; P259799",
+      "access": "INDEXED RECORD EXCERPT ONLY",
+      "notes": "Direct P259799 artifact endpoints failed. Identifier corroboration only; not a modern edition or independent reading of the transaction. BE 6/2 10 remains the controlling citation."
+    },
+    {
+      "id": "S13",
+      "short": "Chiera 1914 / PBS 8/1",
+      "citation": "Chiera, Edward. 1914. Legal and Administrative Documents from Nippur, Chiefly from the Dynasties of Isin and Larsa. Publications of the Babylonian Section 8, part 1. Philadelphia: University Museum.",
+      "type": "Primary edition; discovery lead",
+      "scope": "Nippur legal/administrative corpus.",
+      "stable": "PBS 8/1; https://openlibrary.org/books/OL6573687M/Legal_and_administrative_documents_from_Nippur.",
+      "access": "METADATA ONLY",
+      "notes": "Internet Archive text/PDF routes did not yield a usable edition during this pass. Not part of the directly read corpus."
+    },
+    {
+      "id": "S14",
+      "short": "Çığ, Kızılyay and Kraus 1952 / ARN",
+      "citation": "Çığ, Muazzez, Hatice Kızılyay, and F. R. Kraus. 1952. Altbabylonische Rechtsurkunden aus Nippur. Istanbul: Millî Eğitim Basımevi.",
+      "type": "Primary edition; case-fragment concordance source",
+      "scope": "Istanbul Nippur legal tablets.",
+      "stable": "ARN, especially no. 102; cited through S02",
+      "access": "INDIRECT CONCORDANCE ONLY",
+      "notes": "S02 identifies Ni 9258 / ARN 102 as the case fragment associated with the UM 29-16-141 tablet (OBCN I 28). It is not reported as a tablet-to-tablet join. The book was not examined independently."
+    },
+    {
+      "id": "S15",
+      "short": "Huber-Vulliet 2010",
+      "citation": "Huber-Vulliet, Fabienne. 2010. “Un festival nippurite à l’époque paléobabylonienne.” In Heather D. Baker, Eleanor Robson, and Gábor Zólyomi, eds., Your Praise Is Sweet: A Memorial Volume for Jeremy Black, 125–150. London: British Institute for the Study of Iraq.",
+      "type": "Specialist study; discovery lead",
+      "scope": "Old Babylonian Nippur cult and distribution.",
+      "stable": "Volume repository https://discovery.ucl.ac.uk/id/eprint/1409045/",
+      "access": "BIBLIOGRAPHIC LEAD; CHAPTER NOT READ",
+      "notes": "Potential route to actual allocation/service evidence. No distribution quantities or personnel conclusions attributed to this unread chapter."
+    },
+    {
+      "id": "S16",
+      "short": "Project packet",
+      "citation": "MESOPOTAMIA_RES-0001_RESEARCH_DISPATCH, RES-0001G task package: shared context, evidence protocol, source starting points, return template, canonical Seed copy, and task brief.",
+      "type": "User-supplied project authority",
+      "scope": "Question, limits, and required return structure; not historical evidence.",
+      "stable": "Original local archive MESOPOTAMIA_RES-0001_RESEARCH_DISPATCH.zip; seven task-package files retained in inputs/",
+      "access": "DIRECT",
+      "notes": "Advisory research only. No canonical state changed and no institutional mechanics proposed."
+    }
+  ]
+}
