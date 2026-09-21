@@ -41,3 +41,4 @@ Completed-cycle assertions are made only at stable cycle closure. Intermediate c
 - `DETERMINISM_RECOVERY_EXPLAINABILITY_FAMILY.md`
 - `CROSS_CUTTING_VERIFICATION_CONTRACT.md`
 - `REFERENCE_SCORING_PROFILES.md`
+- `LOWER_LEVEL_SOCIAL_FABRIC_FAMILY.md`
