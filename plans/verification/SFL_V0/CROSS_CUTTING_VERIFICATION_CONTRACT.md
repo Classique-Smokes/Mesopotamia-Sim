@@ -75,12 +75,41 @@ Kinship multiplication must not change stored attitude or satisfy stored-attitud
 
 ### Grain / provision / need
 
-- grain action amount validation: negative / 0 / 1 and representative non-integral input;
+- grain action-term validation: negative / 0 / 1 and representative non-integral input for every applicable Slice-1 grain-denominated semantic ingress;
 - debt repayment amount: remaining-1 / remaining / remaining+1 where remaining > 1;
-- protected reserve: grain 1 / 2 / 3;
+- **RepayDebt debtor reserve:** resulting debtor grain 1 / 2 / 3, verifying only the §3.3 requirement that repayment leave at least 2 grain;
 - NeedsGrain clearing: grain 0 / 1;
+- **household-provision contributor reserve:** contributor grain 1 / 2 / 3, verifying exposed capacity `max(0, grain-2)` without creating a generic interpersonal-transfer reserve;
 - provision contributor NeedsGrain false/true at same grain;
 - exact collective capacity insufficient / equal / greater than requested spend.
+
+#### Slice-1 D4 ingress coverage
+
+The global grain-term validity rule applies to every grain-denominated term that reaches a Slice-1 semantic action/proposal ingress. Verification must freeze each applicable ingress explicitly so one easy route cannot stand in for another.
+
+Required current ingress classes:
+
+- `OfferGift` grain-transfer term;
+- `RequestGiftOrHelp` grain-transfer term;
+- `OfferLoan` grain amount;
+- `RequestLoan` grain amount;
+- direct `RepayDebt(amount)`;
+- `ProposeMarriage(..., proposedDowry)` term on the direct-bypass proposal shape;
+- inner `CallFavor(RepayDebt(..., amount))`;
+- the required Slice-1 **grain-transfer instantiation** of `OfferBenefitForFavor`;
+- the required Slice-1 **grain-transfer instantiation** of relationship-mediated reciprocal help.
+
+For BFF/RMRH, this verification requirement is **schema-neutral**. It does not require a raw scalar `amount` field on those actions. If the implementation represents the specified material benefit/help as a validated grain-transfer/material-benefit object, evidence may be structural or executable, but every grain quantity embedded in, referenced by, or required to construct that public semantic term must satisfy the same D4 validity rule before target response.
+
+For every applicable ingress, verify:
+
+- zero and negative terms are rejected;
+- a representative non-integral term is rejected, or is structurally unrepresentable at the public semantic boundary without coercion/truncation;
+- a valid positive integer reaches ordinary action-specific gates;
+- invalid terms produce no material/social effect and are not `Declined`, `Unable`, or `InvalidatedAtResolution`;
+- where a target response exists, invalid terms are rejected before that response context activates.
+
+Do not infer a generic two-grain reserve from this matrix. Grain-term validity and action-specific feasibility remain separate.
 
 ### Formation / participation / lifecycle
 
