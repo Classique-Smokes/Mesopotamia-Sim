@@ -342,4 +342,6 @@ The “consulted directly” column refers to the level of material actually ret
 
 ### Corpus abbreviations and retrieval cautions
 
-**CDLI** = Cuneiform Digital Libra
+**CDLI** = Cuneiform Digital Library Initiative; **CDLN/CDLB/CDLJ** = its Notes, Bulletin and Journal; **SAOC** = Studies in Ancient Oriental Civilization; **OIP** = Oriental Institute Publications; **TMH** = Texte und Materialien der Frau Professor Hilprecht Collection; **BE** = The Babylonian Expedition of the University of Pennsylvania; **PBS** = Publications of the Babylonian Section; **OECT** = Oxford Editions of Cuneiform Texts; **CUSAS** = Cornell University Studies in Assyriology and Sumerology; **NABU** = Nouvelles assyriologiques brèves et utilitaires. Abbreviations reproduce the editions’ conventional identifiers and are not alternative independent witnesses.
+
+The older editions behind the inspected objects were not all independently retrieved. Where an original volume was accessed only through a later edition or catalogue, the immediate consulted source is named. Bibliographic references and ancient tablet content are not redistributed in this package beyond short identifying information and original analysis.
