@@ -36,11 +36,12 @@ Accepted foundation:
 
 Active work:
 
-- implementation packet: `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+- **pre-implementation gate:** `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
+- prepared implementation packet, **dispatch blocked:** `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
 - completed verification contract: `plans/verification/SFL_V0/`
 - Stage-3 closure review: `research/technical/TRES-0009/STAGE3_POST_REPAIR_CLOSURE_REVIEW.md`
 
-Persistent prototype implementation is now authorized through bounded Stage-4 task packets; accepted semantics/architecture remain fixed unless escalated.
+Stage 4 is prepared, but persistent implementation must not begin until TRES-0010 is reconciled and the Master Architect explicitly releases IMP-0001.
 
 ## Where to look
 
@@ -58,7 +59,8 @@ Persistent prototype implementation is now authorized through bounded Stage-4 ta
 - Verification workbench: `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
 - Canonical verification cards: `plans/verification/SFL_V0/`
 - C# implementation-risk guardrails for Stage 4: `architecture/working/CSHARP_DOTNET_ENGINEERING_GUARDRAILS.md`
-- Active implementation tasks: `tasks/implementation/README.md`
+- Pre-implementation red team: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/`
+- Active/prepared implementation tasks: `tasks/implementation/README.md`
 - Task templates: `tasks/`
 
 ## Repository discipline
