@@ -137,4 +137,135 @@
       "rationale": "The contrast rests on explicit contractual provisions in two documents, not an inferred social ranking.",
       "limit": "Two agreements; not a comprehensive account of marriage law, women’s legal position, or enforcement.",
       "relevance": "Legal vulnerability can be relationship- and clause-specific rather than a permanent status inferred from gender alone.",
-      "interpretations": "The difference is historically meaningful without proving why these parties used different terms. Social class, prior circumstances, or legal practice cannot be selected as the cause from these documen
+      "interpretations": "The difference is historically meaningful without proving why these parties used different terms. Social class, prior circumstances, or legal practice cannot be selected as the cause from these documents alone.",
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "E-C09",
+      "title": "Instruction without an apprenticeship contract",
+      "claim": "Nippur educational tablet CBS 14156 provides evidence for instructional copying; it does not itself document an apprenticeship agreement.",
+      "period": "Old Babylonian; no regnal date assigned here",
+      "context": "Nippur educational artifact; no household-membership attribution made",
+      "etype": "Original study of a primary artifact",
+      "primary": "CBS 14156, illustrated in T1998 p. 45 fig. 9.",
+      "secondary": "Tinney identifies teacher-model and student-practice portions.",
+      "counter": "No fees, duration of service, indenture, kin relation, or residence follows from those features.",
+      "conf": "MODERATE",
+      "rationale": "Instruction is supported, but the social and contractual relation is unrecorded.",
+      "limit": "Not an attested paid apprenticeship or resident pupil.",
+      "relevance": "Separates skill transmission from legally specified labor service.",
+      "interpretations": "The educational object answers a narrower question than a service contract would.",
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "E-C10",
+      "title": "Model manumissions are not event records",
+      "claim": "Nippur manumission model contracts must be treated as didactic evidence, not counted as completed releases of named people.",
+      "period": "Old Babylonian; individual regnal dating not established here",
+      "context": "Nippur model corpus, especially TMH 11 1 as reported by Spada",
+      "etype": "Specialist analysis; primary model edition not directly consulted",
+      "primary": "TMH 11 1, identified through SP2021 p. 287 n. 13; SP2018 not directly read.",
+      "secondary": "Spada distinguishes the pedagogical corpus from actual legal records.",
+      "counter": "Her separately edited examples have mixed or uncertain provenances; not all are Nippur.",
+      "conf": "MODERATE",
+      "rationale": "The genre distinction is clear, but the underlying Nippur edition was not directly checked.",
+      "limit": "No event frequency or actual individual life history can be generated from these examples.",
+      "relevance": "Prevents didactic names and formulae from becoming invented social biographies.",
+      "interpretations": "Formulae can frame a legal question; their occurrence on a school text is not proof of a corresponding transaction.",
+      "design_status": "NO DESIGN DECISION"
+    }
+  ],
+  "status_dimensions": {
+    "columns": [
+      "person",
+      "legal_status_ownership",
+      "kin",
+      "residence",
+      "labor_service",
+      "economic_dependence",
+      "mobility",
+      "capacity",
+      "sources"
+    ],
+    "rows": [
+      [
+        "Idin-Ištar — BE 51",
+        "Named worker; ownership status unstated",
+        "Son of Nabi-Šamaš; hired from him",
+        "Unknown",
+        "Fixed-term hire; 80 qa grain/month",
+        "Payment documented; maintenance and payee not explicit",
+        "Term ends XII/30; movement/residence not described",
+        "No independent contracting or property capacity established",
+        "E-C01; P1909 p. 43"
+      ],
+      [
+        "Ea-tayar — BE 28",
+        "Adopted heir; no ownership of him stated",
+        "Adopted son of Ibkuša; Ea-turam called brother",
+        "Unknown; property shares are not a residence roster",
+        "Annual support in grain, wool, oil",
+        "Heirship linked to support performance",
+        "Change in kin/property relationship; relocation unknown",
+        "Allocated inheritance share",
+        "E-C02; P1909 pp. 29–30"
+      ],
+      [
+        "Ea-turam — BE 28",
+        "Son by the wife; heir",
+        "Son of Ibkuša; brother of Ea-tayar in document",
+        "Unknown",
+        "Parallel annual support duty",
+        "Same support/inheritance connection",
+        "Unknown",
+        "Allocated inheritance share",
+        "E-C02; P1909 pp. 29–30"
+      ],
+      [
+        "Naramtum — BE 48",
+        "Wife and legally constituted mother; conditional sale clause is not current enslavement",
+        "Wife of Awilia; sons attached by the agreement",
+        "Not established",
+        "Recipient of sons’ maintenance; own work unstated",
+        "Claim to support, with property-related protections",
+        "Conditional sanction only; no actual sale shown",
+        "Property interests mentioned; unrestricted capacity not established",
+        "E-C02/E-C08; P1909 pp. 35–38"
+      ],
+      [
+        "Ali-aḫuša and Iškur-rīm-ilī — BE 23",
+        "Enslaved people allocated to Narubtum",
+        "Their own kin relations unknown",
+        "Unknown",
+        "Specific work unstated",
+        "Ownership context; maintenance terms unknown",
+        "Allocated in property division; physical move unrecorded",
+        "No own transactions stated",
+        "E-C03; P1909 pp. 20–22"
+      ],
+      [
+        "Dumqi-Ištar and Taribum — BE 23",
+        "Enslaved people allocated to Ur-Pabilsaĝa",
+        "Their own kin relations unknown",
+        "Unknown",
+        "Specific work unstated",
+        "Ownership context; maintenance terms unknown",
+        "Allocated in property division; physical move unrecorded",
+        "No own transactions stated",
+        "E-C03; P1909 pp. 20–22"
+      ],
+      [
+        "Ili-idinnam and Ili-ummati — BE 24",
+        "Adopted heirs; future sale threatened upon a specified breach",
+        "Brothers; children of Ea-idinnam and Kuritum by agreement",
+        "Unknown",
+        "Recognition obligation; no specific occupation stated",
+        "Inheritance prospects and breach penalties",
+        "Potential legal change, not an executed sale or relocation",
+        "Heirship/property allocation specified",
+        "E-C04; P1909 pp. 27–29"
+      ],
+      [
+        "Ištar-rabiat — BE 8",
+        "Enslaved before release; manumission recorded",
+        "No family of her own identified
