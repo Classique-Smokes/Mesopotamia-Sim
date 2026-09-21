@@ -18,7 +18,7 @@ Select a maintainable implementation architecture and host runtime for the first
 
 ## Active
 
-**TRES-0002 Stage II — implementation architecture / host-runtime selection.**
+**Prototype specification preparation — Social Fabric Laboratory v0.**
 
 Host-independent kernel accepted: `architecture/accepted/ADR-0004_REFERENCE_SIMULATION_KERNEL.md`.
 
@@ -36,9 +36,9 @@ Approved downstream roadmap: `plans/FIRST_PROTOTYPE_DEVELOPMENT_ROADMAP.md`.
 
 1. Define a language-neutral benchmark/bake-off workload representing the accepted semantic kernel.
 2. Compare the credible host/runtime finalists on that common workload.
-3. Reconcile the results into the implementation-architecture recommendation. **Complete: C# 14 / .NET 10 LTS recommended.**
+3. Reconcile the results into the implementation-architecture recommendation. **Complete.**
 4. Run fresh adversarial review. **Complete: no architecture-level blocker found.**
-5. Obtain explicit approval for the host/runtime and whole-system implementation architecture.
+5. Obtain explicit approval for the host/runtime and whole-system implementation architecture. **Host/runtime complete: C# 14 / .NET 10 LTS accepted; reference kernel already accepted.**
 6. Write the bounded prototype rule specification and verification scenarios.
 7. Run subsystem-specific technical design research only where unresolved risk still warrants it.
 8. Prepare the PROJECT-CONTEXT implementation packet.
