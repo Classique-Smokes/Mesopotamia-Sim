@@ -1,6 +1,6 @@
 # RES-0001 — Old Babylonian Nippur Household Foundations
 
-**Status:** ADVISORY RESEARCH INDEX / ORIGINAL BINARY PAYLOADS PENDING GIT INGESTION
+**Status:** ADVISORY RESEARCH INDEX / A–H RETURNS INGESTED
 
 This directory preserves the recoverable outputs of the eight independent RES-0001 research streams commissioned under `tasks/research/RES-0001_OLD_BABYLONIAN_NIPPUR/`.
 
@@ -23,7 +23,7 @@ The research anchor is **Old Babylonian Nippur, approximately 1900–1600 BCE**,
 
 ## Storage
 
-The original A–H return ZIPs have been recovered and hash-verified, but are **not yet present on `main`**. The current GitHub connector truncates binary/base64 uploads before even the smallest archive completes. Target paths and source hashes remain recorded in `MANIFEST.md`.
+The relevant recoverable contents of all eight A–H returns are now present on `main` under `research/historical/RES-0001/returns/`. Each stream includes its authoritative `RES-0001X_RESULT.md` plus the unique supporting ledgers, tables, notes, audits, QA, validation, or appendices retained from that return. Redundant delivery wrappers/renderings are not required for normal use. Original source-archive hashes remain recorded in `MANIFEST.md` for provenance.
 
 ## Reconciliation status
 
