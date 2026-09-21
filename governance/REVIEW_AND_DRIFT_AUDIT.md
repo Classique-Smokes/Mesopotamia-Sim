@@ -55,6 +55,8 @@ Do not impose a fixed calendar cadence until project workflow makes one useful.
 ### 7. Drift and stale artifacts
 - Are any specifications or accepted decisions obsolete but not superseded?
 - Does `00_START_HERE.md` still point to the actual current source of truth?
+- Can a fresh agent following `AGENTS.md → START_HERE → CURRENT_PHASE → local indexes/registers` discover every authority, active artifact, and required supporting context it is expected to use?
+- Have navigation files accumulated stale or low-value links that should instead remain reachable only through their owning canonical artifact?
 
 ## Audit output
 
