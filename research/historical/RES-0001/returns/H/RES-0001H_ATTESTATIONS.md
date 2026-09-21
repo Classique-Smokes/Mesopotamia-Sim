@@ -79,4 +79,87 @@ Twenty-five direct digital ancient-text records, one quarantined association, an
 ## T08 — SAOC 44, 13
 
 **Object:** UM 55-21-242; [P257363](https://cdli.earth/P257363). **Date:** Samsuiluna 7, month XI.  
-**Context:** Nippur; 3N-T0090; TA 184, level XA 1. **Genre:** Orchard transactio
+**Context:** Nippur; 3N-T0090; TA 184, level XA 1. **Genre:** Orchard transaction, damaged.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording; catalogue language not adopted as a clause-level analysis.  
+**Passages / forms:** obverse property description and parties; a-šà; orchard/property description.  
+**Observation:** An orchard plot is the object of a legal transaction associated with named parties.  
+**Limit:** The purchaser/consideration is damaged. Do not assign the transaction to an excavated household solely from findspot.  
+**Design status:** NO DESIGN DECISION
+
+## T09 — SAOC 44, 14
+
+**Object:** UM 55-21-241; [P257362](https://cdli.earth/P257362). **Date:** Samsuiluna 27, month X; day discrepancy in catalogue.  
+**Context:** Nippur; 3N-T0089; TA 184, level XA 1. **Genre:** House rental.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording; catalogue labels Akkadian.  
+**Passages / forms:** obv. 1–7; reverse date; é; nam-ga-an-tuš-u₃-de₃; a₂ mu-u₂-a-še₃.  
+**Observation:** A dwelling is taken for occupancy from Ninnutum, with an annual silver payment.  
+**Limit:** Annual a₂ is rental consideration here, not proof of wage labor. Standard date/text give day 23, while legacy catalogue notation gives 13.  
+**Design status:** NO DESIGN DECISION
+
+## T10 — SAOC 44, 15
+
+**Object:** UM 55-21-246; [P257367](https://cdli.earth/P257367). **Date:** Old Babylonian; conflicting regnal/month catalogue notation.  
+**Context:** Nippur; finer contextual assignment not established in this register. **Genre:** Fragmentary adoption/repudiation provisions.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording with damaged possible Akkadian material.  
+**Passages / forms:** obv. 3–4; rev. 1–6; [nam-dumu]; ama; ad-da; ibila.  
+**Observation:** Mother, father and heir terminology appears in a damaged affiliation instrument.  
+**Limit:** Adoption phrase is restored; exact date and several relationships remain unsettled. Not used to construct a family tree.  
+**Concordance:** MC 3, 10.  
+**Design status:** NO DESIGN DECISION
+
+## T11 — SAOC 44, 17
+
+**Object:** OIM A30143 and UM 55-21-247; [P283587](https://cdli.earth/P283587). **Date:** Rim-Sin 48, month IV.  
+**Context:** Nippur; 3N-T0097; TA 184, X 1 as catalogued. **Genre:** House sale; tablet and envelope.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording.  
+**Passages / forms:** tablet obv. 1–13; rev. 1–4; envelope corresponding clauses; é du₃-a; ĝišig; sa₁₀; sa₁₀-am₃ til-la; ibila; inim nu-...-gá-gá.  
+**Observation:** A built plot with fixtures is sold with payment and a future non-claim clause covering seller and heirs.  
+**Limit:** Future successors are not a census of existing children or residents. Tablet and envelope are one transaction; X 1 is not silently normalized to XA 1.  
+**Design status:** NO DESIGN DECISION
+
+## T12 — SAOC 44, 20
+
+**Object:** IM 058773; [P224335](https://cdli.earth/P224335). **Date:** Rim-Sin 59, month X.  
+**Context:** Nippur; 3N-T0863; room not supplied. **Genre:** Plot exchange.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Mixed: Akkadian syntax/verbs with Sumerian logograms and legal formulae.  
+**Passages / forms:** tablet obv. 1–9; envelope obv. and rev. 1–4; ki-šub-ba; é ki-ma é; il-qé-e-ma; i-na-di-in.  
+**Observation:** An exchange combines Akkadian verbal/prepositional language and Sumerian-written property and closure expressions.  
+**Limit:** Writing conventions do not demonstrate a participant’s spoken language. A catalogue language field cannot replace analysis of the clauses.  
+**Design status:** NO DESIGN DECISION
+
+## T13 — SAOC 44, 25
+
+**Object:** IM 058775; [P224340](https://cdli.earth/P224340). **Date:** Samsuiluna 7, month III.  
+**Context:** Nippur; 3N-T0865; room not supplied. **Genre:** Commodity accounting associated with a house payment.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Akkadian syntax with logograms and Sumerian title spellings.  
+**Passages / forms:** obv. 1–3, 11–14; rev. 6–16; seals; lukur Ninurta; ša i-na é ... wa-aš-bu; rabiānum; nimgir; ARAD + divine name.  
+**Observation:** Explicit residence wording, a deity-linked female title, official titles and seal devotion formulae coexist in this account.  
+**Limit:** The preceding a-si-rum is not classified here as captive rather than personal name. ARAD in a divine seal formula does not establish chattel status.  
+**Design status:** NO DESIGN DECISION
+
+## T14 — SAOC 44, 30
+
+**Object:** IM 058785; [P224345](https://cdli.earth/P224345). **Date:** Samsuiluna; year unresolved.  
+**Context:** Nippur; room/archive assignment not established here. **Genre:** Damaged affiliation/repudiation instrument.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording.  
+**Passages / forms:** obv. 6 and reverse opening; dumu-mu nu-me-en; ama-mu nu-me-en.  
+**Observation:** Child and mother repudiation expressions survive.  
+**Limit:** Names, relationships and penalties are damaged; no confident prosopographic reconstruction is offered.  
+**Concordance:** MC 3, 12.  
+**Design status:** NO DESIGN DECISION
+
+## T15 — SAOC 44, 32
+
+**Object:** IM 058401; [P224347](https://cdli.earth/P224347). **Date:** Samsuiluna 10, month VIII, day 18.  
+**Context:** Nippur; precise room assignment not established here. **Genre:** Multi-year field arrangement, damaged.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording.  
+**Passages / forms:** obv. 1–10; rev. 1′–6′; a-šà kankal; mu 3-kam; mu 4-kam; šu su₂-ub-bu.  
+**Observation:** An agricultural arrangement distinguishes an initial three-year period and the fourth year.  
+**Limit:** Broken performance/consideration clauses prevent a full reconstruction. A land-use arrangement is not automatically employment or a person’s permanent status.  
+**Design status:** NO DESIGN DECISION
+
+## T16 — SAOC 44, 42
+
+**Object:** OIM A30142; [P283586](https://cdli.earth/P283586). **Date:** Samsuiluna 8, month IV, day 20.  
+**Context:** Nippur; finer findspot not independently fixed here. **Genre:** Partition among named brothers/heirs.  
+**Access / langu
