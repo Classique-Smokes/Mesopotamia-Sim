@@ -23,8 +23,9 @@ An implementation agent may choose ordinary code structure inside these boundari
 
 - **Pass A — Laboratory boundary:** WORKING-CONVERGED.
 - **Pass B — Lower-level social fabric + minimal agency:** WORKING-CONVERGED.
-- **Pass C — Subjective recognition + information:** ACTIVE.
-- Passes D–G: not yet specified.
+- **Pass C — Subjective recognition + information:** WORKING-CONVERGED.
+- **Pass D — Household formation + continuity:** ACTIVE.
+- Passes E–G: not yet specified.
 
 ---
 
@@ -361,7 +362,120 @@ No random choice is required for v0.
 
 ---
 
-# 8. Implementation autonomy boundary
+# 9. Pass C — subjective recognition and information
+
+## 9.1 Subjective-state layers
+
+v0 keeps **factual knowledge** separate from **social recognition**.
+
+- **KnownFact**: a proposition the actor currently holds about objective/social state, with provenance to the observation/event/report that supports it.
+- **Recognition**: an actor's social interpretation that a continuing collective or authority relation exists.
+
+Knowing a fact does not imply recognizing a household; recognizing a household does not imply liking, approving, or obeying it.
+
+## 9.2 Recognition propositions
+
+The minimal v0 recognition vocabulary is:
+
+- recognition that a persistent household identity **H** exists/continues;
+- recognition that person **P** occupies a representative/head role for household **H** within a specified authority scope.
+
+v0 does **not** introduce a universal subjective proposition equivalent to "X is a member of H." Any typed person-household associations required later are defined by Pass D/E rather than smuggling primitive membership back into the model.
+
+## 9.3 Recognition state
+
+Each recognition proposition is discrete and evidence-backed:
+
+- **Unknown** — actor has no accepted recognition basis;
+- **Recognized** — actor has sufficient currently accepted evidence for the proposition;
+- **Contested** — actor holds incompatible evidence that prevents the proposition from being safely relied upon for authority-dependent action.
+
+Recognition retains references to the evidence/events/reports that support its current state. It is not a scalar confidence score.
+
+## 9.4 Direct knowledge and observation
+
+Actors automatically know:
+
+- their own objective personal state;
+- relations/claims in which they are a direct party;
+- proposals and committed events in which they directly participate.
+
+Other committed events become known only when the actor is an explicitly valid witness/affected observer under the later event-specific observation rules, or when information is communicated to them.
+
+Co-residence alone does not create omniscient observation.
+
+## 9.5 Communication
+
+v0 includes a voluntary **CommunicateClaim / Inform** action.
+
+- The sender may transmit a factual or recognition proposition that exists in the sender's own current subjective state.
+- The communication carries source/provenance: who communicated it and the underlying observation/event/evidence reference where available.
+- Deliberate lying, invented claims, rumor mutation, probabilistic trust, and reputation are out of scope.
+- Communication normally consumes the sender's one voluntary initiative for the cycle.
+- A communicated event-backed proposition may provide sufficient evidence for recognition when no stronger/newer contradiction exists.
+
+## 9.6 Staleness and contradiction
+
+Subjective state does not passively synchronize with objective world state and does not naturally decay merely with time.
+
+- stale information persists until displaced or contested by later evidence;
+- evidence ordering follows the **time/order of the underlying event or observation**, not the later time at which a message happens to arrive;
+- newer direct participation/observation supersedes older incompatible information;
+- newer event-backed communication may supersede older reports;
+- incompatible evidence that cannot be resolved by provenance/order yields **Contested** rather than silently selecting one claim.
+
+Exact temporal comparison and event-order representation are finalized in Pass F.
+
+## 9.7 Causal effect of recognition
+
+Recognition is causally required for household-specific action generation.
+
+- An engine-side household record does not by itself expose household actions to every actor.
+- To intentionally act toward a household as a household, an actor must recognize that household identity.
+- To use a representative/head as an authority channel, the actor must recognize that person in the relevant role/scope.
+- Ordinary person-to-person actions remain available independently of household recognition.
+
+For household-mediated marriage, the groom must recognize the relevant bride-household connection/route and the representative authorized to receive/resolve that proposal. Without that recognition, the mediated candidate is unavailable; the mutual-strong-like bypass remains independently available.
+
+## 9.8 Recognition evidence versus formation
+
+Kinship, co-residence, marriage, gifts, repeated coordination, fulfilled obligations, and similar lower-level facts may become **evidence**, but none individually and no engine-only cluster automatically creates Recognized Household.
+
+Pass D defines the lower-level configuration/history that can create or sustain household identity and what evidence that formation/continuity emits.
+
+## 9.9 Persistence and attitude independence
+
+- Recognition does not decay because attitude decays.
+- An actor may recognize a household/head while disliking them.
+- An actor may fail to comply with a recognized authority.
+- Recognition changes through evidence about formation, continuity, dissolution, succession, contradiction, or communicated claims.
+
+## 9.10 Required negative control
+
+Verification must include two actors facing the same objective household state but different subjective evidence:
+
+- one recognizes the household/representative and therefore generates the relevant household-mediated candidate action;
+- the other does not and therefore cannot generate that household-specific route.
+
+This proves that subjective recognition is causal rather than decorative.
+
+## 9.11 Pass C closure
+
+Pass C is **WORKING-CONVERGED at the semantic level**.
+
+The following exact locks are intentionally delegated, not forgotten:
+
+- which committed events make which nonparticipants valid witnesses -> event-specific rules in D/E/F;
+- exact proposition/data representation -> implementation contract after semantics are complete;
+- exact household-formation and continuity evidence -> Pass D;
+- representative authority scope and succession evidence -> Pass E;
+- total event/order comparison and same-time conflict behavior -> Pass F.
+
+These must be explicit before implementation authority is issued.
+
+---
+
+# 10. Implementation autonomy boundary
 
 Until this draft is complete, an implementation agent has **no authority** to decide any open item above.
 
