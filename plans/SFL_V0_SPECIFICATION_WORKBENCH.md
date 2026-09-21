@@ -208,51 +208,23 @@ The world must be rich enough for different proxies to disagree: co-residence al
 
 ## Pass E — Grounded collective capability and representative role
 
-**Question:** What can the household do that its constituents could not coordinate as effectively in isolation, without inventing resources or agency from a label?
+**Status:** WORKING-CONVERGED.
 
-### Must answer — capability
+**v0 result:**
 
-E1. What is the single v0 collective capability?
+- Household capability is derived from explicit optional `HouseholdProvisionCommitment` relations; grain stays personal until collective spend commits.
+- Capacity per contributor is `max(0, grain - 2)`; `NeedsGrain` contributes zero; expenditure debits real personal grain once, largest surplus first / stable ID tie-break.
+- Head may request a non-contributor to reconsider provision; refusal starts a cooldown before another request.
+- Provision capacity may fund only 1-grain NeedsGrain support or mediated-marriage dowry.
+- One persistent `HouseholdHeadRole`; new household begins vacant; appointment/succession requires nominee acceptance + unanimous sustaining-participant acceptance.
+- Role scope: provision requests, the two collective material uses, mediated marriage, succession. No general command authority.
+- Occupied role activates separate `HouseholdDecisionContext`: one household initiative through the head in addition to the head's personal initiative; household concerns are evaluated separately from personal concerns.
+- Vacancy suspends household-mode spending/marriage mediation but does not destroy household or provision commitments.
+- Mediated marriage debits backing grain once, pays groom directly, creates groom -> head favour; groom cannot already owe head a favour or self-authorize as head; female head may mediate own marriage.
+- Household support is grounded downward causation and cannot count as independent evidence of household formation/continuity.
+- Dissolution simply terminates provision commitments; no collective treasury requires inheritance cleanup.
 
-Promising minimal target to examine:
-**coordinated mobilization of constituent support capacity**.
-
-E2. What lower-level resources/commitments back that capability?
-
-E3. Is the capability authoritative state or a derived query over backing state?
-
-E4. How does lower-level change immediately or eventually alter available capability?
-
-E5. How do we ensure one realized collective effect debits underlying scarce capacity exactly once?
-
-E6. How does capability change the feasible options available to an individual?
-
-### Must answer — representative role
-
-E7. What is the persistent role's exact scope?
-The role must not imply general household sovereignty.
-
-E8. How is an occupant initially established?
-
-E9. What subjective recognition/authorization makes the occupant effective?
-
-E10. What can the broker propose on behalf of the household, and what still requires constituent/world resolution?
-
-E11. What happens when the role becomes vacant?
-
-E12. What process establishes a successor?
-
-E13. What remains continuous across role succession: household identity, role identity, commitments, pending work?
-
-### Required negative controls
-
-- broker without sufficient backing/recognition cannot create capability by command;
-- household with no underlying support capacity cannot spend a fictional household stock;
-- role succession does not automatically create a new household.
-
-### Deliverable
-
-**v0 Collective Capability & Representative Role Model**.
+**Dependencies:** reconsideration cooldown, personal/household activation order, witness/order/history semantics -> F.
 
 ---
 
