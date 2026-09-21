@@ -8,7 +8,7 @@ Do not run prosecution and defense for the same cluster in one conversation.
 
 All B1 reviewers use the frozen Wave-B canonical baseline:
 
-`tres-0010-wave-b-baseline`
+`tres-0010-wave-b-baseline` @ `f25407a9cbf09e501601d52ad7a2df111fa5c491`
 
 Sentinels still evaluate canonical inputs from the original:
 
