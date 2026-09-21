@@ -7,3 +7,7 @@ A specification is **downstream** of the Project Seed / Constitution and accepte
 Do not create substantive subsystem specifications before the underlying requirements and consequential decisions are ready. A specification should describe only its accepted scope and must preserve unresolved adjacent questions.
 
 Use `SPECIFICATION_TEMPLATE.md`.
+
+## Accepted specifications
+
+- `SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md` — accepted semantic contract for the first Social Fabric Laboratory.
