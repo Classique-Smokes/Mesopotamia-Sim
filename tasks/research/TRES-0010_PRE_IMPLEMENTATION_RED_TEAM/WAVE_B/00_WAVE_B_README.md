@@ -196,3 +196,22 @@ Wave B closes when every high/blocker Wave-A finding has:
 - explicit Slice-1 versus later-slice classification.
 
 Only then may canonical repairs be proposed to the Director or made under existing delegated authority.
+
+
+## 10. B2 status
+
+Wave B0/B1 are complete and reconciled in:
+
+- `research/technical/TRES-0010/WAVE_B_ADJUDICATION_SYNTHESIS.md`
+
+Targeted B2 decision-support is now prepared under:
+
+- `B2/00_B2_README.md`
+- `B2/01_B2_DISPATCH_GUIDE.md`
+
+Frozen B2 baseline:
+
+- ref: `tres-0010-b2-baseline`
+- SHA: `0729e460af35668e5b911fa561bf8cec53204142`
+
+Only the three B2 tasks should run. No further broad review is authorized before their reconciliation.
