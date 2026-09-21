@@ -497,3 +497,110 @@
       "limit": "The route documented by this deed and its account of prior proceedings.",
       "relevance": "Family-held institutional rights could involve multiple legal authorities.",
       "sources": [
+        "S01",
+        "S12"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C09",
+      "claim": "Receipt of deeds for an office and inheritance after a former holder’s death carried explicit responsibility for future claims.",
+      "date": "Samsuiluna 13/12; two-year interval in the text",
+      "context": "Sin-abušu, Nannartum and Aba-Enlil-dim",
+      "type": "Primary and editorial interpretation",
+      "primary": "G-I06: BE 6/2 42.",
+      "secondary": "Poebel infers temple disposition from the witnesses/seals; that inference is kept distinct from the deed’s wording.",
+      "counter": "Recipient’s kinship, payment, and whether this is a new grant or delivery of pre-existing title are not established.",
+      "confidence": "MODERATE",
+      "limit": "One documentary transfer; not a universal temple succession procedure.",
+      "relevance": "Custody, proof and liability were additional interfaces beyond asset transfer.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C10",
+      "claim": "The core conveyances establish terms and transfers more securely than realized net household income or actual performance of every listed office.",
+      "date": "Dates of the selected legal cases",
+      "context": "BE 6/2 36, 37, 39, 42, 57, 66",
+      "type": "Source-critical conclusion from primary texts",
+      "primary": "G-I01–04, G-I06, G-I08; sale price, adjustment and office designation are distinct observations.",
+      "secondary": "S04 full remuneration discussion unavailable.",
+      "counter": "Administrative evidence can record actual allocations, but cannot automatically be merged with unrelated conveyances.",
+      "confidence": "HIGH within this selected corpus",
+      "limit": "Not a claim that remuneration records never existed or that no prebend was profitable.",
+      "relevance": "Prevents capital values or administered resources from becoming fictitious household budgets.",
+      "sources": [
+        "S01",
+        "S04"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C11",
+      "claim": "Administrative cases add work/allocation relationships not visible in the office-conveyance cases.",
+      "date": "Late-Rim-Sin dossier; exact calendar conversion unresolved",
+      "context": "Reconstructed Nippur administrative file",
+      "type": "Published primary edition/table via specialist study",
+      "primary": "G-I12 and G-I14.",
+      "secondary": "Archival identification follows S03; this report does not reconstruct workers’ households.",
+      "counter": "Payment entries do not establish permanent employment or social-class membership.",
+      "confidence": "MODERATE",
+      "limit": "Particular recorded tasks; not a representative non-elite population.",
+      "relevance": "Broadens the interface beyond office and property holders.",
+      "sources": [
+        "S03"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C12",
+      "claim": "Title, commodity receipt or co-occurrence alone is insufficient to identify a personal household or its hierarchy.",
+      "date": "Scope rule applied to the late-Rim-Sin administrative cases",
+      "context": "G-I13–14; reconstructed institutional relationships",
+      "type": "Methodological inference; specialist interpretive check",
+      "primary": "The case table records the observed relation, leaving unsupported membership unstated.",
+      "secondary": "See §4.8 for the precisely bounded Goddeeris/Robertson issue.",
+      "counter": "Explicit kinship or dependency statements could alter a particular identification; absence here does not disprove a relationship.",
+      "confidence": "HIGH as an evidentiary restriction, not as an ancient social fact",
+      "limit": "No verdict about all members or leaders of a reconstructed institution.",
+      "relevance": "Keeps resource administration distinct from presumed domestic dependence.",
+      "sources": [
+        "S03",
+        "S08"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C13",
+      "claim": "This selected documentary corpus cannot supply the prevalence of office holding across Nippur households.",
+      "date": "Research sample assembled 19 September 2026",
+      "context": "Property conveyances plus a small administrative supplement",
+      "type": "Corpus audit, not an ancient proposition",
+      "primary": "Selection register and access tiers in §2 and accompanying notes.",
+      "secondary": "The corpus is deliberately relevance-selected, not a census or random sample.",
+      "counter": "More cases alone would not create a known household denominator.",
+      "confidence": "HIGH for this research limit",
+      "limit": "No citywide distribution, elite share or gender participation rate.",
+      "relevance": "Prevents named property holders from becoming a population model.",
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S16"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C14",
+      "claim": "The present return does not establish a change-rate or a continuous institutional trajectory across 1900–1600 BCE.",
+      "date": "Approved frame versus actually represented regnal clusters",
+      "context": "Different periods are represented by different genres and access levels",
+      "type": "Chronological/source audit",
+      "primary": "Timeline in §4.10; dated G-I01, G-I03, G-I09–11 and administrative supplement.",
+      "secondary": "Political-phase interpretation is not supplied by the order of selected records.",
+      "counter": "A transaction sequence may show local change without supporting a citywide trend.",
+      "confidence": "HIGH for this research limit",
+      "limit": "Neither stasis nor decline is inferred for unsampled intervals.",
+      "relevance": "Keeps time-specific interfaces from becoming timele
