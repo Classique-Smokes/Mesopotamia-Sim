@@ -258,22 +258,37 @@ Actors automatically know:
 
 Other facts require valid event-specific observation or communication. Co-residence does not imply omniscience.
 
-`CommunicateClaim/Inform` transmits a proposition the sender currently holds and carries source/event provenance where available.
+`CommunicateClaim/Inform` transmits a factual or recognition proposition the sender currently holds and carries sender plus underlying source/event provenance where available. Communication normally consumes the sender's one voluntary personal initiative for the cycle.
 
-No deliberate lying, trust score, rumor mutation, or reputation system exists in v0.
+A communicated event-backed proposition may provide sufficient evidence for recognition when no stronger/newer contradiction exists.
+
+No deliberate lying, invented claims, trust score, rumor mutation, or reputation system exists in v0.
 
 ### 6.5 Staleness and conflict
 
 Subjective state does not passively synchronize.
 
-- stale information persists;
+- stale information persists until displaced or contested;
 - underlying event/observation order outranks later message-arrival time;
-- newer direct evidence supersedes older incompatible reports;
-- unresolved incompatible evidence becomes Contested.
+- newer direct participation/observation supersedes older incompatible information;
+- newer event-backed communication may supersede older reports;
+- incompatible evidence that cannot be resolved by provenance/order becomes Contested rather than selecting one claim.
 
 Recognition does not decay with attitude.
 
-### 6.6 Failed attempts
+### 6.6 Recognition as an action gate
+
+Recognition is causal rather than decorative.
+
+- an engine-side Household record does not expose household-specific actions globally;
+- to intentionally act toward H as a household, an actor must recognize H;
+- to use person P as H's authority channel, the actor must recognize P in the relevant head/representative role and scope;
+- ordinary person-person actions remain available independently of household recognition;
+- an actor may recognize H/head while disliking them or refusing a request.
+
+For household-mediated marriage, the groom must recognize the bride's household and its current head/scope. Without that recognition the mediated route is unavailable; the mutual-strong-like bypass remains independent.
+
+### 6.7 Failed attempts
 
 Direct participants learn failed-attempt outcomes:
 
@@ -314,7 +329,7 @@ The history must therefore distinguish when the lower-level sustaining organizat
 
 Successful formation also creates a provenance-bearing `SustainingParticipant` association for every person in the founding core, supported by that `FormationWarrant`.
 
-The founding-core participants directly recognize the resulting household from the formation event.
+The founding-core participants directly recognize the resulting household from the formation event. Outsiders do not automatically recognize H; they require valid observation/communication evidence.
 
 ### 7.3 Household association
 
@@ -768,3 +783,4 @@ Relevant:
 - 2026-09-21 — Director-approved Stage-3 semantic amendments: evidence-backed `CandidateRecognition`; bilateral invitation/request plus `ParticipationWarrant` and explicit participation end; loan social due cycle at +3 full cycles with one-time unpaid-balance attitude penalty.
 - 2026-09-21 — Director-approved continuity cleanup after TRES-0006: operational lifecycle state (2+/1/0), Inactive reactivation through sole bearer, stable-cycle lifecycle evaluation, bridge-handoff priority, continuity-over-duplicate-formation precedence, and explicit two-person founding minimum. Restored compressed household authority/history details.
 - 2026-09-21 — Director-approved lineage semantics after TRES-0007: one behaviorally inert LineageWarrant per successor formation at most; direct predecessor provenance distinct from ancestry; fresh organizational evidence; narrow division/consolidation classifications; ambiguity withholds lineage rather than formation; no inherited causal state.
+- 2026-09-21 — Restored previously approved Pass-C information semantics lost during compression: communication initiative cost, event-provenance precedence, Contested handling, general household/role recognition action gating, and outsider non-omniscience.
