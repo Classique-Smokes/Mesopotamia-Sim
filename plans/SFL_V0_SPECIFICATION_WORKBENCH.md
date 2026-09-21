@@ -21,9 +21,25 @@ SFL v0 must exercise:
 - one grounded collective capability;
 - one representative / broker role;
 - limited constituent turnover;
+- representative succession;
+- **basic controlled household division and consolidation** sufficient to test identity/lineage semantics;
 - explicit processes, semantic history, and continuation.
 
 The laboratory is a **reference social-mechanism experiment**, not yet a complete historical population simulator.
+
+## Progress
+
+| Pass | Status | Current result |
+|---|---|---|
+| A — Laboratory boundary | **WORKING-CONVERGED** | Small synthetic controlled world; grain + dwelling/place; minimal kinship present; future-system events may be injected by scenarios; basic persistence/succession/division/consolidation are target behaviors. |
+| B — Lower-level social fabric + minimal agency | **ACTIVE** | Initial relation palette selected; action repertoire and person-state semantics still open. |
+| C — Subjective recognition | NOT STARTED | — |
+| D — Household identity / continuity | NOT STARTED | — |
+| E — Collective capability / representative | NOT STARTED | — |
+| F — Time / history / continuation | NOT STARTED | — |
+| G — Verification closure | NOT STARTED | — |
+
+A pass result remains working/non-authoritative until the final SFL specification is explicitly accepted.
 
 ---
 
@@ -55,15 +71,15 @@ Unless a genuine conflict is discovered, v0 must preserve:
 - TRES-0001 technical reconnaissance for state/relations, agency, time/history, household emergence, and verification;
 - RES-0001 historical research program design and the historically bounded Old Babylonian Nippur frame.
 
-### Evidence-recovery gap
+### Evidence archive status
 
-The repository currently contains the RES-0001 task packets but not the eight returned historical reports or their planned reconciliation result.
+The original RES-0001 A–H return archives remain recoverable in the project workspace, but their intended durable GitHub archive is **not yet verified present on `main`**. The planned RES-0001R reconciliation is also not complete.
 
 Therefore:
 
 - do **not** manufacture historically specific rules from memory;
-- work can proceed on structural/mechanism questions already supported by accepted decisions;
-- before a v0 rule is justified as historically grounded, recover the missing research returns if available or commission a **narrow replacement evidence pass** for that exact rule;
+- structural/mechanism work may proceed from already accepted decisions and working synthesis;
+- before a v0 rule is promoted as historically grounded, retrieve the relevant original return(s), reconcile provenance where necessary, and record the supporting evidence;
 - where history cannot determine an algorithm/threshold, use an explicit controlled lab assumption rather than presenting a parameter as historical fact.
 
 The historical evidence lane should answer only questions that can change v0 semantics.
@@ -239,10 +255,14 @@ D10. What change removes enough sustaining basis that the household becomes inac
 
 D11. What historical identity remains queryable after inactivity/dissolution?
 
-### Explicitly defer unless needed by a v0 scenario
+### Basic lifecycle transitions in v0
 
-- general fission;
-- consolidation;
+v0 includes **one deliberately simple controlled division case** and **one deliberately simple controlled consolidation case** to prove that identity and lineage are not the same thing.
+
+### Explicitly defer beyond those controlled cases
+
+- general fission rules;
+- general consolidation/absorption rules;
 - reconsolidation;
 - contested simultaneous continuity claims;
 - multiple descendants/lineages;
