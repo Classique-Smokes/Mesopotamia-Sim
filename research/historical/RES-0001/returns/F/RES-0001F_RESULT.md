@@ -163,4 +163,70 @@ Domestic objects can support domestic activity, while a cache of economic record
 
 The most defensible unit of continuity is the one actually observed. A reused wall line supports continuity of a spatial boundary. A chain of deeds supports continuity of claims in a property. A repeated name, when securely identified, supports a particular person’s continued participation. A building footprint by itself supports none of the other three automatically.
 
-TB House C’s subdivision illustrates the positive value of architectural evidence without a named family. The reported reorganization can support physical differentiati
+TB House C’s subdivision illustrates the positive value of architectural evidence without a named family. The reported reorganization can support physical differentiation into smaller accessible units. It does not identify whether inheritance, rental, sale, or changes of activity caused that differentiation. Doorway reconstructions deserve special scrutiny because access diagrams change when a disputed opening is treated as a door rather than a wall. In this case, the published synthesis reports differences between plans and field descriptions. No independent privacy or circulation scoring was attempted here. [S01, pp. 86–88.]
+
+TA’s legal material can establish more specific connections. House N’s NN 20–21 are counterparts of an exchange, so they represent one transaction, not two independent episodes. NN 25–26 connect a named buyer’s financing and purchase. Such records make a local property economy visible without producing a complete neighborhood census. [S01, NN 18–26.]
+
+For kin clustering, three links would be needed: secure kinship; defensible identification of each person’s residence; and contemporaneity. Losing any one leaves a different proposition—kinship without location, adjacent buildings without kinship, or successive rather than simultaneous associations. Stone’s Ninlil-zimu/House K and House N reconstructions remain valuable hypotheses, but this return does not reproduce their whole lineage geography as a demonstrated social map. Nor does foreign-looking name or documentary practice independently establish a migration event, origin, or rate of acculturation. [S01, pp. 41–64, 71–74.]
+
+### 4.6 Burials, cultic installations, gender, and room functions
+
+Burials and installations can reveal use of space, but their temporal relationship to floors and rebuilding must precede social interpretation. TB House C’s tombs in locus 30 and the possible cultic setting in locus 109 are not simply one demonstrated room-level installation. Their coexistence within a building’s longer history does not identify an ancestor cult practiced by a named resident lineage. Likewise, infant burials in TA do not establish the cause of death, a citywide mortality crisis, or continuity of a family merely by location. [S01, pp. 63–64, 69–70, 86–87.]
+
+The seal naming Masija in House E is an important individual association, but its implications should not outrun the object. A seal can identify a name and filiation; determining whether its owner occupied the building, had a particular religious status, remained unmarried, or headed an exclusively female household requires additional evidence. The report therefore preserves the object association and withholds the composite household reconstruction. [S01, pp. 70–71; S06, pl. 112:14, mediated through S01.]
+
+Functional terms also need different weights. An oven supports heating or food preparation, not by itself commercial baking for a whole neighborhood. A drain supports management of liquids, not automatically a bathroom or a gendered space. A concentration of exercises is more informative when supported by installations and joins than when it occurs in disturbed fill. These are evidentiary distinctions, not a rejection of room-function interpretation. [Examples examined: S01, pp. 55–56, 85–91; S04, pp. 40–45.]
+
+### 4.7 Chronology and the limits of a local ending
+
+Document dates give termini for the objects, subject to the possibility of copies and model texts. A latest dated document in a cache can constrain deposition; an early deed in a late deposit cannot directly date the construction of the house. Nor is the latest preserved document automatically the date of abandonment.
+
+Stone’s proposed citywide abandonment around 1720 BCE is not adopted as a result of this task. The examined TA/TB sequences alone cannot establish that the entire city was empty. Conversely, identifying that overextension does not prove continuous occupation of these buildings. Later publications concerning Samsu-iluna and Nippur were located, including a proposed later reconquest and subsequent discussion, but their full arguments were not available for adjudication. The appropriate conclusion here is a bounded local chronology, not a substituted citywide narrative. [S01, p. 74; S08–S09, access limits in section 9.]
+
+## 5. Disagreement, ambiguity, and source limitations
+
+| Issue | Evidence of the problem | Treatment in this return |
+|---|---|---|
+| NN 44 area | Accessible 1987 catalog gives 1/3 sar = 20 gin; indexed Charpin 1989 p. 103 gives 40 gin | Flagged as a published discrepancy; 40 + 10 = 50 presented conditionally; no independent tablet reading or revised room assignment |
+| NN 47 purchaser versus final resident | Catalog states Enlil-nisu buys Etel-pi-Ishtar’s share; the narrative assigns the retained House I deeds to Etel-pi-Ishtar | Preserve the catalog statement with an explicit narrative tension; do not identify the final resident |
+| NN 42 date | 1987 catalog has Si 8/4/20; searchable 1981 presentation has Si 9 with the same 1742 BCE equivalent | Working date Si 8, with discordance retained; determine whether printing, digitization, or interpretation explains it only after image/collation checks |
+| NN 45 museum number | Accessible 1987 catalog gives UM 55-21-423; 1981 gives 55-21-243 | Use the common excavation ID 3N-T91 pending collection confirmation; do not silently normalize |
+| House I stratigraphy | Reassignment uses documentary chronology; relevant field notes absent in Stone’s account | Distinguish reported field attribution from reconstructed phase and absolute date |
+| House F subfloors | Published physical joins cross recorded rooms and floor subdivisions | Do not multiply households/teachers solely from subfloor labels |
+| House F later exchange | NN 12 is Ili-ma-ilu year 1; Stone supplies an absolute synchronism | Preserve the regnal date; do not use the BCE equivalent as an independent anchor |
+| Architectural area definitions | Published House I totals differ between presentations; House F usable versus selected roofed area also differs | Do not average them or estimate population; a new measured comparison would require plans and a declared area definition |
+| Older records in later deposits | NN 16–17 and NN 35–37 are older than associated later legal material | Retention, reuse, and displacement remain alternatives; not every old text is automatically a teaching model |
+| School versus operative text | Some letters and older legal material may be exercises or models | Do not count an uncertain school/model document as a witnessed historical transaction |
+| Excavation/registration bias | Later disturbance, incomplete houses, and selected artifact registration in TA/TB | No frequency estimates for whole-city household types or commercial activities |
+| Access and publication dependence | Full OIP 78, original field notebooks, full Charpin review, relevant 2023 chapters, and specific tablet images not examined | Explicitly mediated citations; no claim of exhaustive current scholarship or epigraphic verification |
+
+A broader uncertainty concerns whether a property term refers to built space, an unbuilt plot, or a particular legal interest. This return does not flatten every catalogued “house,” *kislah*, or ruined plot into an equivalent floor-plan polygon. Nor does it treat all personal names in different documents as the same individual without supporting patronymics, dates, or related context.
+
+Absence requires similar care. No identified partition deed for a subdivided building is not evidence that inheritance never occurred. No house deed in an office archive is not evidence of institutional ownership. No identifiable earlier teacher in a later deposit is not evidence that instruction was absent. These are limits on what the surviving sample establishes.
+
+## 6. Comparative evidence outside Old Babylonian Nippur
+
+Comparisons below are methodological controls, not additional Nippur observations.
+
+**Twentieth-century Iranian village evidence.** Stone’s 1981 analysis uses modern household and spatial analogies. Such evidence can generate a possible explanation for division and recombination of space, but cannot establish that Old Babylonian Nippur had the same residence ideal, family cycle, room allocation, or people-per-room relationship. In this report, analogy supplies alternative hypotheses; it does not complete missing persons or prove a household composition. [S02, comparative discussion.]
+
+**Sippar-Amnanum/Tell ed-Der, later Old Babylonian period.** Robson compares House F with the house/archive associated with Ur-Utu and Inanna-mansum. The comparison is useful because school material can be evaluated alongside a separately identified household archive. The original excavation and text studies for that site were not independently consulted in this task. It therefore remains a reported comparison, not a second independently audited case, and no Sippar family pattern is imported into eighteenth-century Nippur. [S04, pp. 44–45 and references there.]
+
+**Ur, Old Babylonian domestic contexts.** References in the examined scholarship to school material in mixed or construction-related deposits provide a reason to test redeposition at Nippur. They do not decide the origin of a specific House F fragment or determine the function of its room. Likewise, a proposed domestic-chapel arrangement elsewhere does not identify the function or lineage of TB House C’s occupants. [S01, pp. 86–87; S04, contextual discussion and notes.]
+
+Earlier Nippur periods were not used to fill Old Babylonian gaps. In particular, a TB house letter without its level must not allow a Ur III archive to enter an Old Babylonian resident sequence. The older records listed in section 2 are analyzed as objects retained or deposited in later contexts, not as proof that the earlier household persisted.
+
+## 7. Unresolved questions / recommended follow-up research
+
+1. What does direct collation of NN 44 / 3N-T93 / A30141 establish about the area, and how does Charpin’s complete 1989 discussion revise the interpretation of NN 42–47?
+2. Can NN 47’s full wording, including its boundaries and transfer direction, resolve the tension between the catalog and the narrative assignment of the final House I property and archive holder?
+3. Which House I walls, doorways, floor levels, and renovations can be dated independently of the assumed legal sequence when the original OIP 78 plans, field drawings, and notebooks are compared?
+4. Does collection-level checking resolve the NN 42 regnal-date discrepancy and the NN 45 museum-number discrepancy, and what current CDLI or museum identifiers securely correspond to the six documents?
+5. How do the relevant chapters of *Back to School in Babylonia* (2023) revise House F’s architecture, tablet joins, economic context, and the proposed identities or dates of its users?
+6. What secure distinction can be made among operative documents, retained title records, and model exercises in House F’s later legal assemblage and its letter fragments?
+7. Can the Ili-ma-ilu year-1 exchange be synchronized independently, and does it actually concern the excavated House F rather than another property?
+8. Which TB House O objects and tablets belong to the same depositional episode, and is there evidence outside the cache identifying title to the building or Atta’s co-residents?
+9. Do TA House N’s older deeds belong to a demonstrable chain of title, reused teaching material, or redeposited objects, and how would each alternative change the proposed personal continuity?
+10. Can any TB House C subdivision be correlated with an independently dated named transaction, and can the disputed access points be resolved from original records?
+11. What contextual and osteological evidence dates the TA/TB burials relative to occupation and rebuilding, and does any independent evidence establish relationships among the buried individuals or to named people?
+12. What independently dated residential contexts outside TA/TB, especially for the later seventeenth century BCE, would test the representativeness and temporal reach of these conclusions?
