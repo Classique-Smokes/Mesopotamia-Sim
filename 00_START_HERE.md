@@ -38,7 +38,7 @@ Active work:
 
 - `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
 - `plans/verification/SFL_V0/`
-- current verification focus: resolve two explicit Stage-3 semantic gates—multi-contributor provision allocation and the reference scoring contract—then run final verification-package closure review
+- current verification focus: final adversarial completeness review of the full Stage-3 verification package
 
 No production implementation has started.
 
