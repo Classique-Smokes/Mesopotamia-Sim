@@ -20,7 +20,7 @@ Complete Roadmap Stage 3: define executable verification scenarios, invariants, 
   - continuity/turnover;
   - controlled lineage;
   - recognition/subjective information.
-- Pre-rule semantic-compression audit run across the root retrieval chain and core accepted artifacts; restorative losses repaired.
+- Pre-rule semantic-compression audit run across the root retrieval chain and core accepted artifacts; restorative losses repaired: `governance/audits/2026-09-21_PRE_RULE_COMPRESSION_AUDIT.md`.
 
 ## Active
 
