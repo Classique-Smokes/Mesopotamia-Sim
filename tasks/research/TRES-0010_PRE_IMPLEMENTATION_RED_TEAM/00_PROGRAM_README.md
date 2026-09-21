@@ -3,7 +3,8 @@
 **Status:** COMMISSION PACK PREPARED / IMPLEMENTATION GATE ACTIVE  
 **Commissioned by:** Master Architect  
 **Authority:** Advisory research only  
-**Implementation effect:** `IMP-0001` dispatch is blocked until TRES-0010 is reconciled.
+**Implementation effect:** `IMP-0001` dispatch is blocked until TRES-0010 is reconciled.  
+**Frozen review ref:** `tres-0010-review-baseline` — all Wave-A reviewers must read canonical project inputs from this ref.
 
 ## 1. Purpose
 
@@ -14,6 +15,11 @@ The program asks:
 > What important contradiction, missing rule, hidden coupling, verification weakness, implementation hazard, or unnecessary commitment have we collectively failed to notice before code creates inertia?
 
 This is a falsification program, not an approval poll.
+
+Method research:
+
+- `research/technical/TRES-0010/AI_AGENT_ADVERSARIAL_METHOD_REVIEW.md`
+- operator/agent instructions: `01_DISPATCH_GUIDE.md`
 
 ## 2. Wave A commissions
 
@@ -51,6 +57,14 @@ They must:
 3. only afterward may inspect earlier adversarial reviews to identify duplicate/already-resolved findings.
 
 This prevents inherited conclusions from masquerading as independent review.
+
+### Wave-A sibling blindness
+
+Before finalizing its initial report, **no Wave-A reviewer may read another Wave-A reviewer's return**.
+
+This applies to PROJECT-CONTEXT and INDEPENDENT-CONTEXT reviewers alike. If an agent accidentally reads a sibling return, it must disclose the contamination; the Master Architect should treat the run as non-independent and rerun it in a fresh context if the task is important.
+
+All ten agents should read the same frozen canonical baseline rather than a moving `main` branch. No canonical project artifact should change while primary Wave-A review is in flight.
 
 ## 4. Mutation / repository rule
 
@@ -96,7 +110,35 @@ Return a compact report with:
 
 Reports are evidence, not authority.
 
-## 7. Wave B — contingent targeted challenge
+### Required run provenance
+
+Every return begins with:
+
+- Task ID;
+- frozen baseline ref and resolved commit SHA;
+- model/configuration if visible;
+- dedicated branch/workspace or chat-only return mode;
+- tools used;
+- external web research: yes/no and key sources where used;
+- prior TRES-0003–0009 read: yes/no and when;
+- sibling Wave-A returns read before initial report: must be **no**.
+
+Before concluding `NO BLOCKER FROM THIS REVIEW`, attempt at least three materially distinct falsification routes appropriate to the assigned task unless its structure clearly makes fewer sufficient. Report failed attacks as well as successful ones.
+
+## 7. Sentinel replication — false-negative control
+
+After all ten primary Wave-A reports are complete and before final reconciliation, rerun at least two high-leverage review objectives in fresh contexts with no access to the original reports.
+
+Default sentinel objectives:
+
+- TRES-0010B — semantic reachability;
+- TRES-0010D — verification-cheat red team.
+
+Where practical, vary model/provider or reasoning configuration. Same-model fresh chats still provide useful stochastic reruns but are not statistically independent reviewers.
+
+Sentinel disagreement is a lead for investigation, not a vote.
+
+## 8. Wave B — contingent targeted challenge
 
 Do **not** pre-run Wave B.
 
@@ -116,7 +158,7 @@ For each serious finding only, commission targeted opposing reviews such as:
 
 Wave-B agents receive the finding, not the Wave-A agent's preferred fix unless necessary.
 
-## 8. Master Architect reconciliation
+## 9. Master Architect reconciliation
 
 After Wave B where needed, the Master Architect produces the TRES-0010 reconciliation:
 
@@ -132,7 +174,7 @@ After Wave B where needed, the Master Architect produces the TRES-0010 reconcili
 
 No coding agent receives IMP-0001 before this gate closes.
 
-## 9. Stop conditions
+## 10. Stop conditions
 
 Immediately escalate a finding rather than proposing a silent fix when it would change:
 
@@ -145,7 +187,7 @@ Immediately escalate a finding rather than proposing a silent fix when it would 
 - verification contract meaning;
 - significant abstraction fidelity.
 
-## 10. Success condition
+## 11. Success condition
 
 TRES-0010 succeeds when the project either:
 
@@ -153,3 +195,17 @@ TRES-0010 succeeds when the project either:
 - records credible adversarial evidence that no remaining issue found by these attacks warrants blocking Slice 1.
 
 The goal is not consensus. The goal is to make implementation expensive to fool.
+
+## 12. Interpretation rule
+
+Ten agents using the same underlying model family do not create ten independent statistical samples. Their value comes from:
+
+- separated contexts;
+- different falsification objectives;
+- different source restrictions;
+- direct evidence/counterexamples;
+- sentinel reruns;
+- targeted Wave-B opposition;
+- Master Architect / Director synthesis.
+
+Do not report "10/10 reviewers agreed" as evidence of correctness.
