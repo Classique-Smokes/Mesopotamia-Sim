@@ -135,4 +135,64 @@ The earlier Hammurabi 31 text already has heirs acting for Nuska-amaḫ’s succ
 
 #### E. Inherited property changes form
 
-On Samsu-iluna 10/03/23, Mannum exchanged **12 gin of buil
+On Samsu-iluna 10/03/23, Mannum exchanged **12 gin of built property**, explicitly associated with his inherited and preferential share, for annual institutional fractions held by Munawwirum: **10½ days at the great gate, 5 days at Ningagia’s gate, and 1½ days in the Ninlil-related entitlement**. A later correction affects the precise designation of the latter. The secure point is the exchange between different resource types, not a measured increase in annual income. [D07, obv. 1–12; S01, appendix commentary]
+
+Meinhold identifies the other party as Mannum’s uncle and co-heir. The displayed digital seal restoration does not straightforwardly agree with that filiation. The relation is therefore retained as a published reconstruction, not an independently repaired reading. The exchange itself remains much more secure than a fully resolved genealogy. It shows that continuity of resources could be achieved through **substitution**, not only preservation of the same asset. [D06–D07; S01]
+
+#### F. An expense claim reaches a later group of heirs
+
+OECT 8, 19 allocates institutional shares to **Ninurta-muštāl, Namāršu-lūmur and Munawwirum**. Its date is Rīm-Sîn II 3/10/25, placed in the Samsu-iluna 9 sequence by Meinhold. The digital father-name reading is **Ibni-Enlil**, whereas the linked subsequent expense settlement has **Ibbī-Enlil**; the recurring group of heirs supports the association, but the variant is not suppressed. [D25, rev. 1–14 and seal; S01]
+
+In the following settlement, Mannum states expenses involving **2 gur of barley and food for one year** for their father. His expense tablet is examined, and the heirs convey **one month per year of the Enlil/Ninlil é-da-di entitlement**, with a waiver. This is stronger evidence than a promise of future care: a later agreement recognizes a claim grounded in reported past provision. It still does not establish the beneficiary’s age, the exact reason for the expenditure, or an adoption by him. [D08, obv. 1–16; rev. 1–6]
+
+The distinction matters causally. This transfer need not be explained as the automatic fulfilment of a filial inheritance right. It may reflect settlement of an expense claim against successor-side parties. The wider lesson is that a person’s provision for another could become part of an estate’s later legal history without proving either common residence or adoptive kinship. The Munawwirum among these heirs must not simply be merged with the uncle bearing the same name. [D08, D25; S01]
+
+#### G. A property history continues after Mannum disappears from the transaction
+
+BE 6/2, 64 records **Ninurta-rāʾim-zērim** recovering paternal property from **Ninurta-muballiṭ, Iddin-Ištar and Narubtum**, while recalling an earlier purchase by Mannum from the Ea-iddinam side. Iddin-Ištar is identified as Mannum’s son and Narubtum as his mother. The seller-side succession and Mannum’s death are reconstructed from the configuration, not narrated as a dated death event. The year-29 attribution is retained with its editorial qualification. [D11]
+
+The proposed association with Mannum’s earlier purchase, BE 6/2, 38, is reasonable but was not fully checked against that tablet’s text. Nor does the presence of a mother among vendors decide whether she was acting as guardian, co-owner, a necessary consenting party, or in another capacity. What is secure is a conveyance reconnecting property to an earlier owner’s family. Its physical occupancy and the precise history of the built versus open plot remain unresolved. [D10, catalogue only; D11; S02]
+
+**Case A assessment.** This is a linked history of succession claims and changes in resource composition, not a demonstrated biography of one unchanging house. Its most important corrections are the revised inheritance chronology, the distinction between support expenditure and adoption, and the refusal to turn a chain of title into continuous co-residence. The dossier contains both persistence and redirection: prior relationships matter, but assets can be partitioned, substituted or conveyed to another family. [D01–D11, D25; C-C06–C-C14]
+
+### 4.3 Microhistory B — Narāmtum, Ur-Pabilsaga and Narubtum
+
+#### A. A female adopter with an earlier property history
+
+TMH 10, 6, dated Rīm-Sîn 43/month 8, identifies **Narāmtum**, daughter of Lu-Nanna and **nadītu of Lugal-aba**, as the adopter of **Ur-Pabilsaga, son of Ubārum**. Here *nadītu* is an explicitly attested religious status; assumptions about age, celibacy, fertility or the practice of all such women are not required for the argument. [D12, obv. 1–5]
+
+The property list includes **5/6 sar of built property**, **½ iku and 20 sar of garden**, **1½ iku and 10 sar of field**, and named dependent persons. The text attributes the property to a gift by Narāmtum’s father. Calling it simply an inheritance would erase that distinction. Some personal-status and relationship labels in the list are damaged and have been collated; the report does not invent a complete family tree for the listed dependents. [D12, obv. 6–17; S04, p. 251]
+
+Ur-Pabilsaga is to supply grain, oil and wool during Narāmtum’s life. The quantities are not specified in the inspected wording. The agreement anticipates repudiation from either side. It thus associates material provision, affiliation and property, but it does not establish that every transfer awaited death, that all obligations were performed, or that the two lived in one building. [D12, obv. 18–rev. 11]
+
+#### B. What is, and is not, known between the endpoints
+
+Specialists connect the dossier to an earlier division **ARN 41**, dated Rīm-Sîn 53/month 8, and additional gifts and transactions. Its correct consulted catalogue identifier is **Ni 1923**. The edition text was not independently read, so this report does not present it as a fully verified intervening episode. TMH 10, 24 and further marriage, sale and dispute documents remain leads rather than filled-in chapters of a seamless biography. [D13, D17, D20–D24; S03–S04]
+
+This restriction is consequential. The evidence supports a long-lived legal relevance for the adoption, but not uninterrupted cooperation between the original parties throughout the intervening decades. It also cannot establish every death date, the precise timing of all earlier distributions, or all changes to the estate. A detailed published genealogy is a research hypothesis to test, not a substitute for those missing links.
+
+#### C. The later division: one act, several witnesses
+
+The principal later act is **TMH 10, 18a**, with parallel **BE 6/2, 23 = TMH 10, 18b**, and the joined envelope **18c**. Its date is **Samsu-iluna 4/10/21**: the “21” is a **day**, not the regnal year. The parallel tablets and envelope must not be counted as three divisions. Földi’s joins and seal observations identify the envelope relationship; his translation corrections must be applied to the appropriate witness. [D14–D16; S04, p. 253; S03, p. 4 n. 14]
+
+The division concerns **Narubtum, daughter of Migir-Enlil**, and **Ur-Pabilsaga, son of Ubārum**. Narāmtum is called Migir-Enlil’s mother. The earlier adoption supplies Ur-Pabilsaga’s position in the estate history; the wording does not require a new adoption between him and Narubtum. Whether every parent–child relationship in the wider genealogy was biological is a separate question. [D14, rev. 1–5 and seals; D12]
+
+The allocated items are specific rather than a merely abstract statement of partnership:
+
+| Resource / persons | Narubtum’s allocation | Ur-Pabilsaga’s allocation | Primary locator |
+| --- | --- | --- | --- |
+| Built property | ⅓ sar + 5 gin, with its stated boundary | ⅓ sar + 5 gin, with a different stated boundary | D14 obv. 1–2, 9–10; D15 |
+| Garden | 40 sar, with its stated boundary and associated description | 40 sar, with a different stated boundary and associated description | D14 obv. 3–5, 11–13; D15 |
+| Field | No corresponding field in her itemized allocation | 1½ iku, linked to compensation for Adad-rīm-ilī | D14 obv. 14–15; D15 |
+| Enslaved persons | Ali-aḫūša, woman; Adad-rīm-ilī, man | Dumqi-Ištar, woman; Taribum, man | D14 obv. 6–7, 16–18; D15 |
+
+
+The field on Ur-Pabilsaga’s side is linked to compensation for the enslaved man allocated to Narubtum. The document does not set out an equal division of every type of asset or establish that the two totals were equal by a known market valuation. It records separate, bounded allocations and a no-challenge agreement. The named enslaved persons are people whose legal allocation is being determined by others; the instrument provides little access to their own choices or continuing family relationships. [D14, obv. 6–18; rev. 5–7; D15]
+
+A later division following the earlier adoption is therefore secure. Identity of every earlier and later parcel is not. Similar areas, recurring place designations, or the repeated name Taribum can invite comparison, but cannot independently prove unchanged property boundaries or continuous identity for each dependent over several decades. The initial list and later allocation must not be conflated into one inventory. [D12 versus D14–D15]
+
+#### D. The contested “keeping together” interpretation
+
+Van Wyk interprets the agreement through a hybrid adoption-and-division template and proposes a stronger arrangement of continued co-ownership and household preservation. This is a substantive interpretation worth testing, but **the separately allocated shares, adoption recital and mutual waiver alone do not demonstrate perpetual inalienability, a right of survivorship, or continued shared residence**. An older reading of the relevant estate clause as “one-third” also differs from the newer all-property reading; Van Wyk herself acknowledges that reading difference. [S03, pp. 3–4 and later discussion; D14–D15]
+
+The disagreement is not resolved by declaring the older interpretation impossible. Additional documents could support an enduring arrangement. The point is that the stronger social and proprietary conclusions require additional premises, and those premises are not indepen
