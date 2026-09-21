@@ -38,7 +38,7 @@ Active work:
 
 - `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
 - `plans/verification/SFL_V0/`
-- current verification focus: MaterialDeadlock, stable-ID fallback, checkpoint/rebuild, and explainability; one narrow multi-contributor provision-allocation erratum remains open
+- current verification focus: resolve two explicit Stage-3 semantic gates—multi-contributor provision allocation and the reference scoring contract—then run final verification-package closure review
 
 No production implementation has started.
 
