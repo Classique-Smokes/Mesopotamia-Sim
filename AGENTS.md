@@ -6,8 +6,9 @@ This file is the machine-discoverable entrypoint for agents working in this repo
 
 1. Read `00_START_HERE.md`.
 2. Read `plans/CURRENT_PHASE.md`.
-3. Retrieve only the accepted decisions/specifications relevant to the task.
-4. For delegated work, follow the applicable task packet in `tasks/`.
+3. If acting as the Master Architect, read `governance/MASTER_ARCHITECT_GUIDE.md`.
+4. Retrieve only the accepted decisions/specifications relevant to the task.
+5. For delegated work, follow the applicable task packet in `tasks/`.
 
 ## Hard rules
 
