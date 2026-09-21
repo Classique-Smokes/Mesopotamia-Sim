@@ -300,11 +300,12 @@ Stage-3/Stage-4 verification output must keep visible:
 - checkpoint/rebuild comparison result;
 - minimized generated regression ID where applicable.
 
-## 11. Open gates
+## 11. Resolved Stage-3 configuration dependencies
 
-The cross-cutting contract does not resolve:
+The previously open semantic gates are resolved:
 
-- exact multi-contributor provision debit trace;
-- exact reference scorer aggregation/component table.
+- multi-contributor provision allocation uses fixed precommit ranking / exhaust-in-order;
+- reference scoring uses named exact-integer components summed to `FinalScore`;
+- canonical closed-loop profiles are pinned in `REFERENCE_SCORING_PROFILES.md`.
 
-Canonical cards that require those semantics remain blocked or must use configurations that avoid relying on the unresolved behavior.
+Verification must continue to distinguish these controlled v0 choices from historical calibration or permanent cognition/accounting doctrine.
