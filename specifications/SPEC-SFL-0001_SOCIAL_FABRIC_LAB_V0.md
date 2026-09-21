@@ -4,7 +4,7 @@
 - **Owner:** Master Architect
 - **Date:** 2026-09-21
 - **Depends on accepted decisions:** DEC-0001, ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0005
-- **Known assumptions:** ASM-0001 through ASM-0012
+- **Known assumptions:** ASM-0001 through ASM-0013
 
 ## 1. Purpose and scope
 
@@ -92,7 +92,6 @@ Fixed v0 updates:
 - ordinary refusal without genuine need/accepted obligation: 0;
 - refusal of called favour: holder -> refuser -20;
 - debt remaining unpaid at its social due cycle: creditor -> debtor -10 once;
-- breach of accepted commitment: affected counterparty -> breacher -20;
 - rejected marriage proposal: 0.
 
 Every 5 cycles, positive attitude moves 2 toward 0 and negative attitude moves 1 toward 0; decay never crosses 0.
@@ -225,6 +224,45 @@ Persistent concern categories are:
 - seek co-residence when motivated.
 
 Exact scoring coefficients are laboratory configuration, not independent social semantics; Stage-3 scenarios must pin the values they rely upon.
+
+### 5.1 Response decision contexts
+
+For every incoming proposal whose semantics require a target choice, v0 activates a deterministic `ResponseDecisionContext(target, proposal)`.
+
+A response context reads:
+
+- the same committed cycle snapshot used by personal/household deliberation;
+- the incoming proposal's explicit terms;
+- the target's subjective state from that snapshot;
+- role/household authority context only where the response meaning itself is role-scoped.
+
+It does not observe uncommitted effects of other proposals or responses.
+
+**Feasibility precedes voluntary response scoring.** If the requested response is no longer feasible from the target/world state, the interaction produces `Unable(reason)` under §6.7 rather than a scored voluntary refusal.
+
+If feasible, generate only response meanings valid for that proposal type, such as:
+
+- Accept / Decline;
+- FulfilCalledFavor / RefuseCalledFavor;
+- AcceptResidenceChange / DeclineResidenceChange;
+- AcceptProvisionCommitment / DeclineProvisionCommitment;
+- invitation/participation acceptance or refusal;
+- nomination/appointment/succession acceptance where applicable;
+- marriage-route acceptance/refusal where applicable.
+
+Feasible response candidates use the same reference scorer defined above: named exact-integer components, summed `FinalScore`, highest score wins, then any explicitly declared domain tie key or the logged stable-semantic-ID technical fallback.
+
+Response-specific coefficients are laboratory configuration, not independent social semantics.
+
+Response contexts:
+
+- do not consume or grant the target's personal initiative;
+- may activate multiple times for one target in one cycle;
+- may select multiple Accept/Fulfil responses from the common snapshot;
+- do not bypass central resolution/revalidation;
+- do not turn a later capacity conflict into retroactive refusal: such a loss is `InvalidatedAtResolution`.
+
+Diagnostic history for each response decision records proposal ID/terms, response candidates/gates, named components/final scores, selected response, relevant target subjective inputs, and response profile/configuration version.
 
 Required action meanings include:
 
@@ -828,3 +866,4 @@ Relevant:
 - 2026-09-21 — Restored previously approved Pass-C information semantics lost during compression: communication initiative cost, event-provenance precedence, Contested handling, general household/role recognition action gating, outsider non-omniscience, and the mediated-marriage bride-to-household subjective route requirement.
 - 2026-09-21 — Pre-rule compression-audit restorations: fixture authority/no fixed actor count; cross-boundary/anti-shortcut constraints; attitude/kinship gate separation; debt-history retention; favour non-currency limits; residence independence from marriage; exact reference-scorer/separability semantics; recognition-state meanings; head-role prohibitions; reaction-closure termination condition; all action-relevant preconditions and uncommitted-effect knowledge semantics.
 - 2026-09-21 — Director-approved final Stage-3 semantic gates: fixed-rank/exhaust-in-order multi-contributor provision allocation and exact reference scorer aggregation (`FinalScore = sum(named integer components)`) with explicit semantic/domain tie handling and disclosed technical-ID fallback.
+- 2026-09-21 — Director-approved TRES-0008 closure repairs: deterministic `ResponseDecisionContext` using the same exact component scorer; response feasibility precedes voluntary scoring; responses do not consume personal initiative and remain centrally resolved; removed the orphan generic commitment-breach attitude row rather than inventing a generic commitment subsystem.
