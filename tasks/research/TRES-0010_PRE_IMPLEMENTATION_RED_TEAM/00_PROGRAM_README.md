@@ -209,3 +209,18 @@ Ten agents using the same underlying model family do not create ten independent 
 - Master Architect / Director synthesis.
 
 Do not report "10/10 reviewers agreed" as evidence of correctness.
+
+
+## Wave B status
+
+Wave A is complete. Targeted Wave B adjudication is prepared under:
+
+- `WAVE_B/00_WAVE_B_README.md`
+- `WAVE_B/01_WAVE_B_DISPATCH_GUIDE.md`
+
+Frozen Wave-B baseline:
+
+- ref: `tres-0010-wave-b-baseline`
+- SHA: `f25407a9cbf09e501601d52ad7a2df111fa5c491`
+
+Wave B includes two blind sentinel reruns plus four prosecution/defense clusters. Solution-design tasks remain contingent on adjudication results.
