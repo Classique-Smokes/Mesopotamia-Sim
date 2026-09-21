@@ -185,21 +185,40 @@ Assertions:
 
 **Level:** closed-loop process
 
-### Setup
+### Common snapshot
 
-Target B has already generated one valid personal initiative from the common decision snapshot using an explicitly named personal scoring profile.
+- B and D have an established marriage and reside in different dwellings;
+- no other co-residence target is eligible for B;
+- B personal context uses `SCORE-VP-006`, making the marriage-motivated residence proposal toward D the highest generated personal candidate;
+- D's response context to B's residence proposal uses `SCORE-RP-001`;
+- A has genuine unmet need and submits `RequestGiftOrHelp(A -> B, 1)`;
+- B has grain 5 and its response context to A uses `SCORE-RP-001`.
 
-B also receives one or more incoming feasible proposals during the response phase and selects responses through response profiles.
+### Expected decisions
+
+From the same committed cycle snapshot:
+
+1. B uses its one personal initiative to select a residence proposal involving D;
+2. D selects Accept for that incoming residence proposal;
+3. B separately selects Accept for A's help request during the response phase.
 
 ### Assertions
 
-- B's personal decision trace remains present;
-- all response decision traces remain present;
-- selecting responses neither cancels nor duplicates the one personal initiative;
-- compatible personal and response effects may both commit;
-- incompatible effects are resolved centrally rather than by deleting one decision context.
+- B has exactly one personal decision trace and one response-decision trace;
+- B's response does not consume, cancel, or duplicate its personal initiative;
+- D's response likewise consumes no D personal initiative;
+- both accepted effects are compatible and may commit under ordinary revalidation;
+- B residence changes only through the accepted residence proposal;
+- A receives the accepted help transfer and recipient A -> giver B attitude +10;
+- no actor receives a same-cycle second voluntary initiative.
 
-This card is satisfied by any concrete closed-loop fixture whose personal action is nonconflicting with the selected response effects; the implementation packet should bind one exact fixture/profile.
+### Mutation controls
+
+Fail if:
+
+- B's response causes its already-selected personal proposal to disappear solely because responses consume initiative;
+- B is given another voluntary initiative because it responded;
+- response-phase processing overwrites the personal decision trace.
 
 ## Family semantic mutants that must be detected
 
