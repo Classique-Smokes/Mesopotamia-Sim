@@ -447,7 +447,7 @@ Check immediately before, at, and after the due cadence.
 ### Assertions
 
 - a person normally has at most one substantive voluntary personal initiative per cycle;
-- successfully initiating Farm/Gift/Loan/Marriage/Residence/Communication/etc. consumes that initiative;
+- successfully initiating Farm/Gift/Loan/CallFavor/Marriage/Residence/Communication/etc. consumes that initiative;
 - responding to incoming proposals does not consume that initiative;
 - multiple responses may occur subject to response semantics and central compatibility resolution;
 - accepting/responding to proposals cannot grant a second voluntary initiative;
