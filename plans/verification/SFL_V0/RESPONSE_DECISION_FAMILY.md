@@ -8,9 +8,10 @@ These cards verify that counterparties remain autonomous: initiator selection ca
 
 ## Family invariants
 
-- one incoming proposal requiring a target choice creates one `ResponseDecisionContext(target, proposal)`;
+- categorically invalid proposal terms are rejected before any target response context and do not become social failed attempts;
+- one semantically valid incoming proposal requiring a target choice creates one `ResponseDecisionContext(target, proposal)`;
 - response context reads the common committed cycle snapshot, proposal terms, and target subjective state;
-- infeasible requests produce `Unable(reason)` before voluntary response scoring;
+- infeasible valid requests produce `Unable(reason)` before voluntary response scoring;
 - feasible response candidates use the same exact integer component-sum scorer as other reference decisions;
 - response context cannot create a response meaning invalid for the proposal type or role scope;
 - responses consume no personal initiative;
@@ -88,9 +89,9 @@ An implementation that scores Accept=100 and commits/labels acceptance despite i
 
 **Level:** closed-loop response
 
-### Shared setup
+### Shared valid setup
 
-B owes A one favour. A validly `CallFavor`s B for one otherwise-feasible ordinary action.
+B owes A one favour. A validly `CallFavor`s B for a response-closed requested action: B's Fulfil/Refuse choice is the last new voluntary actor choice required for that requested action to reach terminal commit/failure.
 
 ### Fulfil run
 
@@ -100,8 +101,10 @@ Assertions:
 
 - feasible response meanings include FulfilCalledFavor / RefuseCalledFavor;
 - B selects fulfilment;
+- requested execution is response-scoped and does not consume/grant another B personal initiative;
 - requested action remains subject to central revalidation;
-- on successful commit the favour is satisfied and A -> B attitude +10;
+- no nested `ResponseDecisionContext` is opened;
+- on successful requested-action commit the favour is satisfied and A -> B attitude +10;
 - fulfilment does not create another favour.
 
 ### Refusal run
@@ -111,10 +114,30 @@ B uses `SCORE-RP-004`.
 Assertions:
 
 - B selects refusal;
+- outcome is `Declined`;
 - favour remains outstanding;
 - A -> B attitude -20;
 - requested world effect does not commit;
 - refusal does not consume B's personal initiative.
+
+### Invalid payload control
+
+Use an attempted CallFavor payload outside the response-closed domain, such as an action that would require a third actor's new response.
+
+Assertions:
+
+- categorical validation rejects the term before B response activation;
+- no response profile is scored;
+- favour remains;
+- no requested world effect or called-favour attitude effect occurs;
+- the rejection is not labeled Declined/Unable/InvalidatedAtResolution.
+
+### Unable / invalidated controls
+
+For a valid response-closed payload:
+
+- if already world-state infeasible at feasibility evaluation -> `Unable(reason)`, favour remains, no +10/-20;
+- if B selected Fulfil but an action-relevant precondition is lost before commit -> `InvalidatedAtResolution(reason)`, favour remains, no +10/-20.
 
 ---
 
@@ -149,6 +172,19 @@ Assertions:
 - no refusal-attitude penalty applies to the invalidated attempt;
 - B receives no extra personal initiative or response retry;
 - history distinguishes "accepted by target" from "committed by resolver."
+
+### Residence companion
+
+Construct two independently accepted Residence proposals that would move the same person to different dwellings in the same cycle.
+
+Assertions:
+
+- both target Accept decisions remain in history;
+- the valid accepted Residence effects form one same-person conflict set;
+- at most one Residence transition commits;
+- if no semantic priority distinguishes them, the disclosed stable-ID fallback selects the winner and is marked;
+- every non-winner becomes `InvalidatedAtResolution(CompetingResidenceTransition)`;
+- no second same-person Residence move commits later in the cycle.
 
 ---
 
@@ -223,11 +259,15 @@ Fail if:
 ## Family semantic mutants that must be detected
 
 - initiator's score directly determines target acceptance;
+- categorically invalid term reaches response scoring or is mislabeled as a social failed attempt;
 - infeasible proposal is voluntarily Declined instead of Unable;
 - Accept preference bypasses feasibility;
 - response consumes target personal initiative;
 - only one response context is allowed per target/cycle;
 - second response observes uncommitted effect of first response;
 - accepted-but-conflicting proposal is rewritten as Declined;
+- called-favour fulfilment opens a nested response context or consumes another personal initiative;
+- called-favour Unable/Invalidated outcome consumes the favour or fires +10/-20;
+- two accepted same-person Residence transitions both commit in one cycle;
 - role response profile grants authority to a non-role actor;
 - response decision trace omits candidates/components/selected response.
