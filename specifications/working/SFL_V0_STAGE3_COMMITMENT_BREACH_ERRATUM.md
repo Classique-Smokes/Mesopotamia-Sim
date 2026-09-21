@@ -1,6 +1,6 @@
 # SFL v0 — Orphan Commitment-Breach Attitude Rule Erratum
 
-**Status:** OPEN / REQUIRES DIRECTOR DECISION  
+**Status:** RESOLVED / HISTORICAL WORKING RECORD  
 **Date:** 2026-09-21  
 **Authority:** Working semantic erratum only.
 
@@ -43,3 +43,14 @@ Removing the orphan rule does not change:
 - marriage.
 
 It only prevents a dead rule from inviting invented implementation semantics.
+
+
+## Resolution
+
+Approved by the Project Director on 2026-09-21.
+
+The generic `breach of accepted commitment -> -20` attitude row was removed from SFL v0.
+
+No generic future-performance commitment/breach subsystem was added. Existing called-favour refusal, debt social-due, proposal failure, provision, participation, and marriage semantics remain unchanged.
+
+Canonical authority: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md` §3.1.
