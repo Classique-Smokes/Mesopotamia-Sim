@@ -63,3 +63,8 @@ No return becomes canonical authority by being committed.
 - B2 packets: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/B2/`
 - baseline: `tres-0010-b2-baseline` @ `0729e460af35668e5b911fa561bf8cec53204142`
 - scope: exactly three decision-support tasks — temporal composition, action/favour closure, and Slice-1 acceptance authority design.
+
+
+## B2 decision synthesis
+
+- `B2_MASTER_ARCHITECT_DECISION_SYNTHESIS.md` — Master Architect synthesis of all three B2 returns, including recommended Director decisions, acceptance-manifest design, IMP-0001 implications, and remaining closure sequence.
