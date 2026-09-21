@@ -589,4 +589,181 @@
       "Confidence": "HIGH"
     },
     {
-   
+      "Group": "D. Property, shares and obligations",
+      "Term/form": "sa₁₀; sa₁₀-am₃ til-la; kù-babbar ... lá",
+      "Language": "Sumerian",
+      "Literal/common gloss": "Purchase; full price; weigh/pay silver",
+      "Attested Nippur contexts": "[SAOC 44, 17, obv. 8–13](https://cdli.earth/P283587); [SAOC 44, 69, obv. 8–13](https://cdli.earth/P257345)",
+      "Semantic range": "Sale and consideration, including an office entitlement.",
+      "Disputed points": "Price differs from revenue or wage.",
+      "Misleading English assumptions to avoid": "“Bought” alone does not define a modern unrestricted ownership doctrine.",
+      "Confidence": "HIGH"
+    },
+    {
+      "Group": "D. Property, shares and obligations",
+      "Term/form": "ki ba-gar-ra; é é-e gin₇ / é ki-ma é",
+      "Language": "Sumerian / Akkadian kīma in mixed wording",
+      "Literal/common gloss": "Exchange; house for corresponding house",
+      "Attested Nippur contexts": "[SAOC 44, 12](https://cdli.earth/P257360); [SAOC 44, 20](https://cdli.earth/P224335); [SAOC 44, 45](https://cdli.earth/P257364)",
+      "Semantic range": "Exchange with or without a balancing silver payment.",
+      "Disputed points": "Catalogue “sale” can be too broad.",
+      "Misleading English assumptions to avoid": "Silver consideration does not make every conveyance a simple sale.",
+      "Confidence": "HIGH"
+    },
+    {
+      "Group": "D. Property, shares and obligations",
+      "Term/form": "inim nu-...-gá-gá; seller and ibila closure",
+      "Language": "Sumerian",
+      "Literal/common gloss": "Not raise a claim",
+      "Attested Nippur contexts": "[SAOC 44, 43, rev. closure](https://cdli.earth/P283584); [SAOC 44, 46, rev. closure](https://cdli.earth/P283588)",
+      "Semantic range": "Exclusion of later assertions by stated parties/successors.",
+      "Disputed points": "Range of possible third-party claims needs other clauses.",
+      "Misleading English assumptions to avoid": "Not a register of current children; not proof that all conceivable rights are extinguished.",
+      "Confidence": "HIGH"
+    },
+    {
+      "Group": "D. Property, shares and obligations",
+      "Term/form": "gín with é area / gín kù-babbar",
+      "Language": "Sumerian metrological writing",
+      "Literal/common gloss": "Area unit / silver weight unit",
+      "Attested Nippur contexts": "[SAOC 44, 12, obv. measured objects and payment](https://cdli.earth/P257360)",
+      "Semantic range": "Homographic unit language distinguished by object/system.",
+      "Disputed points": "Conversion not attempted in this report.",
+      "Misleading English assumptions to avoid": "Never compare land-area and silver-weight numerals as one quantity.",
+      "Confidence": "HIGH"
+    },
+    {
+      "Group": "D. Property, shares and obligations",
+      "Term/form": "mu 3-kam; mu 4-kam in a field arrangement",
+      "Language": "Sumerian",
+      "Literal/common gloss": "Third-year/three-year; fourth-year references",
+      "Attested Nippur contexts": "[SAOC 44, 32, obv. 1–10](https://cdli.earth/P224347)",
+      "Semantic range": "Temporal differentiation of land-use terms.",
+      "Disputed points": "Damaged obligation clauses.",
+      "Misleading English assumptions to avoid": "Do not reconstruct a complete labor contract from its duration alone.",
+      "Confidence": "MODERATE"
+    },
+    {
+      "Group": "E. Office, service and authority",
+      "Term/form": "bara₂ Ninurta; gu-za Inanna",
+      "Language": "Sumerian",
+      "Literal/common gloss": "Dais/platform and seat designations associated with deities",
+      "Attested Nippur contexts": "[SAOC 44, 11, obv. 1–13](https://cdli.earth/P257361)",
+      "Semantic range": "Temple-associated rights divided into four-month shares.",
+      "Disputed points": "Precise duty and institutional meaning not independently resolved.",
+      "Misleading English assumptions to avoid": "Not necessarily sale of furniture or a complete job description.",
+      "Confidence": "MODERATE"
+    },
+    {
+      "Group": "E. Office, service and authority",
+      "Term/form": "[nam] ì-du₈ ká é-kur-ra; garza₂",
+      "Language": "Sumerian",
+      "Literal/common gloss": "Ekur gatekeeping status/office; cultic entitlement",
+      "Attested Nippur contexts": "[SAOC 44, 69, obv. 1–2; rev. 1](https://cdli.earth/P257345)",
+      "Semantic range": "Sale object quantified in days.",
+      "Disputed points": "Initial nam restored; garza₂ requires contextual interpretation.",
+      "Misleading English assumptions to avoid": "An acquired entitlement is not proof its owner personally worked every turn.",
+      "Confidence": "HIGH for sale; MODERATE for full semantics"
+    },
+    {
+      "Group": "E. Office, service and authority",
+      "Term/form": "nam-ugula é; nam-ì-du₈; nam-bur-šu-ma",
+      "Language": "Sumerian office spellings",
+      "Literal/common gloss": "House-supervision, gatekeeping and another technical office",
+      "Attested Nippur contexts": "[SAOC 44, 70, envelope obv. 1–5](https://cdli.earth/P257344)",
+      "Semantic range": "Several office designations bundled in one transfer.",
+      "Disputed points": "Opening/institutional names damaged; bur-šu-ma not resolved.",
+      "Misleading English assumptions to avoid": "Do not invent a modern hierarchy or function for an uncertain title.",
+      "Confidence": "MODERATE"
+    },
+    {
+      "Group": "E. Office, service and authority",
+      "Term/form": "nam-gudu₄; nam-lunga; é Nuska",
+      "Language": "Sumerian office spellings",
+      "Literal/common gloss": "Cult office; brewing-related office; Nuska temple",
+      "Attested Nippur contexts": "[SAOC 44, 71, envelope obv. 1–5](https://cdli.earth/P257341)",
+      "Semantic range": "Office rights, annual days and field in one instrument.",
+      "Disputed points": "Full duty set and associated field expression uncertain.",
+      "Misleading English assumptions to avoid": "Not simply a priest’s or brewer’s modern employment contract.",
+      "Confidence": "MODERATE"
+    },
+    {
+      "Group": "E. Office, service and authority",
+      "Term/form": "mu-a u₄ ...-kam; bala gub-ba",
+      "Language": "Sumerian",
+      "Literal/common gloss": "Days per year; established turn",
+      "Attested Nippur contexts": "[SAOC 44, 70, envelope obv. 4–5](https://cdli.earth/P257344); [SAOC 44, 71, envelope obv. 3–5](https://cdli.earth/P257341)",
+      "Semantic range": "Temporal entitlement/rotation language.",
+      "Disputed points": "Actual performance and income not documented by the formula.",
+      "Misleading English assumptions to avoid": "A time-share of rights is not a headcount or wage rate.",
+      "Confidence": "HIGH"
+    },
+    {
+      "Group": "E. Office, service and authority",
+      "Term/form": "nu-eš₃; agrig",
+      "Language": "Sumerian title spellings",
+      "Literal/common gloss": "Cult title; administrative title",
+      "Attested Nippur contexts": "[SAOC 44, 43, buyer](https://cdli.earth/P283584); [SAOC 44, 65, borrower](https://cdli.earth/P257325)",
+      "Semantic range": "Appositions identifying parties.",
+      "Disputed points": "Precise capacity in the transaction is unstated.",
+      "Misleading English assumptions to avoid": "Title-holder is not automatically an institutional agent.",
+      "Confidence": "MODERATE"
+    },
+    {
+      "Group": "E. Office, service and authority",
+      "Term/form": "rabiānum; nimgir; šabra; šagina",
+      "Language": "Akkadian / Sumerian title spellings",
+      "Literal/common gloss": "Local official; herald; administrator; military title",
+      "Attested Nippur contexts": "[SAOC 44, 25, rev. 11–16](https://cdli.earth/P224340); [SAOC 44, 20, witness list](https://cdli.earth/P224335)",
+      "Semantic range": "Titles attached to named participants/witnesses.",
+      "Disputed points": "Authority, jurisdiction and delegated capacity are not specified.",
+      "Misleading English assumptions to avoid": "“Mayor,” “manager,” or “police” can import modern powers.",
+      "Confidence": "MODERATE"
+    },
+    {
+      "Group": "E. Office, service and authority",
+      "Term/form": "dub-sar; bur-gul; aga-us₂; sanga",
+      "Language": "Sumerian title spellings",
+      "Literal/common gloss": "Scribe; stone-cutter; attendant/soldier; cult official",
+      "Attested Nippur contexts": "[SAOC 44, 46, witnesses](https://cdli.earth/P283588); [SAOC 44, 53, rev. witnesses](https://cdli.earth/P224357)",
+      "Semantic range": "Different professional/service descriptions.",
+      "Disputed points": "A witness list is not an organizational chart.",
+      "Misleading English assumptions to avoid": "Occupation does not exhaust status, kinship or household relations.",
+      "Confidence": "MODERATE"
+    },
+    {
+      "Group": "E. Office, service and authority",
+      "Term/form": "pu-uh₂-ru-um nibru-ka; di dab₅-ba",
+      "Language": "Akkadian puḫrum within Sumerian wording",
+      "Literal/common gloss": "Nippur assembly; judgment/case decided",
+      "Attested Nippur contexts": "[PBS 8/2, 173, rev. 8′–13′; left edge](https://cdli.earth/P230709)",
+      "Semantic range": "Collective judicial authority in a school narrative.",
+      "Disputed points": "No independently established proceedings/date in this witness.",
+      "Misleading English assumptions to avoid": "Not a modern jury or parliament; not an observed court roster.",
+      "Confidence": "MODERATE"
+    },
+    {
+      "Group": "F. Written language and legal expression",
+      "Term/form": "ana; kīma; il-qé-e-ma; i-na-di-in",
+      "Language": "Akkadian",
+      "Literal/common gloss": "To/for; like/in exchange; took-and; gives/will give",
+      "Attested Nippur contexts": "[SAOC 44, 20, tablet/envelope exchange clauses](https://cdli.earth/P224335)",
+      "Semantic range": "Akkadian syntax and finite verbs alongside logograms.",
+      "Disputed points": "Different surfaces must be compared rather than homogenized.",
+      "Misleading English assumptions to avoid": "Sumerian signs do not by themselves make every clause Sumerian.",
+      "Confidence": "HIGH"
+    }
+  ],
+  "candidate_claim_ids": [
+    "H-C01",
+    "H-C02",
+    "H-C04",
+    "H-C07",
+    "H-C09",
+    "H-C11",
+    "H-C12",
+    "H-C13",
+    "H-C16",
+    "H-C17"
+  ]
+}
