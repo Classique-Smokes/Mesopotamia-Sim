@@ -56,11 +56,10 @@ Future Stage-4 engineering context:
 ## Next
 
 1. Resolve the narrow multi-contributor provision-allocation erratum.
-2. Define MaterialDeadlock and stable-ID fallback determinism/sensitivity scenarios.
-3. Define checkpoint/restore, derived-state rebuild, and decision-explainability scenarios.
-4. Consolidate always-on invariants, boundary matrices, semantic mutants, and held-out/generated variants.
-5. Review the full verification package without changing accepted semantics.
-6. Prepare the PROJECT-CONTEXT implementation packet.
-7. Begin Roadmap Stage 4 vertical-slice implementation.
+2. Resolve the reference-scoring aggregation/configuration contract and pin the required closed-loop scoring profiles.
+3. Complete the blocked multi-contributor provision card from the resolved allocation rule.
+4. Run final Stage-3 completeness/adversarial review over the full canonical verification package.
+5. Prepare the PROJECT-CONTEXT implementation packet.
+6. Begin Roadmap Stage 4 vertical-slice implementation.
 
 Historical model refinement/calibration remains a separate Director-led model-development concern and does not block the foundational v0 verification contract.
