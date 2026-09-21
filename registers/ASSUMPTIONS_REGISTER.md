@@ -30,11 +30,12 @@ Working specification has now introduced controlled laboratory assumptions. They
 | ASM-0002 | ACTIVE | v0 attitude events use fixed increments and natural drift of +attitude by 2 toward zero versus -attitude by 1 toward zero per decay event. | SFL v0 relationship dynamics. | Verification or historical/behavioral evidence showing the magnitudes distort the laboratory. |
 | ASM-0003 | ACTIVE | Farm yields 4 grain; consumption is 1 per cycle; typical initial stock is 4-8; debt repayment preserves a 2-grain reserve. | SFL v0 scarcity/debt behavior. | Verification, balance testing, or later economic subsystem. |
 | ASM-0004 | ACTIVE | Parent/child and sibling kinship both multiply the attitude-derived component of ordinary interpersonal choice by 1.5x. | SFL v0 kinship effect. | Historical evidence or verification showing type-specific/different treatment is required. |
-| ASM-0005 | ACTIVE | Initial v0 household formation requires shared residence plus a durable tie, two qualifying support events on separate cycles, and founding-core recognition. | SFL v0 household formation recognizer. | Historical evidence, verification, or later household model showing the gate is too narrow/broad. |
+| ASM-0005 | ACTIVE | Initial v0 household formation requires at least two distinct people, shared residence, a durable tie, two qualifying support events on separate cycles, and founding-core recognition. | SFL v0 household formation recognizer. | Historical evidence, verification, or later household model showing the gate is too narrow/broad. |
 | ASM-0006 | ACTIVE | Head appointment/succession requires unanimous sustaining-participant acceptance; provision spending uses 2-grain contributor reserve and largest-surplus-first allocation. | SFL v0 collective authority/resource mobilization. | Verification, historical evidence, or richer governance/accounting rules. |
 | ASM-0007 | ACTIVE | v0 temporal lab parameters: attitude decay every 5 cycles; provision reconsideration cooldown 3 full cycles plus relevant context change; stable semantic ID as last-resort equal-priority tie-break. | SFL v0 timing/conflict resolution. | Verification sensitivity or later social priority/timing rules. |
 | ASM-0008 | ACTIVE | Loan social due review occurs after the third subsequent full cycle; any remaining balance causes one creditor->debtor -10 attitude event, regardless of ability to repay. | SFL v0 debt relationship dynamics. | Verification/model iteration or later debt/default institutions. |
-| ASM-0009 | ACTIVE | Established-household participation entry requires bilateral invitation/request plus recognition of H, a continuity bridge, shared residence, durable tie, and one qualifying post-formation support event; exit is explicit. | SFL v0 sustaining-participant turnover. | Verification or later household admission/exit norms. |
+| ASM-0009 | ACTIVE | Established-household participation entry requires bilateral invitation/request plus recognition of H, a continuity bridge, shared residence, durable tie, and one qualifying post-formation support event; entry may reactivate an Inactive H through its sole bearer; exit is explicit. | SFL v0 sustaining-participant turnover. | Verification or later household admission/exit norms. |
+| ASM-0010 | ACTIVE | Household operational lifecycle uses 2+ sustaining participants = Active, 1 = Inactive, 0 = Dissolved; count does not establish identity. | SFL v0 operational lifecycle and continuity tests. | Verification/model iteration or richer household-activity semantics. |
 
 ### ASM-0001 — Reciprocity attitude gate
 
@@ -87,7 +88,7 @@ Working specification has now introduced controlled laboratory assumptions. They
 ### ASM-0005 — Household formation gate
 
 - **Status:** ACTIVE
-- **Assumption:** Initial v0 formation requires shared residence, a kinship/marriage/mutual-strong-like durable tie, two qualifying support events on separate cycles, and recognition by every required founding-core actor.
+- **Assumption:** Initial v0 formation requires a founding core of at least two distinct people, shared residence, a kinship/marriage/mutual-strong-like durable tie, two qualifying support events on separate cycles, and recognition by every required founding-core actor.
 - **Why temporarily needed:** v0 needs a falsifiable formation gate without claiming a universal or historical household definition.
 - **Scope / impact:** Candidate-to-household formation only; later continuity uses a different historical rule.
 - **Not authoritative for:** Old Babylonian household prevalence, universal household formation, later institutional or lifecycle models.
@@ -135,7 +136,7 @@ Working specification has now introduced controlled laboratory assumptions. They
 ### ASM-0009 — Established-household participation gate
 
 - **Status:** ACTIVE
-- **Assumption:** A nonparticipant joins an active household only through a bilateral invitation/request backed by a ParticipationWarrant: newcomer recognizes H; a current sustaining participant bridges the same H; shared residence; durable tie; one qualifying post-formation support event; and mutual acceptance. Exit is an explicit participation-end commit.
+- **Assumption:** A nonparticipant joins an Active household, or reactivates an Inactive household through its sole continuity bearer, only through a bilateral invitation/request backed by a ParticipationWarrant: newcomer recognizes H; a current sustaining participant bridges the same H; shared residence; durable tie; one qualifying post-formation support event; and mutual acceptance. Exit is an explicit participation-end commit.
 - **Why temporarily needed:** v0 must demonstrate real constituent turnover without a primitive membership write or arbitrary residence-based automatic admission/removal.
 - **Scope / impact:** SustainingParticipant entry/exit and household continuity.
 - **Not authoritative for:** Historical admission norms, dependency, slavery, marriage transfer, adoption, inheritance, or later institutional membership systems.
@@ -143,6 +144,18 @@ Working specification has now introduced controlled laboratory assumptions. They
 - **Introduced by:** Director / Master Architect Stage-3 semantic errata resolution
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `research/technical/TRES-0005/STAGE3_GUARDRAIL_SCENARIO_ADVERSARIAL_REVIEW.md`
+
+### ASM-0010 — v0 household operational lifecycle
+
+- **Status:** ACTIVE
+- **Assumption:** Operational household state is Active with 2+ current SustainingParticipants, Inactive with exactly 1, and Dissolved with 0. This count controls operational state only; household identity remains grounded in historical formation/continuity warrants.
+- **Why temporarily needed:** v0 needs exact, testable activity/reactivation/dissolution behavior without re-running the formation predicate or introducing a richer organizational-capacity model.
+- **Scope / impact:** Household-mode eligibility, inactivity/reactivation, dissolution, and continuity verification.
+- **Not authoritative for:** Universal household ontology, historical household minimum size, later institutional activity criteria, or identity itself.
+- **Review / replacement trigger:** Verification/model iteration or introduction of richer organizational activity/continuity semantics.
+- **Introduced by:** Director / Master Architect continuity adversarial-review resolution
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `research/technical/TRES-0006/CONTINUITY_LIFECYCLE_SCENARIO_ADVERSARIAL_REVIEW.md`
 
 ## Entry template
 
