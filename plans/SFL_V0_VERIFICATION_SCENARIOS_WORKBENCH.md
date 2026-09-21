@@ -16,6 +16,10 @@ Adversarial verification input:
 - `research/technical/TRES-0004/PASS_G_VERIFICATION_CLOSURE_ADVERSARIAL_REVIEW.md`
 - `research/technical/TRES-0005/STAGE3_GUARDRAIL_SCENARIO_ADVERSARIAL_REVIEW.md`
 
+Open semantic errata requiring Director decision:
+
+- `specifications/working/SPEC-SFL-0001_STAGE3_ERRATA.md`
+
 ## Required outputs
 
 Stage 3 must produce:
@@ -38,6 +42,18 @@ Stage 3 must produce:
 - Failure results must distinguish semantic detection, survivor, unexercised, invalid/equivalent, crash, and timeout where applicable.
 - Stable-ID fallback is accepted v0 technical behavior but must be isolated through ID-permutation sensitivity tests.
 - Historical validation/calibration is outside Stage 3.
+
+## Semantic gate before canonical cards
+
+Canonical formation/continuity/debt-behavior cards must not invent answers to the open errata.
+
+Pending decisions:
+
+- pre-household candidate-recognition sufficiency;
+- sustaining-participant entry/exit after formation;
+- epistemic trigger for the knowingly-retained-debt attitude event.
+
+Safe Stage-3 work may continue on scenario schema, invariant catalog, metamorphic infrastructure, and scenario families unaffected by these gaps.
 
 ## Scenario families to specify
 
