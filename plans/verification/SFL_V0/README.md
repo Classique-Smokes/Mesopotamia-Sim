@@ -36,3 +36,4 @@ Completed-cycle assertions are made only at stable cycle closure. Intermediate c
 
 - `PROVISION_GROUNDING_FAMILY.md`
 - `NO_SELF_CONFIRMATION_FAMILY.md`
+- `HEAD_ROLE_AND_DUAL_MODE_FAMILY.md`
