@@ -47,7 +47,7 @@
 - **Why temporarily needed:** The laboratory needs a simple, inspectable gate distinguishing ordinary accepted benefits from socially obligation-bearing reciprocity without yet implementing norms, reputation, or richer relational context.
 - **Scope / impact:** Favour creation and the decision consequences of accepting beneficial actions.
 - **Not authoritative for:** Old Babylonian reciprocity thresholds, historical psychology, universal social behavior, or later project-wide norm mechanics.
-- **Review / replacement trigger:** Recovery of relevant RES-0001 evidence; a later norm/reputation/recognition model; or verification scenarios showing the threshold produces poor or degenerate behavior.
+- **Review / replacement trigger:** Reconciliation/promotion of relevant RES-0001 evidence; a later norm/reputation/recognition model; or verification scenarios showing the threshold produces poor or degenerate behavior.
 - **Introduced by:** Director / Master Architect working specification discussion
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
@@ -83,7 +83,7 @@
 - **Why temporarily needed:** Kinship must matter behaviorally in v0 without becoming household membership or a second attitude variable.
 - **Scope / impact:** Ordinary interpersonal action scoring.
 - **Not authoritative for:** Historical kin obligations, marriage rules beyond the explicit v0 exclusion, or relative strengths of kin categories.
-- **Review / replacement trigger:** Recovered historical research or verification showing the factor/type uniformity is inadequate.
+- **Review / replacement trigger:** Reconciled/promoted historical research or verification showing the factor/type uniformity is inadequate.
 - **Introduced by:** Director / Master Architect working specification discussion
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
@@ -107,7 +107,7 @@
 - **Why temporarily needed:** v0 needs deterministic, inspectable authority and resource-allocation rules without a broader governance/accounting system.
 - **Scope / impact:** Household head legitimacy, collective support, dowry funding, and double-spend prevention.
 - **Not authoritative for:** Historical household governance, contribution shares, taxation, property, inheritance, or later office/accounting systems.
-- **Review / replacement trigger:** Verification, recovered historical evidence, or expansion to richer governance/resource systems.
+- **Review / replacement trigger:** Verification, reconciled/promoted historical evidence, or expansion to richer governance/resource systems.
 - **Introduced by:** Director / Master Architect working specification discussion
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
