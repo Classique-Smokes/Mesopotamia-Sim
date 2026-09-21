@@ -1,6 +1,6 @@
 # SFL v0 — Response Decision Policy Erratum
 
-**Status:** OPEN / REQUIRES DIRECTOR DECISION  
+**Status:** RESOLVED / HISTORICAL WORKING RECORD  
 **Date:** 2026-09-21  
 **Authority:** Working semantic erratum only.
 
@@ -81,3 +81,23 @@ It extends the already-approved deterministic component scorer without creating 
 ## After approval
 
 Stage 3 must pin a small set of response scoring profiles sufficient for closed-loop acceptance tests. Numeric response preferences remain laboratory configuration, not historical psychology.
+
+
+## Resolution
+
+Approved by the Project Director on 2026-09-21.
+
+Promoted semantics:
+
+- deterministic `ResponseDecisionContext(target, proposal)`;
+- common committed snapshot + proposal terms + target subjective state;
+- feasibility before voluntary response scoring;
+- infeasible interaction -> `Unable(reason)`;
+- feasible responses use the accepted named exact-integer component-sum scorer;
+- responses consume no personal initiative;
+- multiple responses may be selected in one cycle;
+- central resolution remains authoritative and may later invalidate an accepted effect;
+- full response decision trace is retained.
+
+Canonical authority: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md` §5.1.
+Canonical verification/configuration: `plans/verification/SFL_V0/RESPONSE_DECISION_FAMILY.md` and `REFERENCE_SCORING_PROFILES.md`.
