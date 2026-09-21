@@ -252,6 +252,8 @@ The world must be rich enough for different proxies to disagree: co-residence al
 
 ## Pass G — Verification closure and spec acceptance
 
+**Status:** ACTIVE. Narrow adversarial review: `research/technical/TRES-0004/PASS_G_VERIFICATION_CLOSURE_ADVERSARIAL_REVIEW.md`.
+
 **Question:** Can every important v0 claim be falsified by an observable scenario?
 
 This pass prepares the separate verification-scenario phase but must close semantic ambiguity before implementation.
