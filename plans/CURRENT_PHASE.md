@@ -4,7 +4,7 @@
 
 ## Goal
 
-Select a maintainable implementation architecture and host runtime for the first Social Fabric Laboratory without redefining accepted simulation semantics.
+Specify the smallest faithful Social Fabric Laboratory v0 precisely enough that implementation agents can build it without inventing foundational social semantics.
 
 ## Completed
 
@@ -21,6 +21,8 @@ Select a maintainable implementation architecture and host runtime for the first
 **Prototype specification preparation — Social Fabric Laboratory v0.**
 
 Active workbench: `plans/SFL_V0_SPECIFICATION_WORKBENCH.md`.
+
+Working implementation-oriented draft: `specifications/working/SFL_V0_WORKING_SPEC.md`.
 
 Host-independent kernel accepted: `architecture/accepted/ADR-0004_REFERENCE_SIMULATION_KERNEL.md`.
 
