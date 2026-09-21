@@ -16,13 +16,14 @@ A historically grounded autonomous simulation of ancient Mesopotamian society, b
 5. Accepted subsystem specifications
 6. Implementation constrained by the above
 
-Conversation, brainstorming, research returns, proposals, roadmaps, and existing code are not authoritative merely because they exist.
+Conversation, brainstorming, research returns, proposals, roadmaps, working notes, and existing code are not authoritative merely because they exist.
 
 ## Current phase
 
-**FOUNDATIONAL ARCHITECTURE — SOCIAL FABRIC LABORATORY**
+**ROADMAP STAGE 3 — SFL v0 VERIFICATION DESIGN**
 
-Accepted:
+Accepted foundation:
+
 - `DEC-0001` — Foundational Social-Fabric Model
 - `DEC-0002` — Master Architect Operating Guide
 - `ADR-0001 / DEC-0003` — Active Social-State Representation
@@ -31,10 +32,13 @@ Accepted:
 - `ADR-0003 / DEC-0006` — Progressive Derived-State Specialization
 - `ADR-0004 / DEC-0007` — Reference Simulation Kernel
 - `ADR-0005 / DEC-0008` — C# 14 / .NET 10 LTS Host Runtime
+- `SPEC-SFL-0001` — accepted Social Fabric Laboratory v0 semantics
 
-Active:
-- **TRES-0002 Stage II — host/runtime and implementation-architecture selection**
-- Household organization, execution/time, and history/recovery remain working semantic inputs where not explicitly accepted.
+Active work:
+
+- `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
+- `plans/verification/SFL_V0/`
+- next verification family: grounded household provision/support/dowry accounting and no-self-confirmation
 
 No production implementation has started.
 
@@ -42,15 +46,18 @@ No production implementation has started.
 
 - Founding intent: `founding/00_MESOPOTAMIA_SIMULATION_PROJECT_SEED.md`
 - Master Architect behavior: `governance/MASTER_ARCHITECT_GUIDE.md`
+- Authority/promotion: `governance/AUTHORITY_AND_DECISION_PROMOTION.md`
 - Architecture development rules: `governance/ARCHITECTURE_DEVELOPMENT_POLICY.md`
+- Drift audit: `governance/REVIEW_AND_DRIFT_AUDIT.md`
 - Decision register: `decisions/DECISION_REGISTER.md`
 - Accepted architecture: `architecture/accepted/`
-- Current household checkpoint: `architecture/working/WIP-0001_HOUSEHOLD_ORGANIZATION.md`
-- Architecture selection: `architecture/working/ARCHITECTURE_SELECTION_PLAYBOOK.md`
+- Accepted SFL specification: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
+- Active assumptions: `registers/ASSUMPTIONS_REGISTER.md`
+- Open/resolved design questions: `registers/OPEN_ISSUES_REGISTER.md`
 - Current phase: `plans/CURRENT_PHASE.md`
-- TRES-0002 synthesis: `research/technical/TRES-0002/STAGE_I_SYNTHESIS.md`
-- Open issues: `registers/OPEN_ISSUES_REGISTER.md`
-- Specifications: `specifications/`
+- Verification workbench: `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
+- Canonical verification cards: `plans/verification/SFL_V0/`
+- C# implementation-risk guardrails for Stage 4: `architecture/working/CSHARP_DOTNET_ENGINEERING_GUARDRAILS.md`
 - Task templates: `tasks/`
 
 ## Repository discipline
