@@ -1,6 +1,6 @@
 # SFL v0 — Reference Scoring Contract Erratum
 
-**Status:** OPEN / REQUIRES DIRECTOR DECISION  
+**Status:** RESOLVED / HISTORICAL WORKING RECORD  
 **Date:** 2026-09-21  
 **Authority:** Working semantic erratum only.
 
@@ -50,3 +50,23 @@ This keeps the scorer replaceable later while making the reference laboratory ex
 ## Still to specify if this direction is approved
 
 Stage 3 must define the small default/reference component table or closed-loop test profiles for the in-scope concern/action families actually exercised by SFL v0. Historical plausibility of the numeric weights remains outside the verification contract.
+
+
+## Resolution
+
+Approved by the Project Director on 2026-09-21.
+
+Promoted reference contract:
+
+- categorical gates before scoring;
+- named exact-integer score components;
+- `FinalScore = sum(components)`;
+- highest final score wins;
+- explicit domain tie key where defined, otherwise logged stable-semantic-ID fallback;
+- no second hidden aggregation layer;
+- no remaining candidate means no voluntary initiative.
+
+Numeric coefficients remain laboratory configuration.
+
+Canonical authority: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md` §5.
+Canonical verification configuration: `plans/verification/SFL_V0/REFERENCE_SCORING_PROFILES.md`.
