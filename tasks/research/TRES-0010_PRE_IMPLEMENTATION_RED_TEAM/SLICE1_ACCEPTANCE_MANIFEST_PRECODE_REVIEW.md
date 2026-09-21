@@ -2,7 +2,10 @@
 
 **Status:** OPEN / RUN ONLY AFTER MANIFEST CANDIDATE IS COMMITTED  
 **Context mode:** INDEPENDENT PROJECT-CONTEXT REVIEW  
-**Mutation permission:** return report only; do not edit canonical files
+**Mutation permission:** return report only; do not edit canonical files  
+**Frozen baseline ref:** `tres-0010-manifest-review-baseline`  
+**Assigned return branch:** `tres-0010/manifest-precode-review`  
+**Return path:** `research/technical/TRES-0010/returns/TRES-0010_SLICE1_MANIFEST_PRECODE_REVIEW_REPORT.md`
 
 ## 1. Objective
 
