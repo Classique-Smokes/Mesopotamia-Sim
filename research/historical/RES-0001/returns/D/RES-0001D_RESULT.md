@@ -280,4 +280,95 @@ The CDLI records examined identify Nippur but leave house, locus, and stratigrap
 
 ### 5.4 Survival, genre, and publication bias
 
-The selected corpus privileges people and transactions that generated surviving legal instruments, became accessible through excavation or collecting, and received publication or 
+The selected corpus privileges people and transactions that generated surviving legal instruments, became accessible through excavation or collecting, and received publication or digital treatment. A division deed draws attention to divided resources; a surviving purchase gives better visibility to transferred claims than to quiet use; an office-rich dossier need not represent an ordinary household. These are methodological implications of the sources actually used, not measured corrections that would recover a city population. [S01–S06]
+
+Legal clauses can be explicit about a potential remedy precisely because the parties wanted to regulate a future dispute. Such explicitness does not prove that the dispute was common or happened in that case. Conversely, the absence of a security clause in the accessible translation does not prove the absence of every legally relevant security arrangement. School models and lexical lists answer still different questions. [S01–S03, S09, S14]
+
+### 5.5 What remains unproven
+
+This return does not show a complete household asset pool; a citywide tenure or inheritance rule; typical interest rates; the prevalence of borrowing; a securely joined credit network; a matched collateral seizure; standard guarantor recovery; a frequency of debt bondage; or representative wealth/status strata. It does show particular rights, transfers, conditional obligations, and some stronger forms of recorded settlement. The narrower positive evidence should not be weakened by pretending that it answers the broader questions.
+
+## 6. Comparative evidence outside Old Babylonian Nippur
+
+No external-city or later-period example is used to close a gap in the core findings. The comparison made here is primarily a **provenance and genre control**, not an argument that all Mesopotamian systems were alike.
+
+**Yokha, Old Babylonian: BE 6/2, 8.** Poebel publishes a manumission instrument in the same volume as the Nippur contracts and expressly assigns it to Yokha. It can be consulted as an external example of a payment and a future non-claim provision concerning an enslaved woman’s release. It is not entered in the Nippur rights matrix or used to establish Nippur manumission practice. The lesson for this task is bibliographic: sharing a volume does not establish shared provenance. [S01, pp. 38–39]
+
+**Sippar and other Old Babylonian cities.** Poebel discusses documents from other places alongside his Nippur texts, and later scholarship uses comparative legal collections. This return did not independently assemble those comparanda. It therefore does not import a Sippar dowry practice, a Larsa inheritance pattern, or a law-collection interest rate into Nippur. References to such comparisons in a consulted scholar’s argument remain that scholar’s comparative route, not new local attestations. [S01; S04]
+
+**Other periods at Nippur.** A document’s Nippur provenance is insufficient if its date is outside the Old Babylonian frame. No Kassite or later Nippur mortgage/guarantee record is counted as direct evidence here. A cross-period lexical entry is likewise kept separate from a time- and place-specific contractual attestation. [S14–S15; corpus selection in section 2]
+
+**Old Babylonian Nippur school texts are not geographically external, but are evidentially distinct.** They remain local evidence for scribal formulation and teaching. They are excluded from the actual-transaction inventory unless an independent argument establishes an individual text’s documentary character. The Spada/Hallo abstract explicitly identifies the consulted corpus as model contracts. [S09–S10]
+
+## 7. Unresolved questions / recommended follow-up research
+
+The following are research questions, not project requirements or proposed mechanics.
+
+**Security and enforcement.** Which securely dated, actual Nippur loan instruments name specific pledged fields, houses, persons, or office rights? Can any be connected to a receipt, renewal, suit, release, or realized transfer? Which texts explicitly distinguish borrower, pledgor, guarantor, and witness? What recourse is expressed when different persons occupy those roles?
+
+**Archaeological linkage.** What do the complete editions, locus registers, and plans of Stone 1987 and the excavation reports establish about the TA and TB loan findspots? Are any documents in primary occupation deposits, in storage installations, or demonstrably redeposited? Can one securely identify documentary custody without assuming residence from a name on a tablet?
+
+**Re-edition and concordance.** What changes follow from modern collation of BE 6/2, 10, 16, 23, 26, 39, and 42? Can the uncertain provenance of no. 16 be resolved? Can the proposed BE 6/2, 38/64 parcel identity be tested using joins, full boundary clauses, seals, and acquisition history? Are the gift and compensation cases OECT 8, 4 and 11 accurately characterized after checking Hunter, Stone/Owen, and subsequent corrections?
+
+**Undivided resources and actual use.** Which records positively show resources held or worked jointly between formal divisions? Can legal access clauses be tied to independent evidence of occupation, storage, cooking, or labor? What parts of an estate were deliberately omitted from an instrument because they remained undivided or belonged to a different transaction?
+
+**Temple-linked claims.** Which rights carried a service duty, which secured distributions, and who actually performed or received them? What does a deity or a temple gate named as the source of a loan mean in the complete record? Can a private person’s involvement be distinguished from representation of an institutional fund without assuming an office from a personal name?
+
+**Credit relationships and differentiation.** Does a larger, critically joined corpus reveal repeated creditor–debtor pairs, multiple obligations against the same resource, or intergenerational claims? What denominator and missing-data analysis would be required before comparing wealth or credit access across excavated areas, periods, or social groups?
+
+The immediate documentary priorities are full access to **Stone 1987**, **Hunter 1930 / Stone and Owen 1991**, the complete **Brisch 2017** chapter, and actual-loan corpora distinguishable from the **Spada/Hallo 2024 didactic texts**. None of these access needs is a reason to promote a provisional claim into a settled one.
+
+## 8. Register-ready candidate claims
+
+These candidates are selected from the evidence table because the narrow propositions are worth preserving for independent adjudication. They are not declarations of canonical acceptance. Primary references should remain attached when statements are shortened.
+### Candidate 1 — Distinguishable claims within family-linked resources (D-C01)
+
+**Claim / proposition:** Named family participants can hold different claims in resources; a household label does not specify those rights.  
+**Period:** Old Babylonian; especially Samsu-iluna 4 and 13  
+**Geography / archive / social context:** Private property agreements; precise houses not verified.
+
+**Evidence type:** Primary.  
+**Primary evidence:** BE 6/2, 11, 12, 23, 43; S01  
+**Secondary scholarship:** Analytical distinction based on the separate operative provisions.
+
+**Interpretation(s):** The instruments identify multiple legal relationships rather than one uniform household title. This is not a denial that joint holdings existed.  
+**Uncertainty / disagreement:** Not every named seller or beneficiary holds the same kind or fraction of title.  
+**Confidence + rationale:** HIGH. Multiple explicit instruments distinguish parties, assets, and operative rights.
+
+**Limits on generalization:** Attested arrangements, not a universal household property constitution.  
+**Relevance to project question:** Separates title, transfer, use, access, and benefit.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 2 — Partition followed by share consolidation (D-C03)
+
+**Claim / proposition:** A documented house partition was followed rapidly by three share purchases by one coheir.  
+**Period:** Samsu-iluna 11/07/17–11/09/05  
+**Geography / archive / social context:** Linked house-property deeds.
+
+**Evidence type:** Mixed.  
+**Primary evidence:** BE 6/2, 32–35; dates, dimensions, and neighbors; S01  
+**Secondary scholarship:** S04, p. 22 n. 45, identifies two brothers and a nephew as the sellers.
+
+**Interpretation(s):** Division establishes claims that can then be conveyed; physical changes and separate residence remain independent questions.  
+**Uncertainty / disagreement:** Poebel’s four-brothers shorthand is wrong; legal partition does not prove walls or separate residences.  
+**Confidence + rationale:** HIGH. Four chronologically connected deeds and matching property descriptions support the sequence; later correction clarifies kinship.
+
+**Limits on generalization:** One securely linked sequence; no citywide consolidation rate or forced-sale motive.  
+**Relevance to project question:** Shows fragmentation and consolidation as historically successive transactions.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 3 — Heterogeneous inheritance portfolios (D-C05)
+
+**Claim / proposition:** Division could distribute heterogeneous assets, including land, movable goods, resource entitlements, and enslaved persons, with balancing transfers.  
+**Period:** Samsu-iluna 4 and 6  
+**Geography / archive / social context:** Private inheritance documents.
+
+**Evidence type:** Primary.  
+**Primary evidence:** BE 6/2, 23 and 26; S01  
+**Secondary scholarship:** Portfolio description follows the texts; no standardized valuation model added.
+
+**Interpretation(s):** The transaction distributes item-specific claims and uses balancing transfers; it does not supply a representative total wealth measure.  
+**Uncertainty / disagreement:** Listed assets need not exhaust a household’s resources; some old furniture readings remain uncertain.  
+**Confidence + rationale:** HIGH. Multiple division texts independently enumerate distinct resource categories and balancing arrangements.
+
+**Limits on generalization:** Documented estates, not representative wealth or enslaved-pe
