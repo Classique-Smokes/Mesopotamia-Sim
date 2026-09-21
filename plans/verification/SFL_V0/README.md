@@ -31,3 +31,5 @@ Completed-cycle assertions are made only at stable cycle closure. Intermediate c
 
 - `FORMATION_FAMILY.md`
 - `CONTINUITY_TURNOVER_FAMILY.md`
+- `LINEAGE_FAMILY.md`
+- `RECOGNITION_INFORMATION_FAMILY.md`
