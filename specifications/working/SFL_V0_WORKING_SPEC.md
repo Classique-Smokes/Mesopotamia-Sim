@@ -22,8 +22,9 @@ An implementation agent may choose ordinary code structure inside these boundari
 # 2. Pass status
 
 - **Pass A — Laboratory boundary:** WORKING-CONVERGED.
-- **Pass B — Lower-level social fabric + minimal agency:** ACTIVE.
-- Passes C–G: not yet specified.
+- **Pass B — Lower-level social fabric + minimal agency:** WORKING-CONVERGED.
+- **Pass C — Subjective recognition + information:** ACTIVE.
+- Passes D–G: not yet specified.
 
 ---
 
@@ -137,7 +138,7 @@ The following is the **starting v0 social substrate**. Exact transition/action s
 - Exists independently of objective contracts such as debt, marriage, or kinship.
 - May change as a consequence of social experience.
 - Rules should normally reason from broad bands/thresholds rather than inventing significance for every adjacent integer.
-- Exact event-by-event update magnitudes remain **OPEN**.
+- Event updates use fixed v0 magnitudes defined below; they are controlled laboratory parameters rather than psychological claims.
 
 **Forbidden shortcut:** do not convert attitude into a generic all-purpose “relationship strength” that also represents debt, kinship, marriage, obligation, or household affiliation.
 
@@ -146,15 +147,19 @@ The following is the **starting v0 social substrate**. Exact transition/action s
 - Explicit continuing relation/status between people.
 - Distinct from attitude, kinship, residence, and household affiliation.
 - Marriage formation is **endogenous in v0** and the proposal carries its settlement terms rather than triggering an unspecified automatic settlement.
+- Persons have an objective v0 sex field: **male** or **female**. Marriage uses male=groom and female=bride roles.
 - An established marriage is at-most-once per person in v0. Rejected proposals do not consume this lifetime allowance.
 - Divorce, widowhood, remarriage, plural marriage, reproduction, and a general marriage market are out of scope for v0.
 - Working v0 has two formation routes:
   1. **Household-mediated route:** where the prospective bride is attached to a recognized household, marriage is mediated through that household rather than gated by the couple's attitude. The working intended effect is that the bride's household supplies the proposal-specified grain dowry/settlement and the groom incurs one favour obligation to that household's recognized head/representative. Exact household authority, recognition, and who commits acceptance are deferred to the household/representative passes.
   2. **Mutual strong-like bypass:** if the prospective spouses' stored directed attitudes toward one another are both in the strong-like band, they may form the marriage directly without the household-mediated dowry/favour package.
-- The direct bypass uses **stored attitude**, not kinship-amplified decision weight.
-- Until household semantics are specified, the mediated route is a declared cross-pass dependency rather than implementation authority.
+- The groom initiates a marriage proposal and names the bride plus the proposed dowry amount.
+- In the household-mediated route the dowry is paid by the bride's household and lands **directly with the groom**; successful formation also creates one groom -> household-head favour.
+- If the bride has no recognized household and the mutual-strong-like bypass does not apply, marriage is unavailable in v0 rather than inventing a substitute guardian rule.
+- The direct bypass uses **stored attitude** only. Kinship is excluded from marriage evaluation entirely.
+- Parent/child and sibling pairs are mechanically ineligible for marriage.
+- Until household semantics are specified, the mediated route is a declared cross-pass dependency rather than implementation authority; collective payment must later be grounded in real constituent-backed grain rather than a fictional household stock.
 - Scenarios may still initialize an existing marriage when required for a specific fixture.
-- Exact bride/groom eligibility representation, proposal initiator rules, dowry recipient, and behavior when the prospective bride has no recognized household remain **OPEN**.
 
 ## 4.3 Kinship / family
 
@@ -163,9 +168,10 @@ The following is the **starting v0 social substrate**. Exact transition/action s
 - Kinship remains distinct from attitude, residence, marriage, obligation, and household affiliation.
 - Kinship influences **decision evaluation** by amplifying the behavioral weight of existing attitude toward that person: positive attitude matters more for kin and negative attitude also matters more for kin.
 - Kinship does **not** modify the stored attitude value itself.
-- Kinship amplification does not by itself satisfy explicit categorical gates defined on stored attitude, including the strong-like reciprocity gate and mutual-strong-like marriage bypass.
-- Exact amplification factor remains **OPEN**.
-- Parent/child and sibling marriage are mechanically ineligible in v0; this is a bounded laboratory rule, not a complete historical marriage-law model.
+- Kinship amplification does not by itself satisfy explicit categorical gates defined on stored attitude.
+- v0 uses a **1.5x multiplier** on the attitude-derived component of ordinary interpersonal decision evaluation for both parent/child and sibling relations.
+- Kinship is **excluded from marriage**: it does not alter marriage proposal/acceptance scoring, cannot satisfy the mutual-strong-like bypass, and parent/child or sibling pairs are ineligible.
+- The same factor is used for parent/child and sibling in v0; richer kin-type effects are deferred.
 
 ## 4.4 Lending / repayment / debt
 
@@ -174,8 +180,9 @@ The following is the **starting v0 social substrate**. Exact transition/action s
 - Repayment may be partial or complete; completion satisfies the claim without erasing its history.
 - Debt does not directly compel unrelated social action and is not equivalent to dislike, dependence, household membership, kinship, or favour.
 - v0 debt has **no interest, due date, or automatic default penalty**.
-- Repayment is nevertheless a persistent actor concern when the debtor has sufficient material surplus; knowingly retaining repayable debt may create a negative attitude consequence.
-- Exact definition of repayable surplus and exact attitude consequence remain **OPEN**.
+- Repayment is nevertheless a persistent actor concern when the debtor has sufficient material surplus.
+- Grain is repayable surplus only to the extent that repayment leaves the debtor with at least **2 grain** reserved for near-term consumption.
+- Knowingly retaining repayable debt produces a -10 attitude change from creditor toward debtor when the relevant failure-to-repay event is evaluated.
 
 ## 4.5 Favour / obligation
 
@@ -192,8 +199,10 @@ The following is the **starting v0 social substrate**. Exact transition/action s
 - A genuine **gift** remains possible and creates no favour; implementation must not silently convert every beneficial transfer into leverage.
 - For the working v0, “sufficiently positive” means the recipient's stored directed attitude toward the benefactor is in the **strong-like** band (currently >= +75); this threshold is a controlled laboratory assumption, not a historical claim.
 - A called favour may request an ordinary action that the debtor could otherwise perform, including material or social-help actions, but it cannot make an impossible action possible or directly compel creation of an intrinsic/status relation such as kinship or marriage. **AcceptMarriage is explicitly excluded** from favour enforcement in v0.
+- **Favours exclude favours:** fulfilling/calling a favour cannot generate, demand, transfer, or recursively create another favour.
+- Reciprocal obligations may cancel: if A owes B one favour and B independently owes A one favour, either side may spend the favour they hold to settle the favour they owe, atomically satisfying both.
 - Favours may connect people inside or across households.
-- Exact numerical attitude effects of fulfilment/refusal and whether favour-created actions may themselves create new favour claims remain **OPEN**.
+- Fulfilment of a called favour gives the holder +10 attitude toward the fulfiller; refusal leaves the favour outstanding and gives the holder -20 attitude toward the refuser.
 
 ## 4.6 Material-help / transfer meanings
 
@@ -208,31 +217,47 @@ A generic hidden transfer mode must not erase these meanings from actor reasonin
 
 ## 4.7 Attitude dynamics
 
-- Committed social experience may change directed attitude using a small set of fixed laboratory magnitudes rather than a psychological model.
-- Positive candidates include receiving voluntary help/gift, receiving a loan, successful repayment, and fulfilment of a called favour.
-- Negative candidates include refusal of a request, refusal of a called favour, failure to repay while materially capable, and breach/failure of an explicitly accepted commitment.
-- Ordinary rejection need not carry the same penalty as violation of an established obligation; called-favour refusal should be among the strongest negative events in v0.
-- To prevent permanent positive accumulation and represent fading social salience, nonzero attitudes **drift toward neutral (0)** over time in the absence of reinforcement. Positive values fall toward zero and negative values rise toward zero; decay never reverses sign by itself.
-- Exact event increments and decay cadence/magnitude remain **OPEN**.
+Committed social experience changes directed attitude using fixed v0 increments:
+
+- accepted voluntary gift/help: recipient -> giver **+10**;
+- loan granted: borrower -> lender **+5**;
+- successful repayment: lender -> borrower **+5**;
+- fulfilment of a called favour: holder -> fulfiller **+10**;
+- refusal of an ordinary request while the requester is in genuine unmet need: requester -> refuser **-5**;
+- ordinary refusal when no genuine need/accepted obligation is involved: **0** automatic change;
+- refusal of a called favour: holder -> refuser **-20**;
+- knowingly failing to repay while materially able: creditor -> debtor **-10**;
+- breach/failure of an explicitly accepted commitment: affected counterparty -> breacher **-20**;
+- rejected marriage proposal: **0** automatic change.
+
+Natural social fading occurs on the attitude-decay event defined later by Pass F:
+
+- positive attitude moves **2 points toward 0**;
+- negative attitude moves **1 point toward 0**;
+- decay never crosses 0.
+
+Thus positive relations fade twice as fast as negative relations repair naturally. New events can reinforce or reverse direction normally.
 
 ## 4.8 Grain production / consumption
 
-- A person may spend an available action opportunity on an abstract **farm/produce grain** action.
-- The action has fixed laboratory yield for the active scenario/configuration.
-- Grain is periodically consumed according to a fixed laboratory rule.
-- Failure to meet consumption does **not** create death, health, or demographic mechanics in v0. It creates a persistent unmet-subsistence/need condition that strongly motivates grain acquisition/production until resolved.
-- These mechanics exist only to create renewable scarcity and opportunity cost for the social laboratory; they do not constitute an agricultural subsystem.
-- An actor need not emit a semantic **wait** action merely to do nothing. Producing no optional social proposal in a cycle is sufficient unless later temporal semantics require an explicit idle process.
+- A person may spend an available action opportunity on an abstract **farm/produce grain** action yielding **4 grain**.
+- Every person consumes **1 grain per consumption cycle**.
+- Typical verification fixtures begin actors with **4-8 grain**; exact starting value is scenario configuration.
+- Missing required consumption creates persistent **NeedsGrain** state rather than death/health mechanics.
+- While **NeedsGrain** is active, the actor **cannot Farm**. They must escape immediate need through social/resource transfer such as gift, loan, favour-backed help, or later household support.
+- NeedsGrain clears once the actor again possesses at least the next required 1 grain consumption unit.
+- These mechanics exist only to create renewable scarcity, dependence, and opportunity cost; they are not an agricultural subsystem.
+- An actor need not emit a semantic `Wait` action merely to do nothing.
 
 ## 4.9 Residence
 
 - Residence is an explicit relation between a person and a dwelling/place.
 - Residence change is endogenous in v0 but remains separate from ownership and household identity.
-- People may propose **co-residence / residence change** rather than automatically teleporting because of a relationship.
+- A person may propose moving to another person's current dwelling, or invite another person into their own current dwelling; the named counterpart's acceptance is sufficient in v0 even if other residents exist.
 - Strong mutual positive relations create a **weaker** incentive to seek co-residence; established marriage creates a **stronger** incentive.
 - Acceptance/refusal remains socially mediated; marriage does not automatically force co-residence.
 - Changing residence does not by itself create, destroy, split, or merge a household.
-- Exact consent rule for moving into an already occupied dwelling and handling multiple existing residents remains **OPEN**.
+- Property/collective consent rules are deferred.
 
 ## 4.10 Deliberate omissions at this stage
 
@@ -249,24 +274,38 @@ Do not add without a demonstrated need:
 
 # 5. Pass B — working actor/action model
 
-## 5.1 Action opportunity
+## 5.1 Objective person state
+
+The minimal v0 person state includes:
+
+- stable person identity;
+- sex: male/female;
+- grain stock;
+- NeedsGrain state;
+- current residence;
+- marriage status/history;
+- explicit kinship, debt, favour, and other relation references relevant to that person.
+
+Ageing, reproduction, health, death, class/status, profession, and personality traits are out of scope.
+
+## 5.2 Action opportunity
 
 - Each actor may normally initiate **one substantive voluntary action per decision cycle**.
 - Responding to incoming proposals does not consume that initiative.
 - An actor may initiate nothing; no semantic `Wait` action is required merely to represent inactivity.
 
-## 5.2 Reference v0 choice policy
+## 5.3 Reference v0 choice policy
 
 - The reference laboratory uses **deterministic scored choice** rather than random action selection or a rigid scripted if/else priority chain.
 - The actor generates feasible candidate actions, evaluates them from current objective state, directed attitude, kinship amplification, obligations/debts, subsistence need, marriage/residence incentives, and other explicitly specified concerns, then chooses the highest-scoring candidate.
 - Tie-breaking must be deterministic and semantically declared rather than dependent on collection/insertion order.
 - This is a **reference policy, not a permanent architecture lock**. Action semantics and world transition rules must remain separable from actor policy so later planning, heterogeneous personalities, learned policies, or stochastic choice can replace/extend the v0 scorer without rewriting the social substrate.
 
-## 5.3 Minimal persistent concerns
+## 5.4 Minimal persistent concerns
 
 Every v0 person shares the same basic concern categories:
 
-- maintain enough grain / resolve unmet subsistence need;
+- maintain enough grain / resolve unmet subsistence need, while respecting the rule that NeedsGrain actors cannot farm themselves out of immediate need;
 - maintain or improve positively valued relations and react to negatively valued ones;
 - discharge repayable grain debt;
 - respond to and discharge called favour obligations;
@@ -275,20 +314,22 @@ Every v0 person shares the same basic concern categories:
 
 Individualized personality weights and strategic multi-step planning are deferred.
 
-## 5.4 Working action/meaning repertoire
+## 5.5 Working action/meaning repertoire
 
-The final names may change, but v0 needs semantic actions sufficient to:
+v0 requires semantic actions sufficient to:
 
-- farm/produce grain;
-- make a gift;
-- offer/request a loan and repay debt;
-- offer/accept an explicit benefit-for-favour bargain;
-- provide/accept relationship-mediated reciprocal help;
-- call in and fulfil/refuse a favour;
-- propose/respond to marriage with explicit settlement terms;
+- `Farm`;
+- `OfferGift` / `RequestGiftOrHelp`;
+- `OfferLoan` / `RequestLoan` / `RepayDebt`;
+- `OfferBenefitForFavor` and accept/refuse it;
+- offer/accept relationship-mediated reciprocal help;
+- `CallFavor`, fulfil/refuse it, or mutually cancel reciprocal favours;
+- `ProposeMarriage` with explicit dowry terms and resolve it through the applicable marriage route;
 - propose/respond to co-residence/residence change.
 
-Response mechanics may be represented as proposal resolutions rather than independent initiative actions.
+The underlying transfer/resolution code may be shared, but actor reasoning and semantic history must preserve these different social meanings. Response mechanics may be represented as proposal resolutions rather than independent initiative actions.
+
+No subjective state beyond directed attitude is introduced in Pass B. Knowledge, observation, and household/role recognition are Pass C concerns.
 
 ---
 
@@ -305,23 +346,18 @@ The eventual action system must satisfy:
 
 ---
 
-# 7. Still open in Pass B
+# 7. Pass B closure
 
-Before Pass B can close we must specify:
+Pass B is **WORKING-CONVERGED**.
 
-1. exact fixed **attitude event magnitudes** and natural-decay cadence/magnitude;
-2. the v0 **kinship amplification factor** and whether parent/child and sibling use the same factor;
-3. exact grain **farm yield, consumption amount/cadence, initial reserve conventions**, and definition of repayable surplus;
-4. the exact deterministic **action-scoring concerns/weights** and deterministic tie-break rule;
-5. marriage-role details needed before implementation: bride/groom eligibility representation, who may initiate, dowry recipient, and what happens when the prospective bride lacks a recognized household;
-6. household-mediated marriage authority remains dependent on later household/representative semantics and must be reconciled there;
-7. exact **residence consent** semantics for occupied/multi-resident dwellings;
-8. whether ordinary request refusal always changes attitude or only under contextual conditions such as unmet need / prior commitment;
-9. whether an action performed to fulfil a favour may itself generate a new favour or other obligation;
-10. exact proposal forms for requesting gift/help versus requesting a loan, so actor reasoning remains explicit without duplicating implementation unnecessarily;
-11. whether any subjective state beyond directed attitude is needed in Pass B, or whether recognition/knowledge should remain entirely for Pass C.
+Remaining dependencies are assigned to later passes rather than left as Pass B ambiguity:
 
-These questions must be resolved before an implementation packet is issued.
+- attitude-decay **timing cadence** -> Pass F temporal semantics;
+- exact household authority/backing for mediated marriage and dowry payment -> Passes D/E;
+- objective-versus-subjective knowledge and recognition -> Pass C;
+- reference-policy numeric scoring coefficients may remain explicit laboratory configuration so long as ADR-0002's soft-gate/candidate/scoring semantics and all action meanings above are preserved.
+
+No random choice is required for v0.
 
 ---
 
