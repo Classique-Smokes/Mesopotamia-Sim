@@ -28,6 +28,7 @@ Resolved semantic errata record:
 - `plans/verification/SFL_V0/FORMATION_FAMILY.md`
 - `plans/verification/SFL_V0/CONTINUITY_TURNOVER_FAMILY.md`
 - `plans/verification/SFL_V0/LINEAGE_FAMILY.md`
+- `plans/verification/SFL_V0/RECOGNITION_INFORMATION_FAMILY.md`
 
 ## Required outputs
 
@@ -104,6 +105,19 @@ Required baseline:
 - A valid continuity/participation path to non-Dissolved H takes precedence over fresh formation from the same evidence.
 
 Independent checks follow FormationWarrant -> ParticipationWarrant/ParticipationEnd -> ContinuationWarrant history; final participant overlap is never the oracle.
+
+## Recognition-family baseline
+
+Canonical recognition verification keeps objective state fixed while varying only actor-held evidence/recognition.
+
+Required baseline:
+
+- household-specific action generation requires the actor's subjective route, not engine-global state;
+- stale head recognition survives unwitnessed succession;
+- newer underlying event provenance beats later message arrival;
+- incomparable incompatible evidence becomes Contested;
+- ordinary communication consumes the sender's personal initiative;
+- attitude/refusal does not by itself erase recognition.
 
 ## Scenario families to specify
 
