@@ -27,9 +27,9 @@ Supplementary source tables or bibliographies may accompany the main result, but
 
 Return the independent reports to the Master Architect as-is. Reconciliation needs to see disagreements, duplicated sources, incompatible chronology, and different confidence judgments rather than a manually harmonized summary.
 
-## Planned reconciliation stage
+## Reconciliation stage — current next step
 
-After all available reports return, the Master Architect will:
+All eight A–H returns are now present under `research/historical/RES-0001/returns/`. Before any historical proposition is promoted, the Master Architect / RES-0001R reconciliation pass will:
 
 1. verify scope/provenance compliance;
 2. de-duplicate overlapping claims and primary texts;
@@ -40,3 +40,6 @@ After all available reports return, the Master Architect will:
 7. draft candidate `HE-` entries for the Historical Evidence Register;
 8. identify genuine evidence gaps and follow-up research if necessary;
 9. keep all design translation separate until the evidence synthesis is reviewed.
+
+
+Current reconciliation task: `tasks/research/RES-0001_RECONCILIATION/RES-0001R_TASK_PACKET.md`. Current evidence intake status: `registers/HISTORICAL_EVIDENCE_REGISTER.md`.
