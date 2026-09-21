@@ -33,3 +33,6 @@ Completed-cycle assertions are made only at stable cycle closure. Intermediate c
 - `CONTINUITY_TURNOVER_FAMILY.md`
 - `LINEAGE_FAMILY.md`
 - `RECOGNITION_INFORMATION_FAMILY.md`
+
+- `PROVISION_GROUNDING_FAMILY.md`
+- `NO_SELF_CONFIRMATION_FAMILY.md`
