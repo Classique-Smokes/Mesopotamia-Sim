@@ -162,4 +162,84 @@ Twenty-five direct digital ancient-text records, one quarantined association, an
 
 **Object:** OIM A30142; [P283586](https://cdli.earth/P283586). **Date:** Samsuiluna 8, month IV, day 20.  
 **Context:** Nippur; finer findspot not independently fixed here. **Genre:** Partition among named brothers/heirs.  
-**Access / langu
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording.  
+**Passages / forms:** obv. 1–17; rev. 1–7; seal; nam-šeš-gal-la; šeš-gal; ḫa-la-ba; ibila; níĝ-gu₂-na é gál-la.  
+**Observation:** Brother/heir labels and an elder-brother designation accompany realty and household-content allocations.  
+**Limit:** Do not infer universal primogeniture or adopt an unverified family tree; seal and body patronymic wording also require contextual review.  
+**Design status:** NO DESIGN DECISION
+
+## T17 — SAOC 44, 43
+
+**Object:** UM 55-21-244; [P283584](https://cdli.earth/P283584). **Date:** Samsuiluna 12, month V; day 18 in transcription / 19 in catalogue.  
+**Context:** Nippur; finer context not established here. **Genre:** House sale.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording; catalogue labels Akkadian.  
+**Passages / forms:** obv. 1–13; rev. 1–9; nu-eš₃; sa₁₀; ibila; inim nu-gá-gá.  
+**Observation:** A buyer identified by cult title acquires a house plot; seller and heirs are bound by non-claim wording.  
+**Limit:** A title-bearing buyer is not necessarily buying on behalf of a temple. The day-level date is unresolved.  
+**Design status:** NO DESIGN DECISION
+
+## T18 — SAOC 44, 45
+
+**Object:** UM 55-21-243; [P257364](https://cdli.earth/P257364). **Date:** Samsuiluna; year-name of destruction of Emutbal city walls.  
+**Context:** Nippur; finer context not established here. **Genre:** House exchange; tablet and envelope.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording; catalogue labels Akkadian.  
+**Passages / forms:** obv. 1–14; rev. 1–9; envelope obv. 1′; ki ba-gar-ra; é; lu₂; nu-eš₃; lunga Enlil.  
+**Observation:** Built-plot exchange and a balancing payment are recorded; the envelope identifies the instrument as an exchange tablet.  
+**Limit:** The generic catalogue sale label is less precise than the transaction clauses. Titles in the witness list do not establish the capacity in which each witness acted.  
+**Design status:** NO DESIGN DECISION
+
+## T19 — SAOC 44, 46
+
+**Object:** OIM A38103; [P283588](https://cdli.earth/P283588). **Date:** Samsuiluna 17, month III.  
+**Context:** Nippur; 3N-T0085; room not supplied. **Genre:** House sale; text includes tablet/envelope.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording.  
+**Passages / forms:** obv. 1–13; rev. 1–10; é du₃-a; sa₁₀; ibila; lunga; ARAD₂-Inanna dub-sar.  
+**Observation:** A built plot is sold; a witness is named ARAD₂-Inanna and identified as a scribe.  
+**Limit:** A personal name containing ARAD is not an independent legal-status declaration. Local name variants and duplicate surface text require care.  
+**Design status:** NO DESIGN DECISION
+
+## T20 — SAOC 44, 53
+
+**Object:** IM 058756; [P224357](https://cdli.earth/P224357). **Date:** Rim-Sin 51, month VIII.  
+**Context:** Nippur; 3N-T0845; room absent from CDLI record. **Genre:** Damaged manumission-related instrument.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording.  
+**Passages / forms:** obv. 4–16; rev. 4–11; [ama-ar-gi₄?]; nam-geme₂; u₄ ti-la; igi-ni-še₃ ... gub; ibila; aga-us₂; sanga.  
+**Observation:** The surviving clauses distinguish lifetime attendance/service from heirs’ future claims to female slave status; Stone indexes the act as freeing a slave girl.  
+**Limit:** The release expression is restored and queried; the marriage/document clause is problematic. This is not proof that release removed every obligation, nor a universal manumission rule.  
+**Design status:** NO DESIGN DECISION
+
+## T21 — SAOC 44, 65
+
+**Object:** UM 55-21-129; [P257325](https://cdli.earth/P257325). **Date:** Hammurapi 31, month XI; legacy notation indicates intercalation.  
+**Context:** Nippur; 2N-T0685; TB 200, level II 2. **Genre:** Silver loan, despite catalogue grain label.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording; catalogue labels Akkadian.  
+**Passages / forms:** obv. 1–7; rev. 6–7; šu-lá; máš₂ nu-ub-tuku; šu ba-an-ti; agrig; kù ... lá.  
+**Observation:** Receipt and repayment wording concerns silver and excludes interest; the borrower bears an administrative title.  
+**Limit:** The commodity/genre catalogue is inconsistent with the displayed clauses. Office title does not establish institutional ownership of this debt.  
+**Design status:** NO DESIGN DECISION
+
+## T22 — SAOC 44, 69
+
+**Object:** UM 55-21-166; [P257345](https://cdli.earth/P257345). **Date:** Samsuiluna 3, month VI.  
+**Context:** Nippur; 2N-T0779; TB 75, E 2. **Genre:** Sale of temple-linked office entitlement.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording.  
+**Passages / forms:** tablet obv. 1–13; rev. 1–2; [nam] ì-du₈ ká é-kur-ra; u₄ 7½-kam; sa₁₀; garza₂.  
+**Observation:** An Ekur gatekeeping entitlement of seven-and-a-half days is sold; the closure calls its object garza₂.  
+**Limit:** The initial nam is restored. Price paid for an entitlement is not its holder’s salary or a measure of work actually performed.  
+**Design status:** NO DESIGN DECISION
+
+## T23 — SAOC 44, 70
+
+**Object:** UM 55-21-165; [P257344](https://cdli.earth/P257344). **Date:** Samsuiluna 3, month XI.  
+**Context:** Nippur; 2N-T0778; TB 75, E 2. **Genre:** Sale of a bundle of temple-linked offices; tablet and envelope.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording.  
+**Passages / forms:** envelope obv. 1–14; tablet obv. 1–13; nam-ugula é; nam-ì-du₈; nam-bur-šu-ma; mu-a u₄ 10-kam; bala gub-ba.  
+**Observation:** The envelope preserves an annual ten-day turn associated with several office designations and a sale.  
+**Limit:** Institutional names and opening titles are damaged in places. The technical function of nam-bur-šu-ma is not resolved here.  
+**Design status:** NO DESIGN DECISION
+
+## T24 — SAOC 44, 71
+
+**Object:** UM 55-21-162; [P257341](https://cdli.earth/P257341). **Date:** Samsuiluna 10, month VIII, day 11.  
+**Context:** Nippur; 2N-T0772; TB 75, E 2. **Genre:** Sale of Nuska-temple offices with associated field; tablet and envelope.  
+**Access
