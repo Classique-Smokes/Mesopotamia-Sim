@@ -32,3 +32,11 @@ No return becomes canonical authority by being committed.
 3. resolves/escalates any real blocker;
 4. updates canonical/navigation artifacts losslessly where required;
 5. records a final TRES-0010 dispatch/no-dispatch conclusion.
+
+
+## Wave A / Wave B
+
+- Wave-A returns live on isolated `tres-0010/a` through `tres-0010/j` branches.
+- `PROVISIONAL_PROCESS_LESSONS_AFTER_WAVE_A.md` records non-authoritative process lessons pending Wave-B confirmation.
+- Wave-B packets: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/`.
+- Wave-B canonical baseline: `tres-0010-wave-b-baseline` @ `f25407a9cbf09e501601d52ad7a2df111fa5c491`.
