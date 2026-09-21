@@ -1,65 +1,72 @@
-# Current Phase — SFL v0 Verification Design
+# Current Phase — SFL v0 Reference Prototype Implementation
 
 **Status:** Operational plan; not simulation authority.
 
 ## Goal
 
-Complete Roadmap Stage 3: define executable verification scenarios, invariants, adversarial controls, and continuation checks for the accepted SFL v0 semantic contract.
+Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-level social-fabric reference kernel, while preserving the accepted SFL v0 semantics and completed Stage-3 verification contract.
 
 ## Completed
 
-- Roadmap Stage 1 implementation architecture selection.
-- Reference simulation kernel accepted.
-- C# 14 / .NET 10 LTS host/runtime accepted.
-- Roadmap Stage 2 SFL v0 semantic specification.
-- Passes A-G completed.
-- Targeted adversarial reviews through TRES-0008.
-- Accepted specification: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`.
-- Canonical verification families completed so far:
-  - formation;
-  - continuity/turnover;
-  - controlled lineage;
-  - recognition/subjective information;
-  - grounded provision/support/dowry including multi-contributor allocation;
-  - no-self-confirmation;
-  - head appointment/vacancy/succession and personal-vs-household dual mode;
-  - central invalidation/failure knowledge, provision priority, and reaction closure.
-- Pre-rule semantic-compression audit run across the root retrieval chain and core accepted artifacts; restorative losses repaired: `governance/audits/2026-09-21_PRE_RULE_COMPRESSION_AUDIT.md`.
+- Roadmap Stage 1 — implementation architecture selection.
+- Roadmap Stage 2 — SFL v0 semantic specification.
+- Roadmap Stage 3 — executable verification design.
+- TRES-0008 final package adversarial review.
+- Director-approved response-policy / orphan-breach closure repairs.
+- TRES-0009 post-repair closure review: no remaining Stage-3 semantic or architectural blocker.
+- Complete canonical verification package: `plans/verification/SFL_V0/`.
 
 ## Active
 
-**Roadmap Stage 3 — Define verification scenarios.**
+**Roadmap Stage 4 — Build the reference prototype in vertical slices.**
+
+Active implementation packet:
+
+- `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+
+Slice 1 objective:
+
+- individuals + lower-level relationships;
+- personal/response agency sufficient for the slice;
+- proposal / resolution / commit;
+- semantic history / deterministic cycle closure;
+- executable lower-level acceptance scenarios.
 
 Primary authority:
 
 - `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
+- accepted ADRs under `architecture/accepted/`
 
-Active workbench:
-
-- `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
-
-Canonical verification package:
+Implementation-facing verification:
 
 - `plans/verification/SFL_V0/`
 
-Supporting adversarial reviews:
-
-- `research/technical/TRES-0004/PASS_G_VERIFICATION_CLOSURE_ADVERSARIAL_REVIEW.md`
-- `research/technical/TRES-0005/STAGE3_GUARDRAIL_SCENARIO_ADVERSARIAL_REVIEW.md`
-- `research/technical/TRES-0006/CONTINUITY_LIFECYCLE_SCENARIO_ADVERSARIAL_REVIEW.md`
-- `research/technical/TRES-0007/LINEAGE_WARRANT_ADVERSARIAL_REVIEW.md`
-
-Future Stage-4 engineering context:
+Required C# engineering context:
 
 - `architecture/working/CSHARP_DOTNET_ENGINEERING_GUARDRAILS.md`
 
+Triggered implementation scaffolding:
+
+- SCF-001 root verification sensors;
+- SCF-002 protected acceptance verification;
+- tracked in `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
+
+## Stage-4 slice order
+
+1. **IMP-0001 / Slice 1:** individuals + relationships + proposal/response/commit + semantic history.
+2. Slice 2: subjective recognition + minimal individual agency integration.
+3. Slice 3: persistent household identity + grounded collective capability.
+4. Slice 4: representative role + turnover/succession.
+5. Slice 5: delayed processes + checkpoint/restore continuation.
+
+Each slice must leave a runnable verified system. Do not begin a later slice by silently stubbing or inventing unresolved semantics in an earlier slice.
+
 ## Next
 
-1. Resolve the deterministic response-decision policy erratum.
-2. Resolve the orphan generic commitment-breach attitude rule.
-3. Promote the approved resolutions losslessly, pin response profiles/cards, and rerun the final coverage check.
-4. If no blocker remains, close Stage 3.
-5. Prepare the PROJECT-CONTEXT implementation packet.
-6. Begin Roadmap Stage 4 vertical-slice implementation.
+1. Execute IMP-0001 on an isolated implementation workspace/branch.
+2. Establish canonical root build/test/analyzer commands and CI as part of the slice.
+3. Implement the protected canonical acceptance surface for in-scope scenario IDs.
+4. Require the IMP-0001 completion report and verification evidence.
+5. Reconcile any implementation discovery before authorizing Slice 2.
 
-Historical model refinement/calibration remains a separate Director-led model-development concern and does not block the foundational v0 verification contract.
+Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
