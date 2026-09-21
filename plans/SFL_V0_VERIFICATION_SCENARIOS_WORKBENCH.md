@@ -22,6 +22,10 @@ Resolved semantic errata record:
 
 - `specifications/working/SPEC-SFL-0001_STAGE3_ERRATA.md`
 
+Open semantic erratum:
+
+- `specifications/working/SFL_V0_STAGE3_PROVISION_ALLOCATION_ERRATUM.md` — exact multi-contributor debit trace only
+
 ## Canonical scenario package
 
 - `plans/verification/SFL_V0/README.md`
@@ -29,6 +33,8 @@ Resolved semantic errata record:
 - `plans/verification/SFL_V0/CONTINUITY_TURNOVER_FAMILY.md`
 - `plans/verification/SFL_V0/LINEAGE_FAMILY.md`
 - `plans/verification/SFL_V0/RECOGNITION_INFORMATION_FAMILY.md`
+- `plans/verification/SFL_V0/PROVISION_GROUNDING_FAMILY.md`
+- `plans/verification/SFL_V0/NO_SELF_CONFIRMATION_FAMILY.md`
 
 ## Required outputs
 
@@ -118,6 +124,14 @@ Required baseline:
 - incomparable incompatible evidence becomes Contested;
 - ordinary communication consumes the sender's personal initiative;
 - attitude/refusal does not by itself erase recognition.
+
+## Provision/self-confirmation baseline
+
+Canonical provision verification proves personal ownership until spend, explicit accepted backing, protected reserve, NeedsGrain exclusion, exactly-once contributor debit, direct-to-recipient material effects, dissolution cleanup, reconsideration cooldown, and no pooled household treasury.
+
+Household-originated support is feedback from an already-existing H and cannot become independent formation/continuity/lineage evidence.
+
+Exact multi-contributor debit ordering remains gated on the open provision-allocation erratum.
 
 ## Scenario families to specify
 
