@@ -97,4 +97,70 @@ The main biases are differential survival and excavation, selected object regist
 
 The strongest answer to the commissioned question is not an all-purpose household model. It is a set of differentiated histories: the history of a plot, of a structure, of rights in property, of a document collection, of activities, and sometimes of identifiable people. Those histories can overlap without being identical.
 
-For this investigation, an identified contractual relationship is not weakened merely because its parties cannot be located in rooms. Conversely, a secure architectural change need not have a recoverable legal cause. The useful conjunction is a proposition supported on both sides: for example, a document describing a divided property and independent physical evidence of the corresponding division. Where the 
+For this investigation, an identified contractual relationship is not weakened merely because its parties cannot be located in rooms. Conversely, a secure architectural change need not have a recoverable legal cause. The useful conjunction is a proposition supported on both sides: for example, a document describing a divided property and independent physical evidence of the corresponding division. Where the  document supplies the building identification or the phase date, that dependence must remain visible. [Evidence evaluated: S01–S04.]
+
+### 4.2 Principal stratified case: TA House I
+
+#### The two records
+
+The legal record is unusually tractable: NN 42–47 identify a property succession across a decade. The archaeological record associates those documents with two loci of XA-1 and supplies a longer, reconstructed building sequence. The case is therefore **stratified and person-linked at the level of a final assemblage and a proposed property history**. It is not a sequence of independently sealed floors, each with its own named occupants. [S01, pp. 64–68, catalog p. 218; S02.]
+
+The architectural correlation should consequently be read in two layers. The recorded finds link the documents to the excavated setting. The attribution of successive rooms or rebuilding episodes to successive legal owners is an additional argument. Retaining the first while questioning the second is not a rejection of all contextual evidence.
+
+#### Required house–phase–document–person table
+
+| House/context | Phase/date | Texts/finds | Documented people/transactions | Architectural change | Interpretation | Confidence |
+|---|---|---|---|---|---|---|
+| TA House I, later findspot TA 178 XA-1 | NN 42: Si 8/4/20, conventionally 1742 BCE; assigned by Stone to an earlier occupation history | NN 42 / 3N-T94 / A30142 | House-property division from Illu-nasi to Enlil-mansum, Tab-balatu, Ur-dukuga, Enlil-galzu | No separate 1742 floor containing this deed; room allocation is reconstructed | Named legal kin/property association is usable; four simultaneously resident nuclear families are not established | MODERATE legal association; LOW room-resident allocation |
+| Same final context | NN 43: Si 12/5/18, 1738 BCE | NN 43 / 3N-T92 / A30140 | Tab-balatu sells a 50-gin property to Ipqu-Enlil | Stone connects this period with reduced occupation/neglect; phase dating partly documentary | Ownership change is recorded; departure of all occupants or absence of tenants is not | MODERATE transaction; LOW exact occupancy change |
+| Same final context; proposed relation to House H | NN 44: Si 16/–/2, 1734 BCE | NN 44 / 3N-T93 / A30141 | Ipqu-Enlil sells to Enlil-nisu and Etel-pi-Ishtar; area disputed in publications | Reconstruction associates sale with renovation and a particular room | The transaction does not securely locate its area in one room, particularly given the 20/40-gin discrepancy | MODERATE transaction; LOW room correlation |
+| TA 178 and TA 185 XA-1 | NN 45–46: Si 17/3/–, 1733 BCE | NN 45 / 3N-T91; NN 46 / 3N-T85 / A30138 | Enlil-galzu and Ipqu-Enlil exchange 10-gin properties with a cash adjustment; Ipqu-Enlil sells 10 gin to the joint buyers | Exchange is used to explain a more convenient spatial configuration | Reorganization of property interests is plausible; a particular wall/door alteration is not independently dated by the deeds | MODERATE legal sequence; LOW exact physical response |
+| TA 185 XA-1 | NN 47: Si 18/5/25, 1732 BCE | NN 47 / 3N-T86 / A30139 | Catalog: Enlil-nisu buys Etel-pi-Ishtar’s share in their jointly held 50-gin property | No securely isolated construction episode belongs to this sale | Joint title changes; identity of the final resident is unresolved, including a tension with the narrative assignment | MODERATE catalog statement; LOW resident identification |
+| TA House I, loci 178/185 | XA-1 deposit, later than or contemporary with the latest text it contains; exact cessation date not independently fixed here | NN 42–47 plus other records, including NN 48–52 | Multiple parties and subject matters; NN 50 is a rental | Rebuilt/continued structure in the published later sequence | A retained archive or mixed final deposit, not six occupation snapshots; possible redistribution between rooms | MODERATE |
+
+Sources for the table: S01, pp. 65–68 and catalog pp. 218–219; S02; S05, p. 103 excerpt. Architectural statements are mediated through S01, not newly observed. Museum and date discrepancies are audited in the appendix.
+
+#### What the sequence does and does not prove
+
+A property share can change hands while residents remain, and occupants can change without a transfer of ownership. These are logical alternatives, not claims that a particular undocumented event occurred at House I. The contracts alone do not select between them. The initial list of four heirs is a record of named legal participants, not a census; it neither exhausts dependents and other residents nor proves the four heirs were present together.
+
+A further limit concerns transactions inferred between preserved documents. The published initial allocation totals 88 gin, with shares of 31, 19, 19, and 19. The later 50-gin sale is consistent with consolidation of 31 + 19. That arithmetic does not itself provide a missing deed, its date, or the mechanism of consolidation. Similarly, the transfer of one partner’s interest does not license an assumed half-share unless the text establishes it. [S02; S01, NN 42–47.]
+
+The NN 44 issue is decisive for any precise plan. Under the accessible catalog’s reading, the two purchases total 20 + 10 = 30 gin. Under the 40-gin figure in the indexed Charpin passage, they total 40 + 10 = 50 gin, corresponding to the jointly held property in NN 47. This is an **internal consistency test conditional on the transactions referring to the same accumulating interest**. It neither constitutes a new reading of NN 44 nor establishes that the 40 gin were contiguous, roofed, or represented by any particular set of excavated rooms. The primary-image and full-review checks remain open. [S01, NN 44, 46–47; S05, p. 103 excerpt.]
+
+The chronological problem is equally important. Stone explicitly revises the excavators’ assignments partly because the documents require an earlier existence and suggest intervening disuse. That may be a defensible reconstruction, but it is not equivalent to independent architectural dating of every proposed event. A dated sale cannot simultaneously supply a renovation’s date and then receive independent confirmation from that same assigned date. [S01, p. 65.]
+
+**Result:** House I is a valuable history of property interests and a testable architectural hypothesis. The stronger claim—that particular sons and their families occupied particular rooms through successive phases—remains unestablished here.
+
+### 4.3 Control case: TA House F—activity without a secure resident roster
+
+House F provides the reverse emphasis. The instructional assemblage and related installations make an activity inference relatively strong, while identifying the people who lived there is more difficult. Robson’s documented joins connect fragments across rooms and recorded floors. These connections matter because they prevent treating every numbered surface as a separate school or household episode. [S04, pp. 40–45, figs. 3–8.]
+
+The published school plan also retains uncertainty: room 205 is marked as a possible courtyard, rather than a demonstrated roofed room. A total built area, usable area, and reconstructed roofed area would answer different questions. None can independently supply a household size. The source’s fragment census is a dated state of research, not a count of pupils or of independent texts. [S04, pp. 40–45, especially fig. 3.]
+
+The later legal group at TA 184 XA-1 is useful precisely because it frustrates an easy continuity claim. It includes an office allocation, a property exchange, leases or sales, an adoption, and much older material. The exchange NN 12 is dated to Ili-ma-ilu year 1; this report preserves that date without treating Stone’s proposed 1721 BCE synchronism as independently fixed. NN 14 carries a Si 27 date. Neither document names an earlier teacher merely by being found in the same building footprint. [S01, pp. 56–59, NN 11–17; S04, p. 45 n. 14.]
+
+| House/context | Phase/date | Texts/finds | Documented people/transactions | Architectural change | Interpretation | Confidence |
+|---|---|---|---|---|---|---|
+| TA House F | Field level 10 / Stone XI, chiefly 1740s BCE | School exercises; tablet reuse; installations; inter-room/subfloor joins | No securely identified teacher-resident established in this return | Domestic-scale structure with instructional material incorporated into its use and fabric | Local instruction strongly supported; inhabitants, pupils’ residence, and household membership unresolved | HIGH activity; LOW personal identification |
+| TA House F, TA 184 XA-1 | Later architectural phase; documents of disparate dates | NN 11–17; especially NN 12, Ili-ma-ilu 1, and NN 14, Si 27 | Named legal participants, including the parties to an exchange and a house lease | Later occupation/rebuilding relative to the school assemblage | Later legal associations must not be carried backward as an earlier resident list | MODERATE |
+
+Sources: S01, pp. 56–59, NN 11–17; S04, pp. 39–45. Teaching may involve people from outside the resident group; that is an interpretive possibility, not a demonstrated boarding or commuting arrangement.
+
+### 4.4 Control case: TB House O and Atta’s cache
+
+The Atta material has a more concentrated deposition than a loose tablet from fill. The reported find is a cache in TB 75 E-2 beneath an inverted vessel, within a partly excavated building. Its documents principally concern office rights, including interests held and transferred by people other than Atta. The previous-holder transaction NN 83 and the later acquisition NN 84 are especially useful controls against reading every named party as an occupant. [S01, pp. 91–98, NN 68–91.]
+
+| House/context | Phase/date | Texts/finds | Documented people/transactions | Architectural change | Interpretation | Confidence |
+|---|---|---|---|---|---|---|
+| TB House O | Founded in the published I-1 sequence; foundations cut earlier I-2 remains | Partial architecture, loci 75/76/174 | No founding occupant identified by a construction inscription | Replacement of earlier building remains | A physical building succession without a named household succession | MODERATE, through published reconstruction |
+| TB House O, TB 75 E-2 | Final cache context; dated Atta purchases include Si 3–24, 1747–1726 BCE | NN 68–91, vessel covering, nearby seal/weights and domestic objects | Atta and other parties in temple-office transactions | Occupation of a building whose full extent is unexcavated/disturbed | Stronger archive–person association; probable local use, but title to House O and full co-resident group not proved | MODERATE |
+| Same cache | NN 83, Si 23; NN 84, Si 24 | 2N-T766/A30086; 2N-T374/IM57972 | Sin-magir acquires office interests and subsequently transfers them to Atta | No construction change tied to these transactions | A history of rights retained in documents, not evidence for Sin-magir preceding Atta as house resident | MODERATE |
+
+Domestic objects can support domestic activity, while a cache of economic records supports documentary activity. Their co-occurrence makes a mixed setting plausible. It does not justify classifying every room or every named person as exclusively domestic or exclusively institutional. Equally, the archive’s office emphasis cannot prove that the building was state-owned or that its user possessed no land. [S01, pp. 91–98; NN 71, 82, 88 also caution against a simple landless characterization.]
+
+### 4.5 Continuity, subdivision, access, and the neighborhood
+
+The most defensible unit of continuity is the one actually observed. A reused wall line supports continuity of a spatial boundary. A chain of deeds supports continuity of claims in a property. A repeated name, when securely identified, supports a particular person’s continued participation. A building footprint by itself supports none of the other three automatically.
+
+TB House C’s subdivision illustrates the positive value of architectural evidence without a named family. The reported reorganization can support physical differentiati
