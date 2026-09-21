@@ -209,6 +209,7 @@ Actor X recognizes H and P's current head role from valid evidence.
 - objective succession rewrites every actor's head belief;
 - later-arriving older report overwrites newer evidence;
 - household-mediated marriage ignores one of bride-route/H/head subjective gates;
+- sender communicates a proposition absent from their own subjective state;
 - communication is free and does not consume initiative;
 - negative attitude automatically deletes recognition;
 - Contested evidence is resolved by stable actor/message ID.
