@@ -74,9 +74,11 @@ For a non-needy actor whose Farm action commits:
 
 Use otherwise comparable 1-grain transfers between A and B.
 
-### Gift
+### Gift/help
 
-A offers genuine Gift(1), B accepts.
+Exercise both an `OfferGift` and a `RequestGiftOrHelp` followed by accepted voluntary help, preserving the action's explicit meaning in history.
+
+For the genuine Gift case, A offers Gift(1), B accepts.
 
 - grain transfers A -> B;
 - no Debt is created;
@@ -86,7 +88,12 @@ A offers genuine Gift(1), B accepts.
 
 ### Loan
 
-A grants Loan(1) to B.
+Exercise both accepted initiation forms in paired runs:
+
+- A `OfferLoan(1)` to B and B accepts;
+- B `RequestLoan(1)` from A and A accepts.
+
+Both successful routes create the same Loan semantic effect with roles determined by actual creditor/debtor.
 
 - grain transfers A -> B;
 - Debt(A creditor, B debtor, original=1, remaining=1) is created;
@@ -96,7 +103,7 @@ A grants Loan(1) to B.
 
 ### Explicit benefit-for-favour
 
-A offers a benefit in exchange for one favour; B knowingly accepts.
+A uses `OfferBenefitForFavor`; B knowingly accepts the proposed benefit-for-one-favour bargain.
 
 - the specified material/benefit effect commits;
 - exactly one B -> A Favour is created if pair-capacity permits;
@@ -205,7 +212,7 @@ The underlying benefit may still commit if independently valid; favour cardinali
 
 ### Fulfilment
 
-B owes A one favour. A calls it for one otherwise-feasible ordinary action; B fulfils.
+B owes A one favour. A uses `CallFavor` for one otherwise-feasible ordinary action; B fulfils.
 
 Assertions:
 
@@ -384,3 +391,38 @@ This card checks accounting of initiative opportunities, not the unresolved gene
 - residence change creates/destroys household participation;
 - attitude decay crosses zero or runs every cycle;
 - proposal response consumes or grants an extra personal initiative.
+
+
+---
+
+## VS-SFL-099 — Scoring-domain relationship checks
+
+**Level:** closed-loop / scorer boundary
+
+### Kinship amplification
+
+Use `SCORE-VP-004`.
+
+Compare otherwise identical ordinary interpersonal candidates toward:
+
+- non-kin target T1;
+- kin target T2;
+
+with equal stored attitudes.
+
+Assertions:
+
+- kin target's attitude-derived score component is exactly 1.5x the non-kin component using exact integer scaling;
+- stored attitude remains unchanged;
+- categorical +75 gates still read stored attitude.
+
+### Co-residence motivation ordering
+
+Use a verification-only scoring profile that isolates the accepted relative rule:
+
+- strong mutual positive relationship contributes a positive co-residence component;
+- established marriage contributes a strictly larger co-residence component.
+
+The numeric magnitudes are laboratory configuration; only `marriage incentive > strong-mutual-positive incentive` is a semantic assertion.
+
+This companion must not make marriage force residence change; it affects proposal motivation only.
