@@ -1,6 +1,6 @@
 # SFL v0 — Provision Allocation Erratum
 
-**Status:** OPEN / REQUIRES DIRECTOR DECISION  
+**Status:** RESOLVED / HISTORICAL WORKING RECORD  
 **Date:** 2026-09-21  
 **Authority:** Working semantic erratum only.
 
@@ -54,3 +54,20 @@ Use **fixed-rank / exhaust-in-order** for v0:
 ## Verification after approval
 
 `VS-SFL-046` should pin exact debit vectors, reserve preservation, conservation, and ID-permutation sensitivity.
+
+
+## Resolution
+
+Approved by the Project Director on 2026-09-21.
+
+Promoted rule:
+
+- compute valid exposed capacities at precommit;
+- rank once by exposed capacity descending;
+- stable semantic person ID orders exact ties;
+- exhaust contributors in that fixed order until funded;
+- do not rerank within the expenditure;
+- insufficient total validated capacity prevents commit.
+
+Canonical authority: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md` §8.1.
+Canonical verification: `plans/verification/SFL_V0/PROVISION_GROUNDING_FAMILY.md` VS-SFL-046.
