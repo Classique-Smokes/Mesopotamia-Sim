@@ -80,3 +80,14 @@ No return becomes canonical authority by being committed.
 - `CALLFAVOR_SLICE1_APPLICABILITY_RECONCILIATION.md` — mechanical derivation of current Slice-1 callable/non-callable action shapes under the promoted response-closed favour rule.
 - `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md` — candidate manifest; not acceptance authority until independent pre-code review passes and freeze metadata is completed.
 - Review packet: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/SLICE1_ACCEPTANCE_MANIFEST_PRECODE_REVIEW.md`.
+
+## Manifest Repair Review
+
+- First manifest pre-code review result: **BLOCK** (return remains advisory on `tres-0010/manifest-precode-review`).
+- Targeted independent review packets: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/MANIFEST_REPAIR_REVIEW/`.
+- Frozen review baseline: `tres-0010-manifest-repair-review-baseline` @ `8a809a05276571fb15845f012dc7dae1c71380d8`.
+- Return branches:
+  - `tres-0010/mrr-boundary`
+  - `tres-0010/mrr-semantic-scope`
+  - `tres-0010/mrr-grain-ingress`
+- No manifest repair is promoted or treated as settled until the three returns are centrally reconciled with the original BLOCK.
