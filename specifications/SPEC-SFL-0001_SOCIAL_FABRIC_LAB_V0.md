@@ -4,7 +4,7 @@
 - **Owner:** Master Architect
 - **Date:** 2026-09-21
 - **Depends on accepted decisions:** DEC-0001, ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0005
-- **Known assumptions:** ASM-0001 through ASM-0013
+- **Known assumptions:** ASM-0001 through ASM-0014
 
 ## 1. Purpose and scope
 
@@ -54,8 +54,12 @@ Ageing, reproduction, health, death, class/status, profession, and personality t
 
 ### 2.2 Grain
 
-Grain is a fungible resource.
+Grain is a fungible resource counted in integral v0 units.
 
+- personal grain stock is a nonnegative integer;
+- every action parameter denominated in grain is a strictly positive integer;
+- zero, negative, and non-integral grain action quantities are categorically invalid terms and are rejected before any counterparty response is activated;
+- an invalid grain term produces no material or social effect and is not a `Declined`, `Unable`, or `InvalidatedAtResolution` failed attempt;
 - `Farm` yields 4 grain.
 - Consumption is 1 grain per person per cycle.
 - Typical verification starts use 4-8 grain per actor.
@@ -63,6 +67,8 @@ Grain is a fungible resource.
 - A `NeedsGrain` actor cannot Farm.
 - `NeedsGrain` clears once the actor again holds at least the next 1-grain consumption unit.
 - No agriculture/land/market/wage/price system is implied.
+
+Integral grain units are a replaceable v0 laboratory discretization, not a claim about historical metrology or later economic quantity representation.
 
 ### 2.3 Dwelling
 
@@ -96,6 +102,10 @@ Fixed v0 updates:
 
 Every 5 cycles, positive attitude moves 2 toward 0 and negative attitude moves 1 toward 0; decay never crosses 0.
 
+**Same-cycle direct attitude composition.** The fixed attitude consequences above that are directly triggered by the current cycle's committed interaction, failure, or debt-social-due-review outcomes compose order-independently per directed attitude. Starting from that directed attitude's value after maintenance/decay and before those automatic direct attitude consequences, collect every distinct currently due direct cause, sum its signed fixed delta exactly once, and clamp the resulting total once to [-100,+100]. Do not clamp contribution-by-contribution. Maintenance decay is not part of this sum.
+
+Each contributing cause key and signed delta remains explicit causal history for the resulting attitude transition; enumeration order among those independent causes has no semantic effect. A future rule that creates an attitude consequence causally downstream of another automatic reaction must define its causal placement explicitly and is not silently folded into this direct-cause batch.
+
 ### 3.2 Kinship
 
 v0 supports only:
@@ -117,6 +127,8 @@ Debt is a quantitative grain claim.
 
 - loan creates creditor/debtor, original amount, remaining amount;
 - repayment may be partial or complete; completion satisfies the current claim without erasing the debt/repayment history;
+- `RepayDebt(amount)` is semantically valid only when `1 <= amount <= remaining debt`; over-repayment is invalid rather than clamped, credited, or converted into another transfer meaning;
+- a semantically valid repayment amount may still be materially infeasible because of current grain/reserve state, in which case ordinary `Unable` / precommit-revalidation rules apply;
 - no interest, collection/default process, or automatic enforcement;
 - each loan has a **social due cycle 3 full cycles after loan commitment**;
 - if any balance remains at that due-cycle review, creditor -> debtor attitude changes -10 once, regardless of whether the debtor could materially repay;
@@ -134,9 +146,14 @@ A favour is one qualitative action-oriented claim.
 - it may arise from an explicit benefit-for-favour bargain;
 - it may arise from knowingly accepted reciprocal help only when recipient attitude toward benefactor is >= +75;
 - genuine gifts create no favour;
-- a favour may request one otherwise-feasible ordinary action;
-- it cannot make an impossible action possible or compel marriage/kinship;
-- fulfilment satisfies the favour; refusal leaves it outstanding;
+- a called-favour payload is valid only when the called actor's `FulfilCalledFavor` / `RefuseCalledFavor` choice is the last new voluntary actor choice required for the requested action to reach a terminal commit/failure;
+- the requested action executes within that response scope: it does not separately consume or grant the called actor's personal initiative and remains subject to ordinary world feasibility, central revalidation, and commit/failure;
+- a v0 called-favour payload may not open another `ResponseDecisionContext`, require a third actor's new voluntary choice, create/demand/transfer/cancel another favour, establish marriage/kinship, or require household/role authority;
+- a categorically non-callable payload is rejected before target response and produces no material or social effect;
+- an impossible or currently infeasible requested action remains impossible/infeasible;
+- the favour is consumed only when the requested action commits successfully; successful fulfilment applies holder -> fulfiller +10;
+- voluntary refusal yields `Declined`, leaves the favour outstanding, and applies holder -> refuser -20;
+- `Unable(reason)` or `InvalidatedAtResolution(reason)` leaves the favour outstanding and applies neither called-favour fulfilment nor refusal attitude effect;
 - favours cannot create/demand/transfer another favour;
 - if A owes B one favour and B independently owes A one favour, either may cancel both atomically.
 
@@ -149,6 +166,10 @@ These meanings must remain explicit to actors/history even if implementation sha
 - explicit benefit-for-favour;
 - relationship-mediated reciprocal help.
 
+**Explicit benefit-for-favour is an atomic bargain.** Its specified material benefit and exactly one new favour commit together or not at all. If the required ordered-pair favour slot is already occupied when feasibility is evaluated, the interaction is `Unable(FavourCapacityFull)`: no voluntary Accept/Decline scoring occurs, no material benefit commits, and no new favour is created. If the slot was available when the target accepted but becomes unavailable before commit, the interaction is `InvalidatedAtResolution(FavourCapacityFull)` and neither leg commits. A failed explicit bargain is never silently relabeled as Gift/Help and does not acquire Gift/Help attitude consequences merely because material transfer code is shared.
+
+**Relationship-mediated reciprocal help remains independently meaningful.** If otherwise valid, feasible, and accepted, the help may still commit when the relevant favour slot is already occupied; no second favour is created.
+
 ### 3.6 Residence change
 
 Residence change is endogenous and proposal-based.
@@ -156,6 +177,8 @@ Residence change is endogenous and proposal-based.
 A person may propose moving to another person's dwelling or inviting another person into their dwelling. The named counterpart's acceptance is sufficient in v0.
 
 Strong mutual positive relations create a weaker co-residence incentive; marriage creates a stronger one. Marriage does not automatically move either spouse; residence change still requires its own proposal/acceptance path.
+
+At most one Residence transition for a given person may commit in one cycle. A person may nevertheless independently Accept multiple Residence proposals from the common snapshot; those Accept responses remain true history and are not rewritten as refusals. Multiple accepted, still-feasible effects that would change the same person's Residence in that cycle are centrally resolved as one conflict set under §9.2.
 
 ## 4. Marriage
 
@@ -238,7 +261,9 @@ A response context reads:
 
 It does not observe uncommitted effects of other proposals or responses.
 
-**Feasibility precedes voluntary response scoring.** If the requested response is no longer feasible from the target/world state, the interaction produces `Unable(reason)` under §6.7 rather than a scored voluntary refusal.
+**Categorical proposal-term validity precedes response activation.** A malformed grain amount or other categorically invalid term, including a called-favour payload outside the v0 response-closed callable domain, is rejected before target response. Such a rejection may be retained diagnostically but creates no valid social interaction, material effect, participant response, or §6.7 failed-attempt outcome.
+
+**Feasibility precedes voluntary response scoring.** If a semantically valid interaction is infeasible from the target/world state, the interaction produces `Unable(reason)` under §6.7 rather than a scored voluntary refusal.
 
 If feasible, generate only response meanings valid for that proposal type, such as:
 
@@ -257,6 +282,7 @@ Response-specific coefficients are laboratory configuration, not independent soc
 Response contexts:
 
 - do not consume or grant the target's personal initiative;
+- for a valid called favour, execute the approved response-closed requested action within the fulfilment response scope without granting/consuming a second personal initiative and without opening another response context in v0;
 - may activate multiple times for one target in one cycle;
 - may select multiple Accept/Fulfil responses from the common snapshot;
 - do not bypass central resolution/revalidation;
@@ -356,6 +382,8 @@ Recognition is causal rather than decorative.
 For household-mediated marriage, the groom must know the relevant bride-to-H participation fact and recognize H plus its current head/scope. Without that subjective route the mediated candidate is unavailable; the mutual-strong-like bypass remains independent.
 
 ### 6.7 Failed attempts
+
+This section applies to semantically valid proposals/interactions. A categorically invalid proposal term rejected before response activation is not a social failed attempt under this section; diagnostic recording of that validation rejection does not by itself create participant knowledge or a social consequence.
 
 Direct participants learn failed-attempt outcomes:
 
@@ -710,6 +738,10 @@ Equal-priority unresolved symmetry uses disclosed stable-ID technical fallback.
 
 Accepted but incompatible proposals may fail as `InvalidatedAtResolution`; this is not social refusal.
 
+**Residence conflict.** After ordinary revalidation, all valid accepted effects that would change the same person's Residence in the same cycle form one conflict set. At most one may commit. Apply any accepted semantic/domain priority first; if none distinguishes the contenders, treat them as equal-priority unresolved alternatives and use the existing disclosed stable-ID technical fallback, recording fallback use. Every non-winning accepted contender terminates as `InvalidatedAtResolution(CompetingResidenceTransition)`. A committed Residence transition does not authorize a second Residence transition for that person in the same cycle.
+
+**Atomic explicit bargain revalidation.** Favour-slot availability is an action-relevant precondition of `ExplicitBenefitForFavor`. If that capacity is lost after acceptance but before commit, the whole bargain is `InvalidatedAtResolution(FavourCapacityFull)`; neither the material benefit nor the new favour partially commits.
+
 If a valid same-cycle `ParticipationWarrant` explicitly depends on sustaining participant P as its continuity bridge and P also has an accepted participation-end proposal, resolve the bridged entry and its continuity reaction before P's exit. This is a narrow causal-handoff priority, not a general rule that entry outranks exit.
 
 ### 9.3 Automatic reactions
@@ -717,6 +749,8 @@ If a valid same-cycle `ParticipationWarrant` explicitly depends on sustaining pa
 Same-cycle automatic reactions are cause-keyed/idempotent.
 
 One cause key `(rule, triggering event, subject)` cannot produce the same transition twice.
+
+For the direct attitude-composition rule in §3.1, cause-key idempotence applies to contribution membership: one cause key contributes its signed delta at most once. The composition batch commits one bounded attitude-state transition for that directed attitude and retains the full contributing cause-key/delta set as causal predecessors. `ReactionIndex` orders that authoritative transition relative to other consequential transitions; it does not impose a social precedence among independent member causes.
 
 Each automatic reaction must consume/change its enabling condition or establish state that makes repeated application a no-op. Repeated production from an already-processed cause is a specification/engine error.
 
@@ -769,13 +803,19 @@ Mechanical verification must enforce where applicable:
 - at most one head-role occupant;
 - no dissolved household emits household-mode action;
 - attitude remains within [-100,+100];
-- personal grain never negative;
+- same-cycle direct attitude-composition result is independent of member-cause enumeration;
+- personal grain is a nonnegative integer;
+- every grain-valued action parameter is a strictly positive integer and categorical invalid terms never reach target response;
+- repayment amount never exceeds remaining debt;
 - every grain change has an explicit source/sink/zero-sum transfer;
 - collective expenditure debits backing personal grain exactly once;
 - provision cannot penetrate protected reserve or draw from NeedsGrain contributor;
 - at most one established v0 marriage per person;
 - parent/child and siblings never marry;
 - at most one outstanding favour per ordered pair;
+- an explicit benefit-for-favour material effect and its new favour commit atomically;
+- a called favour is consumed only on successful requested-action commit and a v0 called-favour payload never opens another voluntary response context;
+- at most one Residence transition per person commits in one cycle;
 - one automatic cause key cannot apply the same reaction twice;
 - `ReactionIndex` is monotone within cycle;
 - no safe checkpoint occurs mid-resolution/reaction closure.
@@ -797,7 +837,11 @@ Roadmap Stage 3 must translate this specification into executable scenarios cove
 - personal vs household-mode central resolution;
 - invalidation/failure knowledge;
 - provision priority;
-- reaction closure/idempotence;
+- reaction closure/idempotence, including order-independent same-cycle direct attitude composition;
+- same-cycle competing Residence transitions;
+- called-favour response-closed payload/commit/refusal/inability/invalidation behavior;
+- grain-parameter validity and over-repayment boundaries;
+- explicit benefit-for-favour full-capacity atomicity;
 - communication provenance;
 - MaterialDeadlock;
 - stable-ID fallback sensitivity;
@@ -867,3 +911,4 @@ Relevant:
 - 2026-09-21 — Pre-rule compression-audit restorations: fixture authority/no fixed actor count; cross-boundary/anti-shortcut constraints; attitude/kinship gate separation; debt-history retention; favour non-currency limits; residence independence from marriage; exact reference-scorer/separability semantics; recognition-state meanings; head-role prohibitions; reaction-closure termination condition; all action-relevant preconditions and uncommitted-effect knowledge semantics.
 - 2026-09-21 — Director-approved final Stage-3 semantic gates: fixed-rank/exhaust-in-order multi-contributor provision allocation and exact reference scorer aggregation (`FinalScore = sum(named integer components)`) with explicit semantic/domain tie handling and disclosed technical-ID fallback.
 - 2026-09-21 — Director-approved TRES-0008 closure repairs: deterministic `ResponseDecisionContext` using the same exact component scorer; response feasibility precedes voluntary scoring; responses do not consume personal initiative and remain centrally resolved; removed the orphan generic commitment-breach attitude row rather than inventing a generic commitment subsystem.
+- 2026-09-21 — Director-approved TRES-0010 B2 Slice-1 semantic closure: order-independent direct same-cycle attitude composition; one committed Residence transition per person/cycle with explicit conflict invalidation; response-closed called-favour payloads and commit-tied favour consumption; positive integral v0 grain action quantities with explicit validation/repayment bounds; atomic explicit benefit-for-favour under pair-capacity constraints.
