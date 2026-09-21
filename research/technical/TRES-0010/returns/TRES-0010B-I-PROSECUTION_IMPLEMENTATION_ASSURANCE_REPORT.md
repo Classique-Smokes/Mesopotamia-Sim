@@ -20,12 +20,12 @@
 
 The prosecution does **not** confirm a new social-semantic or architectural blocker.
 
-It does confirm four de-duplicated **pre-dispatch repair clusters**:
+It does confirm three de-duplicated **pre-dispatch repair clusters**:
 
 1. **Protected acceptance / oracle independence** — IMP-0001 currently creates its own first executable acceptance surface, so a weak translation of the canonical cards or a circular oracle can self-certify. This is a verification-governance repair, not a semantic redesign.
 2. **Exact Slice-1 applicability manifest** — the packet simultaneously requires `VS-SFL-100..105` and excludes the household/head semantics required by `VS-SFL-104`; more generally, “applicable/relevant/where substrate is available” leaves the implementation agent too much discretion over which adversarial checks count.
 3. **Authority/supporting-context taxonomy** — IMP-0001 places the assumptions register inside “Accepted simulation / architecture authority” and uses the parent heading “Authoritative inputs” for required working engineering context, despite the governance policy's explicit authority/supporting-context distinction.
-4. **No fourth semantic repair:** the remaining serious-looking seams are implementation-local guards or already resolved by accepted authority. In particular, future multi-contributor generalization must **not** be pre-built as a speculative framework.
+The remaining serious-looking seams are implementation-local guards or already resolved by accepted authority. In particular, future multi-contributor generalization must **not** be pre-built as a speculative framework.
 
 The challenged set contains 27 formal Wave-A findings/hazards. Adjudication:
 
