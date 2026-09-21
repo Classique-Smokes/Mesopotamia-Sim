@@ -137,6 +137,27 @@ Required result:
 
 ---
 
+## SCORE-VP-006 — Co-residence motivation ordering
+
+**Used by:** `VS-SFL-099`  
+**Context:** Personal
+
+For a valid co-residence proposal candidate toward T:
+
+- `CoResidenceRelationshipConcern = +20` when the motivation is strong mutual positive relation without marriage;
+- `CoResidenceMarriageConcern = +40` when the proposer and T have an established marriage;
+- other components = 0 for this isolated comparison.
+
+If both conditions exist, use the marriage component for this verification profile rather than stacking both.
+
+Required semantic assertion:
+
+`marriage co-residence incentive > strong-mutual-positive co-residence incentive > 0`.
+
+The magnitudes 20/40 are verification configuration only. This profile affects proposal scoring; it never forces residence change without counterpart acceptance.
+
+---
+
 ## 3. Profile integrity rules
 
 - Configuration cannot waive categorical semantic gates.
