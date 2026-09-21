@@ -22,11 +22,23 @@
 
 ## Current register
 
-No material assumptions have been introduced during bootstrap.
+Working specification has now introduced controlled laboratory assumptions. They remain non-historical and replaceable.
 
 | Assumption ID | Status | Assumption | Scope / impact | Review trigger |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| ASM-0001 | ACTIVE | Relationship-mediated reciprocity may create a favour only when the recipient's directed attitude toward the benefactor is >= +26 (like or strong-like). | SFL v0 favour creation and actor evaluation. | Historical evidence, scenario testing, or Pass B/G verification showing the threshold is misleading or unnecessary. |
+
+### ASM-0001 — Reciprocity attitude gate
+
+- **Status:** ACTIVE
+- **Assumption:** For SFL v0, an accepted beneficial action may create a relationship-mediated favour only when the recipient's directed attitude toward the benefactor is at least +26, corresponding to the current like/strong-like bands.
+- **Why temporarily needed:** The laboratory needs a simple, inspectable gate distinguishing ordinary accepted benefits from socially obligation-bearing reciprocity without yet implementing norms, reputation, or richer relational context.
+- **Scope / impact:** Favour creation and the decision consequences of accepting beneficial actions.
+- **Not authoritative for:** Old Babylonian reciprocity thresholds, historical psychology, universal social behavior, or later project-wide norm mechanics.
+- **Review / replacement trigger:** Recovery of relevant RES-0001 evidence; a later norm/reputation/recognition model; or verification scenarios showing the threshold produces poor or degenerate behavior.
+- **Introduced by:** Director / Master Architect working specification discussion
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
 
 ## Entry template
 
