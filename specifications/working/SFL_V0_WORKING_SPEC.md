@@ -416,7 +416,23 @@ v0 includes a voluntary **CommunicateClaim / Inform** action.
 - Communication normally consumes the sender's one voluntary initiative for the cycle.
 - A communicated event-backed proposition may provide sufficient evidence for recognition when no stronger/newer contradiction exists.
 
-## 9.6 Staleness and contradiction
+## 9.6 Attempt outcomes and failure knowledge
+
+Direct participants learn not only successful commits but also socially meaningful failed attempts.
+
+v0 distinguishes:
+
+- **Declined** — target could perform the action but chooses not to;
+- **Unable(reason)** — target reports that the requested action is not feasible;
+- **InvalidatedAtResolution(reason)** — the attempt passed an earlier stage but became unrealizable at shared resolution/commit.
+
+The requester and target learn the failure outcome and a bounded causal reason sufficient to correct stale beliefs about feasibility. The reason must not disclose unrelated private/authoritative state merely because the resolver can see it.
+
+`Unable` and `InvalidatedAtResolution` are not voluntary refusals and do not trigger refusal-attitude penalties unless a separate domain rule explicitly says otherwise.
+
+The failure/attempt event is knowledge/history even though the requested world effect did not occur.
+
+## 9.7 Staleness and contradiction
 
 Subjective state does not passively synchronize with objective world state and does not naturally decay merely with time.
 
@@ -428,7 +444,7 @@ Subjective state does not passively synchronize with objective world state and d
 
 Exact temporal comparison and event-order representation are finalized in Pass F.
 
-## 9.7 Causal effect of recognition
+## 9.8 Causal effect of recognition
 
 Recognition is causally required for household-specific action generation.
 
@@ -439,20 +455,20 @@ Recognition is causally required for household-specific action generation.
 
 For household-mediated marriage, the groom must recognize the relevant bride-household connection/route and the representative authorized to receive/resolve that proposal. Without that recognition, the mediated candidate is unavailable; the mutual-strong-like bypass remains independently available.
 
-## 9.8 Recognition evidence versus formation
+## 9.9 Recognition evidence versus formation
 
 Kinship, co-residence, marriage, gifts, repeated coordination, fulfilled obligations, and similar lower-level facts may become **evidence**, but none individually and no engine-only cluster automatically creates Recognized Household.
 
 Pass D defines the lower-level configuration/history that can create or sustain household identity and what evidence that formation/continuity emits.
 
-## 9.9 Persistence and attitude independence
+## 9.10 Persistence and attitude independence
 
 - Recognition does not decay because attitude decays.
 - An actor may recognize a household/head while disliking them.
 - An actor may fail to comply with a recognized authority.
 - Recognition changes through evidence about formation, continuity, dissolution, succession, contradiction, or communicated claims.
 
-## 9.10 Required negative control
+## 9.11 Required negative control
 
 Verification must include two actors facing the same objective household state but different subjective evidence:
 
@@ -461,7 +477,7 @@ Verification must include two actors facing the same objective household state b
 
 This proves that subjective recognition is causal rather than decorative.
 
-## 9.11 Pass C closure
+## 9.12 Pass C closure
 
 Pass C is **WORKING-CONVERGED at the semantic level**.
 
