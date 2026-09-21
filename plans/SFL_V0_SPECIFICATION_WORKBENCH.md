@@ -252,45 +252,17 @@ The world must be rich enough for different proxies to disagree: co-residence al
 
 ## Pass G — Verification closure and spec acceptance
 
-**Status:** ACTIVE. Narrow adversarial review: `research/technical/TRES-0004/PASS_G_VERIFICATION_CLOSURE_ADVERSARIAL_REVIEW.md`.
+**Status:** WORKING-CONVERGED after `research/technical/TRES-0004/PASS_G_VERIFICATION_CLOSURE_ADVERSARIAL_REVIEW.md`.
 
-**Question:** Can every important v0 claim be falsified by an observable scenario?
+**Closure:**
 
-This pass prepares the separate verification-scenario phase but must close semantic ambiguity before implementation.
+- 24 falsifiable semantic proof obligations cover formation/non-formation, continuity/discontinuity, recognition causality, grounded capability, representation, conflict/invalidation, causal history, material deadlock, and exact continuation.
+- Stage-3 verification must add independent oracles, metamorphic checks, hard-boundary matrices, isolated causal ablations, always-on invariants, bounded stateful generation, semantic mutants, fixture write-set audits, causal-intervention truth checks, bounded progress checks, and canonical/held-out separation.
+- Stable-ID fallback remains an explicit technical convention and must be sensitivity-tested rather than treated as a social rule.
+- Historical validation/calibration is outside the SFL v0 verification contract.
+- No remaining Pass-G issue requires reopening A-F.
 
-### Proof obligations
-
-G1. **Formation:** lower-level relations/activity/recognition produce a persistent household identity without a “form household” command.
-
-G2. **Non-formation:** superficial structural similarity or engine-only classification does not produce household effects.
-
-G3. **Continuity:** limited constituent turnover preserves identity only through the specified historical bridge.
-
-G4. **Discontinuity:** removal/termination of the sustaining basis changes/inactivates the collective rather than allowing unlimited identity drift.
-
-G5. **Recognition causality:** two actors with different subjective recognition can face different household-related action possibilities while objective world state is otherwise compatible.
-
-G6. **Grounding:** household capability changes when backing commitments/resources change and never creates/double-spends unbacked resources.
-
-G7. **Representation:** representative occupant can change while role/household identity remain continuous under the defined succession process.
-
-G8. **Proposal/commit:** competing or invalid social actions are resolved by explicit rules, not iteration order.
-
-G9. **Causal legibility:** consequential outcomes can be traced to lower-level facts, actor recognition, proposals/processes, and resolution.
-
-G10. **Continuation:** save/load at a safe boundary produces the same subsequent semantic behavior as uninterrupted execution.
-
-### Final acceptance test for the specification
-
-The spec is ready for approval when:
-
-- every in-scope entity and state distinction has a defined meaning;
-- every consequential transition has trigger/validation/effect semantics;
-- every collective effect has an explicit lower-level causal path;
-- no implementation agent needs to invent household or recognition semantics;
-- every temporary arbitrary choice is declared as a controlled assumption with a review trigger;
-- deferred questions are explicitly out of scope;
-- the proof obligations above can be converted into executable scenarios without changing the model.
+**Result:** SFL v0 semantic specification is closed for Roadmap Stage 2 and condensed into `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`.
 
 ---
 
