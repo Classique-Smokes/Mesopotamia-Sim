@@ -22,10 +22,11 @@ Resolved semantic errata record:
 
 - `specifications/working/SPEC-SFL-0001_STAGE3_ERRATA.md`
 
-Open semantic erratum:
+Resolved semantic errata records:
 
-- `specifications/working/SFL_V0_STAGE3_PROVISION_ALLOCATION_ERRATUM.md` — exact multi-contributor debit trace only
-- `specifications/working/SFL_V0_STAGE3_REFERENCE_SCORING_ERRATUM.md` — reference scorer aggregation/configuration contract
+- `specifications/working/SFL_V0_STAGE3_PROVISION_ALLOCATION_ERRATUM.md`
+- `specifications/working/SFL_V0_STAGE3_REFERENCE_SCORING_ERRATUM.md`
+- `specifications/working/SFL_V0_FINAL_STAGE3_GATE_PROMOTION_RECONCILIATION.md`
 
 ## Canonical scenario package
 
@@ -40,6 +41,7 @@ Open semantic erratum:
 - `plans/verification/SFL_V0/RESOLUTION_REACTION_FAMILY.md`
 - `plans/verification/SFL_V0/DETERMINISM_RECOVERY_EXPLAINABILITY_FAMILY.md`
 - `plans/verification/SFL_V0/CROSS_CUTTING_VERIFICATION_CONTRACT.md`
+- `plans/verification/SFL_V0/REFERENCE_SCORING_PROFILES.md`
 
 ## Required outputs
 
@@ -136,7 +138,7 @@ Canonical provision verification proves personal ownership until spend, explicit
 
 Household-originated support is feedback from an already-existing H and cannot become independent formation/continuity/lineage evidence.
 
-Exact multi-contributor debit ordering remains gated on the open provision-allocation erratum.
+Multi-contributor debit ordering is fixed-rank/exhaust-in-order and is canonically exercised by VS-SFL-046.
 
 ## Head-role/dual-mode baseline
 
