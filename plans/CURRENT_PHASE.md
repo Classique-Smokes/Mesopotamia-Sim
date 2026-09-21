@@ -28,6 +28,7 @@ Active pre-implementation research gate:
 
 - `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
 - `research/technical/TRES-0010/README.md`
+- Wave-B adjudication: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/00_WAVE_B_README.md`
 
 Slice 1 objective:
 
@@ -68,11 +69,12 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Dispatch TRES-0010 Wave-A adversarial review tasks.
-2. Reconcile/deduplicate Wave-A findings.
-3. Commission Wave-B prosecution/defense/experiment tasks only for serious unresolved findings.
-4. Repair/escalate any real pre-code blocker and update IMP-0001 if needed.
-5. Record the TRES-0010 dispatch/no-dispatch conclusion.
-6. Only then dispatch IMP-0001 and fire the first-code scaffolding requirements.
+1. Run TRES-0010 Wave-B blind sentinels and prosecution/defense clusters.
+2. Reconcile B0/B1 evidence finding-by-finding; do not vote by reviewer count.
+3. Commission contingent B2 semantic-options / verification-design / technical-experiment tasks only where adjudication remains unresolved.
+4. Repair/escalate confirmed pre-code blockers and amend IMP-0001 / verification authority as needed.
+5. Reassess provisional process lessons and promote only durable general rules.
+6. Record the final TRES-0010 dispatch/no-dispatch conclusion.
+7. Only then dispatch IMP-0001 and fire first-code scaffolding requirements.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
