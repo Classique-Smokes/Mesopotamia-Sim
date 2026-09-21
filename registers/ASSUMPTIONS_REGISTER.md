@@ -38,6 +38,7 @@
 | ASM-0010 | ACTIVE | Household operational lifecycle uses 2+ sustaining participants = Active, 1 = Inactive, 0 = Dissolved; count does not establish identity. | SFL v0 operational lifecycle and continuity tests. | Verification/model iteration or richer household-activity semantics. |
 | ASM-0011 | ACTIVE | Controlled v0 lineage classification requires fresh post-separation organizational evidence, predecessor-source clarity, and narrow all-founders-from-predecessor scope; ambiguous/mixed-origin cases receive no lineage classification. | SFL v0 division/consolidation proof cases only. | Verification/model iteration or richer lineage/inheritance/fission/merger model. |
 | ASM-0012 | ACTIVE | Reference v0 actor scoring uses named exact-integer components summed to FinalScore; highest score wins; domain tie key if explicitly defined, otherwise disclosed stable-semantic-ID fallback. Exact component coefficients remain laboratory configuration. | SFL v0 deterministic reference agency and closed-loop verification. | Model iteration or replacement/extension of the v0 reference policy. |
+| ASM-0013 | ACTIVE | Feasible counterparty responses use deterministic ResponseDecisionContext with the same exact component-sum scorer; infeasibility yields Unable before voluntary scoring; response coefficients remain laboratory configuration. | SFL v0 autonomous counterparty agency and response verification. | Model iteration or richer negotiation/norm/coercion response semantics. |
 
 ### ASM-0001 — Reciprocity attitude gate
 
@@ -180,6 +181,18 @@
 - **Not authoritative for:** Historical psychology, final cognition architecture, personality heterogeneity, learned policies, stochastic choice, or later planners.
 - **Review / replacement trigger:** Model iteration after the reference prototype, or acceptance of a richer agency policy.
 - **Introduced by:** Director / Master Architect final Stage-3 semantic-gate resolution
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `plans/verification/SFL_V0/REFERENCE_SCORING_PROFILES.md`
+
+### ASM-0013 — Reference response decision policy
+
+- **Status:** ACTIVE
+- **Assumption:** Incoming proposals that require a target choice activate a deterministic ResponseDecisionContext. Feasibility is checked before voluntary response scoring; infeasible requests yield Unable(reason). Feasible response meanings use the same named exact-integer component scorer as personal/household choices. Response contexts consume no personal initiative and remain subject to central revalidation/resolution.
+- **Why temporarily needed:** The autonomous reference laboratory requires a deterministic counterparty policy without introducing a second cognition architecture or allowing initiators to control targets.
+- **Scope / impact:** Proposal acceptance/refusal/fulfilment decisions and response traces.
+- **Not authoritative for:** Historical bargaining psychology, coercion, persuasion, trust, reputation, negotiation, or final cognition architecture.
+- **Review / replacement trigger:** Model iteration after the reference prototype or acceptance of richer response/negotiation semantics.
+- **Introduced by:** Director / Master Architect TRES-0008 closure resolution
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `plans/verification/SFL_V0/REFERENCE_SCORING_PROFILES.md`
 
