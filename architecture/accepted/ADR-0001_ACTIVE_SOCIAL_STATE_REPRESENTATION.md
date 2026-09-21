@@ -16,6 +16,7 @@ The prototype's active state begins in **indexed in-memory structures**, accesse
 
 ## Consequences
 
+- Stable semantic identity must not be derived from mutable content such as names, current participants/holders, addresses, or runtime allocation/container positions.
 - One entity may participate in multiple structures without being cloned.
 - Changing collective association does not move or duplicate the underlying entity.
 - Explicit index/reference consistency and save/load verification are required.
