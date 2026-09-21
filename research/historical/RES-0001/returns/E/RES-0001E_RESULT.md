@@ -205,4 +205,98 @@ No household census, general enslaved/free ratio, work allocation by sex, averag
 
 **Other Old Babylonian cities.** The Culbertson collection, including Andrea Seri’s contribution, discusses domestic slavery using evidence that includes Sippar and Larsa. Such cases help formulate questions about women’s work, service, and family ties, but their details are not supplied as Nippur observations. In particular, BE **6/1** 28 must not be confused with a text in Poebel’s BE **6/2** volume. [C2011]
 
-**Other periods at Nippur.** Kassite Nippur material in the same collection, including the contribution by Jo
+**Other periods at Nippur.** Kassite Nippur material in the same collection, including the contribution by Jonathan Tenney, belongs to a later institutional setting. The city name does not make its dependent categories applicable to the present Old Babylonian corpus. Third-millennium examples encountered in discovery were likewise excluded from the core claims. [C2011]
+
+**Pedagogical parallels with mixed provenance.** The Antalu/Šeš-bantuku models discussed by Spada include uncertain or non-Nippur provenances. Their payment, protection, or service provisions cannot be inserted into BE 8 to complete its biography. Comparison identifies possible legal formulations; it does not add missing clauses to a historical transaction. [SP2021]
+
+The report draws no Nippur claim directly from a law collection detached from these local documents. A general legal formulation could be a useful comparator, but would require a separate argument about its relationship to local practice.
+
+## 7. Unresolved questions / recommended follow-up research
+
+**Modern text control.** How do the readings of BE 23, 24, 28, 48, and 57 change when checked against the complete modern editions, all envelopes or duplicates, and published collations? Which Jena witnesses correspond to the Istanbul/Penn records, and which are genuinely separate transactions?
+
+**Domestic location.** Which of these persons or securely linked dossiers can be connected to the house/locus catalogue in *Nippur Neighborhoods*, rather than merely to a reconstructed archive or to a Nippur museum label? Does the deposition history support an archive in use, redeposition, or another association?
+
+**Hired work.** Are there further Nippur hires with task, age, payer/payee, maintenance, absence, substitution, or completion clauses that clarify BE 51? Can any worker be followed before and after the contract without relying on a name alone?
+
+**Enslaved families and actual work.** Do linked sale, inheritance, adoption, maintenance, letter, or dispute records establish spouses and children of the enslaved people themselves? Which documents identify their tasks rather than merely their owners and transfer values?
+
+**Release and later dependence.** What do current readings of BE 8’s difficult formulae establish? Can the historical registration history be tightened further, and are there later securely identified documents for Ištar-rabiat that reveal residence, property, kinship, or continuing service?
+
+**Training.** Are any Nippur educational persons securely linked to a service or apprenticeship agreement specifying obligations, remuneration, or residence? Can teaching evidence be connected to craft training without substituting a general Mesopotamian parallel?
+
+**Nadītu support.** What do direct readings of ARN 29, PBS 8/2 116, and related maintenance disputes establish about the producer of support, residence, sale restrictions, and control of property? Which later reconstructions depend on an uncertain pronoun or person identification? [S1982]
+
+**Conditional sanctions in practice.** Are there follow-on records demonstrating enforcement, renegotiation, or non-enforcement of the repudiation provisions? What evidence explains differences between BE 40 and 48 rather than merely documenting them?
+
+**Institution-linked livelihood.** Can the office rights in BE 43 be linked to actual performance or delegation, and can the associated revenues be traced into a household support agreement? What does the inaccessible modern scribal-quarter study add to that connection? [G2023]
+
+## 8. Register-ready candidate claims
+
+The following entries are proposed for historical reconciliation, not automatically admitted to the canonical register. Their local identifiers match section 3. The two educational items remain in the evidence table but are not promoted here because their social-contractual implications are particularly limited and one primary edition was inaccessible.
+
+### Candidate 1 — E-C01: Hire mediated through a father
+
+**Claim / proposition:** BE 6/2 51 records Idin-Ištar, explicitly the son of Nabi-Šamaš, hired from Nabi-Šamaš by Lu-Ninsianna for a fixed term with a monthly grain payment.  
+**Period:** Samsu-iluna 20/III/21; service III/21–XII/30.  
+**Geography / archive / social context:** Nippur legal document; Istanbul Ni 1847; no room-level context established.  
+**Evidence type:** Primary edition.  
+**Primary evidence:** BE 6/2 51, Ni 1847; P1909 p. 43; catalogue p. 151. Monthly amount: 80 qa of grain in the edition.  
+**Secondary scholarship:** Poebel’s suggestion of payment at the end of the term is commentary, not an explicit clause.  
+**Interpretation(s):** The father mediates the agreement. Whether he exercised ownership, guardianship, household authority, or another legal capacity cannot be decided from these clauses alone.  
+**Uncertainty / disagreement:** The occupation, age, residence, precise payment recipient, and ownership status are not stated.  
+**Confidence + rationale:** **HIGH** — The hiring parties, kin relation, term, and rate are explicit in the published text; confidence is confined to those particulars.  
+**Limits on generalization:** One hire agreement; not a standard wage, a census of hired workers, or proof of child labor or free self-contracting.  
+**Relevance to project question:** A kin relationship and a paid work arrangement appear together without becoming the same relationship.  
+**Design status:** **NO DESIGN DECISION**.
+
+
+### Candidate 2 — E-C02: Kinship and maintenance obligations
+
+**Claim / proposition:** Nippur agreements connect filial or adoptive relationships with inheritance-linked maintenance obligations; these are not identical to ownership of the obligated person.  
+**Period:** Samsu-iluna 8/III and 18/IV/1.  
+**Geography / archive / social context:** BE 6/2 28: Ibkuša and two sons; BE 6/2 48: Awilia, Naramtum, and three sons; Nippur.  
+**Evidence type:** Primary editions, metadata cross-check.  
+**Primary evidence:** BE 6/2 28, CBS 11173, P266334, P1909 pp. 29–30; BE 6/2 48, Ni 1919, P283604, pp. 35–38.  
+**Secondary scholarship:** P1909 discusses maintenance and adoption together. The report retains the clauses without adopting a universal old-age explanation.  
+**Interpretation(s):** BE 28 places the son by the wife and the adopted son under parallel support duties. BE 48 gives Naramtum a filial relationship with Awilia’s sons and provides maintenance with property-related sanctions.  
+**Uncertainty / disagreement:** Maintenance supplies do not identify who produced them. Birth/adoptive relations do not establish age or co-residence.  
+**Confidence + rationale:** **HIGH** — Two independently identified documents explicitly tie support and property expectations to filial relationships.  
+**Limits on generalization:** The specified agreements, not all adopted persons, all sons, or all household labor.  
+**Relevance to project question:** Distinguishes support obligations and created kinship from enslavement and occupational work.  
+**Design status:** **NO DESIGN DECISION**.
+
+
+### Candidate 3 — E-C03: Enslaved people in estate allocation
+
+**Claim / proposition:** BE 6/2 23 allocates four named enslaved people between the shares of Narubtum and Ur-Pabilsaĝa.  
+**Period:** Samsu-iluna 4/X/21.  
+**Geography / archive / social context:** Nippur; Ur-Pabilsaĝa/interconnected family dossier; Istanbul Ni 1917.  
+**Evidence type:** Primary edition, with modern disagreement check.  
+**Primary evidence:** BE 6/2 23, P1909 pp. 20–22; catalogue p. 147. Ali-aḫuša and Iškur-rīm-ilī in Narubtum’s portion; Dumqi-Ištar and Taribum in Ur-Pabilsaĝa’s.  
+**Secondary scholarship:** VW2018 pp. 21–22 records competing reconstructions of the closing kinship/adoption clause.  
+**Interpretation(s):** Enslavement is supported by the legal allocation context, not by treating the gender designations alone as universally equivalent to “slave.”  
+**Uncertainty / disagreement:** The contested genealogy does not erase the allocations. The text does not assign these people particular jobs or identify their own family ties.  
+**Confidence + rationale:** **HIGH** — The named people and their allocation are explicit; the narrow claim does not require choosing the disputed genealogy.  
+**Limits on generalization:** A property division, not a headcount of co-residents or an occupational roster; no transfer itinerary established.  
+**Relevance to project question:** Shows ownership interests passing through family property arrangements while residence and labor remain unrecorded.  
+**Design status:** **NO DESIGN DECISION**.
+
+
+### Candidate 4 — E-C04: Conditional enslavement is not an accomplished sale
+
+**Claim / proposition:** BE 6/2 24 stipulates sale following adoptees’ repudiation of their adoptive parents; the clause does not report that repudiation or sale occurred.  
+**Period:** Samsu-iluna 4/XI.  
+**Geography / archive / social context:** Nippur; Ea-idinnam, Kuritum, Ili-idinnam, and Ili-ummati; CBS 10891, P266084.  
+**Evidence type:** Primary edition.  
+**Primary evidence:** BE 6/2 24, P1909 pp. 27–29; catalogue p. 148. Additional conditional language is present in BE 6/2 57.  
+**Secondary scholarship:** P1909’s translation distinguishes the adoption from future breach conditions.  
+**Interpretation(s):** The contract creates heirs and threatens a coercive consequence for a specified breach. Those facts should not be collapsed into one status label.  
+**Uncertainty / disagreement:** No enforcement event is documented in this text; it does not establish prior enslaved status.  
+**Confidence + rationale:** **HIGH** — The conditional syntax and the completed adoption are different parts of the agreement.  
+**Limits on generalization:** Not a citywide rule that every adopted person was enslaved or every breach was actually punished this way.  
+**Relevance to project question:** A status-changing sanction must remain distinct from a person’s status when the contract was drawn up.  
+**Design status:** **NO DESIGN DECISION**.
+
+
+### Candidate 5 — E-C05: Paid manumission with qualified Ni
