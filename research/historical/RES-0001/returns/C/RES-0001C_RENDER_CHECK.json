@@ -1,0 +1,10 @@
+{
+  "desktop_body_overflow": false,
+  "table_count": 7,
+  "section_navigation_count": 9,
+  "mobile_body_overflow": false,
+  "browser": "System Chromium; desktop 1440×1000, mobile 390×844",
+  "meaning": "Wide tables intentionally scroll inside labelled containers.",
+  "visual_inspection": "Desktop opening and Case B views and a mobile prose/table view inspected. No visible overlap in inspected views; table content intentionally uses horizontal scrolling.",
+  "scope": "Selected views, not a pixel-by-pixel audit of all report positions."
+}

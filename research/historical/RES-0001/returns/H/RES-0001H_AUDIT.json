@@ -1,0 +1,182 @@
+{
+  "packet_id": "RES-0001H",
+  "date": "2026-09-19",
+  "automated_checks": [
+    {
+      "check": "Nine numbered return sections",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Twenty-two unique local evidence claims",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Forty contextual semantic rows",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Ten candidate claims",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Design status on every evidence row",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Design status on every attestation",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Valid evidence confidence levels",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Direct-text count excludes catalogue-only and quarantined records",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Twenty-seven distinct object records",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Every primary claim cites a recorded object",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Candidate IDs exist",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "No canonical HE numbers assigned",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Follow-up section contains twelve questions",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "All individual attestation keys resolve",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "SAOC 44, 65 corrected museum identity",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Input unchanged: 00_READ_ME_FIRST.md",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Input unchanged: 01_SHARED_RESEARCH_CONTEXT.md",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Input unchanged: 02_EVIDENCE_AND_OUTPUT_PROTOCOL.md",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Input unchanged: 03_SOURCE_STARTING_POINTS.md",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Input unchanged: 04_RESULT_RETURN_TEMPLATE.md",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Input unchanged: 05_PROJECT_SEED_CANONICAL_COPY.md",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "Input unchanged: RES-0001H_TERMINOLOGY_AND_HISTORICAL_CATEGORIES.md",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "All seven task-package inputs compared",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "HTML internal anchor IDs are unique",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "HTML internal links resolve",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "HTML retains eleven tables and nine numbered sections",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "check": "HTML has no external script or stylesheet dependency",
+      "status": "PASS",
+      "note": ""
+    }
+  ],
+  "input_integrity": [
+    {
+      "file": "00_READ_ME_FIRST.md",
+      "sha256": "1ebf8721f341162e430d85c010b91edd5195d4259161bd9f31346b65686837b6"
+    },
+    {
+      "file": "01_SHARED_RESEARCH_CONTEXT.md",
+      "sha256": "5839a887a51741934d65a30aa09112d5c28897ae27fe0d7e3c8c17fa8b52ceff"
+    },
+    {
+      "file": "02_EVIDENCE_AND_OUTPUT_PROTOCOL.md",
+      "sha256": "6c6d13842aca82fb87265b31150dcb3b60c2373f646244269da55a9aeddfb3e8"
+    },
+    {
+      "file": "03_SOURCE_STARTING_POINTS.md",
+      "sha256": "20b72774c205f9791674b82c591d61bc0d8dbe7940e0eadb926eb2188db8eca9"
+    },
+    {
+      "file": "04_RESULT_RETURN_TEMPLATE.md",
+      "sha256": "67382f8e4f9d6aefab887c68e0ce633ef1801685ba57eb5633c70332176f2fb5"
+    },
+    {
+      "file": "05_PROJECT_SEED_CANONICAL_COPY.md",
+      "sha256": "f234c82ed77ad501ec15642ae8008514358cffc39bfe088873ad550c995a6314"
+    },
+    {
+      "file": "RES-0001H_TERMINOLOGY_AND_HISTORICAL_CATEGORIES.md",
+      "sha256": "97ca301ed1cfaa2868cd55ecf530ee4ab0ed93601c17e48c6c5743f4d04af909"
+    }
+  ],
+  "counts": {
+    "direct_digital_ancient_text_records": 25,
+    "functional_legal_records": 24,
+    "didactic_records": 1,
+    "quarantined_records": 1,
+    "metadata_only_legal_leads": 1,
+    "evidence_claims": 22,
+    "semantic_rows": 40,
+    "candidate_claims": 10
+  },
+  "verification_limit": "Structural and provenance checks are not independent philological collation."
+}

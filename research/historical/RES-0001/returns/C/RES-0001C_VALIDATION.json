@@ -1,0 +1,228 @@
+{
+  "packet": "RES-0001C",
+  "date": "2026-09-19",
+  "status": "PASS",
+  "checks": [
+    {
+      "Check": "Nine required report sections",
+      "Status": "PASS",
+      "Details": "Sections 1–9 in order."
+    },
+    {
+      "Check": "No unfilled assembly markers",
+      "Status": "PASS",
+      "Details": "All table/candidate placeholders resolved."
+    },
+    {
+      "Check": "Two principal microhistories",
+      "Status": "PASS",
+      "Details": "Plus one judicial countercase and supplementary instruments."
+    },
+    {
+      "Check": "Twelve-column evidence schema",
+      "Status": "PASS",
+      "Details": "All 24 rows have all required fields populated."
+    },
+    {
+      "Check": "Claim confidence vocabulary",
+      "Status": "PASS",
+      "Details": "Confidence is claim-specific; no citywide prevalence inferred."
+    },
+    {
+      "Check": "Advisory design status",
+      "Status": "PASS",
+      "Details": "All evidence rows and nine candidate claims carry the required status."
+    },
+    {
+      "Check": "No canonical HE identifiers assigned",
+      "Status": "PASS",
+      "Details": "No canonical historical-evidence numbers assigned."
+    },
+    {
+      "Check": "Unique Document_ID values",
+      "Status": "PASS",
+      "Details": "27 unique values."
+    },
+    {
+      "Check": "Unique Local claim ID values",
+      "Status": "PASS",
+      "Details": "24 unique values."
+    },
+    {
+      "Check": "Unique Process_ID values",
+      "Status": "PASS",
+      "Details": "13 unique values."
+    },
+    {
+      "Check": "Unique Source_ID values",
+      "Status": "PASS",
+      "Details": "20 unique values."
+    },
+    {
+      "Check": "Unique object identifiers",
+      "Status": "PASS",
+      "Details": "27 different CDLI object records; event deduplication is separate."
+    },
+    {
+      "Check": "Direct-text corpus counts",
+      "Status": "PASS",
+      "Details": "17 artifacts / 15 acts total; core 15 artifacts / 13 acts; two supplementary uncertain-provenance acts."
+    },
+    {
+      "Check": "Parallel witnesses deduplicated",
+      "Status": "PASS",
+      "Details": "OECT 8, 17/18 count as one act; TMH 10, 18a/b/c likewise."
+    },
+    {
+      "Check": "Candidate template fields",
+      "Status": "PASS",
+      "Details": "Title plus all twelve required fields, for nine candidates."
+    },
+    {
+      "Check": "D references resolve",
+      "Status": "PASS",
+      "Details": "27 referenced IDs; no undefined IDs."
+    },
+    {
+      "Check": "S references resolve",
+      "Status": "PASS",
+      "Details": "20 referenced IDs; no undefined IDs."
+    },
+    {
+      "Check": "C-C references resolve",
+      "Status": "PASS",
+      "Details": "24 referenced IDs; no undefined IDs."
+    },
+    {
+      "Check": "CSV roundtrip: DOCUMENT_LEDGER",
+      "Status": "PASS",
+      "Details": "27 rows, same content as JSON."
+    },
+    {
+      "Check": "CSV roundtrip: EVIDENCE_TABLE",
+      "Status": "PASS",
+      "Details": "24 rows, same content as JSON."
+    },
+    {
+      "Check": "CSV roundtrip: CONTINUITY_PROCESS_MATRIX",
+      "Status": "PASS",
+      "Details": "13 rows, same content as JSON."
+    },
+    {
+      "Check": "CSV roundtrip: SOURCE_LEDGER",
+      "Status": "PASS",
+      "Details": "20 rows, same content as JSON."
+    },
+    {
+      "Check": "CSV roundtrip: SOURCE_CRITICAL_AUDIT",
+      "Status": "PASS",
+      "Details": "14 rows, same content as JSON."
+    },
+    {
+      "Check": "HTML unique anchors",
+      "Status": "PASS",
+      "Details": "149 anchors."
+    },
+    {
+      "Check": "HTML internal links resolve",
+      "Status": "PASS",
+      "Details": "611 internal references and navigation links."
+    },
+    {
+      "Check": "HTML data tables",
+      "Status": "PASS",
+      "Details": "Executive, evidence, estate allocation, process, audit, sources, documents."
+    },
+    {
+      "Check": "HTML offline independence",
+      "Status": "PASS",
+      "Details": "No external rendering resources; source retrieval links are optional."
+    },
+    {
+      "Check": "Original archive CRC",
+      "Status": "PASS",
+      "Details": "ZIP member integrity test passed."
+    },
+    {
+      "Check": "Task package supplied checksums",
+      "Status": "PASS",
+      "Details": "All seven task-package files match supplied SHA-256 values."
+    },
+    {
+      "Check": "Original local source unchanged: 04_RESULT_RETURN_TEMPLATE.md",
+      "Status": "PASS",
+      "Details": "Byte-for-byte comparison with original ZIP member."
+    },
+    {
+      "Check": "Original local source unchanged: 02_EVIDENCE_AND_OUTPUT_PROTOCOL.md",
+      "Status": "PASS",
+      "Details": "Byte-for-byte comparison with original ZIP member."
+    },
+    {
+      "Check": "Original local source unchanged: RES-0001C_ADOPTION_INHERITANCE_AND_CONTINUITY.md",
+      "Status": "PASS",
+      "Details": "Byte-for-byte comparison with original ZIP member."
+    },
+    {
+      "Check": "Original local source unchanged: 01_SHARED_RESEARCH_CONTEXT.md",
+      "Status": "PASS",
+      "Details": "Byte-for-byte comparison with original ZIP member."
+    },
+    {
+      "Check": "Original local source unchanged: 03_SOURCE_STARTING_POINTS.md",
+      "Status": "PASS",
+      "Details": "Byte-for-byte comparison with original ZIP member."
+    },
+    {
+      "Check": "Canonical Seed identity",
+      "Status": "PASS",
+      "Details": "Task copy equals program-master Seed in original archive."
+    }
+  ],
+  "input_archive_SHA256": "6d11e82794e5e26415f3f9e8d964a11f0a7678e6c85aaa4fddf6379c46e54caf",
+  "task_package_checksum_results": [
+    {
+      "File": "agent_packages/RES-0001C_AGENT_PACKAGE/00_READ_ME_FIRST.md",
+      "Expected_SHA256": "7e8c1616134375dbe19da10750fe73787d5b52ea9b9bf93bc016bbc429547e45",
+      "Actual_SHA256": "7e8c1616134375dbe19da10750fe73787d5b52ea9b9bf93bc016bbc429547e45",
+      "Matches": true
+    },
+    {
+      "File": "agent_packages/RES-0001C_AGENT_PACKAGE/01_SHARED_RESEARCH_CONTEXT.md",
+      "Expected_SHA256": "5839a887a51741934d65a30aa09112d5c28897ae27fe0d7e3c8c17fa8b52ceff",
+      "Actual_SHA256": "5839a887a51741934d65a30aa09112d5c28897ae27fe0d7e3c8c17fa8b52ceff",
+      "Matches": true
+    },
+    {
+      "File": "agent_packages/RES-0001C_AGENT_PACKAGE/02_EVIDENCE_AND_OUTPUT_PROTOCOL.md",
+      "Expected_SHA256": "6c6d13842aca82fb87265b31150dcb3b60c2373f646244269da55a9aeddfb3e8",
+      "Actual_SHA256": "6c6d13842aca82fb87265b31150dcb3b60c2373f646244269da55a9aeddfb3e8",
+      "Matches": true
+    },
+    {
+      "File": "agent_packages/RES-0001C_AGENT_PACKAGE/03_SOURCE_STARTING_POINTS.md",
+      "Expected_SHA256": "20b72774c205f9791674b82c591d61bc0d8dbe7940e0eadb926eb2188db8eca9",
+      "Actual_SHA256": "20b72774c205f9791674b82c591d61bc0d8dbe7940e0eadb926eb2188db8eca9",
+      "Matches": true
+    },
+    {
+      "File": "agent_packages/RES-0001C_AGENT_PACKAGE/04_RESULT_RETURN_TEMPLATE.md",
+      "Expected_SHA256": "67382f8e4f9d6aefab887c68e0ce633ef1801685ba57eb5633c70332176f2fb5",
+      "Actual_SHA256": "67382f8e4f9d6aefab887c68e0ce633ef1801685ba57eb5633c70332176f2fb5",
+      "Matches": true
+    },
+    {
+      "File": "agent_packages/RES-0001C_AGENT_PACKAGE/05_PROJECT_SEED_CANONICAL_COPY.md",
+      "Expected_SHA256": "f234c82ed77ad501ec15642ae8008514358cffc39bfe088873ad550c995a6314",
+      "Actual_SHA256": "f234c82ed77ad501ec15642ae8008514358cffc39bfe088873ad550c995a6314",
+      "Matches": true
+    },
+    {
+      "File": "agent_packages/RES-0001C_AGENT_PACKAGE/RES-0001C_ADOPTION_INHERITANCE_AND_CONTINUITY.md",
+      "Expected_SHA256": "babbc11b9dab6df7068b5aaa4ae6aaa41e7688cf2dd7111f4325174254e942db",
+      "Actual_SHA256": "babbc11b9dab6df7068b5aaa4ae6aaa41e7688cf2dd7111f4325174254e942db",
+      "Matches": true
+    }
+  ],
+  "limits": "Structural, consistency and preservation checks do not independently certify translations, historical truth, full source access, or representativeness. No fresh clay collation or architectural verification is claimed."
+}

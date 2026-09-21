@@ -1,0 +1,823 @@
+{
+  "packet": "RES-0001G",
+  "completed": "2026-09-19",
+  "status": "Independent advisory return; specified verification gaps remain",
+  "scope": "Old Babylonian Nippur; approximately 1900–1600 BCE approved frame, narrower actually represented corpus",
+  "counts": {
+    "interface_rows": 14,
+    "distinct_positive_text_identifiers": 15,
+    "primary_edition_legal_texts": 8,
+    "catalogue_legal_texts": 4,
+    "administrative_texts": 3,
+    "claims": 16,
+    "register_candidates": 8
+  },
+  "cases": [
+    {
+      "id": "G-I01",
+      "person": "Ellumūšu → Ilī-iddinam; both designated sons of Ṣilli-Šamaš",
+      "institution": "Martu temple; six named office designations",
+      "relationship": "Sale of inherited office rights together with house property",
+      "resource": "Annual 2 months + 20 days; composite consideration 43 shekels silver; net income unstated",
+      "obligation": "Office/service labels listed; actual performance and individual duties not reported",
+      "transfer": "Inheritance explicitly describes seller’s rights; subsequent sale and future-claim renunciation",
+      "evidence": "BE 6/2 36; S01 pp. 5–6, catalogue p. 149; Istanbul 1999",
+      "confidence": "HIGH for conveyance; MODERATE for a sibling reconstruction",
+      "date": "Samsuiluna 11/9/28 (S01 catalogue)",
+      "context": "Nippur, early excavation; no secure individual house/locus recovered",
+      "household": "Same named father; probably brothers, but no independent co-residence evidence",
+      "overlap": "YES: inherited household real estate and temple-linked rights conveyed together",
+      "access": "Primary transliteration/translation read; no image collation",
+      "language": "Sumerian legal formulary in S01; names modernized conservatively",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C01",
+        "G-C02",
+        "G-C03",
+        "G-C10"
+      ]
+    },
+    {
+      "id": "G-I02",
+      "person": "Ilušu-bāni, son of Uttagallu-me-DU ↔ Enlil-lušag, nu-eš, son of Sin-iddinam",
+      "institution": "Kusu temple; six-office bundle",
+      "relationship": "Exchange for field property plus balancing silver",
+      "resource": "Two months annually; field parcel plus 5 shekels to Ilušu-bāni",
+      "obligation": "Listed offices, not a record of completed service",
+      "transfer": "Mutual exchange; payment expressly addresses unequal values; no kinship stated",
+      "evidence": "BE 6/2 39; S01 pp. 15–16 and catalogue p. 150; Philadelphia CBM 11565 (as printed)",
+      "confidence": "HIGH for exchange; MODERATE for exact functional glosses",
+      "date": "Samsuiluna 12/5/15 (catalogue page image checked)",
+      "context": "Nippur publication provenance; no recovered residential locus",
+      "household": "Patronymics identify persons; household relationship between parties unproven",
+      "overlap": "YES: institutional office rights exchanged against a field asset",
+      "access": "Primary transliteration/translation read; no image collation",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C01",
+        "G-C02",
+        "G-C04",
+        "G-C10"
+      ]
+    },
+    {
+      "id": "G-I03",
+      "person": "Šumum-libši, son of Ur-Duazagga ↔ Lu-Ešumeša (S01: Lu-EšumeDU)",
+      "institution": "Nuska temple; named office rights",
+      "relationship": "Exchange involving offices and fields",
+      "resource": "Office/field package against a larger field parcel; 2 shekels balancing payment",
+      "obligation": "Term partly broken; precise service burden not restored",
+      "transfer": "Exchange and mutual no-claim clause; a proposed later link is not yet established",
+      "evidence": "BE 6/2 37; S01 pp. 16–17, catalogue p. 149; Istanbul 1920",
+      "confidence": "HIGH for an exchange; LOW for linkage to G-I11",
+      "date": "Samsuiluna 11/11/6 (S01 catalogue)",
+      "context": "Nippur; tablet and fragmentary case; no verified house locus",
+      "household": "A relationship phrase in the boundary description is ambiguous; not used to assign kinship between counterparties",
+      "overlap": "YES: office and land rights are traded in a single settlement",
+      "access": "Primary transliteration/translation read; broken text retained",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C02",
+        "G-C04",
+        "G-C15"
+      ]
+    },
+    {
+      "id": "G-I04",
+      "person": "Ninurta-rahim-šerim, son of Ninurta-mansi",
+      "institution": "Enki and Damgalnunna; gods named in the conveyance",
+      "relationship": "Recovery/reacquisition of a paternal-house office",
+      "resource": "Office rights; 18 shekels silver consideration",
+      "obligation": "Office bundle; annual-period wording and damaged closing clause require checking",
+      "transfer": "garza é ad-da-na invoked; payment recorded; no demonstrated universal compulsory right of redemption",
+      "evidence": "BE 6/2 66; S01 pp. 13–15",
+      "confidence": "MODERATE",
+      "date": "Old Babylonian; exact regnal date not recovered",
+      "context": "Nippur publication provenance; no individual residential locus",
+      "household": "Father named; paternal-house characterization explicit",
+      "overlap": "YES: family recovery language and institutionally designated transferor coexist",
+      "access": "Primary transliteration and editorial commentary; no independent modern collation",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C03",
+        "G-C05",
+        "G-C16"
+      ]
+    },
+    {
+      "id": "G-I05",
+      "person": "Mar-erṣetim (S01: Mar-irpitim) and Mutum-ilum; two branches of the Iškur-rabi/Ududu family",
+      "institution": "Ninlil office and šuku field; Hammurabi, royal messenger, Nippur puhrum",
+      "relationship": "Dispute, referral, local adjudication and property settlement",
+      "resource": "Earlier office/field transaction; eventual house/plot compensation",
+      "obligation": "Acceptance of settlement and renunciation of future claims",
+      "transfer": "Intergenerational claim; settlement transfers property between named family branches",
+      "evidence": "BE 6/2 10, especially lines 1–36; S01 pp. 46–48; P259799 concordance S12",
+      "confidence": "MODERATE for this documented legal route",
+      "date": "Hammurabi reign; exact regnal year not verified",
+      "context": "Nippur-linked lawsuit; no house archaeology securely attached",
+      "household": "Brothers, fathers and paternal uncle are expressly identified",
+      "overlap": "YES: temple rights, family claims, king, local council and house property intersect",
+      "access": "Primary transliteration/translation; CDLI identifier only indirectly checked",
+      "language": "Sumerian legal record with Akkadian terminology/personal names",
+      "source_ids": [
+        "S01",
+        "S12"
+      ],
+      "claim_ids": [
+        "G-C03",
+        "G-C08",
+        "G-C16"
+      ]
+    },
+    {
+      "id": "G-I06",
+      "person": "Sin-abušu, son of Nannar-luti → Nannartum, nu-eš → Aba-Enlil-dim",
+      "institution": "gala/kalû office; clerical witnesses as interpreted by the editor",
+      "relationship": "Transfer and subsequent receipt of office/inheritance deeds",
+      "resource": "Deeds concerning office and inheritance; payment or realized yield not specified",
+      "obligation": "Aba-Enlil-dim assumes responsibility for future claims against the deeds",
+      "transfer": "Two years after initial entrusting, and after Sin-abušu’s death; recipient’s kinship unstated",
+      "evidence": "BE 6/2 42; S01 pp. 45–46 and catalogue p. 150; Philadelphia CBM 6055 (as printed)",
+      "confidence": "MODERATE; corporate-temple disposition is an interpretation",
+      "date": "Samsuiluna 13/12; day unspecified (catalogue page image checked)",
+      "context": "Nippur; witness/seal interpretation mediated by S01",
+      "household": "Death and prior owner explicit; no warranted father–son link to recipient",
+      "overlap": "YES: succession, documentary custody and clerical participation meet",
+      "access": "Primary translation/transliteration; seal identities reported, not visually checked",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C09",
+        "G-C10",
+        "G-C16"
+      ]
+    },
+    {
+      "id": "G-I07",
+      "person": "Lamazum, daughter of Enlil-mansi ↔ Beltani, daughter of Enlil-galzu",
+      "institution": "Both designated SAL-ISḪIB of Ninurta in S01",
+      "relationship": "Land reacquisition by an institutionally titled woman",
+      "resource": "Field characterized as paternal-house property; 7 shekels silver",
+      "obligation": "Seller/heirs’ future-claim renunciation; cultic service not described",
+      "transfer": "Prior alienation followed by Lamazum’s recovery; title does not prove temple ownership of the field",
+      "evidence": "BE 6/2 45; S01 pp. 11–12 and catalogue p. 150; Istanbul 2001",
+      "confidence": "MODERATE",
+      "date": "Samsuiluna 14/12; day unspecified (catalogue page image checked)",
+      "context": "Nippur publication provenance; field setting, not excavated household",
+      "household": "Named father and explicit paternal-house claim; no relationship inferred between sellers",
+      "overlap": "YES: women’s religious titles accompany transactions in family land",
+      "access": "Primary transliteration/translation read; precise title translation left open",
+      "language": "Sumerian legal formulary; personal names retained close to S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C05",
+        "G-C07"
+      ]
+    },
+    {
+      "id": "G-I08",
+      "person": "Tab-balatu and Beltia adopt Habil-ahi; Ninurta-gamil is named elder brother; Ablum is a gala-priest",
+      "institution": "Office-linked rights and a sonship document associated with Ablum",
+      "relationship": "Adoption with differentiated property claims",
+      "resource": "Adoptive estate and separately protected office/field/house/garden assets",
+      "obligation": "Mutual adoption conditions; older brother barred from specified claims; no cultic performance clause established",
+      "transfer": "Contract creates kinship while shielding specified existing rights from the new sibling’s claim",
+      "evidence": "BE 6/2 57; S01 pp. 30–31 and catalogue p. 152; Istanbul 1995; later re-edition lead S09 p. 47 via S10",
+      "confidence": "MODERATE",
+      "date": "Samsuiluna 22/6/16 (catalogue page image checked)",
+      "context": "Nippur adoption document; no co-residential reconstruction",
+      "household": "Adoptive parents and brother expressly named; relationship to Ablum requires fuller modern checking",
+      "overlap": "YES: family affiliation changes without automatic merger of all office-linked assets",
+      "access": "Primary transliteration/translation; later edition not consulted directly",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01",
+        "S09",
+        "S10"
+      ],
+      "claim_ids": [
+        "G-C03",
+        "G-C06"
+      ]
+    },
+    {
+      "id": "G-I09",
+      "person": "Damu-iddinam ← Ubayatum",
+      "institution": "gudu4 office; temple name broken",
+      "relationship": "Sale",
+      "resource": "10-day term; 9 shekels silver",
+      "obligation": "Details unavailable",
+      "transfer": "Purchase; no kinship established",
+      "evidence": "OBCN I 19; N1118; S02 p. 3",
+      "confidence": "MODERATE",
+      "date": "Samsuiluna 11/12",
+      "context": "Nippur catalogue; locus unavailable",
+      "household": "Not established",
+      "overlap": "YES: purchasable temple-linked term",
+      "access": "Catalogue only",
+      "language": "Not independently checked",
+      "source_ids": [
+        "S02"
+      ],
+      "claim_ids": [
+        "G-C01",
+        "G-C02"
+      ]
+    },
+    {
+      "id": "G-I10",
+      "person": "Sin-ituram and Adda-dingir, sons of Ilu-damiq",
+      "institution": "Temple offices in an estate",
+      "relationship": "Partition and residual partition",
+      "resource": "Offices alongside other property",
+      "obligation": "Not available from synopsis",
+      "transfer": "Family estate division; residual deed not a second independent office event",
+      "evidence": "OBCN I 28–29; UM29-16-141 (tablet), Ni9258/ARN102 (case fragment); UM29-13-230 + N1249 (no. 29); S02 p. 4",
+      "confidence": "MODERATE",
+      "date": "Samsuiluna 25/6/16 and 26",
+      "context": "Nippur; archival link, not residential locus",
+      "household": "Explicit sons of one father",
+      "overlap": "YES: offices included in divisible family assets",
+      "access": "Catalogue and reported tablet/case association; no microfiche collation",
+      "language": "Not independently checked",
+      "source_ids": [
+        "S02",
+        "S14"
+      ],
+      "claim_ids": [
+        "G-C03"
+      ]
+    },
+    {
+      "id": "G-I11",
+      "person": "Nuska-nišu ← Lu-Ešumeša; prior Šumum-libši exchange noted",
+      "institution": "Nuska lu-nig-dab-ba office",
+      "relationship": "Sale after an earlier exchange",
+      "resource": "Two-month term",
+      "obligation": "Not detailed in catalogue",
+      "transfer": "Sale; possible BE 6/2 37 connection remains provisional",
+      "evidence": "OBCN I 32; UM29-16-214; S02 p. 4",
+      "confidence": "MODERATE for synopsis; LOW for cross-edition link",
+      "date": "Samsuiluna 28/11",
+      "context": "Nippur; no verified house locus",
+      "household": "Not established between parties",
+      "overlap": "YES: multi-stage circulation of institutional rights",
+      "access": "Catalogue only",
+      "language": "Not independently checked",
+      "source_ids": [
+        "S02"
+      ],
+      "claim_ids": [
+        "G-C02",
+        "G-C15"
+      ]
+    },
+    {
+      "id": "G-I12",
+      "person": "73 ox-drivers",
+      "institution": "Reconstructed Nippur administrative dossier",
+      "relationship": "Work-linked disbursement",
+      "resource": "4 sila barley each",
+      "obligation": "Palm-branch carrying recorded",
+      "transfer": "No inheritance information",
+      "evidence": "TMH 10 165:1–3; S03 p. 385",
+      "confidence": "MODERATE",
+      "date": "Late Rim-Sin dossier; calendar conversion unresolved",
+      "context": "Reconstructed, not excavated-in-place archive",
+      "household": "Not identified",
+      "overlap": "POSSIBLE; employment/dependence not established",
+      "access": "Republished transliteration/translation",
+      "language": "Sumerian administrative entry",
+      "source_ids": [
+        "S03",
+        "S07"
+      ],
+      "claim_ids": [
+        "G-C11"
+      ]
+    },
+    {
+      "id": "G-I13",
+      "person": "Damiqtum",
+      "institution": "Nippur cult-related administration",
+      "relationship": "Procurement-related allocation",
+      "resource": "Barley for fish",
+      "obligation": "Offering purpose specified",
+      "transfer": "No succession evidence",
+      "evidence": "CBS7627:12–13; S03 table 3, p. 401",
+      "confidence": "MODERATE",
+      "date": "“Isin 2/V-2/1”; late Rim-Sin dossier, unresolved calendar",
+      "context": "Reconstructed archive",
+      "household": "Not inferred from co-occurrence",
+      "overlap": "YES; allocation is not necessarily personal income",
+      "access": "Published documentary table, not independent edition",
+      "language": "Not independently checked",
+      "source_ids": [
+        "S03"
+      ],
+      "claim_ids": [
+        "G-C12"
+      ]
+    },
+    {
+      "id": "G-I14",
+      "person": "Builders and hired workers",
+      "institution": "guennakkum’s house",
+      "relationship": "Repair-related allocation",
+      "resource": "Barley",
+      "obligation": "Roof repair",
+      "transfer": "No succession evidence",
+      "evidence": "CBS7580:1–3; S03 table 2, p. 400",
+      "confidence": "MODERATE",
+      "date": "“Isin 2/VI-9/30”; late Rim-Sin dossier, unresolved calendar",
+      "context": "Reconstructed archive",
+      "household": "Workers’ family units unknown",
+      "overlap": "YES; residence/office boundary unresolved",
+      "access": "Published documentary table, not independent edition",
+      "language": "Not independently checked",
+      "source_ids": [
+        "S03"
+      ],
+      "claim_ids": [
+        "G-C11",
+        "G-C12"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "G-C01",
+      "claim": "Some Nippur temple-linked rights were specified as recurring periods within a year, rather than undifferentiated full-time offices.",
+      "date": "Samsuiluna 11–12 in the directly dated core",
+      "context": "Martu/Kusu transactions; no secure household loci",
+      "type": "Primary; catalogue corroboration",
+      "primary": "G-I01–02: BE 6/2 36 and 39. G-I09 is lower-resolution corroboration.",
+      "secondary": "Poebel’s functional glosses are not required to establish the written annual periods.",
+      "counter": "Annual periods do not prove exact days worked, a universal rota, or the same calendar in all texts.",
+      "confidence": "HIGH",
+      "limit": "The particular rights described, not every Nippur institution.",
+      "relevance": "Separates a family-held entitlement from a presumed lifetime occupation.",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C02",
+      "claim": "The selected Nippur corpus attests both sale and exchange of temple-office rights.",
+      "date": "Samsuiluna 11–12 in three primary-edition cases",
+      "context": "Martu, Kusu and Nuska transactions",
+      "type": "Primary",
+      "primary": "G-I01–03: BE 6/2 36, 37, 39.",
+      "secondary": "S04 abstract identifies the topic, but is not evidentiary support for the individual transactions.",
+      "counter": "No proof that all offices were freely alienable or that no eligibility/approval conditions existed.",
+      "confidence": "HIGH",
+      "limit": "Documented conveyances, not an unrestricted citywide market regime.",
+      "relevance": "Institutional connection could change through transactions as well as kinship.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C03",
+      "claim": "Office-linked rights could form part of family patrimony alongside other assets, without all family property necessarily merging.",
+      "date": "Old Babylonian; Samsuiluna-period examples",
+      "context": "Inherited Martu rights, paternal recovery, adoption and estate division",
+      "type": "Primary with catalogue corroboration",
+      "primary": "G-I01, G-I04, G-I08; G-I10 supplies catalogue-level corroboration.",
+      "secondary": "Archive-scale strategies are a further reconstruction, not directly stated.",
+      "counter": "A shared father does not prove co-residence; inheritance is not equivalent to inalienability.",
+      "confidence": "HIGH",
+      "limit": "Named property-holding cases; no prevalence estimate.",
+      "relevance": "Links institutional resources to durable family histories.",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C04",
+      "claim": "Two exchanges balance unequal office/land packages with silver, demonstrating negotiated equivalence in those transactions.",
+      "date": "BE 6/2 37 = Samsuiluna 11/11/6; no. 39 = 12/5/15",
+      "context": "Kusu and Nuska exchanges",
+      "type": "Primary",
+      "primary": "G-I02–03: BE 6/2 39 has 5 shekels; no. 37 has 2 shekels.",
+      "secondary": "No modern rate-of-return interpretation adopted.",
+      "counter": "Mixed assets, damaged terms and differing temples prevent a standardized price comparison.",
+      "confidence": "HIGH",
+      "limit": "Two transaction-specific adjustments; not annual earnings or a price index.",
+      "relevance": "Shows connections between office rights, land and liquid resources.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C05",
+      "claim": "Some Nippur reacquisitions explicitly characterize the recovered resource as belonging to the paternal house.",
+      "date": "BE 6/2 45 = Samsuiluna 14/12; no. 66 exact date not recovered",
+      "context": "Office recovery and a titled woman’s land recovery",
+      "type": "Primary",
+      "primary": "G-I04, G-I07: BE 6/2 66 and 45.",
+      "secondary": "Poebel calls these redemptions; a compulsory family redemption rule is not established.",
+      "counter": "His Biblical analogy cannot supply a Nippur legal rule; causes of the earlier alienations are unknown.",
+      "confidence": "HIGH for the family-recovery language; MODERATE for legal mechanism",
+      "limit": "Two deeds and their stated family reference, not all lineage property.",
+      "relevance": "Continuity may include reacquisition after alienation.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C06",
+      "claim": "A Nippur adoption deed protects specified office/property rights of the adoptee against claims by the named adoptive brother.",
+      "date": "Samsuiluna 22/6/16 (S01 catalogue p. 152)",
+      "context": "Tab-balatu/Beltia, Habil-ahi and Ninurta-gamil",
+      "type": "Primary",
+      "primary": "G-I08: BE 6/2 57, property and no-claim clauses.",
+      "secondary": "Later edition located but not read; identification of every earlier relationship remains provisional.",
+      "counter": "The deed does not establish that adoption transferred priestly qualification or actual cultic duty.",
+      "confidence": "MODERATE",
+      "limit": "One explicit contractual arrangement; not a standard motive for all adoption.",
+      "relevance": "Created kinship and institutional patrimony could be negotiated together.",
+      "sources": [
+        "S01",
+        "S09",
+        "S10"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C07",
+      "claim": "A woman bearing a Ninurta-related religious title is documented recovering paternal-house land from another similarly titled woman.",
+      "date": "Samsuiluna 14/12; day unspecified (S01 catalogue p. 150)",
+      "context": "Lamazum and Beltani in BE 6/2 45",
+      "type": "Primary",
+      "primary": "G-I07: title, patronymics, field recovery, silver consideration.",
+      "secondary": "Exact modern interpretation of SAL-ISḪIB is left open.",
+      "counter": "Religious affiliation does not make the field temple-owned or prove a female prebend sale.",
+      "confidence": "MODERATE",
+      "limit": "Named titled women; no statement about all women’s access to every office.",
+      "relevance": "Women’s institutional affiliation and family property action can coexist.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C08",
+      "claim": "One Ninlil-related family dispute records royal referral to Nippur’s council followed by a house/property settlement.",
+      "date": "Hammurabi reign",
+      "context": "Two explicitly related family branches",
+      "type": "Primary",
+      "primary": "G-I05: BE 6/2 10, lines 1–36; S12 identifies P259799.",
+      "secondary": "Poebel’s wider theory of the council is not adopted.",
+      "counter": "A recorded royal referral is not evidence that every dispute followed this route or that this was a modern appellate hierarchy.",
+      "confidence": "MODERATE",
+      "limit": "The route documented by this deed and its account of prior proceedings.",
+      "relevance": "Family-held institutional rights could involve multiple legal authorities.",
+      "sources": [
+        "S01",
+        "S12"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C09",
+      "claim": "Receipt of deeds for an office and inheritance after a former holder’s death carried explicit responsibility for future claims.",
+      "date": "Samsuiluna 13/12; two-year interval in the text",
+      "context": "Sin-abušu, Nannartum and Aba-Enlil-dim",
+      "type": "Primary and editorial interpretation",
+      "primary": "G-I06: BE 6/2 42.",
+      "secondary": "Poebel infers temple disposition from the witnesses/seals; that inference is kept distinct from the deed’s wording.",
+      "counter": "Recipient’s kinship, payment, and whether this is a new grant or delivery of pre-existing title are not established.",
+      "confidence": "MODERATE",
+      "limit": "One documentary transfer; not a universal temple succession procedure.",
+      "relevance": "Custody, proof and liability were additional interfaces beyond asset transfer.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C10",
+      "claim": "The core conveyances establish terms and transfers more securely than realized net household income or actual performance of every listed office.",
+      "date": "Dates of the selected legal cases",
+      "context": "BE 6/2 36, 37, 39, 42, 57, 66",
+      "type": "Source-critical conclusion from primary texts",
+      "primary": "G-I01–04, G-I06, G-I08; sale price, adjustment and office designation are distinct observations.",
+      "secondary": "S04 full remuneration discussion unavailable.",
+      "counter": "Administrative evidence can record actual allocations, but cannot automatically be merged with unrelated conveyances.",
+      "confidence": "HIGH within this selected corpus",
+      "limit": "Not a claim that remuneration records never existed or that no prebend was profitable.",
+      "relevance": "Prevents capital values or administered resources from becoming fictitious household budgets.",
+      "sources": [
+        "S01",
+        "S04"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C11",
+      "claim": "Administrative cases add work/allocation relationships not visible in the office-conveyance cases.",
+      "date": "Late-Rim-Sin dossier; exact calendar conversion unresolved",
+      "context": "Reconstructed Nippur administrative file",
+      "type": "Published primary edition/table via specialist study",
+      "primary": "G-I12 and G-I14.",
+      "secondary": "Archival identification follows S03; this report does not reconstruct workers’ households.",
+      "counter": "Payment entries do not establish permanent employment or social-class membership.",
+      "confidence": "MODERATE",
+      "limit": "Particular recorded tasks; not a representative non-elite population.",
+      "relevance": "Broadens the interface beyond office and property holders.",
+      "sources": [
+        "S03"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C12",
+      "claim": "Title, commodity receipt or co-occurrence alone is insufficient to identify a personal household or its hierarchy.",
+      "date": "Scope rule applied to the late-Rim-Sin administrative cases",
+      "context": "G-I13–14; reconstructed institutional relationships",
+      "type": "Methodological inference; specialist interpretive check",
+      "primary": "The case table records the observed relation, leaving unsupported membership unstated.",
+      "secondary": "See §4.8 for the precisely bounded Goddeeris/Robertson issue.",
+      "counter": "Explicit kinship or dependency statements could alter a particular identification; absence here does not disprove a relationship.",
+      "confidence": "HIGH as an evidentiary restriction, not as an ancient social fact",
+      "limit": "No verdict about all members or leaders of a reconstructed institution.",
+      "relevance": "Keeps resource administration distinct from presumed domestic dependence.",
+      "sources": [
+        "S03",
+        "S08"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C13",
+      "claim": "This selected documentary corpus cannot supply the prevalence of office holding across Nippur households.",
+      "date": "Research sample assembled 19 September 2026",
+      "context": "Property conveyances plus a small administrative supplement",
+      "type": "Corpus audit, not an ancient proposition",
+      "primary": "Selection register and access tiers in §2 and accompanying notes.",
+      "secondary": "The corpus is deliberately relevance-selected, not a census or random sample.",
+      "counter": "More cases alone would not create a known household denominator.",
+      "confidence": "HIGH for this research limit",
+      "limit": "No citywide distribution, elite share or gender participation rate.",
+      "relevance": "Prevents named property holders from becoming a population model.",
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S16"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C14",
+      "claim": "The present return does not establish a change-rate or a continuous institutional trajectory across 1900–1600 BCE.",
+      "date": "Approved frame versus actually represented regnal clusters",
+      "context": "Different periods are represented by different genres and access levels",
+      "type": "Chronological/source audit",
+      "primary": "Timeline in §4.10; dated G-I01, G-I03, G-I09–11 and administrative supplement.",
+      "secondary": "Political-phase interpretation is not supplied by the order of selected records.",
+      "counter": "A transaction sequence may show local change without supporting a citywide trend.",
+      "confidence": "HIGH for this research limit",
+      "limit": "Neither stasis nor decline is inferred for unsampled intervals.",
+      "relevance": "Keeps time-specific interfaces from becoming timeless institutions.",
+      "sources": [
+        "S01",
+        "S02",
+        "S03",
+        "S16"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C15",
+      "claim": "BE 6/2 37 is a plausible but unverified antecedent for the exchange recalled in OBCN I 32.",
+      "date": "Samsuiluna 11/11/6 versus 28/11",
+      "context": "Nuska rights; similarly named Šumum-libši and Lu-Ešumeša",
+      "type": "Cross-document hypothesis",
+      "primary": "G-I03 and G-I11.",
+      "secondary": "Proposed by this return as a verification target, not an accepted concordance.",
+      "counter": "Titles, patronymics, exact asset identity and damaged periods require comparison with full editions.",
+      "confidence": "LOW",
+      "limit": "Do not merge the documents into one asset history yet.",
+      "relevance": "Potential evidence for multi-stage circulation, conditional on identity checks.",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C16",
+      "claim": "The documented household–institution interfaces are not reducible to a single relationship of family membership.",
+      "date": "Old Babylonian case set",
+      "context": "Different temples, actors and legal/documentary processes",
+      "type": "Analytical synthesis of distinct primary cases",
+      "primary": "G-I01–08 distinguish sale, family claim, recovery, adoption, legal referral and deed custody.",
+      "secondary": "This is not a claim that temples lacked households; it limits what these documents themselves establish.",
+      "counter": "Specific institutional households may exist and require separate evidence.",
+      "confidence": "MODERATE",
+      "limit": "No organizational chart, universal institution type or residence rule follows.",
+      "relevance": "Preserves different forms of institutional connection without designing their representation.",
+      "sources": [
+        "S01"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    }
+  ],
+  "register_candidate_ids": [
+    "G-C01",
+    "G-C02",
+    "G-C03",
+    "G-C05",
+    "G-C06",
+    "G-C07",
+    "G-C08",
+    "G-C09"
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "short": "Poebel 1909 / BE 6/2",
+      "citation": "Poebel, Arno. 1909. Babylonian Legal and Business Documents from the Time of the First Dynasty of Babylon, Chiefly from Nippur. The Babylonian Expedition of the University of Pennsylvania, Series A, vol. VI, part 2. Philadelphia: Department of Archaeology, University of Pennsylvania.",
+      "type": "Primary-text edition with translation and commentary; public-domain publication",
+      "scope": "Selected Nippur legal documents; volume also contains non-Nippur material.",
+      "stable": "BE 6/2; https://etana.org/sites/default/files/coretexts/14861.pdf ; catalogue: https://etana.org/node/610",
+      "access": "DIRECT, SELECTED TEXTUAL PASSAGES",
+      "notes": "Translations/transliterations and commentary for nos. 10, 36, 37, 39, 42, 45, 57, 66; controls nos. 4, 24, 28, 29, 51, 64. Introduction pp. 1–2 and selected catalogue entries also inspected. Parsed text accessible. Final-stage screenshots verified printed pp. 12 and 149–152; most other screenshot requests failed. Catalogue dates/numbers for nos. 36, 37, 39, 42, 45 and 57 were checked against those page images. No fresh collation of signs, photographs, or seals. Title-page year 1909 takes precedence over inconsistent repository metadata."
+    },
+    {
+      "id": "S02",
+      "short": "Stone 1976 / OBCN I",
+      "citation": "Stone, Elizabeth C., catalogue, with photographs by Paul E. Zimansky. 1976. Old Babylonian Contracts from Nippur I: Selected Texts from the University Museum, University of Pennsylvania. Oriental Institute Microfiche Archives 1. Chicago: Oriental Institute of the University of Chicago.",
+      "type": "Primary-object catalogue and photographic publication",
+      "scope": "Selected Philadelphia contracts; early excavations; joins with Istanbul texts.",
+      "stable": "DOI 10.83354/dqrs-h420; https://isac.uchicago.edu/publications/old-babylonian-contracts-nippur-selected-texts-university-museum-university",
+      "access": "DIRECT CATALOGUE; NOT THE MICROFICHE IMAGES",
+      "notes": "The accessible 41-page PDF supplies catalogue descriptions, not complete editions. Core entries nos. 19, 28, 29, 32. Printed p. 4 was also checked as a page image; Ni 9258/ARN 102 is a case fragment associated with the no. 28 tablet, not a tablet-to-tablet join. Nos. 43, 45, 69 retained only as discovery leads. OBCN is a local short label here, not a claim about standard sigla."
+    },
+    {
+      "id": "S03",
+      "short": "Goddeeris 2022",
+      "citation": "Goddeeris, Anne. 2022. “Women and Their Weight: Incorporating Weighted Edges in a Network Analysis of the Central Redistributive Household of Nippur (Eighteenth Century BCE).” In Katrien De Graef, Agnès Garcia-Ventura, Anne Goddeeris, and Beth Alpert Nakhai, eds., The Mummy under the Bed: Essays on Gender and Methodology in the Ancient Near East, 369–406. wEdge 1. Münster: Zaphon.",
+      "type": "Specialist research chapter; includes a primary edition and documentary tables",
+      "scope": "A reconstructed late-Rim-Sin administrative dossier from Nippur.",
+      "stable": "Institutional record https://biblio.ugent.be/publication/8756262 ; author-uploaded full text https://www.researchgate.net/publication/361319912_Women_and_Their_Weight_Incorporating_Weighted_Edges_in_a_Network_Analysis_of_the_Central_Redistributive_Household_of_Nippur_Eighteenth_Century_BCE",
+      "access": "DIRECT SELECTED SECTIONS OF AUTHOR-UPLOADED TEXT",
+      "notes": "Read archive/method sections, TMH 10 165 edition p. 385, relevant entries of tables 2–3 pp. 399–402, conclusions pp. 402–403, and bibliography. Institutional record verifies bibliographic identity. Graphs and cuneiform copy not visually verified; no independent replication of network results."
+    },
+    {
+      "id": "S04",
+      "short": "Meinhold 2019",
+      "citation": "Meinhold, Wiebke. 2019. “Prebends and Prebendaries in Old Babylonian Nippur.” Journal of Ancient Near Eastern Religions 19 (1–2): 55–70.",
+      "type": "Specialist research article",
+      "scope": "Old Babylonian Nippur prebends.",
+      "stable": "DOI 10.1163/15692124-12341304; https://brill.com/view/journals/jane/19/1-2/article-p55_5.pdf",
+      "access": "ABSTRACT AND METADATA ONLY",
+      "notes": "Publisher abstract verified. Full article not retrieved. Not used to establish a particular woman’s prebend, a price series, service schedule, or rate of return. The .pdf-looking URL yielded an abstract page, not the article PDF."
+    },
+    {
+      "id": "S05",
+      "short": "Spada 2014",
+      "citation": "Spada, Gabriella. 2014. “Two Old Babylonian Model Contracts.” Cuneiform Digital Library Journal 2014:2. Published 24 March 2014.",
+      "type": "Primary edition with specialist commentary",
+      "scope": "Cotsen 52175 / Education 78, unprovenanced didactic tablet; proposed Larsa sphere.",
+      "stable": "https://cdli.earth/articles/cdlj/2014-2",
+      "access": "DIRECT HTML ARTICLE, SELECTED SECTIONS",
+      "notes": "Sections 1, 2.1, 2.2 and associated notes consulted. Used for genre/provenance control, not counted as a Nippur adoption event. Note 46 also independently identifies BE 6/2 57 within Nippur adoption documentation."
+    },
+    {
+      "id": "S06",
+      "short": "Stone 1987",
+      "citation": "Stone, Elizabeth C. 1987. Nippur Neighborhoods. Studies in Ancient Oriental Civilization 44. Chicago: Oriental Institute of the University of Chicago.",
+      "type": "Archaeological and archival synthesis",
+      "scope": "Nippur residential areas, including TA/TB.",
+      "stable": "DOI 10.83354/czh7-zk49; https://isac.uchicago.edu/publications/nippur-neighborhoods",
+      "access": "PUBLISHER PAGE ONLY; BOOK NOT RETRIEVED",
+      "notes": "Full PDF exceeded the web reader size limit; local download also failed. No specific house/tablet association from this book is claimed in this return."
+    },
+    {
+      "id": "S07",
+      "short": "Goddeeris 2016 / TMH 10",
+      "citation": "Goddeeris, Anne, with a contribution by Ursula Seidl. 2016. The Old Babylonian Legal and Administrative Texts in the Hilprecht Collection Jena. Texte und Materialien der Frau Professor Hilprecht Collection 10, 2 parts. Wiesbaden: Harrassowitz.",
+      "type": "Primary edition and archival study",
+      "scope": "Jena legal and administrative tablets, including Nippur dossiers.",
+      "stable": "ISBN 9783447106511; publisher https://www.harrassowitz-verlag.de/The_Old_Babylonian_Legal_and_Administrative_Texts_in_the_Hilprecht_Collection_Jena/title_91.ahtml ; author record https://www.researchgate.net/publication/317100743_The_Old_Babylonian_legal_and_andministrative_documents_in_the_Hilprecht_Sammlung",
+      "access": "PUBLISHER METADATA / ABSTRACT; NOT FULL VOLUME",
+      "notes": "TMH 10 165 was consulted in its republication in S03, not by pretending to have read this volume. Title is also rendered as “Documents … Hilprecht-Sammlung” in author references; series/ISBN identify the work."
+    },
+    {
+      "id": "S08",
+      "short": "Robertson 1984",
+      "citation": "Robertson, John F. 1984. “The Internal Political and Economic Structure of Old Babylonian Nippur: The Guennakkum and His ‘House’.” Journal of Cuneiform Studies 36 (2): 145–190.",
+      "type": "Specialist archival reconstruction",
+      "scope": "Old Babylonian Nippur administrative institutions.",
+      "stable": "DOI 10.2307/1360054; https://www.journals.uchicago.edu/doi/pdfplus/10.2307/1360054",
+      "access": "METADATA DIRECT; ARGUMENT KNOWN INDIRECTLY THROUGH S03",
+      "notes": "Do not present Goddeeris’s account of Robertson as an independent reading of Robertson. Publisher verifies 1984, not the inconsistent later dates in some aggregator records."
+    },
+    {
+      "id": "S09",
+      "short": "Stone and Owen 1991",
+      "citation": "Stone, Elizabeth C., and David I. Owen, with a contribution by John R. Mitchell. 1991. Adoption in Old Babylonian Nippur and the Archive of Mannum-mešu-liṣṣur. Mesopotamian Civilizations 3. Winona Lake, Indiana: Eisenbrauns.",
+      "type": "Primary editions and archive study",
+      "scope": "Nippur adoption texts and a reconstructed archive.",
+      "stable": "ISBN 9780931464539; library record https://relbib.de/Record/1605121045",
+      "access": "BIBLIOGRAPHIC RECORD; SELECTED CONCORDANCE INDIRECT",
+      "notes": "Not read in full. Yamada 2011 cites BE 6/2 57 at p. 47 of this work. That pointer is a re-edition lead, not a completed comparison."
+    },
+    {
+      "id": "S10",
+      "short": "Yamada 2011",
+      "citation": "Yamada, Shigeo. 2011. “An Adoption Contract from Tell Taban, the Kings of the Land of Hana, and the Hana-style Scribal Tradition.” Revue d’assyriologie et d’archéologie orientale 105: 61–84.",
+      "type": "Primary edition and comparative research",
+      "scope": "Tell Taban/Hana; principal tablet probably fifteenth–fourteenth centuries BCE.",
+      "stable": "DOI 10.3917/assy.105.0061; https://www.researchgate.net/publication/272698645_An_Adoption_Contract_from_Tell_Taban_the_Kings_of_the_Land_of_Hana_and_the_Hana-style_Scribal_Tradition",
+      "access": "DIRECT ABSTRACT AND SELECTED COMPARATIVE PASSAGE",
+      "notes": "Used only to locate the later citation to BE 6/2 57 / Stone and Owen 1991 p. 47. Tell Taban transaction not included in Nippur case count."
+    },
+    {
+      "id": "S11",
+      "short": "CDLI P258016",
+      "citation": "Cuneiform Digital Library Initiative. Catalogue and edition record P258016, CBS 565 and CBS 565a, designated ZA 73, p. 56; BE 6/2 82 (date only). Record consulted 19 September 2026.",
+      "type": "Object catalogue and electronic edition",
+      "scope": "Sippar-Yahrurum (uncertain), not Nippur; Samsuiluna 10/07/03.",
+      "stable": "https://cdli.earth/artifacts/258016",
+      "access": "DIRECT OBJECT RECORD",
+      "notes": "Negative control: a BE 6/2 reference does not make a tablet Nippur evidence. Main edition credited to Claus Wilcke 1983, “Nachlese zu A. Poebels … Teil 1,” ZA 73: 48–66; Wilcke article itself not read."
+    },
+    {
+      "id": "S12",
+      "short": "CDLI P259799 concordance",
+      "citation": "Cuneiform Digital Library Initiative. Update event 104576, entry for BE 06/2, 010 (P259799). Retrieved through the search index on 19 September 2026.",
+      "type": "Catalogue maintenance/concordance record",
+      "scope": "Identifier support for BE 6/2 10.",
+      "stable": "https://cdli.earth/update-events/104576 ; P259799",
+      "access": "INDEXED RECORD EXCERPT ONLY",
+      "notes": "Direct P259799 artifact endpoints failed. Identifier corroboration only; not a modern edition or independent reading of the transaction. BE 6/2 10 remains the controlling citation."
+    },
+    {
+      "id": "S13",
+      "short": "Chiera 1914 / PBS 8/1",
+      "citation": "Chiera, Edward. 1914. Legal and Administrative Documents from Nippur, Chiefly from the Dynasties of Isin and Larsa. Publications of the Babylonian Section 8, part 1. Philadelphia: University Museum.",
+      "type": "Primary edition; discovery lead",
+      "scope": "Nippur legal/administrative corpus.",
+      "stable": "PBS 8/1; https://openlibrary.org/books/OL6573687M/Legal_and_administrative_documents_from_Nippur.",
+      "access": "METADATA ONLY",
+      "notes": "Internet Archive text/PDF routes did not yield a usable edition during this pass. Not part of the directly read corpus."
+    },
+    {
+      "id": "S14",
+      "short": "Çığ, Kızılyay and Kraus 1952 / ARN",
+      "citation": "Çığ, Muazzez, Hatice Kızılyay, and F. R. Kraus. 1952. Altbabylonische Rechtsurkunden aus Nippur. Istanbul: Millî Eğitim Basımevi.",
+      "type": "Primary edition; case-fragment concordance source",
+      "scope": "Istanbul Nippur legal tablets.",
+      "stable": "ARN, especially no. 102; cited through S02",
+      "access": "INDIRECT CONCORDANCE ONLY",
+      "notes": "S02 identifies Ni 9258 / ARN 102 as the case fragment associated with the UM 29-16-141 tablet (OBCN I 28). It is not reported as a tablet-to-tablet join. The book was not examined independently."
+    },
+    {
+      "id": "S15",
+      "short": "Huber-Vulliet 2010",
+      "citation": "Huber-Vulliet, Fabienne. 2010. “Un festival nippurite à l’époque paléobabylonienne.” In Heather D. Baker, Eleanor Robson, and Gábor Zólyomi, eds., Your Praise Is Sweet: A Memorial Volume for Jeremy Black, 125–150. London: British Institute for the Study of Iraq.",
+      "type": "Specialist study; discovery lead",
+      "scope": "Old Babylonian Nippur cult and distribution.",
+      "stable": "Volume repository https://discovery.ucl.ac.uk/id/eprint/1409045/",
+      "access": "BIBLIOGRAPHIC LEAD; CHAPTER NOT READ",
+      "notes": "Potential route to actual allocation/service evidence. No distribution quantities or personnel conclusions attributed to this unread chapter."
+    },
+    {
+      "id": "S16",
+      "short": "Project packet",
+      "citation": "MESOPOTAMIA_RES-0001_RESEARCH_DISPATCH, RES-0001G task package: shared context, evidence protocol, source starting points, return template, canonical Seed copy, and task brief.",
+      "type": "User-supplied project authority",
+      "scope": "Question, limits, and required return structure; not historical evidence.",
+      "stable": "Original local archive MESOPOTAMIA_RES-0001_RESEARCH_DISPATCH.zip; seven task-package files retained in inputs/",
+      "access": "DIRECT",
+      "notes": "Advisory research only. No canonical state changed and no institutional mechanics proposed."
+    }
+  ]
+}
