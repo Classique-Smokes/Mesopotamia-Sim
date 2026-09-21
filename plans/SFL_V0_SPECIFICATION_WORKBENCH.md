@@ -139,45 +139,23 @@ The world must be rich enough for different proxies to disagree: co-residence al
 
 ## Pass B — Lower-level social fabric and minimal individual agency
 
-**Question:** What can people actually know, want, propose, and do before a household exists?
+**Status:** WORKING-CONVERGED.
 
-### Must answer
+**v0 result:**
 
-B1. Which relation/arrangement instances exist in v0 and what do they mean independently of household recognition?
+- Person objective state: stable identity, male/female sex, grain, NeedsGrain, residence, marriage status/history, and explicit relation references.
+- Directed attitude: -100..+100; kinship (parent/child, sibling only) amplifies ordinary attitude-based choice by 1.5x but is excluded from marriage.
+- Marriage: groom-proposed, proposal carries dowry; household-mediated route pays dowry from bride household to groom and creates groom -> household-head favour; mutual strong-like bypass avoids household settlement; no-household bride cannot marry without bypass; close kin ineligible.
+- Grain: Farm +4; consume 1/cycle; typical start 4-8; missed consumption creates NeedsGrain; NeedsGrain actors cannot Farm.
+- Debt: quantified grain claim; no interest/due date; partial repayment allowed; keep 2-grain reserve before repayment.
+- Favour: one discrete action-oriented claim per ordered pair; explicit bargain or strong-like reciprocity; call-in cannot compel marriage/impossible acts; favour fulfilment cannot create another favour; reciprocal favours may cancel.
+- Transfers remain semantically distinct: gift, loan, explicit benefit-for-favour, reciprocal help.
+- Attitude events use fixed +5/+10/-5/-10/-20 magnitudes; positive natural decay is twice negative repair (2 vs 1 toward zero per decay event).
+- Residence change is proposal-based; strong positive relation gives weak co-residence incentive, marriage stronger; counterpart consent is sufficient in v0.
+- One voluntary initiative per actor per decision cycle; responses do not consume it; deterministic context-sensitive candidate generation and transparent scoring; no v0 randomness.
+- No Pass-B subjective state beyond attitude. Information/recognition begins in Pass C.
 
-Candidate domains to evaluate, not assume:
-- support/care obligation;
-- contribution or provision commitment;
-- residence/contact;
-- resource claim/use;
-- explicit multi-party coordination arrangement.
-
-B2. Which relation properties must have history: participants/roles, terms, validity, status, origin/predecessor?
-
-B3. What minimal objective individual state affects choices?
-
-B4. What minimal subjective state affects choices?
-
-B5. What persistent goals/concerns are needed for v0, and what can remain immediate decision context?
-
-B6. What is the smallest action/proposal repertoire that can:
-- fulfill/refuse/withdraw support;
-- request support;
-- participate in coordination;
-- respond to recognized collective/role claims;
-- wait/do nothing?
-
-B7. Which choices are deterministic for the reference lab and where, if anywhere, is randomness semantically necessary?
-
-B8. What makes an action physically impossible versus socially disfavored, norm-violating, or merely unattractive?
-
-### Required negative control
-
-The action generator must not contain privileged actions such as “form household” or “become household” that simply script the desired aggregate.
-
-### Deliverable
-
-**v0 Person / Relation / Action Model**.
+**Cross-pass dependencies:** household authority/resource grounding for mediated marriage -> D/E; decay cadence -> F.
 
 ---
 
