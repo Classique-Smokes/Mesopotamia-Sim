@@ -1,6 +1,6 @@
 # RES-0001 — Old Babylonian Nippur Household Foundations
 
-**Status:** DURABLE ADVISORY RESEARCH ARCHIVE / NON-AUTHORITATIVE
+**Status:** ADVISORY RESEARCH INDEX / ORIGINAL BINARY PAYLOADS PENDING GIT INGESTION
 
 This directory preserves the recoverable outputs of the eight independent RES-0001 research streams commissioned under `tasks/research/RES-0001_OLD_BABYLONIAN_NIPPUR/`.
 
@@ -23,20 +23,7 @@ The research anchor is **Old Babylonian Nippur, approximately 1900–1600 BCE**,
 
 ## Storage
 
-The recovery was performed through the GitHub connector, whose text interface does not accept arbitrary local binary files. The corpus is preserved in the least-lossy form available:
-
-- A, B, D, E — original return ZIP archives, byte-for-byte.
-- C, F — primary result report preserved as gzip-compressed Markdown.
-- G, H — primary result report preserved as Brotli-compressed bytes, base64 encoded and split into numbered text parts for connector-safe storage.
-
-To restore G or H locally:
-
-```sh
-cat archive/RES-0001G_RESULT.md.br.b64.part* | base64 -d | brotli -d > RES-0001G_RESULT.md
-cat archive/RES-0001H_RESULT.md.br.b64.part* | base64 -d | brotli -d > RES-0001H_RESULT.md
-```
-
-The original task/program packets remain under `tasks/research/RES-0001_OLD_BABYLONIAN_NIPPUR/`.
+The original A–H return ZIPs have been recovered and hash-verified, but are **not yet present on `main`**. The current GitHub connector truncates binary/base64 uploads before even the smallest archive completes. Target paths and source hashes remain recorded in `MANIFEST.md`.
 
 ## Reconciliation status
 
