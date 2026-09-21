@@ -15,6 +15,8 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - Director-approved response-policy / orphan-breach closure repairs.
 - TRES-0009 post-repair closure review: no remaining Stage-3 semantic or architectural blocker.
 - Complete canonical verification package: `plans/verification/SFL_V0/`.
+- TRES-0010 Wave A / Wave B / B2 research and adjudication completed.
+- Director-approved TRES-0010 B2 Slice-1 semantic repairs promoted losslessly into `SPEC-SFL-0001`, assumptions, and canonical verification; promotion audit passed 30/30 checks.
 
 ## Active
 
@@ -24,12 +26,13 @@ Prepared implementation packet — dispatch blocked:
 
 - `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
 
-Active pre-implementation research gate:
+Active pre-implementation closure gate:
 
 - `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
 - `research/technical/TRES-0010/README.md`
 - Wave-B adjudication: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/00_WAVE_B_README.md`
 - B2 targeted resolution: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/B2/00_B2_README.md`
+- semantic promotion reconciliation/audit: `research/technical/TRES-0010/SEMANTIC_PROMOTION_RECONCILIATION.md`, `research/technical/TRES-0010/SEMANTIC_PROMOTION_LOSSLESS_AUDIT.md`
 
 Slice 1 objective:
 
@@ -70,13 +73,12 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Run the three TRES-0010 B2 decision-support tasks from the frozen B2 baseline.
-2. Reconcile B2 recommendations against accepted authority; present consequential semantic choices to the Director.
-3. Promote approved Slice-1 semantic repairs losslessly and update verification cards.
-4. Materialize the minimal protected Slice-1 acceptance/applicability authority and amend IMP-0001/task taxonomy.
-5. Carry confirmed later-slice gaps into an explicit deferred ledger.
-6. Run one final TRES-0010 closure audit.
-7. Reassess provisional process lessons and prepare the separate Master Architect rulebook refactor only after TRES-0010 closure.
-8. Record dispatch/no-dispatch conclusion; only then release IMP-0001.
+1. Mechanically enumerate current Slice-1 action shapes against the approved response-closed CallFavor predicate.
+2. Author, freeze, and independently review the minimal `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md`.
+3. Amend IMP-0001 authority taxonomy, applicability/completion evidence, and local C# guardrails against the frozen manifest.
+4. Carry confirmed later-slice semantic/verification gaps into an explicit deferred ledger.
+5. Run one final TRES-0010 closure audit.
+6. Reassess provisional process lessons and prepare the separate Master Architect rulebook refactor only after TRES-0010 closure.
+7. Record dispatch/no-dispatch conclusion; only then release IMP-0001.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
