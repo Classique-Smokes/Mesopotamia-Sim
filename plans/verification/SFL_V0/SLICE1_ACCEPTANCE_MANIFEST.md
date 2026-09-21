@@ -242,9 +242,17 @@ Response meanings/results and internal mutation/effect helpers are not payload a
 | S1-BND-ATT-NEUTRAL-LIKE | +25/+26/+27 | N-A | — | No named Slice-1 categorical action gate depends on this band |
 | S1-BND-ATT-SAT | beyond +/-100 | REQUIRED | boundary card | Attitude invariant |
 | S1-BND-ATT-MIXED | mixed-sign direct causes near both bounds | REQUIRED | boundary/permutation | Director-approved D1 |
-| S1-BND-GRAIN-ACTION | negative / 0 / 1 / representative non-integral grain action amount | REQUIRED | validation matrix | Director-approved D4 |
-| S1-BND-REPAY-AMOUNT | remaining-1 / remaining / remaining+1 (where remaining>1) | REQUIRED | validation matrix | Director-approved D4 |
-| S1-BND-RESERVE | grain 1 / 2 / 3 | REQUIRED | feasibility boundary | Debt/transfer reserve |
+| S1-D4-GRAIN-GIFT-OFFER | OfferGift grain-transfer term: zero/negative/non-integral invalid; positive integer reaches ordinary action gates | REQUIRED | validation matrix | Director-approved D4; explicit ingress coverage |
+| S1-D4-GRAIN-GIFT-REQUEST | RequestGiftOrHelp grain-transfer term: zero/negative/non-integral invalid; positive integer reaches ordinary action gates | REQUIRED | validation matrix | Director-approved D4; distinct request ingress |
+| S1-D4-GRAIN-LOAN-OFFER | OfferLoan grain amount: zero/negative/non-integral invalid; positive integer reaches ordinary action gates | REQUIRED | validation matrix | Director-approved D4; explicit ingress coverage |
+| S1-D4-GRAIN-LOAN-REQUEST | RequestLoan grain amount: zero/negative/non-integral invalid; positive integer reaches ordinary action gates | REQUIRED | validation matrix | Director-approved D4; distinct request ingress |
+| S1-D4-GRAIN-REPAY-DIRECT | direct RepayDebt amount: D4-invalid terms rejected before feasibility/commit; positive integer reaches repayment-specific gates | REQUIRED | validation matrix | Director-approved D4; direct repayment ingress |
+| S1-D4-GRAIN-BFF-BENEFIT | required Slice-1 BFF grain-transfer instantiation: every grain quantity in/referenced by the specified material-benefit term obeys D4 before target response; raw scalar amount field not required | REQUIRED | executable or structural validation audit | D4 applied schema-neutrally to canonical 1-grain BFF instantiation |
+| S1-D4-GRAIN-RMRH-BENEFIT | required Slice-1 RMRH grain-transfer instantiation: every grain quantity in/referenced by the help/material-benefit term obeys D4 before target response; raw scalar amount field not required | REQUIRED | executable or structural validation audit | D4 applied schema-neutrally to canonical 1-grain RMRH instantiation |
+| S1-D4-GRAIN-MARRIAGE-DOWRY-DIRECT | ProposeMarriage proposed-dowry term on direct-bypass proposal shape: invalid grain term rejected before bride response; positive integer may proceed; no dowry transfer on bypass | REQUIRED | validation matrix | D4 term validity without implementing household-mediated dowry |
+| S1-D4-GRAIN-CALLFAVOR-REPAY-INNER | CallFavor(RepayDebt(...)) inner amount: zero/negative/non-integral/over-remaining rejects outer call before Fulfil/Refuse response; valid term may proceed | REQUIRED | nested validation matrix | D4 + repayment bound at distinct wrapped ingress |
+| S1-BND-REPAY-AMOUNT | remaining-1 / remaining / remaining+1 (where remaining>1), evidenced for direct and nested called-favour repayment ingresses | REQUIRED | validation matrix | Director-approved D4 repayment-specific bound |
+| S1-BND-RESERVE | RepayDebt debtor resulting grain 1 / 2 / 3 | REQUIRED | feasibility boundary | Debt repayment reserve only (§3.3); no generic interpersonal-transfer reserve |
 | S1-BND-NEED | NeedsGrain clearing grain 0 / 1 | REQUIRED | maintenance boundary | Slice-1 need |
 | S1-BND-DECAY | immediately before / at / after 5-cycle cadence | REQUIRED | temporal boundary | ASM-0002/0007 |
 | S1-BND-DEBT-DUE | before N+3 / after N+3 decisions / later | REQUIRED | temporal boundary | ASM-0008 |
@@ -252,9 +260,10 @@ Response meanings/results and internal mutation/effect helpers are not payload a
 | S1-BND-FAVOUR-CARD | first favour / additional same ordered pair | REQUIRED | cardinality | Favour invariant |
 | S1-BND-FAVOUR-MEANING | full pair slot: ExplicitBenefitForFavor vs RMRH | REQUIRED | causal contrast | Director-approved D5 |
 | S1-BND-RESIDENCE-CARD | one vs multiple accepted same-person Residence changes | REQUIRED | conflict boundary | Director-approved D2 |
-| S1-BND-HOUSEHOLD-PROVISION | provision capacity/needs contributor boundaries | DEFERRED | — | Household provision outside Slice 1 |
+| S1-BND-HOUSEHOLD-PROVISION | household-provision contributor reserve / NeedsGrain contributor / collective capacity boundaries | DEFERRED | — | Household provision outside Slice 1 |
+| S1-BND-PROVISION-RECONSIDERATION | before 3 full cycles / exactly 3 with no relevant context change / exactly 3 plus relevant context change | DEFERRED | — | Household provision/head reconsideration outside Slice 1 |
 | S1-BND-FORMATION | formation/participation/lifecycle boundaries | DEFERRED | — | Household formation outside Slice 1 |
-| S1-BND-LINEAGE | lineage freshness/ambiguity boundaries | DEFERRED | — | Lineage outside Slice 1 |
+| S1-BND-LINEAGE | lineage freshness / predecessor lifecycle-state (one survives vs both Dissolved) / predecessor-source ambiguity boundaries | DEFERRED | — | Lineage outside Slice 1 |
 
 # PART F — Metamorphic obligations
 
@@ -290,8 +299,8 @@ Response meanings/results and internal mutation/effect helpers are not payload a
 | S1-MUT-10 | count household support as fresh lineage evidence | DEFERRED | Lineage absent |
 | S1-MUT-11 | household expenditure without backing | DEFERRED | Provision absent |
 | S1-MUT-12 | pool/duplicate provision grain or double-debit contributor | DEFERRED | Household provision absent |
-| S1-MUT-13A | penetrate protected personal reserve in Slice-1 debt/transfer feasibility | REQUIRED | Lower-level material semantics |
-| S1-MUT-13B | draw provision from NeedsGrain contributor | DEFERRED | Provision absent |
+| S1-MUT-13A | RepayDebt commits while leaving debtor below the accepted §3.3 two-grain floor | REQUIRED | Debt-repayment-specific reserve; no generic transfer reserve |
+| S1-MUT-13B | household provision penetrates contributor protected reserve or draws from a NeedsGrain contributor | DEFERRED | Household provision absent |
 | S1-MUT-14 | head commands out-of-scope personal action | DEFERRED | Head role absent |
 | S1-MUT-15 | majority instead of unanimous head appointment | DEFERRED | Head appointment absent |
 | S1-MUT-16 | skip commit-time revalidation | REQUIRED | Central resolver Slice 1 |
@@ -348,7 +357,7 @@ The following bundles are conjunctive completion evidence; passing only one row 
 - **D1 direct attitude composition:** `S1-097-DIRECT-BATCH-POS`, `S1-097-DIRECT-BATCH-NEG`, `S1-074-DIRECT-BATCH`, `S1-META-10`, `S1-MUT-31`.
 - **D2 Residence conflict:** `S1-096-COMPETE`, `S1-103-RESIDENCE`, `S1-081`, `S1-META-11`, `S1-MUT-32`.
 - **D3 CallFavor closure:** all `S1-094-*` rows, `S1-102`, `S1-098-CALLFAVOR-INIT`, `S1-MUT-34`, `S1-GLOBAL-CALLFAVOR-MAP`.
-- **D4 grain domain:** `S1-092-AMOUNT-VALIDITY`, `S1-BND-GRAIN-ACTION`, `S1-BND-REPAY-AMOUNT`, `S1-MUT-33`.
+- **D4 grain domain:** `S1-092-AMOUNT-VALIDITY`, all `S1-D4-GRAIN-*` ingress rows, `S1-BND-REPAY-AMOUNT`, and `S1-MUT-33`. The BFF/RMRH ingress rows are schema-neutral: they test the required grain-transfer instantiation without requiring a raw scalar action-field shape.
 - **D5 explicit bargain atomicity:** `S1-091-BFF-POS`, `S1-093-BFF-POS`, `S1-093-BFF-FULL`, `S1-093-BFF-RACE`, `S1-093-RMRH-FULL`, `S1-BND-FAVOUR-MEANING`, `S1-MUT-35`.
 
 # PART I — Oracle independence
