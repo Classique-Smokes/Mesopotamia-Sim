@@ -687,4 +687,82 @@
       "scope": "A reconstructed late-Rim-Sin administrative dossier from Nippur.",
       "stable": "Institutional record https://biblio.ugent.be/publication/8756262 ; author-uploaded full text https://www.researchgate.net/publication/361319912_Women_and_Their_Weight_Incorporating_Weighted_Edges_in_a_Network_Analysis_of_the_Central_Redistributive_Household_of_Nippur_Eighteenth_Century_BCE",
       "access": "DIRECT SELECTED SECTIONS OF AUTHOR-UPLOADED TEXT",
-      "notes": "Read archive/method sections, TMH 10 165 edition p. 385, relevant entries of tables 2–3 pp. 399–402, conclusions pp. 402–403, and bibliography. Institutional record verifies bibliographic identity. Graphs and cuneiform copy not visually verified; no independent replication of network result
+      "notes": "Read archive/method sections, TMH 10 165 edition p. 385, relevant entries of tables 2–3 pp. 399–402, conclusions pp. 402–403, and bibliography. Institutional record verifies bibliographic identity. Graphs and cuneiform copy not visually verified; no independent replication of network results."
+    },
+    {
+      "id": "S04",
+      "short": "Meinhold 2019",
+      "citation": "Meinhold, Wiebke. 2019. “Prebends and Prebendaries in Old Babylonian Nippur.” Journal of Ancient Near Eastern Religions 19 (1–2): 55–70.",
+      "type": "Specialist research article",
+      "scope": "Old Babylonian Nippur prebends.",
+      "stable": "DOI 10.1163/15692124-12341304; https://brill.com/view/journals/jane/19/1-2/article-p55_5.pdf",
+      "access": "ABSTRACT AND METADATA ONLY",
+      "notes": "Publisher abstract verified. Full article not retrieved. Not used to establish a particular woman’s prebend, a price series, service schedule, or rate of return. The .pdf-looking URL yielded an abstract page, not the article PDF."
+    },
+    {
+      "id": "S05",
+      "short": "Spada 2014",
+      "citation": "Spada, Gabriella. 2014. “Two Old Babylonian Model Contracts.” Cuneiform Digital Library Journal 2014:2. Published 24 March 2014.",
+      "type": "Primary edition with specialist commentary",
+      "scope": "Cotsen 52175 / Education 78, unprovenanced didactic tablet; proposed Larsa sphere.",
+      "stable": "https://cdli.earth/articles/cdlj/2014-2",
+      "access": "DIRECT HTML ARTICLE, SELECTED SECTIONS",
+      "notes": "Sections 1, 2.1, 2.2 and associated notes consulted. Used for genre/provenance control, not counted as a Nippur adoption event. Note 46 also independently identifies BE 6/2 57 within Nippur adoption documentation."
+    },
+    {
+      "id": "S06",
+      "short": "Stone 1987",
+      "citation": "Stone, Elizabeth C. 1987. Nippur Neighborhoods. Studies in Ancient Oriental Civilization 44. Chicago: Oriental Institute of the University of Chicago.",
+      "type": "Archaeological and archival synthesis",
+      "scope": "Nippur residential areas, including TA/TB.",
+      "stable": "DOI 10.83354/czh7-zk49; https://isac.uchicago.edu/publications/nippur-neighborhoods",
+      "access": "PUBLISHER PAGE ONLY; BOOK NOT RETRIEVED",
+      "notes": "Full PDF exceeded the web reader size limit; local download also failed. No specific house/tablet association from this book is claimed in this return."
+    },
+    {
+      "id": "S07",
+      "short": "Goddeeris 2016 / TMH 10",
+      "citation": "Goddeeris, Anne, with a contribution by Ursula Seidl. 2016. The Old Babylonian Legal and Administrative Texts in the Hilprecht Collection Jena. Texte und Materialien der Frau Professor Hilprecht Collection 10, 2 parts. Wiesbaden: Harrassowitz.",
+      "type": "Primary edition and archival study",
+      "scope": "Jena legal and administrative tablets, including Nippur dossiers.",
+      "stable": "ISBN 9783447106511; publisher https://www.harrassowitz-verlag.de/The_Old_Babylonian_Legal_and_Administrative_Texts_in_the_Hilprecht_Collection_Jena/title_91.ahtml ; author record https://www.researchgate.net/publication/317100743_The_Old_Babylonian_legal_and_andministrative_documents_in_the_Hilprecht_Sammlung",
+      "access": "PUBLISHER METADATA / ABSTRACT; NOT FULL VOLUME",
+      "notes": "TMH 10 165 was consulted in its republication in S03, not by pretending to have read this volume. Title is also rendered as “Documents … Hilprecht-Sammlung” in author references; series/ISBN identify the work."
+    },
+    {
+      "id": "S08",
+      "short": "Robertson 1984",
+      "citation": "Robertson, John F. 1984. “The Internal Political and Economic Structure of Old Babylonian Nippur: The Guennakkum and His ‘House’.” Journal of Cuneiform Studies 36 (2): 145–190.",
+      "type": "Specialist archival reconstruction",
+      "scope": "Old Babylonian Nippur administrative institutions.",
+      "stable": "DOI 10.2307/1360054; https://www.journals.uchicago.edu/doi/pdfplus/10.2307/1360054",
+      "access": "METADATA DIRECT; ARGUMENT KNOWN INDIRECTLY THROUGH S03",
+      "notes": "Do not present Goddeeris’s account of Robertson as an independent reading of Robertson. Publisher verifies 1984, not the inconsistent later dates in some aggregator records."
+    },
+    {
+      "id": "S09",
+      "short": "Stone and Owen 1991",
+      "citation": "Stone, Elizabeth C., and David I. Owen, with a contribution by John R. Mitchell. 1991. Adoption in Old Babylonian Nippur and the Archive of Mannum-mešu-liṣṣur. Mesopotamian Civilizations 3. Winona Lake, Indiana: Eisenbrauns.",
+      "type": "Primary editions and archive study",
+      "scope": "Nippur adoption texts and a reconstructed archive.",
+      "stable": "ISBN 9780931464539; library record https://relbib.de/Record/1605121045",
+      "access": "BIBLIOGRAPHIC RECORD; SELECTED CONCORDANCE INDIRECT",
+      "notes": "Not read in full. Yamada 2011 cites BE 6/2 57 at p. 47 of this work. That pointer is a re-edition lead, not a completed comparison."
+    },
+    {
+      "id": "S10",
+      "short": "Yamada 2011",
+      "citation": "Yamada, Shigeo. 2011. “An Adoption Contract from Tell Taban, the Kings of the Land of Hana, and the Hana-style Scribal Tradition.” Revue d’assyriologie et d’archéologie orientale 105: 61–84.",
+      "type": "Primary edition and comparative research",
+      "scope": "Tell Taban/Hana; principal tablet probably fifteenth–fourteenth centuries BCE.",
+      "stable": "DOI 10.3917/assy.105.0061; https://www.researchgate.net/publication/272698645_An_Adoption_Contract_from_Tell_Taban_the_Kings_of_the_Land_of_Hana_and_the_Hana-style_Scribal_Tradition",
+      "access": "DIRECT ABSTRACT AND SELECTED COMPARATIVE PASSAGE",
+      "notes": "Used only to locate the later citation to BE 6/2 57 / Stone and Owen 1991 p. 47. Tell Taban transaction not included in Nippur case count."
+    },
+    {
+      "id": "S11",
+      "short": "CDLI P258016",
+      "citation": "Cuneiform Digital Library Initiative. Catalogue and edition record P258016, CBS 565 and CBS 565a, designated ZA 73, p. 56; BE 6/2 82 (date only). Record consulted 19 September 2026.",
+      "type": "Object catalogue and electronic edition",
+      "scope": "Sippar-Yahrurum (uncertain), not Nippur; Samsuiluna 10/07/03.",
+      "stable": "http
