@@ -40,7 +40,7 @@ Assertions:
 - recorded scores are Accept=100, Decline=0;
 - B selects Accept;
 - if no later conflict invalidates it, the help transfer commits;
-- accepted-help attitude consequence applies A -> B? **No:** the accepted voluntary help event's defined direction is recipient -> giver, so A -> B +10;
+- accepted-help attitude consequence applies recipient A -> giver B +10;
 - B's personal initiative accounting is unchanged by the response.
 
 ### Run D — decline profile
