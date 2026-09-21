@@ -242,4 +242,40 @@ Twenty-five direct digital ancient-text records, one quarantined association, an
 
 **Object:** UM 55-21-162; [P257341](https://cdli.earth/P257341). **Date:** Samsuiluna 10, month VIII, day 11.  
 **Context:** Nippur; 2N-T0772; TB 75, E 2. **Genre:** Sale of Nuska-temple offices with associated field; tablet and envelope.  
-**Access
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian wording; catalogue labels Akkadian.  
+**Passages / forms:** envelope obv. 1–14; tablet obv. 1–12; nam-gudu₄; nam-lunga; é Nuska; mu-a u₄ 5-kam; a-šà IGI-bi; bala gub-ba.  
+**Observation:** Five annual days of cult-office rights and an associated field occur in a sale instrument.  
+**Limit:** Envelope supports restorations in the tablet; this is one transaction. Exact field terminology/function and personal execution of duties require specialist verification.  
+**Design status:** NO DESIGN DECISION
+
+## Q01 — ZA 97 (2007), 1–25; CBS 11324
+
+**Object:** CBS 11324; [P230716](https://cdli.earth/P230716). **Date:** Old Babylonian per edition; CDLI period field blank.  
+**Context:** Nippur; no room recorded. **Genre:** Model court-case collection per edition/catalogue.  
+**Access / language:** QUARANTINED_TEXT_METADATA_ONLY; Sumerian, but current displayed transcription is quarantined.  
+**Passages / forms:** Edition identification/abstract and catalogue only for substantive use; No clause-level forms admitted.  
+**Observation:** Publication identifies three model court cases; current CDLI text begins with a Nippur/Warad-Sin passage that appears inconsistent with that identification.  
+**Limit:** Do not use the displayed clauses as a transcription of the model cases until checked against Klein–Sharlach 2007 or OBMC. This is an apparent mismatch, not a certified database correction.  
+**Design status:** NO DESIGN DECISION
+
+## T25 — PBS 8/2, 173
+
+**Object:** CBS 07178; [P230709](https://cdli.earth/P230709). **Date:** Old Babylonian; no dated transaction.  
+**Context:** Nippur; excavation room not supplied. **Genre:** Didactic/model court-case witness.  
+**Access / language:** DIRECT_DIGITAL_TEXT; Sumerian, with pu-uh₂-ru-um for an assembly.  
+**Passages / forms:** obv. 1–11; rev. 2′–13′; left edge 1; dam; dumu-munus; ARAD₂ + personal name; nu-eš₃; pu-uh₂-ru-um nibru-ka; di dab₅-ba.  
+**Observation:** A school witness uses spouse, descent, service/status and assembly language in a narrated court case.  
+**Limit:** The marriage/status relationships belong to the narrated case; this witness is not counted as an independent contemporary legal event. School transmission need not mean every element was invented.  
+**Design status:** NO DESIGN DECISION
+
+## L01 — EEN p. 61, CBS 6098; Veldhuis 2000 pp. 385–387 cited by Spada
+
+**Object:** CBS 06098 + N 3960 + N 5128; [P229166](https://cdli.earth/P229166). **Date:** Old Babylonian per current catalogue; older Middle Babylonian attribution noted.  
+**Context:** Nippur; no excavation room supplied. **Genre:** School tablet with model contract on obverse and lexical text on reverse.  
+**Access / language:** METADATA_ONLY_FOR_LEGAL_CONTENT; Sumerian.  
+**Passages / forms:** Catalogue description; current displayed reverse only; No model-contract clauses admitted.  
+**Observation:** The catalogue reports a repeated exercise contract, multiplication table and lexical material on one tablet.  
+**Limit:** The current displayed transliteration is of the lexical reverse, not the legal obverse. A link to this record is therefore not proof that the model contract has been consulted.  
+**Concordance:** P279582 and P278917 are retired identifiers.  
+**Design status:** NO DESIGN DECISION
+
