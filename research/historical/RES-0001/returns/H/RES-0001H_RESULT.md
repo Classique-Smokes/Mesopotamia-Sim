@@ -182,3 +182,121 @@ ner or scribe. | HIGH |
 | nam-ugula é; nam-ì-du₈; nam-bur-šu-ma | Sumerian office spellings | House-supervision, gatekeeping and another technical office | [SAOC 44, 70, envelope obv. 1–5](https://cdli.earth/P257344) | Several office designations bundled in one transfer. | Opening/institutional names damaged; bur-šu-ma not resolved. | Do not invent a modern hierarchy or function for an uncertain title. | MODERATE |
 | nam-gudu₄; nam-lunga; é Nuska | Sumerian office spellings | Cult office; brewing-related office; Nuska temple | [SAOC 44, 71, envelope obv. 1–5](https://cdli.earth/P257341) | Office rights, annual days and field in one instrument. | Full duty set and associated field expression uncertain. | Not simply a priest’s or brewer’s modern employment contract. | MODERATE |
 | mu-a u₄ ...-kam; bala gub-ba | Sumerian | Days per year; established turn | [SAOC 44, 70, envelope obv. 4–5](https://cdli.earth/P257344); [SAOC 44, 71, envelope obv. 3–5](https://cdli.earth/P257341) | Temporal entitlement/rotation language. | Actual performance and income not documented by the formula. | A time-share of rights is not a headcount or wage rate. | HIGH |
+| nu-eš₃; agrig | Sumerian title spellings | Cult title; administrative title | [SAOC 44, 43, buyer](https://cdli.earth/P283584); [SAOC 44, 65, borrower](https://cdli.earth/P257325) | Appositions identifying parties. | Precise capacity in the transaction is unstated. | Title-holder is not automatically an institutional agent. | MODERATE |
+| rabiānum; nimgir; šabra; šagina | Akkadian / Sumerian title spellings | Local official; herald; administrator; military title | [SAOC 44, 25, rev. 11–16](https://cdli.earth/P224340); [SAOC 44, 20, witness list](https://cdli.earth/P224335) | Titles attached to named participants/witnesses. | Authority, jurisdiction and delegated capacity are not specified. | “Mayor,” “manager,” or “police” can import modern powers. | MODERATE |
+| dub-sar; bur-gul; aga-us₂; sanga | Sumerian title spellings | Scribe; stone-cutter; attendant/soldier; cult official | [SAOC 44, 46, witnesses](https://cdli.earth/P283588); [SAOC 44, 53, rev. witnesses](https://cdli.earth/P224357) | Different professional/service descriptions. | A witness list is not an organizational chart. | Occupation does not exhaust status, kinship or household relations. | MODERATE |
+| pu-uh₂-ru-um nibru-ka; di dab₅-ba | Akkadian puḫrum within Sumerian wording | Nippur assembly; judgment/case decided | [PBS 8/2, 173, rev. 8′–13′; left edge](https://cdli.earth/P230709) | Collective judicial authority in a school narrative. | No independently established proceedings/date in this witness. | Not a modern jury or parliament; not an observed court roster. | MODERATE |
+
+#### F. Written language and legal expression
+
+| Term/form | Language | Literal/common gloss | Attested Nippur contexts | Semantic range | Disputed points | Misleading English assumptions to avoid | Confidence |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ana; kīma; il-qé-e-ma; i-na-di-in | Akkadian | To/for; like/in exchange; took-and; gives/will give | [SAOC 44, 20, tablet/envelope exchange clauses](https://cdli.earth/P224335) | Akkadian syntax and finite verbs alongside logograms. | Different surfaces must be compared rather than homogenized. | Sumerian signs do not by themselves make every clause Sumerian. | HIGH |
+
+## 5. Disagreement, ambiguity, and source limitations
+
+### 5.1 Legal reconstructions that remain contested
+
+**The field in PBS 8/2, 116.** The relevant possessive and the relation between support, alienation and inheritance have produced different reconstructions. As presented by Van Wyk, the issue includes whether the restriction concerns the brothers’ property as security for maintenance or the sister’s field and its disposition during her lifetime. The agreement does not thereby transparently become a Roman-law usufruct or modern life estate. This return preserves the alternatives rather than settling the dispute from a digital transliteration alone. [T03 rev. 1–5; S07, discussion of PBS 8/2, 116; Stone 1982 encountered indirectly.]
+
+**The BE 6/2, 23 dossier.** Van Wyk’s 2019 study surveys reconstructions of how Narubtum, Migir-Enlil, Ur-Pabilsaga and Naramtum were related and how the property arrangement operated. Earlier and later readings differ on such matters as Migir-Enlil’s identification, who adopted whom and the significance of related documents. Van Wyk proposes a particular hybrid use of adoption and division templates. These are competing reconstructions reported through a consulted study, not three independent original studies personally checked here. No family tree or decisive claim for BE 6/2, 23 is entered in the direct-text register. [S08, opening textual discussion and pp. 17–20.]
+
+**“Fictional adoption.”** A property effect does not, as a matter of reasoning, demonstrate that affiliation was socially unreal; nor does kinship language demonstrate affection, co-residence or a particular motive. Classification must be justified from the whole document and relevant context. The current evidence supports that caution more securely than any comprehensive alternative account of adoption purposes. [S09; direct contextual comparisons T01–T02.]
+
+### 5.2 Damaged readings, metadata and concordances
+
+The report’s most consequential flagged cases are summarized here; the audit file records them in more detail. These are **working discrepancies**, not certified corrections to CDLI or new editions.
+
+| Record | Problem | Treatment |
+|---|---|---|
+| T04, SAOC 44, 3 | Catalogue month number conflicts with written month designation. | Retain Sin-iddinam 7; do not use the month in chronological argument. |
+| T09, SAOC 44, 14 | Day 23 versus legacy day 13 notation. | Use year/month; leave day conflict visible. |
+| T10, SAOC 44, 15 | Regnal/month metadata and damaged affiliation wording are inconsistent. | No precise date or reconstructed genealogy. |
+| T11, SAOC 44, 17 | Two object numbers and tablet/envelope; X 1 versus nearby XA 1 labels. | One transaction; preserve exact level notation. |
+| T16, SAOC 44, 42 | Body and seal patronymic readings require contextual reconciliation. | No automatic family-tree identification. |
+| T17, SAOC 44, 43 | Day 18 in text versus 19 in catalogue. | Do not choose silently. |
+| T18, SAOC 44, 45 | Generic sale label versus exchange clauses. | Analyze the clauses; do not merge with no. 46. |
+| T20, SAOC 44, 53 | Release expression restored/query-marked; document/marriage wording damaged. | MODERATE for narrow temporal/status distinction; LOW for exact restored word. |
+| T21, SAOC 44, 65 | Catalogue “grain loan” versus silver clauses; legacy date marks intercalation. | Record UM 55-21-129, Hammurapi 31, TB 200 / II 2; preserve commodity/date caveats. |
+| Q01, CBS 11324 | Model-case identification appears inconsistent with displayed Nippur/Warad-Sin text. | Quarantine clause-level evidence pending the Klein–Sharlach edition or verified OBMC witness. |
+| L01, CBS 6098 | Catalogue has a legal obverse, but displayed transcription is lexical reverse. | Metadata-only for legal content; no invented contract excerpt. |
+
+### 5.3 Limits that affect historical conclusions
+
+The full Stone–Owen adoption study, Meinhold’s prebend article and several other key studies were not directly available. Their existence and bibliographic details are not substitutes for their arguments. Conversely, some original digital tablets were available even when a later specialist discussion was not; those observations remain useful within their narrower limits.
+
+The corpus does not support a census of free people, enslaved people, dependents, workers or households. In particular, no comprehensive local account of terms conventionally discussed under awīlum, muškēnum, wardum/amtum, hired labor, tenancy or institutional dependency has been established. These are **coverage gaps**, not assertions that the categories were absent or present in a particular fixed form. The same restraint applies to the precise roles of bur-šu-ma and other specialist office designations.
+
+No full sign collation, linguistic dating study, text-image reconciliation or architectural re-excavation has been performed. Later collations can change a name, clause or date and thus change the social argument. Direct digital consultation is a substantive evidentiary step, but not the last possible verification step.
+
+## 6. Comparative evidence outside Old Babylonian Nippur
+
+**Cotsen 52175 / Education 78: unprovenanced Old Babylonian model contracts, with Larsa or Kutalla attribution proposed by Spada.** The published edition juxtaposes an adoption model and an orchard-sale model. Its oath and formulae underpin a regional attribution; that is not an excavated Nippur provenance. Spada compares the pairing of child-affiliation and heir-making expressions, including šu-ti/leqû and ĝar/šakānu in southern material versus ri/tarû-related Nippur formulae. These comparisons help identify regional conventions, not mechanically interchangeable verbs or distinct universal adoption classes. The models are not counted as realized transactions. [S06, §§2.2–2.3 and notes 45–48.]
+
+**Female religious designations.** The same comparative discussion of nu-gig/qadištu shows why inherited English religious or sexual labels require argument. It does not establish that a Nippur LUKUR had the same role. Differences of term, deity, city and genre must survive comparison. [S06, §2.2 and commentary; direct Nippur contrast T03, T13.]
+
+**Sippar and law-collection analogies.** Van Wyk’s maintenance discussion engages analogies beyond the local corpus, including later legal categories and broader Old Babylonian provisions. Such comparisons may generate questions about support and asset control; they do not prove the legal regime of a Nippur woman. Suurmeijer’s Sippar adoption article and the Culbertson collection remain leads, not sources silently imported as local evidence. [S07; S18–S19.]
+
+No Ur III, Middle Babylonian or Neo-Babylonian text is used as a direct attestation of an Old Babylonian Nippur rule. No historical generalization in this report depends on collapsing those periods.
+
+## 7. Unresolved questions / recommended follow-up research
+
+1. Which later collations or photographs resolve the adoption wording in BE 6/2, 28 and the affiliation clauses in SAOC 44, 15 and 30?
+2. In PBS 8/2, 116, whose field is referred to, and how do other documents of the same parties constrain the competing legal interpretations?
+3. What is the defensible reconstruction of the damaged release and document clauses in SAOC 44, 53?
+4. Which records show actual performance, delegation or non-performance of the temple-service turns transferred in SAOC 44, 69–71?
+5. What precisely do bara₂ Ninurta, gu-za Inanna and nam-bur-šu-ma denote in independently contextualized Nippur documents?
+6. Which titles are demonstrably held in more than one capacity, and which transactions explicitly identify an institutional principal?
+7. Which additional Nippur texts explicitly distinguish residence, ownership, household affiliation and access to resources?
+8. What worker, hire, tenancy and dependency vocabulary is recoverable from a broader local administrative and epistolary sample?
+9. How do securely contextualized Nippur bilingual or parallel texts constrain Akkadian readings of the Sumerian legal expressions?
+10. Which legal expressions vary by archive, regnal period, scribe and document genre rather than by a universal social category?
+11. Does a checked edition or revised digital association resolve the apparent CBS 11324 mismatch, and can the legal obverse of CBS 6098 be directly examined?
+12. How do corrected findspot and stratigraphic associations alter the proposed links between the TA/TB documents and particular residential groups?
+
+## 8. Register-ready candidate claims
+
+These are candidates for expert reconciliation. Each preserves a narrow proposition and its limits; none determines project terminology or design. Cross-references point to the complete evidence-table entries rather than implying new independent evidence.
+
+### Candidate 1 — A measured house property is not a household roster
+
+**Claim / proposition:** Measured é properties are not descriptions of complete residential groups. (H-C01)  
+**Period:** Rim-Sin 48; Ilima-ilum 1  
+**Geography / archive / social context:** TA 184; X 1 / XA 1 retained as catalogued  
+**Evidence type:** Primary  
+**Primary evidence:** [SAOC 44, 17, obv. 1–13](https://cdli.earth/P283587); [SAOC 44, 12, obv. 1–15](https://cdli.earth/P257360)  
+**Secondary scholarship:** None independently required for this narrow textual observation.  
+**Interpretation(s):** Contextual reading of measured plots and fixtures.  
+**Uncertainty / disagreement:** Some other uses of é can be broader; no exclusive dictionary definition is proposed.  
+**Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** These sale/exchange objects only.  
+**Relevance to project question:** Separates premises from people.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 2 — Explicit residence is a distinct statement
+
+**Claim / proposition:** Residence can be stated explicitly rather than inferred from an é–person association. (H-C02)  
+**Period:** Samsuiluna 7, III  
+**Geography / archive / social context:** House-payment account; room unknown  
+**Evidence type:** Primary  
+**Primary evidence:** [SAOC 44, 25, obv. 11–14](https://cdli.earth/P224340)  
+**Secondary scholarship:** None independently required for this narrow textual observation.  
+**Interpretation(s):** Relative clause ša ina é ... wašbu supports a residence assertion.  
+**Uncertainty / disagreement:** The preceding a-si-rum may be a name; its status interpretation is unresolved.  
+**Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** Named relation in this account, not a census.  
+**Relevance to project question:** Distinguishes occupancy from property relations.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 3 — Living allocation and conditional heirship
+
+**Claim / proposition:** A living father’s division can be combined with conditional heirship and annual support. (H-C04)  
+**Period:** Samsuiluna 8, III  
+**Geography / archive / social context:** Ipquša–Ea-turam–Ea-tayar instrument  
+**Evidence type:** Primary  
+**Primary evidence:** [BE 6/2, 28, obv. 7–18; rev. 1–8](https://cdli.earth/P266334)  
+**Secondary scholarship:** None independently required for this narrow textual observation.  
+**Interpretation(s):** The propositions coexist in the same document.  
+**Uncertainty / disagreement:** Damaged obv. 9; actual delivery and broader motives unproved.  
+**Confidence + rationale:** HIGH; confidence is in the specified textual distinction, not a universal rule.  
+**Limits on generalization:** One instrument; not a universal succession regime.  
