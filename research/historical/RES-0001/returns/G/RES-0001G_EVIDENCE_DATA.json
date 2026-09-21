@@ -1,0 +1,122 @@
+{
+  "packet": "RES-0001G",
+  "completed": "2026-09-19",
+  "status": "Independent advisory return; specified verification gaps remain",
+  "scope": "Old Babylonian Nippur; approximately 1900–1600 BCE approved frame, narrower actually represented corpus",
+  "counts": {
+    "interface_rows": 14,
+    "distinct_positive_text_identifiers": 15,
+    "primary_edition_legal_texts": 8,
+    "catalogue_legal_texts": 4,
+    "administrative_texts": 3,
+    "claims": 16,
+    "register_candidates": 8
+  },
+  "cases": [
+    {
+      "id": "G-I01",
+      "person": "Ellumūšu → Ilī-iddinam; both designated sons of Ṣilli-Šamaš",
+      "institution": "Martu temple; six named office designations",
+      "relationship": "Sale of inherited office rights together with house property",
+      "resource": "Annual 2 months + 20 days; composite consideration 43 shekels silver; net income unstated",
+      "obligation": "Office/service labels listed; actual performance and individual duties not reported",
+      "transfer": "Inheritance explicitly describes seller’s rights; subsequent sale and future-claim renunciation",
+      "evidence": "BE 6/2 36; S01 pp. 5–6, catalogue p. 149; Istanbul 1999",
+      "confidence": "HIGH for conveyance; MODERATE for a sibling reconstruction",
+      "date": "Samsuiluna 11/9/28 (S01 catalogue)",
+      "context": "Nippur, early excavation; no secure individual house/locus recovered",
+      "household": "Same named father; probably brothers, but no independent co-residence evidence",
+      "overlap": "YES: inherited household real estate and temple-linked rights conveyed together",
+      "access": "Primary transliteration/translation read; no image collation",
+      "language": "Sumerian legal formulary in S01; names modernized conservatively",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C01",
+        "G-C02",
+        "G-C03",
+        "G-C10"
+      ]
+    },
+    {
+      "id": "G-I02",
+      "person": "Ilušu-bāni, son of Uttagallu-me-DU ↔ Enlil-lušag, nu-eš, son of Sin-iddinam",
+      "institution": "Kusu temple; six-office bundle",
+      "relationship": "Exchange for field property plus balancing silver",
+      "resource": "Two months annually; field parcel plus 5 shekels to Ilušu-bāni",
+      "obligation": "Listed offices, not a record of completed service",
+      "transfer": "Mutual exchange; payment expressly addresses unequal values; no kinship stated",
+      "evidence": "BE 6/2 39; S01 pp. 15–16 and catalogue p. 150; Philadelphia CBM 11565 (as printed)",
+      "confidence": "HIGH for exchange; MODERATE for exact functional glosses",
+      "date": "Samsuiluna 12/5/15 (catalogue page image checked)",
+      "context": "Nippur publication provenance; no recovered residential locus",
+      "household": "Patronymics identify persons; household relationship between parties unproven",
+      "overlap": "YES: institutional office rights exchanged against a field asset",
+      "access": "Primary transliteration/translation read; no image collation",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C01",
+        "G-C02",
+        "G-C04",
+        "G-C10"
+      ]
+    },
+    {
+      "id": "G-I03",
+      "person": "Šumum-libši, son of Ur-Duazagga ↔ Lu-Ešumeša (S01: Lu-EšumeDU)",
+      "institution": "Nuska temple; named office rights",
+      "relationship": "Exchange involving offices and fields",
+      "resource": "Office/field package against a larger field parcel; 2 shekels balancing payment",
+      "obligation": "Term partly broken; precise service burden not restored",
+      "transfer": "Exchange and mutual no-claim clause; a proposed later link is not yet established",
+      "evidence": "BE 6/2 37; S01 pp. 16–17, catalogue p. 149; Istanbul 1920",
+      "confidence": "HIGH for an exchange; LOW for linkage to G-I11",
+      "date": "Samsuiluna 11/11/6 (S01 catalogue)",
+      "context": "Nippur; tablet and fragmentary case; no verified house locus",
+      "household": "A relationship phrase in the boundary description is ambiguous; not used to assign kinship between counterparties",
+      "overlap": "YES: office and land rights are traded in a single settlement",
+      "access": "Primary transliteration/translation read; broken text retained",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C02",
+        "G-C04",
+        "G-C15"
+      ]
+    },
+    {
+      "id": "G-I04",
+      "person": "Ninurta-rahim-šerim, son of Ninurta-mansi",
+      "institution": "Enki and Damgalnunna; gods named in the conveyance",
+      "relationship": "Recovery/reacquisition of a paternal-house office",
+      "resource": "Office rights; 18 shekels silver consideration",
+      "obligation": "Office bundle; annual-period wording and damaged closing clause require checking",
+      "transfer": "garza é ad-da-na invoked; payment recorded; no demonstrated universal compulsory right of redemption",
+      "evidence": "BE 6/2 66; S01 pp. 13–15",
+      "confidence": "MODERATE",
+      "date": "Old Babylonian; exact regnal date not recovered",
+      "context": "Nippur publication provenance; no individual residential locus",
+      "household": "Father named; paternal-house characterization explicit",
+      "overlap": "YES: family recovery language and institutionally designated transferor coexist",
+      "access": "Primary transliteration and editorial commentary; no independent modern collation",
+      "language": "Sumerian legal formulary in S01",
+      "source_ids": [
+        "S01"
+      ],
+      "claim_ids": [
+        "G-C03",
+        "G-C05",
+        "G-C16"
+      ]
+    },
+    {
+      "id": "G-I05",
+      "person": "Mar-erṣetim (S01: Mar-irpitim) and Mutum-ilum; two branches of the Iškur-rabi/Ududu family",
+      "institution": "Ninlil office and šuku field; Hammurabi, royal messenger, Nippur puhrum",
+      "relationship": "Dispute, referral, loc
