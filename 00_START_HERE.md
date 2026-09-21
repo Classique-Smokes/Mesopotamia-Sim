@@ -38,7 +38,7 @@ Active work:
 
 - `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
 - `plans/verification/SFL_V0/`
-- current verification focus: final adversarial completeness review of the full Stage-3 verification package
+- current verification focus: final review completed; Stage 3 is held on two semantic decisions—counterparty response policy and the orphan generic commitment-breach attitude rule
 
 No production implementation has started.
 
