@@ -231,4 +231,159 @@
       "household": "Not established",
       "overlap": "YES: purchasable temple-linked term",
       "access": "Catalogue only",
-      "language": "Not independently
+      "language": "Not independently checked",
+      "source_ids": [
+        "S02"
+      ],
+      "claim_ids": [
+        "G-C01",
+        "G-C02"
+      ]
+    },
+    {
+      "id": "G-I10",
+      "person": "Sin-ituram and Adda-dingir, sons of Ilu-damiq",
+      "institution": "Temple offices in an estate",
+      "relationship": "Partition and residual partition",
+      "resource": "Offices alongside other property",
+      "obligation": "Not available from synopsis",
+      "transfer": "Family estate division; residual deed not a second independent office event",
+      "evidence": "OBCN I 28–29; UM29-16-141 (tablet), Ni9258/ARN102 (case fragment); UM29-13-230 + N1249 (no. 29); S02 p. 4",
+      "confidence": "MODERATE",
+      "date": "Samsuiluna 25/6/16 and 26",
+      "context": "Nippur; archival link, not residential locus",
+      "household": "Explicit sons of one father",
+      "overlap": "YES: offices included in divisible family assets",
+      "access": "Catalogue and reported tablet/case association; no microfiche collation",
+      "language": "Not independently checked",
+      "source_ids": [
+        "S02",
+        "S14"
+      ],
+      "claim_ids": [
+        "G-C03"
+      ]
+    },
+    {
+      "id": "G-I11",
+      "person": "Nuska-nišu ← Lu-Ešumeša; prior Šumum-libši exchange noted",
+      "institution": "Nuska lu-nig-dab-ba office",
+      "relationship": "Sale after an earlier exchange",
+      "resource": "Two-month term",
+      "obligation": "Not detailed in catalogue",
+      "transfer": "Sale; possible BE 6/2 37 connection remains provisional",
+      "evidence": "OBCN I 32; UM29-16-214; S02 p. 4",
+      "confidence": "MODERATE for synopsis; LOW for cross-edition link",
+      "date": "Samsuiluna 28/11",
+      "context": "Nippur; no verified house locus",
+      "household": "Not established between parties",
+      "overlap": "YES: multi-stage circulation of institutional rights",
+      "access": "Catalogue only",
+      "language": "Not independently checked",
+      "source_ids": [
+        "S02"
+      ],
+      "claim_ids": [
+        "G-C02",
+        "G-C15"
+      ]
+    },
+    {
+      "id": "G-I12",
+      "person": "73 ox-drivers",
+      "institution": "Reconstructed Nippur administrative dossier",
+      "relationship": "Work-linked disbursement",
+      "resource": "4 sila barley each",
+      "obligation": "Palm-branch carrying recorded",
+      "transfer": "No inheritance information",
+      "evidence": "TMH 10 165:1–3; S03 p. 385",
+      "confidence": "MODERATE",
+      "date": "Late Rim-Sin dossier; calendar conversion unresolved",
+      "context": "Reconstructed, not excavated-in-place archive",
+      "household": "Not identified",
+      "overlap": "POSSIBLE; employment/dependence not established",
+      "access": "Republished transliteration/translation",
+      "language": "Sumerian administrative entry",
+      "source_ids": [
+        "S03",
+        "S07"
+      ],
+      "claim_ids": [
+        "G-C11"
+      ]
+    },
+    {
+      "id": "G-I13",
+      "person": "Damiqtum",
+      "institution": "Nippur cult-related administration",
+      "relationship": "Procurement-related allocation",
+      "resource": "Barley for fish",
+      "obligation": "Offering purpose specified",
+      "transfer": "No succession evidence",
+      "evidence": "CBS7627:12–13; S03 table 3, p. 401",
+      "confidence": "MODERATE",
+      "date": "“Isin 2/V-2/1”; late Rim-Sin dossier, unresolved calendar",
+      "context": "Reconstructed archive",
+      "household": "Not inferred from co-occurrence",
+      "overlap": "YES; allocation is not necessarily personal income",
+      "access": "Published documentary table, not independent edition",
+      "language": "Not independently checked",
+      "source_ids": [
+        "S03"
+      ],
+      "claim_ids": [
+        "G-C12"
+      ]
+    },
+    {
+      "id": "G-I14",
+      "person": "Builders and hired workers",
+      "institution": "guennakkum’s house",
+      "relationship": "Repair-related allocation",
+      "resource": "Barley",
+      "obligation": "Roof repair",
+      "transfer": "No succession evidence",
+      "evidence": "CBS7580:1–3; S03 table 2, p. 400",
+      "confidence": "MODERATE",
+      "date": "“Isin 2/VI-9/30”; late Rim-Sin dossier, unresolved calendar",
+      "context": "Reconstructed archive",
+      "household": "Workers’ family units unknown",
+      "overlap": "YES; residence/office boundary unresolved",
+      "access": "Published documentary table, not independent edition",
+      "language": "Not independently checked",
+      "source_ids": [
+        "S03"
+      ],
+      "claim_ids": [
+        "G-C11",
+        "G-C12"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "G-C01",
+      "claim": "Some Nippur temple-linked rights were specified as recurring periods within a year, rather than undifferentiated full-time offices.",
+      "date": "Samsuiluna 11–12 in the directly dated core",
+      "context": "Martu/Kusu transactions; no secure household loci",
+      "type": "Primary; catalogue corroboration",
+      "primary": "G-I01–02: BE 6/2 36 and 39. G-I09 is lower-resolution corroboration.",
+      "secondary": "Poebel’s functional glosses are not required to establish the written annual periods.",
+      "counter": "Annual periods do not prove exact days worked, a universal rota, or the same calendar in all texts.",
+      "confidence": "HIGH",
+      "limit": "The particular rights described, not every Nippur institution.",
+      "relevance": "Separates a family-held entitlement from a presumed lifetime occupation.",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "design_status": "NO DESIGN DECISION"
+    },
+    {
+      "id": "G-C02",
+      "claim": "The selected Nippur corpus attests both sale and exchange of temple-office rights.",
+      "date": "Samsuiluna 11–12 in three primary-edition cases",
+      "context": "Martu, Kusu and Nuska transactions",
+      "type": "Primary",
+      "primary": "G-I01–03: BE 6/2 36, 37, 39.",
+      "secondary": "S04 abstract identifies the topic, but is not
