@@ -2,7 +2,7 @@
 
 **Task ID:** IMP-XXXX  
 **Commissioned by:** Master Architect  
-**Status:** OPEN / IN PROGRESS / COMPLETE  
+**Status:** OPEN / IN PROGRESS / BLOCKED / ESCALATED / VERIFIED COMPLETE  
 **Context mode:** PROJECT-CONTEXT unless explicitly justified otherwise
 
 ## 1. Objective
@@ -40,6 +40,8 @@ Implementation must retrieve and obey these artifacts rather than infer authorit
 
 The completion claim must be supported by verification evidence. Agent confidence or code review by the Project Director is not sufficient verification.
 
+Acceptance tests, graders, invariants, and other completion checks must not be weakened or rewritten to make the task pass unless changing that verification surface is explicitly in scope.
+
 ## 8. Local decisions permitted
 
 [Ordinary, reversible implementation choices the agent may make without escalation.]
@@ -67,10 +69,15 @@ Also escalate when the task cannot meet its acceptance criteria without altering
 
 Work in recoverable increments. Do not leave the project in an ambiguous half-migrated state if the task must stop. Record any incomplete transition explicitly.
 
+If multiple agents mutate files concurrently, use isolated branches/worktrees/workspaces. Reconcile and verify before integration; do not coordinate concurrent edits through a shared working tree.
+
+Any delegated child task must remain within the parent task's authority, scope, and permitted capabilities.
+
 ## 11. Required completion report
 
 Return:
 
+- terminal status: VERIFIED COMPLETE / BLOCKED / ESCALATED / INCOMPLETE;
 - what changed;
 - acceptance criteria met / unmet;
 - verification performed and results;
