@@ -23,7 +23,10 @@ Check after every committed transition/reaction closure where applicable and at 
 
 ### Material accounting
 
-- personal grain never negative;
+- personal grain is a nonnegative integer;
+- every grain-valued action parameter is a strictly positive integer;
+- categorically invalid grain terms never reach target response or social failed-attempt handling;
+- repayment amount never exceeds remaining debt;
 - every grain delta has an explicit source/sink/zero-sum transfer;
 - household provision never creates a pooled treasury;
 - collective expenditure debits backing personal grain exactly once;
@@ -34,9 +37,13 @@ Check after every committed transition/reaction closure where applicable and at 
 ### Cardinality/domain
 
 - attitude stays within [-100,+100];
+- direct same-cycle attitude composition is independent of member-cause enumeration;
 - at most one established v0 marriage per person;
 - parent/child and sibling pairs never marry;
 - at most one outstanding favour per ordered pair;
+- explicit benefit-for-favour material/new-favour effects commit atomically;
+- a called favour is consumed only on successful requested-action commit and v0 payloads do not open nested voluntary response contexts;
+- at most one Residence transition per person commits in one cycle;
 - lineage does not inherit causal state;
 - participant count controls operational lifecycle only, never identity.
 
@@ -58,6 +65,7 @@ Every hard threshold/cardinality rule receives below/at/above or equivalent boun
 ### Attitude
 
 - strong-like gate: +74 / +75 / +76;
+- mixed-sign same-cycle direct attitude causes near +100/-100, verifying sum-then-clamp rather than contribution-order clamping;
 - negative strong-dislike boundary: -76 / -75 / -74 where behavior uses the band;
 - dislike/neutral: -27 / -26 / -25;
 - neutral/like: +25 / +26 / +27;
@@ -67,6 +75,8 @@ Kinship multiplication must not change stored attitude or satisfy stored-attitud
 
 ### Grain / provision / need
 
+- grain action amount validation: negative / 0 / 1 and representative non-integral input;
+- debt repayment amount: remaining-1 / remaining / remaining+1 where remaining > 1;
 - protected reserve: grain 1 / 2 / 3;
 - NeedsGrain clearing: grain 0 / 1;
 - provision contributor NeedsGrain false/true at same grain;
@@ -94,7 +104,9 @@ Kinship multiplication must not change stored attitude or satisfy stored-attitud
 ### Cardinality limits
 
 - first versus second marriage attempt after establishment;
-- first versus additional favour while one already exists for same ordered pair.
+- first versus additional favour while one already exists for same ordered pair;
+- full favour-slot behavior separately for ExplicitBenefitForFavor versus RelationshipMediatedReciprocalHelp;
+- one versus multiple independently accepted same-person Residence transitions in one cycle.
 
 ### Lineage
 
@@ -134,6 +146,12 @@ Each relation states applicability conditions; do not permute inputs whose order
 9. **Lineage predecessor-set ordering**  
    Reverse enumeration of {H1,H2}; consolidation warrant predecessor set remains semantically identical.
 
+10. **Direct-attitude cause permutation**  
+    Reorder nonsemantic enumeration of the same distinct direct attitude cause set for one directed pair; the contributing cause set/history and bounded final attitude remain semantically identical.
+
+11. **Residence contender permutation**  
+    Reorder nonsemantic proposal/container enumeration for the same accepted same-person Residence conflict set; with fixed semantic IDs/priorities, the committed winner, invalidated contenders, and fallback marker remain identical.
+
 ## 4. Semantic mutant set
 
 The suite must detect or classify at least these project-specific faults:
@@ -167,7 +185,12 @@ The suite must detect or classify at least these project-specific faults:
 27. let later-arriving older message overwrite newer event evidence;
 28. resolve Contested recognition by arbitrary ID;
 29. record only chosen action rather than complete decision trace;
-30. let a rendered explanation cite a cause not supported by intervention.
+30. let a rendered explanation cite a cause not supported by intervention;
+31. clamp independent direct same-cycle attitude causes contribution-by-contribution so cause order changes the bounded result;
+32. allow multiple same-person Residence transitions to commit in one cycle or choose the winner by container order;
+33. let zero/negative/non-integral grain terms reach response/social effects or silently clamp over-repayment;
+34. let a called-favour payload open a nested voluntary response, consume the favour on Unable/Invalidated, or apply fulfil/refusal attitude effects on non-voluntary failure;
+35. partially commit ExplicitBenefitForFavor when required favour capacity is unavailable, or silently relabel the material leg as Gift/Help.
 
 Report mutant outcome as:
 
@@ -191,7 +214,7 @@ Generate validity-aware bounded sequences from:
 - Farm;
 - gift/help request/offer;
 - loan / repay;
-- favour creation/call/refusal/cancellation;
+- favour creation/call/refusal/cancellation using only semantically valid response-closed payloads unless intentionally testing invalid terms;
 - residence proposal;
 - communication;
 - provision request/accept/refuse;
@@ -206,6 +229,7 @@ Lineage/division/consolidation is observed from valid generated lower-level hist
 ### Constraints
 
 - generate from currently valid preconditions unless intentionally testing failure;
+- generated validity classification must not silently treat production candidate/feasibility logic as the independent oracle for the rule being tested;
 - bound population, cycles, outstanding proposals, and relation count;
 - check always-on invariants after each stable closure;
 - retain full deterministic seed/input sequence if generation tooling later uses randomness;
