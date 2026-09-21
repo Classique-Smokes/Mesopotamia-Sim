@@ -5,7 +5,7 @@
 All B2 tasks use:
 
 - ref: `tres-0010-b2-baseline`
-- SHA: set after the B2 packets are committed.
+- SHA: `0729e460af35668e5b911fa561bf8cec53204142`
 
 Do not use a moving `main`.
 
