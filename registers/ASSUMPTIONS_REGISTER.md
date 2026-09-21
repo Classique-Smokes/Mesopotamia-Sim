@@ -32,6 +32,7 @@ Working specification has now introduced controlled laboratory assumptions. They
 | ASM-0004 | ACTIVE | Parent/child and sibling kinship both multiply the attitude-derived component of ordinary interpersonal choice by 1.5x. | SFL v0 kinship effect. | Historical evidence or verification showing type-specific/different treatment is required. |
 | ASM-0005 | ACTIVE | Initial v0 household formation requires shared residence plus a durable tie, two qualifying support events on separate cycles, and founding-core recognition. | SFL v0 household formation recognizer. | Historical evidence, verification, or later household model showing the gate is too narrow/broad. |
 | ASM-0006 | ACTIVE | Head appointment/succession requires unanimous sustaining-participant acceptance; provision spending uses 2-grain contributor reserve and largest-surplus-first allocation. | SFL v0 collective authority/resource mobilization. | Verification, historical evidence, or richer governance/accounting rules. |
+| ASM-0007 | ACTIVE | v0 temporal lab parameters: attitude decay every 5 cycles; provision reconsideration cooldown 3 full cycles plus relevant context change; stable semantic ID as last-resort equal-priority tie-break. | SFL v0 timing/conflict resolution. | Verification sensitivity or later social priority/timing rules. |
 
 ### ASM-0001 — Reciprocity attitude gate
 
@@ -104,6 +105,18 @@ Working specification has now introduced controlled laboratory assumptions. They
 - **Introduced by:** Director / Master Architect working specification discussion
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
+
+### ASM-0007 — v0 timing and technical tie fallback
+
+- **Status:** ACTIVE
+- **Assumption:** Attitude decay occurs every 5 cycles; provision reconsideration requires 3 full cycles plus relevant context change; otherwise unresolved equal-priority symmetry uses stable semantic ID as a disclosed technical fallback.
+- **Why temporarily needed:** v0 requires exact deterministic timing and conflict closure before richer social timing/priority norms exist.
+- **Scope / impact:** Relationship fading, head reconsideration behavior, and rare equal-priority resolution.
+- **Not authoritative for:** Historical time units, social priority norms, fairness, seniority, or later governance rules.
+- **Review / replacement trigger:** Pass G permutation/sensitivity tests, model iteration, or introduction of richer social priority/timing rules.
+- **Introduced by:** Director / Master Architect working specification discussion
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`; `research/technical/TRES-0003/PASS_F_TEMPORAL_RESOLUTION_ADVERSARIAL_REVIEW.md`
 
 ## Entry template
 
