@@ -8,7 +8,8 @@ These cards verify that shared-snapshot proposals remain attempts until central 
 
 ## Family invariants
 
-- every proposal is revalidated against all action-relevant preconditions immediately before commit;
+- categorically invalid proposal terms are rejected before the social failed-attempt taxonomy applies;
+- every semantically valid proposal is revalidated against all action-relevant preconditions immediately before commit;
 - `Declined`, `Unable(reason)`, and `InvalidatedAtResolution(reason)` remain distinct;
 - feasibility failure is not social refusal;
 - direct participants learn the outcome plus only a bounded interaction-relevant reason;
@@ -180,10 +181,22 @@ Cause the reaction queue/dispatcher to encounter the same semantic cause key twi
 
 ### Assertions
 
-- exactly one +10 attitude transition is committed;
-- the same cause key cannot produce a second identical transition;
+- exactly one +10 contribution from that cause key reaches the authoritative attitude transition;
+- the same cause key cannot contribute a second identical delta;
 - repeated production is reported as an engine/specification error or rejected as already processed according to implementation diagnostics;
-- semantic history contains one causal attitude transition, not two.
+- semantic history shows the accepted cause exactly once.
+
+### Mixed direct-cause companion
+
+Start one directed attitude at +95 after due maintenance/decay. In one cycle produce two distinct valid direct §3.1 attitude causes targeting it: +10 and -20.
+
+Assertions:
+
+- both distinct cause keys contribute once;
+- one authoritative direct-attitude composition transition applies `clamp(+95 + 10 - 20) = +85`;
+- the batch retains both cause keys/deltas as predecessors;
+- changing nonsemantic queue/enumeration order does not change the result;
+- no contribution-by-contribution clamping creates +80 merely from cause order.
 
 ---
 
@@ -241,5 +254,7 @@ This card requires those tests to remain part of the Stage-3 resolution/informat
 - retry failed actor in the same cycle;
 - let debt/favour reserve grain without explicit material commitment semantics;
 - resolve scarce capacity by container iteration order;
+- resolve same-person Residence conflicts by container/proposal iteration order or allow multiple Residence commits;
 - fire one automatic cause twice;
+- clamp independent direct attitude causes one-by-one so queue order changes bounded result;
 - publish/checkpoint completed cycle state before reaction closure.
