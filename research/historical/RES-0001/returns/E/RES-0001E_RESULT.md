@@ -136,4 +136,73 @@ BE 40 is especially important beside BE 48. Both specify consequences for repudi
 
 For life course, the evidence is narrower still. A person identified as a son is not automatically a young child. An adopter receiving support is not automatically elderly. The hire agreement supplies no age for Idin-Ištar, and the adoption agreements used here do not supply a numerical age for their participants. Thus “child labor” and “retirement adoption” are not findings of this return. What is demonstrated is an intergenerational or legally constituted filial relation and, where stated, a support duty. [P1909, pp. 27–31, 43]
 
-Stone’s study of Nippur nadītu women brings additional maintenan
+Stone’s study of Nippur nadītu women brings additional maintenance arrangements into view and explicitly works within a property-visible documentary sample. Her treatment also cautions against simply reproducing a Sippar residential model at Nippur. The supporting ARN/PBS texts were not independently read in their primary editions here, so their detailed life histories are retained as follow-up leads rather than additional confirmed cases. [S1982, especially pp. 50–61]
+
+### 4.6 Training is visible; a service contract is not thereby established
+
+Tinney’s illustration of CBS 14156 distinguishes model and practice portions of an instructional tablet. This supports a teaching/learning relation. It does not supply the contractual terms that would establish an apprenticeship, payment, indenture, household kinship, or the learner’s dwelling. Those fields remain unknown. [T1998, p. 45 fig. 9]
+
+The evidentiary difference is substantive: an object used to acquire a skill and an agreement assigning a person’s labor answer different historical questions. They may have belonged to the same life, but this report has not linked them for an identified Nippur individual.
+
+Spada identifies TMH 11 1 as a Nippur prism containing nine model manumissions. The direct edition was not accessible here. These are therefore a clearly marked didactic lead, not nine released historical people. Her other edited examples cannot all be assigned to Nippur. [SP2021, p. 287 n. 13; SP2018]
+
+### 4.7 Temple-linked livelihood and land access without a unified dependent class
+
+In BE 43, Igi-šag’s allotted property includes an Enlil priestly office share expressed as six months per year and its associated livelihood land. The document places institutional income-bearing rights in a kin/property division. It does not state whether the recipient personally performed every relevant duty, engaged a substitute, lived near the temple, or belonged to a temple residential community. [P1909, pp. 22–23]
+
+Two catalogue examples broaden the transaction lead: OIMA 1 no. 19 concerns a ten-day gudu₄ office term, and no. 32 a two-month term of a Nuska-temple office. These are catalogue-level corroborations of divisible/transferable rights, not newly collated service schedules. [SZ1976, nos. 19, 32]
+
+BE 29 documents another way of obtaining agricultural returns: Damu-idinnam leases a field for cultivation in exchange for a one-third share of returns as annual rent. This obligation differs from BE 51’s hiring of a named person. The lease does not reveal who actually supplied the labor. The lessee’s kin, hired help, and enslaved workers are all possibilities requiring evidence, not boxes to fill from the mere existence of cultivation. [P1909, pp. 43–44]
+
+Taken together, these cases establish connections among property, support, work, and institutions. They do **not** establish a single class of “temple dependents,” or a binary split between autonomous households and institutional laborers. A right concerning temple service, a claim to family maintenance, and a rent obligation are different attested relations.
+
+### 4.8 Answer to the central research question
+
+The checked evidence supports a **relationship-specific account**: named people could be linked through filial maintenance, adoption, marriage, ownership, personal hire, land rental, and institution-related property rights. The terms of those connections sometimes specify a duration, payment, support obligation, succession interest, or potential sanction. The documents do not consistently specify work tasks, residence, freedom of movement, or general legal capacity. [P1909, texts 8, 23, 24, 28, 29, 40, 43, 48, 51]
+
+Accordingly, the defensible distinctions are not “family / employee / slave” as mutually exclusive biographies. They are distinctions between the **particular relationship actually evidenced** and the additional dimensions not yet established. Kin mediation of paid work is visible; so are support obligations that are not personal hire. Ownership transfers are visible; the work histories and own families of the transferred people are much less visible in this set. This is a historical conclusion bounded by the sources, not a proposed project membership rule.
+
+## 5. Disagreement, ambiguity, and source limitations
+
+### 5.1 The manumission tablet’s provenance: correction without false certainty
+
+Poebel identifies BE 8 as Yokha, including in his introduction and discussion. Al-Mutawalli and Sallaberger reassign CBS 9183 to Nippur on personal-name and cult evidence, while explaining the possibility of confusion in early expedition shipments. CDLI’s August 2026 entry adopts Nippur and records that reasoning. The proper distinction is **argued documentary origin versus securely recorded archaeological findspot**, not “old source wrong, database automatically conclusive.” [P1909, pp. 1, 38–39; AMAS2026, p. 116 nn. 7–8; CDLI8]
+
+This return includes the document with moderate confidence for Nippur-specific use and excludes it from any strictly findspot-secure subset. No household location is reconstructed from it. This also qualifies the earlier progress message that provisionally excluded the tablet before the new provenance argument was retrieved.
+
+### 5.2 BE 23: explicit allocations, disputed family reconstruction
+
+The concluding adoption/kinship clause has produced different family trees. Van Wyk surveys readings associated with Poebel, Kraus, Stone, and Goddeeris/Meinhold, and offers a litigation-centered interpretation. The present claim does not select one genealogy: the named allocations are usable without resolving who adopted whom in that closing clause. Nor is the modern suggestion that the enslaved people maintained the properties treated as an occupation stated in the ancient text. [VW2018, pp. 21–22; P1909, pp. 20–22]
+
+Related modern citations give Jena museum numbers that require a primary concordance check against the Istanbul witness. They have not been counted as additional independent events. Identification of duplicates, envelopes, and parallel records is prior to any numerical analysis.
+
+### 5.3 Words, translations, and context
+
+| Term or translation issue | Handling in this return | Source / reason |
+|---|---|---|
+| **arad / geme** and gender designations such as **sag-nita / sag-sal** | Read in the transaction context; do not translate every occurrence of a male/female or service designation as one universal legal class. | BE 23 and 48; [P1909], pp. 20–22, 35–38 |
+| **“Maid-slave” / “man-slave”** in the old edition | Usually rendered here as an enslaved woman/man or named enslaved person. The old wording does not establish domestic duties. | [P1909], BE 23 and 8 |
+| **ama-ar-gi** and cleansing language | Manumission interpretation in BE 8 rests on the complete release/payment/no-claim context. The precise legal force of every formula is not newly settled. | [P1909], pp. 38–39; [SP2021] |
+| Bodily marking in repudiation provisions | Retain that the old translation is uncertain; do not assert its exact physical technique or use it as a universal slave marker. | [P1909], pp. 30–31, 37 |
+| **“Votary”** and an occupation assigned in BE 4 | Occupational conclusion withheld. The old reading of the relevant expression and its modern interpretation were not adequately reconciled. | [P1909], pp. 31–33; [CDLI4] |
+| **Prebend / office / livelihood land** | Distinguish an economic share or office right from personal performance of every service. Do not modernize it into an ordinary salary. | BE 43; [P1909], pp. 22–23 |
+| **“Son,” “daughter,” “adopted”** | Relational designations; not numerical ages or proof of co-residence. | BE 24, 28, 48, 51 |
+| **“Redemption”** | First identify what is redeemed. BE 64 concerns property, not release of an enslaved person. | [CDLI64] |
+
+Several translations encountered during discovery have substantial histories of revision. Where the current specialist edition could not be checked, the uncertainty is retained rather than resolved from etymology, a modern English analogy, or a convenient narrative.
+
+### 5.4 Dates, identities, and legal effect
+
+BE 40 is given here as Samsu-iluna 13/I without fixing its day: Poebel’s catalogue and the later catalogue’s date for its case differ at that level. No finding depends on choosing a day. Names are normalized lightly for readability, with older spellings retained in the notes when useful. Matching a common name does not establish identity: the Naramtum of BE 48 is not merged with every Naramtum in another dossier. [P1909, p. 150; SZ1976, no. 24]
+
+Three further distinctions are necessary. A clause stating that property **shall** be divided is not an actual inventory distribution on that day. A no-claim clause is not proof that no later claim was attempted. A remedy threatened for breach is not evidence of its enforcement. The selected contracts preserve the legal specification; linked records would be needed to recover subsequent practice.
+
+### 5.5 What this return cannot quantify or reconstruct
+
+No household census, general enslaved/free ratio, work allocation by sex, average price of a person, typical wage, usual frequency of adoption, or incidence of release is supported. There is also no verified one-to-one match of a named worker to an excavated room. The most important residual uncertainty is not merely terminology: it is the lack of linked evidence showing **how the recorded relations were lived together over time**.
+
+## 6. Comparative evidence outside Old Babylonian Nippur
+
+**Other Old Babylonian cities.** The Culbertson collection, including Andrea Seri’s contribution, discusses domestic slavery using evidence that includes Sippar and Larsa. Such cases help formulate questions about women’s work, service, and family ties, but their details are not supplied as Nippur observations. In particular, BE **6/1** 28 must not be confused with a text in Poebel’s BE **6/2** volume. [C2011]
+
+**Other periods at Nippur.** Kassite Nippur material in the same collection, including the contribution by Jo
