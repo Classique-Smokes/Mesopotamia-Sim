@@ -21,6 +21,12 @@ Resolved semantic errata record:
 
 - `specifications/working/SPEC-SFL-0001_STAGE3_ERRATA.md`
 
+## Canonical scenario package
+
+- `plans/verification/SFL_V0/README.md`
+- `plans/verification/SFL_V0/FORMATION_FAMILY.md`
+- `plans/verification/SFL_V0/CONTINUITY_TURNOVER_FAMILY.md`
+
 ## Required outputs
 
 Stage 3 must produce:
