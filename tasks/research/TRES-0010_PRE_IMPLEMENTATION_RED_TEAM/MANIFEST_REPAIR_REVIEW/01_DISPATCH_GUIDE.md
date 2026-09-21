@@ -5,7 +5,7 @@
 All three tasks use:
 
 - ref: `tres-0010-manifest-repair-review-baseline`
-- SHA: set after the review packets are committed.
+- resolved SHA: each agent must resolve the frozen ref at task start and record that SHA in its return metadata. The branch ref, not moving `main`, defines the evidence baseline.
 
 Do not use moving `main`.
 
