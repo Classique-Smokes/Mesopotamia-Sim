@@ -25,8 +25,9 @@ An implementation agent may choose ordinary code structure inside these boundari
 - **Pass B — Lower-level social fabric + minimal agency:** WORKING-CONVERGED.
 - **Pass C — Subjective recognition + information:** WORKING-CONVERGED.
 - **Pass D — Household formation + continuity:** WORKING-CONVERGED.
-- **Pass E — Grounded collective capability + representative role:** ACTIVE.
-- Passes F–G: not yet specified.
+- **Pass E — Grounded collective capability + representative role:** WORKING-CONVERGED.
+- **Pass F — Temporal execution + history + continuation:** ACTIVE.
+- Pass G: not yet specified.
 
 ---
 
@@ -568,7 +569,135 @@ Deferred dependencies:
 
 ---
 
-# 11. Implementation autonomy boundary
+# 11. Pass E — grounded collective capability and representative role
+
+## 11.1 Household provision capacity
+
+v0 uses explicit `HouseholdProvisionCommitment(Person -> Household)` relations rather than a pooled household treasury.
+
+- the person's grain remains personal until a collective action actually commits;
+- a valid commitment exposes `max(0, grain - 2)` as household-mobilizable capacity;
+- a person with `NeedsGrain` exposes 0 capacity;
+- `SustainingParticipant` status alone never grants household access to grain;
+- provision commitments are optional and explicitly accepted;
+- on household dissolution, unspent grain remains with its people and provision commitments terminate.
+
+Household mobilizable grain is derived from currently valid provision commitments. One realized household expenditure debits backing personal grain exactly once.
+
+When several commitments can fund one expenditure, v0 debits largest available surplus first; stable person ID breaks ties.
+
+## 11.2 Provision reconsideration
+
+A recognized household head may request a non-contributing sustaining participant to accept a provision commitment.
+
+- acceptance/refusal remains the person's decision;
+- after refusal, the household/head cannot repeat that request to the same person until a cooldown expires;
+- exact cooldown duration/order semantics are fixed in Pass F.
+
+## 11.3 Permitted collective uses
+
+Provision capacity may be mobilized only for:
+
+- 1-grain support to a `SustainingParticipant` with `NeedsGrain`;
+- a proposal-specified mediated-marriage dowry paid directly to the groom.
+
+No generic household spending power exists in v0.
+
+Household-originated support may reinforce actor recognition of household function, but it is feedback produced by an already-existing household and cannot serve as independent evidence for initial formation/continuity.
+
+## 11.4 Household head role
+
+Each household has one persistent `HouseholdHeadRole(H)`, either vacant or occupied by one person.
+
+A newly formed household begins headless. Any sustaining participant may nominate a sustaining participant. Appointment requires nominee acceptance plus recognition/acceptance by all current sustaining participants.
+
+Role scope is limited to:
+
+- request/re-request provision commitments subject to cooldown;
+- authorize the two permitted household material uses;
+- receive/resolve household-mediated marriage proposals;
+- participate in transfer of the head role to a successor.
+
+The role cannot seize personal grain, command residence or ordinary personal actions, create kinship/debt/favours arbitrarily, alter attitude, or exercise general sovereignty.
+
+## 11.5 Household decision mode
+
+An occupied head role activates a separate `HouseholdDecisionContext(H, head=P)`.
+
+- person P retains their ordinary personal initiative;
+- H receives one separate household initiative through P;
+- household-mode scoring uses household concerns/capabilities, not P's personal-action score;
+- authority and household-scoped records come from the role/household;
+- cognition and any non-office knowledge remain tied to P;
+- vacant head role means no household-mode initiative.
+
+This is the v0 mechanism for collective agency: household context supplies concerns, office supplies authority, person supplies cognition.
+
+v0 household-mode concerns are only:
+
+- relieve eligible `NeedsGrain`;
+- evaluate/fund mediated marriage;
+- establish provision backing by requesting reconsideration where allowed.
+
+## 11.6 Vacancy and succession
+
+Household identity and provision commitments survive temporary head vacancy, but household-mode spending and marriage mediation stop.
+
+A successor is installed by the same unanimous sustaining-participant acceptance rule. An outgoing head may nominate a successor before vacating; valid succession preserves the same household and head-role identity and produces the representative-role chain required by Pass D.
+
+## 11.7 Recognition and authority
+
+Appointment/succession participants directly recognize the resulting head-role state. Outsiders update only through valid observation/communication.
+
+Collective action requires all of:
+
+- Active household;
+- occupied head role;
+- authority in scope;
+- sufficient currently valid provision capacity.
+
+Household existence alone does not imply capability.
+
+## 11.8 Mediated marriage
+
+For mediated marriage:
+
+- groom recognizes the bride's household and its current head/scope;
+- bride is a female sustaining participant;
+- ordinary marriage eligibility holds;
+- head accepts the proposal;
+- sufficient provision capacity exists for the proposed dowry;
+- groom does not already owe the head a favour;
+- groom is not the mediating head.
+
+Commit effects:
+
+- backing contributors are debited exactly once;
+- dowry grain transfers directly to groom;
+- marriage is created;
+- groom gains one favour owed to the head.
+
+A female head may mediate her own marriage. The mutual-strong-like bypass remains independent and uses no household provision/dowry/favour package.
+
+## 11.9 Household support
+
+A needy sustaining participant who recognizes the head may request household support. The head may also proactively propose support.
+
+On valid commit, 1 grain is debited from backing provision commitments and transferred to the needy person under the ordinary `NeedsGrain` clearing rule.
+
+## 11.10 Pass E closure
+
+Pass E is **WORKING-CONVERGED**.
+
+Deferred locks:
+
+- reconsideration cooldown duration and same-time ordering -> Pass F;
+- exact household-mode activation/order relative to personal initiatives -> Pass F;
+- event-specific witness visibility and commit history -> Pass F.
+
+---
+
+# 12. Implementation autonomy boundary
 
 Until this draft is complete, an implementation agent has **no authority** to decide any open item above.
 
