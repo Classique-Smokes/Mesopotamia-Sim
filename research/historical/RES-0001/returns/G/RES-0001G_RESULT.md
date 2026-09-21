@@ -232,3 +232,139 @@ The source-access limitations materially constrain the result. They do not negat
 
 **Cotsen 52175 / Education 78 — unprovenanced Old Babylonian school text, proposed Larsa sphere.** Spada’s edition treats the adoption and orchard-sale passages as model contracts. Their possible provenance and formulary make them useful for comparison, but neither is counted as an actual Nippur transaction. A named religious woman in a model cannot supply a missing historical Nippur officeholder. [S05, §§1–2.2]
 
+**CDLI P258016 — Sippar-Yahrurum (uncertain), Samsuiluna 10/07/03.** This object is a provenance control. Its reference to BE 6/2 82 is only a date publication and does not establish Nippur origin. No terms from its exchange are imported into the Nippur interface table. [S11]
+
+**Tell Taban / Hana — principally later second-millennium evidence in the consulted article.** Yamada is used for a bibliographic pointer back to the Nippur adoption no. 57, not as an additional Nippur case. Its own adoption is excluded both geographically and chronologically. [S10]
+
+**Poebel’s Ruth analogy — outside the Nippur corpus and outside its historical setting.** It is recorded as part of the history of interpretation, not as corroboration of an Old Babylonian right to compel family-property redemption. No substantive Nippur claim depends on that analogy. [S01, p. 15]
+
+No other-city evidence has been used to fill the gaps in women’s prebend ownership, household earnings, service organization or non-elite participation. Comparison remains comparison.
+
+## 7. Unresolved questions / recommended follow-up research
+
+The following are research questions, not project decisions or promised asynchronous work.
+
+1. **Full modern prebend study:** Which texts and re-editions underlie Meinhold’s treatment of women, service, remuneration and prices? Do they qualify the old translations used here, and are the price observations comparable after controlling for bundled assets and term lengths? [S04]
+2. **Adoption and protected office rights:** How do Stone and Owen read BE 6/2 57, especially the Ablum clause, the identity of earlier property, and the sequence of family affiliations? Is the prospective sibling claim framed as inheritance, ownership, documentary title or another right? [S09; retrieval pointer p. 47]
+3. **Recovery mechanism:** In BE 6/2 45 and 66, what does a modern reading establish about recovery from family alienation, eligibility and the role of an institutional transferor? Does any related document state a compulsion or a time limit, rather than merely recording a completed transaction? [S01]
+4. **Possible Nuska chain:** Are BE 6/2 37 and OBCN I 32 genuinely connected by the same parties and right? Can the broken term, title variants, patronymics and field package be reconciled without assuming the desired link? [G-C15]
+5. **Deeds and clerical participation:** What do seals, witnesses and any duplicate of BE 6/2 42 establish about why Nannartum held the documents and what Aba-Enlil-dim received? Is corporate temple action explicit anywhere in the linked material? [S01]
+6. **Actual distributions and service:** Can officeholders in the legal corpus be securely matched to allocation, service or ritual records, with amounts, recipients, intermediaries and dates kept separate? Does Huber-Vulliet’s festival material provide appropriate Nippur links? [S07, S15]
+7. **Household reconstruction:** Which core texts can be associated securely with an excavated residence or a tested archive? What exactly do Stone’s TA/TB findings permit, and what is primary context rather than subsequent reconstruction? [S06]
+8. **Social and temporal variation:** Is there a matched sample across institutional settings and regnal phases, including workers and less well-documented persons? What denominator would permit prevalence claims, and how would documentary survival affect any comparison? [G-C13–14]
+
+Priority follows evidentiary leverage: modern re-editions of the core cases and the full prebend study would most directly change the present claims; wider accumulation of loosely related examples would not by itself solve the identification and denominator problems.
+
+## 8. Register-ready candidate claims
+
+“Register-ready” means structured for review. These are not canonical `HE-` entries, and none is declared accepted. Candidates deliberately emphasize the better-grounded core rather than the LOW-confidence chain hypothesis or the corpus-audit propositions.
+
+### Candidate 1 — Recurring annual terms (G-C01)
+
+- **Claim / proposition:** Some Nippur temple-linked rights were specified as recurring periods within a year, rather than undifferentiated full-time offices.
+- **Period:** Samsuiluna 11–12 in the directly dated core.
+- **Geography / archive / social context:** Martu/Kusu transactions; no secure household loci. No additional residence or household membership is inferred.
+- **Evidence type:** Primary; catalogue corroboration.
+- **Primary evidence:** G-I01–02: BE 6/2 36 and 39. G-I09 is lower-resolution corroboration.
+- **Secondary scholarship:** Poebel’s functional glosses are not required to establish the written annual periods. Source IDs: S01, S02.
+- **Interpretation(s):** Separates a family-held entitlement from a presumed lifetime occupation. The proposition is limited to the specific observation above, not a universal rule.
+- **Uncertainty / disagreement:** Annual periods do not prove exact days worked, a universal rota, or the same calendar in all texts.
+- **Confidence + rationale:** HIGH. The confidence concerns the narrow observation and the actual access tier in §3, not the whole society.
+- **Limits on generalization:** The particular rights described, not every Nippur institution.
+- **Relevance to project question:** Separates a family-held entitlement from a presumed lifetime occupation.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 2 — Sale and exchange of institutional rights (G-C02)
+
+- **Claim / proposition:** The selected Nippur corpus attests both sale and exchange of temple-office rights.
+- **Period:** Samsuiluna 11–12 in three primary-edition cases.
+- **Geography / archive / social context:** Martu, Kusu and Nuska transactions. No additional residence or household membership is inferred.
+- **Evidence type:** Primary.
+- **Primary evidence:** G-I01–03: BE 6/2 36, 37, 39.
+- **Secondary scholarship:** S04 abstract identifies the topic, but is not evidentiary support for the individual transactions. Source IDs: S01.
+- **Interpretation(s):** Institutional connection could change through transactions as well as kinship. The proposition is limited to the specific observation above, not a universal rule.
+- **Uncertainty / disagreement:** No proof that all offices were freely alienable or that no eligibility/approval conditions existed.
+- **Confidence + rationale:** HIGH. The confidence concerns the narrow observation and the actual access tier in §3, not the whole society.
+- **Limits on generalization:** Documented conveyances, not an unrestricted citywide market regime.
+- **Relevance to project question:** Institutional connection could change through transactions as well as kinship.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 3 — Family patrimony with differentiated assets (G-C03)
+
+- **Claim / proposition:** Office-linked rights could form part of family patrimony alongside other assets, without all family property necessarily merging.
+- **Period:** Old Babylonian; Samsuiluna-period examples.
+- **Geography / archive / social context:** Inherited Martu rights, paternal recovery, adoption and estate division. No additional residence or household membership is inferred.
+- **Evidence type:** Primary with catalogue corroboration.
+- **Primary evidence:** G-I01, G-I04, G-I08; G-I10 supplies catalogue-level corroboration.
+- **Secondary scholarship:** Archive-scale strategies are a further reconstruction, not directly stated. Source IDs: S01, S02.
+- **Interpretation(s):** Links institutional resources to durable family histories. The proposition is limited to the specific observation above, not a universal rule.
+- **Uncertainty / disagreement:** A shared father does not prove co-residence; inheritance is not equivalent to inalienability.
+- **Confidence + rationale:** HIGH. The confidence concerns the narrow observation and the actual access tier in §3, not the whole society.
+- **Limits on generalization:** Named property-holding cases; no prevalence estimate.
+- **Relevance to project question:** Links institutional resources to durable family histories.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 4 — Paternal-house recovery (G-C05)
+
+- **Claim / proposition:** Some Nippur reacquisitions explicitly characterize the recovered resource as belonging to the paternal house.
+- **Period:** BE 6/2 45 = Samsuiluna 14/12; no. 66 exact date not recovered.
+- **Geography / archive / social context:** Office recovery and a titled woman’s land recovery. No additional residence or household membership is inferred.
+- **Evidence type:** Primary.
+- **Primary evidence:** G-I04, G-I07: BE 6/2 66 and 45.
+- **Secondary scholarship:** Poebel calls these redemptions; a compulsory family redemption rule is not established. Source IDs: S01.
+- **Interpretation(s):** Continuity may include reacquisition after alienation. The proposition is limited to the specific observation above, not a universal rule.
+- **Uncertainty / disagreement:** His Biblical analogy cannot supply a Nippur legal rule; causes of the earlier alienations are unknown.
+- **Confidence + rationale:** HIGH for the family-recovery language; MODERATE for legal mechanism. The confidence concerns the narrow observation and the actual access tier in §3, not the whole society.
+- **Limits on generalization:** Two deeds and their stated family reference, not all lineage property.
+- **Relevance to project question:** Continuity may include reacquisition after alienation.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 5 — Adoption and protected office/property claims (G-C06)
+
+- **Claim / proposition:** A Nippur adoption deed protects specified office/property rights of the adoptee against claims by the named adoptive brother.
+- **Period:** Samsuiluna 22/6/16 (S01 catalogue p. 152).
+- **Geography / archive / social context:** Tab-balatu/Beltia, Habil-ahi and Ninurta-gamil. No additional residence or household membership is inferred.
+- **Evidence type:** Primary.
+- **Primary evidence:** G-I08: BE 6/2 57, property and no-claim clauses.
+- **Secondary scholarship:** Later edition located but not read; identification of every earlier relationship remains provisional. Source IDs: S01, S09, S10.
+- **Interpretation(s):** Created kinship and institutional patrimony could be negotiated together. The proposition is limited to the specific observation above, not a universal rule.
+- **Uncertainty / disagreement:** The deed does not establish that adoption transferred priestly qualification or actual cultic duty.
+- **Confidence + rationale:** MODERATE. The confidence concerns the narrow observation and the actual access tier in §3, not the whole society.
+- **Limits on generalization:** One explicit contractual arrangement; not a standard motive for all adoption.
+- **Relevance to project question:** Created kinship and institutional patrimony could be negotiated together.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 6 — Titled women and family land (G-C07)
+
+- **Claim / proposition:** A woman bearing a Ninurta-related religious title is documented recovering paternal-house land from another similarly titled woman.
+- **Period:** Samsuiluna 14/12; day unspecified (S01 catalogue p. 150).
+- **Geography / archive / social context:** Lamazum and Beltani in BE 6/2 45. No additional residence or household membership is inferred.
+- **Evidence type:** Primary.
+- **Primary evidence:** G-I07: title, patronymics, field recovery, silver consideration.
+- **Secondary scholarship:** Exact modern interpretation of SAL-ISḪIB is left open. Source IDs: S01.
+- **Interpretation(s):** Women’s institutional affiliation and family property action can coexist. The proposition is limited to the specific observation above, not a universal rule.
+- **Uncertainty / disagreement:** Religious affiliation does not make the field temple-owned or prove a female prebend sale.
+- **Confidence + rationale:** MODERATE. The confidence concerns the narrow observation and the actual access tier in §3, not the whole society.
+- **Limits on generalization:** Named titled women; no statement about all women’s access to every office.
+- **Relevance to project question:** Women’s institutional affiliation and family property action can coexist.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 7 — Family claims through multiple authorities (G-C08)
+
+- **Claim / proposition:** One Ninlil-related family dispute records royal referral to Nippur’s council followed by a house/property settlement.
+- **Period:** Hammurabi reign.
+- **Geography / archive / social context:** Two explicitly related family branches. No additional residence or household membership is inferred.
+- **Evidence type:** Primary.
+- **Primary evidence:** G-I05: BE 6/2 10, lines 1–36; S12 identifies P259799.
+- **Secondary scholarship:** Poebel’s wider theory of the council is not adopted. Source IDs: S01, S12.
+- **Interpretation(s):** Family-held institutional rights could involve multiple legal authorities. The proposition is limited to the specific observation above, not a universal rule.
+- **Uncertainty / disagreement:** A recorded royal referral is not evidence that every dispute followed this route or that this was a modern appellate hierarchy.
+- **Confidence + rationale:** MODERATE. The confidence concerns the narrow observation and the actual access tier in §3, not the whole society.
+- **Limits on generalization:** The route documented by this deed and its account of prior proceedings.
+- **Relevance to project question:** Family-held institutional rights could involve multiple legal authorities.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 8 — Deeds, death and future-claim liability (G-C09)
+
+- **Claim / proposition:** Receipt of deeds for an office and inheritance after a former holder’s death carried explicit responsibility for future claims.
+- **Period:** Samsuiluna 13/12; two-year interval in the text.
