@@ -2,8 +2,18 @@
 
 **Task ID:** IMP-0001  
 **Commissioned by:** Master Architect  
-**Status:** OPEN  
+**Status:** PREPARED / DISPATCH BLOCKED PENDING TRES-0010  
 **Context mode:** PROJECT-CONTEXT
+
+## Pre-dispatch gate
+
+Do not dispatch this implementation task until the Master Architect closes `TRES-0010 — Pre-Implementation Architecture / Semantics / Verification Red Team` and records that no unresolved blocker remains.
+
+Commission pack:
+
+- `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
+
+TRES-0010 findings may amend this packet or higher-authority artifacts before implementation begins.
 
 ## 1. Objective
 
