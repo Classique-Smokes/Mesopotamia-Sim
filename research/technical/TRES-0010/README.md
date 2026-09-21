@@ -7,6 +7,10 @@ Commission packets:
 
 `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/`
 
+## Method basis
+
+- `AI_AGENT_ADVERSARIAL_METHOD_REVIEW.md` — focused review of current multi-agent/adversarial-evaluation practice and resulting TRES-0010 method amendments.
+
 ## Purpose
 
 Run independent narrow adversarial reviews over the accepted foundation, SFL v0 specification, completed verification design, Stage-4 Slice-1 handoff, and implementation-risk seams before any persistent source implementation begins.
