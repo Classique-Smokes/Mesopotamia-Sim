@@ -20,6 +20,8 @@ Select a maintainable implementation architecture and host runtime for the first
 
 **Prototype specification preparation — Social Fabric Laboratory v0.**
 
+Active workbench: `plans/SFL_V0_SPECIFICATION_WORKBENCH.md`.
+
 Host-independent kernel accepted: `architecture/accepted/ADR-0004_REFERENCE_SIMULATION_KERNEL.md`.
 
 Active research spec: `research/technical/TRES-0002/HOST_RUNTIME_BAKEOFF.md`
