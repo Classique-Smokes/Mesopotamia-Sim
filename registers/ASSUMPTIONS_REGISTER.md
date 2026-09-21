@@ -27,18 +27,19 @@
 | Assumption ID | Status | Assumption | Scope / impact | Review trigger |
 |---|---|---|---|---|
 | ASM-0001 | ACTIVE | Relationship-mediated reciprocity may create a favour only when the recipient's directed attitude toward the benefactor is >= +75 (strong-like). | SFL v0 favour creation and actor evaluation. | Historical evidence, scenario testing, or Pass B/G verification showing the threshold is misleading or unnecessary. |
-| ASM-0002 | ACTIVE | v0 attitude events use fixed increments and natural drift of +attitude by 2 toward zero versus -attitude by 1 toward zero per decay event. | SFL v0 relationship dynamics. | Verification or historical/behavioral evidence showing the magnitudes distort the laboratory. |
+| ASM-0002 | ACTIVE | v0 attitude events use fixed increments and natural drift of +attitude by 2 toward zero versus -attitude by 1 toward zero per decay event; independent direct same-cycle attitude causes for one directed pair sum before one bound clamp. | SFL v0 relationship dynamics and deterministic same-cycle attitude closure. | Verification or historical/behavioral evidence showing the magnitudes/composition distort the laboratory. |
 | ASM-0003 | ACTIVE | Farm yields 4 grain; consumption is 1 per cycle; typical initial stock is 4-8; debt repayment preserves a 2-grain reserve. | SFL v0 scarcity/debt behavior. | Verification, balance testing, or later economic subsystem. |
 | ASM-0004 | ACTIVE | Parent/child and sibling kinship both multiply the attitude-derived component of ordinary interpersonal choice by 1.5x. | SFL v0 kinship effect. | Historical evidence or verification showing type-specific/different treatment is required. |
 | ASM-0005 | ACTIVE | Initial v0 household formation requires at least two distinct people, shared residence, a durable tie, two qualifying support events on separate cycles, and founding-core recognition. | SFL v0 household formation recognizer. | Historical evidence, verification, or later household model showing the gate is too narrow/broad. |
 | ASM-0006 | ACTIVE | Head appointment/succession requires unanimous sustaining-participant acceptance; provision spending uses a 2-grain contributor reserve and fixed-rank/exhaust-in-order allocation by precommit exposed capacity descending, stable semantic ID for exact ties. | SFL v0 collective authority/resource mobilization. | Verification, historical evidence, or richer governance/accounting rules. |
-| ASM-0007 | ACTIVE | v0 temporal lab parameters: attitude decay every 5 cycles; provision reconsideration cooldown 3 full cycles plus relevant context change; stable semantic ID as last-resort equal-priority tie-break. | SFL v0 timing/conflict resolution. | Verification sensitivity or later social priority/timing rules. |
+| ASM-0007 | ACTIVE | v0 temporal/conflict parameters: attitude decay every 5 cycles; provision reconsideration cooldown 3 full cycles plus relevant context change; at most one Residence transition per person/cycle; stable semantic ID as last-resort equal-priority tie-break. | SFL v0 timing/conflict resolution. | Verification sensitivity or later social priority/timing rules. |
 | ASM-0008 | ACTIVE | Loan social due review occurs after the third subsequent full cycle; any remaining balance causes one creditor->debtor -10 attitude event, regardless of ability to repay. | SFL v0 debt relationship dynamics. | Verification/model iteration or later debt/default institutions. |
 | ASM-0009 | ACTIVE | Established-household participation entry requires bilateral invitation/request plus recognition of H, a continuity bridge, shared residence, durable tie, and one qualifying post-formation support event; entry may reactivate an Inactive H through its sole bearer; exit is explicit. | SFL v0 sustaining-participant turnover. | Verification or later household admission/exit norms. |
 | ASM-0010 | ACTIVE | Household operational lifecycle uses 2+ sustaining participants = Active, 1 = Inactive, 0 = Dissolved; count does not establish identity. | SFL v0 operational lifecycle and continuity tests. | Verification/model iteration or richer household-activity semantics. |
 | ASM-0011 | ACTIVE | Controlled v0 lineage classification requires fresh post-separation organizational evidence, predecessor-source clarity, and narrow all-founders-from-predecessor scope; ambiguous/mixed-origin cases receive no lineage classification. | SFL v0 division/consolidation proof cases only. | Verification/model iteration or richer lineage/inheritance/fission/merger model. |
 | ASM-0012 | ACTIVE | Reference v0 actor scoring uses named exact-integer components summed to FinalScore; highest score wins; domain tie key if explicitly defined, otherwise disclosed stable-semantic-ID fallback. Exact component coefficients remain laboratory configuration. | SFL v0 deterministic reference agency and closed-loop verification. | Model iteration or replacement/extension of the v0 reference policy. |
 | ASM-0013 | ACTIVE | Feasible counterparty responses use deterministic ResponseDecisionContext with the same exact component-sum scorer; infeasibility yields Unable before voluntary scoring; response coefficients remain laboratory configuration. | SFL v0 autonomous counterparty agency and response verification. | Model iteration or richer negotiation/norm/coercion response semantics. |
+| ASM-0014 | ACTIVE | v0 grain stock and grain-valued action quantities use integral grain units; action quantities are strictly positive while stock/debt remaining may be zero. | SFL v0 material representation and action-parameter validation. | Introduction of a historically grounded/economic quantity system requiring fractional or typed metrological units. |
 
 ### ASM-0001 — Reciprocity attitude gate
 
@@ -55,14 +56,14 @@
 ### ASM-0002 — Attitude dynamics parameters
 
 - **Status:** ACTIVE
-- **Assumption:** v0 uses fixed attitude increments (+5/+10/-5/-10/-20 by event) and, on each later-scheduled decay event, positive attitude moves 2 toward zero while negative attitude moves 1 toward zero.
-- **Why temporarily needed:** Deterministic inspectable relationship dynamics are required without claiming a psychological calibration.
-- **Scope / impact:** Actor social evaluation and long-run relationship persistence.
-- **Not authoritative for:** Historical psychology, real-world relationship rates, or later personality systems.
-- **Review / replacement trigger:** Verification/balance testing or relevant research.
-- **Introduced by:** Director / Master Architect working specification discussion
+- **Assumption:** v0 uses fixed attitude increments (+5/+10/-5/-10/-20 by event) and, on each later-scheduled decay event, positive attitude moves 2 toward zero while negative attitude moves 1 toward zero. Independent direct same-cycle attitude causes targeting one directed attitude contribute once to a net signed delta that is clamped once after maintenance/decay.
+- **Why temporarily needed:** Deterministic inspectable relationship dynamics are required without claiming psychological calibration or an event-precedence meaning that the v0 model does not possess.
+- **Scope / impact:** Actor social evaluation, long-run relationship persistence, and same-cycle attitude closure near bounds.
+- **Not authoritative for:** Historical psychology, real-world relationship rates, later personality systems, or causal placement of future attitude effects that are downstream of other automatic reactions.
+- **Review / replacement trigger:** Verification/balance testing, relevant research, or introduction of richer causally ordered reaction semantics.
+- **Introduced by:** Director / Master Architect working specification discussion; composition clarified by Director-approved TRES-0010 B2 closure
 - **Date:** 2026-09-21
-- **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`
+- **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `research/technical/TRES-0010/B2_MASTER_ARCHITECT_DECISION_SYNTHESIS.md`
 
 ### ASM-0003 — Grain laboratory parameters
 
@@ -115,14 +116,14 @@
 ### ASM-0007 — v0 timing and technical tie fallback
 
 - **Status:** ACTIVE
-- **Assumption:** Attitude decay occurs every 5 cycles; provision reconsideration requires 3 full cycles plus relevant context change; otherwise unresolved equal-priority symmetry uses stable semantic ID as a disclosed technical fallback.
+- **Assumption:** Attitude decay occurs every 5 cycles; provision reconsideration requires 3 full cycles plus relevant context change; at most one Residence transition per person may commit in one cycle; otherwise unresolved equal-priority symmetry uses stable semantic ID as a disclosed technical fallback.
 - **Why temporarily needed:** v0 requires exact deterministic timing and conflict closure before richer social timing/priority norms exist.
-- **Scope / impact:** Relationship fading, head reconsideration behavior, and rare equal-priority resolution.
-- **Not authoritative for:** Historical time units, social priority norms, fairness, seniority, or later governance rules.
-- **Review / replacement trigger:** Pass G permutation/sensitivity tests, model iteration, or introduction of richer social priority/timing rules.
-- **Introduced by:** Director / Master Architect working specification discussion
+- **Scope / impact:** Relationship fading, head reconsideration behavior, same-person Residence conflicts, and rare equal-priority resolution.
+- **Not authoritative for:** Historical time units, claims that real people cannot move twice within a comparable real-world period, social priority norms, fairness, seniority, or later governance rules.
+- **Review / replacement trigger:** Permutation/sensitivity tests, model iteration, or introduction of richer social priority/timing rules.
+- **Introduced by:** Director / Master Architect working specification discussion; Residence conflict clarified by Director-approved TRES-0010 B2 closure
 - **Date:** 2026-09-21
-- **Related artifacts:** `specifications/working/SFL_V0_WORKING_SPEC.md`; `research/technical/TRES-0003/PASS_F_TEMPORAL_RESOLUTION_ADVERSARIAL_REVIEW.md`
+- **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `research/technical/TRES-0003/PASS_F_TEMPORAL_RESOLUTION_ADVERSARIAL_REVIEW.md`; `research/technical/TRES-0010/B2_MASTER_ARCHITECT_DECISION_SYNTHESIS.md`
 
 ### ASM-0008 — Debt social due cycle
 
@@ -195,6 +196,18 @@
 - **Introduced by:** Director / Master Architect TRES-0008 closure resolution
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `plans/verification/SFL_V0/REFERENCE_SCORING_PROFILES.md`
+
+### ASM-0014 — Integral v0 grain unit
+
+- **Status:** ACTIVE
+- **Assumption:** v0 personal grain stock and grain-valued action quantities use integral grain units. Stock and debt remaining may be zero; every grain-valued action quantity is a strictly positive integer.
+- **Why temporarily needed:** The reference laboratory needs one exact, deterministic, easily verified material unit without introducing a fractional/metrological/economic quantity system.
+- **Scope / impact:** SFL v0 grain stock, gifts/help, loans, repayment, explicit benefits, and the amount domain later inherited by mediated dowry.
+- **Not authoritative for:** Historical Mesopotamian metrology, ration fractions, prices, exchange, or later economic simulation granularity.
+- **Review / replacement trigger:** Introduction of a historically grounded or economic quantity system requiring fractional or typed metrological units.
+- **Introduced by:** Director / Master Architect TRES-0010 B2 semantic closure
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `plans/verification/SFL_V0/LOWER_LEVEL_SOCIAL_FABRIC_FAMILY.md`; `research/technical/TRES-0010/B2_MASTER_ARCHITECT_DECISION_SYNTHESIS.md`
 
 ## Entry template
 
