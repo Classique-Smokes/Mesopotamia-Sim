@@ -4,7 +4,7 @@
 - **Owner:** Master Architect
 - **Date:** 2026-09-21
 - **Depends on accepted decisions:** DEC-0001, ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0005
-- **Known assumptions:** ASM-0001 through ASM-0009
+- **Known assumptions:** ASM-0001 through ASM-0010
 
 ## 1. Purpose and scope
 
@@ -293,7 +293,7 @@ A `CandidateOrganization` may collect formation evidence but has no causal autho
 
 ### 7.2 Formation
 
-A household forms only when a connected founding core has:
+A household founding core contains at least **two distinct people**. A household forms only when that connected founding core has:
 
 - shared residence;
 - a connecting durable tie: kinship, marriage, or mutual strong-like attitude;
@@ -308,7 +308,9 @@ Qualifying support events:
 
 Debt/favour existence alone is insufficient.
 
-Formation creates one persistent household identity plus a `FormationWarrant` recording founding core, dwelling, supporting ties/events, recognition evidence, and formation time.
+Formation creates one persistent household identity plus a `FormationWarrant` recording founding core, dwelling, supporting ties/events, recognition evidence, the earliest retained sustaining-organization evidence used by the warrant, and formation/reification time.
+
+The history must therefore distinguish when the lower-level sustaining organization began developing from when sufficient evidence caused H to be recognized/reified.
 
 Successful formation also creates a provenance-bearing `SustainingParticipant` association for every person in the founding core, supported by that `FormationWarrant`.
 
@@ -322,7 +324,7 @@ v0 uses provenance-bearing `SustainingParticipant`.
 
 ### 7.4 Participation change after formation
 
-A nonparticipant may become a `SustainingParticipant` of active household H only through an explicit bilateral participation proposal:
+A nonparticipant may become a `SustainingParticipant` of an **Active** household H, or an **Inactive** H with exactly one live continuity bearer, only through an explicit bilateral participation proposal:
 
 - a nonparticipant may `RequestHouseholdParticipation(H)` through a current sustaining participant; or
 - a current sustaining participant may `InviteHouseholdParticipation(P)`.
@@ -332,7 +334,7 @@ The named counterpart must accept. The head has no general admission authority.
 At commit, a provenance-bearing `ParticipationWarrant` is required. It must establish that:
 
 - the newcomer recognizes H;
-- at least one current sustaining participant recognizes the same continuing H and serves as the continuity bridge;
+- at least one current sustaining participant recognizes the same continuing H and serves as the continuity bridge; for an Inactive H, its sole remaining sustaining participant must be that bridge;
 - newcomer and at least one current sustaining participant share residence;
 - newcomer has a durable tie (kinship, marriage, or mutual strong-like) to at least one current sustaining participant;
 - at least one qualifying committed support event occurred between the newcomer and a current sustaining participant after H already existed;
@@ -364,13 +366,21 @@ Snapshot similarity, residence, assets, kinship, or participant overlap alone ne
 
 Sequential transmission may replace every founder while preserving household identity.
 
+When the same evidence/history supports both a valid participation/continuity path to an existing non-Dissolved household and fresh formation of a new household, the valid continuity/participation interpretation takes precedence for that evidence. The same causal evidence bundle cannot simultaneously continue H and found a duplicate H2. This does not prohibit a separately warranted overlapping organization based on distinct evidence.
+
+Residence, resources, attitudes, marriage changes, representative succession, and one-by-one participant replacement do not by themselves break identity when a valid continuity chain exists.
+
 ### 7.6 Lifecycle
 
-- Active: viable sustaining organization exists.
-- Inactive: no viable sustaining organization, but at least one live continuity bearer remains.
-- Dissolved: no live continuity bearer remains.
+For v0, participant count determines **operational lifecycle state only**. Household numerical identity remains grounded in its historical warrants.
 
-Inactive may reactivate through valid continuity. Dissolved cannot reactivate as the same identity.
+- **Active:** 2 or more current `SustainingParticipant` associations.
+- **Inactive:** exactly 1 current `SustainingParticipant`, who is the live continuity bearer.
+- **Dissolved:** 0 current `SustainingParticipant` associations.
+
+Inactive may reactivate through a valid `ParticipationWarrant` bridged by its sole bearer. Dissolved cannot reactivate as the same identity.
+
+Lifecycle state is evaluated/published only at stable cycle closure after compatible participation changes and their required continuity reactions have resolved. Transient within-cycle participant counts are historical microstate, not authoritative lifecycle state.
 
 ### 7.7 Controlled lineage cases
 
@@ -379,7 +389,8 @@ Division proof:
 - both branches may record `DerivedFrom(H)`;
 - only one branch may retain H, through explicit continuation;
 - controlled v0 continuity uses representative-role chain plus sustaining-participant transmission;
-- other branch receives a new identity.
+- other branch receives a new identity;
+- branch size, asset share, residence, or graph overlap never decide which branch retains H.
 
 Consolidation proof:
 
@@ -422,6 +433,8 @@ Only:
 - 1-grain support to a needy `SustainingParticipant`;
 - mediated-marriage dowry.
 
+A needy sustaining participant who recognizes the current head may request household support; the head may also proactively propose such support.
+
 No generic household spending authority exists.
 
 Household-originated support cannot serve as independent proof of household formation/continuity.
@@ -449,6 +462,8 @@ Role scope:
 
 No general sovereignty exists.
 
+Appointment/succession participants directly recognize the resulting head-role state. Outsiders update head recognition only through valid observation/communication.
+
 ### 8.5 Household decision mode
 
 Occupied role activates `HouseholdDecisionContext(H, head=P)`.
@@ -466,7 +481,9 @@ v0 household-mode concerns:
 - evaluate/fund mediated marriage;
 - request provision backing/reconsideration.
 
-Vacancy preserves household identity and provision commitments but suspends household-mode spending/marriage mediation.
+Household collective action requires an **Active** H, an occupied head role, authority in scope, and sufficient valid backing/capacity. Household existence alone is not capability.
+
+Vacancy preserves household identity and provision commitments but suspends household-mode spending/marriage mediation. An Inactive household likewise has no household-mode initiative until it becomes Active again.
 
 ## 9. Temporal / resolution / history contract
 
@@ -487,9 +504,9 @@ Cycle order:
 7. priority/conflict resolution + revalidation;
 8. commit/failure;
 9. automatic semantic reactions to closure;
-10. record/refresh/advance.
+10. publish/evaluate stable cycle-level state, record/refresh, and advance.
 
-No same-cycle voluntary reactivation occurs.
+**Stable-cycle rule:** authoritative commits inside the cycle are immediately usable by central revalidation and automatic causal reactions, but they do not create a new actor-visible completed cycle state. Cycle-level classifications/summaries and next-cycle actor-visible state are evaluated/published only after resolution/reaction closure. Intermediate microsteps remain inspectable history. No same-cycle voluntary reactivation or checkpoint occurs before stable closure.
 
 ### 9.2 Revalidation and conflicts
 
@@ -506,6 +523,8 @@ For competing household provision use:
 Equal-priority unresolved symmetry uses disclosed stable-ID technical fallback.
 
 Accepted but incompatible proposals may fail as `InvalidatedAtResolution`; this is not social refusal.
+
+If a valid same-cycle `ParticipationWarrant` explicitly depends on sustaining participant P as its continuity bridge and P also has an accepted participation-end proposal, resolve the bridged entry and its continuity reaction before P's exit. This is a narrow causal-handoff priority, not a general rule that entry outranks exit.
 
 ### 9.3 Automatic reactions
 
@@ -653,3 +672,4 @@ Relevant:
 - 2026-09-21 — Accepted SFL v0 semantic specification after Passes A-G and targeted adversarial reviews TRES-0003/TRES-0004.
 - 2026-09-21 — Restorative Stage-3 errata: founding-core `SustainingParticipant` creation made explicit; previously approved head-nomination eligibility restored from the closed working record. No new social rule introduced.
 - 2026-09-21 — Director-approved Stage-3 semantic amendments: evidence-backed `CandidateRecognition`; bilateral invitation/request plus `ParticipationWarrant` and explicit participation end; loan social due cycle at +3 full cycles with one-time unpaid-balance attitude penalty.
+- 2026-09-21 — Director-approved continuity cleanup after TRES-0006: operational lifecycle state (2+/1/0), Inactive reactivation through sole bearer, stable-cycle lifecycle evaluation, bridge-handoff priority, continuity-over-duplicate-formation precedence, and explicit two-person founding minimum. Restored compressed household authority/history details.
