@@ -22,7 +22,8 @@ Complete Roadmap Stage 3: define executable verification scenarios, invariants, 
   - recognition/subjective information;
   - grounded provision/support/dowry (except exact multi-contributor debit trace);
   - no-self-confirmation;
-  - head appointment/vacancy/succession and personal-vs-household dual mode.
+  - head appointment/vacancy/succession and personal-vs-household dual mode;
+  - central invalidation/failure knowledge, provision priority, and reaction closure.
 - Pre-rule semantic-compression audit run across the root retrieval chain and core accepted artifacts; restorative losses repaired: `governance/audits/2026-09-21_PRE_RULE_COMPRESSION_AUDIT.md`.
 
 ## Active
@@ -55,8 +56,8 @@ Future Stage-4 engineering context:
 ## Next
 
 1. Resolve the narrow multi-contributor provision-allocation erratum.
-2. Define remaining conflict/invalidation, provision-priority, reaction-closure, and communication-provenance scenarios.
-3. Continue through deadlock, deterministic fallback, checkpoint/rebuild, and explainability families.
+2. Define MaterialDeadlock and stable-ID fallback determinism/sensitivity scenarios.
+3. Define checkpoint/restore, derived-state rebuild, and decision-explainability scenarios.
 4. Consolidate always-on invariants, boundary matrices, semantic mutants, and held-out/generated variants.
 5. Review the full verification package without changing accepted semantics.
 6. Prepare the PROJECT-CONTEXT implementation packet.
