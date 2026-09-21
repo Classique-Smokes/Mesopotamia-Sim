@@ -1,6 +1,6 @@
 # SPEC-SFL-0001 — Stage-3 Errata / Director Decisions
 
-**Status:** OPEN / REQUIRES DIRECTOR DECISION  
+**Status:** RESOLVED / HISTORICAL WORKING RECORD  
 **Date:** 2026-09-21  
 **Authority:** Working errata proposal only. This file does not alter accepted semantics until approved and promoted into `SPEC-SFL-0001`.
 
@@ -109,8 +109,12 @@ If the creditor lacks current evidence of debtor ability, no automatic -10 attit
 
 This preserves the already accepted debt concern without introducing a new creditor-initiated action or engine omniscience.
 
-## Governance note
+## Resolution
 
-ERR-SFL-001 through ERR-SFL-003 change simulation semantics. They require explicit Director approval before incorporation into the accepted spec or authoritative Stage-3 scenario cards.
+Director approved the candidate-recognition rule and the participation-warrant direction, with explicit bilateral invitation/request added so established-household participation is conscious rather than engine-imposed.
 
-Stage-3 fixture/schema guardrails may continue independently, but canonical formation/continuity/debt-behavior cards must not encode these recommendations as accepted truth until approval.
+Director replaced the proposed knowledge-conditioned debt penalty with a social due cycle: review after the third subsequent full cycle; if any balance remains, creditor -> debtor attitude changes -10 once regardless of debtor ability.
+
+These changes are incorporated into `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`.
+
+`RequestRepayment` was not added.
