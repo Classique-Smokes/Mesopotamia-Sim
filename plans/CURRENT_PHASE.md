@@ -1,50 +1,46 @@
-# Current Phase — Foundational Architecture
+# Current Phase — SFL v0 Verification Design
 
 **Status:** Operational plan; not simulation authority.
 
 ## Goal
 
-Specify the smallest faithful Social Fabric Laboratory v0 precisely enough that implementation agents can build it without inventing foundational social semantics.
+Complete Roadmap Stage 3: define executable verification scenarios, invariants, adversarial controls, and continuation checks for the accepted SFL v0 semantic contract.
 
 ## Completed
 
-- Project governance and Master Architect operating model established.
-- DEC-0001 Social-Fabric Model accepted.
-- ADR-0001 representation and ADR-0002 individual agency accepted.
-- DEC-0005 Architecture Development Policy accepted.
-- ADR-0003 Progressive Derived-State Specialization accepted.
-- RES-0001, TRES-0001, and TRES-0002 Stage I completed.
-- Household organization, execution/time, and history/recovery conceptually surveyed as working semantic inputs.
+- Roadmap Stage 1 implementation architecture selection.
+- Reference simulation kernel accepted.
+- C# 14 / .NET 10 LTS host/runtime accepted.
+- Roadmap Stage 2 SFL v0 semantic specification.
+- Passes A-G completed.
+- Targeted adversarial reviews TRES-0003 (temporal/resolution) and TRES-0004 (verification closure).
+- Accepted specification: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`.
 
 ## Active
 
-**Prototype specification preparation — Social Fabric Laboratory v0, Pass G verification closure.**
+**Roadmap Stage 3 — Define verification scenarios.**
 
-Active workbench: `plans/SFL_V0_SPECIFICATION_WORKBENCH.md`.
+Active workbench:
 
-Working implementation-oriented draft: `specifications/working/SFL_V0_WORKING_SPEC.md`.
+- `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
 
-Host-independent kernel accepted: `architecture/accepted/ADR-0004_REFERENCE_SIMULATION_KERNEL.md`.
+Primary authority:
 
-Active research spec: `research/technical/TRES-0002/HOST_RUNTIME_BAKEOFF.md`
+- `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
 
-Adversarial host review: `research/technical/TRES-0002/CSHARP_DOTNET_ADVERSARIAL_REVIEW.md`.
+Supporting verification research:
 
-Implementation-risk context: `architecture/working/CSHARP_DOTNET_ENGINEERING_GUARDRAILS.md`.
-
-The earlier A-vs-B derived-state fork is resolved: start simple and promote individual derived-state subsystems to stronger incremental maintenance only when measured need justifies it.
-
-Approved downstream roadmap: `plans/FIRST_PROTOTYPE_DEVELOPMENT_ROADMAP.md`.
+- `research/technical/TRES-0001/returns/TRES-0001F_RESEARCH_REPORT.md`
+- `research/technical/TRES-0004/PASS_G_VERIFICATION_CLOSURE_ADVERSARIAL_REVIEW.md`
 
 ## Next
 
-1. Define a language-neutral benchmark/bake-off workload representing the accepted semantic kernel.
-2. Compare the credible host/runtime finalists on that common workload.
-3. Reconcile the results into the implementation-architecture recommendation. **Complete.**
-4. Run fresh adversarial review. **Complete: no architecture-level blocker found.**
-5. Obtain explicit approval for the host/runtime and whole-system implementation architecture. **Host/runtime complete: C# 14 / .NET 10 LTS accepted; reference kernel already accepted.**
-6. Complete bounded prototype rule specification (Pass G active), then define verification scenarios.
-7. Run subsystem-specific technical design research only where unresolved risk still warrants it.
-8. Prepare the PROJECT-CONTEXT implementation packet.
+1. Convert the Stage-2 proof obligations into canonical executable scenario cards.
+2. Define always-on invariants and independent checker/oracle rules.
+3. Define boundary matrices, metamorphic pairs, semantic mutants, and held-out variants.
+4. Define exact checkpoint/restore and decision-explainability scenarios.
+5. Review the verification package for completeness without changing accepted semantics.
+6. Prepare the PROJECT-CONTEXT implementation packet.
+7. Begin Roadmap Stage 4 vertical-slice implementation.
 
-Derived-state break-even benchmarking is deferred until a concrete subsystem needs promotion beyond simple maintenance; it is no longer a blocker for the first architecture.
+Historical model refinement/calibration remains a separate Director-led model-development concern and does not block the foundational v0 verification contract.
