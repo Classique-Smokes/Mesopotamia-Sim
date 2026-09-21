@@ -163,8 +163,9 @@ This route bypasses household mediation, dowry, and groom -> head favour.
 
 If bypass does not apply:
 
-- bride must be a female `SustainingParticipant` of a recognized household;
-- groom must recognize that household and its current head/scope;
+- bride must be a female `SustainingParticipant` of H;
+- groom must hold sufficient subjective factual evidence of the bride's current `SustainingParticipant` association to H;
+- groom must recognize H and its current head/scope;
 - head acceptance is sufficient for the mediated route;
 - household provision capacity must cover the proposed dowry;
 - dowry transfers directly to groom;
@@ -286,7 +287,7 @@ Recognition is causal rather than decorative.
 - ordinary person-person actions remain available independently of household recognition;
 - an actor may recognize H/head while disliking them or refusing a request.
 
-For household-mediated marriage, the groom must recognize the bride's household and its current head/scope. Without that recognition the mediated route is unavailable; the mutual-strong-like bypass remains independent.
+For household-mediated marriage, the groom must know the relevant bride-to-H participation fact and recognize H plus its current head/scope. Without that subjective route the mediated candidate is unavailable; the mutual-strong-like bypass remains independent.
 
 ### 6.7 Failed attempts
 
@@ -783,4 +784,4 @@ Relevant:
 - 2026-09-21 — Director-approved Stage-3 semantic amendments: evidence-backed `CandidateRecognition`; bilateral invitation/request plus `ParticipationWarrant` and explicit participation end; loan social due cycle at +3 full cycles with one-time unpaid-balance attitude penalty.
 - 2026-09-21 — Director-approved continuity cleanup after TRES-0006: operational lifecycle state (2+/1/0), Inactive reactivation through sole bearer, stable-cycle lifecycle evaluation, bridge-handoff priority, continuity-over-duplicate-formation precedence, and explicit two-person founding minimum. Restored compressed household authority/history details.
 - 2026-09-21 — Director-approved lineage semantics after TRES-0007: one behaviorally inert LineageWarrant per successor formation at most; direct predecessor provenance distinct from ancestry; fresh organizational evidence; narrow division/consolidation classifications; ambiguity withholds lineage rather than formation; no inherited causal state.
-- 2026-09-21 — Restored previously approved Pass-C information semantics lost during compression: communication initiative cost, event-provenance precedence, Contested handling, general household/role recognition action gating, and outsider non-omniscience.
+- 2026-09-21 — Restored previously approved Pass-C information semantics lost during compression: communication initiative cost, event-provenance precedence, Contested handling, general household/role recognition action gating, outsider non-omniscience, and the mediated-marriage bride-to-household subjective route requirement.
