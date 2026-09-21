@@ -1,7 +1,8 @@
 # SFL v0 — Lineage Warrant Working Proposal
 
-**Status:** WORKING / NON-AUTHORITATIVE  
+**Status:** SUPERSEDED WORKING RECORD / NON-AUTHORITATIVE  
 **Date:** 2026-09-21  
+**Superseded by:** TRES-0007 reconciliation and accepted §7.7 of `SPEC-SFL-0001`  
 **Purpose:** Flesh out the minimum v0 semantics needed to support the already-accepted controlled division and consolidation proof cases without turning lineage into identity, inheritance, or a scripted split/merge command.
 
 ## 1. Fixed constraints from accepted SFL v0
