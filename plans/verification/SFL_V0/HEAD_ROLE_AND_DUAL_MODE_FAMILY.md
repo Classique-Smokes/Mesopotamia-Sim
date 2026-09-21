@@ -138,10 +138,12 @@ If unanimity or nominee consent is missing, B is not installed.
 
 Active H with head P.
 
-Pinned decision profile ensures both contexts have one clear candidate:
+Pinned profiles:
 
-- P personal context prefers one ordinary personal action;
-- H household context prefers one valid household action.
+- P personal context uses `SCORE-VP-002` with the declared `GiftTarget`;
+- H household context uses `SCORE-VP-003` with the declared `NeedRecipient`.
+
+The fixture may bind semantic targets but may not inject candidates/final scores. Production generation/gates and scorer must produce the proposals.
 
 ### Assertions at deliberation
 
@@ -173,10 +175,12 @@ Active H with head P.
 - needy sustaining participant B qualifies for 1-grain household support;
 - outsider C can receive an ordinary 1-grain personal gift from P.
 
-Pinned scoring causes:
+Pinned scoring:
 
-- P personal context to propose/receive acceptance for Gift(P -> C, 1);
-- H household context to propose valid support(B, 1) backed by P.
+- P personal context uses `SCORE-VP-002`, `GiftTarget = C`;
+- H household context uses `SCORE-VP-003`, `NeedRecipient = B`.
+
+Production generation/gates must produce the accepted Gift(P -> C,1) and household support(B,1) proposals from the common snapshot.
 
 Both are individually feasible against the common snapshot, but both cannot consume P's same last exposed grain while preserving the protected reserve.
 
