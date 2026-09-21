@@ -11,7 +11,11 @@ Mechanism-isolation cards may submit proposal responses through the public respo
 - transfer meanings remain explicit even where material code paths are shared;
 - relation histories survive satisfaction/termination where the spec requires historical queryability;
 - no lower-level relation silently becomes household membership;
+- grain-valued action terms obey the accepted positive-integer domain and invalid terms never reach target response;
 - one personal voluntary initiative per cycle remains distinct from proposal responses;
+- called-favour requested execution is response-scoped and consumes the favour only on successful commit;
+- at most one Residence transition per person commits in one cycle;
+- direct same-cycle attitude causes compose by net signed delta followed by one bound clamp;
 - categorical gates use authoritative stored state, not amplified score components.
 
 ---
@@ -103,18 +107,19 @@ Both successful routes create the same Loan semantic effect with roles determine
 
 ### Explicit benefit-for-favour
 
-A uses `OfferBenefitForFavor`; B knowingly accepts the proposed benefit-for-one-favour bargain.
+A uses `OfferBenefitForFavor`; B knowingly accepts the proposed benefit-for-one-favour bargain while B -> A favour capacity is available.
 
-- the specified material/benefit effect commits;
-- exactly one B -> A Favour is created if pair-capacity permits;
-- history meaning = ExplicitBenefitForFavor.
+- the specified material/benefit effect and exactly one B -> A Favour commit atomically;
+- history meaning = ExplicitBenefitForFavor;
+- the event is not relabeled as Gift/Help and does not inherit Gift/Help attitude effects merely because transfer code is shared.
 
 ### Relationship-mediated reciprocal help
 
 B already has stored attitude >= +75 toward A and knowingly accepts qualifying help from A under this meaning.
 
 - benefit commits;
-- one B -> A Favour may arise under the accepted reciprocal-help rule;
+- one B -> A Favour may arise under the accepted reciprocal-help rule if pair capacity permits;
+- if pair capacity is already full, otherwise-valid/feasible/accepted help may still commit but no second favour is created;
 - history meaning remains RelationshipMediatedReciprocalHelp.
 
 The material transfer implementation may be shared; semantic history/results may not collapse these meanings.
@@ -141,12 +146,22 @@ Assertions:
 - successful repayment gives lender -> borrower +5;
 - debt history remains.
 
+### Amount validity boundary
+
+Exercise categorical term validation before target response/world feasibility:
+
+- `RepayDebt(0)` -> invalid term; no social failed-attempt outcome or material effect;
+- negative/non-integral repayment -> invalid term;
+- `RepayDebt(amount > remaining)` -> invalid term; no clamping/credit/meaning conversion;
+- `RepayDebt(remaining)` remains semantically valid, subject to reserve/material feasibility.
+
 ### Reserve boundary
 
-Attempt repayment that would leave debtor below 2.
+Attempt a semantically valid repayment amount that would leave debtor below 2.
 
-- repayment cannot commit for that amount;
+- outcome is `Unable(reason)` when infeasibility is already present at feasibility evaluation;
 - debt balance remains unchanged;
+- no refusal attitude consequence;
 - no negative grain.
 
 ### Full repayment
@@ -177,10 +192,11 @@ Assertions:
 
 ### Explicit bargain
 
-A offers a benefit for one favour; B knowingly accepts.
+A offers a benefit for one favour; B knowingly accepts while B -> A favour capacity is available.
 
-- one B -> A favour is created;
-- B must know the favour consequence before acceptance.
+- material benefit and one B -> A favour commit atomically;
+- B must know the favour consequence before acceptance;
+- history meaning remains ExplicitBenefitForFavor.
 
 ### Relationship-mediated reciprocity boundary
 
@@ -200,9 +216,14 @@ Identical beneficial transfer explicitly meaning Gift:
 
 ### One-per-ordered-pair
 
-With one B -> A favour already outstanding, another favour-creating benefit cannot stack a second favour token for the same ordered pair.
+With one B -> A favour already outstanding:
 
-The underlying benefit may still commit if independently valid; favour cardinality remains one.
+- a new `ExplicitBenefitForFavor(A -> B, benefit)` is world-state infeasible because its promised new favour cannot exist;
+- if deliberately submitted through the public mechanism-isolation boundary, outcome is `Unable(FavourCapacityFull)`; no scored Accept/Decline, no material benefit, and no new favour;
+- if the pair slot was available at acceptance but is filled before commit, outcome is `InvalidatedAtResolution(FavourCapacityFull)`; neither bargain leg commits;
+- relationship-mediated reciprocal help remains independently meaningful: otherwise-valid/feasible/accepted help may commit, but favour cardinality remains one.
+
+The suite must fail an implementation that silently degrades a failed explicit bargain into Gift/Help.
 
 ---
 
@@ -210,34 +231,67 @@ The underlying benefit may still commit if independently valid; favour cardinali
 
 **Level:** mechanism-isolation
 
-### Fulfilment
+### Response-closed fulfilment
 
-B owes A one favour. A uses `CallFavor` for one otherwise-feasible ordinary action; B fulfils.
+B owes A one favour. A uses `CallFavor` for a requested action that satisfies the v0 response-closed callable predicate: after B's Fulfil/Refuse choice, no further voluntary actor response is required for the requested action to reach terminal commit/failure.
+
+Use a declared current action shape that satisfies that predicate. B may already have selected/executed its ordinary personal initiative in the same cycle.
 
 Assertions:
 
-- requested action commits through ordinary proposal/resolution semantics;
-- favour is satisfied/consumed;
-- A -> B attitude +10;
+- B's Fulfil/Refuse choice is a response and does not consume/grant B's personal initiative;
+- requested execution occurs within that response scope and does not consume a second B personal initiative;
+- requested action remains subject to ordinary world feasibility and central revalidation;
+- on successful requested-action commit, the favour is satisfied/consumed and A -> B attitude +10;
+- no nested `ResponseDecisionContext` is opened;
 - fulfilled favour does not recursively create another favour.
+
+### Non-callable payload
+
+Construct a requested action that would require a new third-party voluntary response, establish marriage/kinship, manipulate another favour, or require household/role authority.
+
+Assertions:
+
+- the CallFavor term is categorically invalid before B response activation;
+- no Fulfil/Refuse scoring occurs;
+- favour remains outstanding;
+- no material/relation/attitude effect occurs;
+- the validation rejection is not `Declined`, `Unable`, or `InvalidatedAtResolution`.
+
+### Unable
+
+Use a semantically valid response-closed payload whose world-state feasibility is already false when evaluated.
+
+Assertions:
+
+- outcome is `Unable(reason)`;
+- no voluntary Fulfil/Refuse scoring occurs;
+- favour remains outstanding;
+- requested world effect does not commit;
+- no +10/-20 called-favour attitude effect fires.
 
 ### Voluntary refusal
 
-Same valid called favour; B refuses.
+Use a valid, feasible called-favour payload; B selects RefuseCalledFavor.
 
 Assertions:
 
+- outcome is `Declined`;
 - favour remains outstanding;
 - A -> B attitude -20;
-- requested world effect does not commit.
+- requested world effect does not commit;
+- refusal does not consume B's personal initiative.
 
-### Impossible requested action
+### Resolution invalidation
 
-Call favour for an action that is physically/semantically infeasible or intrinsically excluded, including marriage.
+Use a valid, feasible payload; B selects FulfilCalledFavor, then another same-cycle effect removes an action-relevant precondition before commit.
 
-- favour does not make it feasible;
-- marriage cannot be compelled;
-- feasibility failure remains distinguishable from voluntary refusal under ordinary failure rules.
+Assertions:
+
+- outcome is `InvalidatedAtResolution(reason)`;
+- favour remains outstanding;
+- requested world effect does not commit;
+- no +10/-20 called-favour attitude effect fires.
 
 ### Reciprocal cancellation
 
@@ -313,6 +367,19 @@ A invites B into A's current dwelling; B accepts.
 
 Apply the same assertions symmetrically.
 
+### Competing accepted Residence proposals
+
+From one common snapshot, create two independently accepted proposals whose effects would change B's Residence to different dwellings and for which no semantic priority distinguishes the contenders.
+
+Assertions:
+
+- both Accept responses remain in history;
+- exactly one Residence transition for B commits;
+- the winner follows the ordinary conflict rules and, if still equal-priority, the disclosed stable-ID fallback with fallback marker;
+- the non-winning accepted proposal becomes `InvalidatedAtResolution(CompetingResidenceTransition)`, not Declined;
+- reversing nonsemantic proposal/container enumeration does not change the winner/history for fixed semantic IDs;
+- B does not make two sequential Residence transitions in the cycle.
+
 ### Marriage control
 
 Establish marriage without a separate accepted residence proposal.
@@ -341,7 +408,24 @@ Independently exercise:
 
 ### Bounds
 
-Updates that would exceed +100/-100 saturate at the bound.
+A single direct update that would exceed +100/-100 saturates at the bound.
+
+### Same-cycle direct-cause composition
+
+Start one directed attitude at +95 after due maintenance/decay. In the same cycle, produce two distinct valid direct §3.1 causes targeting that attitude:
+
+- one +10;
+- one -20.
+
+Assertions:
+
+- both cause keys/deltas appear in causal history exactly once;
+- authoritative direct-attitude result is `clamp(+95 + 10 - 20) = +85`;
+- contributions are not clamped one-by-one;
+- reversing reaction/cause enumeration produces identical authoritative state/history modulo nonsemantic presentation;
+- the batch is one bounded attitude-state transition with the full cause set as predecessors.
+
+Repeat an equivalent negative-bound case.
 
 ### Decay cadence
 
@@ -383,11 +467,18 @@ This card checks accounting of initiative opportunities, not the unresolved gene
 - repayment penetrates the 2-grain reserve;
 - kinship amplification satisfies +75 favour/marriage gates;
 - gift creates favour automatically;
+- zero/negative/non-integral grain terms reach response or social effects;
+- over-repayment is silently clamped/credited;
+- explicit benefit-for-favour partially commits material benefit when required favour capacity is unavailable;
+- relationship-mediated reciprocal help stacks a second favour above pair capacity;
 - favours stack above one per ordered pair;
-- refused called favour disappears;
-- favour compels marriage/impossible action;
+- refused/Unable/invalidated called favour disappears;
+- failed called-favour execution incorrectly consumes the favour or applies fulfil/refusal attitude effect;
+- called favour opens a nested response context or compels marriage/impossible action;
 - marriage automatically moves residence;
+- more than one Residence transition for the same person commits in one cycle;
 - residence change creates/destroys household participation;
+- direct same-cycle attitude causes are clamped sequentially so cause enumeration changes the bounded result;
 - attitude decay crosses zero or runs every cycle;
 - proposal response consumes or grants an extra personal initiative.
 
