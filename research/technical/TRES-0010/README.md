@@ -91,3 +91,12 @@ No return becomes canonical authority by being committed.
   - `tres-0010/mrr-semantic-scope`
   - `tres-0010/mrr-grain-ingress`
 - No manifest repair is promoted or treated as settled until the three returns are centrally reconciled with the original BLOCK.
+
+## Corrected manifest R2
+
+- `MANIFEST_REPAIR_REVIEW_RECONCILIATION.md` — central synthesis of original BLOCK plus MRR-A/B/C.
+- `CORRECTED_MANIFEST_REPAIR_AUDIT.md` — corrected candidate audit: 167 unique AcceptanceIds; 20/20 targeted repair checks passed.
+- R2 review packet: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/SLICE1_ACCEPTANCE_MANIFEST_PRECODE_REVIEW_R2.md`.
+- Frozen R2 baseline: `tres-0010-manifest-review-r2-baseline` @ `7fe85af66723885fecc16c0222538265cbf693bc`.
+- Return branch: `tres-0010/manifest-precode-review-r2`.
+- A PASS on R2 is the remaining manifest-gate requirement before manifest freeze and IMP-0001 task hardening.
