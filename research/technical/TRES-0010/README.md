@@ -68,3 +68,9 @@ No return becomes canonical authority by being committed.
 ## B2 decision synthesis
 
 - `B2_MASTER_ARCHITECT_DECISION_SYNTHESIS.md` — Master Architect synthesis of all three B2 returns, including recommended Director decisions, acceptance-manifest design, IMP-0001 implications, and remaining closure sequence.
+
+## Semantic promotion
+
+- `SEMANTIC_PROMOTION_RECONCILIATION.md` — pre-edit commitment inventory for Director-approved D1–D5 semantics.
+- `SEMANTIC_PROMOTION_LOSSLESS_AUDIT.md` — post-promotion 30/30 lossless preservation audit across SPEC, assumptions, and verification.
+- Canonical semantic promotion is complete; IMP-0001 remains blocked pending the Slice-1 acceptance manifest, task hardening, deferred-gap ledger, and final TRES-0010 closure audit.
