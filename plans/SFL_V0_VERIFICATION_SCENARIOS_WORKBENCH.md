@@ -16,6 +16,7 @@ Adversarial verification input:
 - `research/technical/TRES-0004/PASS_G_VERIFICATION_CLOSURE_ADVERSARIAL_REVIEW.md`
 - `research/technical/TRES-0005/STAGE3_GUARDRAIL_SCENARIO_ADVERSARIAL_REVIEW.md`
 - `research/technical/TRES-0006/CONTINUITY_LIFECYCLE_SCENARIO_ADVERSARIAL_REVIEW.md`
+- `research/technical/TRES-0007/LINEAGE_WARRANT_ADVERSARIAL_REVIEW.md`
 
 Resolved semantic errata record:
 
@@ -26,6 +27,7 @@ Resolved semantic errata record:
 - `plans/verification/SFL_V0/README.md`
 - `plans/verification/SFL_V0/FORMATION_FAMILY.md`
 - `plans/verification/SFL_V0/CONTINUITY_TURNOVER_FAMILY.md`
+- `plans/verification/SFL_V0/LINEAGE_FAMILY.md`
 
 ## Required outputs
 
