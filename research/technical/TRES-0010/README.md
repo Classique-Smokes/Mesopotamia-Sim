@@ -40,3 +40,9 @@ No return becomes canonical authority by being committed.
 - `PROVISIONAL_PROCESS_LESSONS_AFTER_WAVE_A.md` records non-authoritative process lessons pending Wave-B confirmation.
 - Wave-B packets: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/`.
 - Wave-B canonical baseline: `tres-0010-wave-b-baseline` @ `f25407a9cbf09e501601d52ad7a2df111fa5c491`.
+
+
+## Supporting synthesis
+
+- `PROCESS_LESSONS_BEST_PRACTICE_VALIDATION.md` — validates provisional Wave-A process lessons against broader requirements, assurance, formal-methods, architecture-evaluation, and AI-agent-evaluation practice.
+- `WAVE_A_SECOND_PASS_FINDING_AUDIT.md` — complete second-pass inventory of Wave-A findings, residual ambiguities, deferred risks, and items underweighted in the first synthesis.
