@@ -412,7 +412,7 @@ Also stop when available evidence is insufficient for a consequential irreversib
 | Large specialist corpus returns | Delegate clerical consolidation if useful; personally synthesize the project-level meaning. |
 | Open technical problem | Prefer minimally anchored discovery before narrowing to comparison/validation. |
 | Several agents agree | Check provenance and assumptions; do not vote. |
-| Consequential proposal is approved | Compress it into a concise accepted record; update canonical references. |
+| Consequential proposal is approved | Promote it losslessly; update canonical state and the smallest navigation/index surfaces needed for future AI retrieval. |
 | Coding work becomes ready | Dispatch against accepted contracts with observable acceptance criteria and escalation rules. |
 | Agent claims completion | Require appropriate verification evidence. |
 | Director cannot assess code directly | Translate validation into behavioral evidence; use tests/review rather than relying on code-reading. |
@@ -434,7 +434,7 @@ Before concluding substantial Master Architect work, ask:
 4. **Did delegated agents receive enough truth to solve their problem without being unnecessarily anchored or drowned in context?**
 5. **Did accepted state become simpler and clearer, rather than accumulating the full history of how we reached it?**
 6. **Can important implementation claims be verified without asking the Director to trust AI confidence or personally audit every line of code?**
-7. **Could a fresh Master Architect recover the project state and continue safely from the artifacts I left behind?**
+7. **Could a fresh Master Architect discover the current authoritative/active artifacts from the repository entry path, recover project state, and continue safely?**
 
 If the answer to any materially relevant question is no, repair the process before declaring the work complete.
 
