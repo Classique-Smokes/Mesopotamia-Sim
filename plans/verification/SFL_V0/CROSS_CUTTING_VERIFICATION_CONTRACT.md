@@ -212,6 +212,18 @@ Lineage/division/consolidation is observed from valid generated lower-level hist
 - shrink/minimize failures where tooling supports it;
 - preserve every minimized failure as a deterministic regression fixture.
 
+### Inherited card metadata
+
+To avoid repetitive boilerplate, every card inherits this file's fixture-write restrictions and independent-oracle rules unless it explicitly narrows them further.
+
+A family/card must explicitly state only:
+
+- any additional fixture write it requires beyond the generally allowed set;
+- any exception/narrowing;
+- the specific hand-authored arithmetic/provenance/metamorphic oracle when that is material to understanding the claim.
+
+This inheritance satisfies the scenario-card schema without copying the same guardrails into every card.
+
 ## 6. Fixture write-set audit
 
 Every canonical card declares allowed fixture writes.
@@ -266,6 +278,22 @@ For each major family, define at least one held-out variant by changing:
 - irrelevant attributes.
 
 Held-out variants must preserve the same semantic claim without copying the canonical narrative structure exactly.
+
+### Concrete held-out recipes
+
+Do not include these as the primary implementation narrative:
+
+- **formation:** four-founder connected durable-tie graph with qualifying support on a different pair pattern than VS-SFL-001;
+- **continuity:** turnover order reversed and bridge identities changed, ending with no original founders;
+- **recognition:** stale outsider receives correction through a different participant/provenance chain;
+- **provision:** same accounting claim with contributor identities/grain capacities permuted and a different needy recipient;
+- **head/dual-mode:** different head and personal-action target with the same central conflict structure;
+- **lineage:** different predecessor sizes/addresses with equivalent warrant provenance;
+- **resolution:** equivalent capacity conflict produced by loan/gift/help actors rather than copying VS-SFL-065;
+- **checkpoint:** checkpoint at a different stable cycle with a different combination of pending debt/cooldown/communication state;
+- **lower-level fabric:** alternative actor labels and transfer meanings/order while preserving the same debt/favour/marriage/residence claim.
+
+The implementation task packet should teach canonical cards first. Held-out instances may be materialized by the verification harness from these recipes after the implementation path exists; minimized failures become visible regression fixtures.
 
 ## 9. Independent oracle rules
 
