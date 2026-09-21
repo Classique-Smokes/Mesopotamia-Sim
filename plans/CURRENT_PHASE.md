@@ -18,7 +18,7 @@ Specify the smallest faithful Social Fabric Laboratory v0 precisely enough that 
 
 ## Active
 
-**Prototype specification preparation — Social Fabric Laboratory v0.**
+**Prototype specification preparation — Social Fabric Laboratory v0, Pass G verification closure.**
 
 Active workbench: `plans/SFL_V0_SPECIFICATION_WORKBENCH.md`.
 
@@ -43,7 +43,7 @@ Approved downstream roadmap: `plans/FIRST_PROTOTYPE_DEVELOPMENT_ROADMAP.md`.
 3. Reconcile the results into the implementation-architecture recommendation. **Complete.**
 4. Run fresh adversarial review. **Complete: no architecture-level blocker found.**
 5. Obtain explicit approval for the host/runtime and whole-system implementation architecture. **Host/runtime complete: C# 14 / .NET 10 LTS accepted; reference kernel already accepted.**
-6. Write the bounded prototype rule specification and verification scenarios.
+6. Complete bounded prototype rule specification (Pass G active), then define verification scenarios.
 7. Run subsystem-specific technical design research only where unresolved risk still warrants it.
 8. Prepare the PROJECT-CONTEXT implementation packet.
 
