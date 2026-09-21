@@ -146,6 +146,7 @@ A favour is one qualitative action-oriented claim.
 - it may arise from an explicit benefit-for-favour bargain;
 - it may arise from knowingly accepted reciprocal help only when recipient attitude toward benefactor is >= +75;
 - genuine gifts create no favour;
+- a voluntarily initiated `CallFavor` uses the holder's ordinary personal initiative under §5;
 - a called-favour payload is valid only when the called actor's `FulfilCalledFavor` / `RefuseCalledFavor` choice is the last new voluntary actor choice required for the requested action to reach a terminal commit/failure;
 - the requested action executes within that response scope: it does not separately consume or grant the called actor's personal initiative and remains subject to ordinary world feasibility, central revalidation, and commit/failure;
 - a v0 called-favour payload may not open another `ResponseDecisionContext`, require a third actor's new voluntary choice, create/demand/transfer/cancel another favour, establish marriage/kinship, or require household/role authority;
