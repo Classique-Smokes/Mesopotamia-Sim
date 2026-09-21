@@ -208,7 +208,7 @@ The groups below organize this research return; they are not proposed indigenous
 The report’s most consequential flagged cases are summarized here; the audit file records them in more detail. These are **working discrepancies**, not certified corrections to CDLI or new editions.
 
 | Record | Problem | Treatment |
-|---|---|---|
+| --- | --- | --- |
 | T04, SAOC 44, 3 | Catalogue month number conflicts with written month designation. | Retain Sin-iddinam 7; do not use the month in chronological argument. |
 | T09, SAOC 44, 14 | Day 23 versus legacy day 13 notation. | Use year/month; leave day conflict visible. |
 | T10, SAOC 44, 15 | Regnal/month metadata and damaged affiliation wording are inconsistent. | No precise date or reconstructed genealogy. |
