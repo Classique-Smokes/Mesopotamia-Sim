@@ -16,7 +16,7 @@ Adversarial verification input:
 - `research/technical/TRES-0004/PASS_G_VERIFICATION_CLOSURE_ADVERSARIAL_REVIEW.md`
 - `research/technical/TRES-0005/STAGE3_GUARDRAIL_SCENARIO_ADVERSARIAL_REVIEW.md`
 
-Open semantic errata requiring Director decision:
+Resolved semantic errata record:
 
 - `specifications/working/SPEC-SFL-0001_STAGE3_ERRATA.md`
 
@@ -43,17 +43,38 @@ Stage 3 must produce:
 - Stable-ID fallback is accepted v0 technical behavior but must be isolated through ID-permutation sensitivity tests.
 - Historical validation/calibration is outside Stage 3.
 
-## Semantic gate before canonical cards
+## Scenario-card conventions
 
-Canonical formation/continuity/debt-behavior cards must not invent answers to the open errata.
+Each canonical card records:
 
-Pending decisions:
+- ID, level, claim, and authoritative spec clauses;
+- initial objective and subjective state;
+- pinned decision profile only where policy behavior is under test;
+- explicit fixture-write whitelist;
+- scripted stimulus/proposal schedule;
+- observation horizon;
+- required semantic trace / causal partial-order constraints;
+- terminal assertions;
+- always-on invariants;
+- independent oracle basis;
+- adversarial/metamorphic companions;
+- nonclaims / allowed implementation variation.
 
-- pre-household candidate-recognition sufficiency;
-- sustaining-participant entry/exit after formation;
-- epistemic trigger for the knowingly-retained-debt attitude event.
+Card levels:
 
-Safe Stage-3 work may continue on scenario schema, invariant catalog, metamorphic infrastructure, and scenario families unaffected by these gaps.
+- **mechanism-isolation:** exercises the public proposal/resolution boundary without requiring the actor scorer to choose the action;
+- **closed-loop:** actual personal/household decision contexts must generate actions from a pinned deterministic policy;
+- **metamorphic / boundary / mutant:** specialized adversarial companions.
+
+Mechanism-isolation fixtures may submit semantically valid proposals but may not directly mutate endogenous household/continuity/role outcomes.
+
+## Formation-family baseline
+
+The canonical formation witness uses three founders with a stable connected kinship structure, two qualifying support events on different pairs and different cycles, and explicit communication sufficient for each founder to reach `CandidateRecognition`.
+
+A two-founder card is retained only as a simpler smoke/mechanism-isolation case.
+
+Formation ablations must control alternate paths so the removed condition cannot regenerate during the observation horizon.
 
 ## Scenario families to specify
 
