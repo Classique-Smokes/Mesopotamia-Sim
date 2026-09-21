@@ -337,7 +337,6 @@ Independently exercise:
 - ordinary refusal without genuine need/accepted obligation: 0;
 - called-favour refusal: holder -> refuser -20;
 - social due unpaid debt: creditor -> debtor -10 once;
-- breach accepted commitment: affected counterparty -> breacher -20;
 - rejected marriage proposal: 0.
 
 ### Bounds
