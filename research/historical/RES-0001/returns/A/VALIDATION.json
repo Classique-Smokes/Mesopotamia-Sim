@@ -1,0 +1,25 @@
+{
+  "validated_on": "2026-09-19",
+  "structural_checks_passed": true,
+  "required_main_sections": 9,
+  "evidence_claims": 22,
+  "evidence_table_columns": 12,
+  "candidate_claims": 8,
+  "source_ledger_entries": 30,
+  "chronology_entries": 7,
+  "house_archive_entries": 11,
+  "object_audit_entries": 9,
+  "reconciliation_warnings": 18,
+  "all_evidence_and_candidate_design_statuses": "NO DESIGN DECISION",
+  "all_source_ids_resolve": true,
+  "input_zip_crc_test": "PASS",
+  "input_sha256": "6d11e82794e5e26415f3f9e8d964a11f0a7678e6c85aaa4fddf6379c46e54caf",
+  "historical_scope": "Selective source-critical research; not exhaustive corpus or independent tablet/plan collation",
+  "word_counts": {
+    "README.md": 176,
+    "RES-0001A_RECONCILIATION_WARNINGS.md": 1036,
+    "RES-0001A_RESEARCH_AUDIT.md": 696,
+    "RES-0001A_RESULT.md": 8610,
+    "RES-0001A_SOURCE_MAP.md": 3201
+  }
+}
