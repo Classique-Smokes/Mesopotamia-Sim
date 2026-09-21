@@ -299,4 +299,77 @@ The following entries are proposed for historical reconciliation, not automatica
 **Design status:** **NO DESIGN DECISION**.
 
 
-### Candidate 5 — E-C05: Paid manumission with qualified Ni
+### Candidate 5 — E-C05: Paid manumission with qualified Nippur attribution
+
+**Claim / proposition:** BE 6/2 8 records Ištar-rabiat’s manumission, a payment of ten shekels to Duššubtum, and protection against named heirs’ future claims; its Nippur attribution requires a provenance qualification.  
+**Period:** Rim-Sin I 51/V.  
+**Geography / archive / social context:** CBS 9183, P264577; probable Nippur documentary origin, conflicting historical find attribution, no secure house/locus.  
+**Evidence type:** Primary edition plus current provenance research/catalogue.  
+**Primary evidence:** BE 6/2 8, P1909 pp. 38–39; CDLI8.  
+**Secondary scholarship:** AMAS2026 p. 116 nn. 7–8 supports Nippur from internal evidence; CDLI adopted this attribution in 2026.  
+**Interpretation(s):** Use as attributed Nippur evidence, excluded from a strictly findspot-secure subset. The protected heirs named in the clause belong to the former owner’s succession, not an identified family of the freed woman.  
+**Uncertainty / disagreement:** Poebel labels the tablet Yokha. Neither the source of the payment nor later residence is stated.  
+**Confidence + rationale:** **MODERATE** — The manumission/payment content is explicit, but inclusion as Nippur evidence depends on an argued attribution rather than a secure archaeological context.  
+**Limits on generalization:** Not securely excavated domestic evidence, not a general slave savings right, and not evidence that manumission always ended other dependence.  
+**Relevance to project question:** Preserves an attested status change and transaction while separating documentary origin, legal effect, and subsequent livelihood.  
+**Design status:** **NO DESIGN DECISION**.
+
+
+### Candidate 6 — E-C06: Institutional livelihood rights in family property
+
+**Claim / proposition:** BE 6/2 43 places a six-month annual Enlil priestly office share and associated livelihood land within a family property division.  
+**Period:** Samsu-iluna 13/XII.  
+**Geography / archive / social context:** Nippur; Igi-šag and Sin-išmeanni; CBS 7016.  
+**Evidence type:** Primary edition, with catalogue corroboration for transferable office terms.  
+**Primary evidence:** BE 6/2 43, P1909 pp. 22–23; catalogue p. 150. SZ1976 nos. 19 and 32 provide additional office-transfer leads.  
+**Secondary scholarship:** The report uses “office share/right” for the economic relationship without asserting a fully reconstructed service regime.  
+**Interpretation(s):** The recipient’s claim is legible in a kin/property agreement; the document is not a schedule of daily work or evidence for how substitutes were organized.  
+**Uncertainty / disagreement:** Possession of rights does not prove that the holder personally performed every duty or establish residence in a temple.  
+**Confidence + rationale:** **HIGH** — The temporal share and associated support land are explicit in the published division.  
+**Limits on generalization:** This office arrangement, not an institutional labor taxonomy or an assumption that all temple-linked people were dependents of one type.  
+**Relevance to project question:** Household property and institution-linked livelihood could intersect without making them interchangeable.  
+**Design status:** **NO DESIGN DECISION**.
+
+
+### Candidate 7 — E-C07: Cultivation through a lease, not a personal hire
+
+**Claim / proposition:** BE 6/2 29 records Damu-idinnam’s lease of Ibgatum’s field for cultivation at one-third of returns as annual rent.  
+**Period:** Samsu-iluna 11/III.  
+**Geography / archive / social context:** Nippur; CBS 10890; field transaction.  
+**Evidence type:** Primary edition.  
+**Primary evidence:** BE 6/2 29, P1909 pp. 43–44; catalogue p. 148.  
+**Secondary scholarship:** Poebel distinguishes the field lease from the personal hire of BE 6/2 51.  
+**Interpretation(s):** Separate access to land and its returns from a contract for a named person’s labor. Whether the lessee used relatives, hired workers, or enslaved labor is an open question for this case.  
+**Uncertainty / disagreement:** The labor force, household residence, and lessee’s broader status are not specified.  
+**Confidence + rationale:** **HIGH** — The object, purpose, and return-based rent are explicit in the edition.  
+**Limits on generalization:** Not proof of tenant enslavement, self-performed labor, or a standard tenancy arrangement throughout the city.  
+**Relevance to project question:** An economic obligation to produce or render returns does not by itself identify the legal status of the cultivator.  
+**Design status:** **NO DESIGN DECISION**.
+
+
+### Candidate 8 — E-C08: Marital breach clauses vary
+
+**Claim / proposition:** BE 6/2 48 and 40 prescribe different consequences for a wife’s repudiation: the former includes sale, while the latter specifies financial consequences.  
+**Period:** Samsu-iluna 18/IV/1 and 13/I; day of BE 40 not fixed here.  
+**Geography / archive / social context:** Nippur; Naramtum/Awilia and Ama-sukkal/Enlil-idzu; Ni 1919 and CBS 7018.  
+**Evidence type:** Primary editions; catalogue cross-check.  
+**Primary evidence:** BE 6/2 48 and 40, P1909 pp. 35–38; SZ1976 no. 24 identifies the case of BE 40.  
+**Secondary scholarship:** The physical marking clause in BE 48 has a doubtful rendering in P1909; it is not used here to reconstruct a specific punishment technique.  
+**Interpretation(s):** The difference is historically meaningful without proving why these parties used different terms. Social class, prior circumstances, or legal practice cannot be selected as the cause from these documents alone.  
+**Uncertainty / disagreement:** Neither text records actual repudiation or punishment. BE 40 directly blocks a uniform sale-rule generalization from BE 48.  
+**Confidence + rationale:** **HIGH** — The contrast rests on explicit contractual provisions in two documents, not an inferred social ranking.  
+**Limits on generalization:** Two agreements; not a comprehensive account of marriage law, women’s legal position, or enforcement.  
+**Relevance to project question:** Legal vulnerability can be relationship- and clause-specific rather than a permanent status inferred from gender alone.  
+**Design status:** **NO DESIGN DECISION**.
+
+## 9. Source ledger
+
+All online materials were checked on 19 September 2026. “YES” means the specified content was actually consulted, not necessarily every page of the work. Sources marked “NO” are disclosed gaps or retrieval leads; they are not cited as though their full arguments were read.
+
+| Short citation | Full citation | Source type | Scope/provenance | Stable ID/DOI/URL | Consulted directly? | Notes |
+|---|---|---|---|---|---|---|
+| **P1909** — Poebel 1909 | Poebel, Arno. 1909. Babylonian Legal and Business Documents from the Time of the First Dynasty of Babylon, Chiefly from Nippur. The Babylonian Expedition of the University of Pennsylvania, Series A: Cuneiform Texts 6/2. Philadelphia: University of Pennsylvania, Department of Archaeology. | Primary-text edition and historical commentary; public domain | Chiefly Nippur, with explicitly non-Nippur material. Sumerian legal texts are the main evidentiary base here. | BE 6/2; individual text and museum numbers in the evidence notes; [access](https://etana.org/sites/default/files/coretexts/14861.pdf) | YES, selectively: published transliterations, translations, relevant commentary, and catalogue pages; not a new tablet collation. | Main passages: pp. 20–23, 27–39, 43–44; dates and museum concordances pp. 145–152. Distinguish the ancient clauses from the editor’s broader conclusions. |
+| **SZ1976** — Stone and Zimansky 1976 | Stone, Elizabeth C., and Paul E. Zimansky. 1976. Old Babylonian Contracts from Nippur: Selected Texts from the University Museum, University of Pennsylvania. Oriental Institute Microfiche Archives 1. Chicago: University of Chicago Press. | Object catalogue with photographs | Nippur contract collection | OIMA 1; DOI 10.83354/dqrs-h420; [access](https://isac.uchicago.edu/publications/old-babylonian-contracts-nippur-selected-texts-university-museum-university) | YES: catalogue and selected photographic material, not an independent reading of every tablet. | Nos. 19, 24, 32, 44 relevant. This is not a full translation edition. |
+| **AMAS2026** — Al-Mutawalli and Sallaberger 2026 | Al-Mutawalli, Nawala, and Walther Sallaberger. 2026. “Umma Tablets from Archaeological Contexts: The City Centre in the Old Babylonian Period after the Iraqi Excavations of 1999–2002.” In Cuneiform Artefacts from Archaeological Contexts: New Research on Ancient Iraq, edited by Walther Sallaberger and Anna Krisztina Pintér, 113–134. Cuneiform Artefacts from Iraq 2. Wiesbaden: Harrassowitz. | Original provenance research, author-hosted open-access chapter | Umma archaeological history; specific reassessment of BE 6/2 8 and 32 as Nippur documents | DOI 10.13173/9783447125871.113; p. 116 nn. 7–8; [access](https://www.assyriologie.uni-muenchen.de/personen/professoren/sallaberger/publ_sallaberger/mutawalli_wasa_2026_cai_2_umma.pdf) | YES, relevant provenance discussion, including visual check of p. 116. | Published 2026. Nippur attribution is argued from internal evidence; it is not a recovered house/locus assignment. |
+| **CDLI8** — CDLI P264577 | Cuneiform Digital Library Initiative. “BE 06/2, 008 (P264577).” Artifact entry, revised 13 August 2026; accessed 19 September 2026. | Current scholarly catalogue metadata | CBS 9183; Rim-Sin 51/V; provenance note | P264577; CBS 09183; [access](https://cdli.earth/artifacts/264577) | YES: metadata, bibliography, and provenance explanation. | No new textual translation in this record was used. The generic heading “excavated in Nippur” is less qualified than the detailed provenance note. |
+| **CDLI48** — CDLI P283604 | Cuneiform Digital Library Initiative. “BE 06/2, 048 (P283604).” Artifact entry, accessed 19 September 2026. | Scholarly object catalogue and edition concordance | Istanbul Ni 1919; Nippur; Samsu-iluna 18/IV/1 | P283604; BE 6/2 48; MC 3 16; [access](https://c
