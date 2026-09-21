@@ -29,6 +29,7 @@ Active pre-implementation research gate:
 - `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
 - `research/technical/TRES-0010/README.md`
 - Wave-B adjudication: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/00_WAVE_B_README.md`
+- B2 targeted resolution: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/B2/00_B2_README.md`
 
 Slice 1 objective:
 
@@ -69,12 +70,13 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Run TRES-0010 Wave-B blind sentinels and prosecution/defense clusters.
-2. Reconcile B0/B1 evidence finding-by-finding; do not vote by reviewer count.
-3. Commission contingent B2 semantic-options / verification-design / technical-experiment tasks only where adjudication remains unresolved.
-4. Repair/escalate confirmed pre-code blockers and amend IMP-0001 / verification authority as needed.
-5. Reassess provisional process lessons and promote only durable general rules.
-6. Record the final TRES-0010 dispatch/no-dispatch conclusion.
-7. Only then dispatch IMP-0001 and fire first-code scaffolding requirements.
+1. Run the three TRES-0010 B2 decision-support tasks from the frozen B2 baseline.
+2. Reconcile B2 recommendations against accepted authority; present consequential semantic choices to the Director.
+3. Promote approved Slice-1 semantic repairs losslessly and update verification cards.
+4. Materialize the minimal protected Slice-1 acceptance/applicability authority and amend IMP-0001/task taxonomy.
+5. Carry confirmed later-slice gaps into an explicit deferred ledger.
+6. Run one final TRES-0010 closure audit.
+7. Reassess provisional process lessons and prepare the separate Master Architect rulebook refactor only after TRES-0010 closure.
+8. Record dispatch/no-dispatch conclusion; only then release IMP-0001.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
