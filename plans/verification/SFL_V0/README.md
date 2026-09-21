@@ -38,3 +38,4 @@ Completed-cycle assertions are made only at stable cycle closure. Intermediate c
 - `NO_SELF_CONFIRMATION_FAMILY.md`
 - `HEAD_ROLE_AND_DUAL_MODE_FAMILY.md`
 - `RESOLUTION_REACTION_FAMILY.md`
+- `DETERMINISM_RECOVERY_EXPLAINABILITY_FAMILY.md`
