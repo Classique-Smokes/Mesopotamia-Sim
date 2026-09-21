@@ -238,4 +238,72 @@ The required progression is **trigger → documented action → persons affected
 | C-P09 | Desire to recover paternal property | Sale/redemption referring to prior purchase | Ninurta-rāʾim-zērim; Mannum-side vendors | Lot and title claims; silver | Legal return to earlier owner’s family recorded; actual occupation not documented | D11; D10 indirect | Exact earlier parcel linkage and Mannum’s death are reconstructed |
 | C-P10 | Decision by female property holder to adopt | Adoption with assets and lifetime support | Narāmtum; Ur-Pabilsaga; named dependents | Paternally gifted assets; grain/oil/wool; revocation terms | A later estate partition invokes his adoption; actual support performance not documented | D12; D14/D15 | Separated endpoints; no continuous observation in between |
 | C-P11 | Settlement/division of Narāmtum estate | Separate allocations with adoption recited as title history | Narubtum; Ur-Pabilsaga; allocated enslaved people | House portions, gardens, field, enslaved persons | Legally defined shares; later common residence/survivorship not documented in directly read sources | D14/D15; D16 editorially | Not three events; no new adoption between the partitioners established |
-| C-P12 | Repudiation dispute after a reported twenty-year relationship | Judges direct removal from heirship and no-claim instrument | Ilī-u-Šamaš; Amurrum-šēmi; future heirs | Adoptive succession claims | Reco
+| C-P12 | Repudiation dispute after a reported twenty-year relationship | Judges direct removal from heirship and no-claim instrument | Ilī-u-Šamaš; Amurrum-šēmi; future heirs | Adoptive succession claims | Recorded termination/exclusion; later social relations and compliance not documented | D18 | Damaged narrative; absolute date and debt cause unverified |
+| C-P13 | Heir appointment following recalled earlier provision | Heirship instrument with continuing support and reserved benefit | Ipiq-Enlil; Nanna-amaḫ | Institutional rights, provisions and lifetime enjoyment | Later exercise not documented; reservation itself recorded | D26 | Supplementary: Nippur attribution uncertain |
+
+
+## 5. Disagreement, ambiguity, and source limitations
+
+### 5.1 Readings that materially change the argument
+
+| Audit | Item | Earlier/problematic form | Treatment in this return | Evidence | Consequence | Confidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| C-A01 | MC 3, 51 | Old year 23 reading | Samsu-iluna 10, month 3, in Meinhold’s re-edition | S01 pp. 26–27; D06; D07 | Changes causal sequence; inheritance no longer automatically too late for early acquisitions | HIGH — edition-based; no fresh collation |
+| C-A02 | TMH 10, 18a/b date | Year 21 in S03 p. 4 n. 14 | Day 21, month 10, Samsu-iluna year 4 | D14 rev. 18–19; D15; screenshot of S03 p. 4 | Prevents a seventeen-year displacement | HIGH |
+| C-A03 | TMH 10, 18a/b property clause | Older one-third of Narāmtum’s property | Updated text reads all possessions; older reading retained as disputed history | D14 rev. 1; S03 p. 3 n. 12 acknowledges difference | Do not build three equal fractions or survivorship on an unstable reading | MODERATE — interpretation sensitive to reading |
+| C-A04 | TMH 10, 18c envelope | Simplified or incomplete joins; treated as extra event | HS 2132 + 2154 + 2361 + 2870 + 2884; envelope related to 18a | S04 p. 253; D16 | Correct witness count and association | HIGH — published collation |
+| C-A05 | TMH 10, 18c translation | Mutual-consent wording generalized across all witnesses | Földi deletes it for envelope translation; 18a displays agreement formula | S04 p. 253; D14 rev. 5 | Keep witness-specific corrections witness-specific | HIGH |
+| C-A06 | TMH 10, 15 | Rīm-Sîn 4 in catalogue | Rīm-Sîn 2 according to Földi | D20; S04 p. 253 | Exclude from chronology until editorial discrepancy reconciled | MODERATE |
+| C-A07 | ARN 41 object number | Ni 1924 in some secondary discussion | CDLI gives Ist Ni 01923 | D13 catalogue | Avoid fetching or merging the wrong tablet | HIGH — catalogue identity |
+| C-A08 | OECT 8, 20 period tag | Generic Early OB c.2000–1900 BCE | Use Lipit-Enlil d regnal formula | D01 rev. 17 and chronology | Do not push a precisely dated text out of the approved frame by generic metadata | HIGH |
+| C-A09 | BE 6/2, 64 date/translation | Certain year/month implied by older translation | Year 29 is edition-based; catalogue year uncertain; month 2 per date formula | D11 | Keep regnal uncertainty and avoid contradictory modern month names | MODERATE |
+| C-A10 | OECT 8, 16 and 11 seals | Genealogical assumptions imposed on every seal | Displayed patronyms/name forms do not fully agree with body or reconstruction | D07; D08; S01 | Retain discrepancy, do not silently repair digital text | UNRESOLVED |
+| C-A11 | S03 area conversions | Inconsistent modern square-metre figures | Retain ancient units; no modern-area computation imported | S03 pp. 3, 22; D14/D15 | Prevents fabricated precision in reconstructed estate sizes | HIGH — discrepancy observed |
+| C-A12 | Namesakes Narubtum | Single citywide person assumed | Keep Mannum-side Narubtum and Migir-Enlil’s daughter separate absent evidence | D11 versus D14/D15 | Prevents synthetic extended genealogy | HIGH — methodological separation |
+| C-A13 | OECT 8, 19 father name | Ibni-Enlil in digital edition versus Ibbī-Enlil in linked settlement | Retain variant and label the cross-document identification | D25 rev. 5/seal; D08; S01 | Matching heir group supports a link but does not authorize silent emendation | MODERATE |
+| C-A14 | TIM 4, 13 and 14 provenance | Unqualified Nippur claim in general page header | Detailed provenience fields mark Nippur uncertain | D26; D27 | Keep both texts supplementary and qualify local inference | HIGH — metadata discrepancy |
+
+
+The audit contains corrections of different kinds. Some are **published re-readings** adopted here, such as the date of MC 3, 51. Others are **observed discrepancies**, such as a father-name variant or conflicting metadata, not matters this agent has independently solved. Still others are **limits on inference**, such as keeping namesakes separate. The distinction prevents a source-critical note from sounding like a new authoritative tablet edition.
+
+The chronology of Mannum’s estate is not a minor clerical issue: a date shift changes whether inheritance can plausibly precede acquisitions. Nevertheless, chronological order alone does not establish financing. Similarly, the day/year mistake in the Narubtum division affects a family chronology but does not decide every dispute about its legal purpose. Interpretive claims must be revised at the level actually affected by the correction. [D06–D07; D14–D15; S01, S03]
+
+### 5.2 Access and the limits of independent verification
+
+Full access was not obtained to Stone and Owen 1991, Goddeeris 2016, the complete Meinhold 2020 chapter or the architectural content of Stone 1987. The research did obtain several underlying texts and important later corrections; it therefore does not depend solely on summaries. But uninspected parts of those publications cannot be represented as checked. The source ledger records direct, partial, indirect, abstract-only and unread status separately. [S05–S08, S11–S12]
+
+The available digital records are not uniform critical editions. Some translations follow earlier readings; some catalogue language or date fields disagree with the displayed transliteration or a later specialist correction. A page headed “excavated in Nippur” may still lack a locus or mark detailed provenience uncertain. Artifact photographs, where linked, were not newly collated for this return. These limitations are especially important for damaged kinship clauses and exact estate totals. [D06, D11–D12, D14, D26–D27]
+
+### 5.3 Meaningful negative evidence
+
+The following are **not demonstrated**, rather than disproved: performance of all stipulated support; continuous joint administration throughout gaps between documents; automatic transfer of all debts to all heirs; a universal entitlement of eldest sons; uniform provision for daughters; adopted enslaved heirs in the examined local sample; exact residential membership; and the causes of an apparent decrease in listed assets. The strongest negative conclusion is methodological: the available observations are insufficient for those propositions. [D01–D27; C-C20–C-C24]
+
+The cases should not be averaged into a “normal Nippur household.” Their evidentiary value lies in documenting possible and consequential processes with recoverable participants and contexts. A properly delimited exceptional case can establish that a process occurred; it cannot establish how often it occurred or how typical its participants were.
+
+## 6. Comparative evidence outside Old Babylonian Nippur
+
+**No out-of-city or later-period legal rule is used to fill a Nippur gap.** No clause from the Laws of Hammurabi is substituted for the actual local transactions, and no Ur III, Middle Babylonian or Neo-Babylonian example is counted as an Old Babylonian Nippur act.
+
+Van Wyk’s broader Old Babylonian typology is used only to raise questions about the relation between adoption, heirship and documentary form. Its cross-local categories do not establish which combinations were common in Nippur. The 2025 study of adopted enslaved persons is retained as a promising comparative/retrieval lead, but its detailed geographic sample was not verified and it supports no concrete Nippur claim here. [S10, partial reading; S12, abstract only]
+
+TIM 4, 13–14 are treated separately because their **Nippur attribution is uncertain**, not because another city has been securely established for them. Their legal wording can clarify interpretive possibilities, but they carry less weight for a place-specific proposition than securely attributed local evidence. This is a provenance qualification, not a silent importation into the main sample. [D26–D27]
+
+## 7. Unresolved questions / recommended follow-up research
+
+### 7.1 Texts and chronology
+
+**Which readings are secured by fresh photographs or collation?** Can the date and seals of MC 3, 51 and OECT 8, 16 be checked together, and can the apparent Ibbī-/Ibni-Enlil and seal-name differences across OECT 8, 11 and 19 be resolved? [D06–D08, D25]
+
+**What exactly does the complete Narāmtum dossier establish between adoption and later division?** What do ARN 41, TMH 10, 24, the related marriage records and the later disputes show about earlier distributions, deaths, continuing obligations and successor control? [D13, D17, D20–D24; S06]
+
+**Can BE 6/2, 38 and 64 be demonstrated to concern the same physical parcel?** Do the descriptions, boundaries and parties permit a secure change from built property to open ground, and do other texts explain that change? [D10–D11]
+
+**What would the full revised edition of the Ilī-u-Šamaš case add?** Can its absolute date, the mother’s proposed loan connection and the disputed twenty-year narrative be established without relying on names alone? [D18–D19; S07]
+
+### 7.2 Social reach and actual performance
+
+**Which direct Nippur texts document adopted daughters or adopted enslaved heirs, and under what circumstances?** How do their contractual capacities and subsequent outcomes differ from the male heirs in the present core? [S05–S06; S12 as a retrieval lead]
+
+**Where are care obligations independently observed after stipulation?** Are there receipts, accounts, complaints or settlements that connect a particular adoption clause to actual provision, rather than merely repeating the expected obligation? [D01, D08, D12, D26]
+
+**When did an heir acquire titl
