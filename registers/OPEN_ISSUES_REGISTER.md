@@ -25,15 +25,17 @@ Only add an issue when it arises from current work, blocks or shapes a near-term
 
 ### OQ-0002 — Household identity and continuity criteria
 
-- **Status:** OPEN
+- **Status:** RESOLVED
 - **Question:** What simulation-level conditions are sufficient for a household to form, persist through turnover, divide, consolidate, or dissolve without reducing those outcomes to one relationship, one address, one property event, or a naive graph-clustering rule?
 - **Why it matters now:** DEC-0001 makes the issue necessary for the first foundation specification, but the historical evidence does not provide a ready-made algorithm or universal threshold.
 - **What it blocks or influences:** Detailed subsystem specification for household recognition/continuity; technical research on emergent aggregate identity.
 - **What it does not decide:** It does not reopen the Seed's commitment to households as the first major collective structure, and it does not select software architecture.
 - **Owner:** Master Architect, informed by technical research and reconciled historical evidence.
 - **Resolution criteria:** A historically defensible and technically coherent proposal that preserves causal legibility, continuity, and the independence of residence/kinship/property/support/labor dimensions.
-- **Resolution / date:** —
-- **Related artifacts:** `decisions/DEC-0001_FOUNDATIONAL_SOCIAL_FABRIC.md`, `plans/INITIAL_DEVELOPMENT_ROADMAP_PROPOSAL.md`
+- **Resolution:** SFL v0 now defines explicit formation, provenance-bearing participation, continuity warrants, Active/Inactive/Dissolved operational lifecycle, and controlled lineage semantics. Snapshot similarity/residence/assets/kinship/overlap are insufficient for identity.
+- **Resolution date:** 2026-09-21
+- **Approved by:** Human Project Director through Stage-2 and Stage-3 semantic decisions.
+- **Related artifacts:** `decisions/DEC-0001_FOUNDATIONAL_SOCIAL_FABRIC.md`, `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
 
 ## Entry template
 
@@ -51,12 +53,14 @@ Only add an issue when it arises from current work, blocks or shapes a near-term
 
 ### OQ-0003 — Subjective recognition and organizational legitimacy
 
-- **Status:** OPEN
+- **Status:** RESOLVED
 - **Question:** How should simulated actors represent and update recognition/belief about collective identity, legitimate roles, authority, and obligations so that social recognition can reinforce institutions without an engine-only classification becoming its own evidence?
 - **Why it matters now:** Decision 3 has converged on endogenous recognition as part of household institutionalization and continuity.
 - **What it blocks or influences:** Household formation/recognition, broker legitimacy, continuity, and later reputation/office/institution systems.
 - **What it does not decide:** Exact household thresholds, belief psychology, information-spread rates, contested-claim mechanics, or later political legitimacy systems.
 - **Owner:** Master Architect.
 - **Resolution criteria:** Distinguish objective state from actor knowledge/recognition and allow grounded feedback into behavior without global omniscience.
-- **Resolution / date:** —
-- **Related artifacts:** `architecture/working/WIP-0001_HOUSEHOLD_ORGANIZATION.md`, `decisions/DEC-0001_FOUNDATIONAL_SOCIAL_FABRIC.md`
+- **Resolution:** SFL v0 separates objective state, KnownFact, and evidence-backed Recognition (Unknown/Recognized/Contested); recognition is actor-specific, provenance-bearing, stale until displaced/contested, and causally gates household/role-specific action without global omniscience.
+- **Resolution date:** 2026-09-21
+- **Approved by:** Human Project Director through Pass C and subsequent Stage-3 restorations.
+- **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`, `plans/verification/SFL_V0/RECOGNITION_INFORMATION_FAMILY.md`
