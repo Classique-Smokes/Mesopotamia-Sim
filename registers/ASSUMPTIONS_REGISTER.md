@@ -22,7 +22,7 @@
 
 ## Current register
 
-Working specification has now introduced controlled laboratory assumptions. They remain non-historical and replaceable.
+`SPEC-SFL-0001` currently uses the controlled laboratory assumptions below. They remain replaceable and do not become broader project truth merely by being active.
 
 | Assumption ID | Status | Assumption | Scope / impact | Review trigger |
 |---|---|---|---|---|
