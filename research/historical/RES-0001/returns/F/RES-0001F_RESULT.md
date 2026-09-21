@@ -230,3 +230,122 @@ Earlier Nippur periods were not used to fill Old Babylonian gaps. In particular,
 10. Can any TB House C subdivision be correlated with an independently dated named transaction, and can the disputed access points be resolved from original records?
 11. What contextual and osteological evidence dates the TA/TB burials relative to occupation and rebuilding, and does any independent evidence establish relationships among the buried individuals or to named people?
 12. What independently dated residential contexts outside TA/TB, especially for the later seventeenth century BCE, would test the representativeness and temporal reach of these conclusions?
+13. How do later occupation studies and the full arguments of Steinmeyer and de Boer change the relation between local terminal horizons and the city’s political and settlement chronology?
+
+## 8. Register-ready candidate claims
+
+### Candidate 1 — F-C01: Transferable interests without an identified resident census
+
+**Claim / proposition:** The six catalogued House I contracts record changing rights in house property through partition, sale, exchange, and transfer of a partner’s share; they do not establish a complete co-resident group.  
+**Period:** Si 8–18, conventionally 1742–1732 BCE.  
+**Geography / archive / social context:** TA House I; NN 42–47; final finds TA 178/185 XA-1.  
+**Evidence type:** Mixed: ancient legal documents through published catalog and archaeological interpretation.  
+**Primary evidence:** NN 42–47; excavation and museum identifiers in appendix A.  
+**Secondary scholarship:** S01, pp. 64–68, catalog p. 218; S02.  
+**Interpretation(s):** Changes in legal interests can be reconstructed; physical identification and residential implications require further steps.  
+**Uncertainty / disagreement:** NN 44 area; NN 47 catalog/narrative tension; proposed spatial correlation.  
+**Confidence + rationale:** MODERATE: coherent catalogued transactions, but uncollated readings and conditional building identification.  
+**Limits on generalization:** This group, not all Nippur property or family practice.  
+**Relevance to project question:** Distinguishes legal relationship from residential membership.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 2 — F-C02/F-C03: One final deposit is not successive named occupations
+
+**Claim / proposition:** The House I transaction sequence is associated with a final XA-1 assemblage; it does not provide six separately documented occupation phases.  
+**Period:** Texts Si 8–18; later XA-1 deposition.  
+**Geography / archive / social context:** TA 178 and 185, House I.  
+**Evidence type:** Mixed.  
+**Primary evidence:** Catalogued findspots of NN 42–47.  
+**Secondary scholarship:** S01, pp. 65–67.  
+**Interpretation(s):** Retained archive and possible intra-building dispersal; architectural phasing partly reconstructed from text dates.  
+**Uncertainty / disagreement:** Original deposit formation and reassigned phase chronology are not independently checked.  
+**Confidence + rationale:** MODERATE: consistent catalogued find attribution, but mediated stratigraphy.  
+**Limits on generalization:** Does not establish that the whole deposit was undisturbed or that all texts concern one building.  
+**Relevance to project question:** Prevents conversion of a property archive into an artificial resident succession.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 3 — F-C07/F-C09: Instructional activity does not identify the household
+
+**Claim / proposition:** TA House F’s earlier assemblage strongly supports instructional activity; its later legal texts do not establish the identity or household composition of the earlier teaching occupants.  
+**Period:** Earlier field level 10 / Stone XI, principally 1740s BCE; later XA-1 assemblage.  
+**Geography / archive / social context:** TA House F, not TB House F.  
+**Evidence type:** Mixed.  
+**Primary evidence:** Exercise tablets, installations, and joins in S04; later NN 11–17.  
+**Secondary scholarship:** S04, pp. 39–45, figs. 3–8 and p. 45 n. 14; S01, pp. 56–59.  
+**Interpretation(s):** Local teaching activity in a domestic-scale setting; no warranted backward projection of later legal parties.  
+**Uncertainty / disagreement:** Individual fragments may be reused; some letters may be exercises; 2023 updates not read.  
+**Confidence + rationale:** HIGH for teaching activity; MODERATE for the absence of an established cross-phase identity link. These are separate propositions, not a single HIGH claim about residents.  
+**Limits on generalization:** No teacher count, pupil count, household size, or citywide schooling model.  
+**Relevance to project question:** A building’s activity can involve people beyond a co-resident group.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 4 — F-C13/F-C14: Atta’s cache associates a person with a place, not title to it
+
+**Claim / proposition:** The cache in TB House O links a substantial temple-office dossier to Atta and to a specific deposit; the dossier does not establish ownership of the excavated building.  
+**Period:** TB E-2; dated Atta purchases include Si 3–24, 1747–1726 BCE.  
+**Geography / archive / social context:** TB 75 E-2, House O; NN 68–91.  
+**Evidence type:** Mixed.  
+**Primary evidence:** Concentrated cache and named transactions, especially NN 69–84.  
+**Secondary scholarship:** S01, pp. 91–98, catalog pp. 219–221; original Goetze edition not independently read.  
+**Interpretation(s):** Strong archive–person association, probable local use, possible overlap of domestic and documentary activities.  
+**Uncertainty / disagreement:** Full building unexcavated/disturbed; depositor, title, and co-residents not directly identified.  
+**Confidence + rationale:** MODERATE: convergent context and names, with incomplete architectural and archival verification.  
+**Limits on generalization:** Does not establish institutional tenancy, landlessness, or a typical TB household.  
+**Relevance to project question:** Distinguishes archive holder, activity, ownership, and residence.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 5 — F-C10/F-C15: Document biographies can outlast transactions
+
+**Claim / proposition:** Later deposits at Nippur include older legal records and, in a linked office sequence, records of a prior holder’s acquisition; the date and parties of a deed cannot automatically date or identify the deposit’s resident group.  
+**Period:** Older records in TA XI-2; office transfers Si 23–24.  
+**Geography / archive / social context:** TA House N, NN 35–37; TB House O, NN 83–84.  
+**Evidence type:** Mixed.  
+**Primary evidence:** Catalogued dates/findspots and linked parties.  
+**Secondary scholarship:** S01, catalog pp. 217–218, 220–221.  
+**Interpretation(s):** Retained legal documentation is plausible; old objects may also be displaced.  
+**Uncertainty / disagreement:** The mechanism of retention is not resolved for all House N records.  
+**Confidence + rationale:** MODERATE: multiple date/context contrasts, with differing depositional explanations.  
+**Limits on generalization:** No universal archival retention practice; no automatic resident succession.  
+**Relevance to project question:** Separates document history from household history.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 6 — F-C12: Physical subdivision need not disclose its legal cause
+
+**Claim / proposition:** TB House C’s published subdivision supports a change in spatial organization without establishing a corresponding named family partition.  
+**Period:** Local level II to I sequence.  
+**Geography / archive / social context:** TB House C/C-1/C-2.  
+**Evidence type:** Mixed, with excavation evidence mediated through reanalysis.  
+**Primary evidence:** Architectural changes reported in S01 from S06 and field documentation.  
+**Secondary scholarship:** S01, pp. 86–88.  
+**Interpretation(s):** Reorganization into smaller units; multiple legal or practical causes remain possible.  
+**Uncertainty / disagreement:** Access details vary between published plans and notes; no matching deed established.  
+**Confidence + rationale:** MODERATE for subdivision; LOW for any specific household-fission explanation.  
+**Limits on generalization:** This local sequence, not a citywide family cycle.  
+**Relevance to project question:** Material change can be retained without inventing a social event.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 7 — F-C06/F-C20: Legal relationships need not carry an archaeological address
+
+**Claim / proposition:** A house lease and sequential estate partitions identify legal relationships without necessarily identifying the parties’ excavated residence.  
+**Period:** NN 50: Si 8; OIMA 1 nos. 28–29: Si 25–26.  
+**Geography / archive / social context:** NN 50 found in TA 185 XA-1; OIMA 1 texts from the old Nippur excavations, precise house association unestablished here.  
+**Evidence type:** Mixed.  
+**Primary evidence:** NN 50; OIMA 1 28–29.  
+**Secondary scholarship:** S01, catalog p. 218; S03, catalog pp. 4–5.  
+**Interpretation(s):** Tenancy and successive division are documentable; co-residence and wall allocation require additional evidence.  
+**Uncertainty / disagreement:** Leased property is not securely equated with House I; OIMA examples are not a stratified building sequence.  
+**Confidence + rationale:** MODERATE: catalogued legal content with explicit provenance limits.  
+**Limits on generalization:** No tenant prevalence, household census, or model inheritance floor plan.  
+**Relevance to project question:** Preserves named relationships without false spatial precision.  
+**Design status:** NO DESIGN DECISION
+
+## 9. Source ledger
+
+Access descriptions apply to this research pass, not to the publications’ general availability. Stable identifiers permit retrieval even when an access URL changes. No supplied source was treated as confirming a passage that was not actually read.
+
+| Short citation | Full citation | Source type | Scope/provenance | Stable ID/DOI/URL | Consulted directly? | Notes |
+|---|---|---|---|---|---|---|
+| S01 — Stone 1987 | Stone, Elizabeth C. 1987. *Nippur Neighborhoods*. Studies in Ancient Oriental Civilization 44. Chicago: Oriental Institute. xviii + 294 pp., 94 plates. | Archaeological reanalysis, text edition/catalog, prosopographical interpretation | TA/TB architecture and finds; principal text catalog | DOI `10.83354/czh7-zk49`; publisher `https://isac.uchicago.edu/publications/nippur-neighborhoods`; searchable author upload `https://www.academia.edu/4764276/Old_Babylonian_Contracts_from_Nippur_I` | YES, searchable book body, focused chapters and catalogs; publisher metadata. NO independent visual audit of all original plates or field records. | Upload’s webpage title is wrong; book title page identifies SAOC 44. Primary archaeological observations are mediated through this reanalysis. |
+| S02 — Stone 1981 | Stone, Elizabeth C. 1981. “Texts, Architecture and Ethnographic Analogy: Patterns of Residence in Old Babylonian Nippur.” *Iraq* 43(1): 19–33. | Specialist architectural/textual interpretation | House I/F and comparative residence model | DOI `10.2307/4200131`; author upload `https://www.academia.edu/4764395/Elizabeth_C_Stone_Texts_Architecture_and_Ethnographic_Analogy_Patterns_of_Residence_in_Old_Babylonian_Nippur_Iraq_XLIII_1981_19_34` | YES, searchable article body; original figures not independently measured. | Correct article span is 19–33, despite upload label 19–34. Not independent corroboration of S01’s underlying excavation. |
+| S03 — Stone 1976 | Stone, Elizabeth C., with photographs by Paul Zimansky. 1976. *Old Babylonian Contracts from Nippur I: Selected Texts from the University Museum, University of Pennsylvania*. Oriental Institute Microfiche Archives 1. Chicago: Oriental Institute. | Primary text publication and catalog | Selected old-excavation Nippur contracts, not the 1950s stratified NN catalog | DOI `10.83354/dqrs-h420`; `https://isac.uchicago.edu/publications/old-babylonian-contracts-nippur-selected-texts-university-museum-university` | YES, PDF catalog; printed pp. 4–5 visually checked. NO new tablet collation. | OIMA 1 numbers must never be substituted for NN numbers. OIMA 1 28–29 supply the sequential-partition control. |
+| S04 — Robson 2001 | Robson, Eleanor. 2001. “The Tablet House: A Scribal School in Old Babylonian Nippur.” *Revue d’Assyriologie et d’archéologie orientale* 95(1): 39–66. | Specialist analysis of primary tablets and archaeological assemblage | TA House F, chiefly school phase | DOI `10.3917/assy.093.0039`; JSTOR stable `23282005`; con
