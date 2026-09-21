@@ -36,6 +36,7 @@ Working specification has now introduced controlled laboratory assumptions. They
 | ASM-0008 | ACTIVE | Loan social due review occurs after the third subsequent full cycle; any remaining balance causes one creditor->debtor -10 attitude event, regardless of ability to repay. | SFL v0 debt relationship dynamics. | Verification/model iteration or later debt/default institutions. |
 | ASM-0009 | ACTIVE | Established-household participation entry requires bilateral invitation/request plus recognition of H, a continuity bridge, shared residence, durable tie, and one qualifying post-formation support event; entry may reactivate an Inactive H through its sole bearer; exit is explicit. | SFL v0 sustaining-participant turnover. | Verification or later household admission/exit norms. |
 | ASM-0010 | ACTIVE | Household operational lifecycle uses 2+ sustaining participants = Active, 1 = Inactive, 0 = Dissolved; count does not establish identity. | SFL v0 operational lifecycle and continuity tests. | Verification/model iteration or richer household-activity semantics. |
+| ASM-0011 | ACTIVE | Controlled v0 lineage classification requires fresh post-separation organizational evidence, predecessor-source clarity, and narrow all-founders-from-predecessor scope; ambiguous/mixed-origin cases receive no lineage classification. | SFL v0 division/consolidation proof cases only. | Verification/model iteration or richer lineage/inheritance/fission/merger model. |
 
 ### ASM-0001 — Reciprocity attitude gate
 
@@ -156,6 +157,18 @@ Working specification has now introduced controlled laboratory assumptions. They
 - **Introduced by:** Director / Master Architect continuity adversarial-review resolution
 - **Date:** 2026-09-21
 - **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `research/technical/TRES-0006/CONTINUITY_LIFECYCLE_SCENARIO_ADVERSARIAL_REVIEW.md`
+
+### ASM-0011 — Controlled v0 lineage classification
+
+- **Status:** ACTIVE
+- **Assumption:** v0 lineage is deliberately narrow. Division lineage requires every successor founder to map to the predecessor and at least one qualifying person-person support event after all cited predecessor exits. Consolidation lineage requires both predecessors dissolved, every successor founder mapped to one of the two predecessors with at least one from each, and at least one post-dissolution cross-predecessor qualifying support event. Ambiguous or mixed-origin cases form normally but receive no v0 lineage classification.
+- **Why temporarily needed:** Stage-3 must test descent separately from identity without inventing a general theory of fission, consolidation, inheritance, or mixed-origin organizational ancestry.
+- **Scope / impact:** `LineageWarrant`, direct `DerivedFrom` classification, and controlled division/consolidation scenarios.
+- **Not authoritative for:** Historical lineage norms, inheritance, universal organizational descent, absorption, multiple descendants, contested succession, or future mixed-origin household formation.
+- **Review / replacement trigger:** Verification/model iteration or introduction of richer lifecycle/lineage/inheritance semantics.
+- **Introduced by:** Director / Master Architect lineage adversarial-review resolution
+- **Date:** 2026-09-21
+- **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`; `research/technical/TRES-0007/LINEAGE_WARRANT_ADVERSARIAL_REVIEW.md`
 
 ## Entry template
 
