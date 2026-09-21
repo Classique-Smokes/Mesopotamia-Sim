@@ -1,6 +1,6 @@
 # SFL v0 — Verification Scenario Workbench
 
-**Status:** ACTIVE / ROADMAP STAGE 3  
+**Status:** CLOSED / ROADMAP STAGE 3 COMPLETE  
 **Authority:** Operational planning; verification scenarios do not redefine `SPEC-SFL-0001`.
 
 ## Goal
@@ -18,17 +18,17 @@ Adversarial verification input:
 - `research/technical/TRES-0006/CONTINUITY_LIFECYCLE_SCENARIO_ADVERSARIAL_REVIEW.md`
 - `research/technical/TRES-0007/LINEAGE_WARRANT_ADVERSARIAL_REVIEW.md`
 - `research/technical/TRES-0008/STAGE3_FINAL_VERIFICATION_PACKAGE_ADVERSARIAL_REVIEW.md`
+- `research/technical/TRES-0009/STAGE3_POST_REPAIR_CLOSURE_REVIEW.md`
 
 Resolved semantic errata record:
 
 - `specifications/working/SPEC-SFL-0001_STAGE3_ERRATA.md`
 
-Open semantic errata:
+Resolved semantic errata records:
 
 - `specifications/working/SFL_V0_STAGE3_RESPONSE_POLICY_ERRATUM.md`
 - `specifications/working/SFL_V0_STAGE3_COMMITMENT_BREACH_ERRATUM.md`
-
-Resolved semantic errata records:
+- `specifications/working/SFL_V0_TRES0008_CLOSURE_REPAIR_PROMOTION_RECONCILIATION.md`
 
 - `specifications/working/SFL_V0_STAGE3_PROVISION_ALLOCATION_ERRATUM.md`
 - `specifications/working/SFL_V0_STAGE3_REFERENCE_SCORING_ERRATUM.md`
@@ -49,6 +49,7 @@ Resolved semantic errata records:
 - `plans/verification/SFL_V0/CROSS_CUTTING_VERIFICATION_CONTRACT.md`
 - `plans/verification/SFL_V0/REFERENCE_SCORING_PROFILES.md`
 - `plans/verification/SFL_V0/LOWER_LEVEL_SOCIAL_FABRIC_FAMILY.md`
+- `plans/verification/SFL_V0/RESPONSE_DECISION_FAMILY.md`
 
 ## Required outputs
 
@@ -184,6 +185,8 @@ Communication provenance ordering/Contested behavior remains cross-linked to the
 
 ## Completion condition
 
+**Satisfied.** TRES-0009 found no remaining semantic or architectural blocker.
+
 Stage 3 closes when:
 
 - every consequential v0 behavior has at least one observable acceptance scenario;
@@ -191,3 +194,16 @@ Stage 3 closes when:
 - expected outcomes are defined independently enough to catch production defects;
 - checkpoint/determinism requirements are executable;
 - the suite contains adversarial/metamorphic/held-out evidence sufficient to proceed to implementation without redefining model semantics.
+
+
+## Closure record
+
+Roadmap Stage 3 closed on 2026-09-21 after:
+
+- TRES-0008 full-package adversarial review;
+- Director-approved response-policy and orphan-breach repairs;
+- canonical response scoring profiles/cards;
+- lower-level social-fabric coverage;
+- TRES-0009 post-repair closure review.
+
+Stage 4 implementation must treat this workbench/package as verification requirements, not as authority to change `SPEC-SFL-0001`.
