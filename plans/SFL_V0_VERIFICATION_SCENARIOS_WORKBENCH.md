@@ -35,6 +35,7 @@ Open semantic erratum:
 - `plans/verification/SFL_V0/RECOGNITION_INFORMATION_FAMILY.md`
 - `plans/verification/SFL_V0/PROVISION_GROUNDING_FAMILY.md`
 - `plans/verification/SFL_V0/NO_SELF_CONFIRMATION_FAMILY.md`
+- `plans/verification/SFL_V0/HEAD_ROLE_AND_DUAL_MODE_FAMILY.md`
 
 ## Required outputs
 
@@ -132,6 +133,12 @@ Canonical provision verification proves personal ownership until spend, explicit
 Household-originated support is feedback from an already-existing H and cannot become independent formation/continuity/lineage evidence.
 
 Exact multi-contributor debit ordering remains gated on the open provision-allocation erratum.
+
+## Head-role/dual-mode baseline
+
+Canonical role verification covers headless formation, unanimous appointment, vacancy without identity loss, succession preserving role identity, scoped authority, separate personal/household decision traces, common-snapshot deliberation, and central conflict resolution.
+
+`VS-SFL-065` is also a canonical witness for NeedsGrain household-support priority over an incompatible ordinary personal transfer.
 
 ## Scenario families to specify
 
