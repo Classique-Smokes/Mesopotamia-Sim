@@ -4,7 +4,7 @@
 - **Owner:** Master Architect
 - **Date:** 2026-09-21
 - **Depends on accepted decisions:** DEC-0001, ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0005
-- **Known assumptions:** ASM-0001 through ASM-0011
+- **Known assumptions:** ASM-0001 through ASM-0012
 
 ## 1. Purpose and scope
 
@@ -201,10 +201,17 @@ Reference v0 policy:
 
 - deterministic, with no random choice;
 - ADR-0002 hierarchical/context-sensitive candidate generation;
-- generate only contextually relevant/accessible candidates;
-- transparently component-score the generated candidates and choose the highest-scoring candidate;
-- deterministic, semantically declared tie-break rather than collection/insertion order;
-- an actor may still initiate nothing where no substantive voluntary action is selected.
+- categorical eligibility/accessibility gates run before scoring;
+- every remaining candidate receives a finite set of **named integer score components** supplied by the active rule/configuration profile;
+- `FinalScore = sum(all named component values)`;
+- the candidate with the highest `FinalScore` is selected;
+- exact-score ties use an explicitly declared domain tie key where the relevant action domain defines one; otherwise the disclosed stable-semantic-ID technical fallback applies and is logged;
+- v0 soft concern/tier effects are represented through named score components and candidate-generation/gating rules rather than a second hidden aggregation layer;
+- if no candidate remains after generation/gating, the actor initiates nothing; no semantic `Wait` action is required.
+
+Component-producing rules/configuration must yield exact integer values. Numeric coefficients remain laboratory configuration rather than social semantics. The canonical Stage-3 closed-loop profiles use exact integer scaling so accepted domain multipliers such as the 1.5x kinship attitude-component amplification require no floating-point rounding.
+
+The complete decision trace records every candidate, gate result, named component values, `FinalScore`, tie-break use, chosen candidate, and relevant subjective inputs.
 
 This is a **reference policy, not a permanent architecture lock**. Action/world semantics remain separable from actor policy so later planning, heterogeneous personalities, learned policies, or stochastic choice can replace/extend the v0 scorer without rewriting the social substrate.
 
@@ -547,7 +554,16 @@ These are controlled v0 proof semantics, not a general theory of inheritance, fi
 
 Household mobilizable capacity is derived from current commitments.
 
-For one expenditure, contributors are debited largest available surplus first; stable semantic ID breaks otherwise unresolved ties.
+For one expenditure, allocation is determined atomically at precommit revalidation:
+
+1. compute every currently valid contributor's exposed capacity;
+2. sort contributors once by exposed capacity descending;
+3. stable semantic person ID orders exact capacity ties;
+4. debit each contributor up to that validated capacity in the fixed order until the expenditure is fully funded;
+5. if total validated capacity is insufficient, the expenditure cannot commit;
+6. do not rerank contributors while executing the same expenditure.
+
+The resulting debit vector is part of semantic history. The stable-ID step is a disclosed technical fallback, not a social priority.
 
 ### 8.2 Provision reconsideration
 
@@ -811,3 +827,4 @@ Relevant:
 - 2026-09-21 — Director-approved lineage semantics after TRES-0007: one behaviorally inert LineageWarrant per successor formation at most; direct predecessor provenance distinct from ancestry; fresh organizational evidence; narrow division/consolidation classifications; ambiguity withholds lineage rather than formation; no inherited causal state.
 - 2026-09-21 — Restored previously approved Pass-C information semantics lost during compression: communication initiative cost, event-provenance precedence, Contested handling, general household/role recognition action gating, outsider non-omniscience, and the mediated-marriage bride-to-household subjective route requirement.
 - 2026-09-21 — Pre-rule compression-audit restorations: fixture authority/no fixed actor count; cross-boundary/anti-shortcut constraints; attitude/kinship gate separation; debt-history retention; favour non-currency limits; residence independence from marriage; exact reference-scorer/separability semantics; recognition-state meanings; head-role prohibitions; reaction-closure termination condition; all action-relevant preconditions and uncommitted-effect knowledge semantics.
+- 2026-09-21 — Director-approved final Stage-3 semantic gates: fixed-rank/exhaust-in-order multi-contributor provision allocation and exact reference scorer aggregation (`FinalScore = sum(named integer components)`) with explicit semantic/domain tie handling and disclosed technical-ID fallback.
