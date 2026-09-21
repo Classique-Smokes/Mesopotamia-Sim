@@ -26,8 +26,8 @@ An implementation agent may choose ordinary code structure inside these boundari
 - **Pass C — Subjective recognition + information:** WORKING-CONVERGED.
 - **Pass D — Household formation + continuity:** WORKING-CONVERGED.
 - **Pass E — Grounded collective capability + representative role:** WORKING-CONVERGED.
-- **Pass F — Temporal execution + history + continuation:** ACTIVE.
-- Pass G: not yet specified.
+- **Pass F — Temporal execution + history + continuation:** WORKING-CONVERGED.
+- **Pass G — Verification closure + spec acceptance:** ACTIVE.
 
 ---
 
@@ -713,7 +713,150 @@ Deferred locks:
 
 ---
 
-# 12. Implementation autonomy boundary
+# 12. Pass F — temporal execution, resolution, history, and continuation
+
+## 12.1 Time and cycle phases
+
+v0 uses integer `Cycle` time. A cycle is an abstract laboratory period, not a historical day/week/month.
+
+Same-cycle causal consequences use `ReactionIndex`, giving semantic order `(Cycle, ReactionIndex)` without advancing model time.
+
+Cycle structure:
+
+1. apply scheduled exogenous/scenario inputs;
+2. apply periodic maintenance (consumption, attitude decay when due, cooldown eligibility);
+3. refresh required derived state;
+4. take one common committed decision snapshot;
+5. personal and occupied household decision contexts deliberate independently from that snapshot;
+6. collect proposal responses;
+7. resolve priorities/conflicts and revalidate;
+8. commit accepted effects;
+9. run automatic same-cycle semantic reactions to closure;
+10. record final history / refresh derived state / advance.
+
+No voluntary decision context reactivates after a same-cycle commit.
+
+## 12.2 Timing parameters
+
+- consumption: every cycle;
+- attitude decay: every 5 cycles;
+- provision-reconsideration refusal cooldown: 3 full cycles.
+
+A provision reconsideration becomes eligible only after cooldown expiry **and** at least one relevant context change since the refusal: contributor grain/NeedsGrain state, attitude toward head, head occupant, or a new household material need.
+
+## 12.3 Proposal outcomes and revalidation
+
+All social actions remain proposals/attempts. Immediately before commit, revalidate all state needed by the action, including relevant participants, eligibility/status, relations/claims, head authority, household state, provision capacity, grain, and cooldowns.
+
+Outcomes distinguish:
+
+- `Declined`;
+- `Unable(reason)`;
+- `InvalidatedAtResolution(reason)`;
+- committed success.
+
+Direct participants learn failures and bounded causal reasons. Feasibility failures are not voluntary refusals and do not trigger refusal attitude penalties.
+
+No automatic same-cycle retry occurs after failure.
+
+## 12.4 Conflict and scarce-capacity resolution
+
+Previously established commitments receive material priority only when their semantics explicitly reserve or conditionally authorize current scarce capacity; debt/favour do not automatically reserve grain.
+
+For household provision expenditure, v0 priority is:
+
+1. eligible `NeedsGrain` household support;
+2. other valid household provision expenditure (currently dowry);
+3. ordinary voluntary personal transfers.
+
+Protected personal 2-grain reserve still applies.
+
+Within equal social-priority classes, meaningful domain priority is used first. If no social distinction exists, stable semantic ID is the disclosed deterministic fallback. History records use of this technical fallback; Pass G must test sensitivity to nonsemantic ID permutation.
+
+Actors may accept multiple incoming proposals, but central resolution may commit only the compatible subset. A capacity-conflict failure is `InvalidatedAtResolution`, not social refusal.
+
+## 12.5 Automatic reaction closure
+
+Automatic consequences at one cycle are cause-keyed/idempotent.
+
+- each reaction has a stable cause key `(rule, triggering event, subject)`;
+- the same cause key cannot produce the same transition twice;
+- a reaction must consume/change its enabling condition or become a no-op after application;
+- repeated production from the same cause key is a specification/engine error.
+
+Automatic reactions may update attitude, knowledge, recognition, household formation/continuity, and other specified consequences but cannot create fresh voluntary initiatives.
+
+## 12.6 Knowledge and witness timing
+
+Direct participants learn a committed or failed-attempt outcome at its commit/resolution reaction. Other actors learn it only through event-specific valid witness rules or later communication.
+
+Proposed-but-uncommitted world effects never become objective facts; the proposal/refusal/failure occurrence itself may still be known to its participants.
+
+Exact witness sets are part of the relevant domain event rule and must be explicit in implementation scenarios.
+
+## 12.7 Semantic decision/history record
+
+For the v0 laboratory, retain the complete diagnostic decision trace for each activated personal/household decision context:
+
+- generated candidate actions;
+- gate/eligibility results and exclusion reasons;
+- score components and final scores;
+- selected candidate;
+- subjective facts/recognition used by the decision.
+
+Consequential proposal/history records additionally retain:
+
+- proposal/event/process ID;
+- `Cycle, ReactionIndex`;
+- proposer/target/role context;
+- response and bounded failure reason;
+- validation/conflict-resolution result;
+- committed effects;
+- causal predecessor/event references;
+- rule/configuration version;
+- explicit marker when technical ID fallback decides a tie.
+
+Formation/continuation warrants, role appointment/succession, provision commitments, and lineage retain direct supporting event references.
+
+## 12.8 Material deadlock
+
+If all people able to generate grain are barred by `NeedsGrain`, no available transfer can clear any need, and no scheduled exogenous grain input can resolve the condition, the laboratory reports `MaterialDeadlock`.
+
+v0 does not inject rescue grain. Verification may terminate/mark the scenario stuck.
+
+## 12.9 Continuation checkpoint
+
+Checkpoints are permitted only at a stable cycle boundary after proposal resolution and reaction closure.
+
+A checkpoint includes all future-influencing authoritative state:
+
+- cycle/reaction frontier;
+- people/resources/relations;
+- attitudes;
+- subjective knowledge/recognition;
+- household lifecycle, associations, warrants, head role;
+- provision commitments;
+- debts/favours/marriages;
+- cooldown state and context baseline;
+- pending scenario inputs/future work;
+- identifier/order state;
+- rule/configuration version.
+
+v0 uses no randomness, so no RNG state is required.
+
+Rebuildable indexes/caches, candidate indexes, mobilizable-capacity summaries, feasible-action indexes, and UI projections are non-authoritative.
+
+Exact continuation requirement: restore at a safe boundary and reproduce the same subsequent semantic state and history suffix under the same inputs/configuration.
+
+## 12.10 Pass F closure
+
+Pass F is **WORKING-CONVERGED** after narrow adversarial review `TRES-0003`.
+
+No architecture-level blocker remains.
+
+---
+
+# 13. Implementation autonomy boundary
 
 Until this draft is complete, an implementation agent has **no authority** to decide any open item above.
 
