@@ -2,7 +2,7 @@
 
 **Authority:** Verification design only.  
 **Semantic source:** `SPEC-SFL-0001` §§4.2, 8, 9.2.  
-**Status:** CANONICAL EXCEPT multi-contributor debit-trace subcase, which is gated on an open semantic erratum.
+**Status:** CANONICAL.
 
 These cards prove that household material capability is grounded in explicit personal backing rather than a pooled household treasury or label-only authority.
 
@@ -211,27 +211,66 @@ No spend may push personal grain below 2.
 
 ---
 
-## VS-SFL-046 — Multi-contributor expenditure
+## VS-SFL-046 — Multi-contributor fixed-rank expenditure
 
-**Status:** BLOCKED ON SEMANTIC ERRATUM
+**Level:** mechanism-isolation / boundary  
+**Claim:** one collective expenditure computes contributor rank once at precommit and exhausts contributors in that fixed order.
 
-Accepted semantics specify:
+### Positive allocation
 
-- contributors are debited "largest available surplus first";
-- stable semantic ID breaks otherwise unresolved ties.
+At precommit:
 
-The authoritative material does **not** specify whether ranking is:
+- contributor A personal grain = 7 -> exposed capacity 5;
+- contributor B personal grain = 5 -> exposed capacity 3;
+- both have valid provision commitments and are not NeedsGrain;
+- requested collective expenditure = 6.
 
-1. fixed once at the start of the expenditure and each contributor is exhausted in that order; or
-2. recomputed as each unit is debited.
+Expected fixed ranking: A(5) before B(3).
 
-These strategies produce different contributor debit histories while both satisfy the current prose.
+### Assertions
 
-Stage 3 must not choose between them. Once resolved, this card must test:
+- total validated capacity = 8;
+- expenditure commits;
+- A debit = 5, ending grain 2;
+- B debit = 1, ending grain 4;
+- total contributor debit = 6 exactly;
+- no contributor falls below reserve 2;
+- rank is **not recomputed** after A's first debit;
+- semantic history records the exact debit vector and backing commitments.
 
-- exact contributor debit vector;
-- stable-ID tie behavior;
-- ID-permutation sensitivity only when the tie fallback is reached;
-- total spend conservation;
-- protected reserve for every contributor;
-- exactly-once debit history.
+### Exact-tie companion
+
+At precommit:
+
+- A exposed capacity = 3;
+- B exposed capacity = 3;
+- requested expenditure = 4.
+
+Stable semantic person ID orders the initial exact tie.
+
+Assertions:
+
+- lower fallback ID contributor is ranked first and pays 3;
+- second contributor pays 1;
+- history explicitly marks technical-ID fallback use;
+- permuting only the nonsemantic stable IDs may swap the debit vector across actors;
+- total material effect remains 4 and reserve invariants remain satisfied.
+
+### Insufficient-capacity control
+
+If validated capacities sum to less than requested spend:
+
+- expenditure does not commit;
+- no partial contributor debit becomes authoritative;
+- failure is explicit;
+- no household treasury/negative balance is created.
+
+### Mutation controls
+
+Must fail if implementation:
+
+- reranks contributors after each grain/unit debit;
+- splits the expenditure into independent mini-spends;
+- uses collection order before surplus ranking;
+- penetrates a contributor's reserve;
+- debits any backing grain twice.
