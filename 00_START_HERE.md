@@ -38,7 +38,7 @@ Active work:
 
 - `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
 - `plans/verification/SFL_V0/`
-- current verification focus: conflict/invalidation, reaction closure, and communication provenance; one narrow multi-contributor provision-allocation erratum remains open
+- current verification focus: MaterialDeadlock, stable-ID fallback, checkpoint/rebuild, and explainability; one narrow multi-contributor provision-allocation erratum remains open
 
 No production implementation has started.
 
