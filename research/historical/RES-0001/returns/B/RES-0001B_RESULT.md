@@ -292,4 +292,132 @@ These are candidates for review, not canonical register entries. They carry loca
 **Primary evidence:** D01; S01 p. 35, clauses A–C; case concordance S03 p. 3.  
 **Secondary scholarship:** S05; later dossier interpretation remains debated.  
 **Interpretation(s):** A contribution and conditional financial consequences are documented.  
-**Uncertainty / disagreement:** Neither divorce occurrence nor equal economic consequences follo
+**Uncertainty / disagreement:** Neither divorce occurrence nor equal economic consequences follows; grammatical agency is separately disputed.  
+**Confidence + rationale:** HIGH for the recorded terms, supported by the published text and recoverable tablet/case identification.  
+**Limits on generalization:** One instrument, not a citywide payment or divorce rule.  
+**Relevance to project question:** Shows that marital relation and resource claims are connected but analytically separable.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 2 — Parenthood constituted alongside marriage
+
+**Local references:** B-C04–B-C05  
+**Claim / proposition:** BE 6/2 48 makes Naramtum a legally recognized mother to Awiliya’s three sons and connects recognition/support to estate rights.  
+**Period:** Old Babylonian; exact date not verified.  
+**Geography / archive / social context:** Nippur attribution; P283604; MC 3 16 concordance.  
+**Evidence type:** Primary  
+**Primary evidence:** D04; S01 pp. 35–38.  
+**Secondary scholarship:** S10 n. 18; modern re-edition S11 identified but not directly read.  
+**Interpretation(s):** The text constitutes a relationship rather than only reporting birth.  
+**Uncertainty / disagreement:** Sons’ ages, prior mother’s fate and residence are unknown; some wording needs a current critical check.  
+**Confidence + rationale:** HIGH for the constituted relationship and stated support terms.  
+**Limits on generalization:** No general adoption procedure or age category inferred.  
+**Relevance to project question:** Clarifies that a kin label need not be a descent label or an occupancy statement.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 3 — Continuing sibling maintenance duty
+
+**Local references:** B-C09  
+**Claim / proposition:** PBS 8/2 116 places maintenance duties toward Bēltani on four named brothers/heirs, with consequences for inheritance upon default.  
+**Period:** Rīm-Sîn 50/2; c. 1773 BCE.  
+**Geography / archive / social context:** Nippur; CBS 07112; P262151; no locus in consulted record.  
+**Evidence type:** Primary  
+**Primary evidence:** D05; S13 tablet obv. 1–12 and case parallel.  
+**Secondary scholarship:** S04 p. 59; field-reference interpretation remains open.  
+**Interpretation(s):** A prospective obligation is directly documented.  
+**Uncertainty / disagreement:** No payment-performance history or shared residence established.  
+**Confidence + rationale:** HIGH for the written obligation and named relationships.  
+**Limits on generalization:** Specific sibling group only; no universal support obligation or residence pattern.  
+**Relevance to project question:** Demonstrates a durable family tie not reducible to a marriage relation.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 4 — A woman as a named witness
+
+**Local references:** B-C10  
+**Claim / proposition:** Unnubtum, a nadītu of Ninurta, is a witness in PBS 8/2 116.  
+**Period:** Rīm-Sîn 50/2; c. 1773 BCE.  
+**Geography / archive / social context:** Nippur; same instrument as D05.  
+**Evidence type:** Primary  
+**Primary evidence:** S13 tablet rev. 13 and case rev. 11.  
+**Secondary scholarship:** S07 provides a separate discussion of women witnessing in BE 6/2 58.  
+**Interpretation(s):** A specifically identified woman acts in a witness capacity.  
+**Uncertainty / disagreement:** Participation frequency, universality of capacity and residence are not inferred.  
+**Confidence + rationale:** HIGH for this explicit documentary role.  
+**Limits on generalization:** One named witness; no population-wide legal status conclusion.  
+**Relevance to project question:** Keeps witness participation distinct from spouse, beneficiary and co-resident roles.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 5 — Marriage and pre-existing children
+
+**Local references:** B-C13  
+**Claim / proposition:** SAOC 44 1 combines marriage with affiliation of the wife’s three children; its identification as a widow’s remarriage is supported by Stol’s discussion of the equivalent MC 3 14.  
+**Period:** Rīm-Sîn 30/7; c. 1793 BCE.  
+**Geography / archive / social context:** TA 180 XI foundation; 3N-T 852; IM 58763; P224324.  
+**Evidence type:** Mixed  
+**Primary evidence:** D10; S02 Appendix IV p. 215; S11 concordance.  
+**Secondary scholarship:** S06 p. 145 n. 67, citing S11 pp. 49–50.  
+**Interpretation(s):** A new marital relationship can be accompanied by new parent–child ties.  
+**Uncertainty / disagreement:** Widowhood is mediated; no age or residence sequence directly verified; foundation context is not an occupancy roster.  
+**Confidence + rationale:** MODERATE because catalogue and concordance converge but the modern edition was not directly read.  
+**Limits on generalization:** One relationship transition, not the standard experience of widows.  
+**Relevance to project question:** Provides a bounded life-stage example without erasing children or natal kin.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 6 — Property division is not automatically household division
+
+**Local references:** B-C15  
+**Claim / proposition:** SAOC 44 44/46/47 records joint house-property acquisition followed by purchase of the other partner’s share.  
+**Period:** Samsu-iluna 16–18; c. 1734–1732 BCE.  
+**Geography / archive / social context:** TA 178/185 XA-1; Stone’s Houses I/H reconstruction.  
+**Evidence type:** Mixed  
+**Primary evidence:** D16–D18; S02 Appendix IV p. 218.  
+**Secondary scholarship:** S02 pp. 65–68 identifies brothers and reconstructs house associations.  
+**Interpretation(s):** Legal property interests change over time.  
+**Uncertainty / disagreement:** Actual move-out events and every architectural assignment are not independently established.  
+**Confidence + rationale:** MODERATE: catalogue sequence is clear, residential implications are inferred.  
+**Limits on generalization:** Not a general pattern of brotherly co-residence or household fission.  
+**Relevance to project question:** Separates a recoverable property sequence from a hypothetical residence sequence.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 7 — Residence and property participation are different associations
+
+**Local references:** B-C16–B-C18  
+**Claim / proposition:** The examined TA records distinguish an expressly reported resident, contributors to an acquisition and a tenant’s temporary house access.  
+**Period:** Samsu-iluna 7–8 for D11/D19; c. 1743–1742 BCE.  
+**Geography / archive / social context:** TA 174 XI-2 and TA 185 XA-1.  
+**Evidence type:** Mixed  
+**Primary evidence:** D11/D19; S02 pp. 63, 217–218 and Asirum index entry.  
+**Secondary scholarship:** Stone’s financing/occupancy interpretation is attributed, not accepted as certain.  
+**Interpretation(s):** Different documents establish different kinds of connection to housing.  
+**Uncertainty / disagreement:** Contributors are not thereby residents; a rental is not proof of actual move-in; kin status remains open.  
+**Confidence + rationale:** MODERATE for the catalogue-supported distinctions.  
+**Limits on generalization:** No occupant count or secure unrelated-resident classification.  
+**Relevance to project question:** Prevents ownership, financing and residence from being treated as equivalent evidence.  
+**Design status:** NO DESIGN DECISION  
+
+### Candidate 8 — Legal release without a demonstrated residential exit
+
+**Local references:** B-C19  
+**Claim / proposition:** SAOC 44 53 records manumission; the consulted catalogue does not specify the released person’s subsequent residence.  
+**Period:** Rīm-Sîn 51/8; c. 1772 BCE.  
+**Geography / archive / social context:** TA 179 XA-1; 3N-T 845; IM 58756.  
+**Evidence type:** Mixed  
+**Primary evidence:** D20; S02 Appendix IV p. 218.  
+**Secondary scholarship:** No additional dependency reconstruction adopted.  
+**Interpretation(s):** A legal status change is documented while residential consequences remain open.  
+**Uncertainty / disagreement:** No inference that all prior ties ended or that the person moved away.  
+**Confidence + rationale:** MODERATE: catalogue-level act identification, no new textual collation.  
+**Limits on generalization:** This instrument only; not a general freed-person trajectory.  
+**Relevance to project question:** Provides a concrete check against equating status change with household departure.  
+**Design status:** NO DESIGN DECISION  
+
+
+## 9. Source ledger
+
+This ledger is also supplied as UTF-8 CSV. A bibliographic entry is not a claim of full consultation. “NO” and “PARTIAL” entries preserve the actual evidence trail and important access gaps. The stable source IDs are local to this return. No external books, journal PDFs or tablet photographs are redistributed in the handoff package.
+
+| Source ID / short citation | Full citation | Source type | Scope/provenance | Stable ID/DOI/URL | Consulted directly? | Notes |
+|---|---|---|---|---|---|---|
+| S01 — Poebel 1909, BE 6/2 | Poebel, Arno. 1909. Babylonian Legal and Business Documents from the Time of the First Dynasty of Babylon, Chiefly from Nippur. The Babylonian Expedition of the University of Pennsylvania, Series A, 6/2. Philadelphia: Department of Archaeology, University of Pennsylvania. | Primary edition with commentary | Predominantly Nippur; Old Babylonian; document-specific provenance still requires checking. | https://archive.org/details/pt2babylonianexp06univuoft ; https://archive.org/stream/pt2babylonianexp06univuoft/pt2babylonianexp06univuoft_djvu.txt | YES—selected printed text through digitized full-text transcription | Marriage section, printed pp. 35–38: BE 6/2 40 and 48, including transliterations and translations; relevant catalogue/index entries. No tablet collation. OCR contains errors; the section heading and internal text numbers must not be conflated. Public-domain edition, not a current critical translation. |
+| S02 — Stone 1987, SAOC 44 | Stone, Elizabeth C. 1987. Nippur Neighborhoods. Studies in Ancient Oriental Civilization 44. Chicago: Oriental Institute of the University of Chicago. | Excavation-related synthesis, text catalogue, editions and historical interpretation | Nippur residential areas, especially TA; older and later documents coexist in recovered assemblages. | DOI 10.83354/czh7-zk49 ; https://isac.uchicago.edu/publications/nippur-neighborhoods ; consulted text: https://www.academia.edu/4764276/Old_Babylonian_Contracts_from_Nippur_I | YES—selected substantial sections, catalogue and indices | Especially pp. 15–19, 41–53, 63–68, Appendix IV pp. 215–218 and relevant personal-name index entries. Repository heading misleadingly names the 1976 contracts volume; the actual body is Nippur Neighborhoods. Architectural reconstructions are attributed to Stone; plans were not independently remapped or visually collated. |
+| S03 — Stone and Zimansky 1976, OIMA 1 | Stone, Elizabeth C., and Paul E. Zimansky. 1976. Old Babylonian Contracts from Nippur: Selected Texts from the University Museum, University of Pennsylvania. Part I. Oriental Institute Microfiche Archives 1. Chicago: Oriental Institute. | Primary text publication and catalogue | Nippur-attributed museum collection; Old Babylonian. | DOI 10.83354/dqrs-h420 ; https://isac-assets.s3.amazonaws.com/isac-publications/old_babylonian_contracts.pdf?VersionId=piUZ0T91wxz1u4XHOUryvedbJ3A1hAJ3 | YES—selected catalogue and concordance pages | Printed p. 3 visually checked as PDF page 12 (zero-based). OIMA 1 24 identifies the case of BE 6/2 40; the catalogue gives day 26, whereas the older OCR catalogue gives 28. Some OIMA 1 13 joins/duplicates remain uncertain. This is not a claim to have read every published tablet. |
+| S04 — Stone 1982, nadītu study | Stone, Elizabeth C. 1982. “The Social Role of the Nadītu Women in Old Babylonian Nippur.” Journal of the Economic and Social History of the Orient 25(1): 50–70. | Original scholarly analysis of legal archives | Nippur nadītu women; specific archival examples, not a demographic census. | JSTOR 3632034 ; https://www.academia.edu/4764420/Elizabeth_C_Stone_T
