@@ -62,7 +62,7 @@ Each association was tested at three levels: **where the object was found; which
 
 Confidence follows the packet’s HIGH / MODERATE / LOW scheme. Most catalog-based historical claims remain MODERATE because the tablets were not collated and the archaeological associations are uneven. A HIGH rating for teaching activity does not extend to the teacher’s identity, number of pupils, or inhabitants. A LOW rating for a proposed family configuration does not imply that such a configuration was historically impossible.
 
-The main biases are differential survival and excavation, selected object registration, later disturbance, incomplete buildings, the accumulation of old deeds, fragment counts that are not independent tablet counts, and recurrent publication of the same underlying evidence. Stone 1981 and Stone 1987 are not two  independent excavations; later repetition of their reconstruction does not multiply its evidentiary weight.
+The main biases are differential survival and excavation, selected object registration, later disturbance, incomplete buildings, the accumulation of old deeds, fragment counts that are not independent tablet counts, and recurrent publication of the same underlying evidence. Stone 1981 and Stone 1987 are not two independent excavations; later repetition of their reconstruction does not multiply its evidentiary weight.
 
 ## 3. Evidence table
 
@@ -97,7 +97,7 @@ The main biases are differential survival and excavation, selected object regist
 
 The strongest answer to the commissioned question is not an all-purpose household model. It is a set of differentiated histories: the history of a plot, of a structure, of rights in property, of a document collection, of activities, and sometimes of identifiable people. Those histories can overlap without being identical.
 
-For this investigation, an identified contractual relationship is not weakened merely because its parties cannot be located in rooms. Conversely, a secure architectural change need not have a recoverable legal cause. The useful conjunction is a proposition supported on both sides: for example, a document describing a divided property and independent physical evidence of the corresponding division. Where the  document supplies the building identification or the phase date, that dependence must remain visible. [Evidence evaluated: S01–S04.]
+For this investigation, an identified contractual relationship is not weakened merely because its parties cannot be located in rooms. Conversely, a secure architectural change need not have a recoverable legal cause. The useful conjunction is a proposition supported on both sides: for example, a document describing a divided property and independent physical evidence of the corresponding division. Where the document supplies the building identification or the phase date, that dependence must remain visible. [Evidence evaluated: S01–S04.]
 
 ### 4.2 Principal stratified case: TA House I
 
