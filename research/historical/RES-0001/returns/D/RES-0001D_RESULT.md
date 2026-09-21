@@ -371,4 +371,164 @@ These candidates are selected from the evidence table because the narrow proposi
 **Uncertainty / disagreement:** Listed assets need not exhaust a household’s resources; some old furniture readings remain uncertain.  
 **Confidence + rationale:** HIGH. Multiple division texts independently enumerate distinct resource categories and balancing arrangements.
 
-**Limits on generalization:** Documented estates, not representative wealth or enslaved-pe
+**Limits on generalization:** Documented estates, not representative wealth or enslaved-person prices.  
+**Relevance to project question:** Distinguishes resource types and persons treated as property in the records.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 4 — Transfer of annual office entitlements (D-C06)
+
+**Claim / proposition:** Specified annual portions of temple-office entitlements could enter exchanges and inheritance divisions.  
+**Period:** Samsu-iluna 12 and 13  
+**Geography / archive / social context:** Kusu/Enlil-linked office/property transactions.
+
+**Evidence type:** Primary.  
+**Primary evidence:** BE 6/2, 39 and 43; S01  
+**Secondary scholarship:** S11 is a further specialist lead, abstract only; not the basis of detailed claims.
+
+**Interpretation(s):** Annual office portions are transferable in these cases. Actual service, distributions, associated land, and institutional ownership require separate evidence.  
+**Uncertainty / disagreement:** Transfer of an office portion is not ownership of the temple; actual performance and income are not observed.  
+**Confidence + rationale:** HIGH. Two explicit transactions express office entitlements in annual portions and place them in transfers or division.
+
+**Limits on generalization:** Particular transferable entitlements, not all temple offices or unrestricted marketability.  
+**Relevance to project question:** Separates income/service entitlement from buildings and land.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 5 — Marriage contribution and contingent restitution (D-C08)
+
+**Claim / proposition:** A marriage agreement separately identifies the wife’s silver contribution and conditional return/forfeiture obligations.  
+**Period:** Samsu-iluna 13/01/28  
+**Geography / archive / social context:** Ama-sukkal and Enlil-idzu agreement.
+
+**Evidence type:** Primary.  
+**Primary evidence:** BE 6/2, 40; S01, p. 35  
+**Secondary scholarship:** Terms read from the edition, with numerical clauses visually checked.
+
+**Interpretation(s):** Contribution and conditional restitution are distinguishable from day-to-day possession or expenditure of the silver.  
+**Uncertainty / disagreement:** Not evidence that repudiation occurred; no comprehensive rule for all marriage property.  
+**Confidence + rationale:** HIGH. The contribution and opposed conditional clauses are explicit, and the numerical passage was visually checked.
+
+**Limits on generalization:** One explicit agreement; daily control and actual enforcement unknown.  
+**Relevance to project question:** Distinguishes contribution, conditional claim, and available household cash.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 6 — Maintenance attached to inheritance eligibility (D-C09)
+
+**Claim / proposition:** Family maintenance obligations could be explicitly attached to continuing inheritance entitlement.  
+**Period:** Rīm-Sîn 50; Samsu-iluna 18  
+**Geography / archive / social context:** Sister’s support and marriage/adoption arrangements.
+
+**Evidence type:** Primary.  
+**Primary evidence:** PBS 8/2, 116 / P262151; BE 6/2, 48; S02, S01  
+**Secondary scholarship:** Convergence concerns stipulated obligations, not demonstrated enforcement.
+
+**Interpretation(s):** The stipulations connect succession to continued support. They do not demonstrate that any heir failed or lost property.  
+**Uncertainty / disagreement:** Forfeiture language is conditional; absence of receipts does not prove nonpayment.  
+**Confidence + rationale:** HIGH. A directly read digital edition and a separate BE agreement converge on the conditional link.
+
+**Limits on generalization:** Two related types of agreement, not an obligation imposed on every relative.  
+**Relevance to project question:** Connects resource succession with ongoing support claims.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 7 — Agreement-specific restriction on field alienation (D-C10)
+
+**Claim / proposition:** One support agreement restricts heirs’ alienation of fields during the beneficiary’s lifetime.  
+**Period:** Rīm-Sîn 50/02  
+**Geography / archive / social context:** Bēltani, nadītu of Ninurta, and four brothers.
+
+**Evidence type:** Primary.  
+**Primary evidence:** PBS 8/2, 116, tablet rev. 1–5 and envelope parallel; S02  
+**Secondary scholarship:** Interpreted narrowly as an express restriction within this arrangement.
+
+**Interpretation(s):** The restriction belongs to the support arrangement and is not a general rule that inherited land cannot be sold.  
+**Uncertainty / disagreement:** No actual prohibited sale or forfeiture is documented; not proof of a universal family redemption right.  
+**Confidence + rationale:** HIGH. The restriction is explicit in the tablet and parallel envelope, treated as one agreement.
+
+**Limits on generalization:** This agreement only.  
+**Relevance to project question:** Shows that inheritance and unrestricted disposal are not identical.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 8 — Different stated interest terms (D-C11)
+
+**Claim / proposition:** The selected loan texts distinguish stated interest-bearing obligations from a text marked not bearing interest.  
+**Period:** Hammurabi 38b (old attribution); Samsu-iluna 10  
+**Geography / archive / social context:** Nippur private loan documents.
+
+**Evidence type:** Primary.  
+**Primary evidence:** BE 6/2, 15; PBS 8/2, 130 / P262191; S01, S03  
+**Secondary scholarship:** No additional-interest wording is not assumed to prove zero total borrowing cost.
+
+**Interpretation(s):** The documents specify different interest statuses; a no-interest label at one stage does not itself establish the total historical borrowing cost.  
+**Uncertainty / disagreement:** Principal may incorporate earlier charges; the interest-bearing text gives no rate.  
+**Confidence + rationale:** HIGH. The relevant clauses explicitly contrast stated interest-bearing and not-bearing-interest status.
+
+**Limits on generalization:** Terms of particular contracts, not citywide rates or prevalence.  
+**Relevance to project question:** Prevents applying one standard interest rule to all obligations.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 9 — Different advance and settlement media (D-C12)
+
+**Claim / proposition:** An obligation could link different commodities or media at advance and settlement.  
+**Period:** Samsu-iluna 4 and 10; Hammurabi 39 (qualified provenance)  
+**Geography / archive / social context:** Nippur; BE 6/2, 16 is Nippur(?).
+
+**Evidence type:** Primary.  
+**Primary evidence:** PBS 8/2, 130: silver advance, barley return; BE 6/2, 16: grain with silver interest; no. 21: bricks; S01, S03  
+**Secondary scholarship:** Separate principal, interest, and return medium rather than one assumed cash balance.
+
+**Interpretation(s):** A debt description must preserve principal, return commodity, and interest without inventing an exchange rate or borrower occupation.  
+**Uncertainty / disagreement:** Conversion rates, economic purpose, and discharge are not stated; no. 16 has uncertain provenance.  
+**Confidence + rationale:** HIGH. The directly read PBS text explicitly links a silver advance to barley return; the uncertain-provenance BE supplement is not essential.
+
+**Limits on generalization:** Strong silver-to-barley case; grain/silver example remains qualified.  
+**Relevance to project question:** Distinguishes amounts owed from identical-resource replacement.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 10 — Cultivation and annual yield-share rent (D-C14)
+
+**Claim / proposition:** Cultivation and an annually assessed yield-share claim could be allocated through a lease rather than a permanent land sale.  
+**Period:** Samsu-iluna 11/03  
+**Geography / archive / social context:** Field described as that of Ninunu; Nippur contract.
+
+**Evidence type:** Primary.  
+**Primary evidence:** BE 6/2, 29; S01, pp. 43–44  
+**Secondary scholarship:** Distinguishes lessor’s claim, lessee’s cultivation, and future crop share.
+
+**Interpretation(s):** Lessor, cultivator, and future crop claimant occupy different roles. Annual rent wording does not alone establish one-year duration.  
+**Uncertainty / disagreement:** Actual harvest, occupancy, rent payment, and precise duration of the lease unknown.  
+**Confidence + rationale:** HIGH. The edition explicitly distinguishes cultivation and annual crop-share rent from a sale.
+
+**Limits on generalization:** One lease; not the prevalence of share tenancy.  
+**Relevance to project question:** Separates land title/control from temporary use and revenue.  
+**Design status:** NO DESIGN DECISION
+
+### Candidate 11 — Recorded adjudication and property settlement (D-C16)
+
+**Claim / proposition:** A legal record narrates adjudication and an executed property settlement concerning earlier family transactions.  
+**Period:** Hammurabi reign  
+**Geography / archive / social context:** Nippur council; heirs of Iškur-rabi and Ududu.
+
+**Evidence type:** Primary.  
+**Primary evidence:** BE 6/2, 10, especially final conveyance and non-claim clause; S01  
+**Secondary scholarship:** Read as recorded legal action, not independent observation of physical possession.
+
+**Interpretation(s):** The text presents a legal outcome as carried out, unlike a conditional sanction. It does not independently verify occupation or identify a standard foreclosure procedure.  
+**Uncertainty / disagreement:** Not securely a debt foreclosure; early translation of built/unbuilt property needs checking.  
+**Confidence + rationale:** MODERATE. The completed-conveyance narrative is clear, but detailed interpretation depends on an old edition with unresolved property terminology.
+
+**Limits on generalization:** One litigation record, not an enforcement frequency or automatic inherited liability rule.  
+**Relevance to project question:** Supplies evidence beyond merely hypothetical sanctions.  
+**Design status:** NO DESIGN DECISION
+
+## 9. Source ledger
+
+**Consultation status is part of the citation.** A primary edition mentioned in a modern article is not marked “read” unless it was independently retrieved. Ancient texts are not redistributed here beyond short identifying/paraphrased information and original analysis. All URLs were checked on 19 September 2026 unless a more specific note says otherwise.
+
+| ID | Short citation | Full citation | Source type | Scope/provenance | Stable ID / DOI / URL | Consulted directly? | Notes / exact use |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| S01 | Poebel 1909, BE 6/2 | Arno Poebel. 1909. Babylonian Legal and Business Documents from the Time of the First Dynasty of Babylon, Chiefly from Nippur. The Babylonian Expedition of the University of Pennsylvania, Series A, Cuneiform Texts 6/2. Philadelphia: Department of Archaeology, University of Pennsylvania. | Primary edition with introduction, catalogue, transliterations/translations | Chiefly Nippur; volume also contains material assigned elsewhere. | https://archive.org/details/pt2babylonianexp06univuoft ; https://archive.org/stream/pt2babylonianexp06univuoft/pt2babylonianexp06univuoft_djvu.txt | YES, selected relevant texts and catalogue/introduction. | Direct basis for BE 6/2, 10, 11, 12, 15, 16, 21, 23, 26, 29, 32–35, 39, 40, 42–44, 48, 51, 64, 65. Text 16 is Nippur(?) in catalogue p. 147. Text 8 is Yokha and excluded from Nippur claims. Pages/images 35–38, 40–48 and catalogue pp. 147–149 checked; numeric clauses in no. 40 visually inspected. No tablet collation. |
+| S02 | PBS 8/2, 116 / CDLI P262151 | Albert T. Clay. 1912. Documents from the Temple Archives of Nippur Dated in the Reigns of Cassite Rulers. Publications of the Babylonian Section 8/2, object CBS 07112, with Old Babylonian legal text published digitally as PBS 8/2, 116; CDLI P262151. | Primary tablet/envelope edition in CDLI; old volume bibliographic container | Nippur; Rīm-Sîn 50; tablet and envelope. | https://cdli.earth/artifacts/262151 ; volume bibliography: https://cdli.earth/publications/284829 ; images: https://cdli.earth/dl/photo/P262151.jpg and https://cdli.earth/dl/lineart/P262151_l.jpg | YES, complete displayed transliteration/translation and metadata; tablet/envelope treated as one agreement. | Direct basis for Bēltani maintenance and alienation-restriction claims. CDLI language field says Sumerian. No new reading from photographs. |
+| S03 | PBS 8/2, 130 / CDLI P262191 | Albert T. Clay. 1912. PBS 8/2; object CBS 07157; Old Babylonian loan published digitally as PBS 8/2, 130; CDLI P262191. | Primary digital edition | Nippur; Samsu-iluna 10/05/20(?) | https://cdli.earth/artifacts/262191 ; volume bibliography: https://cdli.earth/publications/284829 ; images: https://cdli.earth/dl/photo/P262191.jpg and https://cdli.earth/dl/lineart/P262191_l.jpg | YES, complete displayed transliteration/translation and metadata. | Direct basis for silver advance, barley-plus-interest return, creditor/debtor distinction, and lack of stated rate/collateral. CDLI day is uncertain. |
+| S04 | Meinhold 2014 | Wiebke Meinhold. 2014. “Erbrecht nach altbabylonischen Kauf- und Tauschurkunden aus Nippur.” Zeitschrift für Altorientalische und Biblische Rechtsgeschichte 20: 11–32. | Specialist secondary study using Nippur sale/exchange records | Nippur; inheritance and conveyance, including BE 6/2 sequences. | Author-uploaded text: https://www.academia.edu/40907963/Erbrecht_nach_altbabylonischen_Kauf_und_Tauschurkunden_aus_Nippur | YES, substantial selected text through indexed author upload. | Corrects BE 6/2, 32–35 coheirs to two brothers plus nephew; questions automatic widow-ownership and certainty of no. 38/64 parcel identity. Not a substitute for all underlying editions. |
+| S05 | Meinhold 2015 | Wiebke Meinhold. 2015. “Das Vermögen der Familie des Mannum-mēšu-liṣṣur.” Zeitschrift für Assyriologie 105(1): 7–29. DOI: 10.1515/za-2015-0003. | Specialist prosopographic/economic study with a new edition of MC 3, 51 | Nippur; Mannum-mēšu-liṣṣur family dossier. | DOI: https://doi.org/10.1515/za-2015-0003 ; author-uploaded text: https://www.academia.edu/40907916/Das_Verm%C3%B6gen_der_Familie_des_Mannum_m%C4%93%C5%A1u_li%E1%B9%A3%E1%B9%A3ur | YES, substantial selected text through indexed author upload. | Mediates OECT 8, 4 and 11; revises archive/genealogy and economic reconstruction. Original Hunter/Stone-Owen editions were not directly checked. |
+| S06 | Stone 1976 | Elizabeth C. Stone. 1976. Old Babylonian Contracts from Nippur. Photographs by Paul Zimansky. Oriental Institute Microfiche Archives 1. Chicago: Oriental Institute. DOI: 10.83354/dqrs-h420. | Primary text publication/catalogue; microfiche archive | Nippur, University Museum tablets; provenance discussion and catalogues. | https://isac.uchicago.edu/research/publications/oima-1-old-babylonian-contracts-nippur ; PDF: https://isac-assets.s3.amazonaws.com/isac-publications/old_babylonian_contracts.pdf | PARTIAL. Introduction/catalogue and selected indexed text consulted; microfiche photographs not collated. | Used for publication/provenance context and as a pointer to Old Babylonian Nippur contracts. Not used to claim room-level context or independent confirmation of every text. |
+| S07 | Stone 1987 | Elizabeth C. Stone. 1987. Nippur Neighborhoods. Studies in Ancient Oriental Civilization 44. Chicago: Oriental Institute. DOI: 10.83354/czh7-zk49. | Excavation-based monograph; access lead | Nippur TA/TB houses and texts. | https://isac.uchicago.edu/publications/nippur-neighborhoods ; https://doi.org/10.83354/czh7-zk49 | NO full book: publisher and repository metadata only; publisher also reproduces a review. | Multiple full-PDF retrieval attempts failed. Plans, locus records, and primary text editions were not inspected. TA/TB cases below are mediated by S08, not asserted as direct consultation of Stone. The publisher’s review text is not silently treated as Stone’s own demonstrated conclusion. |
