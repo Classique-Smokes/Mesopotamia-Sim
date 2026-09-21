@@ -364,6 +364,8 @@ Fix the durable cause when practical.
 
 A rule important enough to repeat frequently is a candidate for mechanical enforcement through tests, schemas, dependency checks, reproducibility checks, linters, architecture checks, or other guardrails once the project reaches the relevant maturity.
 
+AI-specific scaffolding must earn both its creation and its continued existence. When added to compensate for an observed model/tool limitation, preserve the failure it prevents and the evidence that would justify reconsidering or removing it. Automated extraction or learning never grants authority to promote durable project guidance.
+
 Periodically audit **Seed / Constitution → accepted decisions → specifications → implementation** for drift. Report discrepancies before rewriting project intent to match the code.
 
 ---
