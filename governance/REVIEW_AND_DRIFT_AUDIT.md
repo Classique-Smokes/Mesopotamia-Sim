@@ -35,6 +35,7 @@ Do not impose a fixed calendar cadence until project workflow makes one useful.
 - Does each accepted specification trace to accepted requirements/decisions/evidence where needed?
 - Are assumptions and exclusions visible?
 - Have unresolved matters been accidentally specified as settled?
+- Did canonical compression omit any previously approved operative condition, edge case, exclusion, or delegated lock?
 
 ### 4. Implementation alignment
 - Does code behavior match accepted specifications?
