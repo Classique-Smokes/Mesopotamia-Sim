@@ -74,3 +74,9 @@ No return becomes canonical authority by being committed.
 - `SEMANTIC_PROMOTION_RECONCILIATION.md` — pre-edit commitment inventory for Director-approved D1–D5 semantics.
 - `SEMANTIC_PROMOTION_LOSSLESS_AUDIT.md` — post-promotion 30/30 lossless preservation audit across SPEC, assumptions, and verification.
 - Canonical semantic promotion is complete; IMP-0001 remains blocked pending the Slice-1 acceptance manifest, task hardening, deferred-gap ledger, and final TRES-0010 closure audit.
+
+## Slice-1 acceptance closure
+
+- `CALLFAVOR_SLICE1_APPLICABILITY_RECONCILIATION.md` — mechanical derivation of current Slice-1 callable/non-callable action shapes under the promoted response-closed favour rule.
+- `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md` — candidate manifest; not acceptance authority until independent pre-code review passes and freeze metadata is completed.
+- Review packet: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/SLICE1_ACCEPTANCE_MANIFEST_PRECODE_REVIEW.md`.
