@@ -293,6 +293,8 @@ Debt/favour existence alone is insufficient.
 
 Formation creates one persistent household identity plus a `FormationWarrant` recording founding core, dwelling, supporting ties/events, recognition evidence, and formation time.
 
+Successful formation also creates a provenance-bearing `SustainingParticipant` association for every person in the founding core, supported by that `FormationWarrant`.
+
 ### 7.3 Household association
 
 There is no authoritative universal Members set.
@@ -378,6 +380,9 @@ Household-originated support cannot serve as independent proof of household form
 Each household has one persistent `HouseholdHeadRole`, vacant or occupied by one person.
 
 New household begins headless.
+
+- any current `SustainingParticipant` may nominate a current `SustainingParticipant`;
+- an outgoing head may nominate a successor before vacating.
 
 Appointment/succession requires:
 
@@ -593,3 +598,4 @@ Relevant:
 ## 14. Change history
 
 - 2026-09-21 — Accepted SFL v0 semantic specification after Passes A-G and targeted adversarial reviews TRES-0003/TRES-0004.
+- 2026-09-21 — Restorative Stage-3 errata: founding-core `SustainingParticipant` creation made explicit; previously approved head-nomination eligibility restored from the closed working record. No new social rule introduced.
