@@ -1,0 +1,35 @@
+{
+  "completed": "2026-09-19",
+  "principal_report": "RES-0001D_RESULT.md",
+  "required_numbered_sections": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "case_groups": 29,
+  "direct_edited_or_digital_case_groups": 24,
+  "secondary_mediated_case_groups": 2,
+  "indexed_excerpt_provisional_case_groups": 3,
+  "evidence_claims": 25,
+  "rights_matrix_rows": 37,
+  "source_records": 18,
+  "candidate_claims": 11,
+  "checks": {
+    "required_12_evidence_fields": true,
+    "all_claim_statuses_NO_DESIGN_DECISION": true,
+    "case_claim_source_cross_references_resolve": true,
+    "csv_round_trip_valid": true,
+    "unique_local_identifiers": true,
+    "no_assigned_canonical_HE_numbers": true,
+    "all_nine_sections_present": true
+  },
+  "limitations": "Automated checks address package consistency, not independent verification of historical readings. Primary-access, provenance, translation, chronology, and sampling limitations remain in the report.",
+  "report_word_count_approximate": 15333,
+  "errors": []
+}
