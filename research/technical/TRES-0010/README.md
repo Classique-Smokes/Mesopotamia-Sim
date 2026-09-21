@@ -46,3 +46,8 @@ No return becomes canonical authority by being committed.
 
 - `PROCESS_LESSONS_BEST_PRACTICE_VALIDATION.md` — validates provisional Wave-A process lessons against broader requirements, assurance, formal-methods, architecture-evaluation, and AI-agent-evaluation practice.
 - `WAVE_A_SECOND_PASS_FINDING_AUDIT.md` — complete second-pass inventory of Wave-A findings, residual ambiguities, deferred risks, and items underweighted in the first synthesis.
+
+
+## Governance restructuring planning
+
+- `MASTER_ARCHITECT_RULEBOOK_RESTRUCTURING_PLAN.md` — non-authoritative, research-backed plan for restructuring the Master Architect rulebook after TRES-0010 closure.
