@@ -407,4 +407,67 @@ The following are candidates for the Master Architect’s review, not canonical 
 - **Uncertainty / disagreement:** Recognition of a specific claim does not prove all support was performed, explain its motive, or establish an adoption relationship. Name/seal variants are flagged.
 - **Confidence + rationale:** HIGH for the recorded claim, examination and settlement; less certain for every cross-document family link.
 - **Limits on generalization:** Not a universal rule that all personal expenses or debts passed to all heirs.
-- **Relevance to project questio
+- **Relevance to project question:** Provides an observed legal consequence, distinct from a promise about future support.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 7 — An earlier adoption remained consequential in a later division
+
+- **Claim / proposition:** Narāmtum’s adoption of Ur-Pabilsaga was invoked in a later estate division between him and Narubtum; the later instrument records separate allocations, including enslaved persons. Local claims: C-C15–C-C16.
+- **Period:** Rīm-Sîn I 43 to Samsu-iluna 4, month 10, day 21.
+- **Geography / archive / social context:** Nippur; Narāmtum–Ur-Pabilsaga–Narubtum dossier.
+- **Evidence type:** Primary adoption and two parallel witnesses of one later division.
+- **Primary evidence:** TMH 10, 6, P504399 (D12); TMH 10, 18a, P504411, especially obv. 1–18 and rev. 1–7 (D14); BE 6/2, 23 = TMH 10, 18b, P453321 (D15); envelope association D16.
+- **Secondary scholarship:** Goddeeris 2016 selected editions (S06); Földi 2019, p. 253 (S04); Van Wyk 2019a (S03).
+- **Interpretation(s):** The adoption remained a basis for participation in the estate history; the partition need not be a new adoption between its participants.
+- **Uncertainty / disagreement:** The intermediate archive was incompletely read. The all-property/older one-third reading difference and stronger co-ownership interpretation remain discussed explicitly.
+- **Confidence + rationale:** HIGH for the linked endpoints, named allocations and retrospective adoption clause.
+- **Limits on generalization:** Does not establish continuous co-residence, perpetual survivorship, all biological relationships or identity of every earlier/later parcel.
+- **Relevance to project question:** Documents durable legal consequences together with redistribution, including consequences for dependent persons.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 8 — Heirship could be terminated with future claims excluded
+
+- **Claim / proposition:** Judges directed termination of Ilī-u-Šamaš’s heirship and a no-claim instrument extending exclusion to his heirs. Local claims: C-C18–C-C19.
+- **Period:** Undated Old Babylonian record; absolute date unresolved in this return.
+- **Geography / archive / social context:** Nippur; Ilī-u-Šamaš, his mother Mārti-erṣetim, and adopter Amurrum-šēmi; excavation number 3N-T0873.
+- **Evidence type:** Primary judicial narrative in a revised digital edition.
+- **Primary evidence:** SAOC 44, 24, P224339, IM 058783, obv. 14–rev. 3, with prior narrative obv. 1–13 (D18).
+- **Secondary scholarship:** Stone 1987 original publication (S08); Meinhold 2020 collations incorporated in the consulted CDLI text (S07; full chapter not read).
+- **Interpretation(s):** An adoptive succession relationship could be deliberately brought to an end and the rupture framed for future generations.
+- **Uncertainty / disagreement:** Narrative damaged; twenty years are reported, but no exact age at adoption is established. Debt motive and long-term compliance not independently verified.
+- **Confidence + rationale:** HIGH for the judicial instruction and recorded scope of exclusion in the revised text.
+- **Limits on generalization:** One court case, not an estimate of revocation frequency or proof that every other social relationship ended.
+- **Relevance to project question:** Adds a documented rupture to evidence of continuity; avoids assuming adoption was irreversible.
+- **Design status:** NO DESIGN DECISION
+
+### Candidate 9 — Legal continuity is not itself evidence of continuous residence
+
+- **Claim / proposition:** The two reconstructed dossiers establish successive relationships, claims and reallocations without independently establishing an unchanged co-resident group. Local claims: C-C20–C-C22.
+- **Period:** The core Lipit-Enlil-to-Samsu-iluna regnal sequence represented in this return.
+- **Geography / archive / social context:** Selected Nippur legal/prosopographic clusters; exact residential associations unverified.
+- **Evidence type:** Source-critical synthesis of primary records and provenance/access audit.
+- **Primary evidence:** The directly read records within D01–D18 and D25, with access distinctions retained in §9.2; no independently examined house-plan sequence.
+- **Secondary scholarship:** Meinhold 2014/2015 (S02/S01); Van Wyk 2019a (S03) for a stronger continuity interpretation; Stone 1987 architectural content not accessed (S08).
+- **Interpretation(s):** Legal succession, property boundaries and social co-residence require separate evidence; one does not logically prove the others.
+- **Uncertainty / disagreement:** Shared residence or cooperation may have persisted. Additional excavation/archive evidence could support it; this return does not disprove it.
+- **Confidence + rationale:** HIGH for the stated verification limit; MODERATE for the cross-case historical synthesis.
+- **Limits on generalization:** Not a universal definition of household, a denial of physical continuity, or a conclusion about all Nippur archives.
+- **Relevance to project question:** Keeps an evidentiary boundary visible before any canonical historical or design decision is made.
+- **Design status:** NO DESIGN DECISION
+
+
+## 9. Source ledger
+
+### 9.1 Publications and resources
+
+**Access date: 19 September 2026.** “Direct” refers to the material actually read in this investigation, not possession of a complete source volume. URLs are retrieval pointers; no third-party books, PDFs, photographs or font files are redistributed in the handoff.
+
+| Source / short citation | Full citation | Source type | Scope/provenance | Stable ID/DOI/URL | Consulted directly? | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| S01 — Meinhold 2015 | Meinhold, Wiebke. 2015. “Das Vermögen der Familie des Mannum-mēšu-liṣṣur.” Zeitschrift für Assyriologie 105(1): 7–29. DOI: 10.1515/za-2015-0003. | Original research; includes a new primary edition | Mannum-mešu-liṣṣur dossier, Old Babylonian Nippur | [Retrieval link](https://www.academia.edu/40907916/Das_Verm%C3%B6gen_der_Familie_des_Mannum_m%C4%93%C5%A1u_li%E1%B9%A3%E1%B9%A3ur) | DIRECT — relevant sections of author-uploaded full text | Especially pp. 26–27, re-edition of MC 3, 51; chronology, genealogy and critique of adoption-centred wealth explanation. Parsed tables were not visually verified; no aggregate wealth totals adopted. |
+| S02 — Meinhold 2014 | Meinhold, Wiebke. 2014. “Erbrecht nach altbabylonischen Kauf- und Tauschurkunden aus Nippur.” Zeitschrift für Altorientalische und Biblische Rechtsgeschichte 20: 11–32. | Original research | Sales, exchanges, family property and inheritance, Nippur | [Retrieval link](https://www.academia.edu/40907963/Erbrecht_nach_altbabylonischen_Kauf_und_Tauschurkunden_aus_Nippur) | DIRECT — relevant sections of author-uploaded full text | Distinction between property and inherited share; joint vendors; recoveries of earlier family property. Most additional texts cited by this article were not independently read. |
+| S03 — Van Wyk 2019a | Van Wyk, Susandra J. 2019. “‘Keeping Home and Hearth Together’: A Scribe’s Adaptation of Adoption and Inheritance Division Templates from Old Babylonian Nippur Scribal Schools.” Journal for Semitics 28(1), article 4472, 34 pp. DOI: 10.25159/2663-6573/4472. | Original research | Narāmtum–Ur-Pabilsaga–Narubtum dossier; scribal/legal interpretation | [Retrieval link](https://unisapressjournals.co.za/index.php/JSEM/article/download/4472/3737/29031) | DIRECT — full PDF available; relevant sections read | Printed pp. 3–4, 14–18, 22 and surrounding analysis; screenshots of printed pp. 4, 8, 18 and 22 inspected. Hypothetical genealogies, co-ownership and survivorship are not accepted as direct documentary facts. Date and metrology problems flagged. |
+| S04 — Földi 2019 | Földi, Zsombor J. 2019. Review of Anne Goddeeris, The Old Babylonian Legal and Administrative Texts in the Hilprecht Collection Jena (TMH 10, 2016). Zeitschrift für Assyriologie 109(2): 247–268. DOI: 10.1515/za-2019-0018. | Scholarly review with original tablet collations | Jena legal texts including TMH 10, 6 and 18 | [Retrieval link](https://www.academia.edu/41034343/Review_of_A_Goddeeris_The_Old_Babylonian_Legal_and_Administrative_Texts_in_the_Hilprecht_Collection_Jena_with_a_contribution_by_Ursula_Seidl_TMH_10_2016_) | DIRECT — relevant sections of author-uploaded full text | Especially pp. 251–253: readings, dating corrections and envelope joins. Original collations make these observations primary editorial evidence, not merely a review opinion. |
+| S05 — Stone and Owen 1991 / MC 3 | Stone, Elizabeth C., and David I. Owen. 1991. Adoption in Old Babylonian Nippur and the Archive of Mannum-mešu-liṣṣur. With a contribution by John R. Mitchell. Mesopotamian Civilizations 3. Winona Lake, IN: Eisenbrauns. ISBN 9780931464539. | Primary edition and original research | Nippur adoptions and Mannum dossier | [Retrieval link](https://www.eisenbrauns.org/books/titles/978-0-931464-53-9.html) | PARTIAL — bibliography and selected text records; complete book not read | Selected ancient texts accessed through CDLI and later re-edition S01, not through a full reading of this book. Bibliography: https://cdli.earth/publications/1667211 . |
+| S06 — Goddeeris 2016 / TMH 10 | Goddeeris, Anne. 2016. The Old Babylonian Legal and Administrative Texts in the Hilprecht Collection Jena. With a contribution by Ursula Seidl. Texte und Materialien der Frau Professor Hilprecht Collection, Neue Folge 10. Wiesbaden: Harrassowitz. Two volumes. ISBN 9783447106511. | Primary edition and archive reconstruction | Old Babylonian Jena/Nippur material | [Retrieval link](https://cdli.earth/publications/108143) | PARTIAL — selected digital text editions and bibliography; complete volumes not read | TMH 10, 6 and 18a/b read digitally; related catalogue records checked. Larger family reconstructions remain indirect through S03/S04. Do not equate modern collection with one excavated archive. |
+| S07 — Meinhold 2020 | Meinhold, Wiebke. 2020. “Zur Be
