@@ -2,9 +2,9 @@
 
 **Role:** Active implementation-task index. Task packets are operational delegation contracts; they do not override accepted decisions/specifications.
 
-## Active
+## Prepared / held
 
-- `IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md` — Stage-4 Slice 1: lower-level social fabric + proposal/response/commit + semantic history.
+- `IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md` — Stage-4 Slice 1, prepared but **dispatch-blocked pending TRES-0010 pre-implementation red-team reconciliation**.
 
 ## Rules
 
