@@ -1,10 +1,10 @@
 # SFL v0 — Working Specification
 
-**Status:** DRAFT / WORKING / NON-AUTHORITATIVE  
+**Status:** CLOSED WORKING RECORD / NON-AUTHORITATIVE  
 **Owner:** Master Architect  
 **Purpose:** Accumulate converged SFL v0 semantics in implementation-oriented form while the seven-pass design process is still underway.
 
-This is **not yet implementation authority**. It exists so decisions do not remain trapped in conversation. At the end of the pass sequence it will be compressed into the accepted SFL specification.
+This working record is superseded for implementation authority by `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`. It remains as design/provenance history.
 
 ## 1. Implementation-contract rule
 
@@ -27,7 +27,7 @@ An implementation agent may choose ordinary code structure inside these boundari
 - **Pass D — Household formation + continuity:** WORKING-CONVERGED.
 - **Pass E — Grounded collective capability + representative role:** WORKING-CONVERGED.
 - **Pass F — Temporal execution + history + continuation:** WORKING-CONVERGED.
-- **Pass G — Verification closure + spec acceptance:** ACTIVE.
+- **Pass G — Verification closure + spec acceptance:** WORKING-CONVERGED.
 
 ---
 
@@ -856,7 +856,64 @@ No architecture-level blocker remains.
 
 ---
 
-# 13. Implementation autonomy boundary
+# 13. Pass G — verification closure
+
+## 13.1 Required proof obligations
+
+Stage-3 verification scenarios must demonstrate:
+
+1. household formation occurs only from the specified lower-level formation warrant and never from a `FormHousehold` command;
+2. removing each required formation ingredient prevents formation;
+3. co-residence, kinship, marriage, or strong-like alone never form a household;
+4. sequential valid continuity warrants preserve one household through complete founder turnover;
+5. similar snapshots without transmission do not preserve identity;
+6. Active -> Inactive -> Active continuity and permanent Dissolved behavior are distinct;
+7. controlled division preserves one identity only through explicit continuity and records descendant lineage; controlled consolidation creates a new identity with both predecessors;
+8. recognition differences change household-specific candidate generation while objective world state can remain the same;
+9. stale recognition persists until superseded by newer provenance-bearing evidence;
+10. provision-backed collective capability debits real personal grain exactly once and changes when backing changes;
+11. household feedback never serves as independent proof of household formation/continuity;
+12. head appointment, vacancy, and succession change capability/occupancy without automatically changing household identity;
+13. personal-mode and household-mode proposals share one snapshot and resolve centrally;
+14. incompatible accepted attempts produce explicit central resolution/invalidation, bounded failure knowledge, and no extra initiative;
+15. household provision priority follows NeedsGrain support -> other valid household provision use -> ordinary voluntary transfer;
+16. automatic reaction chains use ordered `ReactionIndex` and cannot repeat one cause key;
+17. failed attempts update participant knowledge with bounded reasons without leaking unrelated private state;
+18. communicated evidence is ordered by underlying event/observation provenance, not message-arrival time;
+19. unrecoverable grain collapse is detected as `MaterialDeadlock`;
+20. stable-ID fallback is deterministic, explicitly logged, and isolated by ID-permutation sensitivity tests;
+21. safe-boundary checkpoint/restore reproduces authoritative state and semantic history suffix exactly;
+22. rebuildable derived indexes/caches may be discarded/rebuilt without semantic change;
+23. decision traces explain candidates, gates, scores, subjective inputs, choice, and commit/failure;
+24. every in-scope transition has defined trigger, validation, outcomes, history, subjective-information effects where applicable, and at least one falsifiable proof obligation.
+
+## 13.2 Verification-method requirements
+
+The proof obligations above are not sufficient alone. Stage 3 must also provide:
+
+- **independent oracle discipline:** expected outcomes/checkers must not reuse the production recognizer/transition/decision code they judge;
+- **metamorphic checks:** nonsemantic storage order, identifier renaming (except disclosed technical fallback), disconnected-population locality, observer noninterference, derived-state rebuild, checkpoint equivalence, and irrelevant-attribute perturbation;
+- **boundary matrices** around hard thresholds/cardinality limits;
+- **controlled causal ablations** that isolate the claimed mechanism and account for alternate pathways;
+- **always-on mechanical invariants** for identity/reference integrity, grain accounting, cardinalities, and temporal/reaction integrity;
+- **bounded valid stateful/generated histories**, preserving minimized failures as regression fixtures;
+- **semantic mutation/fault-injection challenges** for important architectural shortcuts/failures;
+- **scenario fixture write-set audit** preventing test setup from scripting endogenous household/continuity/role outcomes;
+- **causal-reason intervention checks**, not merely presence of provenance text;
+- **bounded progress/closure checks** for immediate proposals, reaction closure, safe boundaries, reconsideration eligibility, and MaterialDeadlock detection;
+- **canonical versus held-out/generated evidence separation**.
+
+Historical validation/calibration is outside the SFL v0 verification contract.
+
+## 13.3 Pass G closure
+
+Pass G is **WORKING-CONVERGED** after adversarial review `TRES-0004`.
+
+Passes A-G contain no remaining social-semantic question that an implementation agent must invent for SFL v0. Exact Stage-3 scenario fixtures and assertion packaging remain downstream verification work.
+
+---
+
+# 14. Implementation autonomy boundary
 
 Until this draft is complete, an implementation agent has **no authority** to decide any open item above.
 
