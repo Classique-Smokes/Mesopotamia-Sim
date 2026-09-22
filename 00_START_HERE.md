@@ -37,13 +37,17 @@ Accepted foundation:
 
 Active work:
 
-- TRES-0010 pre-implementation gate: **CLOSED / PASS** — `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`
-- implementation packet **READY FOR DISPATCH:** `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+- IMP-0001 / Slice 1: **candidate-v2 BLOCKED / repair-v3 ACTIVE**
+- active repair packet: `tasks/implementation/IMP-0001_V3_REPAIR_PACKET.md`
+- active repair branch / draft PR: `implementation/imp-0001-slice1-repair-v3` / PR #23
 - frozen Slice-1 acceptance authority: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md` (`SFL-V0-S1-ACCEPTANCE-v1`)
-- completed verification contract: `plans/verification/SFL_V0/`
-- GOV-0001 Master Architect rulebook restructuring: **PROMOTED / DEC-0009 ACCEPTED**
+- frozen failed conformance refs: `imp-0001-slice1-conformance-candidate-v1`, `imp-0001-slice1-conformance-candidate-v2`
+- latest independent review: `research/technical/IMP-0001/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V2.md`
+- TRES-0010 pre-implementation gate: **CLOSED / PASS**
+- GOV-0001 rulebook restructuring: **PROMOTED / DEC-0009 ACCEPTED**
+- after verified Slice-1 PASS/promotion: run `plans/SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md` before Slice 2.
 
-Stage 4 may now begin persistent Slice-1 implementation when intentionally dispatched. Actual dispatch fires the root verification/acceptance scaffolding recorded in `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
+Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 
 ## Where to look
 
@@ -60,6 +64,7 @@ Stage 4 may now begin persistent Slice-1 implementation when intentionally dispa
 - Active assumptions: `registers/ASSUMPTIONS_REGISTER.md`
 - Open/resolved design questions: `registers/OPEN_ISSUES_REGISTER.md`
 - Current phase: `plans/CURRENT_PHASE.md`
+- Active Master Architect succession handoff: `plans/MASTER_ARCHITECT_SUCCESSION_HANDOFF_2026-09-22.md`
 - Verification workbench: `plans/SFL_V0_VERIFICATION_SCENARIOS_WORKBENCH.md`
 - Canonical verification cards: `plans/verification/SFL_V0/`
 - C# implementation-risk guardrails for Stage 4: `architecture/working/CSHARP_DOTNET_ENGINEERING_GUARDRAILS.md`
