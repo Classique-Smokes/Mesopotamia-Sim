@@ -69,7 +69,7 @@ public sealed partial class Simulation
                     continue;
                 }
                 string? inability = ActionRules.Infeasible(proposal, decisionSnapshot);
-                PersonId? target = ActionRules.Target(proposal.Terms);
+                PersonId? target = ActionRules.Target(proposal.Terms, decisionSnapshot);
                 if (inability is not null)
                 {
                     if (target is { } unableTarget)
@@ -80,27 +80,32 @@ public sealed partial class Simulation
                 EventId cause = proposed.Id;
                 if (target is { } respondent)
                 {
-                    string profile = input.ResponseProfiles.GetValueOrDefault(respondent, "SCORE-RP-001");
-                    if (profile is not ("SCORE-RP-001" or "SCORE-RP-002"))
-                        throw new ArgumentException("Unsupported ordinary response profile.", nameof(input));
+                    bool called = proposal.Terms is CallFavor;
+                    ResponseChoice accept = called ? ResponseChoice.FulfilCalledFavor : ResponseChoice.Accept;
+                    ResponseChoice refuse = called ? ResponseChoice.RefuseCalledFavor : ResponseChoice.Decline;
+                    string profile = input.ResponseProfiles.GetValueOrDefault(respondent, called ? "SCORE-RP-003" : "SCORE-RP-001");
+                    if (called ? profile is not ("SCORE-RP-003" or "SCORE-RP-004") : profile is not ("SCORE-RP-001" or "SCORE-RP-002"))
+                        throw new ArgumentException("Unsupported response profile for this meaning.", nameof(input));
+                    bool prefersAccept = profile is "SCORE-RP-001" or "SCORE-RP-003";
                     ResponseChoice choice = input.Responses.GetValueOrDefault(proposal.Id,
-                        profile == "SCORE-RP-002" ? ResponseChoice.Decline : ResponseChoice.Accept);
-                    if (choice is not (ResponseChoice.Accept or ResponseChoice.Decline))
+                        prefersAccept ? accept : refuse);
+                    if (choice != accept && choice != refuse)
                         throw new ArgumentException("Response meaning does not belong to proposal.", nameof(input));
                     bool scripted = input.Responses.ContainsKey(proposal.Id);
-                    CandidateTrace[] candidates = [ResponseCandidate(ResponseChoice.Accept), ResponseCandidate(ResponseChoice.Decline)];
+                    CandidateTrace[] candidates = [ResponseCandidate(accept), ResponseCandidate(refuse)];
                     CandidateTrace ResponseCandidate(ResponseChoice response) => new(response.ToString(), response.ToString(), true, "",
-                        scripted ? ImmutableDictionary<string, long>.Empty : ImmutableDictionary<string, long>.Empty.Add("ResponsePreference",
-                            (profile == "SCORE-RP-001") == (response == ResponseChoice.Accept) ? 100 : 0),
-                        scripted ? null : (profile == "SCORE-RP-001") == (response == ResponseChoice.Accept) ? 100 : 0, response == choice);
+                        scripted ? ImmutableDictionary<string, long>.Empty : ImmutableDictionary<string, long>.Empty.Add(called ? "ObligationResponse" : "ResponsePreference",
+                            prefersAccept == (response == accept) ? 100 : 0),
+                        scripted ? null : prefersAccept == (response == accept) ? 100 : 0, response == choice);
                     decisions.Add(new(respondent, proposal.Id, "Response", scripted ? "MECHANISM-RESPONSE-v1" : profile,
                         [.. candidates], [$"OwnGrain:{decisionSnapshot.People[respondent].Grain}", $"Proposal:{proposal.Id.Value}"], false));
                     cause = Record("Response", proposal.Id, [respondent], [proposed.Id], [], choice.ToString()).Id;
-                    if (choice == ResponseChoice.Decline)
+                    if (choice == refuse)
                     {
                         Outcome declined = Finish(proposal, OutcomeKind.Declined, "VoluntaryRefusal", cause, outcomes);
                         if (proposal.Terms is RequestGiftOrHelp or RequestLoan && decisionSnapshot.People[proposal.Actor].NeedsGrain)
                             batch.Add(new(new("GenuineNeedRefusal", declined.Event, proposal.Actor, respondent), -5));
+                        if (called) batch.Add(new(new("CalledFavourRefusal", declined.Event, proposal.Actor, respondent), -20));
                         continue;
                     }
                 }
@@ -136,7 +141,7 @@ public sealed partial class Simulation
 
     private Outcome Finish(Proposal proposal, OutcomeKind kind, string reason, EventId cause, List<Outcome> outcomes, bool fallback = false)
     {
-        PersonId? target = ActionRules.Target(proposal.Terms);
+        PersonId? target = ActionRules.Target(proposal.Terms, state.Snapshot(cycle));
         SemanticEvent entry = Record(kind.ToString(), proposal.Id, target is { } t ? [proposal.Actor, t] : [proposal.Actor], [cause], [], reason, fallback);
         Outcome outcome = new(proposal.Id, proposal.Actor, kind, reason, entry.Id);
         outcomes.Add(outcome);
@@ -146,11 +151,14 @@ public sealed partial class Simulation
 
     private void Learn(Proposal proposal, Outcome outcome)
     {
-        PersonId? target = ActionRules.Target(proposal.Terms);
+        PersonId? target = ActionRules.Target(proposal.Terms, state.Snapshot(cycle));
         PersonId[] participants = target is { } t ? [proposal.Actor, t] : [proposal.Actor];
         if (proposal.Terms is RepayDebt repay && state.Debts.TryGetValue(repay.Debt, out Debt? debt))
             participants = [proposal.Actor, debt.Creditor];
-        foreach (PersonId participant in participants)
+        if (proposal.Terms is CancelReciprocalFavours cancel) participants = [proposal.Actor, cancel.Target];
+        if (proposal.Terms is CallFavor { Requested: RepayDebt repayment } call)
+            participants = [proposal.Actor, state.Favours[call.Favour].Debtor, state.Debts[repayment.Debt].Creditor];
+        foreach (PersonId participant in participants.Distinct())
         {
             if (!knowledge.TryGetValue(participant, out var facts)) knowledge.Add(participant, facts = []);
             facts.Add(new(outcome.Event, outcome.Proposal, outcome.Kind, outcome.Reason));
@@ -164,18 +172,41 @@ public sealed partial class Simulation
         OfferLoan loan => (proposal.Actor, loan.Target, loan.Amount),
         RequestLoan loan => (loan.Target, proposal.Actor, loan.Amount),
         RepayDebt repay => (proposal.Actor, snapshot.Debts[repay.Debt].Creditor, repay.Amount),
+        OfferBenefitForFavor benefit => (proposal.Actor, benefit.Target, benefit.Amount),
+        RelationshipMediatedReciprocalHelp help => help.Request ? (help.Target, proposal.Actor, help.Amount) : (proposal.Actor, help.Target, help.Amount),
+        CallFavor call => Transfer(new(proposal.Id, snapshot.Favours[call.Favour].Debtor, call.Requested), snapshot),
         _ => null
     };
     private static bool Competes(Proposal a, Proposal b, WorldSnapshot snapshot)
     {
+        if (a.Terms is CallFavor callA && b.Terms is CallFavor callB && callA.Favour == callB.Favour) return true;
+        var pairA = NewFavourPair(a);
+        var pairB = NewFavourPair(b);
+        if (pairA is not null && pairA == pairB && (a.Terms is OfferBenefitForFavor || b.Terms is OfferBenefitForFavor)) return true;
         var left = Transfer(a, snapshot);
         var right = Transfer(b, snapshot);
         return left is { } l && right is { } r && l.Giver == r.Giver &&
-            (System.Numerics.BigInteger)l.Amount + r.Amount > snapshot.People[l.Giver].Grain;
+            (System.Numerics.BigInteger)l.Amount + r.Amount > snapshot.People[l.Giver].Grain -
+                (a.Terms is RepayDebt or CallFavor { Requested: RepayDebt } || b.Terms is RepayDebt or CallFavor { Requested: RepayDebt } ? 2 : 0);
+
+        (PersonId, PersonId)? NewFavourPair(Proposal proposal)
+        {
+            var transfer = Transfer(proposal, snapshot);
+            return transfer is { } t && (proposal.Terms is OfferBenefitForFavor ||
+                (proposal.Terms is RelationshipMediatedReciprocalHelp && snapshot.AttitudeOf(t.Recipient, t.Giver) >= 75))
+                ? (t.Recipient, t.Giver) : null;
+        }
     }
 
     private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch)
     {
+        Proposal outer = proposal;
+        Favour? calledFavour = null;
+        if (proposal.Terms is CallFavor call)
+        {
+            calledFavour = state.Favours[call.Favour];
+            proposal = new(proposal.Id, calledFavour.Debtor, call.Requested);
+        }
         WorldState transaction = state.Copy();
         List<MaterialChange> material = [];
         string meaning;
@@ -196,7 +227,15 @@ public sealed partial class Simulation
             long received = checked(recipient.Grain + transfer.Amount);
             transaction.People[giver.Id] = giver with { Grain = checked(giver.Grain - transfer.Amount) };
             transaction.People[recipient.Id] = recipient with { Grain = received, NeedsGrain = false };
-            meaning = proposal.Terms switch { OfferGift => "Gift", RequestGiftOrHelp => "Help", RepayDebt => "Repayment", _ => "Loan" };
+            meaning = proposal.Terms switch
+            {
+                OfferGift => "Gift",
+                RequestGiftOrHelp => "Help",
+                RepayDebt => "Repayment",
+                OfferBenefitForFavor => "ExplicitBenefitForFavor",
+                RelationshipMediatedReciprocalHelp => "RelationshipMediatedReciprocalHelp",
+                _ => "Loan"
+            };
             material.Add(new(giver.Id, giver.Grain, giver.Grain - transfer.Amount, meaning));
             material.Add(new(recipient.Id, recipient.Grain, received, meaning));
             participants = [giver.Id, recipient.Id];
@@ -210,13 +249,34 @@ public sealed partial class Simulation
                 Debt debt = transaction.Debts[repay.Debt];
                 transaction.Debts[debt.Id] = debt with { Remaining = debt.Remaining - repay.Amount };
             }
+            if (proposal.Terms is OfferBenefitForFavor ||
+                (proposal.Terms is RelationshipMediatedReciprocalHelp &&
+                state.Snapshot(cycle).AttitudeOf(recipient.Id, giver.Id) >= 75 && !state.Snapshot(cycle).HasFavour(recipient.Id, giver.Id)))
+            {
+                RelationId id = transaction.AllocateRelation();
+                transaction.Favours.Add(id, new(id, recipient.Id, giver.Id, true, new(nextEvent)));
+            }
+        }
+        else if (proposal.Terms is CancelReciprocalFavours cancel)
+        {
+            foreach (Favour favour in transaction.Favours.Values.Where(f => f.Outstanding &&
+                ((f.Debtor == proposal.Actor && f.Holder == cancel.Target) || (f.Holder == proposal.Actor && f.Debtor == cancel.Target))).ToArray())
+                transaction.Favours[favour.Id] = favour with { Outstanding = false };
+            meaning = "ReciprocalFavourCancellation";
+            participants = [proposal.Actor, cancel.Target];
         }
         else throw new InvalidOperationException("Unimplemented commit meaning.");
+        if (calledFavour is not null) transaction.Favours[calledFavour.Id] = calledFavour with { Outstanding = false };
         transaction.Validate();
         state = transaction;
         SemanticEvent entry = Record(meaning, proposal.Id, [.. participants], [cause], [.. material], proposal.Terms.ToString() ?? "", fallback);
-        if (Transfer(proposal, state.Snapshot(cycle)) is { } helpTransfer)
+        if (Transfer(proposal, state.Snapshot(cycle)) is { } helpTransfer && meaning != "ExplicitBenefitForFavor")
             batch.Add(new(new(meaning, entry.Id, helpTransfer.Recipient, helpTransfer.Giver), meaning is "Loan" or "Repayment" ? 5 : 10));
+        if (calledFavour is not null)
+        {
+            SemanticEvent fulfilled = Record("CalledFavourFulfilled", outer.Id, [calledFavour.Holder, calledFavour.Debtor], [entry.Id, calledFavour.Origin], [], $"Favour:{calledFavour.Id.Value}");
+            batch.Add(new(new("CalledFavourFulfilled", fulfilled.Id, calledFavour.Holder, calledFavour.Debtor), 10));
+        }
         return entry;
     }
 

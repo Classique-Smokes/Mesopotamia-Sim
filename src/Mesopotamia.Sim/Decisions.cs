@@ -7,6 +7,10 @@ public sealed record RequestGiftOrHelp(PersonId Target, long Amount) : ActionTer
 public sealed record OfferLoan(PersonId Target, long Amount) : ActionTerms;
 public sealed record RequestLoan(PersonId Target, long Amount) : ActionTerms;
 public sealed record RepayDebt(RelationId Debt, long Amount) : ActionTerms;
+public sealed record OfferBenefitForFavor(PersonId Target, long Amount) : ActionTerms;
+public sealed record RelationshipMediatedReciprocalHelp(PersonId Target, long Amount, bool Request = false) : ActionTerms;
+public sealed record CallFavor(RelationId Favour, ActionTerms Requested) : ActionTerms;
+public sealed record CancelReciprocalFavours(PersonId Target) : ActionTerms;
 public enum ResponseChoice { Accept, Decline, FulfilCalledFavor, RefuseCalledFavor }
 public sealed record CandidateTrace(string Key, string Meaning, bool Eligible, string Gate,
     ImmutableDictionary<string, long> Components, long? FinalScore, bool Selected);
@@ -42,17 +46,20 @@ internal sealed class AttitudeBatch
 
 internal static class ActionRules
 {
-    internal static PersonId? Target(ActionTerms terms) => terms switch
+    internal static PersonId? Target(ActionTerms terms, WorldSnapshot snapshot) => terms switch
     {
         OfferGift gift => gift.Target,
         RequestGiftOrHelp help => help.Target,
         OfferLoan loan => loan.Target,
         RequestLoan loan => loan.Target,
+        OfferBenefitForFavor benefit => benefit.Target,
+        RelationshipMediatedReciprocalHelp help => help.Target,
+        CallFavor call => snapshot.Favours.TryGetValue(call.Favour, out Favour? favour) ? favour.Debtor : null,
         _ => null
     };
     internal static string? Invalid(Proposal proposal, WorldSnapshot snapshot)
     {
-        PersonId? target = Target(proposal.Terms);
+        PersonId? target = Target(proposal.Terms, snapshot);
         if (target is { } person && (person == proposal.Actor || !snapshot.People.ContainsKey(person)))
             return "InvalidCounterparty";
         return proposal.Terms switch
@@ -62,6 +69,12 @@ internal static class ActionRules
             RequestGiftOrHelp help => help.Amount > 0 ? null : "PositiveIntegralGrainRequired",
             OfferLoan loan => loan.Amount > 0 ? null : "PositiveIntegralGrainRequired",
             RequestLoan loan => loan.Amount > 0 ? null : "PositiveIntegralGrainRequired",
+            OfferBenefitForFavor benefit => benefit.Amount > 0 ? null : "PositiveIntegralGrainRequired",
+            RelationshipMediatedReciprocalHelp help => help.Amount > 0 ? null : "PositiveIntegralGrainRequired",
+            CallFavor call => !snapshot.Favours.TryGetValue(call.Favour, out Favour? favour) ? "UnknownFavour" :
+                call.Requested is not (Farm or RepayDebt) ? "NonCallablePayload" :
+                Invalid(new(proposal.Id, favour.Debtor, call.Requested), snapshot),
+            CancelReciprocalFavours cancel => cancel.Target == proposal.Actor || !snapshot.People.ContainsKey(cancel.Target) ? "InvalidCounterparty" : null,
             RepayDebt repay => repay.Amount <= 0 ? "PositiveIntegralGrainRequired" :
                 !snapshot.Debts.TryGetValue(repay.Debt, out Debt? debt) ? "UnknownDebt" :
                 repay.Amount > debt.Remaining ? "RepaymentExceedsRemaining" : null,
@@ -77,6 +90,12 @@ internal static class ActionRules
         RequestLoan loan => snapshot.People[loan.Target].Grain < loan.Amount ? "InsufficientAvailableGrain" : null,
         RepayDebt repay => snapshot.Debts[repay.Debt].Debtor != proposal.Actor ? "NotDebtParty" :
             snapshot.People[proposal.Actor].Grain - 2 < repay.Amount ? "RepaymentReserveUnavailable" : null,
+        OfferBenefitForFavor benefit => snapshot.HasFavour(benefit.Target, proposal.Actor) ? "FavourCapacityFull" :
+            snapshot.People[proposal.Actor].Grain < benefit.Amount ? "InsufficientAvailableGrain" : null,
+        RelationshipMediatedReciprocalHelp help => snapshot.People[help.Request ? help.Target : proposal.Actor].Grain < help.Amount ? "InsufficientAvailableGrain" : null,
+        CallFavor call => !snapshot.Favours[call.Favour].Outstanding || snapshot.Favours[call.Favour].Holder != proposal.Actor ? "FavourUnavailable" :
+            Infeasible(new(proposal.Id, snapshot.Favours[call.Favour].Debtor, call.Requested), snapshot),
+        CancelReciprocalFavours cancel => snapshot.HasFavour(proposal.Actor, cancel.Target) && snapshot.HasFavour(cancel.Target, proposal.Actor) ? null : "ReciprocalFavoursUnavailable",
         _ => "UnsupportedAction"
     };
 }
