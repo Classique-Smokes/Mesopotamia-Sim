@@ -1,6 +1,6 @@
 # Uruk-Derived Challenge Cases
 
-**Status:** DRAFT / NON-AUTHORITATIVE  
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
 **Role:** Future falsification/design cases. These are questions the eventual mechanism should survive, not scripted outcomes.
 
 ## 1. The Fork
