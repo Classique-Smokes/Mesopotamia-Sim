@@ -24,11 +24,20 @@ It is not a roadmap and does not change the current SFL v0 implementation sequen
 - `05_POSSIBLE_POST_V0_PATHS.md` — several plausible future routes without selecting a roadmap.
 - `06_DIRECTOR_REVIEW_GUIDE.md` — explicit review/approval boundaries while the package remains conceptual.
 
-Source/provenance corpus remains separate under:
+## Source basis
 
-`../THE_URUK_ACCIDENT/`
+Primary conceptual provenance remains separate under `../THE_URUK_ACCIDENT/`:
 
-The tales are source artifacts. This directory is derived interpretation.
+- original preserved Uruk Accident institutional-persistence seed in `../THE_URUK_ACCIDENT/archive/`;
+- `../THE_URUK_ACCIDENT/tablets/MORTALITY_IS_OUTSIDE_TASK_SCOPE.md`;
+- `../THE_URUK_ACCIDENT/tablets/THE_MAN_RESPONSIBLE_FOR_TWO_LEDGERS_V2.md`;
+- `../THE_URUK_ACCIDENT/tablets/THE_TRAGEDY_OF_THE_ANONYMOUS_ARTISTS_V2.md`.
+
+Earlier derived synthesis:
+
+- `../PROPOSED_POST_V0_CONCEPTUAL_DIRECTIONS.md`.
+
+The tales are source artifacts. This directory is derived interpretation. Later revisions should preserve that distinction and should not rewrite source tablets to match newer theory.
 
 ## Authority boundary
 
