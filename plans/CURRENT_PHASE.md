@@ -45,7 +45,15 @@ TRES-0010 closure evidence:
 
 - `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`
 
-The planned Master Architect rulebook restructuring is now eligible as separate post-TRES governance work. It is **not** a semantic/verification prerequisite for IMP-0001 dispatch.
+The Master Architect rulebook restructuring is active as separate post-TRES governance work. It is **not** a semantic/verification prerequisite for IMP-0001 dispatch.
+
+Governance-refactor continuity:
+
+- accepted governance remains on `main`;
+- sole WIP candidate: `governance-rulebook-refactor-candidate` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`;
+- frozen pre-refactor baseline: `governance-rulebook-refactor-baseline` @ `9b78f0d2a5ef5a6248fbbc3c20c041fa10fafd5b`;
+- GOV-0001 evaluation branches are prepared from the same candidate but have no return commits yet;
+- state/recovery map: `research/technical/GOV-0001/README.md`.
 
 Slice 1 objective:
 
@@ -86,7 +94,7 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Execute the planned Master Architect rulebook restructuring as a separate governance task, using the finalized TRES-0010 process lessons and the existing lossless migration plan.
+1. Continue GOV-0001 only from the consolidated state in `research/technical/GOV-0001/README.md`: evaluate the single frozen candidate before any promotion or competing refactor work.
 2. When implementation is intentionally begun, dispatch `IMP-0001` against `SFL-V0-S1-ACCEPTANCE-v1`; SCF-001 and the remaining executable/CI portion of SCF-002 fire at dispatch.
 3. Do not treat the governance refactor as a coding gate: IMP-0001 is already TRES-cleared and may be dispatched independently if project priority changes.
 
