@@ -19,6 +19,8 @@ Reasonable triggers include:
 For the relevant question:
 
 - identify exact source tablets/sections;
+- record source status: surviving direct artifact, later copy/transformation, reconstruction from memory, or inferred missing source;
+- never present a reconstruction as equivalent to a lost original;
 - extract causal propositions, distinctions, and challenge cases;
 - distinguish observation from inference;
 - list alternative interpretations;
@@ -41,7 +43,9 @@ Output: a mechanism-gap map, not code.
 
 Choose a period/place/archive/social context appropriate to the mechanism.
 
-Research should examine historically real forms relevant to the question, for example:
+Research should examine historically real forms relevant to the question, including cases where surviving archives are partial, retrospective, copied, or later than the underlying institution.
+
+Examples include:
 
 - office succession and authority;
 - temple/palace administrative continuity;
