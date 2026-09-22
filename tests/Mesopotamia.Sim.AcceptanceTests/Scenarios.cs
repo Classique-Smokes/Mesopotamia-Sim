@@ -28,6 +28,7 @@ internal sealed partial class Scenarios
         foreach (Scenario scenario in AgencyCases()) yield return scenario;
         foreach (Scenario scenario in CrossCuttingCases()) yield return scenario;
         foreach (Scenario scenario in AttitudeEventCases()) yield return scenario;
+        foreach (Scenario scenario in RepairCases()) yield return scenario;
         yield return new("ConsumptionAndFarm", ["S1-090-A", "S1-090-B", "S1-090-C", "S1-090-E"], () =>
         {
             Simulation sim = Create(World(1));
