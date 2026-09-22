@@ -29,7 +29,7 @@ The result must leave the repository with:
 - a protected acceptance-test surface;
 - a deterministic lower-level simulation slice that passes the in-scope canonical scenarios.
 
-## 2. Authoritative inputs
+## 2. Required inputs by authority class
 
 ### Accepted simulation / architecture authority
 
@@ -40,23 +40,39 @@ The result must leave the repository with:
 - `architecture/accepted/ADR-0004_REFERENCE_SIMULATION_KERNEL.md`
 - `architecture/accepted/ADR-0005_HOST_RUNTIME.md`
 - `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
-- `registers/ASSUMPTIONS_REGISTER.md`
 
-### Canonical verification requirements for this slice
+These artifacts define simulation/social meaning and architecture.
+
+### Frozen Slice-1 verification / completion authority
+
+- `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md`
+- manifest version: `SFL-V0-S1-ACCEPTANCE-v1`
+- frozen ref: `sfl-v0-slice1-acceptance-v1`
+- freeze commit: `55377cc34b8bc3ccbf9cdf5029e9791dae965987`
+- frozen manifest SHA: `efd2d0aab4579a78a3e7a0fc8d027c15f2f5e766`
+- freeze record: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md`
+
+The frozen manifest defines **which accepted verification obligations count for IMP-0001 completion**. It does not create social semantics and is subordinate to the accepted simulation/architecture authority above.
+
+Canonical verification sources referenced by the manifest include:
 
 - `plans/verification/SFL_V0/README.md`
 - `plans/verification/SFL_V0/CROSS_CUTTING_VERIFICATION_CONTRACT.md`
 - `plans/verification/SFL_V0/LOWER_LEVEL_SOCIAL_FABRIC_FAMILY.md`
 - `plans/verification/SFL_V0/RESPONSE_DECISION_FAMILY.md`
 - `plans/verification/SFL_V0/REFERENCE_SCORING_PROFILES.md`
-- relevant non-household cases in `plans/verification/SFL_V0/RESOLUTION_REACTION_FAMILY.md`
-- relevant determinism/fallback/trace requirements in `plans/verification/SFL_V0/DETERMINISM_RECOVERY_EXPLAINABILITY_FAMILY.md`
+- `plans/verification/SFL_V0/RESOLUTION_REACTION_FAMILY.md`
+- `plans/verification/SFL_V0/DETERMINISM_RECOVERY_EXPLAINABILITY_FAMILY.md`
 
-### Required engineering context
+### Required non-authoritative supporting / engineering context
 
+- `registers/ASSUMPTIONS_REGISTER.md`
 - `architecture/working/CSHARP_DOTNET_ENGINEERING_GUARDRAILS.md`
 - `AGENTS.md`
 - `governance/ARCHITECTURE_DEVELOPMENT_POLICY.md`
+- `research/technical/TRES-0010/CALLFAVOR_SLICE1_APPLICABILITY_RECONCILIATION.md`
+
+Precedence is explicit: accepted semantic/architectural authority controls meaning; the frozen manifest controls Slice-1 completion applicability; assumptions/supporting/engineering context may constrain the laboratory or engineering approach but may not silently override either.
 
 Implementation must retrieve and obey these artifacts rather than infer authority from conversation.
 
@@ -139,6 +155,8 @@ Implement the lower-level meanings required by Slice 1:
 - OfferBenefitForFavor;
 - relationship-mediated reciprocal help;
 - CallFavor / fulfil / refuse / reciprocal cancellation;
+  - current frozen Slice-1 CallFavor applicability is mechanically closed: only `Farm` and `RepayDebt(debt, amount)` are callable payload shapes;
+  - do not expose response meanings, failure results, transfer/effect helpers, or other nonsemantic primitives as called-favour payloads;
 - direct mutual-strong-like marriage route;
 - residence move/invite proposal and response.
 
@@ -223,7 +241,13 @@ At minimum, mechanically enforce applicable cross-cutting Slice-1 invariants:
 - one personal initiative maximum per actor/cycle;
 - response decisions do not consume/grant personal initiative;
 - stable-ID fallback is logged when exercised;
-- nonsemantic collection iteration order is never semantic order.
+- nonsemantic collection iteration order is never semantic order;
+- every grain-denominated Slice-1 semantic ingress obeys the accepted positive-integer term domain before target response;
+- same-cycle direct attitude causes compose by net signed delta followed by one clamp, independent of member-cause enumeration;
+- at most one Residence transition per person commits in one cycle;
+- called favour is consumed only on successful requested-action commit;
+- ExplicitBenefitForFavor material benefit + new favour commit atomically; failed explicit bargains do not degrade into Gift/Help;
+- the accepted 2-grain lower-level reserve is RepayDebt-specific; do not apply a generic two-grain reserve to ordinary interpersonal transfers.
 
 ## 6. Acceptance criteria
 
@@ -237,16 +261,20 @@ At minimum, mechanically enforce applicable cross-cutting Slice-1 invariants:
 - warnings/analyzer policy is strict enough that accepted CI failures are not silently ignored;
 - `AGENTS.md` contains the actual canonical commands rather than the bootstrap placeholder.
 
-### Canonical scenario coverage
+### Frozen manifest coverage
 
-Executable acceptance coverage exists for, at minimum:
+Executable acceptance evidence must cover **every row marked REQUIRED** in `SFL-V0-S1-ACCEPTANCE-v1`.
 
-- `VS-SFL-090` through `VS-SFL-099`;
-- `VS-SFL-100` through `VS-SFL-105`;
-- `VS-SFL-070`, `071`, `073`, `074` where their required substrate is available;
-- applicable boundary/metamorphic/mutant checks from `CROSS_CUTTING_VERIFICATION_CONTRACT.md`.
+- no REQUIRED AcceptanceId may be omitted, skipped, or silently reclassified;
+- DEFERRED, N-A, and UNEXERCISED rows remain separately visible with the frozen manifest rationale;
+- `VS-SFL-104` is explicitly DEFERRED because household/head/mediated-marriage substrate is outside Slice 1;
+- communication-specific `S1-098-COMMUNICATION` is explicitly DEFERRED;
+- household/provision/formation/lineage/checkpoint/rendered-explanation rows remain deferred exactly where the manifest says so;
+- one executable parameterized/table-driven test may satisfy multiple IDs only when completion reporting still exposes every required AcceptanceId separately.
 
-Cards that explicitly require household semantics remain unimplemented and must not be faked.
+Do not replace the manifest with open-ended ranges such as “090–105” or self-selected “applicable/relevant” subsets.
+
+Cards that explicitly require later-slice semantics remain unimplemented and must not be faked.
 
 ### Determinism / ordering
 
@@ -263,15 +291,15 @@ Cards that explicitly require household semantics remain unimplemented and must 
 
 ### Protected acceptance surface
 
-Create a clearly separated canonical acceptance-test surface for SFL scenario IDs.
+Create the executable Slice-1 acceptance-test/harness surface as a translation of the **already frozen** manifest.
 
-Once established:
+- IMP-0001 may choose test framework, helper APIs, project layout, and executable test names;
+- IMP-0001 may map executable evidence to AcceptanceIds;
+- IMP-0001 may **not** edit, weaken, delete, reclassify, or replace `SFL-V0-S1-ACCEPTANCE-v1`;
+- changes to frozen acceptance authority require separately scoped verification/authority work and a new manifest version/ref;
+- CI must run the executable acceptance surface and emit the required manifest-indexed result report.
 
-- implementation tasks may not weaken/delete/rewrite expected semantics merely to pass;
-- changes to canonical acceptance expectations require explicit specification/verification scope;
-- CI must run the acceptance surface.
-
-If a stronger repository protection mechanism is available without requiring disproportionate administration, use it; otherwise enforce the boundary through repository instructions, task scope, test separation, and CI.
+The implementation task is not the sole author/editor of its own completion standard.
 
 ## 7. Verification expectations
 
@@ -279,14 +307,17 @@ Completion evidence must include:
 
 - exact root commands run;
 - build/test/analyzer results;
-- list of implemented scenario IDs;
+- manifest version `SFL-V0-S1-ACCEPTANCE-v1`, freeze commit, and frozen manifest SHA;
+- a complete per-AcceptanceId result table for all REQUIRED rows with zero missing/skipped REQUIRED IDs;
+- a separately visible status list for DEFERRED / N-A / UNEXERCISED rows;
 - invariant-check results;
-- deterministic repeated-run evidence;
-- at least one nonsemantic iteration-order permutation check;
-- at least one stable-ID fallback sensitivity check;
+- deterministic repeated-run evidence required by the manifest;
+- required nonsemantic iteration-order / stable-ID-fallback / observer-noninterference metamorphic evidence;
 - acceptance fixture write-set audit result;
-- no-surviving relevant semantic mutant where the slice claims coverage;
-- explanation of any deliberately deferred canonical card because it belongs to later slices.
+- oracle-independence/dependency audit proving assertion-target production helpers were not reused as independent oracles;
+- required semantic mutant/fault-control classifications, with crash/timeout not automatically credited as semantic detection;
+- any structural-evidence result used instead of executable mutation/rebuild coverage where the frozen manifest explicitly permits it;
+- **fresh independent post-implementation conformance-review PASS** against the frozen manifest.
 
 Do not claim full SFL completion; this is Slice 1 only.
 
@@ -305,6 +336,8 @@ The implementation agent may choose, without escalation:
 - deterministic semantic ID concrete type;
 - internal proposal/transition implementation structure;
 - test helper APIs.
+
+These local choices may not edit/reclassify the frozen manifest, bypass a frozen REQUIRED AcceptanceId, or move an expected semantic result into the same production helper/classifier/validator used as the independent oracle.
 
 Prefer standard library / SDK facilities and minimal dependencies.
 
@@ -333,7 +366,11 @@ Also escalate when:
 - two accepted artifacts appear to conflict;
 - a response/action transition is underspecified;
 - the deterministic history/checkpoint future path would be made impossible by the chosen representation;
-- a test would need to be weakened rather than the implementation corrected.
+- a test would need to be weakened rather than the implementation corrected;
+- a REQUIRED manifest row cannot be translated into executable/structural evidence without adding or choosing social semantics;
+- a cited expected result appears unsupported by accepted semantic authority;
+- implementation would require changing/reclassifying the frozen acceptance manifest;
+- production and independent-oracle logic cannot be separated for a REQUIRED assertion target.
 
 ## 10. Work-state discipline
 
@@ -349,7 +386,8 @@ Suggested internal milestones:
 6. direct marriage/residence;
 7. scorer/response profiles;
 8. cross-cutting deterministic/mutation/fixture checks;
-9. final slice acceptance run.
+9. complete frozen-manifest AcceptanceId coverage report;
+10. independent post-implementation conformance review.
 
 If multiple agents mutate files concurrently, use isolated branches/worktrees/workspaces and reconcile explicitly before integration.
 
@@ -362,12 +400,17 @@ Return:
 - terminal status: VERIFIED COMPLETE / BLOCKED / ESCALATED / INCOMPLETE;
 - files/projects added or changed;
 - exact canonical root commands;
-- scenario IDs implemented and results;
-- invariant/metamorphic/mutant evidence;
+- frozen manifest version / freeze commit / final manifest SHA;
+- complete REQUIRED AcceptanceId result summary with zero missing/skipped rows for VERIFIED COMPLETE;
+- separate DEFERRED / N-A / UNEXERCISED status summary;
+- invariant / metamorphic / mutant-fault-control evidence;
+- oracle-independence audit;
+- fixture write-set audit;
+- independent post-implementation conformance-review reference and result;
 - assumptions encountered;
 - architectural conflict/escalation, if any;
 - deviations;
 - new unresolved issues;
 - follow-up work that is genuinely required for Slice 2.
 
-A completion claim without executable verification evidence is not accepted.
+A completion claim without the frozen-manifest evidence and independent conformance PASS is not accepted.
