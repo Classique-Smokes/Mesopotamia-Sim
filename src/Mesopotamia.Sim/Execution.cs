@@ -178,7 +178,7 @@ public sealed partial class Simulation
             if (batch.DuplicateCount > 0) Record("DuplicateReactionRejected", null, [], [], [], FormattableString.Invariant($"Duplicates:{batch.DuplicateCount}"));
             published = state.Snapshot(cycle);
             bool deadlock = state.People.Count > 0 && state.People.Values.All(p => p.NeedsGrain && p.Grain == 0) &&
-                !initial.Inputs.Any(i => i.Cycle > cycle && i.Delta > 0);
+                !FutureInputsResolveMaterialBlock();
             ImmutableArray<DecisionTrace> completedDecisions = decisions.Select(d => d with { Cycle = cycle }).ToImmutableArray();
             decisionHistory.AddRange(completedDecisions);
             return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = completedDecisions };
@@ -375,9 +375,8 @@ public sealed partial class Simulation
         foreach (GrainInput input in initial.Inputs.Where(i => i.Cycle == cycle).OrderBy(i => i.Id))
         {
             Person person = state.People[input.Person];
-            long after = checked(person.Grain + input.Delta);
-            if (after < 0) throw new InvalidOperationException("Exogenous debit exceeds stock.");
-            state.People[person.Id] = person with { Grain = after, NeedsGrain = person.NeedsGrain && after == 0 };
+            state.People[person.Id] = ApplyGrainInput(person, input.Delta);
+            long after = state.People[person.Id].Grain;
             Record("ExogenousGrain", null, [person.Id], [], [new(person.Id, person.Grain, after, "FixtureInput")], $"Input:{input.Id}");
             state.Validate();
         }
@@ -385,12 +384,12 @@ public sealed partial class Simulation
         {
             if (person.Grain > 0)
             {
-                state.People[person.Id] = person with { Grain = person.Grain - 1 };
+                state.People[person.Id] = ConsumeGrain(person);
                 Record("Consumption", null, [person.Id], [], [new(person.Id, person.Grain, person.Grain - 1, "ConsumptionSink")], "Paid");
             }
             else
             {
-                state.People[person.Id] = person with { NeedsGrain = true };
+                state.People[person.Id] = ConsumeGrain(person);
                 Record("MissedConsumption", null, [person.Id], [], [], "NeedsGrain");
             }
             state.Validate();
