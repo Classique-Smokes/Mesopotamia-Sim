@@ -15,6 +15,8 @@ The central question is:
 
 This is broader than household identity and narrower than “simulate all institutions.”
 
+**Important caution:** this umbrella is an organizing **research question**, not a proposed universal ontology. It must not become a hidden `IInstitution` theory by another name. Different higher-order social forms may share some mechanisms while differing fundamentally in formation, continuity, participation, authority, or lifecycle.
+
 ## 2. Core draft distinctions
 
 Future design should preserve these as separate dimensions unless evidence/design work later demonstrates a justified merger:
@@ -28,7 +30,7 @@ Future design should preserve these as separate dimensions unless evidence/desig
 7. **External recognition** — which outsiders recognize the entity, office, claimant, or authority.
 8. **Effective influence** — actual causal/network centrality, which may diverge from formal office.
 9. **Institutional memory / official genealogy** — what the entity's durable artifacts and practices claim about its own history.
-10. **Actual causal genealogy** — what the simulator's objective event history says actually produced the present state.
+10. **Actual causal genealogy** — what the modeled causal history says actually produced the present state, whether or not surviving actors/artifacts preserve that history.
 
 No single scalar “institution strength,” “legitimacy,” “status,” or “continuity” should silently substitute for these distinctions.
 
@@ -58,13 +60,25 @@ Recognition may enable action, cooperation, obedience, exchange, or legitimacy. 
 
 A legitimate office-holder may lack capability. A capable claimant may lack recognized authority. Outsiders and insiders may disagree.
 
+### Causal genealogy and surviving archive may diverge
+
+The actual causal chain may begin before the surviving archive or official genealogy. Records can be destroyed, never successfully transmitted, or reconstructed from human memory. Institutional continuity can therefore survive an archival rupture.
+
+Within a simulation run, the engine may retain objective causal history for verification even when no in-world actor has access to it. That engine-level oracle must not be confused with surviving social memory.
+
 ### Causal genealogy and social genealogy may diverge
 
-The simulator may retain one objective event lineage while actors, records, or institutions preserve different narratives.
+Actors, official records, and outsiders may preserve or reconstruct narratives that differ from the modeled causal history.
 
 ### Higher-order persistence must not erase lower-order participants
 
 Institutional continuity should constrain later people without making the people, offices, relationships, resources, and historical transitions irrelevant.
+
+### Institutional age is not elapsed time
+
+Physical/world time, accumulated labor, number of successions, density of consequential institutional change, and project/organizational maturity are different quantities.
+
+A structure can become institutionally "old" very quickly under intense parallel activity and rapid succession. Do not encode this as a second physical clock by default; preserve the distinction so later models can derive or narrate institutional age from actual history.
 
 ## 4. Externalized causality
 
