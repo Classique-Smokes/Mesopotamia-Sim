@@ -5,6 +5,8 @@
 
 ## 1. Mechanism-layer rule
 
+The phrase **institutional dynamics** names a research/design problem, not a universal class of things.
+
 Do not begin with a universal `Institution` abstraction.
 
 Prefer reusable lower-level mechanism families that different higher-order structures may combine differently.
@@ -177,27 +179,47 @@ Effective centrality may be derived from:
 
 This creates a route for informal roles to emerge before formal recognition.
 
-### L. Multiple genealogies
+### L. Multiple genealogies and archival rupture
 
 Preserve separately where needed:
 
-1. objective causal genealogy;
-2. official/institutional genealogy;
+1. objective/model causal genealogy;
+2. surviving official/institutional genealogy;
 3. actor-remembered genealogy;
 4. outsider/reconstructed genealogy.
 
 Only the first is simulator-level causal history. The others are artifacts/subjective social facts.
 
-### M. Institutional / social periodization
+Important candidate cases include:
+
+- the surviving official archive begins later than the actual causal chain;
+- an attempted handoff/transmission artifact is lost before durable incorporation;
+- continuity survives through one or more human memory carriers;
+- reconstruction creates a new durable artifact whose fidelity to the lost state cannot be measured;
+- a founder or participant later forgets and then partially recovers knowledge of the prehistory.
+
+For fully simulated events, engine history may preserve an objective oracle while all in-world evidence is lost. For institutions initialized with prior history, the simulation may instead begin from inherited provenance/claims whose deeper prehistory was not itself simulated. These cases should remain distinguishable.
+
+### M. Institutional age / social periodization
 
 Do not create multiple physical clocks by default.
+
+Keep distinguishable:
+
+- physical/world elapsed time;
+- accumulated labor/activity;
+- density of consequential state transitions;
+- office/succession history;
+- developmental or institutional maturity;
+- actor/institution perceptions of age.
 
 Candidate mechanism:
 
 - event-referenced eras, reigns, reforms, successions, disasters, foundations, dissolutions;
+- derived summaries such as number/density of consequential transitions or successions where useful;
 - actor/institution labels such as “before X” or “since Y” built on the same underlying simulation time.
 
-Social chronology becomes an interpretation of events, not a replacement for kernel time.
+Social/institutional age is an interpretation or derived property of history, not a replacement for kernel time.
 
 ## 3. Candidate anti-shortcuts
 
@@ -214,7 +236,9 @@ Future design should challenge the following shortcuts:
 - capability = identity;
 - institution exists = institution can act;
 - actor knows a fact = actor accepts its legitimacy;
-- durable artifact = true artifact.
+- durable artifact = true artifact;
+- surviving archive begins where causal history begins;
+- elapsed time = institutional age.
 
 ## 4. Relationship to the companion-tablet streams
 
