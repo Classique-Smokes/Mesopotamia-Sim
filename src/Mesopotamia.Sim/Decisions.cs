@@ -11,6 +11,9 @@ public sealed record OfferBenefitForFavor(PersonId Target, long Amount) : Action
 public sealed record RelationshipMediatedReciprocalHelp(PersonId Target, long Amount, bool Request = false) : ActionTerms;
 public sealed record CallFavor(RelationId Favour, ActionTerms Requested) : ActionTerms;
 public sealed record CancelReciprocalFavours(PersonId Target) : ActionTerms;
+public sealed record ProposeMarriage(PersonId Bride, long ProposedDowry) : ActionTerms;
+public sealed record MoveResidence(PersonId Target, DwellingId Destination) : ActionTerms;
+public sealed record InviteResidence(PersonId Target, DwellingId Destination) : ActionTerms;
 public enum ResponseChoice { Accept, Decline, FulfilCalledFavor, RefuseCalledFavor }
 public sealed record CandidateTrace(string Key, string Meaning, bool Eligible, string Gate,
     ImmutableDictionary<string, long> Components, long? FinalScore, bool Selected);
@@ -55,6 +58,9 @@ internal static class ActionRules
         OfferBenefitForFavor benefit => benefit.Target,
         RelationshipMediatedReciprocalHelp help => help.Target,
         CallFavor call => snapshot.Favours.TryGetValue(call.Favour, out Favour? favour) ? favour.Debtor : null,
+        ProposeMarriage marriage => marriage.Bride,
+        MoveResidence move => move.Target,
+        InviteResidence invite => invite.Target,
         _ => null
     };
     internal static string? Invalid(Proposal proposal, WorldSnapshot snapshot)
@@ -75,6 +81,9 @@ internal static class ActionRules
                 call.Requested is not (Farm or RepayDebt) ? "NonCallablePayload" :
                 Invalid(new(proposal.Id, favour.Debtor, call.Requested), snapshot),
             CancelReciprocalFavours cancel => cancel.Target == proposal.Actor || !snapshot.People.ContainsKey(cancel.Target) ? "InvalidCounterparty" : null,
+            ProposeMarriage marriage => marriage.ProposedDowry > 0 ? null : "PositiveIntegralGrainRequired",
+            MoveResidence move => snapshot.Dwellings.ContainsKey(move.Destination) ? null : "UnknownDwelling",
+            InviteResidence invite => snapshot.Dwellings.ContainsKey(invite.Destination) ? null : "UnknownDwelling",
             RepayDebt repay => repay.Amount <= 0 ? "PositiveIntegralGrainRequired" :
                 !snapshot.Debts.TryGetValue(repay.Debt, out Debt? debt) ? "UnknownDebt" :
                 repay.Amount > debt.Remaining ? "RepaymentExceedsRemaining" : null,
@@ -96,6 +105,19 @@ internal static class ActionRules
         CallFavor call => !snapshot.Favours[call.Favour].Outstanding || snapshot.Favours[call.Favour].Holder != proposal.Actor ? "FavourUnavailable" :
             Infeasible(new(proposal.Id, snapshot.Favours[call.Favour].Debtor, call.Requested), snapshot),
         CancelReciprocalFavours cancel => snapshot.HasFavour(proposal.Actor, cancel.Target) && snapshot.HasFavour(cancel.Target, proposal.Actor) ? null : "ReciprocalFavoursUnavailable",
+        ProposeMarriage marriage => snapshot.People[proposal.Actor].Sex != Sex.Male || snapshot.People[marriage.Bride].Sex != Sex.Female ||
+            snapshot.AreKin(proposal.Actor, marriage.Bride) || snapshot.HasMarriage(proposal.Actor) || snapshot.HasMarriage(marriage.Bride) ? "NoLongerEligibleForMarriage" :
+            snapshot.AttitudeOf(proposal.Actor, marriage.Bride) < 75 || snapshot.AttitudeOf(marriage.Bride, proposal.Actor) < 75 ? "DirectMarriageGateUnavailable" : null,
+        MoveResidence move => snapshot.HomeOf(move.Target) != move.Destination ? "ResidenceDestinationChanged" :
+            snapshot.HomeOf(proposal.Actor) == move.Destination ? "AlreadyAtDestination" : null,
+        InviteResidence invite => snapshot.HomeOf(proposal.Actor) != invite.Destination ? "ResidenceDestinationChanged" :
+            snapshot.HomeOf(invite.Target) == invite.Destination ? "AlreadyAtDestination" : null,
         _ => "UnsupportedAction"
+    };
+    internal static PersonId? Mover(Proposal proposal) => proposal.Terms switch
+    {
+        MoveResidence => proposal.Actor,
+        InviteResidence invite => invite.Target,
+        _ => null
     };
 }

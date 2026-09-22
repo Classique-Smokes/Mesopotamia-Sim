@@ -111,16 +111,19 @@ public sealed partial class Simulation
                 }
                 accepted.Add((proposal, cause));
             }
+            HashSet<PersonId> moved = [];
             foreach (var attempt in accepted)
             {
                 Proposal proposal = attempt.Proposal;
                 string? loss = ActionRules.Invalid(proposal, state.Snapshot(cycle)) ?? ActionRules.Infeasible(proposal, state.Snapshot(cycle));
+                if (ActionRules.Mover(proposal) is { } mover && moved.Contains(mover)) loss = "CompetingResidenceTransition";
                 bool fallback = accepted.Any(other => other.Proposal.Id != proposal.Id && Competes(proposal, other.Proposal, decisionSnapshot));
                 if (loss is not null)
                     Finish(proposal, OutcomeKind.InvalidatedAtResolution, loss, attempt.Cause, outcomes, fallback);
                 else
                 {
                     SemanticEvent committed = Commit(proposal, attempt.Cause, fallback, batch);
+                    if (ActionRules.Mover(proposal) is { } movedPerson) moved.Add(movedPerson);
                     outcomes.Add(new(proposal.Id, proposal.Actor, OutcomeKind.Committed, "", committed.Id));
                     Learn(proposal, outcomes[^1]);
                 }
@@ -156,7 +159,7 @@ public sealed partial class Simulation
         if (proposal.Terms is RepayDebt repay && state.Debts.TryGetValue(repay.Debt, out Debt? debt))
             participants = [proposal.Actor, debt.Creditor];
         if (proposal.Terms is CancelReciprocalFavours cancel) participants = [proposal.Actor, cancel.Target];
-        if (proposal.Terms is CallFavor { Requested: RepayDebt repayment } call)
+        if (outcome.Kind == OutcomeKind.Committed && proposal.Terms is CallFavor { Requested: RepayDebt repayment } call)
             participants = [proposal.Actor, state.Favours[call.Favour].Debtor, state.Debts[repayment.Debt].Creditor];
         foreach (PersonId participant in participants.Distinct())
         {
@@ -179,6 +182,8 @@ public sealed partial class Simulation
     };
     private static bool Competes(Proposal a, Proposal b, WorldSnapshot snapshot)
     {
+        if (ActionRules.Mover(a) is { } mover && ActionRules.Mover(b) == mover) return true;
+        if (a.Terms is ProposeMarriage ma && b.Terms is ProposeMarriage mb && ma.Bride == mb.Bride) return true;
         if (a.Terms is CallFavor callA && b.Terms is CallFavor callB && callA.Favour == callB.Favour) return true;
         var pairA = NewFavourPair(a);
         var pairB = NewFavourPair(b);
@@ -256,6 +261,21 @@ public sealed partial class Simulation
                 RelationId id = transaction.AllocateRelation();
                 transaction.Favours.Add(id, new(id, recipient.Id, giver.Id, true, new(nextEvent)));
             }
+        }
+        else if (proposal.Terms is ProposeMarriage marriage)
+        {
+            RelationId id = transaction.AllocateRelation();
+            transaction.Marriages.Add(id, new(id, proposal.Actor, marriage.Bride, new(nextEvent)));
+            meaning = "DirectMarriage";
+            participants = [proposal.Actor, marriage.Bride];
+        }
+        else if (ActionRules.Mover(proposal) is { } mover)
+        {
+            DwellingId destination = proposal.Terms is MoveResidence move ? move.Destination : ((InviteResidence)proposal.Terms).Destination;
+            Residence residence = transaction.Residences.Values.Single(r => r.Person == mover);
+            transaction.Residences[residence.Id] = residence with { Dwelling = destination };
+            meaning = "ResidenceTransition";
+            participants = [proposal.Actor, ActionRules.Target(proposal.Terms, state.Snapshot(cycle))!.Value];
         }
         else if (proposal.Terms is CancelReciprocalFavours cancel)
         {
