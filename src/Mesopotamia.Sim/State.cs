@@ -84,6 +84,19 @@ internal sealed class WorldState
     }
 
     internal RelationId AllocateRelation() => new(checked(nextRelation++));
+    private WorldState(WorldState source)
+    {
+        People = new(source.People);
+        Dwellings = new(source.Dwellings);
+        Residences = new(source.Residences);
+        Attitudes = new(source.Attitudes);
+        Kinships = new(source.Kinships);
+        Marriages = new(source.Marriages);
+        Debts = new(source.Debts);
+        Favours = new(source.Favours);
+        nextRelation = source.nextRelation;
+    }
+    internal WorldState Copy() => new(this);
     internal WorldSnapshot Snapshot(long cycle) => new(cycle, People.ToImmutableDictionary(),
         Dwellings.ToImmutableDictionary(), Residences.ToImmutableDictionary(), Attitudes.ToImmutableDictionary(),
         Kinships.ToImmutableDictionary(), Marriages.ToImmutableDictionary(), Debts.ToImmutableDictionary(), Favours.ToImmutableDictionary());

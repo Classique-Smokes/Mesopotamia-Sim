@@ -8,15 +8,23 @@ public sealed record Proposal(ProposalId Id, PersonId Actor, ActionTerms Terms);
 public sealed record CycleInput(ImmutableArray<Proposal> Proposals)
 {
     public static CycleInput Empty => new([]);
+    public ImmutableDictionary<PersonId, string> ResponseProfiles { get; init; } = ImmutableDictionary<PersonId, string>.Empty;
+    public ImmutableDictionary<ProposalId, ResponseChoice> Responses { get; init; } = ImmutableDictionary<ProposalId, ResponseChoice>.Empty;
 }
 public enum OutcomeKind { Committed, Declined, Unable, InvalidatedAtResolution, InvalidTerms }
 public sealed record Outcome(ProposalId Proposal, PersonId Actor, OutcomeKind Kind, string Reason, EventId Event);
 public sealed record MaterialChange(PersonId Person, long Before, long After, string Meaning);
 public sealed record SemanticEvent(EventId Id, long Cycle, int ReactionIndex, string Kind,
     ProposalId? Proposal, ImmutableArray<PersonId> Participants, ImmutableArray<EventId> Causes,
-    ImmutableArray<MaterialChange> Material, string Detail, string ConfigurationVersion, bool TechnicalFallback = false);
+    ImmutableArray<MaterialChange> Material, string Detail, string ConfigurationVersion, bool TechnicalFallback = false)
+{
+    public ImmutableArray<AttitudeContribution> Contributions { get; init; } = [];
+}
 public sealed record CycleResult(WorldSnapshot State, ImmutableArray<Outcome> Outcomes,
-    ImmutableArray<SemanticEvent> Events, bool MaterialDeadlock);
+    ImmutableArray<SemanticEvent> Events, bool MaterialDeadlock)
+{
+    public ImmutableArray<DecisionTrace> Decisions { get; init; } = [];
+}
 
 public sealed partial class Simulation
 {
@@ -25,7 +33,10 @@ public sealed partial class Simulation
     private int reactionIndex;
     private bool faulted;
     private readonly HashSet<ProposalId> usedProposals = [];
+    private readonly Dictionary<PersonId, List<ParticipantOutcome>> knowledge = [];
     public ImmutableArray<SemanticEvent> History => events.ToImmutableArray();
+    public ImmutableArray<ParticipantOutcome> KnowledgeOf(PersonId person) =>
+        knowledge.TryGetValue(person, out var facts) ? facts.ToImmutableArray() : [];
 
     public CycleResult RunCycle(CycleInput input)
     {
@@ -42,35 +53,171 @@ public sealed partial class Simulation
         try
         {
             Maintenance();
+            WorldSnapshot decisionSnapshot = state.Snapshot(cycle);
             List<Outcome> outcomes = [];
+            List<DecisionTrace> decisions = [];
+            List<(Proposal Proposal, EventId Cause)> accepted = [];
+            AttitudeBatch batch = new();
             foreach (Proposal proposal in input.Proposals.OrderBy(p => p.Id.Value))
             {
                 usedProposals.Add(proposal.Id);
-                Person person = state.People[proposal.Actor];
-                if (proposal.Terms is not Farm) throw new ArgumentException("Unknown action meaning.", nameof(input));
-                if (person.NeedsGrain)
+                string? invalid = ActionRules.Invalid(proposal, decisionSnapshot);
+                SemanticEvent proposed = Record("Proposal", proposal.Id, [proposal.Actor], [], [], proposal.Terms.ToString() ?? "");
+                if (invalid is not null)
                 {
-                    SemanticEvent unable = Record("Unable", proposal.Id, [person.Id], [], [], "NeedsGrain");
-                    outcomes.Add(new(proposal.Id, person.Id, OutcomeKind.Unable, "NeedsGrain", unable.Id));
+                    Finish(proposal, OutcomeKind.InvalidTerms, invalid, proposed.Id, outcomes);
+                    continue;
                 }
+                string? inability = ActionRules.Infeasible(proposal, decisionSnapshot);
+                PersonId? target = ActionRules.Target(proposal.Terms);
+                if (inability is not null)
+                {
+                    if (target is { } unableTarget)
+                        decisions.Add(new(unableTarget, proposal.Id, "Response", "Feasibility", [], [inability], false));
+                    Finish(proposal, OutcomeKind.Unable, inability, proposed.Id, outcomes);
+                    continue;
+                }
+                EventId cause = proposed.Id;
+                if (target is { } respondent)
+                {
+                    string profile = input.ResponseProfiles.GetValueOrDefault(respondent, "SCORE-RP-001");
+                    if (profile is not ("SCORE-RP-001" or "SCORE-RP-002"))
+                        throw new ArgumentException("Unsupported ordinary response profile.", nameof(input));
+                    ResponseChoice choice = input.Responses.GetValueOrDefault(proposal.Id,
+                        profile == "SCORE-RP-002" ? ResponseChoice.Decline : ResponseChoice.Accept);
+                    if (choice is not (ResponseChoice.Accept or ResponseChoice.Decline))
+                        throw new ArgumentException("Response meaning does not belong to proposal.", nameof(input));
+                    bool scripted = input.Responses.ContainsKey(proposal.Id);
+                    CandidateTrace[] candidates = [ResponseCandidate(ResponseChoice.Accept), ResponseCandidate(ResponseChoice.Decline)];
+                    CandidateTrace ResponseCandidate(ResponseChoice response) => new(response.ToString(), response.ToString(), true, "",
+                        scripted ? ImmutableDictionary<string, long>.Empty : ImmutableDictionary<string, long>.Empty.Add("ResponsePreference",
+                            (profile == "SCORE-RP-001") == (response == ResponseChoice.Accept) ? 100 : 0),
+                        scripted ? null : (profile == "SCORE-RP-001") == (response == ResponseChoice.Accept) ? 100 : 0, response == choice);
+                    decisions.Add(new(respondent, proposal.Id, "Response", scripted ? "MECHANISM-RESPONSE-v1" : profile,
+                        [.. candidates], [$"OwnGrain:{decisionSnapshot.People[respondent].Grain}", $"Proposal:{proposal.Id.Value}"], false));
+                    cause = Record("Response", proposal.Id, [respondent], [proposed.Id], [], choice.ToString()).Id;
+                    if (choice == ResponseChoice.Decline)
+                    {
+                        Outcome declined = Finish(proposal, OutcomeKind.Declined, "VoluntaryRefusal", cause, outcomes);
+                        if (proposal.Terms is RequestGiftOrHelp && decisionSnapshot.People[proposal.Actor].NeedsGrain)
+                            batch.Add(new(new("GenuineNeedRefusal", declined.Event, proposal.Actor, respondent), -5));
+                        continue;
+                    }
+                }
+                accepted.Add((proposal, cause));
+            }
+            foreach (var attempt in accepted)
+            {
+                Proposal proposal = attempt.Proposal;
+                string? loss = ActionRules.Invalid(proposal, state.Snapshot(cycle)) ?? ActionRules.Infeasible(proposal, state.Snapshot(cycle));
+                bool fallback = accepted.Any(other => other.Proposal.Id != proposal.Id && Competes(proposal, other.Proposal, decisionSnapshot));
+                if (loss is not null)
+                    Finish(proposal, OutcomeKind.InvalidatedAtResolution, loss, attempt.Cause, outcomes, fallback);
                 else
                 {
-                    long after = checked(person.Grain + 4);
-                    state.People[person.Id] = person with { Grain = after };
-                    SemanticEvent farm = Record("Farm", proposal.Id, [person.Id], [], [new(person.Id, person.Grain, after, "FarmSource")], "Farm");
-                    outcomes.Add(new(proposal.Id, person.Id, OutcomeKind.Committed, "", farm.Id));
-                    state.Validate();
+                    SemanticEvent committed = Commit(proposal, attempt.Cause, fallback, batch);
+                    outcomes.Add(new(proposal.Id, proposal.Actor, OutcomeKind.Committed, "", committed.Id));
+                    Learn(proposal, outcomes[^1]);
                 }
             }
+            CloseAttitudes(batch);
             published = state.Snapshot(cycle);
             bool deadlock = state.People.Count > 0 && state.People.Values.All(p => p.NeedsGrain && p.Grain == 0) &&
                 !initial.Inputs.Any(i => i.Cycle > cycle && i.Delta > 0);
-            return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock);
+            return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = decisions.ToImmutableArray() };
         }
         catch
         {
             faulted = true;
             throw;
+        }
+    }
+
+    private Outcome Finish(Proposal proposal, OutcomeKind kind, string reason, EventId cause, List<Outcome> outcomes, bool fallback = false)
+    {
+        PersonId? target = ActionRules.Target(proposal.Terms);
+        SemanticEvent entry = Record(kind.ToString(), proposal.Id, target is { } t ? [proposal.Actor, t] : [proposal.Actor], [cause], [], reason, fallback);
+        Outcome outcome = new(proposal.Id, proposal.Actor, kind, reason, entry.Id);
+        outcomes.Add(outcome);
+        if (kind != OutcomeKind.InvalidTerms) Learn(proposal, outcome);
+        return outcome;
+    }
+
+    private void Learn(Proposal proposal, Outcome outcome)
+    {
+        PersonId? target = ActionRules.Target(proposal.Terms);
+        PersonId[] participants = target is { } t ? [proposal.Actor, t] : [proposal.Actor];
+        foreach (PersonId participant in participants)
+        {
+            if (!knowledge.TryGetValue(participant, out var facts)) knowledge.Add(participant, facts = []);
+            facts.Add(new(outcome.Event, outcome.Proposal, outcome.Kind, outcome.Reason));
+        }
+    }
+
+    private static (PersonId Giver, PersonId Recipient, long Amount)? Transfer(Proposal proposal) => proposal.Terms switch
+    {
+        OfferGift gift => (proposal.Actor, gift.Target, gift.Amount),
+        RequestGiftOrHelp help => (help.Target, proposal.Actor, help.Amount),
+        _ => null
+    };
+    private static bool Competes(Proposal a, Proposal b, WorldSnapshot snapshot)
+    {
+        var left = Transfer(a);
+        var right = Transfer(b);
+        return left is { } l && right is { } r && l.Giver == r.Giver &&
+            (System.Numerics.BigInteger)l.Amount + r.Amount > snapshot.People[l.Giver].Grain;
+    }
+
+    private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch)
+    {
+        WorldState transaction = state.Copy();
+        List<MaterialChange> material = [];
+        string meaning;
+        PersonId[] participants;
+        if (proposal.Terms is Farm)
+        {
+            Person person = transaction.People[proposal.Actor];
+            long after = checked(person.Grain + 4);
+            transaction.People[person.Id] = person with { Grain = after };
+            material.Add(new(person.Id, person.Grain, after, "FarmSource"));
+            meaning = "Farm";
+            participants = [person.Id];
+        }
+        else if (Transfer(proposal) is { } transfer)
+        {
+            Person giver = transaction.People[transfer.Giver];
+            Person recipient = transaction.People[transfer.Recipient];
+            long received = checked(recipient.Grain + transfer.Amount);
+            transaction.People[giver.Id] = giver with { Grain = checked(giver.Grain - transfer.Amount) };
+            transaction.People[recipient.Id] = recipient with { Grain = received, NeedsGrain = false };
+            meaning = proposal.Terms is OfferGift ? "Gift" : "Help";
+            material.Add(new(giver.Id, giver.Grain, giver.Grain - transfer.Amount, meaning));
+            material.Add(new(recipient.Id, recipient.Grain, received, meaning));
+            participants = [giver.Id, recipient.Id];
+        }
+        else throw new InvalidOperationException("Unimplemented commit meaning.");
+        transaction.Validate();
+        state = transaction;
+        SemanticEvent entry = Record(meaning, proposal.Id, [.. participants], [cause], [.. material], proposal.Terms.ToString() ?? "", fallback);
+        if (Transfer(proposal) is { } helpTransfer)
+            batch.Add(new(new("AcceptedGiftHelp", entry.Id, helpTransfer.Recipient, helpTransfer.Giver), 10));
+        return entry;
+    }
+
+    private void CloseAttitudes(AttitudeBatch batch)
+    {
+        foreach (var group in batch.Close().GroupBy(c => (c.Key.From, c.Key.To)))
+        {
+            Attitude? current = state.Attitudes.Values.SingleOrDefault(a => a.From == group.Key.From && a.To == group.Key.To);
+            long sum = current?.Value ?? 0;
+            foreach (var contribution in group) sum = checked(sum + contribution.Delta);
+            int after = (int)Math.Clamp(sum, -100, 100);
+            RelationId id = current?.Id ?? state.AllocateRelation();
+            state.Attitudes[id] = new(id, group.Key.From, group.Key.To, after);
+            SemanticEvent entry = Record("AttitudeComposition", null, [group.Key.From, group.Key.To],
+                group.Select(c => c.Key.Trigger).Distinct().ToImmutableArray(), [], $"{current?.Value ?? 0}->{after}");
+            events[^1] = entry with { Contributions = group.ToImmutableArray() };
+            state.Validate();
         }
     }
 

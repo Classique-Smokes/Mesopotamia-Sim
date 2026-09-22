@@ -40,3 +40,5 @@ Accepted laboratory assumptions remain unchanged. No semantic or architectural d
 Milestone 1 canonical sequence: PASS; 5 tests passed, 0 skipped, 0 warnings/errors. CI publishes the generated acceptance evidence. Manifest-integrity row is the only current acceptance PASS.
 
 Milestone 2 canonical sequence: PASS; 8 tests, no skips/warnings/errors. Consumption, Farm, exogenous need clearing, immutable prior snapshots, and decay are implemented. Seven manifest rows now have evidence; later semantic rows remain unexecuted. Milestone 1 push succeeded after Git Credential Manager completed authentication.
+
+Milestone 3 canonical sequence: PASS; 8 MSTest tests, six substantive acceptance scenarios, 28 manifest rows PASS. Proposal validation, snapshot responses, central revalidation, atomic copy-and-publish commits, bounded outcome knowledge, and direct attitude composition are implemented. Gift/help supplied the smallest real interaction needed to verify this pipeline (dependency adjustment from milestone 4). Milestones 1 and 2 remote CI passed: runs 35689425927 and 35689473407.

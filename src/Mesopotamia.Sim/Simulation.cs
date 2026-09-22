@@ -2,7 +2,7 @@ namespace Mesopotamia.Sim;
 
 public sealed partial class Simulation
 {
-    private readonly WorldState state;
+    private WorldState state;
     private readonly InitialWorld initial;
     private long cycle;
     private WorldSnapshot published;
