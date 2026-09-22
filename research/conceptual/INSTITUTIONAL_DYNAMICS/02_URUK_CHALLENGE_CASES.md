@@ -81,6 +81,26 @@ Questions:
 
 Failure mode exposed: equating archive survival with institutional survival.
 
+## 5A. The Lost Beginning / Transmission Catastrophe
+
+An emerging institution develops substantial structure before a durable archive exists.
+
+A handoff artifact intended to preserve that state is created but lost before incorporation. Continuity survives through one or more people who reconstruct the project/institution from memory into a later formal archive.
+
+Questions:
+
+- where does actual causal genealogy begin;
+- where does surviving official genealogy begin;
+- which continuity-bearing facts survive only through people;
+- what selections, omissions, reinterpretations, or improvements enter during reconstruction;
+- what claims about fidelity are unknowable because the comparison source is gone;
+- can a founder later forget part of the prehistory and subsequently recover it;
+- how does a later archive truthfully represent an earlier phase for which no direct artifact survives.
+
+Failure mode exposed: assuming the surviving archive or canonical founding document is identical to the true causal beginning.
+
+This is stronger than ordinary archive destruction because the durable archive may never have contained the lost phase at all.
+
 ## 6. The Returning Predecessor
 
 A former legitimate office-holder returns after lawful or effective succession.
@@ -171,3 +191,5 @@ Select challenge cases appropriate to its claimed scope and require the model to
 - residual ambiguity.
 
 The challenge cases should expose where a proposed universal rule destroys distinctions that the project needs to preserve.
+
+They should also resist treating the **challenge-case family itself** as evidence that all higher-order social entities share one ontology. A model may legitimately answer different cases with different mechanism combinations.
