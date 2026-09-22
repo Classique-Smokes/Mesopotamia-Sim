@@ -14,9 +14,10 @@ Readable Master Architect reconciliation:
 
 - `IMP-0001_CONFORMANCE_BLOCK_RECONCILIATION.md`
 
-Lossless complete reviewer return:
+Full reviewer return identity:
 
-- `archive/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW.md.br`
+- original SHA-256 `09fb414448000784866c2e8d172ed576d8180ad9d5db9e7d38ed4bb61a3ab91d`;
+- the current `archive/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW.md.br` repository blob is corrupt and **must not** be used as the reviewer source until replaced.
 
 Original reviewer artifact identity:
 

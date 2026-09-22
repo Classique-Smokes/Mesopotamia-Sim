@@ -9,19 +9,21 @@
 
 The Project Director supplied the completed independent K4 review directly after the reviewer could not push the requested return branch.
 
-The complete reviewer artifact is preserved losslessly at:
+A compressed reviewer artifact was added at:
 
 `research/technical/IMP-0001/archive/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW.md.br`
 
-Archive identity:
+**Preservation correction:** repair-v2 later established that this repository blob is corrupt and does not decompress. It must not be treated as the full reviewer return. The original user-supplied artifact identity below remains authoritative until a correct byte-identical repository copy is installed.
+
+Original artifact identity:
 
 - original filename: `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW.md`
 - original bytes: **127,757**
 - original lines: **636**
 - original SHA-256: `09fb414448000784866c2e8d172ed576d8180ad9d5db9e7d38ed4bb61a3ab91d`
-- Brotli bytes: **23,974**
-- Brotli SHA-256: `eb7d69df87bc0b77056c3d03090fcd1f1ecbdc3c0eeeb53bcae4aa6e431585a7`
-- Git blob: `29530edb80671f3d57aa869ec1cc24afc2fbbaf9`
+- intended Brotli bytes/hash recorded at reconciliation time were not realized by the stored blob;
+- stored corrupt Git blob: `29530edb80671f3d57aa869ec1cc24afc2fbbaf9`;
+- exact repository preservation remains pending clerical repair.
 
 The report declares itself a fresh independent review and records canonical execution PASS but substantive conformance BLOCK.
 
