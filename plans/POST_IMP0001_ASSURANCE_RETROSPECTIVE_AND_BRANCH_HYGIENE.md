@@ -116,6 +116,8 @@ If existing wording already covers a lesson sufficiently once read in context, r
 
 Branch cleanup is clerical/provenance-heavy and should be delegated.
 
+Dispatch packet: `tasks/research/POST_IMP0001_BRANCH_HYGIENE_CENSUS.md`.
+
 The Master Architect should commission a bounded, **read-only first pass** that inventories every remote branch and returns one row per branch with:
 
 - branch name;
