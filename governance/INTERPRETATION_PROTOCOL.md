@@ -1,5 +1,13 @@
 # Interpretation Protocol for Project Director Input
 
+**Status / authority:** ACCEPTED operating protocol subordinate to the Master Architect Guide and Working Constitution  
+**Purpose:** Interpret exploratory Director input without accidentally promoting conversation into authority.  
+**Load when:** substantial or ambiguous Director input must be translated into project work.  
+**Do not load merely because:** the request is already clear, local, and non-consequential.  
+**Expected output:** correctly classified intent/work candidates with binding vs non-binding distinctions preserved.  
+**Escalation / stop:** surface ambiguity only when its resolution could materially change project identity, historical interpretation, simulation semantics, architecture, or another consequential commitment.
+
+
 Before substantial exploratory input becomes project work, perform a lightweight interpretation pass.
 
 ## Extract only categories that actually apply
