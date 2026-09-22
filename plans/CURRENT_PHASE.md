@@ -30,7 +30,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 CANDIDATE-v2 BLOCKED / REPAIR-v3 ACTIVE.**
+**Roadmap Stage 4 — Slice 1 CANDIDATE-v3 FROZEN / FRESH INDEPENDENT CONFORMANCE PENDING.**
 
 Active implementation packet:
 
@@ -93,6 +93,11 @@ Dispatch scaffolding:
 - candidate-v2 BLOCK reconciliation: `research/technical/IMP-0001/IMP-0001_CANDIDATE_V2_BLOCK_RECONCILIATION.md`;
 - repair-v3 packet: `tasks/implementation/IMP-0001_V3_REPAIR_PACKET.md`;
 - repair-v3 branch: `implementation/imp-0001-slice1-repair-v3`;
+- frozen candidate-v3: `imp-0001-slice1-conformance-candidate-v3` @ `06e25644879dd8505e24fcaeb43256f69c29c15f`;
+- candidate-v3 head-associated canonical PR CI: run `35787127702` PASS;
+- candidate-v3 evidence artifact: `10719823413`, digest `sha256:031f21dc553dcf0bfff4b73f3bff764ff5a8dc1856d20493b164cc164c1268ca`;
+- candidate-v3 reconciliation/dispatch: `tasks/implementation/IMP-0001_CANDIDATE_V3_RECONCILIATION_AND_DISPATCH.md`;
+- fresh K4 packet: `tasks/implementation/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`;
 - remaining scaffolding state: `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
 
 ## Stage-4 slice order
@@ -119,11 +124,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Execute `IMP-0001_V3_REPAIR_PACKET.md` on `implementation/imp-0001-slice1-repair-v3` against B1 MaterialDeadlock future-input resolution and B2 fallback-attribution precision.
-2. Preserve candidate-v1, candidate-v2 and `SFL-V0-S1-ACCEPTANCE-v1` unchanged.
-3. Do not reopen the v1 repair areas without new evidence; the v2 reviewer independently cleared them.
-4. When coder-owned repair-v3 evidence is complete, reconcile the head and freeze `imp-0001-slice1-conformance-candidate-v3`.
-5. Commission a fresh K4 reviewer who authored neither repair-v2 nor repair-v3. `S1-GLOBAL-CONFORMANCE` remains BLOCK until PASS.
+1. Commission a **fresh reviewer who authored neither repair-v2 nor repair-v3** against frozen candidate-v3 `06e25644879dd8505e24fcaeb43256f69c29c15f` using `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`.
+2. Keep candidate-v1, candidate-v2 and candidate-v3 refs immutable; keep PR #7, PR #16 and PR #23 draft/unmerged during review.
+3. Preserve `SFL-V0-S1-ACCEPTANCE-v1` unchanged; `S1-GLOBAL-CONFORMANCE` remains REQUIRED and pending.
+4. If candidate-v3 review BLOCKs, preserve the exact candidate/report and reconcile only the demonstrated findings before any further repair.
+5. If candidate-v3 review PASSes, perform final IMP-0001 completion/SCF-002 retirement and merge/promotion reconciliation before moving lower.
 6. Continue the read-only branch-hygiene census in parallel if delegated; destructive cleanup remains deferred until the active v3 conformance lineage no longer needs its refs.
 7. Only after verified Slice-1 completion/promotion execute `SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`, freeze the raw autonomous history, and pause for Project Director inspection before Slice 2.
 8. Classify birth-run observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
