@@ -205,3 +205,26 @@ Dispatch does not mean implementation is already verified. It means the project 
 On dispatch, SCF-001 and the remaining executable portion of SCF-002 fire.
 
 No additional TRES-0010 research is required unless implementation discovers a genuinely new conflict with accepted authority.
+
+
+## 13. Post-decision navigation closure
+
+After recording the closure decision, the root/current operational retrieval path was synchronized and rechecked.
+
+Verified surfaces:
+
+- `00_START_HERE.md`
+- `plans/CURRENT_PHASE.md`
+- `tasks/implementation/README.md`
+- `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+- `research/technical/TRES-0010/README.md`
+- `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
+- `plans/verification/SFL_V0/README.md`
+
+Result:
+
+- stale current-state “dispatch blocked pending TRES-0010” matches: **0**
+- root/current/task/TRES operational surfaces agree that TRES-0010 is closed and IMP-0001 is ready for dispatch
+- `main` manifest SHA still equals frozen-ref manifest SHA: `efd2d0aab4579a78a3e7a0fc8d027c15f2f5e766`
+
+Post-decision retrieval/navigation checks: **8 / 8 passed**.
