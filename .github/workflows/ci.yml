@@ -35,3 +35,11 @@ jobs:
 
       - name: Test
         run: dotnet test Mesopotamia.Sim.slnx --configuration Release --no-build --no-restore
+
+      - name: Acceptance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: slice1-acceptance-evidence
+          path: artifacts/acceptance/
+          if-no-files-found: warn
