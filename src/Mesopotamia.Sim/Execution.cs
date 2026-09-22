@@ -99,7 +99,7 @@ public sealed partial class Simulation
                     if (choice == ResponseChoice.Decline)
                     {
                         Outcome declined = Finish(proposal, OutcomeKind.Declined, "VoluntaryRefusal", cause, outcomes);
-                        if (proposal.Terms is RequestGiftOrHelp && decisionSnapshot.People[proposal.Actor].NeedsGrain)
+                        if (proposal.Terms is RequestGiftOrHelp or RequestLoan && decisionSnapshot.People[proposal.Actor].NeedsGrain)
                             batch.Add(new(new("GenuineNeedRefusal", declined.Event, proposal.Actor, respondent), -5));
                         continue;
                     }
@@ -120,6 +120,7 @@ public sealed partial class Simulation
                     Learn(proposal, outcomes[^1]);
                 }
             }
+            ReviewDebts(batch);
             CloseAttitudes(batch);
             published = state.Snapshot(cycle);
             bool deadlock = state.People.Count > 0 && state.People.Values.All(p => p.NeedsGrain && p.Grain == 0) &&
@@ -147,6 +148,8 @@ public sealed partial class Simulation
     {
         PersonId? target = ActionRules.Target(proposal.Terms);
         PersonId[] participants = target is { } t ? [proposal.Actor, t] : [proposal.Actor];
+        if (proposal.Terms is RepayDebt repay && state.Debts.TryGetValue(repay.Debt, out Debt? debt))
+            participants = [proposal.Actor, debt.Creditor];
         foreach (PersonId participant in participants)
         {
             if (!knowledge.TryGetValue(participant, out var facts)) knowledge.Add(participant, facts = []);
@@ -154,16 +157,19 @@ public sealed partial class Simulation
         }
     }
 
-    private static (PersonId Giver, PersonId Recipient, long Amount)? Transfer(Proposal proposal) => proposal.Terms switch
+    private static (PersonId Giver, PersonId Recipient, long Amount)? Transfer(Proposal proposal, WorldSnapshot snapshot) => proposal.Terms switch
     {
         OfferGift gift => (proposal.Actor, gift.Target, gift.Amount),
         RequestGiftOrHelp help => (help.Target, proposal.Actor, help.Amount),
+        OfferLoan loan => (proposal.Actor, loan.Target, loan.Amount),
+        RequestLoan loan => (loan.Target, proposal.Actor, loan.Amount),
+        RepayDebt repay => (proposal.Actor, snapshot.Debts[repay.Debt].Creditor, repay.Amount),
         _ => null
     };
     private static bool Competes(Proposal a, Proposal b, WorldSnapshot snapshot)
     {
-        var left = Transfer(a);
-        var right = Transfer(b);
+        var left = Transfer(a, snapshot);
+        var right = Transfer(b, snapshot);
         return left is { } l && right is { } r && l.Giver == r.Giver &&
             (System.Numerics.BigInteger)l.Amount + r.Amount > snapshot.People[l.Giver].Grain;
     }
@@ -183,25 +189,47 @@ public sealed partial class Simulation
             meaning = "Farm";
             participants = [person.Id];
         }
-        else if (Transfer(proposal) is { } transfer)
+        else if (Transfer(proposal, state.Snapshot(cycle)) is { } transfer)
         {
             Person giver = transaction.People[transfer.Giver];
             Person recipient = transaction.People[transfer.Recipient];
             long received = checked(recipient.Grain + transfer.Amount);
             transaction.People[giver.Id] = giver with { Grain = checked(giver.Grain - transfer.Amount) };
             transaction.People[recipient.Id] = recipient with { Grain = received, NeedsGrain = false };
-            meaning = proposal.Terms is OfferGift ? "Gift" : "Help";
+            meaning = proposal.Terms switch { OfferGift => "Gift", RequestGiftOrHelp => "Help", RepayDebt => "Repayment", _ => "Loan" };
             material.Add(new(giver.Id, giver.Grain, giver.Grain - transfer.Amount, meaning));
             material.Add(new(recipient.Id, recipient.Grain, received, meaning));
             participants = [giver.Id, recipient.Id];
+            if (proposal.Terms is OfferLoan or RequestLoan)
+            {
+                RelationId id = transaction.AllocateRelation();
+                transaction.Debts.Add(id, new(id, giver.Id, recipient.Id, transfer.Amount, transfer.Amount, cycle, false, new(nextEvent)));
+            }
+            if (proposal.Terms is RepayDebt repay)
+            {
+                Debt debt = transaction.Debts[repay.Debt];
+                transaction.Debts[debt.Id] = debt with { Remaining = debt.Remaining - repay.Amount };
+            }
         }
         else throw new InvalidOperationException("Unimplemented commit meaning.");
         transaction.Validate();
         state = transaction;
         SemanticEvent entry = Record(meaning, proposal.Id, [.. participants], [cause], [.. material], proposal.Terms.ToString() ?? "", fallback);
-        if (Transfer(proposal) is { } helpTransfer)
-            batch.Add(new(new("AcceptedGiftHelp", entry.Id, helpTransfer.Recipient, helpTransfer.Giver), 10));
+        if (Transfer(proposal, state.Snapshot(cycle)) is { } helpTransfer)
+            batch.Add(new(new(meaning, entry.Id, helpTransfer.Recipient, helpTransfer.Giver), meaning is "Loan" or "Repayment" ? 5 : 10));
         return entry;
+    }
+
+    private void ReviewDebts(AttitudeBatch batch)
+    {
+        foreach (Debt debt in state.Debts.Values.Where(d => !d.DueReviewed && cycle >= checked(d.CommittedCycle + 3)).OrderBy(d => d.Id.Value).ToArray())
+        {
+            state.Debts[debt.Id] = debt with { DueReviewed = true };
+            SemanticEvent review = Record("DebtSocialDueReview", null, [debt.Creditor, debt.Debtor], [debt.Origin], [],
+                debt.Remaining > 0 ? "UnpaidBalance" : "Satisfied");
+            if (debt.Remaining > 0) batch.Add(new(new("UnpaidDebt", review.Id, debt.Creditor, debt.Debtor), -10));
+            state.Validate();
+        }
     }
 
     private void CloseAttitudes(AttitudeBatch batch)

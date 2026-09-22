@@ -4,6 +4,9 @@ namespace Mesopotamia.Sim;
 
 public sealed record OfferGift(PersonId Target, long Amount) : ActionTerms;
 public sealed record RequestGiftOrHelp(PersonId Target, long Amount) : ActionTerms;
+public sealed record OfferLoan(PersonId Target, long Amount) : ActionTerms;
+public sealed record RequestLoan(PersonId Target, long Amount) : ActionTerms;
+public sealed record RepayDebt(RelationId Debt, long Amount) : ActionTerms;
 public enum ResponseChoice { Accept, Decline, FulfilCalledFavor, RefuseCalledFavor }
 public sealed record CandidateTrace(string Key, string Meaning, bool Eligible, string Gate,
     ImmutableDictionary<string, long> Components, long? FinalScore, bool Selected);
@@ -43,6 +46,8 @@ internal static class ActionRules
     {
         OfferGift gift => gift.Target,
         RequestGiftOrHelp help => help.Target,
+        OfferLoan loan => loan.Target,
+        RequestLoan loan => loan.Target,
         _ => null
     };
     internal static string? Invalid(Proposal proposal, WorldSnapshot snapshot)
@@ -55,6 +60,11 @@ internal static class ActionRules
             Farm => null,
             OfferGift gift => gift.Amount > 0 ? null : "PositiveIntegralGrainRequired",
             RequestGiftOrHelp help => help.Amount > 0 ? null : "PositiveIntegralGrainRequired",
+            OfferLoan loan => loan.Amount > 0 ? null : "PositiveIntegralGrainRequired",
+            RequestLoan loan => loan.Amount > 0 ? null : "PositiveIntegralGrainRequired",
+            RepayDebt repay => repay.Amount <= 0 ? "PositiveIntegralGrainRequired" :
+                !snapshot.Debts.TryGetValue(repay.Debt, out Debt? debt) ? "UnknownDebt" :
+                repay.Amount > debt.Remaining ? "RepaymentExceedsRemaining" : null,
             _ => "UnknownActionMeaning"
         };
     }
@@ -63,6 +73,10 @@ internal static class ActionRules
         Farm => snapshot.People[proposal.Actor].NeedsGrain ? "NeedsGrain" : null,
         OfferGift gift => snapshot.People[proposal.Actor].Grain < gift.Amount ? "InsufficientAvailableGrain" : null,
         RequestGiftOrHelp help => snapshot.People[help.Target].Grain < help.Amount ? "InsufficientAvailableGrain" : null,
+        OfferLoan loan => snapshot.People[proposal.Actor].Grain < loan.Amount ? "InsufficientAvailableGrain" : null,
+        RequestLoan loan => snapshot.People[loan.Target].Grain < loan.Amount ? "InsufficientAvailableGrain" : null,
+        RepayDebt repay => snapshot.Debts[repay.Debt].Debtor != proposal.Actor ? "NotDebtParty" :
+            snapshot.People[proposal.Actor].Grain - 2 < repay.Amount ? "RepaymentReserveUnavailable" : null,
         _ => "UnsupportedAction"
     };
 }
