@@ -17,10 +17,11 @@ When a trigger fires, **implement, reject, or explicitly defer** the item. Once 
 - **Evidence:** `research/technical/HARNESS_ENGINEERING_STUDY_SYNTHESIS.md`
 
 ### SCF-002 — Protected acceptance verification
-- **Status:** ARMED — fire on IMP-0001 dispatch
+- **Status:** PARTIALLY SATISFIED PRE-DISPATCH — frozen external acceptance authority established; executable/CI protection fires on IMP-0001 dispatch
 - **Trigger:** First executable Social Fabric Laboratory acceptance scenarios.
-- **Action:** Prevent implementation agents from silently weakening the tests/graders/invariants that define completion; use independent or protected checks where consequence warrants. Required by `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`; dispatch is currently blocked by TRES-0010.
-- **Evidence:** `research/technical/HARNESS_ENGINEERING_STUDY_SYNTHESIS.md`
+- **Pre-dispatch action completed:** `SFL-V0-S1-ACCEPTANCE-v1` is frozen outside IMP-0001 at ref `sfl-v0-slice1-acceptance-v1`, with independent pre-code R2 PASS and a separate freeze record. IMP-0001 cannot edit/reclassify it.
+- **Remaining dispatch action:** Build the executable acceptance surface/CI mapping to every REQUIRED AcceptanceId and preserve independent post-implementation conformance review.
+- **Evidence:** `research/technical/HARNESS_ENGINEERING_STUDY_SYNTHESIS.md`; `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md`; TRES-0010 R2 PASS report.
 
 ### SCF-003 — Concurrent workspace isolation
 - **Status:** DEFERRED
