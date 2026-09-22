@@ -1,6 +1,6 @@
 # Research → Design → Promotion Procedure for Institutional Dynamics
 
-**Status:** DRAFT / NON-AUTHORITATIVE  
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
 **Role:** Proposed process for turning conceptual material into project authority without skipping evidence or letting memorable stories become mechanics.
 
 ## 1. Trigger
