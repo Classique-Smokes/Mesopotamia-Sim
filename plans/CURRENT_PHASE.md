@@ -96,6 +96,16 @@ Dispatch scaffolding:
 
 Each slice must leave a runnable verified system. Do not begin a later slice by silently stubbing or inventing unresolved semantics in an earlier slice.
 
+### Slice-1 observational pause
+
+If IMP-0001 passes independent conformance and is promoted/merged without drift, conduct the planned autonomous **Birth Run 001** before beginning Slice-2 implementation, unless the Project Director explicitly waives the pause.
+
+Plan:
+
+- `plans/SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`
+
+This is not an extra acceptance requirement for Slice 1. It is an observational/project-understanding checkpoint: preserve the raw autonomous history, allow direct Director inspection, then classify any findings before deciding whether they imply defects, model questions, parameter/reference-policy limitations, missing later-slice capability, or merely interesting behavior.
+
 ## Next
 
 1. Commission a fresh independent K4 post-implementation conformance review against frozen candidate `7e11dab7697121eb0dbb169ba46210d81b80586e`.
@@ -103,5 +113,7 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 3. Keep PR #7 draft/unmerged; `S1-GLOBAL-CONFORMANCE` remains REQUIRED and pending.
 4. If independent review returns BLOCK, reconcile exact findings without weakening acceptance authority; any code/test/evidence-map change creates a new candidate baseline.
 5. If review returns PASS, reconcile and record final completion/SCF-002 retirement before merge.
+6. After canonical Slice-1 promotion, execute `SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`: run the verified autonomous kernel, freeze raw results/transcript, and pause for Project Director inspection before Slice 2.
+7. Classify observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
