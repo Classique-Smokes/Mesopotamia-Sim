@@ -96,6 +96,8 @@ Dispatch scaffolding:
 
 Each slice must leave a runnable verified system. Do not begin a later slice by silently stubbing or inventing unresolved semantics in an earlier slice.
 
+Before detailed planning of Slices 2–5, retrieve `plans/SFL_V0_INTERSLICE_DISCOVERY_PROMPTS.md`. It is a planning aid, not slice authority.
+
 ### Slice-1 observational pause
 
 If IMP-0001 passes independent conformance and is promoted/merged without drift, conduct the planned autonomous **Birth Run 001** before beginning Slice-2 implementation, unless the Project Director explicitly waives the pause.
