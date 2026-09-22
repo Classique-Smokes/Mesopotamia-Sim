@@ -1,19 +1,20 @@
 # Post-IMP-0001 Assurance Retrospective + Branch Hygiene
 
-**Status:** PENDING / TRIGGERED AFTER REPAIR-v2 RETURN  
+**Status:** ASSURANCE RETROSPECTIVE COMPLETE / BRANCH CENSUS PENDING  
 **Role:** One combined lightweight maintenance/learning task  
 **Purpose:** Capture the durable process lessons from the first independent implementation BLOCK and reduce branch clutter without turning either concern into a new bureaucracy.
 
-## 1. Trigger
+## 1. Current state
 
-Begin this task after the Akkadian/coder returns a completed repair-v2 implementation head and evidence package.
+The assurance-retrospective workstream is complete and has already been promoted into the existing assurance protocol without adding a new governance layer.
 
-Two workstreams may then proceed in parallel:
+The remaining workstream is repository branch hygiene:
 
-1. **Assurance retrospective** — Master Architect synthesis with only small protocol/checklist changes where the BLOCK demonstrated a real gap.
-2. **Repository branch hygiene** — delegated read-only census first; destructive cleanup only after the v2 conformance lineage no longer needs the affected refs.
+1. delegate the read-only census;
+2. reconcile only ambiguous/evidence-sensitive refs;
+3. perform destructive cleanup only after the **active IMP-0001 conformance lineage** no longer needs the affected refs.
 
-This task must not delay candidate-v2 freezing/fresh K4 review unless it discovers an actual authority/provenance risk.
+At present IMP-0001 is in repair-v3 after candidate-v2 K4 BLOCK. The census may run now, but cleanup must not interfere with repair-v3, candidate-v3 freezing, or fresh candidate-v3 review.
 
 ## 2. Guiding principle
 
@@ -95,22 +96,14 @@ These probes:
 
 This is already compatible with the existing optional-experiment/exhaustive-probe rules; institutionalization should clarify preference, not add a new review stage.
 
-## 4. Expected governance change size
+## 4. Governance change result
 
-After repair-v2 returns, compare A1–A4 against:
+Completed result:
 
-- `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`;
-- `governance/AGENT_DELEGATION_AND_RESEARCH_PROTOCOL.md`;
-- existing checklists/templates.
-
-Expected result:
-
-- **no new protocol**;
-- likely a few concise bullets/sentences in the existing assurance protocol;
-- possibly one concise reviewer-probe note in the delegation protocol if not already adequately covered;
-- no Master Architect Guide expansion unless a truly repository-wide principle is missing.
-
-If existing wording already covers a lesson sufficiently once read in context, record **NO CHANGE NEEDED** rather than duplicating it.
+- **no new protocol** was added;
+- the existing specification→implementation assurance protocol was sharpened for interaction-surface/global-claim evidence, subjective-input provenance, and reviewer-owned public-boundary probes;
+- the delegation protocol already covered counterexample/experiment behavior sufficiently, so **NO CHANGE NEEDED** there;
+- the Master Architect Guide was not expanded.
 
 ## 5. Workstream B — delegated branch census
 
@@ -146,7 +139,7 @@ The Master Architect reconciles only:
 - frozen/evidence refs;
 - branches with unique unreachable commits;
 - branches named in canonical authority/review records;
-- branches tied to open PRs or the active v2 lineage.
+- branches tied to open PRs or the active IMP-0001 repair/conformance lineage.
 
 Default cleanup preference after provenance is safe:
 
@@ -160,16 +153,17 @@ Do not delete a branch merely because its commits are old.
 
 ## 7. Timing of destructive cleanup
 
-Read-only census may begin immediately after repair-v2 return.
+Read-only census may begin now.
 
 Actual branch deletion should wait until:
 
-- candidate-v2 is frozen;
-- the fresh v2 K4 review has returned;
-- the disposition of PR #7 and repair PR #16 is clear;
+- repair-v3 has returned;
+- candidate-v3 (or any later candidate) has been frozen;
+- its fresh K4 disposition is known;
+- the disposition of PR #7, PR #16 and active repair PR #23 is clear;
 - no branch scheduled for deletion is still required to reproduce the active repair/conformance lineage.
 
-If v2 BLOCKs again, preserve all refs needed for the next repair/review lineage and clean only unrelated branches.
+Because v2 BLOCKed, preserve all refs needed for the v3 repair/review lineage and clean only unrelated branches until that lineage settles.
 
 ## 8. Cleanup executor
 

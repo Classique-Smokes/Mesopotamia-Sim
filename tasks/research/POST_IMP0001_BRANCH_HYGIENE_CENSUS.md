@@ -3,7 +3,7 @@
 **Status:** READY FOR LOW-AUTHORITY DELEGATION
 **Context mode:** PROJECT-CONTEXT
 **Mutation authority:** READ-ONLY. Do not delete, rename, move, force-update, merge, or create branches.
-**Trigger:** May run after repair-v2 return; destructive cleanup remains deferred until candidate-v2 conformance lineage is settled.
+**Trigger:** May run now as read-only work; destructive cleanup remains deferred until the active repair-v3 / candidate-v3 conformance lineage is settled.
 
 ## Objective
 
@@ -64,15 +64,17 @@ Use AMBIGUOUS rather than guessing.
 
 ## Special protected lineage during this census
 
-Do not recommend deletion of refs needed for the active IMP-0001 v2 conformance lineage, including:
+Do not recommend deletion of refs needed for the active IMP-0001 repair/conformance lineage, including:
 
 - `main`;
 - `sfl-v0-slice1-acceptance-v1`;
 - `imp-0001-slice1-conformance-candidate-v1`;
 - `imp-0001-slice1-conformance-candidate-v2`;
-- `implementation/imp-0001-slice1-repair-v2` while PR #16 / v2 review remains active;
-- any active fresh-v2 review return branch;
-- any branch tied to an open PR unless separately reconciled.
+- `implementation/imp-0001-slice1` while PR #7 remains an unreconciled historical draft lineage;
+- `implementation/imp-0001-slice1-repair-v2` while PR #16 remains an unreconciled historical draft lineage;
+- `implementation/imp-0001-slice1-repair-v3` / PR #23 while repair-v3 is active;
+- any later candidate-v3 ref or fresh-v3 review return branch once created;
+- any branch tied to an open PR unless the Master Architect has explicitly reconciled its deletion.
 
 ## Output
 

@@ -1,9 +1,15 @@
-# Research Programs
+# Research / Review Tasks
 
-This directory contains live bounded research commissions.
+This directory contains bounded research, review and maintenance commissions. These tasks do not create simulation authority by themselves.
 
-- `RES-0001_OLD_BABYLONIAN_NIPPUR/` — RETURNS COMPLETE / RECONCILIATION PENDING. First historical research program, focused on individual → relationship → household foundations in Old Babylonian Nippur. Durable A–H returns are indexed at `research/historical/RES-0001/`.
+## Live / ready
 
-Research outputs are advisory. Evidence is promoted into `registers/HISTORICAL_EVIDENCE_REGISTER.md` only after Master Architect reconciliation.
+- `RES-0001_OLD_BABYLONIAN_NIPPUR/` — RETURNS COMPLETE / RECONCILIATION PENDING. Historical research on individual → relationship → household foundations in Old Babylonian Nippur. Durable returns are indexed at `research/historical/RES-0001/`.
+- `POST_IMP0001_BRANCH_HYGIENE_CENSUS.md` — READY FOR LOW-AUTHORITY READ-ONLY DELEGATION. Inventory/classify remote branches; **no deletion authority**.
 
-- `TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/` — ACTIVE. Pre-implementation adversarial review gate over accepted architecture, SFL semantics, verification design, IMP-0001 handoff, and implementation-risk seams.
+## Closed / historical
+
+- `TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/` — **CLOSED / PASS**. Final closure evidence: `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`.
+- `GOV-0001_MASTER_ARCHITECT_RULEBOOK_EVAL/` — CLOSED / PROMOTED under DEC-0009.
+
+Research/review outputs remain advisory until reconciled/promoted through their owning authority process.
