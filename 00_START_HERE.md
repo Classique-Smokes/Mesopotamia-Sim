@@ -26,6 +26,7 @@ Accepted foundation:
 
 - `DEC-0001` — Foundational Social-Fabric Model
 - `DEC-0002` — Master Architect Operating Guide
+- `DEC-0009` — Layered Master Architect Rulebook Refactor
 - `ADR-0001 / DEC-0003` — Active Social-State Representation
 - `ADR-0002 / DEC-0004` — Hierarchical Individual Agency
 - `DEC-0005` — Architecture Development Policy
@@ -40,7 +41,7 @@ Active work:
 - implementation packet **READY FOR DISPATCH:** `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
 - frozen Slice-1 acceptance authority: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md` (`SFL-V0-S1-ACCEPTANCE-v1`)
 - completed verification contract: `plans/verification/SFL_V0/`
-- planned post-TRES governance work: Master Architect rulebook restructuring (not an IMP-0001 dispatch prerequisite)
+- GOV-0001 Master Architect rulebook restructuring: **PROMOTED / DEC-0009 ACCEPTED**
 
 Stage 4 may now begin persistent Slice-1 implementation when intentionally dispatched. Actual dispatch fires the root verification/acceptance scaffolding recorded in `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
 
@@ -49,6 +50,8 @@ Stage 4 may now begin persistent Slice-1 implementation when intentionally dispa
 - Founding intent: `founding/00_MESOPOTAMIA_SIMULATION_PROJECT_SEED.md`
 - Master Architect behavior: `governance/MASTER_ARCHITECT_GUIDE.md`
 - Authority/promotion: `governance/AUTHORITY_AND_DECISION_PROMOTION.md`
+- Delegation/research protocol: `governance/AGENT_DELEGATION_AND_RESEARCH_PROTOCOL.md`
+- Specification→implementation assurance: `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`
 - Architecture development rules: `governance/ARCHITECTURE_DEVELOPMENT_POLICY.md`
 - Drift audit: `governance/REVIEW_AND_DRIFT_AUDIT.md`
 - Decision register: `decisions/DECISION_REGISTER.md`

@@ -1,117 +1,88 @@
 # GOV-0001 — Master Architect Rulebook Refactor State
 
-**Status:** EVALUATION COMPLETE / AWAITING CONSTITUTIONAL DECISION  
-**Authority:** Operational continuity record only; does not amend constitutional governance  
-**Date:** 2026-09-21
+**Status:** CONSTITUTIONALLY APPROVED / PROMOTION VERIFICATION IN PROGRESS  
+**Authority:** Operational continuity record; accepted authority resides in DEC-0009 and the promoted governance artifacts  
+**Date:** 2026-09-22
 
-## 1. Single-reality rule
+## 1. Accepted decision
 
-The accepted constitutional governance on `main` remains authoritative until the rulebook refactor is explicitly approved at the required authority level and promoted.
+DEC-0009 — Layered Master Architect Rulebook Refactor — was explicitly accepted by the Project Director on 2026-09-22.
 
-Do **not** treat branch existence, candidate prose, evaluation reports, reconciliation, or the promotion proposal as accepted governance.
+The evaluated candidate remains the promotion provenance anchor:
 
-## 2. Frozen baseline
+- candidate branch: `governance-rulebook-refactor-candidate`
+- candidate commit: `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`
+- frozen pre-refactor baseline: `governance-rulebook-refactor-baseline` @ `9b78f0d2a5ef5a6248fbbc3c20c041fa10fafd5b`
 
-- ref: `governance-rulebook-refactor-baseline`
-- commit: `9b78f0d2a5ef5a6248fbbc3c20c041fa10fafd5b`
-- accepted Guide blob at baseline: `governance/MASTER_ARCHITECT_GUIDE.md` @ `4e24d1afde04bd1ccae40d89b98facb171a9908b`
+Promotion is staged on:
 
-This is the pre-refactor constitutional baseline.
+- `governance/gov-0001-promotion`
 
-## 3. Sole candidate line
+Do not edit the frozen candidate to match accepted status; accepted status is represented by the promoted artifacts and DEC-0009.
 
-- branch: `governance-rulebook-refactor-candidate`
-- candidate head: `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`
-- relation to baseline: **19 commits ahead / 0 behind**
+## 2. Evaluation result
 
-The candidate contains the complete unpromoted working refactor:
+Fresh-agent returns:
 
-- compact candidate `MASTER_ARCHITECT_GUIDE.md`;
-- new `AGENT_DELEGATION_AND_RESEARCH_PROTOCOL.md`;
-- new `SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`;
-- existing-protocol metadata/ownership clarifications;
-- `governance/checklists/ARTIFACT_FREEZE_CHECKLIST.md`;
-- research/implementation template adjustments;
-- operative commitment inventory;
-- lossless reconciliation;
-- GOV-0001 fresh-agent evaluation packets.
-
-No part of this branch is accepted merely because it passed evaluation.
-
-## 4. Fresh-agent evaluation result
-
-Frozen evaluation baseline:
-
-- `governance-rulebook-refactor-eval-baseline` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`
-
-Returns:
-
-- GOV-0001-A / root routing: **PASS**
-  - branch: `governance-eval/root-routing`
-  - return commit: `f467151ffedd8c822eb6bcfda1d473f81e8bcd77`
-- GOV-0001-B / delegation-research-architecture-drift: **PASS**
-  - branch: `governance-eval/delegation-research`
-  - return commit: `39e9ca11a4e256591719e7e545b760736a7391bc`
+- GOV-0001-A / root routing: **PASS** — `f467151ffedd8c822eb6bcfda1d473f81e8bcd77`
+- GOV-0001-B / delegation-research-architecture-drift: **PASS** — `39e9ca11a4e256591719e7e545b760736a7391bc`
 - GOV-0001-C / assurance-escalation: **PASS**
-  - branch: `governance-eval/assurance-escalation`
   - blind primary-result commit: `6dc653a1c9a946871a65e73b09190f2bd8678657`
   - final return commit: `f9e15e09027bf45bab5fbec4a09932fa0a3d09e2`
 
-Each evaluation branch changed only its assigned return report relative to the frozen candidate.
+Canonical copies of the advisory returns are retained under:
+
+`research/technical/GOV-0001/returns/`
 
 Central reconciliation:
 
 - `research/technical/GOV-0001/FRESH_AGENT_EVALUATION_RECONCILIATION.md`
+- result: **PASS / no candidate repair required / no rerun required**
 
-Reconciled result: **PASS / no candidate repair required / no rerun required**.
+## 3. Promotion integrity
 
-## 5. Refactor control artifacts
+The promoted rulebook content was transplanted onto current `main` state rather than merging the older candidate branch directly.
 
-On the candidate branch:
+Relative to the evaluated candidate:
 
-- `research/technical/TRES-0010/RULEBOOK_REFACTOR_COMMITMENT_INVENTORY.md`
-- `research/technical/TRES-0010/RULEBOOK_REFACTOR_LOSSLESS_RECONCILIATION.md`
-- `tasks/research/GOV-0001_MASTER_ARCHITECT_RULEBOOK_EVAL/00_PROGRAM_README.md`
-- `tasks/research/GOV-0001_MASTER_ARCHITECT_RULEBOOK_EVAL/01_DISPATCH_GUIDE.md`
+- 15 of 19 candidate-controlled files are byte-identical;
+- the four accepted governance artifacts that differed contain only administrative status/authority header changes;
+- no evaluated operative rule was changed.
 
-On `main`:
+The promotion also records:
 
-- `research/technical/GOV-0001/FRESH_AGENT_EVALUATION_RECONCILIATION.md`
-- constitutional promotion proposal: `proposals/GOV-0001_MASTER_ARCHITECT_RULEBOOK_PROMOTION.md`
-- proposed decision record: `decisions/DEC-0009_MASTER_ARCHITECT_RULEBOOK_REFACTOR.md`
+- DEC-0009 acceptance;
+- DEC-0002 amendment/lineage;
+- Decision Register status;
+- root navigation closure;
+- retained evaluation evidence.
 
-The commitment inventory covers G-001..G-100: all baseline Guide commitments plus finalized TRES-0010 durable lessons have explicit destinations. Fresh-agent evaluation and central reconciliation found no material rule loss or routing defect.
+## 4. Final gate
 
-## 6. Controlled next sequence
+Before merge to `main`, verify the repository retrieval path on the promotion branch:
 
-1. Do not create another governance-refactor branch or competing candidate.
-2. Treat `governance-rulebook-refactor-candidate` @ `41cc0a6...` as the sole evaluated candidate.
-3. Obtain explicit Project Director approval or rejection of DEC-0009.
-4. If rejected or returned for changes, keep accepted governance on `main`; repair only the demonstrated issue and re-evaluate affected behavior if the candidate changes substantively.
-5. If approved, promote the evaluated candidate's operative governance content together with required status/decision/navigation integration.
-6. Verify that promotion changed no evaluated operative content except explicitly administrative status/navigation/lineage changes.
-7. Verify fresh-agent retrieval after promotion from:
-   `AGENTS.md → 00_START_HERE.md → plans/CURRENT_PHASE.md → MASTER_ARCHITECT_GUIDE → triggered owner`.
-8. Retain frozen baseline/candidate/evaluation refs as historical evidence; do not keep competing current governance copies on `main`.
+`AGENTS.md → 00_START_HERE.md → plans/CURRENT_PHASE.md → governance/MASTER_ARCHITECT_GUIDE.md → triggered owner`
 
-## 7. Separation from implementation
+The check must confirm that a qualified agent can discover:
 
-`IMP-0001` is already TRES-cleared and remains ready for dispatch.
+- DEC-0009 as accepted constitutional authority;
+- the compact Master Architect Guide;
+- delegation/research routing;
+- specification→implementation assurance routing;
+- existing interpretation/promotion/architecture/escalation/drift owners;
+- current Stage-4 implementation readiness.
 
-GOV-0001 is a separate governance-quality task and is not a Slice-1 implementation prerequisite unless the Project Director changes priority explicitly.
+If this retrieval check fails, repair navigation/state before merge.
 
-## 8. Recovery rule
+## 5. Separation from implementation
 
-If a session times out or a fresh Master Architect resumes this work:
+`IMP-0001` remains TRES-cleared and ready for dispatch. GOV-0001 does not gate Slice-1 implementation.
 
-1. read `AGENTS.md`;
-2. read `00_START_HERE.md`;
-3. read `plans/CURRENT_PHASE.md`;
-4. read this file;
-5. read the fresh-agent evaluation reconciliation;
-6. inspect DEC-0009 status;
-7. do not infer governance state from chat history or branch count.
+## 6. Recovery rule
 
-Until explicit promotion, the intended reality is:
+Until the promotion branch is merged:
 
-**accepted `main` governance + one frozen evaluated candidate + retained evaluation evidence + a non-authoritative promotion proposal.**
+1. accepted pre-promotion governance remains on `main`;
+2. DEC-0009 is accepted and the authorized promotion is staged on `governance/gov-0001-promotion`;
+3. do not create a competing governance candidate;
+4. use this record plus `FRESH_AGENT_EVALUATION_RECONCILIATION.md` to resume the promotion.

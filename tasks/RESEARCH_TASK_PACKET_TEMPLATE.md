@@ -54,6 +54,20 @@ Unless this task is explicitly a focused comparison of named alternatives, do **
 
 [What the researcher must not attempt to decide, redesign, or implement.]
 
+### Optional consequential independent/adversarial mode
+
+Use this block only when independence, replication, or moving-baseline control materially affects the task. Omit it for ordinary research.
+
+- **Frozen baseline/ref:** [if needed]
+- **Permitted source set / source restrictions:** [if needed]
+- **Prior/sibling material the researcher must not read before initial return:** [if needed]
+- **Dedicated branch/workspace and permitted mutation:** [if needed]
+- **Required provenance metadata:** [task/ref/model/tools/external sources/contamination disclosure as useful]
+- **Minimum falsification/adversarial attempts:** [if appropriate]
+- **Replication/sentinel/prosecution/defense role:** [if applicable]
+
+When blindness matters, the packet itself must not leak prior finding labels or preferred remedies.
+
 ## 8. Required output
 
 Return a compact report containing:

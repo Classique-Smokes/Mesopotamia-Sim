@@ -26,6 +26,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - IMP-0001/task-template/C# handoff hardening completed; deferred later-slice gaps durably registered.
 - TRES-0010 final closure audit passed 34/34 checks; TRES-0010 CLOSED / PASS; IMP-0001 cleared for dispatch.
 - GOV-0001 fresh-agent evaluations A/B/C returned **PASS** from the frozen candidate; central reconciliation found no material rule loss, owner conflict, routing defect, or repair requirement.
+- DEC-0009 explicitly accepted the layered Master Architect rulebook refactor; promotion content and constitutional lineage are staged on the promotion branch for final retrieval verification.
 
 ## Active
 
@@ -46,16 +47,17 @@ TRES-0010 closure evidence:
 
 - `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`
 
-The Master Architect rulebook restructuring is active as separate post-TRES governance work. It is **not** a semantic/verification prerequisite for IMP-0001 dispatch.
+The Master Architect rulebook restructuring has been constitutionally approved under DEC-0009 and is in final promotion verification. It is **not** a semantic/verification prerequisite for IMP-0001 dispatch.
 
 Governance-refactor continuity:
 
-- accepted governance remains on `main`;
-- sole evaluated candidate: `governance-rulebook-refactor-candidate` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`;
+- accepted pre-promotion governance remains on `main` until the verified promotion branch is merged;
+- evaluated candidate: `governance-rulebook-refactor-candidate` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`;
+- promotion branch: `governance/gov-0001-promotion`;
 - frozen pre-refactor baseline: `governance-rulebook-refactor-baseline` @ `9b78f0d2a5ef5a6248fbbc3c20c041fa10fafd5b`;
 - GOV-0001 A/B/C: **PASS / PASS / PASS**;
 - central reconciliation: `research/technical/GOV-0001/FRESH_AGENT_EVALUATION_RECONCILIATION.md`;
-- constitutional decision now pending: `DEC-0009` — Layered Master Architect Rulebook Refactor;
+- constitutional decision: `DEC-0009` — **ACCEPTED** Layered Master Architect Rulebook Refactor;
 - promotion proposal: `proposals/GOV-0001_MASTER_ARCHITECT_RULEBOOK_PROMOTION.md`;
 - state/recovery map: `research/technical/GOV-0001/README.md`.
 
@@ -98,9 +100,8 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Obtain the explicit Project Director decision on `DEC-0009`.
-2. If DEC-0009 is approved, promote the evaluated GOV-0001 candidate with status/decision/navigation integration and run the required post-promotion fresh-retrieval verification.
-3. When implementation is intentionally begun, dispatch `IMP-0001` against `SFL-V0-S1-ACCEPTANCE-v1`; SCF-001 and the remaining executable/CI portion of SCF-002 fire at dispatch.
-4. Do not treat the governance refactor as a coding gate: IMP-0001 is already TRES-cleared and may be dispatched independently if project priority changes.
+1. Complete GOV-0001 promotion retrieval verification and merge the verified promotion branch to `main`.
+2. When implementation is intentionally begun, dispatch `IMP-0001` against `SFL-V0-S1-ACCEPTANCE-v1`; SCF-001 and the remaining executable/CI portion of SCF-002 fire at dispatch.
+3. Do not treat the governance refactor as a coding gate: IMP-0001 is already TRES-cleared and may be dispatched independently.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.

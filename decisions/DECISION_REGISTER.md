@@ -24,7 +24,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0006 | Progressive Derived-State Specialization | ACCEPTED | Architectural | 2026-09-19 | 2026-09-19 | `../architecture/accepted/ADR-0003_PROGRESSIVE_DERIVED_STATE_SPECIALIZATION.md` |
 | DEC-0007 | Reference Simulation Kernel | ACCEPTED | Architectural | 2026-09-20 | 2026-09-20 | `DEC-0007_REFERENCE_SIMULATION_KERNEL.md` |
 | DEC-0008 | Host Runtime | ACCEPTED | Architectural | 2026-09-21 | 2026-09-21 | `DEC-0008_HOST_RUNTIME.md` |
-| DEC-0009 | Layered Master Architect Rulebook Refactor | PROPOSED | Constitutional | 2026-09-21 | — | `DEC-0009_MASTER_ARCHITECT_RULEBOOK_REFACTOR.md` |
+| DEC-0009 | Layered Master Architect Rulebook Refactor | ACCEPTED | Constitutional | 2026-09-21 | 2026-09-22 | `DEC-0009_MASTER_ARCHITECT_RULEBOOK_REFACTOR.md` |
 
 ## Accepted summaries
 
@@ -36,6 +36,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 - **DEC-0006:** derived state uses the simplest sufficient maintenance strategy per subsystem and may graduate behind stable semantic boundaries when measured need justifies it.
 - **DEC-0007:** the first laboratory uses a single-process deterministic reference kernel with proposal/commit mutation, stable cycle-state publication after reaction closure, explicit process state, simulation-owned randomness boundaries, semantic history, and complete continuation checkpoints.
 - **DEC-0008:** the first laboratory uses C# 14 / .NET 10 LTS as its host runtime.
+- **DEC-0009:** the Master Architect rulebook uses a compact constitutional core that routes consequence-triggered work to single-owner protocols, templates/checklists, and mechanical enforcement where mature.
 
 ## Entry template
 

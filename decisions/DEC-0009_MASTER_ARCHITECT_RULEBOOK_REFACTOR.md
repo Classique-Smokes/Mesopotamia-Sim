@@ -1,8 +1,10 @@
 # DEC-0009 — Layered Master Architect Rulebook Refactor
 
-**Status:** PROPOSED  
+**Status:** ACCEPTED  
 **Authority:** Constitutional  
 **Opened:** 2026-09-21  
+**Resolved:** 2026-09-22  
+**Accepted by:** Project Director  
 **Approver required:** Project Director  
 **Candidate:** `governance-rulebook-refactor-candidate` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`
 
@@ -10,7 +12,7 @@
 
 Should the accepted Master Architect operating doctrine be reorganized from one increasingly large always-loaded Guide into a smaller constitutional core with explicit routing to single-owner work-mode protocols, templates/checklists, and mechanical enforcement where mature?
 
-## Proposed decision
+## Decision
 
 Adopt the evaluated GOV-0001 candidate as the constitutional Master Architect rulebook architecture.
 
@@ -29,9 +31,8 @@ Preserve DEC-0002's role/authority intent while replacing the current monolithic
 - central synthesis: `research/technical/GOV-0001/FRESH_AGENT_EVALUATION_RECONCILIATION.md`
 - proposal: `../proposals/GOV-0001_MASTER_ARCHITECT_RULEBOOK_PROMOTION.md`
 
-## Proposed binding consequences
+## Binding consequences
 
-If accepted:
 
 1. `governance/MASTER_ARCHITECT_GUIDE.md` remains constitutional but becomes the compact evaluated core.
 2. Detailed recurring delegation/research procedure is single-owned by `AGENT_DELEGATION_AND_RESEARCH_PROTOCOL.md`.
@@ -56,12 +57,12 @@ This decision does not alter:
 
 ## Reversibility / lineage
 
-The pre-refactor constitutional baseline and evaluated candidate are frozen by Git refs/SHAs. This decision, if accepted, amends the operating architecture established by DEC-0002 while preserving DEC-0002's underlying role split and intent.
+The pre-refactor constitutional baseline and evaluated candidate are frozen by Git refs/SHAs. This decision amends the operating architecture established by DEC-0002 while preserving DEC-0002's underlying role split and intent.
 
 It may later be amended or superseded through the same constitutional authority process.
 
 ## Approval state
 
-**Awaiting explicit Project Director decision.**
+**ACCEPTED by explicit Project Director approval on 2026-09-22.**
 
-Silence, continued work, or lack of objection does not accept this proposal.
+Promotion is implemented through the evaluated GOV-0001 candidate and the associated canonical/navigation updates.

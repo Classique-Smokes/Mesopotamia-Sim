@@ -1,7 +1,7 @@
 # GOV-0001 — Master Architect Rulebook Constitutional Promotion Proposal
 
-**Status:** PROPOSED / NON-AUTHORITATIVE UNTIL EXPLICITLY APPROVED  
-**Authority required:** Constitutional — Project Director  
+**Status:** APPROVED / PROMOTION BASIS — non-authoritative supporting note  
+**Decision:** DEC-0009 accepted by the Project Director on 2026-09-22  
 **Date:** 2026-09-21  
 **Decision record:** `DEC-0009_MASTER_ARCHITECT_RULEBOOK_REFACTOR.md`  
 **Evaluated candidate:** `governance-rulebook-refactor-candidate` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`
@@ -179,4 +179,4 @@ An affirmative decision should explicitly approve:
 
 > **DEC-0009 — Layered Master Architect Rulebook Refactor**, promoting the evaluated candidate at `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`.
 
-Until that approval exists, accepted governance on `main` remains unchanged.
+DEC-0009 was explicitly approved on 2026-09-22. This proposal remains supporting rationale; authority resides in the accepted decision and promoted governance artifacts.

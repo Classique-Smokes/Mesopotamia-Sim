@@ -1,5 +1,13 @@
 # Authority and Decision Promotion
 
+**Status / authority:** ACCEPTED operating protocol; authority/promotion owner under the Working Constitution and Master Architect Guide  
+**Purpose:** Define how non-authoritative thought becomes accepted, losslessly preserved, discoverable project state.  
+**Load when:** opening/proposing/accepting/superseding consequential decisions or promoting approved material into canonical authority.  
+**Do not load merely because:** ordinary working notes, research, or implementation progress are being recorded without authority change.  
+**Expected output:** correct authority classification, explicit acceptance where required, semantic-preservation reconciliation, and navigation closure.  
+**Escalation / stop:** do not promote material lacking the required approving authority or whose operative commitments cannot be reconciled losslessly.
+
+
 **Purpose:** Define how project thought becomes authoritative project state.
 
 ## Authority levels
