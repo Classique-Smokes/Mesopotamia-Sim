@@ -2,10 +2,12 @@
 
 **Task ID:** IMP-0001  
 **Commissioned by:** Master Architect  
-**Status:** IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE  
+**Status:** CANDIDATE-v1 BLOCKED / REPAIR-v2 ACTIVE  
 **Dispatched:** 2026-09-22  
 **Implementation branch:** `implementation/imp-0001-slice1`  
-**Frozen conformance candidate:** `imp-0001-slice1-conformance-candidate-v1` @ `7e11dab7697121eb0dbb169ba46210d81b80586e`  
+**Frozen failed candidate:** `imp-0001-slice1-conformance-candidate-v1` @ `7e11dab7697121eb0dbb169ba46210d81b80586e`  
+**Active repair branch:** `implementation/imp-0001-slice1-repair-v2`  
+**Repair packet:** `tasks/implementation/IMP-0001_BLOCK_REPAIR_PACKET.md`  
 **Context mode:** PROJECT-CONTEXT
 
 ## Dispatch gate — released
