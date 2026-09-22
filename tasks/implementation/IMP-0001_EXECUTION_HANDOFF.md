@@ -1,3 +1,23 @@
+# IMP-0001 — Repair-v3 execution handoff
+
+**LOCAL IMPLEMENTATION EVIDENCE COMPLETE / REMOTE RECEIPT REQUIRED / FRESH K4 REQUIRED**
+
+Branch: `implementation/imp-0001-slice1-repair-v3`; draft [PR #23](https://github.com/Classique-Smokes/Mesopotamia-Sim/pull/23).
+
+Base frozen candidate-v2: `ba16829e240950f1f3c648107cf3b8b36f996971`. Current-authority retrieval: origin/main `34989ee91d293971dcecf9837c76ddc3ad751424`. Start with current main's entry instructions and v3 packet; this repair branch does not merge unrelated governance updates.
+
+Read [the v3 implementation report](IMP-0001_IMPLEMENTATION_REPORT.md) for B1/B2 mechanisms, Director ruling on future faults, interaction matrix, red/green evidence, authority identities and all 167 rows.
+
+B1 projects full future input batches through maintenance without authoritative mutation or premature faults. B2 marks only witnessed consequential order participation, retaining actual stable-ID revalidation and atomic commit. Private transaction evaluation is shared with execution; independent oracles are separate.
+
+Verified source checkpoint: `6b05b3c465925c06e92a6e696013cb504bb1f46c`; source/test/toolchain fingerprint `8c964599ccaf360bd0f389367e58745c3c02c0dd0f3b414d3932cdd85cc6a18e`. Local canonical commands pass: 62 scenarios / 1948 audited worlds / 127 coder-owned REQUIRED. Frozen acceptance remains byte-identical; S1-GLOBAL-CONFORMANCE is not satisfied by this report.
+
+Final delivery must include the actual pushed head, its PR CI run/checkout and verified artifact. That receipt is generated after publication; do not infer it from historical v2 receipts below. If delivery is unavailable, the task report must state the specific access failure and retain the local commits.
+
+After remote verification: **IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE**. Master Architect reconciles/freezes candidate-v3; another reviewer authored neither v2 nor v3 must perform K4. Keep PR #23 draft/unmerged. Preserve candidate-v1/v2, PR #7/#16, frozen authority and later-slice boundaries.
+
+## Historical candidate-v2 handoff (retained verbatim)
+
 # IMP-0001 — Repair-v2 execution handoff
 
 **IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE**

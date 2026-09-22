@@ -1,3 +1,286 @@
+# IMP-0001 — Repair-v3 implementation report
+
+**Implementation evidence: complete locally; remote publication/CI receipt is a separate delivery gate.**
+
+This is the repair author's report, not an independent K4 review. The candidate-v2 BLOCK remains the historical conformance disposition. Even after publication, the terminal implementation status is **IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE**, never VERIFIED COMPLETE without a fresh independent PASS.
+
+## 1. Identity and authority
+
+- Repair branch: `implementation/imp-0001-slice1-repair-v3`; dedicated draft PR [#23](https://github.com/Classique-Smokes/Mesopotamia-Sim/pull/23).
+- Frozen candidate-v2 / starting repair head: `ba16829e240950f1f3c648107cf3b8b36f996971`.
+- Preserved candidate-v1: `7e11dab7697121eb0dbb169ba46210d81b80586e`.
+- Instructions retrieved from freshly fetched main: `34989ee91d293971dcecf9837c76ddc3ad751424`. Main's administrative commits were not merged into this repair line.
+- Source/test verification checkpoint: `6b05b3c465925c06e92a6e696013cb504bb1f46c`. Later report-only commits do not change the source fingerprint below. The exact final pushed head, actual CI checkout SHA, run and artifact are recorded in the delivery receipt after remote verification.
+- Frozen manifest: `SFL-V0-S1-ACCEPTANCE-v1`, blob `efd2d0aab4579a78a3e7a0fc8d027c15f2f5e766`, freeze `55377cc34b8bc3ccbf9cdf5029e9791dae965987`.
+- Census independently checked: 167 unique rows, 128 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED.
+- Authority: [v3 packet](https://github.com/Classique-Smokes/Mesopotamia-Sim/blob/34989ee91d293971dcecf9837c76ddc3ad751424/tasks/implementation/IMP-0001_V3_REPAIR_PACKET.md), [accepted BLOCK reconciliation](https://github.com/Classique-Smokes/Mesopotamia-Sim/blob/34989ee91d293971dcecf9837c76ddc3ad751424/research/technical/IMP-0001/IMP-0001_CANDIDATE_V2_BLOCK_RECONCILIATION.md), accepted SPEC §§9.2/9.4/9.5, ADRs 0001–0005, and frozen verification sources.
+- Regression reference: [full candidate-v2 review](https://github.com/Classique-Smokes/Mesopotamia-Sim/blob/34989ee91d293971dcecf9837c76ddc3ad751424/research/technical/IMP-0001/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V2.md). Its B1/B2 public-API counterexamples were reproduced; its PASS claims were not substituted for regression execution.
+
+Source fingerprint: `8c964599ccaf360bd0f389367e58745c3c02c0dd0f3b414d3932cdd85cc6a18e`. Algorithm: sort tracked production/test/toolchain/workflow paths ordinally; hash each LF-normalized UTF-8 file with SHA-256; hash the concatenation of path, NUL, that hexadecimal hash and LF. Full per-file identities and authority blobs accompany the delivery evidence.
+
+## 2. B1 — scheduled recovery at a decision boundary
+
+The old existence check for an individual positive input has been replaced by a detached material projection. It processes complete input batches by cycle/input ID, applies signed grain arithmetic, then mandatory consumption. Recovery exists only when a producer reaches a later decision boundary without NeedsGrain. Until that boundary all grain remains zero, so input-free gaps can be skipped exactly. An input at long.MaxValue is processed without iterating through empty cycles or incrementing past that cycle.
+
+The projection creates no events, relations, knowledge, reactions, voluntary proposals or authoritative state. Small private ApplyGrainInput/ConsumeGrain functions share arithmetic with actual maintenance; acceptance expectations do not call them. An earlier valid recovery is sufficient even if a later cycle becomes blocked again: that earlier boundary provides a genuine opportunity to act.
+
+### Director ruling on future faults
+
+During implementation the future-invalid-debit/overflow case was escalated because blindly executing projection arithmetic would move a scheduled exception into the current cycle. On 2026-09-22 the Director explicitly ruled in this task: “Future projection used for MaterialDeadlock is non-authoritative and non-executing. It must preserve ordinary execution timing.” A scheduled input fault before any resolving boundary fails to demonstrate recovery; actual execution faults only at its offending cycle.
+
+The diagnostic therefore catches only the existing debit/checked-overflow failures from projected inputs and returns no demonstrated recovery. Actual Maintenance still throws those errors at the scheduled cycle. Public regressions assert a successful, deadlocked cycle 1, no premature fault, the exact exception class in cycle 2, and unchanged stable publication after that failure. This ruling is recorded here as a Director instruction; no frozen SPEC/ADR/manifest bytes were edited.
+
+## 3. B2 — witnessed order participation
+
+Potential dependencies now partition the accepted proposals into components; they do not directly assign history markers. For each component the analyzer visits reachable resolution prefixes, compares both adjacent orders of each remaining pair, and records participation only when their terminal outcome/reason or consequential state differs. Actual commits continue in stable ProposalId order with immediate revalidation.
+
+The real commit path and private projection share EvaluateTransaction and ResolutionLoss. Evaluation copies its input state and returns validated effects; only real Commit installs that state and records events, attitude causes and participant knowledge. Projection origins are bound to proposal identity and never consume live identifier sequences.
+
+Comparison retains grain/need, residences, marriage parties/origins, debts and favours including retired records, and committed residence-transition membership. Existing relation identity is retained. Newly allocated relation IDs are normalized by kind and creating proposal, so swapping independent creations does not create a false conflict. Intermediate material balances and incidental event numbers are not compared as consequential differences. Prior terminal outcomes need not enter the prefix memo key: response/initiative selection is already closed, their subsequent influence is captured in retained state, and each exchanged proposal's own result is compared directly.
+
+Every complete order is connected by adjacent exchanges. A suffix cannot distinguish prefixes with the same retained semantic state; a differing pair outcome or relation origin is itself consequential. This establishes the reference analysis without inventing a social priority or using nominal totals as a proxy for feasible effects. Memoization and independent components remove redundant work; there is no random sample or truncation limit. Worst-case search remains combinatorial within one connected accepted-proposal component. This is a bounded Slice-1 reference implementation, not a claim of production-scale optimization; the complete current acceptance run remains practical.
+
+### Interaction audit
+
+| Interaction | Potential component boundary | Consequential discriminator |
+|---|---|---|
+| Residence owner/mover dependencies and same-person transitions | Existing owner/mover relation | Actual destination revalidation, one-transition set, final home and loser reason |
+| Marriage | Shared participant | Eligibility and committed marriage parties/origin |
+| Call/cancellation/creation, including conditional reciprocal favour | Shared claim or directed favour slot | Revalidation, retirement, creation and creator provenance |
+| Repayments against one debt | Shared debtor material state | Actual remaining amount, indivisible quantities, per-payment reserve and outcome |
+| All nine grain transfer shapes; Farm and called Farm | Shared read/write material participants | Checked debit/credit, action-specific reserve, nested payload validity, intersecting relation constraints |
+| Independent or commuting effects | Separate component or equal projected exchange | No marker; normalized independent allocation is not semantic priority |
+
+### Constraint-intersection matrix
+
+Each row runs Farm, Gift, Loan and reciprocal-help credits of 4, all 24 orders, and fixed-ID reversed storage. Initial claims are created by public bargains/loans; declared cycle-3 inputs establish the stock boundary.
+
+| Debt | Decision stock | Three spender amounts | Spender forms | Marked spenders | Enabler marked |
+|---|---|---|---|---|---|
+| 5 | 6 | 2,2,2 | Three called repayments | All three | No |
+| 8 | 6 | 2,2,2 | Three called repayments | All three | Yes |
+| 5 | 4 | 2,2,2 | Three called repayments | All three | Yes |
+| 5 | 7 | 1,2,3 | Three called repayments | All three | No |
+| 5 | 6 | 1,2,3 | Three called repayments | All three | Yes |
+| 3 | 6 | 2,2,2 | Two called repayments + ordinary help | Repayments only | No |
+| 3 | 4 | 2,2,2 | Two called repayments + ordinary help | All three | Yes |
+| 8 | 10 | 2,2,2 | Three called repayments | None | No |
+
+The exact review scenario additionally asserts two committed repayments, final debt 1, final debtor stock 6, last caller invalidated with RepaymentExceedsRemaining, three marked callers, unmarked committed Farm, and exact favour retirement across 24 orders × two storage orders.
+
+## 4. Verification and preservation
+
+Baseline regression commit f3e9ae61e6565c1eb818ecc29997ff01f5e77625 changed tests only. Against unchanged v2 production both new cases failed with the expected boolean mismatches: cancelling future input suppressed deadlock; commuting Farm carried fallback. The B1-only run removed the first failure. Subsequent B2 and full intersection runs passed. Logs and generated case evidence retain those red/green stages.
+
+Final local canonical sequence, SDK 10.0.401:
+
+| Command | Exit |
+|---|---|
+| `dotnet restore Mesopotamia.Sim.slnx` | 0 |
+| `dotnet format Mesopotamia.Sim.slnx --verify-no-changes --no-restore` | 0 |
+| `dotnet build Mesopotamia.Sim.slnx --configuration Release --no-restore` | 0 |
+| `dotnet test Mesopotamia.Sim.slnx --configuration Release --no-build --no-restore` | 0 |
+
+62 named scenarios, 1948 audited worlds; all 8 test methods pass, none skipped. All 127 coder-owned REQUIRED rows pass. The remaining REQUIRED row is S1-GLOBAL-CONFORMANCE, awaiting a fresh reviewer. Generated CandidateReady means coder-owned evidence only; FullFrozenCompletionGate remains false.
+
+| New scenario | Audited worlds | Result |
+|---|---|---|
+| RepairV3FutureFaultTiming | 2 | PASS |
+| RepairV3DistantInputBoundary | 2 | PASS |
+| RepairV3FutureMaterialRecovery | 16 | PASS |
+| RepairV3DebtLimitedCommutingFarm | 48 | PASS |
+| RepairV3IntersectingCapacities | 1536 | PASS |
+
+Existing F1/F2/F3, D1–D5, response/scoring, initiative, determinism, fixture and fault-control cases were retained and rerun. The independent InvariantOracle source is unchanged. Its dependency audit now also forbids the new projection/transaction/material helper names. Scenario expectations use explicit quantities, independently transcribed revalidation arithmetic, expected flags and recorded provenance; they never call production classifiers as an oracle.
+
+No test/import/mutation seam was added to production. No authority, scoring profile, CI trigger, project dependency or public schema changed. SCF-002 remains active. The original archived v1 report compression issue remains outside this repair; historical provenance below is preserved.
+
+Local restore initially encountered a host TLS failure fetching NuGet vulnerability metadata. The existing session-local HTTP cache was refreshed with the authentic current NuGet service/vulnerability responses through Node HTTPS. Restore then passed with auditing and warnings-as-errors enabled; no package/quality configuration was relaxed.
+
+Future invalid-input cases are focused semantic timing controls, not injected mutants or credited crashes. Existing mutant classifications and explicit fault routes remain separately reported in fault-controls.json. No DEFERRED/N-A/UNEXERCISED item was relabelled.
+
+## 5. Publication and independent return
+
+Publish normally to the existing repair branch and retain draft PR #23. The existing pull_request workflow supplies canonical CI; no new trigger is necessary. The delivery receipt must identify the final branch head, CI run, actual checkout SHA (including a PR merge SHA if applicable), artifact ID/digest and local/remote semantic comparison. A local green run alone is not a remote delivery claim.
+
+Master Architect reconciliation and candidate-v3 freezing remain outstanding, followed by K4 from a reviewer who authored neither repair-v2 nor repair-v3. This author cannot award that independent PASS. No candidate ref was moved and no historical PR was merged or modified.
+
+## 6. Current all-167-row evidence ledger
+
+| AcceptanceId | Frozen classification | Evidence state | Executable/audit references |
+|---|---|---|---|
+| S1-090-A | REQUIRED | PASS | ConsumptionAndFarm |
+| S1-090-B | REQUIRED | PASS | ConsumptionAndFarm |
+| S1-090-C | REQUIRED | PASS | ConsumptionAndFarm |
+| S1-090-D | REQUIRED | PASS | GiftHelpMeaningsAndNeedClearing |
+| S1-090-E | REQUIRED | PASS | ConsumptionAndFarm |
+| S1-091-GIFT | REQUIRED | PASS | GiftHelpMeaningsAndNeedClearing |
+| S1-091-HELP | REQUIRED | PASS | GiftHelpMeaningsAndNeedClearing |
+| S1-091-LOAN-OFFER | REQUIRED | PASS | LoanRoutesAndRepaymentHistory |
+| S1-091-LOAN-REQUEST | REQUIRED | PASS | LoanRoutesAndRepaymentHistory |
+| S1-091-BFF-POS | REQUIRED | PASS | ExplicitBargainAndReciprocalHelp |
+| S1-091-RMRH | REQUIRED | PASS | ExplicitBargainAndReciprocalHelp |
+| S1-091-MEANING-SEPARATION | REQUIRED | PASS | DistinctTransferMeanings |
+| S1-092-PARTIAL | REQUIRED | PASS | LoanRoutesAndRepaymentHistory, RepairAggregateDebtCapacity, RepairV3DebtLimitedCommutingFarm, RepairV3IntersectingCapacities |
+| S1-092-AMOUNT-VALIDITY | REQUIRED | PASS | RepaymentAmountAndReserve |
+| S1-092-RESERVE | REQUIRED | PASS | RepaymentAmountAndReserve, RepairTransferShapesAndReserve, RepairV3DebtLimitedCommutingFarm, RepairV3IntersectingCapacities |
+| S1-092-FULL | REQUIRED | PASS | LoanRoutesAndRepaymentHistory |
+| S1-092-DUE | REQUIRED | PASS | DebtDueAfterThirdFullCycle |
+| S1-093-BFF-POS | REQUIRED | PASS | ExplicitBargainAndReciprocalHelp |
+| S1-093-RECIP-74 | REQUIRED | PASS | ExplicitBargainAndReciprocalHelp |
+| S1-093-RECIP-75 | REQUIRED | PASS | ExplicitBargainAndReciprocalHelp |
+| S1-093-RECIP-76 | REQUIRED | PASS | ExplicitBargainAndReciprocalHelp |
+| S1-093-KIN-GATE | REQUIRED | PASS | ExplicitBargainAndReciprocalHelp |
+| S1-093-GIFT-CONTROL | REQUIRED | PASS | GiftHelpMeaningsAndNeedClearing |
+| S1-093-BFF-FULL | REQUIRED | PASS | FullFavourSlotDistinguishesBargainFromHelp |
+| S1-093-BFF-RACE | REQUIRED | PASS | BargainCapacityRace, RepairFavourCreationProvenance |
+| S1-093-RMRH-FULL | REQUIRED | PASS | FullFavourSlotDistinguishesBargainFromHelp, RepairFavourCreationProvenance |
+| S1-094-FARM-CALLABLE | REQUIRED | PASS | CalledFarmSuccessRefusalAndInability, RepairCalledPayloadPrivateFeasibility |
+| S1-094-REPAY-CALLABLE | REQUIRED | PASS | CalledRepaymentThirdPartyAndInvalidation, RepairFavourRetirementDependencies, RepairObservedDebtBoundary, RepairCalledPayloadPrivateFeasibility |
+| S1-094-PERSONAL-COEXIST | REQUIRED | PASS | CalledFarmPersonalCoexistence |
+| S1-094-NONCALLABLE-MATRIX | REQUIRED | PASS | CompleteCallFavorPayloadMatrix |
+| S1-094-NONPAYLOAD-MATRIX | REQUIRED | PASS | CompleteCallFavorPayloadMatrix |
+| S1-094-UNABLE | REQUIRED | PASS | CalledFarmSuccessRefusalAndInability |
+| S1-094-DECLINE | REQUIRED | PASS | CalledFarmSuccessRefusalAndInability |
+| S1-094-INVALIDATED | REQUIRED | PASS | CalledRepaymentThirdPartyAndInvalidation, RepairAggregateDebtCapacity, RepairTransferShapesAndReserve, RepairV3DebtLimitedCommutingFarm, RepairV3IntersectingCapacities |
+| S1-094-SUCCESS | REQUIRED | PASS | CalledFarmSuccessRefusalAndInability |
+| S1-094-NESTED-GUARD | REQUIRED | PASS | CalledFarmSuccessRefusalAndInability |
+| S1-094-RECIP-CANCEL | REQUIRED | PASS | ReciprocalCancellation, RepairFavourRetirementDependencies |
+| S1-095-POS | REQUIRED | PASS | DirectMarriageBoundaries |
+| S1-095-74 | REQUIRED | PASS | DirectMarriageBoundaries |
+| S1-095-KIN | REQUIRED | PASS | DirectMarriageBoundaries |
+| S1-095-LIFETIME | REQUIRED | PASS | MarriageDeclineAndLifetime |
+| S1-095-NO-RESIDENCE | REQUIRED | PASS | DirectMarriageBoundaries |
+| S1-096-MOVE | REQUIRED | PASS | ResidenceMoveInviteAndConflict |
+| S1-096-INVITE | REQUIRED | PASS | ResidenceMoveInviteAndConflict |
+| S1-096-COMPETE | REQUIRED | PASS | ResidenceMoveInviteAndConflict |
+| S1-096-NO-HH | REQUIRED | PASS | ResidenceMoveInviteAndConflict |
+| S1-096-MARRIAGE-CONTROL | REQUIRED | PASS | DirectMarriageBoundaries |
+| S1-097-EVENTS | REQUIRED | PASS | FixedAttitudeEventMatrix, RepairNeedyReciprocalRequestRefusal, RepairMissingMandatoryAttitudeCause |
+| S1-097-SAT | REQUIRED | PASS | DirectAttitudeCompositionAndPermutation |
+| S1-097-DIRECT-BATCH-POS | REQUIRED | PASS | DirectAttitudeCompositionAndPermutation |
+| S1-097-DIRECT-BATCH-NEG | REQUIRED | PASS | DirectAttitudeCompositionAndPermutation |
+| S1-097-DECAY | REQUIRED | PASS | DecayBoundaries |
+| S1-098-CORE | REQUIRED | PASS | SharedSnapshotScarceGrain |
+| S1-098-CALLFAVOR-INIT | REQUIRED | PASS | CalledFarmSuccessRefusalAndInability |
+| S1-098-COMMUNICATION | DEFERRED | DEFERRED |  |
+| S1-099-KIN | REQUIRED | PASS | GeneratedActionVocabularyAndRepaymentTarget, ExactKinScoringAndFullTrace |
+| S1-099-CORES | REQUIRED | PASS | CoResidenceMotivationWithoutCompulsion, RepairExplicitSexAndResidenceObservations |
+| S1-100 | REQUIRED | PASS | ResponseAutonomyAndBoundedFailureKnowledge |
+| S1-101 | REQUIRED | PASS | ResponseAutonomyAndBoundedFailureKnowledge |
+| S1-102 | REQUIRED | PASS | CalledFarmSuccessRefusalAndInability |
+| S1-103-GRAIN | REQUIRED | PASS | SharedSnapshotScarceGrain |
+| S1-103-RESIDENCE | REQUIRED | PASS | ResidenceMoveInviteAndConflict |
+| S1-104 | DEFERRED | DEFERRED |  |
+| S1-105 | REQUIRED | PASS | PersonalResidenceAndIncomingResponse |
+| S1-070 | REQUIRED | PASS | ResponseAutonomyAndBoundedFailureKnowledge |
+| S1-071 | REQUIRED | PASS | SharedSnapshotScarceGrain |
+| S1-072 | DEFERRED | DEFERRED |  |
+| S1-073 | REQUIRED | PASS | ResponseAutonomyAndBoundedFailureKnowledge |
+| S1-074-IDEMP | REQUIRED | PASS | DuplicateReactionAndPrematureClosure |
+| S1-074-DIRECT-BATCH | REQUIRED | PASS | DirectAttitudeCompositionAndPermutation |
+| S1-075 | DEFERRED | DEFERRED |  |
+| S1-076 | DEFERRED | DEFERRED |  |
+| S1-080 | REQUIRED | PASS | MaterialDeadlockAndNegativeControls, RepairV3FutureFaultTiming, RepairV3DistantInputBoundary, RepairV3FutureMaterialRecovery |
+| S1-081 | REQUIRED | PASS | StableFallbackSensitivityAndSemanticAsymmetry, RepairResidenceDestinationDependency, RepairCallCancellationDependency, RepairResidenceReadWriteMatrix, RepairMarriageCapacityPermutation, RepairFavourCreationProvenance, RepairFavourRetirementDependencies, RepairAggregateDebtCapacity, RepairAggregateGrainAndEnablers, RepairTransferShapesAndReserve, RepairCommutingAndAsymmetricControls, RepairV3DebtLimitedCommutingFarm, RepairV3IntersectingCapacities |
+| S1-082 | DEFERRED | DEFERRED |  |
+| S1-083 | DEFERRED | DEFERRED |  |
+| S1-084 | REQUIRED | PASS | NoDerivedAuthorityStructuralAudit |
+| S1-085 | REQUIRED | PASS | ReplayStorageInputObserverAndAttributePairs, RepairPersonalInputIsolationAndTrace |
+| S1-086 | REQUIRED | PASS | GeneratedActionVocabularyAndRepaymentTarget, ExactKinScoringAndFullTrace, RepairHiddenCounterpartyGrain, RepairHiddenWorldFacts, RepairExplicitSexAndResidenceObservations, RepairObservedDebtBoundary, RepairCalledPayloadPrivateFeasibility, RepairPersonalInputIsolationAndTrace |
+| S1-087 | DEFERRED | DEFERRED |  |
+| S1-BND-ATT-STRONGLIKE | REQUIRED | PASS | DirectMarriageBoundaries |
+| S1-BND-ATT-STRONGDISLIKE | N-A | N-A |  |
+| S1-BND-ATT-DISLIKE-NEUTRAL | N-A | N-A |  |
+| S1-BND-ATT-NEUTRAL-LIKE | N-A | N-A |  |
+| S1-BND-ATT-SAT | REQUIRED | PASS | DirectAttitudeCompositionAndPermutation |
+| S1-BND-ATT-MIXED | REQUIRED | PASS | DirectAttitudeCompositionAndPermutation |
+| S1-D4-GRAIN-GIFT-OFFER | REQUIRED | PASS | GiftGrainIngress |
+| S1-D4-GRAIN-GIFT-REQUEST | REQUIRED | PASS | GiftGrainIngress |
+| S1-D4-GRAIN-LOAN-OFFER | REQUIRED | PASS | LoanGrainIngress |
+| S1-D4-GRAIN-LOAN-REQUEST | REQUIRED | PASS | LoanGrainIngress |
+| S1-D4-GRAIN-REPAY-DIRECT | REQUIRED | PASS | RepaymentAmountAndReserve |
+| S1-D4-GRAIN-BFF-BENEFIT | REQUIRED | PASS | BenefitGrainIngress |
+| S1-D4-GRAIN-RMRH-BENEFIT | REQUIRED | PASS | BenefitGrainIngress |
+| S1-D4-GRAIN-MARRIAGE-DOWRY-DIRECT | REQUIRED | PASS | MarriageDowryIngress |
+| S1-D4-GRAIN-CALLFAVOR-REPAY-INNER | REQUIRED | PASS | NestedRepaymentIngress |
+| S1-BND-REPAY-AMOUNT | REQUIRED | PASS | NestedRepaymentIngress |
+| S1-BND-RESERVE | REQUIRED | PASS | RepaymentAmountAndReserve |
+| S1-BND-NEED | REQUIRED | PASS | GiftHelpMeaningsAndNeedClearing |
+| S1-BND-DECAY | REQUIRED | PASS | DecayBoundaries |
+| S1-BND-DEBT-DUE | REQUIRED | PASS | DebtDueAfterThirdFullCycle |
+| S1-BND-MARRIAGE-CARD | REQUIRED | PASS | MarriageDeclineAndLifetime |
+| S1-BND-FAVOUR-CARD | REQUIRED | PASS | FullFavourSlotDistinguishesBargainFromHelp |
+| S1-BND-FAVOUR-MEANING | REQUIRED | PASS | FullFavourSlotDistinguishesBargainFromHelp |
+| S1-BND-RESIDENCE-CARD | REQUIRED | PASS | ResidenceMoveInviteAndConflict |
+| S1-BND-HOUSEHOLD-PROVISION | DEFERRED | DEFERRED |  |
+| S1-BND-PROVISION-RECONSIDERATION | DEFERRED | DEFERRED |  |
+| S1-BND-FORMATION | DEFERRED | DEFERRED |  |
+| S1-BND-LINEAGE | DEFERRED | DEFERRED |  |
+| S1-META-01 | REQUIRED | PASS | ReplayStorageInputObserverAndAttributePairs, RepairV3FutureMaterialRecovery, RepairV3DebtLimitedCommutingFarm, RepairV3IntersectingCapacities |
+| S1-META-02 | REQUIRED | PASS | IdentityIsomorphismAndDisconnectedLocality, RepairResidenceDestinationDependency, RepairCallCancellationDependency, RepairResidenceReadWriteMatrix, RepairMarriageCapacityPermutation, RepairFavourCreationProvenance, RepairFavourRetirementDependencies, RepairAggregateDebtCapacity, RepairAggregateGrainAndEnablers, RepairTransferShapesAndReserve, RepairCommutingAndAsymmetricControls, RepairV3DebtLimitedCommutingFarm, RepairV3IntersectingCapacities |
+| S1-META-03 | REQUIRED | PASS | IdentityIsomorphismAndDisconnectedLocality |
+| S1-META-04 | REQUIRED | PASS | ReplayStorageInputObserverAndAttributePairs, RepairV3FutureFaultTiming, RepairV3DistantInputBoundary, RepairV3FutureMaterialRecovery |
+| S1-META-05 | REQUIRED | PASS | NoDerivedAuthorityStructuralAudit |
+| S1-META-06 | DEFERRED | DEFERRED |  |
+| S1-META-07 | REQUIRED | PASS | ReplayStorageInputObserverAndAttributePairs, RepairHiddenCounterpartyGrain, RepairHiddenWorldFacts, RepairExplicitSexAndResidenceObservations, RepairObservedDebtBoundary, RepairCalledPayloadPrivateFeasibility |
+| S1-META-08 | DEFERRED | DEFERRED |  |
+| S1-META-09 | DEFERRED | DEFERRED |  |
+| S1-META-10 | REQUIRED | PASS | DirectAttitudeCompositionAndPermutation |
+| S1-META-11 | REQUIRED | PASS | ResidenceMoveInviteAndConflict |
+| S1-MUT-01 | DEFERRED | DEFERRED |  |
+| S1-MUT-02 | DEFERRED | DEFERRED |  |
+| S1-MUT-03 | DEFERRED | DEFERRED |  |
+| S1-MUT-04 | REQUIRED | PASS | ExplicitBargainAndReciprocalHelp |
+| S1-MUT-05 | DEFERRED | DEFERRED |  |
+| S1-MUT-06 | DEFERRED | DEFERRED |  |
+| S1-MUT-07 | DEFERRED | DEFERRED |  |
+| S1-MUT-08 | DEFERRED | DEFERRED |  |
+| S1-MUT-09 | DEFERRED | DEFERRED |  |
+| S1-MUT-10 | DEFERRED | DEFERRED |  |
+| S1-MUT-11 | DEFERRED | DEFERRED |  |
+| S1-MUT-12 | DEFERRED | DEFERRED |  |
+| S1-MUT-13A | REQUIRED | PASS | RepaymentAmountAndReserve |
+| S1-MUT-13B | DEFERRED | DEFERRED |  |
+| S1-MUT-14 | DEFERRED | DEFERRED |  |
+| S1-MUT-15 | DEFERRED | DEFERRED |  |
+| S1-MUT-16 | REQUIRED | PASS | SharedSnapshotScarceGrain, AggregateCapacityAndIndependentLedgerFault |
+| S1-MUT-17 | REQUIRED | PASS | ResponseAutonomyAndBoundedFailureKnowledge |
+| S1-MUT-18 | REQUIRED | PASS | ResponseAutonomyAndBoundedFailureKnowledge, RepairNeedyReciprocalRequestRefusal |
+| S1-MUT-19 | REQUIRED | PASS | ResponseAutonomyAndBoundedFailureKnowledge |
+| S1-MUT-20 | REQUIRED | PASS | SharedSnapshotScarceGrain |
+| S1-MUT-21 | REQUIRED | PASS | SharedSnapshotScarceGrain, AggregateCapacityAndIndependentLedgerFault |
+| S1-MUT-22 | REQUIRED | PASS | DuplicateReactionAndPrematureClosure |
+| S1-MUT-23 | REQUIRED | PASS | DuplicateReactionAndPrematureClosure |
+| S1-MUT-24 | REQUIRED | PASS | NoDerivedAuthorityStructuralAudit |
+| S1-MUT-25 | DEFERRED | DEFERRED |  |
+| S1-MUT-26 | REQUIRED | PASS | ReplayStorageInputObserverAndAttributePairs |
+| S1-MUT-27 | DEFERRED | DEFERRED |  |
+| S1-MUT-28 | DEFERRED | DEFERRED |  |
+| S1-MUT-29 | REQUIRED | PASS | ExactKinScoringAndFullTrace |
+| S1-MUT-30 | DEFERRED | DEFERRED |  |
+| S1-MUT-31 | REQUIRED | PASS | DirectAttitudeCompositionAndPermutation |
+| S1-MUT-32 | REQUIRED | PASS | ResidenceMoveInviteAndConflict |
+| S1-MUT-33 | REQUIRED | PASS | NestedRepaymentIngress |
+| S1-MUT-34 | REQUIRED | PASS | CalledRepaymentThirdPartyAndInvalidation |
+| S1-MUT-35 | REQUIRED | PASS | FullFavourSlotDistinguishesBargainFromHelp, BargainCapacityRace |
+| S1-SUP-GENERATED | UNEXERCISED | UNEXERCISED |  |
+| S1-SUP-SHRINK | UNEXERCISED | UNEXERCISED |  |
+| S1-SUP-HELDOUT | UNEXERCISED | UNEXERCISED |  |
+| S1-GLOBAL-FIXTURE | REQUIRED | PASS | fixture-audit.json: exact initial fields/inputs, endogenous provenance, profiles and proposal terms for every subcase |
+| S1-GLOBAL-KNOWLEDGE | REQUIRED | PASS | ResponseAutonomyAndBoundedFailureKnowledge |
+| S1-GLOBAL-ORACLE | REQUIRED | PASS | oracle-audit.json, InvariantOracle.cs and explicit expected arithmetic in scenario source |
+| S1-GLOBAL-FALLBACK | REQUIRED | PASS | ReferenceProfilesAndAutonomousCycle, StableFallbackSensitivityAndSemanticAsymmetry, RepairResidenceDestinationDependency, RepairCallCancellationDependency, RepairResidenceReadWriteMatrix, RepairMarriageCapacityPermutation, RepairAggregateGrainAndEnablers, RepairCommutingAndAsymmetricControls, RepairV3DebtLimitedCommutingFarm, RepairV3IntersectingCapacities |
+| S1-GLOBAL-ITERATION | REQUIRED | PASS | ReplayStorageInputObserverAndAttributePairs |
+| S1-GLOBAL-CALLFAVOR-MAP | REQUIRED | PASS | CompleteCallFavorPayloadMatrix |
+| S1-GLOBAL-REQUIRED-COVERAGE | REQUIRED | PASS | All 167 rows individually emitted; 127 coder-owned REQUIRED must pass; REQUIRED external conformance explicitly awaiting review |
+| S1-GLOBAL-MANIFEST-INTEGRITY | REQUIRED | PASS | AcceptanceCatalog.Read: Git blob and census |
+| S1-GLOBAL-CONFORMANCE | REQUIRED | AWAITING INDEPENDENT REVIEW |  |
+
+## Historical candidate-v2 author report (retained verbatim)
+
+The following is historical v2 provenance. Its completion/publication receipts refer to v2, not this v3 return.
+
 # IMP-0001 — Repair-v2 implementation return
 
 **IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE**
