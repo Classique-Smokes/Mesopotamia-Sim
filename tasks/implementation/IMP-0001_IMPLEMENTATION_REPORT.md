@@ -2,7 +2,7 @@
 
 **IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE**
 
-This return repairs the accepted F1–F3 blockers against candidate-v1. All 127 coder-owned REQUIRED obligations pass locally. This is an implementation return, not an independent K4 PASS. `S1-GLOBAL-CONFORMANCE` remains REQUIRED and awaiting independent review; the full frozen completion gate remains false. This agent implemented the repairs and cannot provide their independent conformance review. The Master Architect retains reconciliation and candidate-v2 freezing.
+This return repairs the accepted F1–F3 blockers against candidate-v1. All 127 coder-owned REQUIRED obligations pass locally and in canonical CI. This is an implementation return, not an independent K4 PASS. `S1-GLOBAL-CONFORMANCE` remains REQUIRED and awaiting independent review; the full frozen completion gate remains false. This agent implemented the repairs and cannot provide their independent conformance review. The Master Architect retains reconciliation and candidate-v2 freezing.
 
 ## Baseline and authority
 
@@ -186,11 +186,13 @@ The report/handoff are outside this identity set, avoiding a self-referential ha
 
 ## Publication receipt
 
-**PUBLICATION BLOCKED — no repaired source has been published or verified by remote CI.** The online repair branch was rechecked and still points to `7e11dab7697121eb0dbb169ba46210d81b80586e`. Local implementation verification above is complete; remote delivery is not.
+**PUBLISHED — canonical source CI verified.** After the Director changed this task to full shell access, Windows Git Credential Manager could access the existing GitHub account. The former credential-store restriction was resolved. The checkout had been created by the sandbox identity; a process-local `safe.directory` exception for this exact known checkout handled the ownership transition. No global trust wildcard or persistent Git configuration change was made.
 
-Normal Git push and a subsequent noninteractive dry-run stalled and were stopped. The Windows Git Credential Manager diagnostic reports `Unable to persist credentials with the 'wincredman' credential store`. The authenticated GitHub connector's `github_create_blob` call was also rejected before creating the blob: `MCP tool call requires approval, but approval policy is never`. No branch-update call, force-push, PR creation or approval bypass was performed. The fallback publication index proved the intended tree was `083a49b530a1a3b240b9f2c35324d2df4ab1f87b` at local checkpoint `21659f1c5082f476f2b036c43466e3cb4f3f728a`; this final receipt changes documentation only.
+Normal Git pushed the five prepared repair commits without force to `implementation/imp-0001-slice1-repair-v2`, reaching **c68d7d2c1721479a948d2ee11e1e20071949235c**. Its push-triggered [canonical CI run 35771068979](https://github.com/Classique-Smokes/Mesopotamia-Sim/actions/runs/35771068979) succeeded. The downloaded job logs and steps confirm SDK 10.0.401 and successful restore, static quality, Release build, tests and evidence upload.
 
-The task outputs retain an identical report, canonical logs/evidence, a delivery identity record and a Git bundle of all recoverable repair commits. Publication can resume from the isolated repair checkout using its ordinary fast-forward push when Git authentication or connector write approval is available. Then verify the exact pushed head's `canonical-verification` run, inspect all command steps and artifact, and compare its 167-row evidence with this local execution. Until that happens there is **no repaired-head CI run or remote acceptance artifact to claim**. Candidate-v2 freezing and independent K4 review remain subsequent Master Architect/reviewer work.
+The exact-head [acceptance artifact 10713842986](https://github.com/Classique-Smokes/Mesopotamia-Sim/actions/runs/35771068979/artifacts/10713842986) has verified archive digest **sha256:77ba35908e14b9c9b23fdc6683c0206c4edcc848b6f570bdb092e634d398424f**. Its six files match the fresh local evidence semantically; platform line endings differ. All 127 coder-owned REQUIRED rows pass, all other classifications match the frozen manifest, and external conformance remains pending. The CI artifact's workflow association and downloaded archive digest were checked, not inferred from a green badge.
+
+This publication-receipt commit changes only this report and the branch handoff; the tested source/configuration identity above is unchanged. Its final pushed head, exact-head CI and artifact are separately verified and recorded in the task's `outputs/IMP-0001-repair-v2-delivery.json`, avoiding a self-referential report commit hash. Outputs also retain the report copy, local/remote logs and evidence, and the recoverable Git bundle. Candidate-v1 and PR #7 remain untouched. Candidate-v2 freezing and independent K4 review remain subsequent Master Architect/reviewer work.
 
 ## Frozen AcceptanceId evidence index
 
