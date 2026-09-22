@@ -1,4 +1,4 @@
-# Draft Program Thesis — Institutional Identity, Persistence, and Recognition
+# Provisional Program Thesis — Institutional Identity, Persistence, and Recognition
 
 **Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
 **Role:** Conceptual synthesis
