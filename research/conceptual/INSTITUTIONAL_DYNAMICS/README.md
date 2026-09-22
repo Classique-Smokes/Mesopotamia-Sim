@@ -22,6 +22,7 @@ It is not a roadmap and does not change the current SFL v0 implementation sequen
 - `03_SFL_V0_BRIDGE_AND_DEPENDENCIES.md` — what v0 is already proving and what must remain contingent on its success.
 - `04_RESEARCH_DESIGN_PROMOTION_PROCEDURE.md` — how these concepts may move from observer tale to evidence, design, decision, specification, implementation, and verification.
 - `05_POSSIBLE_POST_V0_PATHS.md` — several plausible future routes without selecting a roadmap.
+- `06_DIRECTOR_REVIEW_GUIDE.md` — explicit review/approval boundaries while the package remains conceptual.
 
 Source/provenance corpus remains separate under:
 
