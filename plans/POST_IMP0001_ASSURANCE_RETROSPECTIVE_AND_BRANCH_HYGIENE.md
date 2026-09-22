@@ -139,7 +139,7 @@ The Master Architect reconciles only:
 - frozen/evidence refs;
 - branches with unique unreachable commits;
 - branches named in canonical authority/review records;
-- branches tied to open PRs or the active v2 lineage.
+- branches tied to open PRs or the active IMP-0001 repair/conformance lineage.
 
 Default cleanup preference after provenance is safe:
 
@@ -153,7 +153,7 @@ Do not delete a branch merely because its commits are old.
 
 ## 7. Timing of destructive cleanup
 
-Read-only census may begin immediately after repair-v2 return.
+Read-only census may begin now.
 
 Actual branch deletion should wait until:
 
