@@ -30,7 +30,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 IMPLEMENTATION CANDIDATE COMPLETE / INDEPENDENT CONFORMANCE PENDING.**
+**Roadmap Stage 4 — Slice 1 CANDIDATE-v1 BLOCKED / REPAIR-v2 ACTIVE.**
 
 Active implementation packet:
 
@@ -81,9 +81,11 @@ Dispatch scaffolding:
 - SCF-001 fired and is implemented: canonical .NET root commands and CI are now repository infrastructure;
 - SCF-002 fired and is active: frozen acceptance authority is protected and executable/CI mapping to every REQUIRED AcceptanceId is an IMP-0001 completion obligation;
 - implementation branch: `implementation/imp-0001-slice1`;
-- frozen conformance candidate: `imp-0001-slice1-conformance-candidate-v1` @ `7e11dab7697121eb0dbb169ba46210d81b80586e`;
-- exact-candidate CI: run `35692449925` PASS;
-- independent review packet: `tasks/implementation/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_PACKET.md`;
+- frozen failed candidate: `imp-0001-slice1-conformance-candidate-v1` @ `7e11dab7697121eb0dbb169ba46210d81b80586e`;
+- exact-candidate CI: run `35692449925` PASS, but independent K4 result **BLOCK**;
+- BLOCK reconciliation: `research/technical/IMP-0001/IMP-0001_CONFORMANCE_BLOCK_RECONCILIATION.md`;
+- repair packet: `tasks/implementation/IMP-0001_BLOCK_REPAIR_PACKET.md`;
+- repair branch: `implementation/imp-0001-slice1-repair-v2`;
 - remaining scaffolding state: `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
 
 ## Stage-4 slice order
@@ -110,12 +112,12 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Commission a fresh independent K4 post-implementation conformance review against frozen candidate `7e11dab7697121eb0dbb169ba46210d81b80586e`.
-2. Preserve `SFL-V0-S1-ACCEPTANCE-v1` unchanged and do not move the conformance-candidate ref during review.
-3. Keep PR #7 draft/unmerged; `S1-GLOBAL-CONFORMANCE` remains REQUIRED and pending.
-4. If independent review returns BLOCK, reconcile exact findings without weakening acceptance authority; any code/test/evidence-map change creates a new candidate baseline.
-5. If review returns PASS, reconcile and record final completion/SCF-002 retirement before merge.
-6. After canonical Slice-1 promotion, execute `SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`: run the verified autonomous kernel, freeze raw results/transcript, and pause for Project Director inspection before Slice 2.
-7. Classify observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
+1. Execute `IMP-0001_BLOCK_REPAIR_PACKET.md` on `implementation/imp-0001-slice1-repair-v2` against the three accepted BLOCK findings F1–F3.
+2. Preserve candidate-v1 and `SFL-V0-S1-ACCEPTANCE-v1` unchanged; do not weaken or reclassify acceptance authority.
+3. If repair work discovers that F1 cannot be closed without choosing a new social/domain priority, stop and escalate rather than inventing one.
+4. When coder-owned repair evidence is complete, reconcile the repair head and freeze a new `imp-0001-slice1-conformance-candidate-v2`.
+5. Commission a fresh independent K4 review of candidate-v2. PR #7 remains draft/unmerged and `S1-GLOBAL-CONFORMANCE` remains unsatisfied until PASS.
+6. Only after verified Slice-1 completion/promotion execute `SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`, freeze the raw autonomous history, and pause for Project Director inspection before Slice 2.
+7. Classify birth-run observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
