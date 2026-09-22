@@ -35,6 +35,20 @@ A growing observer-artifact collection about institutional persistence, offices 
 
 The collection is deliberately preserved as an **ideas library**, not a second specification.
 
+### Institutional Dynamics — draft derived program
+
+`INSTITUTIONAL_DYNAMICS/`
+
+A non-authoritative derived synthesis that translates Uruk-corpus themes into candidate mechanism families, challenge cases, SFL-v0 dependencies, possible post-v0 paths, and a proposed research/design/promotion procedure.
+
+Source tales remain in `THE_URUK_ACCIDENT/`; derived interpretation lives separately here so provenance and later synthesis do not become one artifact.
+
+### Proposed post-v0 directions
+
+`PROPOSED_POST_V0_CONCEPTUAL_DIRECTIONS.md`
+
+Short entry point summarizing the three earlier future-facing streams as subordinate parts of the broader institutional-dynamics problem.
+
 ## Navigation
 
 Conceptual material does not require root-navigation promotion merely because it is committed. Add local indexes here when they improve discoverability without making the material look authoritative.
