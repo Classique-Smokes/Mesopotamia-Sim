@@ -71,6 +71,18 @@ Implement and verify:
 
 Each slice must leave a runnable, verified system.
 
+### Early observational checkpoint after Slice 1
+
+After the first lower-level slice is independently verified, the project may pause before Slice 2 to run a small autonomous world and inspect its generated history directly.
+
+For the current planned checkpoint, see:
+
+- `SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`
+
+This early run is **not** Roadmap Stage 5 model iteration and does not replace the five-slice prototype objective. It exists to expose the actual behavior and observability of the first causal substrate before additional layers make interpretation harder.
+
+Findings from the early run may inform later work, but one lower-level reference world must not be overinterpreted as evidence about historical calibration, household dynamics, or the completed simulation.
+
 **Complete when:**
 - all five slices execute together as one reference simulation;
 - all required verification scenarios pass;
