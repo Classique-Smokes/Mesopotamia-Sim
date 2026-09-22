@@ -1,11 +1,11 @@
-# Director Review Guide — Institutional Dynamics Draft
+# Director Review / Promotion Guide — Institutional Dynamics
 
 **Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
 **Purpose:** Preserve review/promotion boundaries for this conceptual guiding framework so later enthusiasm cannot silently turn hypotheses into accepted mechanics.
 
 ## 1. What this framework contains
 
-The draft package proposes:
+The provisional guiding framework contains:
 
 1. an umbrella future problem — institutional identity, persistence, recognition, authority, capability, memory, and genealogy;
 2. a set of distinctions that should probably remain separable;
