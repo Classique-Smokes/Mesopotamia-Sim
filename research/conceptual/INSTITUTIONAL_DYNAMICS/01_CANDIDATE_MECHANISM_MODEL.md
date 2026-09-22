@@ -1,6 +1,6 @@
 # Candidate Mechanism Model
 
-**Status:** DRAFT / NON-AUTHORITATIVE  
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
 **Role:** Translate conceptual distinctions into candidate simulation machinery that can later be researched, tested, rejected, refined, or promoted.
 
 ## 1. Mechanism-layer rule
