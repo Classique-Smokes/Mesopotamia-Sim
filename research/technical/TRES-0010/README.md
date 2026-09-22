@@ -1,6 +1,6 @@
 # TRES-0010 — Pre-Implementation Red Team
 
-**Status:** COMMISSIONED / PRE-IMPLEMENTATION GATE  
+**Status:** CLOSED / PRE-IMPLEMENTATION GATE PASSED  
 **Authority:** Advisory research only.
 
 Commission packets:
@@ -23,15 +23,16 @@ Wave-A reports belong under:
 
 No return becomes canonical authority by being committed.
 
-## Gate
+## Gate — closed
 
-`IMP-0001` remains prepared but dispatch-blocked until the Master Architect:
+Final closure:
 
-1. reconciles Wave-A findings;
-2. commissions Wave-B challenges only where warranted;
-3. resolves/escalates any real blocker;
-4. updates canonical/navigation artifacts losslessly where required;
-5. records a final TRES-0010 dispatch/no-dispatch conclusion.
+- `FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`
+- result: **CLOSED / PASS**
+- `IMP-0001`: **READY FOR DISPATCH**
+- frozen Slice-1 acceptance authority: `SFL-V0-S1-ACCEPTANCE-v1`
+
+No additional TRES-0010 research is required before Slice-1 coding unless implementation discovers a genuinely new conflict with accepted authority.
 
 
 ## Wave A / Wave B
@@ -78,7 +79,7 @@ No return becomes canonical authority by being committed.
 ## Slice-1 acceptance closure
 
 - `CALLFAVOR_SLICE1_APPLICABILITY_RECONCILIATION.md` — mechanical derivation of current Slice-1 callable/non-callable action shapes under the promoted response-closed favour rule.
-- `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md` — candidate manifest; not acceptance authority until independent pre-code review passes and freeze metadata is completed.
+- `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md` — frozen acceptance/applicability authority, version `SFL-V0-S1-ACCEPTANCE-v1`; freeze record in the same verification package.
 - Review packet: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/SLICE1_ACCEPTANCE_MANIFEST_PRECODE_REVIEW.md`.
 
 ## Manifest Repair Review
@@ -99,4 +100,11 @@ No return becomes canonical authority by being committed.
 - R2 review packet: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/SLICE1_ACCEPTANCE_MANIFEST_PRECODE_REVIEW_R2.md`.
 - Frozen R2 baseline: `tres-0010-manifest-review-r2-baseline` @ `7fe85af66723885fecc16c0222538265cbf693bc`.
 - Return branch: `tres-0010/manifest-precode-review-r2`.
-- A PASS on R2 is the remaining manifest-gate requirement before manifest freeze and IMP-0001 task hardening.
+- R2 returned **PASS**. The manifest is frozen; IMP-0001/task-template/C# handoff hardening is complete.
+
+
+## Final closure
+
+- `FINAL_PROCESS_LESSONS_RECONCILIATION.md` — final classification of durable TRES-0010 process lessons for the later rulebook refactor.
+- `FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md` — 34/34 closure checks passed; no remaining Slice-1 blocker; IMP-0001 ready for dispatch.
+- Deferred later-slice gaps: `registers/TRES-0010_DEFERRED_GAP_LEDGER.md`.
