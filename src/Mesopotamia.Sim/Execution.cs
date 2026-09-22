@@ -10,6 +10,8 @@ public sealed record CycleInput(ImmutableArray<Proposal> Proposals)
     public static CycleInput Empty => new([]);
     public ImmutableDictionary<PersonId, string> ResponseProfiles { get; init; } = ImmutableDictionary<PersonId, string>.Empty;
     public ImmutableDictionary<ProposalId, ResponseChoice> Responses { get; init; } = ImmutableDictionary<ProposalId, ResponseChoice>.Empty;
+    public ImmutableDictionary<PersonId, PersonalPolicy> PersonalPolicies { get; init; } = ImmutableDictionary<PersonId, PersonalPolicy>.Empty;
+    public ImmutableDictionary<ProposalId, string> ProposalResponseProfiles { get; init; } = ImmutableDictionary<ProposalId, string>.Empty;
 }
 public enum OutcomeKind { Committed, Declined, Unable, InvalidatedAtResolution, InvalidTerms }
 public sealed record Outcome(ProposalId Proposal, PersonId Actor, OutcomeKind Kind, string Reason, EventId Event);
@@ -34,7 +36,12 @@ public sealed partial class Simulation
     private bool faulted;
     private readonly HashSet<ProposalId> usedProposals = [];
     private readonly Dictionary<PersonId, List<ParticipantOutcome>> knowledge = [];
+    private readonly List<DecisionTrace> decisionHistory = [];
+    private long nextProposal = 1;
     public ImmutableArray<SemanticEvent> History => events.ToImmutableArray();
+    public ImmutableArray<DecisionTrace> DecisionHistory => decisionHistory.ToImmutableArray();
+    public CycleResult RunAutonomousCycle() => RunCycle(new([])
+    { PersonalPolicies = state.People.Keys.ToImmutableDictionary(p => p, _ => new PersonalPolicy()) });
     public ImmutableArray<ParticipantOutcome> KnowledgeOf(PersonId person) =>
         knowledge.TryGetValue(person, out var facts) ? facts.ToImmutableArray() : [];
 
@@ -44,6 +51,8 @@ public sealed partial class Simulation
         if (faulted) throw new InvalidOperationException("A failed cycle cannot be resumed.");
         if (input.Proposals.Select(p => p.Actor).Distinct().Count() != input.Proposals.Length)
             throw new ArgumentException("At most one personal initiative per person/cycle.", nameof(input));
+        if (input.PersonalPolicies.Keys.Any(p => !state.People.ContainsKey(p) || input.Proposals.Any(proposal => proposal.Actor == p)))
+            throw new ArgumentException("A context cannot receive a scripted and autonomous initiative.", nameof(input));
         if (input.Proposals.Any(p => p.Id.Value <= 0 || usedProposals.Contains(p.Id) || !state.People.ContainsKey(p.Actor)) ||
             input.Proposals.Select(p => p.Id).Distinct().Count() != input.Proposals.Length)
             throw new ArgumentException("Invalid or reused proposal identity.", nameof(input));
@@ -56,9 +65,22 @@ public sealed partial class Simulation
             WorldSnapshot decisionSnapshot = state.Snapshot(cycle);
             List<Outcome> outcomes = [];
             List<DecisionTrace> decisions = [];
+            List<Proposal> proposals = [.. input.Proposals];
+            nextProposal = Math.Max(nextProposal, checked(proposals.Select(p => p.Id.Value).DefaultIfEmpty(0).Max() + 1));
+            foreach (var policy in input.PersonalPolicies.OrderBy(p => p.Key.Value))
+            {
+                var decision = PersonalAgency.Decide(policy.Key, policy.Value, decisionSnapshot);
+                ProposalId? id = null;
+                if (decision.Terms is not null)
+                {
+                    id = new ProposalId(checked(nextProposal++));
+                    proposals.Add(new(id.Value, policy.Key, decision.Terms));
+                }
+                decisions.Add(decision.Trace with { Proposal = id });
+            }
             List<(Proposal Proposal, EventId Cause)> accepted = [];
             AttitudeBatch batch = new();
-            foreach (Proposal proposal in input.Proposals.OrderBy(p => p.Id.Value))
+            foreach (Proposal proposal in proposals.OrderBy(p => p.Id.Value))
             {
                 usedProposals.Add(proposal.Id);
                 string? invalid = ActionRules.Invalid(proposal, decisionSnapshot);
@@ -83,7 +105,8 @@ public sealed partial class Simulation
                     bool called = proposal.Terms is CallFavor;
                     ResponseChoice accept = called ? ResponseChoice.FulfilCalledFavor : ResponseChoice.Accept;
                     ResponseChoice refuse = called ? ResponseChoice.RefuseCalledFavor : ResponseChoice.Decline;
-                    string profile = input.ResponseProfiles.GetValueOrDefault(respondent, called ? "SCORE-RP-003" : "SCORE-RP-001");
+                    string profile = input.ProposalResponseProfiles.GetValueOrDefault(proposal.Id,
+                        input.ResponseProfiles.GetValueOrDefault(respondent, called ? "SCORE-RP-003" : "SCORE-RP-001"));
                     if (called ? profile is not ("SCORE-RP-003" or "SCORE-RP-004") : profile is not ("SCORE-RP-001" or "SCORE-RP-002"))
                         throw new ArgumentException("Unsupported response profile for this meaning.", nameof(input));
                     bool prefersAccept = profile is "SCORE-RP-001" or "SCORE-RP-003";
@@ -93,6 +116,13 @@ public sealed partial class Simulation
                         throw new ArgumentException("Response meaning does not belong to proposal.", nameof(input));
                     bool scripted = input.Responses.ContainsKey(proposal.Id);
                     CandidateTrace[] candidates = [ResponseCandidate(accept), ResponseCandidate(refuse)];
+                    if (!scripted)
+                    {
+                        candidates = candidates.Select(c => c with { FinalScore = ReferenceScorer.Sum(c.Components.Values), Selected = false }).ToArray();
+                        var selected = ReferenceScorer.Select(candidates);
+                        choice = selected.Key == accept.ToString() ? accept : refuse;
+                        candidates = candidates.Select(c => c with { Selected = c.Key == selected.Key }).ToArray();
+                    }
                     CandidateTrace ResponseCandidate(ResponseChoice response) => new(response.ToString(), response.ToString(), true, "",
                         scripted ? ImmutableDictionary<string, long>.Empty : ImmutableDictionary<string, long>.Empty.Add(called ? "ObligationResponse" : "ResponsePreference",
                             prefersAccept == (response == accept) ? 100 : 0),
@@ -133,7 +163,9 @@ public sealed partial class Simulation
             published = state.Snapshot(cycle);
             bool deadlock = state.People.Count > 0 && state.People.Values.All(p => p.NeedsGrain && p.Grain == 0) &&
                 !initial.Inputs.Any(i => i.Cycle > cycle && i.Delta > 0);
-            return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = decisions.ToImmutableArray() };
+            ImmutableArray<DecisionTrace> completedDecisions = decisions.Select(d => d with { Cycle = cycle }).ToImmutableArray();
+            decisionHistory.AddRange(completedDecisions);
+            return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = completedDecisions };
         }
         catch
         {

@@ -16,10 +16,16 @@ public sealed record MoveResidence(PersonId Target, DwellingId Destination) : Ac
 public sealed record InviteResidence(PersonId Target, DwellingId Destination) : ActionTerms;
 public enum ResponseChoice { Accept, Decline, FulfilCalledFavor, RefuseCalledFavor }
 public sealed record CandidateTrace(string Key, string Meaning, bool Eligible, string Gate,
-    ImmutableDictionary<string, long> Components, long? FinalScore, bool Selected);
+    ImmutableDictionary<string, long> Components, long? FinalScore, bool Selected)
+{
+    public ActionTerms? Terms { get; init; }
+}
 public sealed record DecisionTrace(PersonId Actor, ProposalId? Proposal, string Context,
     string Profile, ImmutableArray<CandidateTrace> Candidates, ImmutableArray<string> SubjectiveInputs,
-    bool TechnicalFallback);
+    bool TechnicalFallback)
+{
+    public long Cycle { get; init; }
+}
 public sealed record ParticipantOutcome(EventId Event, ProposalId Proposal, OutcomeKind Kind, string Reason);
 public sealed record CauseKey(string Rule, EventId Trigger, PersonId From, PersonId To);
 public sealed record AttitudeContribution(CauseKey Key, int Delta);

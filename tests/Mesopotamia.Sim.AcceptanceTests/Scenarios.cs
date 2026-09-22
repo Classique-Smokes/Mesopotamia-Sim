@@ -25,6 +25,7 @@ internal static partial class Scenarios
         foreach (Scenario scenario in DebtCases()) yield return scenario;
         foreach (Scenario scenario in FavourCases()) yield return scenario;
         foreach (Scenario scenario in MarriageResidenceCases()) yield return scenario;
+        foreach (Scenario scenario in AgencyCases()) yield return scenario;
         yield return new("ConsumptionAndFarm", ["S1-090-A", "S1-090-B", "S1-090-C", "S1-090-E"], () =>
         {
             Simulation sim = new(World(1));
