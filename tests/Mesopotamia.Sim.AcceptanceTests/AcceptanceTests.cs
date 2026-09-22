@@ -49,7 +49,8 @@ public sealed class AcceptanceTests
         bool auditPassed = failures.Count == 0 && suite.FixtureEvidence.Count >= scenarios.Length;
         results["S1-GLOBAL-FIXTURE"] = (auditPassed, ["fixture-audit.json: exact initial fields/inputs, endogenous provenance, profiles and proposal terms for every subcase"]);
         string oracleSource = File.ReadAllText(Path.Combine(AcceptanceCatalog.Root, "tests/Mesopotamia.Sim.AcceptanceTests/InvariantOracle.cs"));
-        string[] forbidden = ["ActionRules.", "ReferenceScorer.", "PersonalAgency.", ".RunCycle(", ".RunAutonomousCycle(", "WorldState", ".Infeasible(", ".Commit("];
+        string[] forbidden = ["ActionRules.", "ReferenceScorer.", "PersonalAgency.", ".RunCycle(", ".RunAutonomousCycle(", "WorldState", ".Infeasible(", ".Commit(",
+            "ResolutionFallbacks(", "EvaluateTransaction(", "FutureInputsResolveMaterialBlock(", "ApplyGrainInput(", "ConsumeGrain("];
         bool independent = forbidden.All(token => !oracleSource.Contains(token, StringComparison.Ordinal));
         results["S1-GLOBAL-ORACLE"] = (independent && auditPassed, ["oracle-audit.json", "InvariantOracle.cs and explicit expected arithmetic in scenario source"]);
         AcceptanceCatalog.WriteSupplement("oracle-audit", new
