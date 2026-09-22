@@ -138,4 +138,89 @@ A later substantive semantic/applicability change requires re-review and a new v
 
 ## Second-pass inventory / reconciliation audit
 
-**Not yet performed at this primary-result freeze.** The two migration files remain unread at this point. This section will be appended after the fixed primary results above are committed.
+**Primary-result freeze commit:** `6dc653a1c9a946871a65e73b09190f2bd8678657`  
+The inventory/reconciliation and other migration-control sources below were opened only after that commit fixed the primary C1–C5 results.
+
+### Second-pass sources loaded
+
+Required audit sources:
+- `research/technical/TRES-0010/RULEBOOK_REFACTOR_COMMITMENT_INVENTORY.md`
+- `research/technical/TRES-0010/RULEBOOK_REFACTOR_LOSSLESS_RECONCILIATION.md`
+
+Supporting sources used to verify the inventory against actual source/destination text:
+- baseline accepted `governance/MASTER_ARCHITECT_GUIDE.md` at ref `governance-rulebook-refactor-baseline` (baseline ref SHA recorded by the inventory: `9b78f0d2a5ef5a6248fbbc3c20c041fa10fafd5b`; Guide blob SHA `4e24d1afde04bd1ccae40d89b98facb171a9908b`);
+- `research/technical/TRES-0010/FINAL_PROCESS_LESSONS_RECONCILIATION.md` for the actual PL-01..PL-21 definitions;
+- `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md` for the finalized TRES closure context;
+- `governance/AGENT_DELEGATION_AND_RESEARCH_PROTOCOL.md` and `tasks/RESEARCH_TASK_PACKET_TEMPLATE.md` to verify PL-16/PL-17 destinations.
+
+No sibling GOV-0001 return was opened during the second pass.
+
+### Baseline implementation / verification / stop-rule preservation
+
+| Baseline rule class | Candidate preservation checked | Verdict |
+|---|---|---|
+| Implementation starts from accepted contracts with bounded scope, invariants, observable done, expected verification, local discretion, escalation triggers, repository retrieval, recoverable work, and explicit completion reporting (inventory G-039..G-041, G-067) | Guide control/authority/verification routing; Assurance §§13–16; Implementation Task Packet Template §§2–11 | **PASS** |
+| Director is not the manual code-review system; consequential claims require observable evidence; agent confidence is not verification; success is defined before consequential build; verification scales with consequence; completion evidence remains tied to accepted behavior (G-042..G-047, G-068..G-069) | Guide §8 and final operating test; Assurance §§6, 9, 15–16; Implementation Template §§6–7 and completion report | **PASS** |
+| Implementation discovery cannot silently redesign accepted authority; consequential semantic/identity/interface/schema/framework/execution/fidelity/performance conflicts stop and escalate; insufficient evidence for an irreversible consequential decision also stops (G-041, G-062..G-063) | Guide §§4, 9; Architecture Escalation Rules; Assurance stop condition; Implementation Template §9 | **PASS** |
+| Acceptance/verification authority cannot be weakened to make implementation pass | `AGENTS.md` hard rule; Implementation Template §§7–9; Assurance post-implementation conformance | **PASS** |
+
+The candidate compresses some baseline examples rather than repeating every example in the core Guide, but the operative behaviors remain reachable in the triggered owner/template. No material implementation, verification, or stop rule was found silently dropped.
+
+### TRES PL-01..PL-21 destination audit
+
+| Lesson | Candidate destination actually verified | Verdict |
+|---|---|---|
+| PL-01 stateful semantic lifecycle closure | Assurance §3 — Stateful semantic object lifecycle | **PASS** |
+| PL-02 consequential parameter validity domains | Assurance §3 — Parameter validity | **PASS** |
+| PL-03 composition closure for interacting effects | Assurance §3 — Composition and conflict | **PASS** |
+| PL-04 nested action completion/failure propagation | Assurance §3 — Nested action / transaction completion | **PASS** |
+| PL-05 systematic reachability/composition audit, consequence-scaled | Assurance §§1, 3, 14 | **PASS** |
+| PL-06 independent-enough verification authority | Assurance §6 + Implementation Template authority/acceptance controls | **PASS** |
+| PL-07 closed exact applicability where omission/self-selection risk is material | Assurance §5 + Implementation Template §§6–7 | **PASS** |
+| PL-08 preserve accepted/high-cost future seams without implementing future slices | Guide §5 + Assurance §4 | **PASS** |
+| PL-09 explicit required-input authority taxonomy | Implementation Template §2 + Guide authority separation | **PASS** |
+| PL-10 adversarial review at consequential integration boundaries, not universally | Guide work-mode routing + Assurance consequence scaling/review triggers; delegated adversarial mechanics in Delegation §9 | **PASS** |
+| PL-11 undefined conditions remain visible until closure/defer | Guide §4 + Assurance §3 — Undefined conditions | **PASS** |
+| PL-12 risk-scaled formalization as optional escalation | Assurance §11 | **PASS** |
+| PL-13 requirement-by-requirement traceability for consequential slices | Assurance §§5, 15 + Implementation Template §§6–7, 11 | **PASS** |
+| PL-14 distinguish missing semantics vs missing enforcement vs local engineering risk | Guide §5 + Assurance §2 | **PASS** |
+| PL-15 verification cannot create missing social semantics | Guide §4 + Assurance §§7–8 + Implementation Template precedence rule | **PASS** |
+| PL-16 adversarial findings require adjudication/minimality, not direct promotion | Delegation §9 | **PASS** |
+| PL-17 blindness includes the control plane | Delegation §6 + Research Template §7 | **PASS** |
+| PL-18 consequential acceptance authority may need its own pre-code review | Assurance §10 | **PASS** |
+| PL-19 grouped applicability rows must be frozen and omission-detectable | Assurance §5 + Implementation Template exact-applicability controls | **PASS** |
+| PL-20 preserve representation freedom with schema-neutral verification | Assurance §8; implementation-template authority precedence/local discretion keeps verification subordinate to semantics | **PASS** |
+| PL-21 freeze identity avoids self-referential hashing | Assurance §12 + Artifact Freeze Checklist | **PASS** |
+
+**PL-20 bookkeeping note:** the reconciliation names the implementation template as a co-destination, while the explicit schema-neutral rule itself is single-owned in Assurance §8 rather than duplicated verbatim in the template. This is not a behavioral/rule-loss defect: consequential specification→implementation work is routed through Assurance, and the template explicitly keeps verification authority subordinate to accepted semantics while preserving permitted local implementation choices. Requiring duplicate prose would work against the candidate's single-owner/anti-duplication design.
+
+### Second-pass cross-checks
+
+- **Material rule loss:** none found.
+- **Contradictory duplicate owner:** none found. The Guide states short invariants/triggers; Assurance owns consequential specification→implementation procedure; Architecture Escalation owns implementation-discovered architectural conflict; the freeze checklist owns mechanical freeze steps; Delegation owns adversarial/research execution.
+- **Over-bureaucracy:** none found. PL-05, PL-10, PL-12, PL-18 and the Assurance load rule are explicitly consequence-scaled; C2 remains outside the Assurance trigger.
+- **Verification authority vs semantic authority:** preserved. Acceptance/verification can govern completion but cannot invent semantics or force a representation not established by accepted authority.
+- **Freeze mechanics:** preserved and operational; reviewed-candidate identity and final frozen identity are separated without self-reference.
+
+## Final verdict
+
+# PASS
+
+From the GOV-0001-C work-mode perspective, the candidate is **safe for constitutional promotion**: the root Guide routes consequential specification→implementation and implementation-conflict work to the correct owners, routine reversible implementation is not forced through TRES-style ceremony, baseline implementation/verification/stop rules remain behaviorally preserved, and PL-01..PL-21 have usable destinations with no material rule loss found.
+
+This PASS is task-C-scoped evaluation evidence; it does not itself perform or authorize the overall constitutional promotion.
+
+## Final provenance / mutation confirmation
+
+- Frozen evaluation ref: `governance-rulebook-refactor-eval-baseline`
+- Resolved frozen evaluation SHA: `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`
+- Assigned branch: `governance-eval/assurance-escalation`
+- Primary blind-result commit: `6dc653a1c9a946871a65e73b09190f2bd8678657`
+- Model/config visible: GPT-5.6 Sol
+- Tools used overall: GitHub repository connector only — branch search, code/commit search for discovery checks, commit comparison, commit fetch, file fetch, return-file create/update. No external web research was used.
+- Sibling GOV-0001 returns read before primary results: **NO**
+- Migration inventory/reconciliation read before primary results: **NO**
+- Other agents' governance-refactor conclusions used before primary results: **NO**
+- Candidate/canonical governance files modified: **NO**
+- Navigation/templates/decisions/other project files modified: **NO**
+- Only authorized return report created/updated: **YES**
