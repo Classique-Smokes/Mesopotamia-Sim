@@ -25,6 +25,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - Corrected-manifest R2 independently returned **PASS**; `SFL-V0-S1-ACCEPTANCE-v1` frozen at `sfl-v0-slice1-acceptance-v1`.
 - IMP-0001/task-template/C# handoff hardening completed; deferred later-slice gaps durably registered.
 - TRES-0010 final closure audit passed 34/34 checks; TRES-0010 CLOSED / PASS; IMP-0001 cleared for dispatch.
+- GOV-0001 fresh-agent evaluations A/B/C returned **PASS** from the frozen candidate; central reconciliation found no material rule loss, owner conflict, routing defect, or repair requirement.
 
 ## Active
 
@@ -50,9 +51,12 @@ The Master Architect rulebook restructuring is active as separate post-TRES gove
 Governance-refactor continuity:
 
 - accepted governance remains on `main`;
-- sole WIP candidate: `governance-rulebook-refactor-candidate` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`;
+- sole evaluated candidate: `governance-rulebook-refactor-candidate` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`;
 - frozen pre-refactor baseline: `governance-rulebook-refactor-baseline` @ `9b78f0d2a5ef5a6248fbbc3c20c041fa10fafd5b`;
-- GOV-0001 evaluation branches are prepared from the same candidate but have no return commits yet;
+- GOV-0001 A/B/C: **PASS / PASS / PASS**;
+- central reconciliation: `research/technical/GOV-0001/FRESH_AGENT_EVALUATION_RECONCILIATION.md`;
+- constitutional decision now pending: `DEC-0009` — Layered Master Architect Rulebook Refactor;
+- promotion proposal: `proposals/GOV-0001_MASTER_ARCHITECT_RULEBOOK_PROMOTION.md`;
 - state/recovery map: `research/technical/GOV-0001/README.md`.
 
 Slice 1 objective:
@@ -94,8 +98,9 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Continue GOV-0001 only from the consolidated state in `research/technical/GOV-0001/README.md`: evaluate the single frozen candidate before any promotion or competing refactor work.
-2. When implementation is intentionally begun, dispatch `IMP-0001` against `SFL-V0-S1-ACCEPTANCE-v1`; SCF-001 and the remaining executable/CI portion of SCF-002 fire at dispatch.
-3. Do not treat the governance refactor as a coding gate: IMP-0001 is already TRES-cleared and may be dispatched independently if project priority changes.
+1. Obtain the explicit Project Director decision on `DEC-0009`.
+2. If DEC-0009 is approved, promote the evaluated GOV-0001 candidate with status/decision/navigation integration and run the required post-promotion fresh-retrieval verification.
+3. When implementation is intentionally begun, dispatch `IMP-0001` against `SFL-V0-S1-ACCEPTANCE-v1`; SCF-001 and the remaining executable/CI portion of SCF-002 fire at dispatch.
+4. Do not treat the governance refactor as a coding gate: IMP-0001 is already TRES-cleared and may be dispatched independently if project priority changes.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
