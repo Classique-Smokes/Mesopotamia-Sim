@@ -22,22 +22,30 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - First independent manifest pre-code review returned **BLOCK**; no canonical semantics were reopened.
 - Manifest repair review commissioned as three mutually blind source-grounded audits: boundary completeness, semantic subordination/wording scope, and grain-ingress exhaustiveness.
 - Manifest Repair Review reconciliation completed; corrected manifest now has 167 unique AcceptanceIds (128 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED) and passed 20/20 targeted repair checks.
+- Corrected-manifest R2 independently returned **PASS**; `SFL-V0-S1-ACCEPTANCE-v1` frozen at `sfl-v0-slice1-acceptance-v1`.
+- IMP-0001/task-template/C# handoff hardening completed; deferred later-slice gaps durably registered.
+- TRES-0010 final closure audit passed 34/34 checks; TRES-0010 CLOSED / PASS; IMP-0001 cleared for dispatch.
 
 ## Active
 
-**Roadmap Stage 4 — Pre-implementation assurance gate before Slice 1 dispatch.**
+**Roadmap Stage 4 — Slice 1 ready for implementation dispatch.**
 
-Prepared implementation packet — dispatch blocked:
+Ready implementation packet:
 
 - `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
 
-Active pre-implementation closure gate:
+Frozen Slice-1 acceptance authority:
 
-- `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
-- `research/technical/TRES-0010/README.md`
-- Wave-B adjudication: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/00_WAVE_B_README.md`
-- B2 targeted resolution: `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/WAVE_B/B2/00_B2_README.md`
-- semantic promotion reconciliation/audit: `research/technical/TRES-0010/SEMANTIC_PROMOTION_RECONCILIATION.md`, `research/technical/TRES-0010/SEMANTIC_PROMOTION_LOSSLESS_AUDIT.md`
+- `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md`
+- version `SFL-V0-S1-ACCEPTANCE-v1`
+- frozen ref `sfl-v0-slice1-acceptance-v1`
+- freeze record `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md`
+
+TRES-0010 closure evidence:
+
+- `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`
+
+The planned Master Architect rulebook restructuring is now eligible as separate post-TRES governance work. It is **not** a semantic/verification prerequisite for IMP-0001 dispatch.
 
 Slice 1 objective:
 
@@ -78,11 +86,8 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Run the corrected-manifest pre-code review R2 from `tres-0010-manifest-review-r2-baseline`.
-2. If R2 returns PASS, freeze manifest metadata/version as IMP-0001 acceptance authority; if BLOCK, repair only newly demonstrated source-grounded defects.
-3. Amend IMP-0001 authority taxonomy, applicability/completion evidence, and local C# guardrails against the passed frozen manifest.
-4. Carry confirmed later-slice semantic/verification gaps into an explicit deferred ledger.
-5. Run one final TRES-0010 closure audit and record dispatch/no-dispatch conclusion.
-6. Only after TRES-0010 closure, execute the planned Master Architect rulebook restructuring and then release IMP-0001 when the closure decision permits.
+1. Execute the planned Master Architect rulebook restructuring as a separate governance task, using the finalized TRES-0010 process lessons and the existing lossless migration plan.
+2. When implementation is intentionally begun, dispatch `IMP-0001` against `SFL-V0-S1-ACCEPTANCE-v1`; SCF-001 and the remaining executable/CI portion of SCF-002 fire at dispatch.
+3. Do not treat the governance refactor as a coding gate: IMP-0001 is already TRES-cleared and may be dispatched independently if project priority changes.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
