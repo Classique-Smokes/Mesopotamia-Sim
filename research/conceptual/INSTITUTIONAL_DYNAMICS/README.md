@@ -1,6 +1,6 @@
-# Institutional Dynamics — Draft Conceptual Program
+# Institutional Dynamics — Provisional Conceptual Program
 
-**Status:** DRAFT / NON-AUTHORITATIVE  
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
 **Purpose:** Translate the Uruk Accident conceptual corpus into a structured future research/design program without promoting its stories or proposed mechanisms into current simulation authority.  
 **Dependency:** Contingent on SFL v0 demonstrating that the lower-level social-fabric substrate is coherent enough to support higher-order persistence experiments.
 
