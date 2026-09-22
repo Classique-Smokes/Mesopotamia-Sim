@@ -32,6 +32,7 @@ internal sealed partial class Scenarios
         foreach (Scenario scenario in RepairResolutionCases()) yield return scenario;
         foreach (Scenario scenario in RepairKnowledgeCases()) yield return scenario;
         foreach (Scenario scenario in RepairV3Cases()) yield return scenario;
+        foreach (Scenario scenario in RepairV3IntersectionCases()) yield return scenario;
         yield return new("ConsumptionAndFarm", ["S1-090-A", "S1-090-B", "S1-090-C", "S1-090-E"], () =>
         {
             Simulation sim = Create(World(1));
