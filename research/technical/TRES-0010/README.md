@@ -74,7 +74,7 @@ No additional TRES-0010 research is required before Slice-1 coding unless implem
 
 - `SEMANTIC_PROMOTION_RECONCILIATION.md` — pre-edit commitment inventory for Director-approved D1–D5 semantics.
 - `SEMANTIC_PROMOTION_LOSSLESS_AUDIT.md` — post-promotion 30/30 lossless preservation audit across SPEC, assumptions, and verification.
-- Canonical semantic promotion is complete; IMP-0001 remains blocked pending the Slice-1 acceptance manifest, task hardening, deferred-gap ledger, and final TRES-0010 closure audit.
+- Canonical semantic promotion is complete. The subsequent frozen acceptance manifest, IMP/task/guardrail hardening, deferred-gap ledger, and final closure audit are also complete; IMP-0001 is ready for dispatch.
 
 ## Slice-1 acceptance closure
 
