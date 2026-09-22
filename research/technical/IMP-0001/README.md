@@ -1,41 +1,37 @@
 # IMP-0001 Technical Review Evidence
 
-**Status:** Active repair lineage for SFL v0 Slice 1
+**Status:** Active conformance/repair lineage for SFL v0 Slice 1
 
-## Independent candidate-v1 conformance
+## Candidate-v1
 
-Candidate:
+- ref: `imp-0001-slice1-conformance-candidate-v1`
+- SHA: `7e11dab7697121eb0dbb169ba46210d81b80586e`
+- independent result: **BLOCK**
+- full report: `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW.md`
+- reconciliation: `IMP-0001_CONFORMANCE_BLOCK_RECONCILIATION.md`
 
-`imp-0001-slice1-conformance-candidate-v1` @ `7e11dab7697121eb0dbb169ba46210d81b80586e`
+The full v1 report is preserved byte-identically:
 
-Result: **BLOCK**
-
-Readable Master Architect reconciliation:
-
-- `IMP-0001_CONFORMANCE_BLOCK_RECONCILIATION.md`
-
-Lossless complete reviewer return:
-
-- `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW.md`
 - SHA-256 `09fb414448000784866c2e8d172ed576d8180ad9d5db9e7d38ed4bb61a3ab91d`
 - Git blob `23206f0891ff13135a683c56dbe264f75db80533`
 
-The earlier corrupt `.md.br` preservation attempt has been deleted.
+## Candidate-v2
 
-Original reviewer artifact identity:
+- ref: `imp-0001-slice1-conformance-candidate-v2`
+- SHA: `ba16829e240950f1f3c648107cf3b8b36f996971`
+- independent result: **BLOCK**
+- full report: `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V2.md`
+- reconciliation: `IMP-0001_CANDIDATE_V2_BLOCK_RECONCILIATION.md`
 
-- SHA-256 `09fb414448000784866c2e8d172ed576d8180ad9d5db9e7d38ed4bb61a3ab91d`
-- 127,757 bytes
-- 636 lines
+The v2 reviewer independently cleared the v1 repair areas and found two new narrow blockers: MaterialDeadlock future-input resolution and over-broad fallback attribution under intersecting debt/grain constraints.
 
-## Active repair
+## Active repair-v3
 
-Implementation packet:
+- implementation branch: `implementation/imp-0001-slice1-repair-v3`
+- draft PR: #23
+- repair packet: `../../tasks/implementation/IMP-0001_V3_REPAIR_PACKET.md`
+- base: frozen candidate-v2
 
-- `../../tasks/implementation/IMP-0001_BLOCK_REPAIR_PACKET.md`
+After repair-v3, the Master Architect must reconcile and freeze a new candidate-v3 SHA before commissioning another **fresh independent K4 reviewer**.
 
-Repair branch:
-
-- `implementation/imp-0001-slice1-repair-v2`
-
-A later candidate-v2 must receive a fresh independent K4 conformance review before IMP-0001 can become VERIFIED COMPLETE.
+IMP-0001 is not VERIFIED COMPLETE until `S1-GLOBAL-CONFORMANCE` receives fresh independent PASS.
