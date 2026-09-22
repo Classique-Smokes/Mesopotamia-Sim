@@ -1,5 +1,13 @@
 # Architecture Escalation Rules
 
+**Status / authority:** ACCEPTED operational escalation protocol  
+**Purpose:** Define when implementation evidence must return to architectural/project review rather than being silently absorbed into code.  
+**Load when:** implementation or design work encounters a change with persistent, semantic, cross-system, compatibility, execution-model, or similarly consequential effects.  
+**Do not load merely because:** a local reversible engineering choice is inconvenient.  
+**Expected output:** a bounded escalation containing the conflict, affected authority, evidence, realistic options, consequences, and safe continuing work.  
+**Escalation / stop:** the protocol itself is the stop path; do not implement the consequential change first and seek approval afterward.
+
+
 **Principle:** Implementation may expose architectural evidence; it may not silently convert that evidence into architecture.
 
 ## Escalate when a proposed implementation change would materially affect
