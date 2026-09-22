@@ -6,8 +6,8 @@ namespace Mesopotamia.Sim.Tests;
 public sealed class ToolingSmokeTests
 {
     [TestMethod]
-    public void TestPlatformExecutes()
+    public void TestPlatformExecutesOnAcceptedRuntime()
     {
-        Assert.AreEqual(4, 2 + 2);
+        Assert.IsGreaterThanOrEqualTo(10, Environment.Version.Major);
     }
 }
