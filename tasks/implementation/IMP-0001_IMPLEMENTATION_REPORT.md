@@ -1,6 +1,22 @@
 # IMP-0001 — Repair-v3 implementation report
 
-**Implementation evidence: complete locally; remote publication/CI receipt is a separate delivery gate.**
+## Repair-v3 verified publication receipt
+
+**IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE**
+
+Published and verified repair head: `d7e28471705c3056eb11a3e0c9eb2a1267b5c158`.
+
+- [Canonical PR CI run 35786680087](https://github.com/Classique-Smokes/Mesopotamia-Sim/actions/runs/35786680087): SUCCESS, all canonical steps and 8 test methods pass, zero failures/skips.
+- Actual CI checkout: PR merge `d8ba1dc7c47decda48c4b69d9e5bc41cee5f922a`, combining that repair head with main `34989ee91d293971dcecf9837c76ddc3ad751424`.
+- [Acceptance artifact 10720362260](https://github.com/Classique-Smokes/Mesopotamia-Sim/actions/runs/35786680087/artifacts/10720362260): downloaded and archive digest verified as `sha256:1bb50ed596f794e71f9bf725d784c77b9fbf65c0d6f03fcde7790cb9c4507f87`.
+- All six local/remote evidence files match semantically. JSON property order and platform line endings account for byte differences; classifications, scenario outcomes and fixture records match.
+- 62 scenarios / 1,948 audited worlds / 127 coder-owned REQUIRED PASS. S1-GLOBAL-CONFORMANCE remains awaiting fresh independent review.
+
+Native Git push failed because the sandbox Windows credential store was unavailable. Publication succeeded through the connected GitHub Git-data API: every uploaded blob and milestone tree matched local Git identity, and the repair ref advanced without force. API-generated commit metadata changed commit SHAs; it did not change file trees. Original local milestones remain on `implementation/imp-0001-slice1-repair-v3-local-milestones` and in the delivery bundle. The mapping is retained in the task evidence. In particular, local source checkpoint `6b05b3c465925c06e92a6e696013cb504bb1f46c` maps to published `459a86075714e5ff8cba5a170575bb790ca0aa80`; local report checkpoint `581f1ff12deb7a14e34d9e940c3a2e2fd92ada83` maps to the verified published head above.
+
+This receipt changes documentation only. The final receipt commit receives its own canonical PR CI; the final head/run/artifact identities are recorded in the task delivery JSON and user-facing return after verification. The production/test/toolchain fingerprint remains `8c964599ccaf360bd0f389367e58745c3c02c0dd0f3b414d3932cdd85cc6a18e`.
+
+**IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE**
 
 This is the repair author's report, not an independent K4 review. The candidate-v2 BLOCK remains the historical conformance disposition. Even after publication, the terminal implementation status is **IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE**, never VERIFIED COMPLETE without a fresh independent PASS.
 
