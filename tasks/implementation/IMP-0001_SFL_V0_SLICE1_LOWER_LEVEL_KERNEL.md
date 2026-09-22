@@ -2,18 +2,22 @@
 
 **Task ID:** IMP-0001  
 **Commissioned by:** Master Architect  
-**Status:** PREPARED / DISPATCH BLOCKED PENDING TRES-0010  
+**Status:** READY FOR DISPATCH / TRES-0010 CLOSED  
 **Context mode:** PROJECT-CONTEXT
 
-## Pre-dispatch gate
+## Pre-dispatch gate — satisfied
 
-Do not dispatch this implementation task until the Master Architect closes `TRES-0010 — Pre-Implementation Architecture / Semantics / Verification Red Team` and records that no unresolved blocker remains.
+TRES-0010 is closed with a PASS and this task is cleared for dispatch.
 
-Commission pack:
+Closure evidence:
 
-- `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
+- `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`
+- frozen Slice-1 acceptance authority `SFL-V0-S1-ACCEPTANCE-v1`
+- `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md`
 
-TRES-0010 findings may amend this packet or higher-authority artifacts before implementation begins.
+On actual dispatch, SCF-001 and the remaining executable/CI portion of SCF-002 fire.
+
+Any newly discovered conflict with accepted semantics/architecture still triggers the escalation rules in this packet; closure is not permission to improvise new project meaning.
 
 ## 1. Objective
 
