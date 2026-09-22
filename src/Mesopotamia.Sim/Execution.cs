@@ -73,7 +73,7 @@ public sealed partial class Simulation
             nextProposal = Math.Max(nextProposal, checked(proposals.Select(p => p.Id.Value).DefaultIfEmpty(0).Max() + 1));
             foreach (var policy in input.PersonalPolicies.OrderBy(p => p.Key.Value))
             {
-                var decision = PersonalAgency.Decide(policy.Key, policy.Value, decisionSnapshot);
+                var decision = PersonalAgency.Decide(PersonalInputCapture.Capture(policy.Key, policy.Value, decisionSnapshot));
                 ProposalId? id = null;
                 if (decision.Terms is not null)
                 {
@@ -138,7 +138,8 @@ public sealed partial class Simulation
                     if (choice == refuse)
                     {
                         Outcome declined = Finish(proposal, OutcomeKind.Declined, "VoluntaryRefusal", cause, outcomes);
-                        if (proposal.Terms is RequestGiftOrHelp or RequestLoan && decisionSnapshot.People[proposal.Actor].NeedsGrain)
+                        if (proposal.Terms is RequestGiftOrHelp or RequestLoan or RelationshipMediatedReciprocalHelp { Request: true } &&
+                            decisionSnapshot.People[proposal.Actor].NeedsGrain)
                             batch.Add(new(new("GenuineNeedRefusal", declined.Event, proposal.Actor, respondent), -5));
                         if (called) batch.Add(new(new("CalledFavourRefusal", declined.Event, proposal.Actor, respondent), -20));
                         continue;
@@ -147,13 +148,13 @@ public sealed partial class Simulation
                 accepted.Add((proposal, cause));
             }
             HashSet<PersonId> moved = [];
+            HashSet<ProposalId> resolutionFallbacks = ResolutionFallbacks([.. accepted.Select(a => a.Proposal)], decisionSnapshot);
             foreach (var attempt in accepted)
             {
                 Proposal proposal = attempt.Proposal;
                 string? loss = ActionRules.Invalid(proposal, state.Snapshot(cycle)) ?? ActionRules.Infeasible(proposal, state.Snapshot(cycle));
                 if (ActionRules.Mover(proposal) is { } mover && moved.Contains(mover)) loss = "CompetingResidenceTransition";
-                bool fallback = accepted.Any(other => other.Proposal.Id != proposal.Id && Competes(proposal, other.Proposal, decisionSnapshot)) ||
-                    CompetesForAggregateGrain(proposal, accepted.Select(a => a.Proposal), decisionSnapshot);
+                bool fallback = resolutionFallbacks.Contains(proposal.Id);
                 if (loss is not null)
                     Finish(proposal, OutcomeKind.InvalidatedAtResolution, loss, attempt.Cause, outcomes, fallback);
                 else
@@ -229,40 +230,6 @@ public sealed partial class Simulation
         CallFavor call => Transfer(new(proposal.Id, snapshot.Favours[call.Favour].Debtor, call.Requested), snapshot),
         _ => null
     };
-    private static bool Competes(Proposal a, Proposal b, WorldSnapshot snapshot)
-    {
-        if (ActionRules.Mover(a) is { } mover && ActionRules.Mover(b) == mover) return true;
-        if (a.Terms is ProposeMarriage ma && b.Terms is ProposeMarriage mb && ma.Bride == mb.Bride) return true;
-        if (a.Terms is CallFavor callA && b.Terms is CallFavor callB && callA.Favour == callB.Favour) return true;
-        var pairA = NewFavourPair(a);
-        var pairB = NewFavourPair(b);
-        if (pairA is not null && pairA == pairB && (a.Terms is OfferBenefitForFavor || b.Terms is OfferBenefitForFavor)) return true;
-        var left = Transfer(a, snapshot);
-        var right = Transfer(b, snapshot);
-        return left is { } l && right is { } r && l.Giver == r.Giver &&
-            (System.Numerics.BigInteger)l.Amount + r.Amount > snapshot.People[l.Giver].Grain -
-                (a.Terms is RepayDebt or CallFavor { Requested: RepayDebt } || b.Terms is RepayDebt or CallFavor { Requested: RepayDebt } ? 2 : 0);
-
-        (PersonId, PersonId)? NewFavourPair(Proposal proposal)
-        {
-            var transfer = Transfer(proposal, snapshot);
-            return transfer is { } t && (proposal.Terms is OfferBenefitForFavor ||
-                (proposal.Terms is RelationshipMediatedReciprocalHelp && snapshot.AttitudeOf(t.Recipient, t.Giver) >= 75))
-                ? (t.Recipient, t.Giver) : null;
-        }
-    }
-
-    private static bool CompetesForAggregateGrain(Proposal proposal, IEnumerable<Proposal> contenders, WorldSnapshot snapshot)
-    {
-        if (Transfer(proposal, snapshot) is not { } own) return false;
-        Proposal[] spending = contenders.Where(p => Transfer(p, snapshot)?.Giver == own.Giver).ToArray();
-        if (spending.Length < 2) return false;
-        System.Numerics.BigInteger total = 0;
-        foreach (Proposal contender in spending) total += Transfer(contender, snapshot)!.Value.Amount;
-        long reserve = spending.Any(p => p.Terms is RepayDebt or CallFavor { Requested: RepayDebt }) ? 2 : 0;
-        return total > snapshot.People[own.Giver].Grain - reserve;
-    }
-
     private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch)
     {
         Proposal outer = proposal;

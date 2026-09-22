@@ -8,6 +8,8 @@ public sealed record PersonalPolicy(string Profile = "SFL-PERSONAL-REFERENCE-v1"
 {
     public ImmutableArray<PersonId> ObservedPeople { get; init; } = [];
     public ImmutableArray<RelationId> ObservedDebts { get; init; } = [];
+    public ImmutableDictionary<PersonId, Sex> ObservedSexes { get; init; } = ImmutableDictionary<PersonId, Sex>.Empty;
+    public ImmutableDictionary<PersonId, DwellingId> ObservedResidences { get; init; } = ImmutableDictionary<PersonId, DwellingId>.Empty;
     public PersonId? GiftTarget { get; init; }
     public long Amount { get; init; } = 1;
 }
@@ -33,26 +35,12 @@ internal static class ReferenceScorer
 
 internal static class PersonalAgency
 {
-    internal static (ActionTerms? Terms, DecisionTrace Trace) Decide(PersonId actor, PersonalPolicy policy, WorldSnapshot snapshot)
+    internal static (ActionTerms? Terms, DecisionTrace Trace) Decide(PersonalDecisionInputs inputs)
     {
-        if (policy.Amount <= 0) throw new ArgumentException("Policy amount must be positive.", nameof(policy));
-        if (policy.Profile is not ("SCORE-VP-002" or "SCORE-VP-004" or "SCORE-VP-005" or "SCORE-VP-006" or "SFL-PERSONAL-REFERENCE-v1"))
-            throw new ArgumentException("Unsupported personal profile.", nameof(policy));
-        HashSet<PersonId> known = [.. policy.ObservedPeople];
-        if (policy.GiftTarget is { } giftTarget) known.Add(giftTarget);
-        foreach (Attitude attitude in snapshot.Attitudes.Values)
-            if (attitude.From == actor || attitude.To == actor) known.Add(attitude.From == actor ? attitude.To : attitude.From);
-        foreach (Kinship kinship in snapshot.Kinships.Values)
-            if (kinship.First == actor || kinship.Second == actor) known.Add(kinship.First == actor ? kinship.Second : kinship.First);
-        foreach (Marriage marriage in snapshot.Marriages.Values)
-            if (marriage.Groom == actor || marriage.Bride == actor) known.Add(marriage.Groom == actor ? marriage.Bride : marriage.Groom);
-        foreach (Debt debt in snapshot.Debts.Values)
-            if (debt.Creditor == actor || debt.Debtor == actor) known.Add(debt.Creditor == actor ? debt.Debtor : debt.Creditor);
-        foreach (Favour favour in snapshot.Favours.Values)
-            if (favour.Holder == actor || favour.Debtor == actor) known.Add(favour.Holder == actor ? favour.Debtor : favour.Holder);
-        if (known.Any(p => p == actor || !snapshot.People.ContainsKey(p))) throw new ArgumentException("Invalid observed actor.", nameof(policy));
+        PersonId actor = inputs.Own.Id;
+        PersonalPolicy policy = inputs.Policy;
         List<(string Key, ActionTerms Terms)> generated = [("00", new Farm())];
-        foreach (PersonId target in known.OrderBy(p => p.Value))
+        foreach (PersonId target in inputs.KnownPeople)
         {
             string suffix = target.Value.ToString("D20", CultureInfo.InvariantCulture);
             generated.Add(($"01:{suffix}", new OfferGift(target, policy.Amount)));
@@ -62,32 +50,31 @@ internal static class PersonalAgency
             generated.Add(($"05:{suffix}", new OfferBenefitForFavor(target, policy.Amount)));
             generated.Add(($"06:{suffix}", new RelationshipMediatedReciprocalHelp(target, policy.Amount)));
             generated.Add(($"07:{suffix}", new RelationshipMediatedReciprocalHelp(target, policy.Amount, Request: true)));
-            if (snapshot.People[actor].Sex == Sex.Male && snapshot.People[target].Sex == Sex.Female)
+            if (inputs.Own.Sex == Sex.Male && policy.ObservedSexes.TryGetValue(target, out Sex sex) && sex == Sex.Female)
                 generated.Add(($"08:{suffix}", new ProposeMarriage(target, policy.Amount)));
-            if (snapshot.AreMarried(actor, target) || (snapshot.AttitudeOf(actor, target) >= 75 && snapshot.AttitudeOf(target, actor) >= 75))
+            if (inputs.AreMarried(target) || (inputs.AttitudeOf(actor, target) >= 75 && inputs.AttitudeOf(target, actor) >= 75))
             {
-                generated.Add(($"10:{suffix}", new MoveResidence(target, snapshot.HomeOf(target))));
-                generated.Add(($"11:{suffix}", new InviteResidence(target, snapshot.HomeOf(actor))));
+                if (policy.ObservedResidences.TryGetValue(target, out DwellingId home))
+                    generated.Add(($"10:{suffix}", new MoveResidence(target, home)));
+                generated.Add(($"11:{suffix}", new InviteResidence(target, inputs.OwnResidence)));
             }
-            if (snapshot.HasFavour(actor, target) && snapshot.HasFavour(target, actor))
+            if (inputs.HasFavour(actor, target) && inputs.HasFavour(target, actor))
                 generated.Add(($"12:{suffix}", new CancelReciprocalFavours(target)));
         }
-        foreach (Debt debt in snapshot.Debts.Values.Where(d => d.Debtor == actor && d.Remaining > 0).OrderBy(d => d.Id.Value))
+        foreach (Debt debt in inputs.Debts.Where(d => d.Debtor == actor && d.Remaining > 0))
             generated.Add(($"09:{debt.Id.Value.ToString("D20", CultureInfo.InvariantCulture)}", new RepayDebt(debt.Id, Math.Min(policy.Amount, debt.Remaining))));
-        foreach (Favour favour in snapshot.Favours.Values.Where(f => f.Holder == actor && f.Outstanding).OrderBy(f => f.Id.Value))
+        foreach (Favour favour in inputs.Favours.Where(f => f.Holder == actor && f.Outstanding))
         {
             string suffix = favour.Id.Value.ToString("D20", CultureInfo.InvariantCulture);
             generated.Add(($"13:{suffix}", new CallFavor(favour.Id, new Farm())));
-            foreach (Debt debt in snapshot.Debts.Values.Where(d => d.Debtor == favour.Debtor && d.Remaining > 0 &&
-                (d.Creditor == actor || policy.ObservedDebts.Contains(d.Id))).OrderBy(d => d.Id.Value))
+            foreach (Debt debt in inputs.Debts.Where(d => d.Debtor == favour.Debtor && d.Remaining > 0))
                 generated.Add(($"14:{suffix}:{debt.Id.Value.ToString("D20", CultureInfo.InvariantCulture)}", new CallFavor(favour.Id, new RepayDebt(debt.Id, Math.Min(policy.Amount, debt.Remaining)))));
         }
         List<CandidateTrace> traces = [];
         foreach (var candidate in generated)
         {
-            Proposal proposal = new(new(1), actor, candidate.Terms);
-            string? gate = ActionRules.Invalid(proposal, snapshot) ?? ActionRules.Infeasible(proposal, snapshot);
-            ImmutableDictionary<string, long> components = gate is null ? Components(actor, candidate.Terms, policy, snapshot) : ImmutableDictionary<string, long>.Empty;
+            string? gate = inputs.Gate(candidate.Terms);
+            ImmutableDictionary<string, long> components = gate is null ? Components(candidate.Terms, inputs) : ImmutableDictionary<string, long>.Empty;
             traces.Add(new(candidate.Key, candidate.Terms.GetType().Name, gate is null, gate ?? "", components,
                 gate is null ? ReferenceScorer.Sum(components.Values) : null, false)
             { Terms = candidate.Terms });
@@ -95,22 +82,15 @@ internal static class PersonalAgency
         var selection = ReferenceScorer.Select(traces);
         DecisionTrace trace = new(actor, null, "Personal", policy.Profile,
             traces.Select(c => c with { Selected = c.Key == selection.Key }).ToImmutableArray(),
-            [$"OwnGrain:{snapshot.People[actor].Grain}", $"NeedsGrain:{snapshot.People[actor].NeedsGrain}",
-                $"KnownPeople:{string.Join(',', known.OrderBy(p => p.Value).Select(p => p.Value))}",
-                $"OwnResidence:{snapshot.HomeOf(actor).Value}",
-                .. known.OrderBy(p => p.Value).Select(p => $"DirectedAttitude:{p.Value}:{snapshot.AttitudeOf(actor, p)};CounterpartAttitude:{snapshot.AttitudeOf(p, actor)};Kin:{snapshot.AreKin(actor, p)};Marriage:{snapshot.AreMarried(actor, p)};Residence:{snapshot.HomeOf(p).Value}")], selection.Fallback);
+            inputs.TraceInputs(), selection.Fallback);
         return (selection.Key is null ? null : generated.Single(c => c.Key == selection.Key).Terms, trace);
     }
 
-    private static ImmutableDictionary<string, long> Components(PersonId actor, ActionTerms terms, PersonalPolicy policy, WorldSnapshot snapshot)
+    private static ImmutableDictionary<string, long> Components(ActionTerms terms, PersonalDecisionInputs inputs)
     {
-        // An interpersonal scoring target need not require a new response (repayment/cancellation).
-        PersonId? target = terms switch
-        {
-            RepayDebt repay => snapshot.Debts[repay.Debt].Creditor,
-            CancelReciprocalFavours cancel => cancel.Target,
-            _ => ActionRules.Target(terms, snapshot)
-        };
+        PersonId actor = inputs.Own.Id;
+        PersonalPolicy policy = inputs.Policy;
+        PersonId? target = inputs.Target(terms);
         var values = ImmutableDictionary.CreateBuilder<string, long>(StringComparer.Ordinal);
         switch (policy.Profile)
         {
@@ -120,24 +100,24 @@ internal static class PersonalAgency
                 break;
             case "SCORE-VP-004":
                 values.Add("AttitudeComponent", target is { } person && terms is not ProposeMarriage ?
-                    checked((snapshot.AreKin(actor, person) ? 3L : 2L) * snapshot.AttitudeOf(actor, person)) : 0);
+                    checked((inputs.AreKin(person) ? 3L : 2L) * inputs.AttitudeOf(actor, person)) : 0);
                 values.Add("OtherConcern", 0);
                 break;
             case "SCORE-VP-005": values.Add("SymmetryComponent", 0); break;
             case "SCORE-VP-006":
                 bool residence = terms is MoveResidence or InviteResidence;
-                bool marriage = residence && target is { } partner && snapshot.AreMarried(actor, partner);
+                bool marriage = residence && target is { } partner && inputs.AreMarried(partner);
                 values.Add("CoResidenceMarriageConcern", marriage ? 40 : 0);
                 values.Add("CoResidenceRelationshipConcern", residence && !marriage ? 20 : 0);
                 break;
             default:
                 // Replaceable laboratory preferences, not additional social rules.
-                values.Add("NeedReliefConcern", snapshot.People[actor].NeedsGrain && terms is RequestGiftOrHelp ? 100 : 0);
-                values.Add("GrainConcern", terms is Farm && snapshot.People[actor].Grain < 4 ? 60 : 0);
+                values.Add("NeedReliefConcern", inputs.Own.NeedsGrain && terms is RequestGiftOrHelp ? 100 : 0);
+                values.Add("GrainConcern", terms is Farm && inputs.Own.Grain < 4 ? 60 : 0);
                 values.Add("DebtConcern", terms is RepayDebt ? 30 : 0);
-                values.Add("RelationConcern", target is { } other && terms is OfferGift ? checked((snapshot.AreKin(actor, other) ? 3L : 2L) * snapshot.AttitudeOf(actor, other)) : 0);
+                values.Add("RelationConcern", target is { } other && terms is OfferGift ? checked((inputs.AreKin(other) ? 3L : 2L) * inputs.AttitudeOf(actor, other)) : 0);
                 values.Add("MarriageConcern", terms is ProposeMarriage ? 40 : 0);
-                values.Add("CoResidenceConcern", terms is MoveResidence or InviteResidence && target is { } resident ? snapshot.AreMarried(actor, resident) ? 40 : 20 : 0);
+                values.Add("CoResidenceConcern", terms is MoveResidence or InviteResidence && target is { } resident ? inputs.AreMarried(resident) ? 40 : 20 : 0);
                 break;
         }
         return values.ToImmutable();

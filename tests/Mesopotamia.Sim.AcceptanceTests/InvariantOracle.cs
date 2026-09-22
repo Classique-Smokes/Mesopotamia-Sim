@@ -9,15 +9,23 @@ internal static class InvariantOracle
     internal static void Verify(InitialWorld initial, WorldSnapshot final, IEnumerable<SemanticEvent> history, IEnumerable<DecisionTrace> decisions)
     {
         Dictionary<PersonId, long> grain = initial.People.ToDictionary(p => p.Id, p => p.Grain);
+        Dictionary<PersonId, bool> need = initial.People.ToDictionary(p => p.Id, p => p.NeedsGrain);
         Dictionary<(PersonId, PersonId), int> attitudes = initial.Attitudes.ToDictionary(a => (a.From, a.To), a => a.Value);
         Dictionary<PersonId, DwellingId> residences = initial.Residences.ToDictionary(r => r.Person, r => r.Dwelling);
         Dictionary<EventId, SemanticEvent> seen = [];
         HashSet<CauseKey> causes = [];
+        Dictionary<CauseKey, int> requiredCauses = [];
+        long currentCycle = 0;
         Dictionary<long, int> indexes = [];
         HashSet<(long, PersonId)> moves = [];
         Dictionary<RelationId, long> repaid = [];
         foreach (SemanticEvent entry in history.Where(e => e.Cycle <= final.Cycle))
         {
+            if (entry.Cycle != currentCycle)
+            {
+                Assert.IsEmpty(requiredCauses, "A stable cycle omitted a mandatory attitude cause.");
+                currentCycle = entry.Cycle;
+            }
             Assert.IsTrue(seen.TryAdd(entry.Id, entry), "Repeated semantic event identity.");
             Assert.IsTrue(entry.ReactionIndex > indexes.GetValueOrDefault(entry.Cycle, -1), "Non-monotone reaction index.");
             indexes[entry.Cycle] = entry.ReactionIndex;
@@ -36,6 +44,29 @@ internal static class InvariantOracle
             else if (entry.Kind == "ExogenousGrain")
                 Assert.AreEqual(initial.Inputs.Single(i => entry.Detail == $"Input:{i.Id}").Delta, net);
             else Assert.AreEqual(0L, net, "Unexplained grain source/sink.");
+            // Need is reconstructed from initial facts and maintenance, not inferred from
+            // attitude history. In particular, paying the last grain is not unmet need.
+            if (entry.Kind == "MissedConsumption") need[entry.Participants[0]] = true;
+            if (entry.Kind == "ExogenousGrain" && grain[entry.Participants[0]] > 0) need[entry.Participants[0]] = false;
+            if (entry.Kind is "Gift" or "Help" or "Loan" or "Repayment" or "ExplicitBenefitForFavor" or "RelationshipMediatedReciprocalHelp")
+                need[entry.Participants[1]] = false;
+            // Derive the complete expected set from consequential outcomes, independently
+            // of the recorded contribution set and production consequence helpers.
+            (string Rule, PersonId From, PersonId To, int Delta)? required = entry.Kind switch
+            {
+                "Gift" or "Help" or "RelationshipMediatedReciprocalHelp" =>
+                    (entry.Kind, entry.Participants[1], entry.Participants[0], 10),
+                "Loan" or "Repayment" => (entry.Kind, entry.Participants[1], entry.Participants[0], 5),
+                "CalledFavourFulfilled" => (entry.Kind, entry.Participants[0], entry.Participants[1], 10),
+                "DebtSocialDueReview" when entry.Detail == "UnpaidBalance" =>
+                    ("UnpaidDebt", entry.Participants[0], entry.Participants[1], -10),
+                "Declined" when entry.Action is CallFavor =>
+                    ("CalledFavourRefusal", entry.Participants[0], entry.Participants[1], -20),
+                "Declined" when entry.Action is RequestGiftOrHelp or RequestLoan or RelationshipMediatedReciprocalHelp { Request: true }
+                    && need[entry.Participants[0]] => ("GenuineNeedRefusal", entry.Participants[0], entry.Participants[1], -5),
+                _ => null
+            };
+            if (required is { } cause) requiredCauses.Add(new(cause.Rule, entry.Id, cause.From, cause.To), cause.Delta);
             if (entry.Action is RepayDebt repayment && entry.Kind == "Repayment")
             {
                 repaid[repayment.Debt] = checked(repaid.GetValueOrDefault(repayment.Debt) + repayment.Amount);
@@ -51,23 +82,17 @@ internal static class InvariantOracle
             if (entry.Kind == "AttitudeComposition")
             {
                 var pair = (entry.Participants[0], entry.Participants[1]);
+                CauseKey[] expectedKeys = requiredCauses.Keys.Where(k => (k.From, k.To) == pair).ToArray();
+                CollectionAssert.AreEquivalent(expectedKeys, entry.Contributions.Select(c => c.Key).ToArray(),
+                    "Recorded contributions omit or invent mandatory causes.");
                 long sum = attitudes.GetValueOrDefault(pair);
                 foreach (AttitudeContribution contribution in entry.Contributions)
                 {
                     Assert.IsTrue(causes.Add(contribution.Key), "Repeated automatic cause.");
                     Assert.AreEqual(pair, (contribution.Key.From, contribution.Key.To));
                     Assert.IsTrue(entry.Causes.Contains(contribution.Key.Trigger));
-                    SemanticEvent trigger = seen[contribution.Key.Trigger];
-                    int expected = trigger.Kind switch
-                    {
-                        "Gift" or "Help" or "RelationshipMediatedReciprocalHelp" or "CalledFavourFulfilled" => 10,
-                        "Loan" or "Repayment" => 5,
-                        "DebtSocialDueReview" => -10,
-                        "Declined" when trigger.Action is CallFavor => -20,
-                        "Declined" when trigger.Action is RequestGiftOrHelp or RequestLoan => -5,
-                        _ => throw new AssertFailedException("Unsupported automatic cause.")
-                    };
-                    Assert.AreEqual(expected, contribution.Delta);
+                    Assert.AreEqual(requiredCauses[contribution.Key], contribution.Delta);
+                    requiredCauses.Remove(contribution.Key);
                     sum = checked(sum + contribution.Delta);
                 }
                 attitudes[pair] = (int)Math.Clamp(sum, -100, 100);
@@ -82,6 +107,7 @@ internal static class InvariantOracle
             if (entry.Kind is "Unable" or "InvalidatedAtResolution" or "InvalidTerms")
                 Assert.IsEmpty(entry.Material);
         }
+        Assert.IsEmpty(requiredCauses, "Published history omitted mandatory attitude consequences.");
         foreach (Person person in final.People.Values)
         {
             Assert.AreEqual(grain[person.Id], person.Grain, "State differs from material ledger.");

@@ -13,7 +13,11 @@ internal sealed partial class Scenarios
             Simulation sim = Create(world);
             sim.RunCycle(new([P(1, 1, new OfferBenefitForFavor(new(2), 1)), P(2, 3, new OfferLoan(new(1), 2))]));
             sim.RunCycle(new([P(3, 2, new OfferBenefitForFavor(new(1), 1)), P(4, 1, new OfferLoan(new(2), 2))]));
-            CycleResult result = sim.RunCycle(new([]) { PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-004")) });
+            CycleResult result = sim.RunCycle(new([])
+            {
+                PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-004")
+                { ObservedSexes = ImmutableDictionary<PersonId, Sex>.Empty.Add(new(2), Sex.Female), ObservedResidences = ImmutableDictionary<PersonId, DwellingId>.Empty.Add(new(2), new(2)) })
+            });
             DecisionTrace trace = result.Decisions.Single(d => d.Context == "Personal");
             string[] expected = ["Farm", "OfferGift", "RequestGiftOrHelp", "OfferLoan", "RequestLoan", "RepayDebt", "OfferBenefitForFavor", "RelationshipMediatedReciprocalHelp", "CallFavor", "CancelReciprocalFavours", "ProposeMarriage", "MoveResidence", "InviteResidence"];
             foreach (string meaning in expected) True(trace.Candidates.Any(c => c.Meaning == meaning));
@@ -33,7 +37,10 @@ internal sealed partial class Scenarios
             };
             Simulation sim = Create(world);
             CycleResult result = sim.RunCycle(new([])
-            { PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-004")) });
+            {
+                PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-004")
+                { ObservedSexes = ImmutableDictionary<PersonId, Sex>.Empty.Add(new(2), Sex.Female) })
+            });
             DecisionTrace trace = result.Decisions.Single(d => d.Context == "Personal");
             CandidateTrace nonKin = trace.Candidates.Single(c => c.Terms is OfferGift gift && gift.Target == new PersonId(2));
             CandidateTrace kin = trace.Candidates.Single(c => c.Terms is OfferGift gift && gift.Target == new PersonId(3));
@@ -61,7 +68,8 @@ internal sealed partial class Scenarios
                 if (married) world = world with { Marriages = [new(new(6), new(1), new(2))] };
                 CycleResult result = Create(world).RunCycle(new([])
                 {
-                    PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-006")),
+                    PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-006")
+                    { ObservedResidences = ImmutableDictionary<PersonId, DwellingId>.Empty.Add(new(2), new(2)) }),
                     ResponseProfiles = ImmutableDictionary<PersonId, string>.Empty.Add(new(2), "SCORE-RP-002")
                 });
                 DecisionTrace trace = result.Decisions.Single(d => d.Context == "Personal");
@@ -79,7 +87,10 @@ internal sealed partial class Scenarios
             InitialWorld world = World(0, 6, 8) with { Marriages = [new(new(6), new(3), new(2))] };
             Simulation sim = Create(world);
             CycleResult result = sim.RunCycle(new([P(1, 1, new RequestGiftOrHelp(new(2), 1))])
-            { PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(2), new("SCORE-VP-006")) });
+            {
+                PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(2), new("SCORE-VP-006")
+                { ObservedResidences = ImmutableDictionary<PersonId, DwellingId>.Empty.Add(new(3), new(3)) })
+            });
             Equal(1, result.Decisions.Count(d => d.Actor == new PersonId(2) && d.Context == "Personal"));
             Equal(1, result.Decisions.Count(d => d.Actor == new PersonId(2) && d.Context == "Response"));
             Equal(new DwellingId(3), result.State.HomeOf(new(2)));

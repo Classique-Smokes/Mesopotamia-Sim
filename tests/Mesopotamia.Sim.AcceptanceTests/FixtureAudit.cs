@@ -38,6 +38,8 @@ internal sealed partial class Scenarios
                 Subcase = FixtureEvidence.Count + 1,
                 Configuration = world.Initial.Configuration.Version,
                 Profiles = world.Simulation.DecisionHistory.Select(d => d.Profile).Distinct().Order(StringComparer.Ordinal),
+                PersonalDecisionInputs = world.Simulation.DecisionHistory.Where(d => d.Context == "Personal")
+                    .Select(d => new { d.Cycle, d.Actor, d.Proposal, d.Profile, d.SubjectiveInputs }),
                 SubmittedTerms = world.Simulation.History.Where(e => e.Kind == "Proposal").Select(e => new { e.Cycle, e.Proposal, Actor = e.Participants[0], Terms = e.Detail }),
                 Fallbacks = world.Simulation.History.Where(e => e.TechnicalFallback).Select(e => new { e.Id, e.Kind, e.Cycle, e.Proposal }),
                 DecisionFallbacks = world.Simulation.DecisionHistory.Where(d => d.TechnicalFallback).Select(d => new { d.Cycle, d.Actor, d.Proposal, d.Profile })
