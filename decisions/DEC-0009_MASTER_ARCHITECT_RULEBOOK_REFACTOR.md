@@ -5,7 +5,6 @@
 **Opened:** 2026-09-21  
 **Resolved:** 2026-09-22  
 **Accepted by:** Project Director  
-**Approver required:** Project Director  
 **Candidate:** `governance-rulebook-refactor-candidate` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`
 
 ## Problem / question
@@ -29,6 +28,8 @@ Preserve DEC-0002's role/authority intent while replacing the current monolithic
 - GOV-0001-B: PASS
 - GOV-0001-C: PASS
 - central synthesis: `research/technical/GOV-0001/FRESH_AGENT_EVALUATION_RECONCILIATION.md`
+- promotion record: `research/technical/GOV-0001/PROMOTION_RECORD.md`
+- canonical promotion merge: `339d8ea5173b0c5d1891899f30d20f76fb1edca6`
 - proposal: `../proposals/GOV-0001_MASTER_ARCHITECT_RULEBOOK_PROMOTION.md`
 
 ## Binding consequences
