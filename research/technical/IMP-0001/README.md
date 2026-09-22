@@ -25,13 +25,16 @@ The full v1 report is preserved byte-identically:
 
 The v2 reviewer independently cleared the v1 repair areas and found two new narrow blockers: MaterialDeadlock future-input resolution and over-broad fallback attribution under intersecting debt/grain constraints.
 
-## Active repair-v3
+## Candidate-v3
 
+- ref: `imp-0001-slice1-conformance-candidate-v3`
+- SHA: `06e25644879dd8505e24fcaeb43256f69c29c15f`
 - implementation branch: `implementation/imp-0001-slice1-repair-v3`
 - draft PR: #23
-- repair packet: `../../tasks/implementation/IMP-0001_V3_REPAIR_PACKET.md`
-- base: frozen candidate-v2
+- Master Architect reconciliation: `../../tasks/implementation/IMP-0001_CANDIDATE_V3_RECONCILIATION_AND_DISPATCH.md`
+- fresh K4 packet: `../../tasks/implementation/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`
+- independent result: **PENDING**
 
-After repair-v3, the Master Architect must reconcile and freeze a new candidate-v3 SHA before commissioning another **fresh independent K4 reviewer**.
+Candidate-v3 addresses the two candidate-v2 blockers under unchanged accepted semantics: MaterialDeadlock future recovery projection and precise TechnicalFallback attribution under intersecting constraints.
 
 IMP-0001 is not VERIFIED COMPLETE until `S1-GLOBAL-CONFORMANCE` receives fresh independent PASS.
