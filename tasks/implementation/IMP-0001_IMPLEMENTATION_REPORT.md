@@ -186,7 +186,11 @@ The report/handoff are outside this identity set, avoiding a self-referential ha
 
 ## Publication receipt
 
-Remote publication verification is pending at this report checkpoint. Delivery is not complete until the exact pushed head's canonical CI succeeds and its acceptance artifact is inspected. Pushes are fast-forward only; no new PR is requested or created.
+**PUBLICATION BLOCKED — no repaired source has been published or verified by remote CI.** The online repair branch was rechecked and still points to `7e11dab7697121eb0dbb169ba46210d81b80586e`. Local implementation verification above is complete; remote delivery is not.
+
+Normal Git push and a subsequent noninteractive dry-run stalled and were stopped. The Windows Git Credential Manager diagnostic reports `Unable to persist credentials with the 'wincredman' credential store`. The authenticated GitHub connector's `github_create_blob` call was also rejected before creating the blob: `MCP tool call requires approval, but approval policy is never`. No branch-update call, force-push, PR creation or approval bypass was performed. The fallback publication index proved the intended tree was `083a49b530a1a3b240b9f2c35324d2df4ab1f87b` at local checkpoint `21659f1c5082f476f2b036c43466e3cb4f3f728a`; this final receipt changes documentation only.
+
+The task outputs retain an identical report, canonical logs/evidence, a delivery identity record and a Git bundle of all recoverable repair commits. Publication can resume from the isolated repair checkout using its ordinary fast-forward push when Git authentication or connector write approval is available. Then verify the exact pushed head's `canonical-verification` run, inspect all command steps and artifact, and compare its 167-row evidence with this local execution. Until that happens there is **no repaired-head CI run or remote acceptance artifact to claim**. Candidate-v2 freezing and independent K4 review remain subsequent Master Architect/reviewer work.
 
 ## Frozen AcceptanceId evidence index
 
