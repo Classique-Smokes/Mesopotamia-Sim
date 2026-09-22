@@ -152,8 +152,7 @@ public sealed partial class Simulation
             foreach (var attempt in accepted)
             {
                 Proposal proposal = attempt.Proposal;
-                string? loss = ActionRules.Invalid(proposal, state.Snapshot(cycle)) ?? ActionRules.Infeasible(proposal, state.Snapshot(cycle));
-                if (ActionRules.Mover(proposal) is { } mover && moved.Contains(mover)) loss = "CompetingResidenceTransition";
+                string? loss = ResolutionLoss(proposal, state.Snapshot(cycle), moved);
                 bool fallback = resolutionFallbacks.Contains(proposal.Id);
                 if (loss is not null)
                     Finish(proposal, OutcomeKind.InvalidatedAtResolution, loss, attempt.Cause, outcomes, fallback);
@@ -230,16 +229,18 @@ public sealed partial class Simulation
         CallFavor call => Transfer(new(proposal.Id, snapshot.Favours[call.Favour].Debtor, call.Requested), snapshot),
         _ => null
     };
-    private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch)
+    private sealed record EvaluatedTransaction(WorldState State, Proposal EffectiveProposal, Favour? CalledFavour,
+        string Meaning, PersonId[] Participants, List<MaterialChange> Material);
+
+    private static EvaluatedTransaction EvaluateTransaction(WorldState source, Proposal proposal, long atCycle, EventId origin)
     {
-        Proposal outer = proposal;
         Favour? calledFavour = null;
         if (proposal.Terms is CallFavor call)
         {
-            calledFavour = state.Favours[call.Favour];
+            calledFavour = source.Favours[call.Favour];
             proposal = new(proposal.Id, calledFavour.Debtor, call.Requested);
         }
-        WorldState transaction = state.Copy();
+        WorldState transaction = source.Copy();
         List<MaterialChange> material = [];
         string meaning;
         PersonId[] participants;
@@ -252,7 +253,7 @@ public sealed partial class Simulation
             meaning = "Farm";
             participants = [person.Id];
         }
-        else if (Transfer(proposal, state.Snapshot(cycle)) is { } transfer)
+        else if (Transfer(proposal, source.Snapshot(atCycle)) is { } transfer)
         {
             Person giver = transaction.People[transfer.Giver];
             Person recipient = transaction.People[transfer.Recipient];
@@ -274,7 +275,7 @@ public sealed partial class Simulation
             if (proposal.Terms is OfferLoan or RequestLoan)
             {
                 RelationId id = transaction.AllocateRelation();
-                transaction.Debts.Add(id, new(id, giver.Id, recipient.Id, transfer.Amount, transfer.Amount, cycle, false, new(nextEvent)));
+                transaction.Debts.Add(id, new(id, giver.Id, recipient.Id, transfer.Amount, transfer.Amount, atCycle, false, origin));
             }
             if (proposal.Terms is RepayDebt repay)
             {
@@ -283,16 +284,16 @@ public sealed partial class Simulation
             }
             if (proposal.Terms is OfferBenefitForFavor ||
                 (proposal.Terms is RelationshipMediatedReciprocalHelp &&
-                state.Snapshot(cycle).AttitudeOf(recipient.Id, giver.Id) >= 75 && !state.Snapshot(cycle).HasFavour(recipient.Id, giver.Id)))
+                source.Snapshot(atCycle).AttitudeOf(recipient.Id, giver.Id) >= 75 && !source.Snapshot(atCycle).HasFavour(recipient.Id, giver.Id)))
             {
                 RelationId id = transaction.AllocateRelation();
-                transaction.Favours.Add(id, new(id, recipient.Id, giver.Id, true, new(nextEvent)));
+                transaction.Favours.Add(id, new(id, recipient.Id, giver.Id, true, origin));
             }
         }
         else if (proposal.Terms is ProposeMarriage marriage)
         {
             RelationId id = transaction.AllocateRelation();
-            transaction.Marriages.Add(id, new(id, proposal.Actor, marriage.Bride, new(nextEvent)));
+            transaction.Marriages.Add(id, new(id, proposal.Actor, marriage.Bride, origin));
             meaning = "DirectMarriage";
             participants = [proposal.Actor, marriage.Bride];
         }
@@ -302,7 +303,7 @@ public sealed partial class Simulation
             Residence residence = transaction.Residences.Values.Single(r => r.Person == mover);
             transaction.Residences[residence.Id] = residence with { Dwelling = destination };
             meaning = "ResidenceTransition";
-            participants = [proposal.Actor, ActionRules.Target(proposal.Terms, state.Snapshot(cycle))!.Value];
+            participants = [proposal.Actor, ActionRules.Target(proposal.Terms, source.Snapshot(atCycle))!.Value];
         }
         else if (proposal.Terms is CancelReciprocalFavours cancel)
         {
@@ -315,7 +316,19 @@ public sealed partial class Simulation
         else throw new InvalidOperationException("Unimplemented commit meaning.");
         if (calledFavour is not null) transaction.Favours[calledFavour.Id] = calledFavour with { Outstanding = false };
         transaction.Validate();
-        state = transaction;
+        return new(transaction, proposal, calledFavour, meaning, participants, material);
+    }
+
+    private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch)
+    {
+        Proposal outer = proposal;
+        EvaluatedTransaction evaluated = EvaluateTransaction(state, proposal, cycle, new(nextEvent));
+        state = evaluated.State;
+        proposal = evaluated.EffectiveProposal;
+        Favour? calledFavour = evaluated.CalledFavour;
+        string meaning = evaluated.Meaning;
+        PersonId[] participants = evaluated.Participants;
+        List<MaterialChange> material = evaluated.Material;
         SemanticEvent entry = Record(meaning, proposal.Id, [.. participants], [cause], [.. material], ActionRules.Describe(proposal.Terms), fallback);
         events[^1] = entry with { Action = proposal.Terms };
         if (Transfer(proposal, state.Snapshot(cycle)) is { } helpTransfer && meaning != "ExplicitBenefitForFavor")
