@@ -1,88 +1,23 @@
-# IMP-0001 — Implementation Agent Execution Handoff
-
-**Status:** ACTIVE BRANCH-LOCAL EXECUTION NOTE  
-**Authority:** Operational handoff subordinate to IMP-0001, accepted decisions/ADRs/SPEC, and frozen acceptance authority  
-**Branch:** `implementation/imp-0001-slice1`  
-**Branch base:** canonical `main` @ `794b9a04a0d93494cae6c5e3a2236ee0a22cc3fb`  
-**Date:** 2026-09-22
-
-## Start sequence
-
-Begin from repository artifacts, not chat memory:
-
-1. `AGENTS.md`
-2. `plans/CURRENT_PHASE.md`
-3. `tasks/implementation/IMP-0001_DISPATCH_RECORD.md`
-4. `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
-5. retrieve the task packet's listed accepted decisions/ADRs/SPEC, frozen verification sources, assumptions, and engineering guardrails.
-
-This is **PROJECT-CONTEXT** implementation work.
-
-## Frozen completion authority
-
-Before domain changes, confirm:
-
-- manifest: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md`
-- version: `SFL-V0-S1-ACCEPTANCE-v1`
-- required blob SHA: `efd2d0aab4579a78a3e7a0fc8d027c15f2f5e766`
-- freeze commit: `55377cc34b8bc3ccbf9cdf5029e9791dae965987`
-
-Do not edit, weaken, delete, replace, or reclassify the manifest.
-
-The existing acceptance bootstrap smoke test is tooling evidence only. It maps to **zero** AcceptanceIds.
-
-## Execution discipline
-
-Implement IMP-0001 in recoverable increments, following the packet's milestone order unless a concrete dependency justifies a different internal ordering.
-
-Commit meaningful milestones to this branch. Keep canonical root commands green:
-
-```bash
-dotnet restore Mesopotamia.Sim.slnx
-dotnet format Mesopotamia.Sim.slnx --verify-no-changes --no-restore
-dotnet build Mesopotamia.Sim.slnx --configuration Release --no-restore
-dotnet test Mesopotamia.Sim.slnx --configuration Release --no-build --no-restore
-```
-
-Do not:
-
-- change accepted semantics/architecture to simplify coding;
-- weaken tests, analyzers, CI, or frozen completion authority;
-- fake DEFERRED/later-slice semantics;
-- use runtime/container iteration order as semantic order;
-- reuse assertion-target production logic as its own independent oracle;
-- add broad frameworks/dependencies without demonstrated Slice-1 need;
-- merge this branch to `main`.
-
-If a packet escalation condition occurs, stop the affected work, preserve the recoverable branch state, and return an escalation rather than inventing a resolution.
-
-## Acceptance-surface requirement
-
-Build substantive executable/structural evidence for every REQUIRED AcceptanceId.
-
-Completion-candidate reporting must expose:
-
-- every REQUIRED AcceptanceId separately;
-- zero missing/skipped REQUIRED rows;
-- DEFERRED / N-A / UNEXERCISED separately;
-- invariant, determinism/metamorphic, fixture, oracle-independence, and mutant/fault-control evidence required by the frozen manifest.
-
-## Required branch return artifact
-
-Create and maintain:
-
-`tasks/implementation/IMP-0001_IMPLEMENTATION_REPORT.md`
-
-The report must satisfy IMP-0001 §11 and identify exact commands/results and frozen manifest identity.
-
-## End state
-
-The coding agent must **not** award itself the independent post-implementation conformance PASS.
-
-When all coder-owned implementation and verification obligations are complete, return the branch as:
+# IMP-0001 — Repair-v2 execution handoff
 
 **IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE**
 
-with the implementation report committed.
+**Branch:** `implementation/imp-0001-slice1-repair-v2`
 
-Only a fresh independent reviewer can supply the conformance evidence required before the Master Architect may accept `VERIFIED COMPLETE`.
+**Base / preserved candidate-v1:** `7e11dab7697121eb0dbb169ba46210d81b80586e`
+
+**Date:** 2026-09-22
+
+**Authority:** Operational branch-local note, subordinate to accepted SPEC/ADRs, frozen acceptance and the accepted BLOCK repair packet/reconciliation.
+
+Begin with `AGENTS.md`, `00_START_HERE.md` and current `origin/main:plans/CURRENT_PHASE.md`. The current repair packet and reconciliation were retrieved from `origin/main` at `a414e0f40615113db783538d2c7b8b0a384f5c87`; this branch intentionally starts at failed candidate-v1 and does not merge the later governance-only main commits.
+
+Read the [repair implementation report](IMP-0001_IMPLEMENTATION_REPORT.md) for authority identities, all action-pair interactions, personal-input classification, red/green regression results, source/evidence hashes and the frozen AcceptanceId index. Original independent review reference: `8e56d6b2d4abe95febf7f0ccb37ccc316b879482`. The original report hash validates; its later compressed archive does not. Archive repair was not performed.
+
+F1 adds accepted-proposal dependency and aggregate capacity analysis with disclosed stable-ID fallback, retaining immediate revalidation and compatible commits. F2 restores the needy reciprocal-request refusal cause and independently checks complete cause membership. F3 confines personal generation/gating/scoring to immutable own/direct-party/explicitly observed inputs and complete provenance traces. Existing score profiles and D1–D5 obligations remain intact.
+
+Canonical local commands all pass with SDK 10.0.401: restore, format verification, Release build and tests. The acceptance surface executes 57 named scenarios / 344 audited worlds; 127 coder-owned REQUIRED rows PASS. The frozen manifest remains blob `efd2d0aab4579a78a3e7a0fc8d027c15f2f5e766` at freeze `55377cc34b8bc3ccbf9cdf5029e9791dae965987`, with 167 IDs: 128 REQUIRED, 33 DEFERRED, 3 N-A, 3 UNEXERCISED. `S1-GLOBAL-CONFORMANCE` is still awaiting a fresh independent reviewer.
+
+Publication is directly to this repair branch, fast-forward only, without a new PR. The workflow's only change is adding this branch to its existing push triggers. Exact-head CI and artifact verification must complete before final delivery; see the report's publication receipt and the task delivery record for the final SHA/run/artifact.
+
+Do not move candidate-v1, merge or modify PR #7, edit acceptance/specification authority, or infer `VERIFIED COMPLETE` from green implementation checks. The Master Architect must reconcile this return and freeze candidate-v2. Another reviewer must perform its independent K4 review. The implementing agent cannot award that PASS. SCF-002 remains active.
