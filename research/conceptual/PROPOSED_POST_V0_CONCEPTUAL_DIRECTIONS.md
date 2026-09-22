@@ -1,76 +1,116 @@
 # Proposed Post-v0 Conceptual Directions
 
-**Status:** NON-AUTHORITATIVE / PROVISIONAL FUTURE-PLANNING NOTE  
-**Purpose:** Preserve a first decomposition of themes suggested by the Uruk Accident companion tablets while v0 implementation proceeds.  
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK — amended after focused review of the original Uruk Accident seed  
+**Purpose:** Preserve a concise entry point into the broader institutional-dynamics conceptual program.  
 **Authority:** None. This is not a roadmap, specification, backlog, or design decision.
 
-These workstreams are contingent on v0 succeeding as a meaningful lower-level social-fabric reference system.
+The earlier three workstreams remain useful, but they are now understood as **subordinate mechanism families** inside a larger research problem—not a universal ontology:
 
-They are intentionally phrased as future research/design questions rather than implementation commitments.
+> **Institutional identity, persistence, recognition, authority, capability, memory, and genealogy.**
 
-## 1. Roles, Offices, and Authority
+Full provisional package:
 
-Potential questions:
+`INSTITUTIONAL_DYNAMICS/`
 
-- what makes an office persist when occupants change;
-- what state belongs to the office versus the holder;
-- how authority scope is represented;
-- how appointment, succession, vacancy, delegation, and usurpation work;
-- how recognized forms mediate the exercise of authority;
-- how formal office differs from effective influence or informal social role;
-- how legitimacy, authority, capability, identity, and recognition remain distinct.
+## 1. Umbrella question
 
-This direction should build on the household-head / representative-role work already planned in SFL v0 rather than introducing a separate institutional actor model.
+How can higher-order social actors become persistent and causally meaningful while remaining grounded in people, relationships, resources, offices, artifacts, rules, recognition, and history?
 
-## 2. Artifacts, Memory, and Transmission
+The key design challenge is not simply “how institutions act.”
 
-Potential questions:
+It is how the simulation keeps separate:
 
-- artifact identity and persistence;
+- numerical identity;
+- historical continuity;
+- operational state;
+- authority;
+- capability;
+- internal/external recognition;
+- effective influence;
+- official/remembered genealogy;
+- actual causal genealogy.
+
+## 2. Roles, Offices, and Authority
+
+This stream now covers candidate mechanisms such as:
+
+- persistent office separate from holder;
+- vacancy, appointment, succession, removal/usurpation;
+- authority scope and basis;
+- actor-specific recognition of office/authority;
+- personal versus representative action;
+- capability derived from current people/resources/procedures rather than identity itself;
+- informal influence distinct from formal office.
+
+It should extend SFL v0's representative-role machinery rather than inventing an unrelated macro-agent system.
+
+## 3. Artifacts, Memory, and Transmission
+
+This stream now covers candidate mechanisms such as:
+
+- persistent non-agent artifacts;
+- copying / translation / summarization / redaction / destruction;
+- transformation provenance;
 - authorship versus causal source;
-- copying, summarization, translation, redaction, and forgery;
 - authenticity versus recognized authority;
-- provenance chains and transformed records;
-- actor-specific access, belief, trust, and interpretation;
-- official genealogy versus causal genealogy;
-- how derivative artifacts can become more institutionally powerful than their sources.
+- official record versus objective event history;
+- actor-specific access, belief, and interpretation;
+- documentary support for institutional memory and authority.
 
-Artifacts should remain non-agent causal objects. Their importance comes from how they alter later actors' knowledge, authority, decisions, and institutions.
+Artifacts matter because they alter later actors and institutions, not because documents themselves become agents.
 
-## 3. Work, Knowledge, and Coordination
+## 4. Work, Knowledge, and Coordination
 
-Potential questions:
+This stream now covers candidate mechanisms such as:
 
-- what a task is in simulation terms;
-- prerequisites, hidden subtasks, uncertainty, and decomposability;
-- skill and knowledge acquisition through work;
-- responsibility distinct from formal title;
-- delegation, supervision, onboarding, and coordination cost;
-- emergence of integration bottlenecks and effective centrality;
-- migration of procedural knowledge from people into durable institutional structure;
-- attention, motivation, bodily capacity, and obligation as distinct influences on action.
+- tasks and hidden prerequisites;
+- skill/knowledge/familiarity;
+- responsibility assignment;
+- delegation and supervision;
+- coordination cost;
+- learning through work;
+- effective centrality emerging from dependency/knowledge flows;
+- procedural knowledge becoming externalized;
+- attention/motivation/capacity as separable influences.
 
-The target is not an "overwork" or "burnout" mechanic. The target is general machinery capable of producing trajectories where institutional capability and individual welfare may diverge.
+The target remains general causal machinery, not an “overwork” subsystem.
 
-## 4. Cross-cutting principle
+## 5. Shared mechanism families
 
-All three directions share one larger theme:
+The three streams intersect through:
 
-**socially persistent arrangements and externalized causality.**
+- **externalized causality** — past action produces durable structures that constrain later actors;
+- **socially persistent arrangements** — offices, obligations, procedures, artifacts, roles, assignments, and other history-bearing structures;
+- **subjective/objective separation** — what exists versus what different actors know/recognize;
+- **provenance and genealogy** — why current state exists, which histories actors believe, and how surviving archives may begin later than the actual causal chain;
+- **institutional age** — consequential event density, labor, succession, and maturity may diverge sharply from elapsed world time;
+- **higher-order grounding** — macro-action remains reconstructable through lower-level implementation.
 
-Past action may create a durable relation, claim, office, procedure, artifact, expectation, or institutional rule that later constrains people who did not participate in its creation.
+## 6. Contingency on SFL v0
 
-Future design should preserve the project's founding requirement that higher-order causal structure becomes real without becoming causally magical or detached from individuals, relationships, resources, recognition, and history.
+These directions are contingent on the lower-level reference system succeeding.
 
-## 5. Explicit non-commitments
+SFL v0 should first demonstrate:
+
+- meaningful persistent identities and typed relations;
+- causal history/provenance;
+- subjective recognition;
+- higher-order household formation/continuity;
+- representative role/succession;
+- robust temporal continuation.
+
+The project should learn from those results before selecting a generalized institutional path.
+
+## 7. Explicit non-commitments
 
 This note does not:
 
 - change the existing Stage-4 / SFL v0 slice order;
 - add any requirement to IMP-0001;
-- promote the Uruk tales into mechanics;
+- promote Uruk tales into mechanics;
 - authorize historical claims;
-- commit the project to implementing all three workstreams;
-- establish post-v0 sequencing.
+- select a post-v0 path;
+- establish a universal institutional ontology;
+- commit the project to implementing all three streams.
 
-The original Uruk Accident seed remains separately preserved and may materially refine or reorganize these directions after focused analysis.
+See the provisional institutional-dynamics package for mechanism hypotheses, challenge cases, dependency mapping, and the proposed evidence/design/promotion procedure.

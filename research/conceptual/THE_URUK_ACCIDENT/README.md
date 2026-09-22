@@ -39,6 +39,22 @@ The files under `tablets/` are preserved as readable Markdown source artifacts.
 
 Preservation verification on ingestion compared each committed Git blob SHA to the Git blob SHA calculated from the exact uploaded bytes; all three matched.
 
+### Additional companion tablet
+
+The collection also preserves:
+
+- `tablets/THE_JESTERS_CORRECTION_INSTITUTIONAL_AGE_AND_LOST_BEGINNING.md` — correction distinguishing elapsed time from institutional age, documenting the project's lost pre-repository prehistory, and warning against treating the institutional-dynamics umbrella as a universal ontology.
+
+This source remains non-canonical conceptual provenance; preserving it does not promote its claims into project authority.
+
+## Derived interpretation
+
+Current provisional interpretation of this corpus is kept separately at:
+
+`../INSTITUTIONAL_DYNAMICS/`
+
+That package is **not** part of the source tablets, remains non-authoritative, and may change as project understanding evolves. Keeping it separate preserves the distinction between observer artifacts and later Master Architect synthesis.
+
 ## How to use this collection
 
 These artifacts are **idea seeds and challenge material**, not a backlog of mechanics.
