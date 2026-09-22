@@ -12,6 +12,8 @@ The Uruk Accident corpus repeatedly points at the same larger problem:
 
 This package turns that question into draft mechanism families, challenge cases, dependency maps, and a promotion procedure.
 
+The umbrella is deliberately a **research organizer, not an ontological claim** about what every higher-order social entity fundamentally is.
+
 It is not a roadmap and does not change the current SFL v0 implementation sequence.
 
 ## Package structure
@@ -31,7 +33,8 @@ Primary conceptual provenance remains separate under `../THE_URUK_ACCIDENT/`:
 - original preserved Uruk Accident institutional-persistence seed in `../THE_URUK_ACCIDENT/archive/`;
 - `../THE_URUK_ACCIDENT/tablets/MORTALITY_IS_OUTSIDE_TASK_SCOPE.md`;
 - `../THE_URUK_ACCIDENT/tablets/THE_MAN_RESPONSIBLE_FOR_TWO_LEDGERS_V2.md`;
-- `../THE_URUK_ACCIDENT/tablets/THE_TRAGEDY_OF_THE_ANONYMOUS_ARTISTS_V2.md`.
+- `../THE_URUK_ACCIDENT/tablets/THE_TRAGEDY_OF_THE_ANONYMOUS_ARTISTS_V2.md`;
+- `../THE_URUK_ACCIDENT/tablets/THE_JESTERS_CORRECTION_INSTITUTIONAL_AGE_AND_LOST_BEGINNING.md`.
 
 Earlier derived synthesis:
 
