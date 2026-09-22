@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>Mesopotamia.Sim</AssemblyName>
+    <RootNamespace>Mesopotamia.Sim</RootNamespace>
+  </PropertyGroup>
+</Project>

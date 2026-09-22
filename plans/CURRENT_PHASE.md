@@ -30,9 +30,9 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 ready for implementation dispatch.**
+**Roadmap Stage 4 — Slice 1 DISPATCHED / IMPLEMENTATION IN PROGRESS.**
 
-Ready implementation packet:
+Active implementation packet:
 
 - `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
 
@@ -76,11 +76,12 @@ Required C# engineering context:
 
 - `architecture/working/CSHARP_DOTNET_ENGINEERING_GUARDRAILS.md`
 
-Armed implementation scaffolding for first code dispatch:
+Dispatch scaffolding:
 
-- SCF-001 root verification sensors;
-- SCF-002 protected acceptance verification;
-- tracked in `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
+- SCF-001 fired and is implemented: canonical .NET root commands and CI are now repository infrastructure;
+- SCF-002 fired and is active: frozen acceptance authority is protected and executable/CI mapping to every REQUIRED AcceptanceId is an IMP-0001 completion obligation;
+- implementation branch: `implementation/imp-0001-slice1`;
+- remaining scaffolding state: `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
 
 ## Stage-4 slice order
 
@@ -94,8 +95,9 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. When implementation is intentionally begun, dispatch `IMP-0001` against `SFL-V0-S1-ACCEPTANCE-v1`; SCF-001 and the remaining executable/CI portion of SCF-002 fire at dispatch.
-2. Preserve DEC-0009's consequence-triggered governance routing during implementation; routine local work should not load every protocol.
-3. Escalate any implementation discovery that would alter accepted semantics, persistent identity, execution model, or other architecture-level commitments.
+1. Execute IMP-0001 on `implementation/imp-0001-slice1` in recoverable milestones, beginning with typed lower-level state and the acceptance-harness mapping.
+2. Preserve `SFL-V0-S1-ACCEPTANCE-v1` unchanged; every REQUIRED AcceptanceId must receive substantive evidence before completion.
+3. Preserve DEC-0009's consequence-triggered governance routing during implementation; routine local work should not load every protocol.
+4. Escalate any implementation discovery that would alter accepted semantics, persistent identity, execution model, or other architecture-level commitments.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.

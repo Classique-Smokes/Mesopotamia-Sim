@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Mesopotamia.Sim/Mesopotamia.Sim.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Mesopotamia.Sim.Tests/Mesopotamia.Sim.Tests.csproj" />
+    <Project Path="tests/Mesopotamia.Sim.AcceptanceTests/Mesopotamia.Sim.AcceptanceTests.csproj" />
+  </Folder>
+</Solution>

@@ -23,9 +23,18 @@ This file is the machine-discoverable entrypoint for agents working in this repo
 
 ## Commands
 
-No production implementation exists yet, so there is no canonical build/test command.
+Canonical toolchain: .NET SDK `10.0.401`, C# 14, Microsoft Testing Platform.
 
-Before persistent implementation begins, replace this section with the exact root verification commands used by agents and CI.
+Run from the repository root:
+
+```bash
+dotnet restore Mesopotamia.Sim.slnx
+dotnet format Mesopotamia.Sim.slnx --verify-no-changes --no-restore
+dotnet build Mesopotamia.Sim.slnx --configuration Release --no-restore
+dotnet test Mesopotamia.Sim.slnx --configuration Release --no-build --no-restore
+```
+
+CI executes this same restore → static-quality → build → test sequence. Warnings/analyzer findings are errors through `Directory.Build.props`.
 
 ## Context discipline
 
