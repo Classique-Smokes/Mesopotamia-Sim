@@ -1,5 +1,13 @@
 # Review and Drift Audit
 
+**Status / authority:** ACCEPTED review protocol  
+**Purpose:** Check the authoritative chain for drift without rewriting higher authority to match lower-level behavior.  
+**Load when:** meaningful integration milestones, consequential refactors/ADRs, persistent assumptions, reported architecture conflicts, or repository-growth checkpoints warrant a drift audit.  
+**Do not load merely because:** every small commit occurred; there is no fixed calendar requirement.  
+**Expected output:** concise aligned/discrepancy/undocumented-change/stale-assumption/escalation/housekeeping findings with higher-authority references.  
+**Escalation / stop:** report drift before changing project intent or accepted authority to match implementation.
+
+
 **Purpose:** Periodically compare the authoritative chain:
 
 `Seed / Constitution → Accepted Decisions → Specifications → Implementation`

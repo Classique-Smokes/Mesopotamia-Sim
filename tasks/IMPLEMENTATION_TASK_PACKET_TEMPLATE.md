@@ -33,6 +33,10 @@ Implementation must retrieve and obey these artifacts rather than infer authorit
 
 [List invariants that must remain true.]
 
+### Future seams / deferred gaps, if relevant
+
+[List only accepted/high-cost seams the task must preserve without implementing later features, plus any explicitly deferred semantics the implementation must not invent. Omit this subsection when no such seam matters.]
+
 ## 6. Acceptance criteria
 
 [Observable, testable completion conditions.]

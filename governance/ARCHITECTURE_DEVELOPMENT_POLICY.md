@@ -1,5 +1,11 @@
 # Architecture Development Policy
 
+**Load when:** evaluating or recommending consequential implementation architecture, optimization, derived-state strategy, runtime mechanisms, or scaling specialization.  
+**Do not load merely because:** ordinary implementation choices remain local and reversible inside accepted architecture.  
+**Expected output:** simplest sufficient architecture justified by project-specific evidence, with semantic authority and reversibility preserved.  
+**Escalation / stop:** consequential architecture changes require the authority defined by project governance; implementation convenience or performance speculation is not sufficient.
+
+
 **Status:** ACCEPTED  
 **Authority:** Architecture-governance policy  
 **Decision:** DEC-0005
