@@ -1,13 +1,13 @@
 # Draft Program Thesis — Institutional Identity, Persistence, and Recognition
 
-**Status:** DRAFT / NON-AUTHORITATIVE  
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
 **Role:** Conceptual synthesis
 
 ## 1. Umbrella problem
 
 The project already commits to higher-order structures becoming real causal actors without becoming detached abstractions.
 
-The draft institutional-dynamics program asks what machinery would let that happen coherently over time.
+The provisional institutional-dynamics program asks what machinery would let that happen coherently over time.
 
 The central question is:
 
