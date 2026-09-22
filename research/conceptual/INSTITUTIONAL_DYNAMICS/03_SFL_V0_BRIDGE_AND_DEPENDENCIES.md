@@ -1,6 +1,6 @@
 # SFL v0 Bridge and Dependencies
 
-**Status:** DRAFT / NON-AUTHORITATIVE  
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
 **Role:** Show how current work functions as a reference substrate for future institutional-dynamics questions.
 
 ## 1. Principle
