@@ -109,7 +109,7 @@ internal static class PersonalAgency
         switch (policy.Profile)
         {
             case "SCORE-VP-002":
-                values.Add("RelationConcern", terms is OfferGift gift && gift.Target == policy.GiftTarget ? 100 : 0);
+                values.Add("RelationConcern", terms is OfferGift gift && gift.Target == policy.GiftTarget && gift.Amount == 1 ? 100 : 0);
                 values.Add("OtherConcern", 0);
                 break;
             case "SCORE-VP-004":
@@ -129,7 +129,7 @@ internal static class PersonalAgency
                 values.Add("NeedReliefConcern", snapshot.People[actor].NeedsGrain && terms is RequestGiftOrHelp ? 100 : 0);
                 values.Add("GrainConcern", terms is Farm && snapshot.People[actor].Grain < 4 ? 60 : 0);
                 values.Add("DebtConcern", terms is RepayDebt ? 30 : 0);
-                values.Add("RelationConcern", target is { } other && terms is OfferGift ? checked(2L * snapshot.AttitudeOf(actor, other)) : 0);
+                values.Add("RelationConcern", target is { } other && terms is OfferGift ? checked((snapshot.AreKin(actor, other) ? 3L : 2L) * snapshot.AttitudeOf(actor, other)) : 0);
                 break;
         }
         return values.ToImmutable();

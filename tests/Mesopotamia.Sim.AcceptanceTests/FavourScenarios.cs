@@ -3,15 +3,15 @@ using Mesopotamia.Sim;
 
 namespace Mesopotamia.Sim.AcceptanceTests;
 
-internal static partial class Scenarios
+internal sealed partial class Scenarios
 {
-    private static Simulation WithFavour(long b = 30, int ab = 0)
+    private Simulation WithFavour(long b = 30, int ab = 0)
     {
-        Simulation sim = new(World(30, b, 30, ab));
+        Simulation sim = Create(World(30, b, 30, ab));
         sim.RunCycle(new([P(1, 1, new OfferBenefitForFavor(new(2), 1))]));
         return sim;
     }
-    private static IEnumerable<Scenario> FavourCases()
+    private IEnumerable<Scenario> FavourCases()
     {
         yield return new("ExplicitBargainAndReciprocalHelp", ["S1-091-BFF-POS", "S1-093-BFF-POS", "S1-091-RMRH", "S1-093-RECIP-74", "S1-093-RECIP-75", "S1-093-RECIP-76", "S1-093-KIN-GATE", "S1-MUT-04"], () =>
         {
@@ -27,7 +27,7 @@ internal static partial class Scenarios
                 {
                     InitialWorld world = World(8, 8, 8, 0, attitude);
                     if (kin) world = world with { Kinships = [new(new(6), new(1), new(2), KinshipKind.Sibling)] };
-                    Simulation sim = new(world);
+                    Simulation sim = Create(world);
                     CycleResult result = sim.RunCycle(new([P(1, 1, new RelationshipMediatedReciprocalHelp(new(2), 1))]));
                     Equal(attitude >= 75 ? 1 : 0, result.State.Favours.Count);
                     Equal(8L, Grain(result, 2));
@@ -51,7 +51,7 @@ internal static partial class Scenarios
         });
         yield return new("BargainCapacityRace", ["S1-093-BFF-RACE", "S1-MUT-35"], () =>
         {
-            Simulation sim = new(World(20, 20, 20, 0, 75));
+            Simulation sim = Create(World(20, 20, 20, 0, 75));
             CycleResult result = sim.RunCycle(new([
                 P(10, 2, new RelationshipMediatedReciprocalHelp(new(1), 1, Request: true)),
                 P(20, 1, new OfferBenefitForFavor(new(2), 1))]));
@@ -138,7 +138,7 @@ internal static partial class Scenarios
             foreach (long amount in new[] { -1L, 0L, 1L })
                 foreach (bool reciprocal in new[] { false, true })
                 {
-                    Simulation sim = new(World());
+                    Simulation sim = Create(World());
                     CycleResult result = sim.RunCycle(new([P(1, 1, reciprocal ? new RelationshipMediatedReciprocalHelp(new(2), amount) : new OfferBenefitForFavor(new(2), amount))]));
                     Equal(amount > 0 ? OutcomeKind.Committed : OutcomeKind.InvalidTerms, result.Outcomes.Single().Kind);
                     if (amount <= 0)

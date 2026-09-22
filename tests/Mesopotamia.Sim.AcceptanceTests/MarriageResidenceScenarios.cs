@@ -3,9 +3,9 @@ using Mesopotamia.Sim;
 
 namespace Mesopotamia.Sim.AcceptanceTests;
 
-internal static partial class Scenarios
+internal sealed partial class Scenarios
 {
-    private static IEnumerable<Scenario> MarriageResidenceCases()
+    private IEnumerable<Scenario> MarriageResidenceCases()
     {
         yield return new("DirectMarriageBoundaries", ["S1-095-POS", "S1-095-74", "S1-095-KIN", "S1-095-NO-RESIDENCE", "S1-096-MARRIAGE-CONTROL", "S1-BND-ATT-STRONGLIKE"], () =>
         {
@@ -15,7 +15,7 @@ internal static partial class Scenarios
                     {
                         InitialWorld world = World(20, 20, 20, a, b);
                         if (kin != 0) world = world with { Kinships = [new(new(6), new(1), new(2), kin == 1 ? KinshipKind.ParentChild : KinshipKind.Sibling)] };
-                        Simulation sim = new(world);
+                        Simulation sim = Create(world);
                         CycleResult result = sim.RunCycle(new([P(1, 1, new ProposeMarriage(new(2), 1))]));
                         bool eligible = a >= 75 && b >= 75 && kin == 0;
                         Equal(eligible ? OutcomeKind.Committed : OutcomeKind.Unable, result.Outcomes.Single().Kind);
@@ -30,7 +30,7 @@ internal static partial class Scenarios
         });
         yield return new("MarriageDeclineAndLifetime", ["S1-095-LIFETIME", "S1-BND-MARRIAGE-CARD"], () =>
         {
-            Simulation sim = new(World(30, 30, 30, 80, 80));
+            Simulation sim = Create(World(30, 30, 30, 80, 80));
             CycleResult refused = sim.RunCycle(new([P(1, 1, new ProposeMarriage(new(2), 1))])
             { ResponseProfiles = ImmutableDictionary<PersonId, string>.Empty.Add(new(2), "SCORE-RP-002") });
             Equal(OutcomeKind.Declined, refused.Outcomes.Single().Kind);
@@ -48,7 +48,7 @@ internal static partial class Scenarios
         {
             foreach (bool invite in new[] { false, true })
             {
-                Simulation sim = new(World());
+                Simulation sim = Create(World());
                 CycleResult result = sim.RunCycle(new([P(1, 1, invite ? new InviteResidence(new(2), new(1)) : new MoveResidence(new(2), new(2)))]));
                 Equal(new DwellingId(invite ? 1 : 2), result.State.HomeOf(new(invite ? 2 : 1)));
                 Equal(1, result.Events.Count(e => e.Kind == "ResidenceTransition"));
@@ -60,7 +60,7 @@ internal static partial class Scenarios
             foreach (bool reverse in new[] { false, true })
             {
                 Proposal[] proposals = [P(10, 1, new InviteResidence(new(2), new(1))), P(20, 3, new InviteResidence(new(2), new(3)))];
-                CycleResult result = new Simulation(World()).RunCycle(new([.. reverse ? proposals.Reverse() : proposals]));
+                CycleResult result = Create(World()).RunCycle(new([.. reverse ? proposals.Reverse() : proposals]));
                 Equal(new DwellingId(1), result.State.HomeOf(new(2)));
                 Equal(2, result.Decisions.Length);
                 True(result.Decisions.All(d => d.Candidates.Single(c => c.Selected).Meaning == "Accept"));
@@ -76,7 +76,7 @@ internal static partial class Scenarios
         {
             foreach (long amount in new[] { -1L, 0L, 1L })
             {
-                Simulation sim = new(World(8, 8, 8, 75, 75));
+                Simulation sim = Create(World(8, 8, 8, 75, 75));
                 CycleResult result = sim.RunCycle(new([P(1, 1, new ProposeMarriage(new(2), amount))]));
                 Equal(amount > 0 ? OutcomeKind.Committed : OutcomeKind.InvalidTerms, result.Outcomes.Single().Kind);
                 Equal(amount > 0 ? 1 : 0, result.Decisions.Length);

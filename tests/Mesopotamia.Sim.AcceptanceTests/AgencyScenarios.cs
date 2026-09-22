@@ -3,9 +3,9 @@ using Mesopotamia.Sim;
 
 namespace Mesopotamia.Sim.AcceptanceTests;
 
-internal static partial class Scenarios
+internal sealed partial class Scenarios
 {
-    private static IEnumerable<Scenario> AgencyCases()
+    private IEnumerable<Scenario> AgencyCases()
     {
         yield return new("ExactKinScoringAndFullTrace", ["S1-099-KIN", "S1-086", "S1-MUT-29"], () =>
         {
@@ -15,7 +15,7 @@ internal static partial class Scenarios
                 Attitudes = [.. world.Attitudes, new(new(6), new(1), new(3), 20)],
                 Kinships = [new(new(7), new(1), new(3), KinshipKind.ParentChild)]
             };
-            Simulation sim = new(world);
+            Simulation sim = Create(world);
             CycleResult result = sim.RunCycle(new([])
             { PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-004")) });
             DecisionTrace trace = result.Decisions.Single(d => d.Context == "Personal");
@@ -43,7 +43,7 @@ internal static partial class Scenarios
             {
                 InitialWorld world = World(8, 8, 8, 80, 80);
                 if (married) world = world with { Marriages = [new(new(6), new(1), new(2))] };
-                CycleResult result = new Simulation(world).RunCycle(new([])
+                CycleResult result = Create(world).RunCycle(new([])
                 {
                     PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-006")),
                     ResponseProfiles = ImmutableDictionary<PersonId, string>.Empty.Add(new(2), "SCORE-RP-002")
@@ -61,7 +61,7 @@ internal static partial class Scenarios
         yield return new("PersonalResidenceAndIncomingResponse", ["S1-105"], () =>
         {
             InitialWorld world = World(0, 6, 8) with { Marriages = [new(new(6), new(3), new(2))] };
-            Simulation sim = new(world);
+            Simulation sim = Create(world);
             CycleResult result = sim.RunCycle(new([P(1, 1, new RequestGiftOrHelp(new(2), 1))])
             { PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(2), new("SCORE-VP-006")) });
             Equal(1, result.Decisions.Count(d => d.Actor == new PersonId(2) && d.Context == "Personal"));
@@ -74,19 +74,19 @@ internal static partial class Scenarios
         });
         yield return new("ReferenceProfilesAndAutonomousCycle", ["S1-GLOBAL-FALLBACK"], () =>
         {
-            Simulation gift = new(World());
+            Simulation gift = Create(World());
             CycleResult selected = gift.RunCycle(new([])
             { PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-002") { GiftTarget = new(2) }) });
             DecisionTrace decision = selected.Decisions.Single(d => d.Context == "Personal");
             Equal("OfferGift", decision.Candidates.Single(c => c.Selected).Meaning);
             Equal(100L, decision.Candidates.Single(c => c.Selected).FinalScore);
             True(!decision.TechnicalFallback);
-            Simulation tied = new(World());
+            Simulation tied = Create(World());
             CycleResult symmetry = tied.RunCycle(new([])
             { PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-005")) });
             True(symmetry.Decisions.Single(d => d.Context == "Personal").TechnicalFallback);
             True(symmetry.Decisions.Single(d => d.Context == "Personal").Candidates.Where(c => c.Eligible).All(c => c.FinalScore == 0));
-            CycleResult automatic = new Simulation(World()).RunAutonomousCycle();
+            CycleResult automatic = Create(World()).RunAutonomousCycle();
             Equal(3, automatic.Decisions.Count(d => d.Context == "Personal"));
             True(automatic.Outcomes.GroupBy(o => o.Actor).All(g => g.Count() == 1));
         });

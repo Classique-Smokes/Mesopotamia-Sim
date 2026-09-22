@@ -2,15 +2,15 @@ using Mesopotamia.Sim;
 
 namespace Mesopotamia.Sim.AcceptanceTests;
 
-internal static partial class Scenarios
+internal sealed partial class Scenarios
 {
-    private static IEnumerable<Scenario> DebtCases()
+    private IEnumerable<Scenario> DebtCases()
     {
         yield return new("LoanRoutesAndRepaymentHistory", ["S1-091-LOAN-OFFER", "S1-091-LOAN-REQUEST", "S1-092-PARTIAL", "S1-092-FULL"], () =>
         {
             foreach (bool request in new[] { false, true })
             {
-                Simulation sim = new(World(30, 30));
+                Simulation sim = Create(World(30, 30));
                 CycleResult loan = sim.RunCycle(new([request ? P(1, 2, new RequestLoan(new(1), 4)) : P(1, 1, new OfferLoan(new(2), 4))]));
                 Debt debt = loan.State.Debts.Values.Single();
                 Equal(new PersonId(1), debt.Creditor);
@@ -39,7 +39,7 @@ internal static partial class Scenarios
         {
             foreach (long amount in new[] { -1L, 0L, 3L, 4L, 5L })
             {
-                Simulation sim = new(World(30, 30));
+                Simulation sim = Create(World(30, 30));
                 sim.RunCycle(new([P(1, 1, new OfferLoan(new(2), 4))]));
                 Debt debt = sim.Snapshot.Debts.Values.Single();
                 CycleResult result = sim.RunCycle(new([P(2, 2, new RepayDebt(debt.Id, amount))]));
@@ -51,7 +51,7 @@ internal static partial class Scenarios
             }
             foreach (long remainingStock in new[] { 1L, 2L, 3L })
             {
-                Simulation sim = new(World(20, remainingStock + 2));
+                Simulation sim = Create(World(20, remainingStock + 2));
                 sim.RunCycle(new([P(1, 1, new OfferLoan(new(2), 1))]));
                 Debt debt = sim.Snapshot.Debts.Values.Single();
                 CycleResult result = sim.RunCycle(new([P(2, 2, new RepayDebt(debt.Id, 1))]));
@@ -65,7 +65,7 @@ internal static partial class Scenarios
         {
             foreach (long debtorGrain in new[] { 0L, 30L })
             {
-                Simulation sim = new(World(30, debtorGrain));
+                Simulation sim = Create(World(30, debtorGrain));
                 sim.RunCycle(new([P(1, 1, new OfferLoan(new(2), 4))]));
                 sim.RunCycle(CycleInput.Empty);
                 sim.RunCycle(CycleInput.Empty);
@@ -77,7 +77,7 @@ internal static partial class Scenarios
                 Equal(1, sim.History.Count(e => e.Kind == "DebtSocialDueReview"));
                 Equal(4L, sim.Snapshot.Debts.Values.Single().Remaining);
             }
-            Simulation repaid = new(World(30, 30));
+            Simulation repaid = Create(World(30, 30));
             repaid.RunCycle(new([P(1, 1, new OfferLoan(new(2), 4))]));
             Debt debt = repaid.Snapshot.Debts.Values.Single();
             repaid.RunCycle(CycleInput.Empty);
@@ -91,7 +91,7 @@ internal static partial class Scenarios
             foreach (long amount in new[] { -1L, 0L, 1L })
                 foreach (bool request in new[] { false, true })
                 {
-                    Simulation sim = new(World());
+                    Simulation sim = Create(World());
                     CycleResult result = sim.RunCycle(new([P(1, 1, request ? new RequestLoan(new(2), amount) : new OfferLoan(new(2), amount))]));
                     Equal(amount > 0 ? OutcomeKind.Committed : OutcomeKind.InvalidTerms, result.Outcomes.Single().Kind);
                     if (amount <= 0)

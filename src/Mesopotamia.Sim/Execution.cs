@@ -21,6 +21,7 @@ public sealed record SemanticEvent(EventId Id, long Cycle, int ReactionIndex, st
     ImmutableArray<MaterialChange> Material, string Detail, string ConfigurationVersion, bool TechnicalFallback = false)
 {
     public ImmutableArray<AttitudeContribution> Contributions { get; init; } = [];
+    public ActionTerms? Action { get; init; }
 }
 public sealed record CycleResult(WorldSnapshot State, ImmutableArray<Outcome> Outcomes,
     ImmutableArray<SemanticEvent> Events, bool MaterialDeadlock)
@@ -30,6 +31,9 @@ public sealed record CycleResult(WorldSnapshot State, ImmutableArray<Outcome> Ou
 
 public sealed partial class Simulation
 {
+    internal enum ReactionChallenge { None, DuplicateCauses, ReverseCauses, SkipClosure }
+    internal ReactionChallenge Challenge { get; init; }
+    public bool IsFaulted => faulted;
     private readonly List<SemanticEvent> events = [];
     private long nextEvent = 1;
     private int reactionIndex;
@@ -84,7 +88,8 @@ public sealed partial class Simulation
             {
                 usedProposals.Add(proposal.Id);
                 string? invalid = ActionRules.Invalid(proposal, decisionSnapshot);
-                SemanticEvent proposed = Record("Proposal", proposal.Id, [proposal.Actor], [], [], proposal.Terms.ToString() ?? "");
+                SemanticEvent proposed = Record("Proposal", proposal.Id, [proposal.Actor], [], [], ActionRules.Describe(proposal.Terms));
+                events[^1] = proposed with { Action = proposal.Terms };
                 if (invalid is not null)
                 {
                     Finish(proposal, OutcomeKind.InvalidTerms, invalid, proposed.Id, outcomes);
@@ -147,7 +152,8 @@ public sealed partial class Simulation
                 Proposal proposal = attempt.Proposal;
                 string? loss = ActionRules.Invalid(proposal, state.Snapshot(cycle)) ?? ActionRules.Infeasible(proposal, state.Snapshot(cycle));
                 if (ActionRules.Mover(proposal) is { } mover && moved.Contains(mover)) loss = "CompetingResidenceTransition";
-                bool fallback = accepted.Any(other => other.Proposal.Id != proposal.Id && Competes(proposal, other.Proposal, decisionSnapshot));
+                bool fallback = accepted.Any(other => other.Proposal.Id != proposal.Id && Competes(proposal, other.Proposal, decisionSnapshot)) ||
+                    CompetesForAggregateGrain(proposal, accepted.Select(a => a.Proposal), decisionSnapshot);
                 if (loss is not null)
                     Finish(proposal, OutcomeKind.InvalidatedAtResolution, loss, attempt.Cause, outcomes, fallback);
                 else
@@ -159,7 +165,17 @@ public sealed partial class Simulation
                 }
             }
             ReviewDebts(batch);
-            CloseAttitudes(batch);
+            if (Challenge == ReactionChallenge.DuplicateCauses)
+                foreach (AttitudeContribution contribution in batch.Pending) batch.Add(contribution);
+            if (Challenge == ReactionChallenge.ReverseCauses)
+            {
+                AttitudeBatch reversed = new();
+                foreach (AttitudeContribution contribution in batch.Pending.Reverse()) reversed.Add(contribution);
+                batch = reversed;
+            }
+            if (Challenge != ReactionChallenge.SkipClosure) CloseAttitudes(batch);
+            if (!batch.IsClosed) throw new InvalidOperationException("PendingAutomaticReactions");
+            if (batch.DuplicateCount > 0) Record("DuplicateReactionRejected", null, [], [], [], FormattableString.Invariant($"Duplicates:{batch.DuplicateCount}"));
             published = state.Snapshot(cycle);
             bool deadlock = state.People.Count > 0 && state.People.Values.All(p => p.NeedsGrain && p.Grain == 0) &&
                 !initial.Inputs.Any(i => i.Cycle > cycle && i.Delta > 0);
@@ -178,6 +194,7 @@ public sealed partial class Simulation
     {
         PersonId? target = ActionRules.Target(proposal.Terms, state.Snapshot(cycle));
         SemanticEvent entry = Record(kind.ToString(), proposal.Id, target is { } t ? [proposal.Actor, t] : [proposal.Actor], [cause], [], reason, fallback);
+        events[^1] = entry with { Action = proposal.Terms };
         Outcome outcome = new(proposal.Id, proposal.Actor, kind, reason, entry.Id);
         outcomes.Add(outcome);
         if (kind != OutcomeKind.InvalidTerms) Learn(proposal, outcome);
@@ -233,6 +250,17 @@ public sealed partial class Simulation
                 (proposal.Terms is RelationshipMediatedReciprocalHelp && snapshot.AttitudeOf(t.Recipient, t.Giver) >= 75))
                 ? (t.Recipient, t.Giver) : null;
         }
+    }
+
+    private static bool CompetesForAggregateGrain(Proposal proposal, IEnumerable<Proposal> contenders, WorldSnapshot snapshot)
+    {
+        if (Transfer(proposal, snapshot) is not { } own) return false;
+        Proposal[] spending = contenders.Where(p => Transfer(p, snapshot)?.Giver == own.Giver).ToArray();
+        if (spending.Length < 2) return false;
+        System.Numerics.BigInteger total = 0;
+        foreach (Proposal contender in spending) total += Transfer(contender, snapshot)!.Value.Amount;
+        long reserve = spending.Any(p => p.Terms is RepayDebt or CallFavor { Requested: RepayDebt }) ? 2 : 0;
+        return total > snapshot.People[own.Giver].Grain - reserve;
     }
 
     private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch)
@@ -321,7 +349,8 @@ public sealed partial class Simulation
         if (calledFavour is not null) transaction.Favours[calledFavour.Id] = calledFavour with { Outstanding = false };
         transaction.Validate();
         state = transaction;
-        SemanticEvent entry = Record(meaning, proposal.Id, [.. participants], [cause], [.. material], proposal.Terms.ToString() ?? "", fallback);
+        SemanticEvent entry = Record(meaning, proposal.Id, [.. participants], [cause], [.. material], ActionRules.Describe(proposal.Terms), fallback);
+        events[^1] = entry with { Action = proposal.Terms };
         if (Transfer(proposal, state.Snapshot(cycle)) is { } helpTransfer && meaning != "ExplicitBenefitForFavor")
             batch.Add(new(new(meaning, entry.Id, helpTransfer.Recipient, helpTransfer.Giver), meaning is "Loan" or "Repayment" ? 5 : 10));
         if (calledFavour is not null)

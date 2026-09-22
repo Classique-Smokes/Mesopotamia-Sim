@@ -35,6 +35,8 @@ internal sealed class AttitudeBatch
     private readonly Dictionary<CauseKey, AttitudeContribution> contributions = [];
     private bool sealedBatch;
     internal int DuplicateCount { get; private set; }
+    internal bool IsClosed => sealedBatch;
+    internal ImmutableArray<AttitudeContribution> Pending => contributions.Values.ToImmutableArray();
     internal bool Add(AttitudeContribution contribution)
     {
         if (sealedBatch) throw new InvalidOperationException("Reaction batch is already closed.");
@@ -55,6 +57,23 @@ internal sealed class AttitudeBatch
 
 internal static class ActionRules
 {
+    internal static string Describe(ActionTerms terms) => terms switch
+    {
+        Farm => "Farm",
+        OfferGift a => FormattableString.Invariant($"OfferGift({a.Target.Value},{a.Amount})"),
+        RequestGiftOrHelp a => FormattableString.Invariant($"RequestGiftOrHelp({a.Target.Value},{a.Amount})"),
+        OfferLoan a => FormattableString.Invariant($"OfferLoan({a.Target.Value},{a.Amount})"),
+        RequestLoan a => FormattableString.Invariant($"RequestLoan({a.Target.Value},{a.Amount})"),
+        RepayDebt a => FormattableString.Invariant($"RepayDebt({a.Debt.Value},{a.Amount})"),
+        OfferBenefitForFavor a => FormattableString.Invariant($"OfferBenefitForFavor({a.Target.Value},{a.Amount})"),
+        RelationshipMediatedReciprocalHelp a => FormattableString.Invariant($"ReciprocalHelp({a.Target.Value},{a.Amount},{a.Request})"),
+        CallFavor a => FormattableString.Invariant($"CallFavor({a.Favour.Value},{Describe(a.Requested)})"),
+        CancelReciprocalFavours a => FormattableString.Invariant($"CancelReciprocalFavours({a.Target.Value})"),
+        ProposeMarriage a => FormattableString.Invariant($"ProposeMarriage({a.Bride.Value},{a.ProposedDowry})"),
+        MoveResidence a => FormattableString.Invariant($"MoveResidence({a.Target.Value},{a.Destination.Value})"),
+        InviteResidence a => FormattableString.Invariant($"InviteResidence({a.Target.Value},{a.Destination.Value})"),
+        _ => "UnknownActionMeaning"
+    };
     internal static PersonId? Target(ActionTerms terms, WorldSnapshot snapshot) => terms switch
     {
         OfferGift gift => gift.Target,

@@ -5,7 +5,7 @@ using System.Text.Json;
 namespace Mesopotamia.Sim.AcceptanceTests;
 
 internal sealed record ManifestRow(string Id, string Classification, string SourceRow);
-internal sealed record Evidence(string Id, string Classification, string State, string[] References);
+internal sealed record Evidence(string Id, string Classification, string State, string[] References, string SourceClause);
 
 internal static class AcceptanceCatalog
 {
@@ -40,7 +40,10 @@ internal static class AcceptanceCatalog
                 return new ManifestRow(cells[1], classification, l);
             }).ToArray();
         if (rows.Length != 167 || rows.Select(r => r.Id).Distinct(StringComparer.Ordinal).Count() != 167 ||
-            rows.Count(r => r.Classification == "REQUIRED") != 128)
+            rows.Count(r => r.Classification == "REQUIRED") != 128 ||
+            rows.Count(r => r.Classification == "DEFERRED") != 33 ||
+            rows.Count(r => r.Classification == "N-A") != 3 ||
+            rows.Count(r => r.Classification == "UNEXERCISED") != 3)
             throw new InvalidOperationException("Unexpected frozen census.");
         return rows;
     }
@@ -53,7 +56,7 @@ internal static class AcceptanceCatalog
             results.TryGetValue(r.Id, out var result) ? (result.Passed ? "PASS" : "FAIL") :
             r.Id == "S1-GLOBAL-CONFORMANCE" ? "AWAITING INDEPENDENT REVIEW" :
             r.Classification == "REQUIRED" ? "NOT EXECUTED" : r.Classification,
-            results.TryGetValue(r.Id, out var references) ? references.References : [])).ToArray();
+            results.TryGetValue(r.Id, out var references) ? references.References : [], r.SourceRow)).ToArray();
         string directory = Path.Combine(Root, "artifacts", "acceptance");
         Directory.CreateDirectory(directory);
         File.WriteAllText(Path.Combine(directory, "slice1-results.json"), JsonSerializer.Serialize(new
@@ -61,11 +64,21 @@ internal static class AcceptanceCatalog
             ManifestVersion = Version,
             ManifestBlob = Blob,
             FreezeCommit = Freeze,
-            Completion = "INCOMPLETE / INDEPENDENT CONFORMANCE REQUIRED",
+            CandidateReady = evidence.Count(e => e.Classification == "REQUIRED" && e.State == "PASS") == 127 &&
+                evidence.Single(e => e.Id == "S1-GLOBAL-CONFORMANCE").State == "AWAITING INDEPENDENT REVIEW",
+            FullFrozenCompletionGate = false,
+            Completion = "INDEPENDENT CONFORMANCE REQUIRED; coder evidence is not external review",
             Rows = evidence
         }, new JsonSerializerOptions { WriteIndented = true }));
         File.WriteAllLines(Path.Combine(directory, "slice1-results.md"),
             new[] { $"# {Version}", $"Manifest blob: `{Blob}`", "", "| AcceptanceId | Classification | Evidence state | References |", "|---|---|---|---|" }
             .Concat(evidence.Select(e => $"| {e.Id} | {e.Classification} | {e.State} | {string.Join(", ", e.References)} |")));
+    }
+
+    internal static void WriteSupplement(string name, object value)
+    {
+        string directory = Path.Combine(Root, "artifacts", "acceptance");
+        Directory.CreateDirectory(directory);
+        File.WriteAllText(Path.Combine(directory, name + ".json"), JsonSerializer.Serialize(value, new JsonSerializerOptions { WriteIndented = true }));
     }
 }

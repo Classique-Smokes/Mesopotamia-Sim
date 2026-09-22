@@ -3,15 +3,15 @@ using Mesopotamia.Sim;
 
 namespace Mesopotamia.Sim.AcceptanceTests;
 
-internal static partial class Scenarios
+internal sealed partial class Scenarios
 {
-    private static IEnumerable<Scenario> Pipeline()
+    private IEnumerable<Scenario> Pipeline()
     {
         yield return new("GiftHelpMeaningsAndNeedClearing", ["S1-090-D", "S1-BND-NEED", "S1-091-GIFT", "S1-091-HELP", "S1-093-GIFT-CONTROL"], () =>
         {
             foreach (bool requested in new[] { false, true })
             {
-                Simulation sim = new(World(0, 8));
+                Simulation sim = Create(World(0, 8));
                 CycleResult result = sim.RunCycle(new([requested ? P(1, 1, new RequestGiftOrHelp(new(2), 1)) : P(1, 2, new OfferGift(new(1), 1))]));
                 Equal(1L, Grain(result, 1));
                 True(!result.State.People[new(1)].NeedsGrain);
@@ -29,7 +29,7 @@ internal static partial class Scenarios
         {
             foreach (var item in new[] { (8L, "SCORE-RP-001", OutcomeKind.Committed, 10), (8L, "SCORE-RP-002", OutcomeKind.Declined, -5), (0L, "SCORE-RP-001", OutcomeKind.Unable, 0) })
             {
-                Simulation sim = new(World(0, item.Item1));
+                Simulation sim = Create(World(0, item.Item1));
                 CycleResult result = sim.RunCycle(new([P(1, 1, new RequestGiftOrHelp(new(2), 1))])
                 { ResponseProfiles = ImmutableDictionary<PersonId, string>.Empty.Add(new(2), item.Item2) });
                 Equal(item.Item3, result.Outcomes.Single().Kind);
@@ -50,7 +50,7 @@ internal static partial class Scenarios
                         Equal(candidate.FinalScore, candidate.Components.Values.Sum());
                 }
             }
-            Simulation noNeed = new(World());
+            Simulation noNeed = Create(World());
             CycleResult declined = noNeed.RunCycle(new([P(1, 1, new RequestGiftOrHelp(new(2), 1))])
             { ResponseProfiles = ImmutableDictionary<PersonId, string>.Empty.Add(new(2), "SCORE-RP-002") });
             Equal(0, declined.State.AttitudeOf(new(1), new(2)));
@@ -60,7 +60,7 @@ internal static partial class Scenarios
             foreach (bool reverse in new[] { false, true })
             {
                 Proposal[] proposals = [P(10, 1, new RequestGiftOrHelp(new(2), 1)), P(20, 3, new RequestGiftOrHelp(new(2), 1))];
-                Simulation sim = new(World(0, 2, 0));
+                Simulation sim = Create(World(0, 2, 0));
                 CycleResult result = sim.RunCycle(new([.. reverse ? proposals.Reverse() : proposals]));
                 Equal(2, result.Decisions.Count(d => d.Actor == new PersonId(2)));
                 True(result.Decisions.All(d => d.Candidates.Single(c => c.Selected).Meaning == "Accept"));
@@ -74,7 +74,7 @@ internal static partial class Scenarios
                 Equal(0, result.Events.Count(e => e.Kind == "Farm"));
                 Equal(2, sim.KnowledgeOf(new(2)).Length);
             }
-            Simulation combined = new(World(0, 8));
+            Simulation combined = Create(World(0, 8));
             CycleResult together = combined.RunCycle(new([P(1, 1, new RequestGiftOrHelp(new(2), 1)), P(2, 2, new Farm())]));
             Equal(10L, Grain(together, 2));
             Equal(2, together.Outcomes.Count(o => o.Kind == OutcomeKind.Committed));
@@ -84,7 +84,7 @@ internal static partial class Scenarios
             foreach (long amount in new[] { -1L, 0L, 1L })
                 foreach (bool request in new[] { false, true })
                 {
-                    Simulation sim = new(World());
+                    Simulation sim = Create(World());
                     CycleResult result = sim.RunCycle(new([P(1, 1, request ? new RequestGiftOrHelp(new(2), amount) : new OfferGift(new(2), amount))]));
                     Equal(amount > 0 ? OutcomeKind.Committed : OutcomeKind.InvalidTerms, result.Outcomes.Single().Kind);
                     if (amount <= 0)

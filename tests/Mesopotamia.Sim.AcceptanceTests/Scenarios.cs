@@ -7,7 +7,7 @@ internal sealed record Scenario(string Name, string[] Ids, Action Run,
     string FixtureWrites = "Initial people/grain/residence/attitude/kinship/marriage; declared exogenous grain; public proposals/responses",
     string Oracle = "Hand-authored expected state, arithmetic, and recorded provenance");
 
-internal static partial class Scenarios
+internal sealed partial class Scenarios
 {
     internal static InitialWorld World(long a = 8, long b = 8, long c = 8, int ab = 0, int ba = 0) => new(
         [new(new(1), "A", Sex.Male, a), new(new(2), "B", Sex.Female, b), new(new(3), "C", Sex.Male, c)],
@@ -19,16 +19,18 @@ internal static partial class Scenarios
     internal static long Grain(CycleResult result, long person) => result.State.People[new(person)].Grain;
     internal static Proposal P(long id, long actor, ActionTerms terms) => new(new(id), new(actor), terms);
 
-    internal static IEnumerable<Scenario> All()
+    internal IEnumerable<Scenario> All()
     {
         foreach (Scenario scenario in Pipeline()) yield return scenario;
         foreach (Scenario scenario in DebtCases()) yield return scenario;
         foreach (Scenario scenario in FavourCases()) yield return scenario;
         foreach (Scenario scenario in MarriageResidenceCases()) yield return scenario;
         foreach (Scenario scenario in AgencyCases()) yield return scenario;
+        foreach (Scenario scenario in CrossCuttingCases()) yield return scenario;
+        foreach (Scenario scenario in AttitudeEventCases()) yield return scenario;
         yield return new("ConsumptionAndFarm", ["S1-090-A", "S1-090-B", "S1-090-C", "S1-090-E"], () =>
         {
-            Simulation sim = new(World(1));
+            Simulation sim = Create(World(1));
             WorldSnapshot before = sim.Snapshot;
             CycleResult first = sim.RunCycle(CycleInput.Empty);
             Equal(0L, Grain(first, 1));
@@ -38,7 +40,7 @@ internal static partial class Scenarios
             Equal(OutcomeKind.Unable, second.Outcomes.Single().Kind);
             Equal(0, second.Events.Count(e => e.Kind == "Farm"));
             Equal(1L, before.People[new(1)].Grain);
-            Simulation farmer = new(World(1));
+            Simulation farmer = Create(World(1));
             CycleResult farmed = farmer.RunCycle(new([P(1, 1, new Farm())]));
             Equal(4L, Grain(farmed, 1));
             MaterialChange source = farmed.Events.Single(e => e.Kind == "Farm").Material.Single();
@@ -49,7 +51,7 @@ internal static partial class Scenarios
         {
             foreach (int attitude in new[] { -100, -2, -1, 0, 1, 2, 100 })
             {
-                Simulation sim = new(World(20, 20, 20, attitude));
+                Simulation sim = Create(World(20, 20, 20, attitude));
                 for (int i = 0; i < 4; i++) sim.RunCycle(CycleInput.Empty);
                 Equal(attitude, sim.Snapshot.AttitudeOf(new(1), new(2)));
                 sim.RunCycle(CycleInput.Empty);

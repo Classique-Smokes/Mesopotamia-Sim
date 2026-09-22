@@ -1,6 +1,6 @@
 # IMP-0001 implementation report
 
-Status: **INCOMPLETE — milestone 1 verified; remaining milestones pending**.
+Status: **INCOMPLETE — milestones 1–8 locally verified; final candidate audit and remote verification pending**.
 
 Branch: `implementation/imp-0001-slice1`. PR #7 remains draft; no merge authorized.
 
@@ -50,3 +50,5 @@ Milestone 5 canonical sequence: PASS; 8 MSTest tests executing eighteen acceptan
 Milestone 6 canonical sequence: PASS; 8 MSTest tests executing 24 acceptance scenarios, 92 manifest rows PASS. Direct marriage, independent residence proposals/conflicts, all eleven non-callable semantic shapes, non-payload type exclusion, and nested repayment ingress boundaries implemented/tested. Milestone 5 CI PASS: 35690260519.
 
 Milestone 7 canonical sequence: PASS; 8 MSTest tests executing 28 acceptance scenarios, 98 manifest rows PASS. Production personal candidate generation, shared checked scorer, canonical personal/response profiles, complete retained decision traces, and autonomous cycle entry are implemented. Reference default preferences are explicitly versioned laboratory configuration. Milestone 6 CI PASS: 35690505528.
+
+Milestone 8 canonical sequence: PASS; 8 MSTest tests, 38 named acceptance scenarios and 166 audited fixture instances; 127 coder-owned REQUIRED rows PASS. The remaining REQUIRED conformance row is awaiting external review, and the full frozen completion gate remains false. Invariant replay checks material, attitudes, references/provenance, residence cardinality, score sums/selection, reaction indices, and cause uniqueness. JSON supplements record exact fixtures and proposals, per-case source clauses, oracle dependencies, and fault classifications. Executed faults include duplicate reaction injection, suppressed closure, and corrupt result witnesses; other mutant rows use the frozen manifest's permitted focused-negative or structural route and do not claim unexecuted production mutations. Repeated/storage/input/identity/locality/observer/irrelevant-name/attitude-cause/residence-contender pairs pass. Structural cache evidence confirms no derived authority. Milestone 7 CI PASS: 35690930667. Final audit and candidate handoff remain pending; SCF-002 is active.
