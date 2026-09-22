@@ -47,18 +47,13 @@ The assurance protocol now explicitly notes that fresh conformance reviewers may
 
 ## Archive preservation correction
 
-The compressed reviewer archive previously added at:
+Repair-v2 correctly detected that the first compressed preservation attempt was corrupt.
 
-`research/technical/IMP-0001/archive/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW.md.br`
+That clerical defect is now resolved:
 
-is **not a valid preservation copy**. Repair-v2 independently detected that its actual bytes do not match the metadata recorded in the BLOCK reconciliation and Brotli decompression fails.
+- the corrupt `.md.br` file was deleted;
+- the original reviewer artifact is preserved byte-identically as `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW.md`;
+- original SHA-256: `09fb414448000784866c2e8d172ed576d8180ad9d5db9e7d38ed4bb61a3ab91d`;
+- verified Git blob: `23206f0891ff13135a683c56dbe264f75db80533`.
 
-The original user-supplied review artifact remains identified by:
-
-- bytes: 127,757;
-- lines: 636;
-- SHA-256: `09fb414448000784866c2e8d172ed576d8180ad9d5db9e7d38ed4bb61a3ab91d`.
-
-Until a correct byte-identical repository copy is installed, the invalid `.br` must not be cited as the full reviewer evidence. The readable reconciliation remains valid as a Master Architect synthesis, but it is not a substitute for the original full review.
-
-This preservation defect is clerical and does not alter the candidate-v1 BLOCK or candidate-v2 repair semantics.
+This correction does not alter the candidate-v1 BLOCK or candidate-v2 repair semantics.
