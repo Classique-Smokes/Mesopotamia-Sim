@@ -1,6 +1,6 @@
 # Possible Post-v0 Paths
 
-**Status:** DRAFT / NON-AUTHORITATIVE  
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
 **Role:** Preserve plausible future sequencing options without choosing a roadmap.
 
 These paths are contingent on v0 results. They can be combined, reordered, or rejected.
