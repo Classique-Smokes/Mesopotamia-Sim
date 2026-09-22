@@ -113,3 +113,29 @@ The sources above do **not** prescribe our exact architecture or agent system. T
 ## 5. Why this is a separate supporting artifact
 
 The Master Architect Guide should remain durable even as today's models, vendors, tools, and preferred harnesses change. This research note preserves why the current proposal was written the way it was without forcing future Master Architects to treat 2025–2026 tool-specific techniques as permanent doctrine.
+
+
+## Project evidence from TRES-0010
+
+TRES-0010 supplied project-specific evidence for restructuring the Master Architect rulebook rather than continuing to grow one always-loaded guide.
+
+The durable lessons were reconciled in:
+
+- `research/technical/TRES-0010/FINAL_PROCESS_LESSONS_RECONCILIATION.md`
+- `research/technical/TRES-0010/MASTER_ARCHITECT_RULEBOOK_RESTRUCTURING_PLAN.md`
+
+The key project evidence was:
+
+- local semantic correctness did not guarantee composition closure at the first implementation boundary;
+- missing semantics, missing enforcement, and implementation-local engineering risk required different remedies;
+- open-ended “relevant/applicable” handoff language created implementation discretion exactly where completion needed to be precise;
+- independently authored acceptance authority itself still needed adversarial review;
+- several apparently serious findings were overreach and were correctly rejected by defense/minimality passes;
+- blind review quality depended on control-plane information design, not only on hiding detailed sibling reports;
+- repeated workflow failures were better repaired through manifests, templates, frozen refs, registers, and local guardrails than through more prose in the always-loaded Guide.
+
+This supports a layered governance harness:
+
+**small constitutional core → trigger metadata → task/work-mode protocol → template/checklist → mechanical enforcement where mature.**
+
+The point is not fewer rules. It is to place each rule where it is most likely to be retrieved at the right time and least likely to crowd unrelated context.
