@@ -25,6 +25,7 @@ It is not a roadmap and does not change the current SFL v0 implementation sequen
 - `04_RESEARCH_DESIGN_PROMOTION_PROCEDURE.md` — how these concepts may move from observer tale to evidence, design, decision, specification, implementation, and verification.
 - `05_POSSIBLE_POST_V0_PATHS.md` — several plausible future routes without selecting a roadmap.
 - `06_DIRECTOR_REVIEW_GUIDE.md` — explicit review/approval boundaries while the package remains conceptual.
+- `07_SFL_V0_DISCOVERY_SEAMS.md` — slice-linked conceptual seams showing what SFL v0 may make observable before any broader institutional generalization.
 
 ## Source basis
 

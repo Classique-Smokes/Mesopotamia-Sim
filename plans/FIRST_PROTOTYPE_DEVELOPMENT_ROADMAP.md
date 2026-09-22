@@ -83,6 +83,12 @@ This early run is **not** Roadmap Stage 5 model iteration and does not replace t
 
 Findings from the early run may inform later work, but one lower-level reference world must not be overinterpreted as evidence about historical calibration, household dynamics, or the completed simulation.
 
+### Slice-linked discovery prompts
+
+Before planning Slices 2–5, retrieve `SFL_V0_INTERSLICE_DISCOVERY_PROMPTS.md`. It points each slice toward the larger conceptual questions that its accepted machinery may make observable, while explicitly preventing those questions from becoming new requirements by implication.
+
+The deeper conceptual source is `../research/conceptual/INSTITUTIONAL_DYNAMICS/07_SFL_V0_DISCOVERY_SEAMS.md`. Retrieve it only when the relevant slice or observation makes the question timely.
+
 **Complete when:**
 - all five slices execute together as one reference simulation;
 - all required verification scenarios pass;

@@ -228,8 +228,9 @@ Recommended order:
 3. compact cycle summaries;
 4. selected decision traces for surprising events;
 5. Director's own observations/questions;
-6. Master Architect causal analysis;
-7. only then decide whether any bounded follow-up experiment is useful.
+6. only after the Director's first read, retrieve `research/conceptual/INSTITUTIONAL_DYNAMICS/07_SFL_V0_DISCOVERY_SEAMS.md` as a secondary interpretive lens;
+7. Master Architect causal analysis, clearly distinguishing raw run facts from the conceptual interpretation;
+8. only then decide whether any bounded follow-up experiment is useful.
 
 This preserves human project authority at the first moment the simulator becomes an object of observation rather than only implementation.
 

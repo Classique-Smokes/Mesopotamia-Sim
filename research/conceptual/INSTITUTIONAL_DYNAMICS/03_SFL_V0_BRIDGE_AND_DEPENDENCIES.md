@@ -9,6 +9,8 @@ Do not interrupt or expand SFL v0 to implement this conceptual program.
 
 Instead, use v0 as the first empirical/reference test of lower-level mechanisms that later institutional work may reuse.
 
+For the deeper slice-by-slice interpretive map—what each slice may make observable, what signals to look for, and what not to infer—retrieve `07_SFL_V0_DISCOVERY_SEAMS.md` when the relevant slice becomes timely.
+
 ## 2. Slice map
 
 ### Slice 1 — lower-level social fabric
