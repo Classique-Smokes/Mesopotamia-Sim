@@ -61,7 +61,7 @@ public sealed class AcceptanceTests
             Permitted = new[] { "Immutable ID/state/event schemas", "MSTest assertions", "LINQ enumeration", "Checked arithmetic and explicit constants" },
             ScenarioOracle = "Hand-authored values in *Scenarios.cs; production entry used only as target; state query answers also verified by raw-dictionary ledger replay",
             CallFavorOracle = "Explicit two callable / eleven non-callable list transcribed from frozen manifest; no production applicability classifier calls",
-            Adequacy = "Corrupted material and attitude result witnesses raise semantic assertion failures; actual duplicate and closure injections exercise production guards"
+            Adequacy = "Corrupted material/attitude witnesses and coherently omitted mandatory causes raise semantic assertion failures; actual duplicate and closure injections exercise production guards"
         });
         bool coverage = rows.Where(r => r.Classification == "REQUIRED" && r.Id is not ("S1-GLOBAL-REQUIRED-COVERAGE" or "S1-GLOBAL-CONFORMANCE"))
             .All(r => results.TryGetValue(r.Id, out var result) && result.Passed && result.References.Length > 0);

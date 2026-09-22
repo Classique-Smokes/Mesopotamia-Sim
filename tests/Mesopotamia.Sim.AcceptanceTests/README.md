@@ -15,6 +15,8 @@ The dispatch-scaffold smoke test in this project proves only that the test runne
 
 `AcceptanceTests.ExecuteFrozenManifestEvidence` deterministically runs the named cases in `Scenarios`, including parameterized boundary subcases. Every case enters the production boundary. `FixtureAudit` records actual initial fields, scheduled inputs, submitted terms, profiles, and provenance for each world. `InvariantOracle` independently reconstructs material, attitude, residence, debt and cause facts from the initial fixture and committed history; it never calls the production recognizer, scorer, validator, or transition helpers.
 
+Repair-v2 adds public-API regressions in `RepairScenarios.cs`, `RepairResolutionScenarios.cs`, and `RepairKnowledgeScenarios.cs`. These reproduce F1-F3, exchange proposal IDs, reverse fixed-ID inputs, audit aggregate capacities and compatible controls, and hold personal inputs constant under hidden-world perturbations. Fixture evidence also records the actual personal input view and observation provenance. The attitude checker derives the complete mandatory cause set from initial need, maintenance and consequential outcomes before inspecting contributions; a detached witness that omits a cause and consistently adjusts final attitude must fail. This is a checker-adequacy control, not an injected production mutant or independent K4 review.
+
 Canonical root testing writes these ignored artifacts, also published by canonical CI:
 
 - `artifacts/acceptance/slice1-results.json` and `.md`: every frozen row, unchanged classification, assertion-backed status and evidence references;
