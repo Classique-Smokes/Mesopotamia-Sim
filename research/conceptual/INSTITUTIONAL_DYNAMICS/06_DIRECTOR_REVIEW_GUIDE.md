@@ -73,13 +73,15 @@ The current draft intentionally does not ask for that decision while IMP-0001/v0
 
 When reviewing, consider separately:
 
-1. **Umbrella framing** — is institutional persistence/recognition the right larger problem?
+1. **Umbrella framing** — is institutional persistence/recognition useful as a research organizer without becoming a universal ontology?
 2. **Separability** — are any listed dimensions wrongly split or wrongly combined?
-3. **Mechanism hypotheses** — which feel promising, premature, or missing?
-4. **Challenge cases** — do they capture the failure modes we care about?
-5. **v0 bridge** — are we correctly treating v0 as substrate/reference rather than universal institution theory?
-6. **Procedure** — is the proposed route from concept → evidence → design → authority appropriately disciplined?
-7. **Possible paths** — are there obvious future routes missing, without choosing one now?
+3. **Genealogy / archive distinction** — does the draft correctly allow actual causal history to predate surviving official records?
+4. **Institutional age** — is the distinction between elapsed time and accumulated institutional history useful without introducing fake extra clocks?
+5. **Mechanism hypotheses** — which feel promising, premature, or missing?
+6. **Challenge cases** — do they capture the failure modes we care about, including the lost-beginning/transmission-catastrophe case?
+7. **v0 bridge** — are we correctly treating v0 as substrate/reference rather than universal institution theory?
+8. **Procedure** — is the proposed route from concept → evidence → design → authority appropriately disciplined?
+9. **Possible paths** — are there obvious future routes missing, without choosing one now?
 
 ## 4. Default interpretation of informal approval
 
