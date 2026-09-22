@@ -104,7 +104,13 @@ internal static class PersonalAgency
 
     private static ImmutableDictionary<string, long> Components(PersonId actor, ActionTerms terms, PersonalPolicy policy, WorldSnapshot snapshot)
     {
-        PersonId? target = ActionRules.Target(terms, snapshot);
+        // An interpersonal scoring target need not require a new response (repayment/cancellation).
+        PersonId? target = terms switch
+        {
+            RepayDebt repay => snapshot.Debts[repay.Debt].Creditor,
+            CancelReciprocalFavours cancel => cancel.Target,
+            _ => ActionRules.Target(terms, snapshot)
+        };
         var values = ImmutableDictionary.CreateBuilder<string, long>(StringComparer.Ordinal);
         switch (policy.Profile)
         {
@@ -130,6 +136,8 @@ internal static class PersonalAgency
                 values.Add("GrainConcern", terms is Farm && snapshot.People[actor].Grain < 4 ? 60 : 0);
                 values.Add("DebtConcern", terms is RepayDebt ? 30 : 0);
                 values.Add("RelationConcern", target is { } other && terms is OfferGift ? checked((snapshot.AreKin(actor, other) ? 3L : 2L) * snapshot.AttitudeOf(actor, other)) : 0);
+                values.Add("MarriageConcern", terms is ProposeMarriage ? 40 : 0);
+                values.Add("CoResidenceConcern", terms is MoveResidence or InviteResidence && target is { } resident ? snapshot.AreMarried(actor, resident) ? 40 : 20 : 0);
                 break;
         }
         return values.ToImmutable();

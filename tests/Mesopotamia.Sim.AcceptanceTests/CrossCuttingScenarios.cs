@@ -125,7 +125,7 @@ internal sealed partial class Scenarios
                 string actual = Canonical(sim);
                 if (expected is null) expected = actual; else Equal(expected, actual);
             }
-            FaultEvidence.Add(new { Id = "S1-MUT-26", Route = "Focused enabled/disabled reader pair, including reversed inspection order", Outcome = "detected", Detector = "Exact state/history/decisions/knowledge equality", MutationExecution = "unexercised; focused negative route" });
+            FaultEvidence.Add(new { Id = "S1-MUT-26", Route = "Focused enabled/disabled reader pair, including reversed inspection order", Outcome = "unexercised", FocusedControl = "PASS: exact state/history/decisions/knowledge equality", MutationExecution = "unexercised; focused negative route" });
         });
         yield return new("IdentityIsomorphismAndDisconnectedLocality", ["S1-META-02", "S1-META-03"], () =>
         {

@@ -34,8 +34,7 @@ internal sealed partial class Scenarios
                 CommittedEventOrigin = "Production simulation",
                 StableCycles = world.Simulation.Snapshot.Cycle,
                 Invariants = "PASS",
-                DeliberateFaultChallenge = world.Simulation.IsFaulted
-                ,
+                DeliberateFaultChallenge = world.Simulation.IsFaulted,
                 Subcase = FixtureEvidence.Count + 1,
                 Configuration = world.Initial.Configuration.Version,
                 Profiles = world.Simulation.DecisionHistory.Select(d => d.Profile).Distinct().Order(StringComparer.Ordinal),

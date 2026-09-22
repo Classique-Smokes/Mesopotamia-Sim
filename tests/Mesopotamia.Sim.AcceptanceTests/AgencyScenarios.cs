@@ -7,6 +7,22 @@ internal sealed partial class Scenarios
 {
     private IEnumerable<Scenario> AgencyCases()
     {
+        yield return new("GeneratedActionVocabularyAndRepaymentTarget", ["S1-099-KIN", "S1-086"], () =>
+        {
+            InitialWorld world = World(40, 40, 40, 80, 80) with { Kinships = [new(new(6), new(1), new(3), KinshipKind.Sibling)], Attitudes = [new(new(4), new(1), new(2), 80), new(new(5), new(2), new(1), 80), new(new(7), new(1), new(3), 20)] };
+            Simulation sim = Create(world);
+            sim.RunCycle(new([P(1, 1, new OfferBenefitForFavor(new(2), 1)), P(2, 3, new OfferLoan(new(1), 2))]));
+            sim.RunCycle(new([P(3, 2, new OfferBenefitForFavor(new(1), 1)), P(4, 1, new OfferLoan(new(2), 2))]));
+            CycleResult result = sim.RunCycle(new([]) { PersonalPolicies = ImmutableDictionary<PersonId, PersonalPolicy>.Empty.Add(new(1), new("SCORE-VP-004")) });
+            DecisionTrace trace = result.Decisions.Single(d => d.Context == "Personal");
+            string[] expected = ["Farm", "OfferGift", "RequestGiftOrHelp", "OfferLoan", "RequestLoan", "RepayDebt", "OfferBenefitForFavor", "RelationshipMediatedReciprocalHelp", "CallFavor", "CancelReciprocalFavours", "ProposeMarriage", "MoveResidence", "InviteResidence"];
+            foreach (string meaning in expected) True(trace.Candidates.Any(c => c.Meaning == meaning));
+            True(trace.Candidates.Any(c => c.Terms is CallFavor { Requested: Farm }));
+            True(trace.Candidates.Any(c => c.Terms is CallFavor { Requested: RepayDebt }));
+            // Initial 20 plus loan-received +5, exact sibling multiplier: 3 * 25 = 75.
+            Equal(75L, trace.Candidates.Single(c => c.Terms is RepayDebt).Components["AttitudeComponent"]);
+            True(trace.Candidates.Where(c => c.Meaning == "OfferBenefitForFavor").Any(c => !c.Eligible && c.Gate == "FavourCapacityFull"));
+        });
         yield return new("ExactKinScoringAndFullTrace", ["S1-099-KIN", "S1-086", "S1-MUT-29"], () =>
         {
             InitialWorld world = World(8, 8, 8, 20, 0);
