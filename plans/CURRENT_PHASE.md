@@ -51,6 +51,7 @@ GOV-0001 is **CLOSED / PROMOTED** under DEC-0009. Promotion evidence is recorded
 
 Governance state:
 
+- active Master Architect succession handoff: `plans/MASTER_ARCHITECT_SUCCESSION_HANDOFF_2026-09-22.md`;
 - accepted rulebook: `governance/MASTER_ARCHITECT_GUIDE.md` + triggered specialized protocols;
 - constitutional lineage: `DEC-0002` amended by accepted `DEC-0009`;
 - promotion record: `research/technical/GOV-0001/PROMOTION_RECORD.md`.
