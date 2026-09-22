@@ -4,7 +4,7 @@
 **Purpose:** Preserve a concise entry point into the broader institutional-dynamics conceptual program.  
 **Authority:** None. This is not a roadmap, specification, backlog, or design decision.
 
-The earlier three workstreams remain useful, but they are now understood as **subordinate mechanism families** inside a larger problem:
+The earlier three workstreams remain useful, but they are now understood as **subordinate mechanism families** inside a larger research problem—not a universal ontology:
 
 > **Institutional identity, persistence, recognition, authority, capability, memory, and genealogy.**
 
@@ -82,7 +82,8 @@ The three streams intersect through:
 - **externalized causality** — past action produces durable structures that constrain later actors;
 - **socially persistent arrangements** — offices, obligations, procedures, artifacts, roles, assignments, and other history-bearing structures;
 - **subjective/objective separation** — what exists versus what different actors know/recognize;
-- **provenance and genealogy** — why current state exists and which histories actors believe;
+- **provenance and genealogy** — why current state exists, which histories actors believe, and how surviving archives may begin later than the actual causal chain;
+- **institutional age** — consequential event density, labor, succession, and maturity may diverge sharply from elapsed world time;
 - **higher-order grounding** — macro-action remains reconstructable through lower-level implementation.
 
 ## 6. Contingency on SFL v0
