@@ -30,7 +30,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 CANDIDATE-v2 FROZEN / FRESH INDEPENDENT CONFORMANCE PENDING.**
+**Roadmap Stage 4 — Slice 1 CANDIDATE-v2 BLOCKED / REPAIR-v3 ACTIVE.**
 
 Active implementation packet:
 
@@ -87,10 +87,11 @@ Dispatch scaffolding:
 - repair packet: `tasks/implementation/IMP-0001_BLOCK_REPAIR_PACKET.md`;
 - repair branch: `implementation/imp-0001-slice1-repair-v2`;
 - frozen candidate-v2: `imp-0001-slice1-conformance-candidate-v2` @ `ba16829e240950f1f3c648107cf3b8b36f996971`;
-- candidate-v2 exact-head CI: run `35772625856` PASS;
-- candidate-v2 evidence artifact: `10714762656`, digest `sha256:6e0f87e00005b0bc946eec02684955616964b192c4b2ba4f6fcf3c5d5f8ab0f7`;
-- candidate-v2 reconciliation/dispatch: `tasks/implementation/IMP-0001_CANDIDATE_V2_RECONCILIATION_AND_DISPATCH.md`;
-- fresh K4 packet: `tasks/implementation/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V2_PACKET.md`;
+- candidate-v2 exact-head CI: run `35772625856` PASS, but fresh K4 result **BLOCK**;
+- candidate-v2 K4 report: `research/technical/IMP-0001/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V2.md`;
+- candidate-v2 BLOCK reconciliation: `research/technical/IMP-0001/IMP-0001_CANDIDATE_V2_BLOCK_RECONCILIATION.md`;
+- repair-v3 packet: `tasks/implementation/IMP-0001_V3_REPAIR_PACKET.md`;
+- repair-v3 branch: `implementation/imp-0001-slice1-repair-v3`;
 - remaining scaffolding state: `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
 
 ## Stage-4 slice order
@@ -117,12 +118,12 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Commission a **fresh reviewer who did not author repair-v2** against frozen candidate `ba16829e240950f1f3c648107cf3b8b36f996971` using `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V2_PACKET.md`.
-2. Keep candidate-v1 and candidate-v2 refs immutable; keep PR #7 and draft PR #16 unmerged during review.
-3. Preserve `SFL-V0-S1-ACCEPTANCE-v1` unchanged; `S1-GLOBAL-CONFORMANCE` remains REQUIRED and pending.
-4. In parallel, execute the lightweight post-IMP-0001 assurance retrospective/branch-hygiene plan: governance sharpening may proceed; branch census is read-only; destructive cleanup waits until v2 review lineage no longer needs refs.
-5. If v2 review BLOCKs, reconcile exact findings and create a new candidate identity after repair.
-6. If v2 review PASSes, perform final IMP-0001 completion/SCF-002 retirement and merge/promotion reconciliation.
+1. Execute `IMP-0001_V3_REPAIR_PACKET.md` on `implementation/imp-0001-slice1-repair-v3` against B1 MaterialDeadlock future-input resolution and B2 fallback-attribution precision.
+2. Preserve candidate-v1, candidate-v2 and `SFL-V0-S1-ACCEPTANCE-v1` unchanged.
+3. Do not reopen the v1 repair areas without new evidence; the v2 reviewer independently cleared them.
+4. When coder-owned repair-v3 evidence is complete, reconcile the head and freeze `imp-0001-slice1-conformance-candidate-v3`.
+5. Commission a fresh K4 reviewer who authored neither repair-v2 nor repair-v3. `S1-GLOBAL-CONFORMANCE` remains BLOCK until PASS.
+6. Continue the read-only branch-hygiene census in parallel if delegated; destructive cleanup remains deferred until the active v3 conformance lineage no longer needs its refs.
 7. Only after verified Slice-1 completion/promotion execute `SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`, freeze the raw autonomous history, and pause for Project Director inspection before Slice 2.
 8. Classify birth-run observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
 
