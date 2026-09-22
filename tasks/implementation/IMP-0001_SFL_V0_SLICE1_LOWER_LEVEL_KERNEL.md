@@ -2,12 +2,14 @@
 
 **Task ID:** IMP-0001  
 **Commissioned by:** Master Architect  
-**Status:** READY FOR DISPATCH / TRES-0010 CLOSED  
+**Status:** DISPATCHED / IN PROGRESS  
+**Dispatched:** 2026-09-22  
+**Implementation branch:** `implementation/imp-0001-slice1`  
 **Context mode:** PROJECT-CONTEXT
 
-## Pre-dispatch gate — satisfied
+## Dispatch gate — released
 
-TRES-0010 is closed with a PASS and this task is cleared for dispatch.
+TRES-0010 is closed with a PASS. The Project Director intentionally dispatched this task on 2026-09-22.
 
 Closure evidence:
 
@@ -15,7 +17,7 @@ Closure evidence:
 - frozen Slice-1 acceptance authority `SFL-V0-S1-ACCEPTANCE-v1`
 - `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md`
 
-On actual dispatch, SCF-001 and the remaining executable/CI portion of SCF-002 fire.
+SCF-001 fired and is implemented by the canonical root toolchain/CI scaffold. SCF-002 fired: the frozen external acceptance authority remains immutable, and executable/CI mapping to every REQUIRED AcceptanceId is now an active IMP-0001 completion obligation.
 
 Any newly discovered conflict with accepted semantics/architecture still triggers the escalation rules in this packet; closure is not permission to improvise new project meaning.
 

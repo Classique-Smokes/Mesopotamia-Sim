@@ -20,3 +20,9 @@ tmp/
 *.tar.gz
 .vscode/
 .idea/
+
+# .NET
+**/bin/
+**/obj/
+TestResults/
+artifacts/
