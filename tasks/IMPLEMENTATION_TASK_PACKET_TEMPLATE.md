@@ -9,12 +9,15 @@
 
 [Concrete implementation outcome stated in observable terms.]
 
-## 2. Authoritative inputs
+## 2. Required inputs by authority class
 
-- **Accepted specification(s):**
-- **Accepted decision(s) / ADR(s):**
+- **Accepted semantic / architectural authority:**
+- **Verification / completion authority:** [if a separately owned frozen manifest/evaluator exists]
+- **Required non-authoritative supporting / engineering context:**
 - **Applicable invariants:**
 - **Other canonical constraints:**
+
+State precedence explicitly where more than one class is present: accepted semantic/architectural authority controls meaning; verification authority defines completion obligations but does not create semantics; supporting/engineering context cannot silently override either.
 
 Implementation must retrieve and obey these artifacts rather than infer authority from conversation.
 
@@ -34,6 +37,13 @@ Implementation must retrieve and obey these artifacts rather than infer authorit
 
 [Observable, testable completion conditions.]
 
+If this task has a separately owned frozen acceptance/applicability manifest or equivalent completion authority:
+
+- identify its version/ref/SHA;
+- make every REQUIRED row explicit completion authority;
+- keep DEFERRED / N-A / UNEXERCISED rows visibly classified;
+- do not replace exact applicability with open-ended “relevant/applicable” self-selection.
+
 ## 7. Verification expectations
 
 [Required tests, scenario checks, invariant checks, reproducibility checks, benchmarks, inspections, or other evidence appropriate to the task.]
@@ -42,9 +52,13 @@ The completion claim must be supported by verification evidence. Agent confidenc
 
 Acceptance tests, graders, invariants, and other completion checks must not be weakened or rewritten to make the task pass unless changing that verification surface is explicitly in scope.
 
+When a frozen external acceptance/applicability authority exists, completion evidence should identify its version/ref/SHA, report every REQUIRED row separately, keep deliberate deferrals visible, and include any independent conformance review required by that authority.
+
 ## 8. Local decisions permitted
 
 [Ordinary, reversible implementation choices the agent may make without escalation.]
+
+Local test-framework/helper choices may not edit/reclassify a separately owned frozen acceptance authority or make an assertion-target production helper serve as its own independent oracle.
 
 ## 9. Escalation conditions
 
@@ -64,6 +78,8 @@ Stop and report rather than silently changing project architecture if implementa
 - any accepted requirement or higher-authority project principle.
 
 Also escalate when the task cannot meet its acceptance criteria without altering an accepted assumption or when observed behavior materially contradicts the specification.
+
+If a frozen acceptance/applicability authority exists, also escalate when a REQUIRED row cannot be translated without adding/choosing semantics, when its expected result appears unsupported by accepted authority, or when implementation would require changing/reclassifying that frozen authority.
 
 ## 10. Work-state discipline
 
@@ -85,4 +101,5 @@ Return:
 - any architectural conflict or escalation;
 - any deviation from the requested task;
 - any new unresolved issue discovered;
-- any follow-up work that is genuinely required rather than merely desirable.
+- any follow-up work that is genuinely required rather than merely desirable;
+- when applicable, frozen acceptance-authority version/ref/SHA, complete REQUIRED-row result summary, visible deferral summary, and independent conformance-review reference/result.
