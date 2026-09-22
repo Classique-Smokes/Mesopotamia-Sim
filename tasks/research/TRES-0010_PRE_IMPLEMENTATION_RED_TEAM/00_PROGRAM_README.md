@@ -1,9 +1,9 @@
 # TRES-0010 — Pre-Implementation Architecture / Semantics / Verification Red Team
 
-**Status:** COMMISSION PACK PREPARED / IMPLEMENTATION GATE ACTIVE  
+**Status:** COMPLETE / IMPLEMENTATION GATE PASSED  
 **Commissioned by:** Master Architect  
 **Authority:** Advisory research only  
-**Implementation effect:** `IMP-0001` dispatch is blocked until TRES-0010 is reconciled.  
+**Implementation effect:** TRES-0010 is reconciled and closed; `IMP-0001` is cleared for dispatch by the final closure decision.  
 **Frozen review ref:** `tres-0010-review-baseline` — all Wave-A reviewers must read canonical project inputs from this ref.
 
 ## 1. Purpose
@@ -224,3 +224,18 @@ Frozen Wave-B baseline:
 - SHA: `f25407a9cbf09e501601d52ad7a2df111fa5c491`
 
 Wave B includes two blind sentinel reruns plus four prosecution/defense clusters. Solution-design tasks remain contingent on adjudication results.
+
+
+## 13. Final closure
+
+TRES-0010 is complete.
+
+Final decision:
+
+- `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`
+- result: **CLOSED / PASS**
+- closure checks: **34 / 34 passed**
+- frozen acceptance authority: `SFL-V0-S1-ACCEPTANCE-v1`
+- IMP-0001: **READY FOR DISPATCH**
+
+Later-slice gaps are preserved in `registers/TRES-0010_DEFERRED_GAP_LEDGER.md` and do not block Slice 1.
