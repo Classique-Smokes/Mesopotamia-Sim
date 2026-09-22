@@ -30,7 +30,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 DISPATCHED / IMPLEMENTATION IN PROGRESS.**
+**Roadmap Stage 4 — Slice 1 IMPLEMENTATION CANDIDATE COMPLETE / INDEPENDENT CONFORMANCE PENDING.**
 
 Active implementation packet:
 
@@ -81,6 +81,9 @@ Dispatch scaffolding:
 - SCF-001 fired and is implemented: canonical .NET root commands and CI are now repository infrastructure;
 - SCF-002 fired and is active: frozen acceptance authority is protected and executable/CI mapping to every REQUIRED AcceptanceId is an IMP-0001 completion obligation;
 - implementation branch: `implementation/imp-0001-slice1`;
+- frozen conformance candidate: `imp-0001-slice1-conformance-candidate-v1` @ `7e11dab7697121eb0dbb169ba46210d81b80586e`;
+- exact-candidate CI: run `35692449925` PASS;
+- independent review packet: `tasks/implementation/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_PACKET.md`;
 - remaining scaffolding state: `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
 
 ## Stage-4 slice order
@@ -95,9 +98,10 @@ Each slice must leave a runnable verified system. Do not begin a later slice by 
 
 ## Next
 
-1. Execute IMP-0001 on `implementation/imp-0001-slice1` in recoverable milestones, beginning with typed lower-level state and the acceptance-harness mapping.
-2. Preserve `SFL-V0-S1-ACCEPTANCE-v1` unchanged; every REQUIRED AcceptanceId must receive substantive evidence before completion.
-3. Preserve DEC-0009's consequence-triggered governance routing during implementation; routine local work should not load every protocol.
-4. Escalate any implementation discovery that would alter accepted semantics, persistent identity, execution model, or other architecture-level commitments.
+1. Commission a fresh independent K4 post-implementation conformance review against frozen candidate `7e11dab7697121eb0dbb169ba46210d81b80586e`.
+2. Preserve `SFL-V0-S1-ACCEPTANCE-v1` unchanged and do not move the conformance-candidate ref during review.
+3. Keep PR #7 draft/unmerged; `S1-GLOBAL-CONFORMANCE` remains REQUIRED and pending.
+4. If independent review returns BLOCK, reconcile exact findings without weakening acceptance authority; any code/test/evidence-map change creates a new candidate baseline.
+5. If review returns PASS, reconcile and record final completion/SCF-002 retirement before merge.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.

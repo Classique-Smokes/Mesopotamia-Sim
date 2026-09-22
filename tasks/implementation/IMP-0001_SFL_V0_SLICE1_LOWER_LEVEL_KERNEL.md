@@ -2,9 +2,10 @@
 
 **Task ID:** IMP-0001  
 **Commissioned by:** Master Architect  
-**Status:** DISPATCHED / IN PROGRESS  
+**Status:** IMPLEMENTATION CANDIDATE COMPLETE / AWAITING INDEPENDENT CONFORMANCE  
 **Dispatched:** 2026-09-22  
 **Implementation branch:** `implementation/imp-0001-slice1`  
+**Frozen conformance candidate:** `imp-0001-slice1-conformance-candidate-v1` @ `7e11dab7697121eb0dbb169ba46210d81b80586e`  
 **Context mode:** PROJECT-CONTEXT
 
 ## Dispatch gate — released
