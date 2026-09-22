@@ -127,6 +127,8 @@ For actions that request/cause other actions, close:
 
 If an accepted action depends on authority/role/precondition that another same-cycle transition can destroy/change, define or explicitly defer the interaction before both become executable.
 
+When a slice later makes a **broad/global ordering or fallback claim**, do not infer that claim from a few representative conflict examples. Perform a bounded interaction-surface audit over the executable action shapes whose commits can alter one another's action-relevant preconditions/capacity. Structural reasoning may eliminate impossible/commuting pairs; test only the material remainder.
+
 ### Undefined conditions
 
 Missing detail remains a visible gap. It is not implementation discretion.
@@ -145,6 +147,8 @@ Examples:
 - deterministic ordering/configuration state;
 - checkpoint/rebuild compatibility;
 - authority/context separation.
+
+For actor decision contexts that cross the objective/subjective seam, classify each behavior-affecting input by provenance: own state, automatically known direct-party fact, explicitly observed/communicated/supplied subjective fact, or objective-only world fact reserved for feasibility/resolution. Decision traces should expose the actual subjective inputs used. Do not implement later observation/communication systems merely to satisfy this audit.
 
 Do not build later subsystems, generic frameworks, or speculative abstractions merely to “future-proof.”
 
@@ -246,7 +250,8 @@ Check for:
 - contradictory status/scope;
 - circular oracle rules;
 - accidental later-slice requirements;
-- representation overconstraint.
+- representation overconstraint;
+- broad wording such as "all", "every", "global", "complete", or "only" that is supported only by sampled examples rather than bounded-domain enumeration, structural closure, or another evidence form whose scope actually spans the claim.
 
 A reviewer should re-derive from accepted sources rather than merely checking that a previous defect list was patched.
 
@@ -324,6 +329,8 @@ For consequential work, completion should verify not only green tests but confor
 - deterministic/recovery evidence is present where required.
 
 Independent post-implementation review is warranted when the acceptance authority explicitly requires it.
+
+A fresh conformance reviewer may use small reviewer-owned scratch probes against the unchanged public implementation boundary to seek counterexamples to broad claims, hidden input dependencies, or interaction assumptions. Such probes are adversarial evidence, not candidate modifications and not substitutes for required canonical evidence; disclose their setup and results.
 
 ## 16. Completion output
 
