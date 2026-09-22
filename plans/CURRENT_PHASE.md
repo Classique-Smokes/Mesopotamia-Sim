@@ -118,6 +118,7 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 4. When coder-owned repair evidence is complete, reconcile the repair head and freeze a new `imp-0001-slice1-conformance-candidate-v2`.
 5. Commission a fresh independent K4 review of candidate-v2. PR #7 remains draft/unmerged and `S1-GLOBAL-CONFORMANCE` remains unsatisfied until PASS.
 6. Only after verified Slice-1 completion/promotion execute `SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`, freeze the raw autonomous history, and pause for Project Director inspection before Slice 2.
-7. Classify birth-run observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
+7. After repair-v2 returns, begin the combined lightweight `POST_IMP0001_ASSURANCE_RETROSPECTIVE_AND_BRANCH_HYGIENE.md`: delegate a read-only branch census and minimally institutionalize only the process lessons actually demonstrated by candidate-v1 BLOCK. Destructive branch cleanup waits until the v2 conformance lineage no longer needs those refs.
+8. Classify birth-run observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
