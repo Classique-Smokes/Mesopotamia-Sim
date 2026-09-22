@@ -209,6 +209,7 @@ Do not implement in IMP-0001:
 - household lineage/division/consolidation;
 - household-mediated marriage;
 - general subjective communication/claim propagation beyond lower-level state needed for this slice;
+- actor departure as an executable Slice-1 fixture/generated/runtime transition; use a fixed Slice-1 population unless a separately accepted departure rule is promoted later;
 - checkpoint/save-load continuation;
 - production database/storage architecture;
 - parallelism/concurrency;
