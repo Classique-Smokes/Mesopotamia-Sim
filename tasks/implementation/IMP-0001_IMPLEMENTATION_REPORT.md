@@ -367,3 +367,8 @@ This index comes from the locally executed manifest-indexed report. It is a navi
 | S1-GLOBAL-REQUIRED-COVERAGE | REQUIRED | PASS | All 167 rows individually emitted; 127 coder-owned REQUIRED must pass; REQUIRED external conformance explicitly awaiting review |
 | S1-GLOBAL-MANIFEST-INTEGRITY | REQUIRED | PASS | AcceptanceCatalog.Read: Git blob and census |
 | S1-GLOBAL-CONFORMANCE | REQUIRED | AWAITING INDEPENDENT REVIEW |  |
+
+
+## Post-return Master Architect administrative note
+
+After the implementation return was published, draft PR #16 was opened for the repair branch. The Master Architect then removed the temporary branch-specific `push` CI trigger so the workflow returned to its canonical pull-request plus main-push shape. This administrative cleanup changes no production source, acceptance test semantics, evidence mapping, frozen authority, or F1–F3 repair behavior. The later candidate-v2 freeze record owns the final candidate SHA and exact-head CI identity.
