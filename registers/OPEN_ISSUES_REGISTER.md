@@ -64,3 +64,16 @@ Only add an issue when it arises from current work, blocks or shapes a near-term
 - **Resolution date:** 2026-09-21
 - **Approved by:** Human Project Director through Pass C and subsequent Stage-3 restorations.
 - **Related artifacts:** `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`, `plans/verification/SFL_V0/RECOGNITION_INFORMATION_FAMILY.md`
+
+
+### OQ-0004 — TRES-0010 deferred later-slice gaps
+
+- **Status:** DEFERRED
+- **Question:** Which confirmed pre-code gaps must be closed before later household/continuity/lineage/checkpoint features become executable?
+- **Why it matters now:** TRES-0010 deliberately kept several real later-slice semantic and verification issues off the Slice-1 critical path. Losing them would turn a safe deferral into accidental implementation discretion.
+- **What it blocks or influences:** Only the future trigger surfaces named in the dedicated ledger; it does not block IMP-0001.
+- **What it does not decide:** It does not supply the missing later-slice semantics, expand Slice 1, or reopen already closed D1–D5 / acceptance-authority decisions.
+- **Owner:** Master Architect; consequential semantic closures return to the Project Director where required.
+- **Resolution criteria:** Each ledger entry is resolved/promoted or explicitly retired before its named feature becomes executable/completion-authoritative.
+- **Resolution / date:** —
+- **Related artifacts:** `registers/TRES-0010_DEFERRED_GAP_LEDGER.md`; `research/technical/TRES-0010/WAVE_B_ADJUDICATION_SYNTHESIS.md`; `research/technical/TRES-0010/B2_MASTER_ARCHITECT_DECISION_SYNTHESIS.md`
