@@ -4,7 +4,7 @@
 
 ## Active
 
-- `IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md` — Stage-4 Slice 1, **CANDIDATE-v2 BLOCKED / REPAIR-v3 ACTIVE**; Elamite K4 returned BLOCK with 124 REQUIRED satisfied / 4 unsatisfied; repair-v3 branch `implementation/imp-0001-slice1-repair-v3`; packet `IMP-0001_V3_REPAIR_PACKET.md`; prior candidate refs remain frozen; acceptance authority unchanged.
+- `IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md` — Stage-4 Slice 1, **CANDIDATE-v3 FROZEN / FRESH K4 PENDING**; candidate-v3 `06e25644879dd8505e24fcaeb43256f69c29c15f`; review packet `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`; PR #7, PR #16 and PR #23 remain draft/unmerged; prior candidate refs and frozen acceptance authority remain unchanged.
 
 ## Ready for dispatch
 
