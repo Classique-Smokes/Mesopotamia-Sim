@@ -1,16 +1,18 @@
 # SFL v0 — Slice 1 Acceptance Manifest
 
-**Status:** CANDIDATE / PRE-CODE REVIEW REQUIRED — NOT YET ACCEPTANCE AUTHORITY  
+**Status:** FROZEN SLICE-1 ACCEPTANCE / APPLICABILITY AUTHORITY  
+**Authority class:** Verification/completion authority subordinate to accepted simulation semantics and architecture  
 **Owner:** Master Architect / independent verification authority, not IMP-0001 implementer  
 **Semantic authority:** `SPEC-SFL-0001` and accepted ADRs  
 **Verification sources:** canonical Stage-3 SFL v0 verification package  
-**Scope:** IMP-0001 — lower-level social-fabric reference kernel only
+**Scope:** IMP-0001 — lower-level social-fabric reference kernel only  
+**Frozen version:** `SFL-V0-S1-ACCEPTANCE-v1`
 
 > This manifest identifies which accepted verification obligations count for Slice 1 and what evidence is required. It does **not** create or restate social semantics. If a manifest row appears to conflict with accepted semantic authority, the semantic authority wins and the manifest must be corrected before code is dispatched.
 
-## 1. Freeze prerequisites
+## 1. Freeze prerequisites — satisfied
 
-This manifest may be frozen only after:
+This manifest was frozen only after:
 
 1. the Director-approved TRES-0010 D1–D5 semantic repairs are present in accepted `SPEC-SFL-0001`;
 2. the corresponding canonical verification cards are aligned;
@@ -438,17 +440,18 @@ The reviewer reruns canonical root commands or verifies reproducible output.
 
 # PART L — Freeze metadata
 
-Before dispatch, fill:
-
-- **Manifest version:**
-- **Manifest content SHA:**
-- **Accepted source baseline commit:**
-- **SPEC content SHA/version:**
-- **Verification package baseline:**
-- **CallFavor applicability supporting record:**
-- **Independent pre-code reviewer:**
-- **Pre-code review result:**
-- **Freeze date:**
+- **Manifest version:** `SFL-V0-S1-ACCEPTANCE-v1`
+- **Reviewed candidate content SHA:** `00e4cf0f795e4900673004d3e65bfb95a64cdb91`
+- **Accepted source / review baseline commit:** `7fe85af66723885fecc16c0222538265cbf693bc` (`tres-0010-manifest-review-r2-baseline`)
+- **SPEC content SHA/version:** `a1f0fa35de6f1cf70e59dd0e4cc483d0aadfbc52` / `SPEC-SFL-0001 — ACCEPTED`
+- **Cross-cutting verification contract SHA:** `7953a7f1c1cf3bd01cb8c08733618664e7a1504d`
+- **CallFavor applicability supporting record:** `research/technical/TRES-0010/CALLFAVOR_SLICE1_APPLICABILITY_RECONCILIATION.md` @ `6a239a91756096a9d39e517282c2ee9d2537e015`
+- **Independent pre-code review:** `research/technical/TRES-0010/returns/TRES-0010_SLICE1_MANIFEST_PRECODE_REVIEW_R2_REPORT.md`
+- **Pre-code review result:** **PASS**
+- **Reviewed census:** 167 unique AcceptanceIds — 128 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED
+- **Frozen ref:** `sfl-v0-slice1-acceptance-v1`
+- **Freeze date:** 2026-09-21
+- **Final frozen manifest content SHA / freeze commit:** recorded externally in `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md` to avoid self-referential hashing.
 
 ## Completion rule
 
