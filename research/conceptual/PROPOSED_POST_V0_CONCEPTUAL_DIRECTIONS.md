@@ -1,6 +1,6 @@
 # Proposed Post-v0 Conceptual Directions
 
-**Status:** DRAFT / NON-AUTHORITATIVE — amended after focused review of the original Uruk Accident seed  
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK — amended after focused review of the original Uruk Accident seed  
 **Purpose:** Preserve a concise entry point into the broader institutional-dynamics conceptual program.  
 **Authority:** None. This is not a roadmap, specification, backlog, or design decision.
 
@@ -8,7 +8,7 @@ The earlier three workstreams remain useful, but they are now understood as **su
 
 > **Institutional identity, persistence, recognition, authority, capability, memory, and genealogy.**
 
-Full draft package:
+Full provisional package:
 
 `INSTITUTIONAL_DYNAMICS/`
 
@@ -113,4 +113,4 @@ This note does not:
 - establish a universal institutional ontology;
 - commit the project to implementing all three streams.
 
-See the draft institutional-dynamics package for mechanism hypotheses, challenge cases, dependency mapping, and the proposed evidence/design/promotion procedure.
+See the provisional institutional-dynamics package for mechanism hypotheses, challenge cases, dependency mapping, and the proposed evidence/design/promotion procedure.
