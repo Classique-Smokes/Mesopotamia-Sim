@@ -1,9 +1,9 @@
 # Director Review Guide — Institutional Dynamics Draft
 
-**Status:** DRAFT / NON-AUTHORITATIVE  
-**Purpose:** Make review/approval boundaries explicit while the institutional-dynamics package is still conceptual.
+**Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK  
+**Purpose:** Preserve review/promotion boundaries for this conceptual guiding framework so later enthusiasm cannot silently turn hypotheses into accepted mechanics.
 
-## 1. What is currently being reviewed
+## 1. What this framework contains
 
 The draft package proposes:
 
@@ -15,7 +15,7 @@ The draft package proposes:
 6. a proposed research/design/promotion procedure;
 7. several possible post-v0 paths.
 
-None is current simulation authority.
+None is current simulation authority. The Director has approved preservation of this package as a possible future guiding light, not promotion of its candidate mechanisms.
 
 ## 2. Possible review outcomes
 
