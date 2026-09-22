@@ -39,6 +39,14 @@ The files under `tablets/` are preserved as readable Markdown source artifacts.
 
 Preservation verification on ingestion compared each committed Git blob SHA to the Git blob SHA calculated from the exact uploaded bytes; all three matched.
 
+### Review-era correction tablet
+
+The current institutional-dynamics draft branch also preserves:
+
+- `tablets/THE_JESTERS_CORRECTION_INSTITUTIONAL_AGE_AND_LOST_BEGINNING.md` — correction distinguishing elapsed time from institutional age, documenting the project's lost pre-repository prehistory, and warning against treating the institutional-dynamics umbrella as a universal ontology.
+
+This source is part of draft PR #10 and is not yet on canonical `main`.
+
 ## Derived interpretation
 
 Current draft interpretation of this corpus is kept separately at:
