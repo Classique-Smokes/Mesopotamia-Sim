@@ -36,12 +36,13 @@ Accepted foundation:
 
 Active work:
 
-- **pre-implementation gate:** `tasks/research/TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/00_PROGRAM_README.md`
-- prepared implementation packet, **dispatch blocked:** `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+- TRES-0010 pre-implementation gate: **CLOSED / PASS** — `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`
+- implementation packet **READY FOR DISPATCH:** `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+- frozen Slice-1 acceptance authority: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md` (`SFL-V0-S1-ACCEPTANCE-v1`)
 - completed verification contract: `plans/verification/SFL_V0/`
-- Stage-3 closure review: `research/technical/TRES-0009/STAGE3_POST_REPAIR_CLOSURE_REVIEW.md`
+- planned post-TRES governance work: Master Architect rulebook restructuring (not an IMP-0001 dispatch prerequisite)
 
-Stage 4 is prepared, but persistent implementation must not begin until TRES-0010 is reconciled and the Master Architect explicitly releases IMP-0001.
+Stage 4 may now begin persistent Slice-1 implementation when intentionally dispatched. Actual dispatch fires the root verification/acceptance scaffolding recorded in `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
 
 ## Where to look
 
