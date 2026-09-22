@@ -38,3 +38,5 @@ Milestone 1 introduces typed identities, immutable state/snapshots, validation, 
 Accepted laboratory assumptions remain unchanged. No semantic or architectural deviations. The LF checkout repair is a local tooling correction. No current escalation. No later-slice semantics implemented; SCF-002 remains active.
 
 Milestone 1 canonical sequence: PASS; 5 tests passed, 0 skipped, 0 warnings/errors. CI publishes the generated acceptance evidence. Manifest-integrity row is the only current acceptance PASS.
+
+Milestone 2 canonical sequence: PASS; 8 tests, no skips/warnings/errors. Consumption, Farm, exogenous need clearing, immutable prior snapshots, and decay are implemented. Seven manifest rows now have evidence; later semantic rows remain unexecuted. Milestone 1 push succeeded after Git Credential Manager completed authentication.
