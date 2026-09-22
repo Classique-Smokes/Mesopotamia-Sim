@@ -1,14 +1,14 @@
 # GOV-0001 — Master Architect Rulebook Refactor State
 
-**Status:** ACTIVE WORKING STATE / NOT PROMOTED  
+**Status:** EVALUATION COMPLETE / AWAITING CONSTITUTIONAL DECISION  
 **Authority:** Operational continuity record only; does not amend constitutional governance  
 **Date:** 2026-09-21
 
 ## 1. Single-reality rule
 
-The accepted constitutional governance on `main` remains authoritative until the rulebook refactor is independently evaluated, reconciled, explicitly approved at the required authority level, and promoted.
+The accepted constitutional governance on `main` remains authoritative until the rulebook refactor is explicitly approved at the required authority level and promoted.
 
-Do **not** treat branch existence, candidate prose, evaluation packets, or refactor research as accepted governance.
+Do **not** treat branch existence, candidate prose, evaluation reports, reconciliation, or the promotion proposal as accepted governance.
 
 ## 2. Frozen baseline
 
@@ -36,27 +36,34 @@ The candidate contains the complete unpromoted working refactor:
 - lossless reconciliation;
 - GOV-0001 fresh-agent evaluation packets.
 
-No part of this branch is accepted merely because it is complete enough to evaluate.
+No part of this branch is accepted merely because it passed evaluation.
 
-## 4. Evaluation branches
+## 4. Fresh-agent evaluation result
 
 Frozen evaluation baseline:
 
-- `governance-rulebook-refactor-eval-baseline`
+- `governance-rulebook-refactor-eval-baseline` @ `41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`
 
-Assigned evaluation branches:
+Returns:
 
-- `governance-eval/root-routing`
-- `governance-eval/delegation-research`
-- `governance-eval/assurance-escalation`
+- GOV-0001-A / root routing: **PASS**
+  - branch: `governance-eval/root-routing`
+  - return commit: `f467151ffedd8c822eb6bcfda1d473f81e8bcd77`
+- GOV-0001-B / delegation-research-architecture-drift: **PASS**
+  - branch: `governance-eval/delegation-research`
+  - return commit: `39e9ca11a4e256591719e7e545b760736a7391bc`
+- GOV-0001-C / assurance-escalation: **PASS**
+  - branch: `governance-eval/assurance-escalation`
+  - blind primary-result commit: `6dc653a1c9a946871a65e73b09190f2bd8678657`
+  - final return commit: `f9e15e09027bf45bab5fbec4a09932fa0a3d09e2`
 
-At consolidation time, all four refs resolve to the same candidate commit:
+Each evaluation branch changed only its assigned return report relative to the frozen candidate.
 
-`41cc0a6beda8465bc16bc8ca9bcee7e1aa9a0679`
+Central reconciliation:
 
-No evaluation return commit exists yet. Therefore GOV-0001 evaluation is **prepared but not started/completed**.
+- `research/technical/GOV-0001/FRESH_AGENT_EVALUATION_RECONCILIATION.md`
 
-These branch names do not represent divergent governance realities; they are isolated return locations prepared from one frozen candidate.
+Reconciled result: **PASS / no candidate repair required / no rerun required**.
 
 ## 5. Refactor control artifacts
 
@@ -67,21 +74,25 @@ On the candidate branch:
 - `tasks/research/GOV-0001_MASTER_ARCHITECT_RULEBOOK_EVAL/00_PROGRAM_README.md`
 - `tasks/research/GOV-0001_MASTER_ARCHITECT_RULEBOOK_EVAL/01_DISPATCH_GUIDE.md`
 
-The commitment inventory covers G-001..G-100: all baseline Guide commitments plus finalized TRES-0010 durable lessons have explicit destinations.
+On `main`:
 
-The lossless reconciliation claims all 100 are preserved or assigned to a canonical owner. That claim still requires fresh-agent evaluation before promotion.
+- `research/technical/GOV-0001/FRESH_AGENT_EVALUATION_RECONCILIATION.md`
+- constitutional promotion proposal: `proposals/GOV-0001_MASTER_ARCHITECT_RULEBOOK_PROMOTION.md`
+- proposed decision record: `decisions/DEC-0009_MASTER_ARCHITECT_RULEBOOK_REFACTOR.md`
 
-## 6. Next controlled sequence
+The commitment inventory covers G-001..G-100: all baseline Guide commitments plus finalized TRES-0010 durable lessons have explicit destinations. Fresh-agent evaluation and central reconciliation found no material rule loss or routing defect.
+
+## 6. Controlled next sequence
 
 1. Do not create another governance-refactor branch or competing candidate.
-2. Treat `governance-rulebook-refactor-candidate` as the sole WIP candidate.
-3. Run GOV-0001 A/B/C from the frozen eval baseline, each on its assigned return branch.
-4. Reconcile the independent returns centrally.
-5. Repair the same candidate line only if a source-grounded rule-loss/routing defect is demonstrated.
-6. Re-run affected evaluation if substantive repairs change evaluated behavior.
-7. Only after a clean evaluation, prepare the constitutional promotion package and explicit Director approval.
-8. Promote candidate governance and navigation together; then verify fresh-agent retrieval from `AGENTS.md → START_HERE → CURRENT_PHASE → MASTER_ARCHITECT_GUIDE`.
-9. Retain Git history/ref names as historical evidence; do not keep competing current governance copies on `main`.
+2. Treat `governance-rulebook-refactor-candidate` @ `41cc0a6...` as the sole evaluated candidate.
+3. Obtain explicit Project Director approval or rejection of DEC-0009.
+4. If rejected or returned for changes, keep accepted governance on `main`; repair only the demonstrated issue and re-evaluate affected behavior if the candidate changes substantively.
+5. If approved, promote the evaluated candidate's operative governance content together with required status/decision/navigation integration.
+6. Verify that promotion changed no evaluated operative content except explicitly administrative status/navigation/lineage changes.
+7. Verify fresh-agent retrieval after promotion from:
+   `AGENTS.md → 00_START_HERE.md → plans/CURRENT_PHASE.md → MASTER_ARCHITECT_GUIDE → triggered owner`.
+8. Retain frozen baseline/candidate/evaluation refs as historical evidence; do not keep competing current governance copies on `main`.
 
 ## 7. Separation from implementation
 
@@ -97,7 +108,10 @@ If a session times out or a fresh Master Architect resumes this work:
 2. read `00_START_HERE.md`;
 3. read `plans/CURRENT_PHASE.md`;
 4. read this file;
-5. inspect the baseline/candidate refs named above;
-6. do not infer governance state from chat history or branch count.
+5. read the fresh-agent evaluation reconciliation;
+6. inspect DEC-0009 status;
+7. do not infer governance state from chat history or branch count.
 
-The intended reality is always: **accepted `main` governance + one isolated candidate + isolated evaluation returns until explicit promotion.**
+Until explicit promotion, the intended reality is:
+
+**accepted `main` governance + one frozen evaluated candidate + retained evaluation evidence + a non-authoritative promotion proposal.**
