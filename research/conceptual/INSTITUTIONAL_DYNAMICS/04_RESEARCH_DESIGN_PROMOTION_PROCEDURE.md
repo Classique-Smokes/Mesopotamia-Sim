@@ -10,6 +10,7 @@ Do not launch this process merely because the conceptual package exists.
 Reasonable triggers include:
 
 - SFL v0 reaches a verified state that exposes a concrete generalization question;
+- an inter-slice observation surfaces a repeated pattern or distinction identified in `07_SFL_V0_DISCOVERY_SEAMS.md` that now matters to a concrete design decision;
 - a later roadmap decision requires institutional persistence/office/artifact/task machinery;
 - a specific historical target requires these mechanisms;
 - household challenge cases reveal an architectural seam that must be generalized.
