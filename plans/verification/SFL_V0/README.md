@@ -52,5 +52,6 @@ Implementation may translate them into executable tests/harness code but may not
 
 ## Slice-1 acceptance applicability
 
-- `SLICE1_ACCEPTANCE_MANIFEST.md` — **candidate / pre-code review required; not yet frozen acceptance authority**. It enumerates exact IMP-0001 REQUIRED / DEFERRED / N-A / UNEXERCISED obligations and remains subordinate to `SPEC-SFL-0001`.
+- `SLICE1_ACCEPTANCE_MANIFEST.md` — **FROZEN Slice-1 verification/completion authority**, version `SFL-V0-S1-ACCEPTANCE-v1`, subordinate to accepted semantics/architecture. Frozen ref: `sfl-v0-slice1-acceptance-v1`.
+- `SLICE1_ACCEPTANCE_FREEZE_RECORD.md` — freeze commit/SHA identity, R2 PASS provenance, and immutability rule.
 - Supporting CallFavor applicability derivation: `research/technical/TRES-0010/CALLFAVOR_SLICE1_APPLICABILITY_RECONCILIATION.md`.
