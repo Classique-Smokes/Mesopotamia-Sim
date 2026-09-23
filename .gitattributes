@@ -1,0 +1,2 @@
+# Match the existing C# formatter policy on Windows and Linux.
+*.cs text eol=lf
