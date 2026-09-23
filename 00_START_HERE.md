@@ -37,16 +37,16 @@ Accepted foundation:
 
 Active work:
 
-- IMP-0001 / Slice 1: **candidate-v3 FROZEN / fresh independent K4 PENDING**
-- frozen candidate-v3: `imp-0001-slice1-conformance-candidate-v3` @ `06e25644879dd8505e24fcaeb43256f69c29c15f`
-- fresh K4 packet: `tasks/implementation/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`
-- repair-v3 branch / draft PR remains unmerged: `implementation/imp-0001-slice1-repair-v3` / PR #23
-- frozen Slice-1 acceptance authority: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md` (`SFL-V0-S1-ACCEPTANCE-v1`)
-- frozen failed conformance refs: `imp-0001-slice1-conformance-candidate-v1`, `imp-0001-slice1-conformance-candidate-v2`
-- latest completed independent review: `research/technical/IMP-0001/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V2.md` (candidate-v2 BLOCK); candidate-v3 fresh review pending
+- IMP-0001 / Slice 1: **VERIFIED COMPLETE**
+- verified candidate-v3: `imp-0001-slice1-conformance-candidate-v3` @ `06e25644879dd8505e24fcaeb43256f69c29c15f`
+- independent K4: `research/technical/IMP-0001/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3.md` — **PASS**
+- canonical promotion: `262dc6e1d846761110fcd6a063bf8b4aa267b3dc`; post-promotion CI `35800043322` PASS
+- final completion record: `research/technical/IMP-0001/IMP-0001_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
+- **next substantive activity:** `plans/SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md` before Slice 2
+- frozen Slice-1 acceptance authority remains `SFL-V0-S1-ACCEPTANCE-v1`
+- failed candidate-v1/v2 refs remain historical evidence pending branch-hygiene reconciliation
 - TRES-0010 pre-implementation gate: **CLOSED / PASS**
 - GOV-0001 rulebook restructuring: **PROMOTED / DEC-0009 ACCEPTED**
-- after verified Slice-1 PASS/promotion: run `plans/SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md` before Slice 2.
 
 Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 
