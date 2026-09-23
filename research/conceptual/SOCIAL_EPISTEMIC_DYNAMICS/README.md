@@ -79,3 +79,59 @@ Institutional Dynamics concerns persistent higher-order actors, authority, capab
 Social Epistemic Dynamics sits partly below that level. Institutional phenomena may later use these mechanisms, but they are not institution-specific.
 
 Keep the programs separate and connect them only through explicit later research/design work.
+
+
+## Systematized horizon
+
+The source corpus contains both current-slice lenses and much later ideas.
+
+### Useful during Slice 2 now — no new semantics
+
+Use the Roads corpus to challenge whether Slice 2 preserves:
+
+- real actor-to-actor divergence in subjective state;
+- provenance/route identity on communicated information;
+- stale information rather than passive synchronization;
+- contested social interpretation without arbitrary winner selection;
+- anti-omniscience and no magical household/group mind;
+- visible causal effects from subjective state.
+
+These are **interpretive/verification lenses only**. Accepted Slice-2 semantics remain controlling.
+
+### Future ideas preserved here
+
+- mediated relationship ancestry;
+- group information environments without group minds;
+- distributed social representation/reputation;
+- plural network memory;
+- social communication routes as network structure.
+
+### Shared family: brokerage / informational centrality
+
+Brokerage belongs primarily to **Institutional Dynamics K — Effective centrality / influence**, because that family already covers brokerage, unique knowledge, communication flows and informal roles.
+
+The Roads corpus adds the social-epistemic side:
+
+- bypass cost;
+- translation/interpretation;
+- repeated route dependence;
+- broker burden/discretion;
+- hidden dependency revealed by broker removal.
+
+Treat these as one shared family viewed at different levels, not parallel theories.
+
+See:
+
+- `../INSTITUTIONAL_DYNAMICS/01_CANDIDATE_MECHANISM_MODEL.md` — section K;
+- `../TABLET_IDEA_RECONCILIATION.md`;
+- `../CONCEPT_FAMILY_CROSS_INDEX.md`.
+
+### Shared family: plural memory / genealogy
+
+Plural network memory is broader and lower-level than institutional genealogy, but later institutional memory may grow from the same kinds of actor-held histories.
+
+See:
+
+- `../INSTITUTIONAL_DYNAMICS/01_CANDIDATE_MECHANISM_MODEL.md` — section L;
+- `../INSTITUTIONAL_DYNAMICS/02_URUK_CHALLENGE_CASES.md` — Foreign Observer / Lost Archive / False Founder;
+- `../CONCEPT_FAMILY_CROSS_INDEX.md`.
