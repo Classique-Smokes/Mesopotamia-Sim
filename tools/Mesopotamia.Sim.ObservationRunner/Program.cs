@@ -9,8 +9,7 @@ internal static class Program
 {
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
-        WriteIndented = true,
-        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+        WriteIndented = true
     };
 
     private static readonly PersonId Aru = new(1);
