@@ -4,7 +4,11 @@
 
 ## Active
 
-- `IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md` — Stage-4 Slice 1, **CANDIDATE-v3 FROZEN / FRESH K4 PENDING**; candidate-v3 `06e25644879dd8505e24fcaeb43256f69c29c15f`; review packet `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`; PR #7, PR #16 and PR #23 remain draft/unmerged; prior candidate refs and frozen acceptance authority remain unchanged.
+None. Slice 2 remains gated by the Birth Run 001 observational pause.
+
+## Completed
+
+- `IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md` — **VERIFIED COMPLETE**. Candidate-v3 `06e25644879dd8505e24fcaeb43256f69c29c15f` received fresh independent K4 PASS and was promoted to canonical main at merge `262dc6e1d846761110fcd6a063bf8b4aa267b3dc`. Final record: `../../research/technical/IMP-0001/IMP-0001_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`.
 
 ## Ready for dispatch
 
