@@ -4,7 +4,7 @@
 
 ## Active
 
-- `IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` — **CANDIDATE-v1 BLOCKED / REPAIR-v2 ACTIVE**. Failed immutable candidate `imp-0003-slice3-conformance-candidate-v1` @ `6b9d40e33b94d9094c02fe3d9f026914dd7986ec`; fresh conformance returned **BLOCK — IMPLEMENTATION / VERIFICATION DEFECT**. Repair packet: `IMP-0003_CANDIDATE_V1_BLOCK_REPAIR_PACKET.md`; repair branch: `implementation/imp-0003-slice3-repair-v2`.
+- `IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` — **CANDIDATE-v2 FROZEN / FRESH CONFORMANCE ACTIVE**. Failed candidate-v1 remains immutable. Candidate-v2 `imp-0003-slice3-conformance-candidate-v2` @ `69ae753da2e05450766a9042ac6958fa7aa0b3e7`; exact-head CI `35926743064` PASS. Fresh review task: `IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V2_PACKET.md`.
 
 ## Completed
 
@@ -13,7 +13,7 @@
 
 ## Ready for dispatch
 
-- `IMP-0003_CANDIDATE_V1_BLOCK_REPAIR_PACKET.md` — bounded repair of candidate-v1 oracle adequacy, rule/configuration provenance, and continuation-recognition broadcast defects.
+- `IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V2_PACKET.md` — fresh whole-candidate conformance review of immutable candidate-v2.
 
 ## Rules
 
