@@ -27,14 +27,19 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - TRES-0010 final closure audit passed 34/34 checks; TRES-0010 CLOSED / PASS; IMP-0001 cleared for dispatch.
 - GOV-0001 fresh-agent evaluations A/B/C returned **PASS** from the frozen candidate; central reconciliation found no material rule loss, owner conflict, routing defect, or repair requirement.
 - DEC-0009 accepted and GOV-0001 promoted the layered Master Architect rulebook; post-merge retrieval verification passed 23/23 checks.
+- IMP-0001 / Slice 1 independently passed K4 on frozen candidate-v3, was promoted to canonical main, and passed post-promotion CI.
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 CANDIDATE-v3 FROZEN / FRESH INDEPENDENT CONFORMANCE PENDING.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN 001 PENDING.**
 
-Active implementation packet:
+Verified Slice-1 completion:
 
-- `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+- task: `tasks/implementation/IMP-0001_SFL_V0_SLICE1_LOWER_LEVEL_KERNEL.md`
+- final record: `research/technical/IMP-0001/IMP-0001_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
+- independent K4: `research/technical/IMP-0001/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3.md` — **PASS**
+- canonical promotion merge: `262dc6e1d846761110fcd6a063bf8b4aa267b3dc`
+- post-promotion CI: run `35800043322` — **PASS**
 
 Frozen Slice-1 acceptance authority:
 
@@ -80,7 +85,7 @@ Required C# engineering context:
 Dispatch scaffolding:
 
 - SCF-001 fired and is implemented: canonical .NET root commands and CI are now repository infrastructure;
-- SCF-002 fired and is active: frozen acceptance authority is protected and executable/CI mapping to every REQUIRED AcceptanceId is an IMP-0001 completion obligation;
+- SCF-002 completed its purpose and was retired after IMP-0001 verification/promotion; durable acceptance authority and executable evidence remain in the repository;
 - implementation branch: `implementation/imp-0001-slice1`;
 - frozen failed candidate: `imp-0001-slice1-conformance-candidate-v1` @ `7e11dab7697121eb0dbb169ba46210d81b80586e`;
 - exact-candidate CI: run `35692449925` PASS, but independent K4 result **BLOCK**;
@@ -98,6 +103,10 @@ Dispatch scaffolding:
 - candidate-v3 evidence artifact: `10719823413`, digest `sha256:031f21dc553dcf0bfff4b73f3bff764ff5a8dc1856d20493b164cc164c1268ca`;
 - candidate-v3 reconciliation/dispatch: `tasks/implementation/IMP-0001_CANDIDATE_V3_RECONCILIATION_AND_DISPATCH.md`;
 - fresh K4 packet: `tasks/implementation/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`;
+- candidate-v3 K4 report: `research/technical/IMP-0001/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3.md` — **PASS**;
+- canonical promotion merge: `262dc6e1d846761110fcd6a063bf8b4aa267b3dc`;
+- post-promotion CI: `35800043322` — **PASS**;
+- final completion record: `research/technical/IMP-0001/IMP-0001_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`;
 - remaining scaffolding state: `registers/SCAFFOLDING_TRIGGER_REGISTER.md`.
 
 ## Stage-4 slice order
@@ -124,13 +133,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Commission a **fresh reviewer who authored neither repair-v2 nor repair-v3** against frozen candidate-v3 `06e25644879dd8505e24fcaeb43256f69c29c15f` using `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`.
-2. Keep candidate-v1, candidate-v2 and candidate-v3 refs immutable; keep PR #7, PR #16 and PR #23 draft/unmerged during review.
-3. Preserve `SFL-V0-S1-ACCEPTANCE-v1` unchanged; `S1-GLOBAL-CONFORMANCE` remains REQUIRED and pending.
-4. If candidate-v3 review BLOCKs, preserve the exact candidate/report and reconcile only the demonstrated findings before any further repair.
-5. If candidate-v3 review PASSes, perform final IMP-0001 completion/SCF-002 retirement and merge/promotion reconciliation before moving lower.
-6. Continue the read-only branch-hygiene census in parallel if delegated; destructive cleanup remains deferred until the active v3 conformance lineage no longer needs its refs.
-7. Only after verified Slice-1 completion/promotion execute `SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`, freeze the raw autonomous history, and pause for Project Director inspection before Slice 2.
-8. Classify birth-run observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
+1. Execute `plans/SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md` against canonical verified Slice-1 main.
+2. Freeze the raw Birth Run 001 package before interpretation and give the Project Director the initial-state card, transcript and cycle summaries first.
+3. Do **not** begin Slice-2 implementation until Director inspection of Birth Run 001, unless the Director explicitly waives the pause.
+4. Classify observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
+5. After the observational checkpoint, retrieve `plans/SFL_V0_INTERSLICE_DISCOVERY_PROMPTS.md` before detailed Slice-2 planning.
+6. The read-only branch-hygiene census may proceed in parallel; destructive cleanup remains separately reconciled and must preserve frozen evidence refs.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
