@@ -29,10 +29,11 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - DEC-0009 accepted and GOV-0001 promoted the layered Master Architect rulebook; post-merge retrieval verification passed 23/23 checks.
 - IMP-0001 / Slice 1 independently passed K4 on frozen candidate-v3, was promoted to canonical main, and passed post-promotion CI.
 - Post-IMP-0001 assurance retrospective and branch hygiene completed: reviewer lessons institutionalized without new bureaucracy; approved branch cleanup executed and independently verified at 48 retained refs.
+- Birth Run 001 executed autonomously for the declared 30-cycle horizon with no simulation fault; raw package frozen before interpretation.
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN 001 PENDING.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN 001 RAW FROZEN / DIRECTOR INSPECTION PENDING.**
 
 Verified Slice-1 completion:
 
@@ -130,15 +131,23 @@ Plan:
 
 - `plans/SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md`
 
-This is not an extra acceptance requirement for Slice 1. It is an observational/project-understanding checkpoint: preserve the raw autonomous history, allow direct Director inspection, then classify any findings before deciding whether they imply defects, model questions, parameter/reference-policy limitations, missing later-slice capability, or merely interesting behavior.
+Birth Run 001 raw package:
+
+- `research/technical/SFL_V0_OBSERVATIONS/RUN-0001_BIRTH/`
+- execution revision: `709b9660c415beca6d188b279bfbe1672f0c85c3`
+- workflow run: `35806542981` — PASS
+- raw archival commit: `66cc8f58c4de61f4a2740cca7581e7dabd88bb5a`
+- freeze record: `RAW_FREEZE_RECORD.md`
+
+This is not an extra acceptance requirement for Slice 1. It is an observational/project-understanding checkpoint: the raw autonomous history is now frozen; the Project Director should inspect it before Master Architect interpretation/classification becomes the dominant frame.
 
 ## Next
 
-1. Execute `plans/SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md` against canonical verified Slice-1 main.
-2. Freeze the raw Birth Run 001 package before interpretation and give the Project Director the initial-state card, transcript and cycle summaries first.
-3. Do **not** begin Slice-2 implementation until Director inspection of Birth Run 001, unless the Director explicitly waives the pause.
-4. Classify observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
+1. Project Director first-read of Birth Run 001: initial-state declaration, mechanical transcript, and compact cycle summaries.
+2. Record Director observations separately; do not retroactively alter the frozen run.
+3. Only after Director first-read, author Master Architect classification distinguishing defects, model questions, parameter/reference-policy limitations, later-slice capability gaps, and interesting-but-non-actionable behavior.
+4. Do **not** begin Slice-2 implementation until this observational checkpoint is reconciled, unless the Director explicitly waives it.
 5. After the observational checkpoint, retrieve `plans/SFL_V0_INTERSLICE_DISCOVERY_PROMPTS.md` before detailed Slice-2 planning.
-6. Post-IMP-0001 housekeeping is complete; branch cleanup is executed and verified, and no housekeeping item remains ahead of Birth Run 001.
+6. Post-IMP-0001 housekeeping is complete; no maintenance item remains ahead of Director inspection.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
