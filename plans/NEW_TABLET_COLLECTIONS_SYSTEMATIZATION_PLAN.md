@@ -1,6 +1,6 @@
 # New Tablet Collections — Master Architect Systematization Plan
 
-**Status:** SOURCE INGESTED / MASTER ARCHITECT SYNTHESIS PENDING  
+**Status:** COMPLETE / SOURCE-TO-DERIVED RECONCILIATION RECORDED  
 **Work owner:** Master Architect  
 **Delegable:** source retrieval / mechanical cross-reference only; interpretive synthesis remains Master Architect work  
 **Authority created by this plan:** none
@@ -80,3 +80,14 @@ Systematization is complete when:
 - current-slice relevance is separated from future ambition;
 - no story has been silently promoted into mechanics;
 - the Project Director can inspect the derived map and see which ideas are old, new, overlapping, deferred, or merely evocative.
+
+## Completion record
+
+Systematization completed in:
+
+- `research/conceptual/TABLET_IDEA_RECONCILIATION.md`;
+- `research/conceptual/CONCEPT_FAMILY_CROSS_INDEX.md`;
+- `research/conceptual/SOCIAL_EPISTEMIC_DYNAMICS/`;
+- `research/conceptual/INSTITUTIONAL_DYNAMICS/08_RETIRED_VIZIER_EXTENSIONS.md`.
+
+Overlap families were cross-linked into the existing Institutional Dynamics mechanism/challenge documents rather than duplicated. Current Slice-2 relevance was limited to conceptual/verification lenses; no tablet narrative was promoted into accepted SFL semantics.
