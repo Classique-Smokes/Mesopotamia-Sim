@@ -72,3 +72,9 @@ Short entry point summarizing the three earlier future-facing streams as subordi
 ## Navigation
 
 Conceptual material does not require root-navigation promotion merely because it is committed. Add local indexes here when they improve discoverability without making the material look authoritative.
+
+### Social Epistemic Dynamics — provisional derived guiding framework
+
+`SOCIAL_EPISTEMIC_DYNAMICS/`
+
+A sibling non-authoritative conceptual program derived from *The Roads Between People*, focused on the recursive relationship between social topology, information routes, actor-held representations, and changed future relations. It is deliberately separate from Institutional Dynamics because these mechanisms can exist before higher-order institutions exist.
