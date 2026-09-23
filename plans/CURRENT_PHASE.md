@@ -36,7 +36,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN CLOSED / SLICE 2 DISCOVERY RECONCILED / ACCEPTANCE+IMPLEMENTATION PLANNING NEXT.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / SLICE 2 ACCEPTANCE FROZEN / IMP-0002 READY FOR DISPATCH.**
 
 Verified Slice-1 completion:
 
@@ -52,6 +52,16 @@ Frozen Slice-1 acceptance authority:
 - version `SFL-V0-S1-ACCEPTANCE-v1`
 - frozen ref `sfl-v0-slice1-acceptance-v1`
 - freeze record `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md`
+
+Frozen Slice-2 acceptance authority:
+
+- `plans/verification/SFL_V0/SLICE2_ACCEPTANCE_MANIFEST.md`
+- version `SFL-V0-S2-ACCEPTANCE-v1`
+- frozen ref `sfl-v0-slice2-acceptance-v1`
+- freeze commit `88f876298852553d6afca76e743a5a811ff9f0fd`
+- frozen manifest SHA `e4872531cf780d51fa1863f2a0b87e2424a71b69`
+- freeze record `plans/verification/SFL_V0/SLICE2_ACCEPTANCE_FREEZE_RECORD.md`
+- final pre-code review **PASS — MAY FREEZE UNCHANGED**
 
 TRES-0010 closure evidence:
 
@@ -146,11 +156,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Discovery and tablet reconciliation are complete: `research/technical/SFL_V0_SLICE2_PREIMPLEMENTATION_RECONCILIATION.md`; idea-level tablet disposition: `research/conceptual/TABLET_IDEA_RECONCILIATION.md` and `research/conceptual/CONCEPT_FAMILY_CROSS_INDEX.md`.
-2. Author a separate Slice-2 acceptance/applicability authority that references rather than edits the frozen Slice-1 manifest.
-3. Author the bounded Slice-2 implementation packet from the reconciliation and three preserved discovery returns.
-4. Escalate only if a required witness depends on an unaccepted event-specific observation rule or other genuinely missing semantic distinction.
-5. Do **not** treat Birth Run or tablet observations as permission to invent richer motivation, arbitrary preference weights, historical calibration, or strategic planning inside Slice 2.
-6. Preserve the isolated every-other-cycle long-run experiment as parameter-sensitivity evidence only; it does not modify canonical SFL semantics.
+1. Dispatch `tasks/implementation/IMP-0002_SFL_V0_SLICE2_SUBJECTIVE_KNOWLEDGE.md` from canonical main on branch `implementation/imp-0002-slice2-epistemic`.
+2. Implementation must obey frozen `SFL-V0-S2-ACCEPTANCE-v1` and preserve all exact Slice-1 regression bindings.
+3. Freeze an exact implementation candidate before fresh post-implementation conformance review.
+4. Escalate only if implementation requires new proposition meaning, knowledge entitlement, evidence precedence, event-specific nonparticipant observation, or later-slice substrate.
+5. Do **not** import richer motivation, trust, rumor, reputation, brokerage, household/head mechanics, or strategic communication into Slice 2.
+6. After verified completion, conduct the planned small epistemic observational pause before Slice 3.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
