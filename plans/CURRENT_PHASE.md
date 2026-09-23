@@ -138,6 +138,6 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 3. Do **not** begin Slice-2 implementation until Director inspection of Birth Run 001, unless the Director explicitly waives the pause.
 4. Classify observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
 5. After the observational checkpoint, retrieve `plans/SFL_V0_INTERSLICE_DISCOVERY_PROMPTS.md` before detailed Slice-2 planning.
-6. The read-only branch-hygiene census may proceed in parallel; destructive cleanup remains separately reconciled and must preserve frozen evidence refs.
+6. Branch-hygiene census and Master Architect reconciliation are complete; the exact approved deletion set awaits low-authority ref-deletion execution. This clerical cleanup must preserve the retained frozen evidence refs and does not alter the Birth Run gate.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
