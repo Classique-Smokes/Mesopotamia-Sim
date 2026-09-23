@@ -12,6 +12,7 @@ public sealed record PersonalPolicy(string Profile = "SFL-PERSONAL-REFERENCE-v1"
     public ImmutableDictionary<PersonId, DwellingId> ObservedResidences { get; init; } = ImmutableDictionary<PersonId, DwellingId>.Empty;
     public PersonId? GiftTarget { get; init; }
     public long Amount { get; init; } = 1;
+    public CommunicateClaim? Communication { get; init; }
 }
 
 internal static class ReferenceScorer
@@ -40,6 +41,8 @@ internal static class PersonalAgency
         PersonId actor = inputs.Own.Id;
         PersonalPolicy policy = inputs.Policy;
         List<(string Key, ActionTerms Terms)> generated = [("00", new Farm())];
+        if (policy.Communication is { } communication)
+            generated.Add(("15:Communication", communication));
         foreach (PersonId target in inputs.KnownPeople)
         {
             string suffix = target.Value.ToString("D20", CultureInfo.InvariantCulture);
@@ -94,6 +97,9 @@ internal static class PersonalAgency
         var values = ImmutableDictionary.CreateBuilder<string, long>(StringComparer.Ordinal);
         switch (policy.Profile)
         {
+            case "SFL-COMMUNICATION-LAB-v1":
+                values.Add("PinnedCommunication", terms is CommunicateClaim ? 100 : 0);
+                break;
             case "SCORE-VP-002":
                 values.Add("RelationConcern", terms is OfferGift gift && gift.Target == policy.GiftTarget && gift.Amount == 1 ? 100 : 0);
                 values.Add("OtherConcern", 0);

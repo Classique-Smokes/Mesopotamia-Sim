@@ -22,11 +22,14 @@ public sealed record SemanticEvent(EventId Id, long Cycle, int ReactionIndex, st
 {
     public ImmutableArray<AttitudeContribution> Contributions { get; init; } = [];
     public ActionTerms? Action { get; init; }
+    public string RulesVersion { get; init; } = Configuration.RulesVersion;
+    public ImmutableArray<KnownFact> TransmittedEvidence { get; init; } = [];
 }
 public sealed record CycleResult(WorldSnapshot State, ImmutableArray<Outcome> Outcomes,
     ImmutableArray<SemanticEvent> Events, bool MaterialDeadlock)
 {
     public ImmutableArray<DecisionTrace> Decisions { get; init; } = [];
+    public EpistemicSnapshot? Epistemic { get; init; }
 }
 
 public sealed partial class Simulation
@@ -67,13 +70,14 @@ public sealed partial class Simulation
         {
             Maintenance();
             WorldSnapshot decisionSnapshot = state.Snapshot(cycle);
+            EpistemicSnapshot decisionEpistemic = epistemic.Snapshot(cycle);
             List<Outcome> outcomes = [];
             List<DecisionTrace> decisions = [];
             List<Proposal> proposals = [.. input.Proposals];
             nextProposal = Math.Max(nextProposal, checked(proposals.Select(p => p.Id.Value).DefaultIfEmpty(0).Max() + 1));
             foreach (var policy in input.PersonalPolicies.OrderBy(p => p.Key.Value))
             {
-                var decision = PersonalAgency.Decide(PersonalInputCapture.Capture(policy.Key, policy.Value, decisionSnapshot));
+                var decision = PersonalAgency.Decide(PersonalInputCapture.Capture(policy.Key, policy.Value, decisionSnapshot, decisionEpistemic.Actors[policy.Key]));
                 ProposalId? id = null;
                 if (decision.Terms is not null)
                 {
@@ -83,11 +87,14 @@ public sealed partial class Simulation
                 decisions.Add(decision.Trace with { Proposal = id });
             }
             List<(Proposal Proposal, EventId Cause)> accepted = [];
+            Dictionary<ProposalId, ImmutableArray<KnownFact>> communicationPayloads = [];
             AttitudeBatch batch = new();
             foreach (Proposal proposal in proposals.OrderBy(p => p.Id.Value))
             {
                 usedProposals.Add(proposal.Id);
                 string? invalid = ActionRules.Invalid(proposal, decisionSnapshot);
+                if (invalid is null && proposal.Terms is CommunicateClaim claim &&
+                    !CommunicationRules.Holds(decisionEpistemic.Actors[proposal.Actor], claim.Claim)) invalid = "PropositionNotHeld";
                 SemanticEvent proposed = Record("Proposal", proposal.Id, [proposal.Actor], [], [], ActionRules.Describe(proposal.Terms));
                 events[^1] = proposed with { Action = proposal.Terms };
                 if (invalid is not null)
@@ -95,17 +102,19 @@ public sealed partial class Simulation
                     Finish(proposal, OutcomeKind.InvalidTerms, invalid, proposed.Id, outcomes);
                     continue;
                 }
+                if (proposal.Terms is CommunicateClaim communication)
+                    communicationPayloads.Add(proposal.Id, CommunicationRules.Payload(decisionEpistemic.Actors[proposal.Actor], communication.Claim));
                 string? inability = ActionRules.Infeasible(proposal, decisionSnapshot);
                 PersonId? target = ActionRules.Target(proposal.Terms, decisionSnapshot);
                 if (inability is not null)
                 {
-                    if (target is { } unableTarget)
+                    if (target is { } unableTarget && proposal.Terms is not CommunicateClaim)
                         decisions.Add(new(unableTarget, proposal.Id, "Response", "Feasibility", [], [inability], false));
                     Finish(proposal, OutcomeKind.Unable, inability, proposed.Id, outcomes);
                     continue;
                 }
                 EventId cause = proposed.Id;
-                if (target is { } respondent)
+                if (target is { } respondent && proposal.Terms is not CommunicateClaim)
                 {
                     bool called = proposal.Terms is CallFavor;
                     ResponseChoice accept = called ? ResponseChoice.FulfilCalledFavor : ResponseChoice.Accept;
@@ -148,20 +157,22 @@ public sealed partial class Simulation
                 accepted.Add((proposal, cause));
             }
             HashSet<PersonId> moved = [];
-            HashSet<ProposalId> resolutionFallbacks = ResolutionFallbacks([.. accepted.Select(a => a.Proposal)], decisionSnapshot);
+            HashSet<ProposalId> resolutionFallbacks = ResolutionFallbacks([.. accepted.Select(a => a.Proposal)], decisionSnapshot, communicationPayloads);
             foreach (var attempt in accepted)
             {
                 Proposal proposal = attempt.Proposal;
                 string? loss = ResolutionLoss(proposal, state.Snapshot(cycle), moved);
+                if (loss is null && proposal.Terms is CommunicateClaim claim &&
+                    !CommunicationRules.StillHolds(epistemic.Of(proposal.Actor), claim.Claim, communicationPayloads[proposal.Id])) loss = "PropositionNoLongerHeld";
                 bool fallback = resolutionFallbacks.Contains(proposal.Id);
                 if (loss is not null)
                     Finish(proposal, OutcomeKind.InvalidatedAtResolution, loss, attempt.Cause, outcomes, fallback);
                 else
                 {
-                    SemanticEvent committed = Commit(proposal, attempt.Cause, fallback, batch);
+                    SemanticEvent committed = Commit(proposal, attempt.Cause, fallback, batch, communicationPayloads.GetValueOrDefault(proposal.Id));
                     if (ActionRules.Mover(proposal) is { } movedPerson) moved.Add(movedPerson);
                     outcomes.Add(new(proposal.Id, proposal.Actor, OutcomeKind.Committed, "", committed.Id));
-                    Learn(proposal, outcomes[^1]);
+                    Learn(proposal, outcomes[^1], committed);
                 }
             }
             ReviewDebts(batch);
@@ -177,11 +188,12 @@ public sealed partial class Simulation
             if (!batch.IsClosed) throw new InvalidOperationException("PendingAutomaticReactions");
             if (batch.DuplicateCount > 0) Record("DuplicateReactionRejected", null, [], [], [], FormattableString.Invariant($"Duplicates:{batch.DuplicateCount}"));
             published = state.Snapshot(cycle);
+            publishedEpistemic = epistemic.Snapshot(cycle);
             bool deadlock = state.People.Count > 0 && state.People.Values.All(p => p.NeedsGrain && p.Grain == 0) &&
                 !FutureInputsResolveMaterialBlock();
             ImmutableArray<DecisionTrace> completedDecisions = decisions.Select(d => d with { Cycle = cycle }).ToImmutableArray();
             decisionHistory.AddRange(completedDecisions);
-            return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = completedDecisions };
+            return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = completedDecisions, Epistemic = publishedEpistemic };
         }
         catch
         {
@@ -197,11 +209,11 @@ public sealed partial class Simulation
         events[^1] = entry with { Action = proposal.Terms };
         Outcome outcome = new(proposal.Id, proposal.Actor, kind, reason, entry.Id);
         outcomes.Add(outcome);
-        if (kind != OutcomeKind.InvalidTerms) Learn(proposal, outcome);
+        if (kind != OutcomeKind.InvalidTerms) Learn(proposal, outcome, entry);
         return outcome;
     }
 
-    private void Learn(Proposal proposal, Outcome outcome)
+    private void Learn(Proposal proposal, Outcome outcome, SemanticEvent source)
     {
         PersonId? target = ActionRules.Target(proposal.Terms, state.Snapshot(cycle));
         PersonId[] participants = target is { } t ? [proposal.Actor, t] : [proposal.Actor];
@@ -214,6 +226,8 @@ public sealed partial class Simulation
         {
             if (!knowledge.TryGetValue(participant, out var facts)) knowledge.Add(participant, facts = []);
             facts.Add(new(outcome.Event, outcome.Proposal, outcome.Kind, outcome.Reason));
+            epistemic.Acquire(participant, new ParticipationFact(facts[^1]), AcquisitionRoute.Participation,
+                new(participant, outcome.Event, new(source.Cycle, source.ReactionIndex)));
         }
     }
 
@@ -319,8 +333,9 @@ public sealed partial class Simulation
         return new(transaction, proposal, calledFavour, meaning, participants, material);
     }
 
-    private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch)
+    private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch, ImmutableArray<KnownFact> communicationPayload = default)
     {
+        if (proposal.Terms is CommunicateClaim) return CommitCommunication(proposal, cause, fallback, communicationPayload);
         Proposal outer = proposal;
         EvaluatedTransaction evaluated = EvaluateTransaction(state, proposal, cycle, new(nextEvent));
         state = evaluated.State;
@@ -331,11 +346,13 @@ public sealed partial class Simulation
         List<MaterialChange> material = evaluated.Material;
         SemanticEvent entry = Record(meaning, proposal.Id, [.. participants], [cause], [.. material], ActionRules.Describe(proposal.Terms), fallback);
         events[^1] = entry with { Action = proposal.Terms };
+        AcquireCommittedFacts(entry);
         if (Transfer(proposal, state.Snapshot(cycle)) is { } helpTransfer && meaning != "ExplicitBenefitForFavor")
             batch.Add(new(new(meaning, entry.Id, helpTransfer.Recipient, helpTransfer.Giver), meaning is "Loan" or "Repayment" ? 5 : 10));
         if (calledFavour is not null)
         {
             SemanticEvent fulfilled = Record("CalledFavourFulfilled", outer.Id, [calledFavour.Holder, calledFavour.Debtor], [entry.Id, calledFavour.Origin], [], $"Favour:{calledFavour.Id.Value}");
+            AcquireCommittedFacts(fulfilled);
             batch.Add(new(new("CalledFavourFulfilled", fulfilled.Id, calledFavour.Holder, calledFavour.Debtor), 10));
         }
         return entry;
@@ -348,6 +365,7 @@ public sealed partial class Simulation
             state.Debts[debt.Id] = debt with { DueReviewed = true };
             SemanticEvent review = Record("DebtSocialDueReview", null, [debt.Creditor, debt.Debtor], [debt.Origin], [],
                 debt.Remaining > 0 ? "UnpaidBalance" : "Satisfied");
+            AcquireCommittedFacts(review);
             if (debt.Remaining > 0) batch.Add(new(new("UnpaidDebt", review.Id, debt.Creditor, debt.Debtor), -10));
             state.Validate();
         }
@@ -366,6 +384,7 @@ public sealed partial class Simulation
             SemanticEvent entry = Record("AttitudeComposition", null, [group.Key.From, group.Key.To],
                 group.Select(c => c.Key.Trigger).Distinct().ToImmutableArray(), [], $"{current?.Value ?? 0}->{after}");
             events[^1] = entry with { Contributions = group.ToImmutableArray() };
+            AcquireCommittedFacts(entry);
             state.Validate();
         }
     }
@@ -378,6 +397,7 @@ public sealed partial class Simulation
             state.People[person.Id] = ApplyGrainInput(person, input.Delta);
             long after = state.People[person.Id].Grain;
             Record("ExogenousGrain", null, [person.Id], [], [new(person.Id, person.Grain, after, "FixtureInput")], $"Input:{input.Id}");
+            AcquireCommittedFacts(events[^1]);
             state.Validate();
         }
         foreach (Person person in state.People.Values.OrderBy(p => p.Id.Value).ToArray())
@@ -392,6 +412,7 @@ public sealed partial class Simulation
                 state.People[person.Id] = ConsumeGrain(person);
                 Record("MissedConsumption", null, [person.Id], [], [], "NeedsGrain");
             }
+            AcquireCommittedFacts(events[^1]);
             state.Validate();
         }
         if (cycle % 5 == 0)
@@ -400,6 +421,7 @@ public sealed partial class Simulation
                 int after = attitude.Value > 0 ? Math.Max(0, attitude.Value - 2) : Math.Min(0, attitude.Value + 1);
                 state.Attitudes[attitude.Id] = attitude with { Value = after };
                 Record("AttitudeDecay", null, [attitude.From, attitude.To], [], [], $"{attitude.Value}->{after}");
+                AcquireCommittedFacts(events[^1]);
                 state.Validate();
             }
     }

@@ -1,6 +1,12 @@
-# Slice-1 Acceptance Test Surface
+# Slice-1 and Slice-2 Acceptance Test Surface
 
 This project is the executable verification surface for IMP-0001.
+
+IMP-0002 adds `Slice2AcceptanceTests` and `Slice2Scenarios` alongside the unchanged Slice-1 runner. The Slice-2 runner verifies frozen manifest `SFL-V0-S2-ACCEPTANCE-v1`, blob `e4872531cf780d51fa1863f2a0b87e2424a71b69`, and the 46 REQUIRED / nine DEFERRED census. It emits each full ID, executes all 18 exact Slice-1 regression bindings independently of test-method ordering, and fails missing or unsuccessful REQUIRED evidence.
+
+`slice2-results.json` records the manifest/ref/freeze identity, row results, deferrals, regression IDs, configuration, and explicit pending-conformance state. `slice2-cases.json`, `slice2-fixture-audit.json`, `slice2-regression-fixtures.json`, and `slice2-oracle-audit.json` retain actual case/subcase inputs and immutable outputs. Oracle assertions use public evidence, explicit expected values, and independently constructed paired comparisons. The dependency audit is coder-owned and does not substitute for fresh independent conformance.
+
+The RG-01 fixture seeds only sender-held evidence and the single inert candidate. Production communication and recognition derive the recipient's Contested state. The support facts, fixture origin, absence of semantic-order dominance, complete six-person delivery population, retained state, and permutations are observable in the audit. No fixture writes a recipient acquisition, candidate winner, gate result, or final Recognition state. Communication selection uses the declared laboratory profile and makes no claim of autonomous social motivation.
 
 Authority:
 

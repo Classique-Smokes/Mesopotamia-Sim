@@ -2,6 +2,10 @@ using System.Collections.Immutable;
 
 namespace Mesopotamia.Sim;
 
+public abstract record HeldClaim;
+public sealed record HeldFact(EvidenceId Evidence) : HeldClaim;
+public sealed record HeldRecognition(CandidateId Candidate) : HeldClaim;
+public sealed record CommunicateClaim(PersonId Recipient, HeldClaim Claim) : ActionTerms;
 public sealed record OfferGift(PersonId Target, long Amount) : ActionTerms;
 public sealed record RequestGiftOrHelp(PersonId Target, long Amount) : ActionTerms;
 public sealed record OfferLoan(PersonId Target, long Amount) : ActionTerms;
@@ -25,6 +29,7 @@ public sealed record DecisionTrace(PersonId Actor, ProposalId? Proposal, string 
     bool TechnicalFallback)
 {
     public long Cycle { get; init; }
+    public string RulesVersion { get; init; } = Configuration.RulesVersion;
 }
 public sealed record ParticipantOutcome(EventId Event, ProposalId Proposal, OutcomeKind Kind, string Reason);
 public sealed record CauseKey(string Rule, EventId Trigger, PersonId From, PersonId To);
@@ -60,6 +65,7 @@ internal static class ActionRules
     internal static string Describe(ActionTerms terms) => terms switch
     {
         Farm => "Farm",
+        CommunicateClaim a => FormattableString.Invariant($"CommunicateClaim({a.Recipient.Value},{a.Claim})"),
         OfferGift a => FormattableString.Invariant($"OfferGift({a.Target.Value},{a.Amount})"),
         RequestGiftOrHelp a => FormattableString.Invariant($"RequestGiftOrHelp({a.Target.Value},{a.Amount})"),
         OfferLoan a => FormattableString.Invariant($"OfferLoan({a.Target.Value},{a.Amount})"),
@@ -76,6 +82,7 @@ internal static class ActionRules
     };
     internal static PersonId? Target(ActionTerms terms, WorldSnapshot snapshot) => terms switch
     {
+        CommunicateClaim a => a.Recipient,
         OfferGift gift => gift.Target,
         RequestGiftOrHelp help => help.Target,
         OfferLoan loan => loan.Target,
@@ -95,6 +102,7 @@ internal static class ActionRules
             return "InvalidCounterparty";
         return proposal.Terms switch
         {
+            CommunicateClaim a => a.Claim is HeldFact { Evidence.Value: > 0 } or HeldRecognition { Candidate.Value: > 0 } ? null : "InvalidClaimReference",
             Farm => null,
             OfferGift gift => gift.Amount > 0 ? null : "PositiveIntegralGrainRequired",
             RequestGiftOrHelp help => help.Amount > 0 ? null : "PositiveIntegralGrainRequired",
@@ -117,6 +125,7 @@ internal static class ActionRules
     }
     internal static string? Infeasible(Proposal proposal, WorldSnapshot snapshot) => proposal.Terms switch
     {
+        CommunicateClaim => null,
         Farm => snapshot.People[proposal.Actor].NeedsGrain ? "NeedsGrain" : null,
         OfferGift gift => snapshot.People[proposal.Actor].Grain < gift.Amount ? "InsufficientAvailableGrain" : null,
         RequestGiftOrHelp help => snapshot.People[help.Target].Grain < help.Amount ? "InsufficientAvailableGrain" : null,

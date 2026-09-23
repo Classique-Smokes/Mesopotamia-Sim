@@ -1,3 +1,5 @@
+using System.Collections.Immutable;
+
 namespace Mesopotamia.Sim;
 
 public sealed partial class Simulation
@@ -5,7 +7,8 @@ public sealed partial class Simulation
     // Potential overlap partitions the search; only a witnessed noncommuting
     // exchange authorizes a consequential fallback marker. Actual execution still
     // uses stable IDs and the same immediate revalidation/transaction boundary.
-    private HashSet<ProposalId> ResolutionFallbacks(Proposal[] accepted, WorldSnapshot snapshot)
+    private HashSet<ProposalId> ResolutionFallbacks(Proposal[] accepted, WorldSnapshot snapshot,
+        IReadOnlyDictionary<ProposalId, ImmutableArray<KnownFact>> communicationPayloads)
     {
         HashSet<ProposalId> fallback = [];
         List<Proposal> unassigned = [.. accepted.OrderBy(p => p.Id.Value)];
@@ -22,7 +25,7 @@ public sealed partial class Simulation
                     }
             if (component.Count < 2) continue;
             HashSet<string> visited = new(StringComparer.Ordinal);
-            Search(new(state.Copy(), [], "", false), [.. component.OrderBy(p => p.Id.Value)]);
+            Search(new(state.Copy(), [], "", false, component.Any(p => p.Terms is CommunicateClaim) ? epistemic.Copy() : null), [.. component.OrderBy(p => p.Id.Value)]);
 
             void Search(ResolutionProjection prefix, Proposal[] remaining)
             {
@@ -32,10 +35,10 @@ public sealed partial class Simulation
                     for (int j = i + 1; j < remaining.Length; j++)
                     {
                         Proposal a = remaining[i], b = remaining[j];
-                        ResolutionProjection firstA = Project(prefix, a);
-                        ResolutionProjection thenB = Project(firstA, b);
-                        ResolutionProjection firstB = Project(prefix, b);
-                        ResolutionProjection thenA = Project(firstB, a);
+                        ResolutionProjection firstA = Project(prefix, a, communicationPayloads);
+                        ResolutionProjection thenB = Project(firstA, b, communicationPayloads);
+                        ResolutionProjection firstB = Project(prefix, b, communicationPayloads);
+                        ResolutionProjection thenA = Project(firstB, a, communicationPayloads);
                         if (firstA.Outcome != thenA.Outcome || firstB.Outcome != thenB.Outcome ||
                             ProjectionKey(thenB, snapshot) != ProjectionKey(thenA, snapshot))
                         {
@@ -45,7 +48,7 @@ public sealed partial class Simulation
                     }
                 foreach (Proposal proposal in remaining)
                 {
-                    ResolutionProjection next = Project(prefix, proposal);
+                    ResolutionProjection next = Project(prefix, proposal, communicationPayloads);
                     if (!next.Faulted) Search(next, remaining.Where(p => p.Id != proposal.Id).ToArray());
                 }
             }
@@ -53,21 +56,42 @@ public sealed partial class Simulation
         return fallback;
     }
 
-    private sealed record ResolutionProjection(WorldState State, HashSet<PersonId> Moved, string Outcome, bool Faulted);
+    private sealed record ResolutionProjection(WorldState State, HashSet<PersonId> Moved, string Outcome, bool Faulted,
+        EpistemicState? Epistemic, int Steps = 0);
 
-    private ResolutionProjection Project(ResolutionProjection prefix, Proposal proposal)
+    private ResolutionProjection Project(ResolutionProjection prefix, Proposal proposal,
+        IReadOnlyDictionary<ProposalId, ImmutableArray<KnownFact>> communicationPayloads)
     {
         if (prefix.Faulted) return prefix with { Outcome = "NotReached" };
         string? loss = ResolutionLoss(proposal, prefix.State.Snapshot(cycle), prefix.Moved);
+        if (loss is null && proposal.Terms is CommunicateClaim check &&
+            !CommunicationRules.StillHolds(prefix.Epistemic!.Of(proposal.Actor), check.Claim, communicationPayloads[proposal.Id]))
+            loss = "PropositionNoLongerHeld";
         if (loss is not null) return prefix with { Outcome = "InvalidatedAtResolution:" + loss };
         try
         {
+            EpistemicState? projected = prefix.Epistemic?.Copy();
+            if (proposal.Terms is CommunicateClaim communication)
+            {
+                SemanticEvent delivery = new(new(-proposal.Id.Value), cycle, reactionIndex + prefix.Steps, "Communication", proposal.Id,
+                    [proposal.Actor, communication.Recipient], [], [], "", initial.Configuration.Version);
+                projected!.Receive(proposal.Actor, communication.Recipient, communicationPayloads[proposal.Id], delivery);
+                return prefix with { Epistemic = projected, Outcome = "Committed:Communication", Steps = prefix.Steps + 1 };
+            }
             // Synthetic origins are private to this detached projection, bound to
             // proposal identity, and never consume live event/relation sequences.
             EvaluatedTransaction evaluated = EvaluateTransaction(prefix.State, proposal, cycle, new(-proposal.Id.Value));
+            if (projected is not null)
+            {
+                AcquireCommittedFacts(projected, evaluated.State, new(new(-proposal.Id.Value), cycle, reactionIndex + prefix.Steps,
+                    evaluated.Meaning, proposal.Id, [.. evaluated.Participants], [], [], "", initial.Configuration.Version));
+                if (evaluated.CalledFavour is { } called)
+                    AcquireCommittedFacts(projected, evaluated.State, new(new(-proposal.Id.Value), cycle, reactionIndex + prefix.Steps + 1,
+                        "CalledFavourFulfilled", proposal.Id, [called.Holder, called.Debtor], [], [], "", initial.Configuration.Version));
+            }
             HashSet<PersonId> moved = [.. prefix.Moved];
             if (ActionRules.Mover(proposal) is { } mover) moved.Add(mover);
-            return new(evaluated.State, moved, "Committed:" + evaluated.Meaning, false);
+            return new(evaluated.State, moved, "Committed:" + evaluated.Meaning, false, projected, prefix.Steps + 1);
         }
         catch (OverflowException)
         {
@@ -84,6 +108,7 @@ public sealed partial class Simulation
     }
 
     private static bool PotentialDependency(Proposal a, Proposal b, WorldSnapshot snapshot) =>
+        SharesEpistemicDependency(a, b, snapshot) ||
         SharesResidenceDependency(a, b) || SharesMarriageCapacity(a, b) || SharesFavourDependency(a, b, snapshot) ||
         MaterialPeople(a, snapshot).Intersect(MaterialPeople(b, snapshot)).Any();
 
@@ -127,11 +152,41 @@ public sealed partial class Simulation
                 f.Outstanding,
                 f.Origin
             }).OrderBy(f => f.Key, StringComparer.Ordinal),
-            Moved = projection.Moved.OrderBy(p => p.Value)
+            Moved = projection.Moved.OrderBy(p => p.Value),
+            Epistemic = projection.Epistemic?.Snapshot(0).Actors.OrderBy(p => p.Key.Value).Select(p => new
+            {
+                p.Key,
+                Facts = p.Value.Facts.Select(f => System.Text.Json.JsonSerializer.Serialize(new
+                {
+                    f.Proposition,
+                    f.Provenance.Route,
+                    f.Provenance.Origin.Source,
+                    f.Provenance.Origin.Event,
+                    f.Provenance.Origin.Fixture,
+                    Hops = f.Provenance.Hops.Select(h => new { h.Sender, h.Recipient })
+                })).Order(StringComparer.Ordinal),
+                Recognition = p.Value.Recognitions.Select(r => new { r.Candidate, r.Status })
+            })
         });
     }
 
     private static ActionTerms EffectiveTerms(Proposal proposal) => proposal.Terms is CallFavor call ? call.Requested : proposal.Terms;
+    private static bool SharesEpistemicDependency(Proposal a, Proposal b, WorldSnapshot snapshot)
+    {
+        if (a.Terms is not CommunicateClaim && b.Terms is not CommunicateClaim) return false;
+        if (a.Terms is CommunicateClaim left && b.Terms is CommunicateClaim right)
+            return left.Recipient == b.Actor || right.Recipient == a.Actor || left.Recipient == right.Recipient;
+        Proposal message = a.Terms is CommunicateClaim ? a : b;
+        Proposal action = a.Terms is CommunicateClaim ? b : a;
+        PersonId recipient = ((CommunicateClaim)message.Terms).Recipient;
+        // Direct-party updates can displace a captured sender fact or supersede
+        // recipient evidence. The detached projection decides actual commutativity.
+        HashSet<PersonId> participants = [action.Actor];
+        if (ActionRules.Target(action.Terms, snapshot) is { } target) participants.Add(target);
+        if (action.Terms is RepayDebt repay) participants.Add(snapshot.Debts[repay.Debt].Creditor);
+        if (action.Terms is CallFavor { Requested: RepayDebt repayment }) participants.Add(snapshot.Debts[repayment.Debt].Creditor);
+        return participants.Contains(message.Actor) || participants.Contains(recipient);
+    }
     private static PersonId EffectiveActor(Proposal proposal, WorldSnapshot snapshot) =>
         proposal.Terms is CallFavor call ? snapshot.Favours[call.Favour].Debtor : proposal.Actor;
 
