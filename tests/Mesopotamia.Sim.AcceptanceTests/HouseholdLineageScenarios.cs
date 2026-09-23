@@ -35,7 +35,7 @@ internal sealed partial class HouseholdScenarios
         ShareSupports(lab, core);
         lab.Declare(candidate, core); lab.Step();
         HouseholdId h = H(lab, candidate);
-        HouseholdOracle.Verify(lab.Initial, lab.Sim, lab.Cycles);
+        HouseholdOracle.Verify(lab.Initial, lab.Sim, lab.Cycles, declarations: lab.Declarations);
         ProducerEvidence.Add(new
         {
             Producer = "BoundedOrdinaryFormation",

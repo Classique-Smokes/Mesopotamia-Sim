@@ -57,3 +57,9 @@ Before IMP-0001 can be VERIFIED COMPLETE:
 - oracle independence and fixture-write rules must hold;
 - CI must emit the manifest-indexed completion report;
 - fresh independent post-implementation conformance review must PASS.
+
+## IMP-0003 repair-v3 evidence
+
+`HouseholdWarrantOracle.cs` completes the independent formation, exit-continuation and lineage checks alongside `HouseholdOracle.cs`. Both files are covered by the dependency audit. Candidate declarations are passed as laboratory inputs; expected Recognition predicates and historical warrant checks do not call production classifiers.
+
+`HouseholdRepairV3Scenarios.cs` adds 63 detached corruptions with four valid controls, eight disconnected-Household compatible-loan permutations, and six positive capacity/communication/favour-debt fallback runs. `slice3-repair-v3-controls.json` records each named result and is included in the canonical CI acceptance artifact. All frozen manifests and the inherited S1-084 structural audit remain unchanged.

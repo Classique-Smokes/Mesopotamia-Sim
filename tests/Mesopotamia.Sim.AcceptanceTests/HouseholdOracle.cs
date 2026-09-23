@@ -4,14 +4,18 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Mesopotamia.Sim.AcceptanceTests;
 
 /// <summary>Independent warrant/history checker. No production classifiers or transition helpers.</summary>
-internal static class HouseholdOracle
+internal static partial class HouseholdOracle
 {
-    internal static void Verify(InitialWorld initial, Simulation simulation, IReadOnlyList<CycleResult> cycles, HouseholdSnapshot? evidence = null)
+    internal static void Verify(InitialWorld initial, Simulation simulation, IReadOnlyList<CycleResult> cycles, HouseholdSnapshot? evidence = null,
+        IReadOnlyList<CandidateReferent>? declarations = null)
     {
         HouseholdSnapshot h = evidence ?? simulation.HouseholdSnapshot;
         SemanticEvent[] history = [.. simulation.History];
         Assert.AreEqual(simulation.Snapshot.Cycle, h.Cycle);
         Assert.AreEqual(history.Length, history.Select(e => e.Id).Distinct().Count());
+        Assert.AreEqual(history.Count(e => e.Kind == "HouseholdFormation"), h.Formations.Count);
+        Assert.AreEqual(history.Count(e => e.Kind == "HouseholdContinued"), h.Continuations.Count);
+        Assert.AreEqual(history.Count(e => e.Kind == "HouseholdLineage"), h.Lineages.Count);
         foreach (var cycle in history.GroupBy(e => e.Cycle))
         {
             int[] indices = cycle.Select(e => e.ReactionIndex).ToArray();
@@ -41,30 +45,7 @@ internal static class HouseholdOracle
         }
         foreach (FormationWarrant f in h.Formations.Values)
         {
-            Assert.IsGreaterThanOrEqualTo(2, f.Founders.Length);
-            Assert.AreEqual(f.Founders.Length, f.Founders.Distinct().Count());
-            WorldSnapshot world = cycles.Single(c => c.State.Cycle == f.Stamp.Time.Cycle).State;
-            Assert.IsTrue(f.Founders.All(p => world.Residences.Values.Single(r => r.Person == p).Dwelling == f.Dwelling));
-            Assert.IsTrue(Connected(f.Founders, (a, b) => Tied(world, a, b)));
-            Assert.IsGreaterThanOrEqualTo(2, f.Supports.Select(s => s.Cycle).Distinct().Count());
-            foreach (SupportFact s in f.Supports)
-            {
-                SemanticEvent support = history.Single(e => e.Id == s.Event);
-                Assert.Contains(support.Kind, new[] { "Gift", "Help", "RelationshipMediatedReciprocalHelp", "Loan", "CalledFavourFulfilled" });
-                Assert.AreEqual(s.Cycle, support.Cycle);
-                Assert.IsTrue(f.Founders.Contains(s.First) && f.Founders.Contains(s.Second));
-                Assert.IsTrue(s.Cycle < f.Stamp.Time.Cycle || s.Cycle == f.Stamp.Time.Cycle && support.ReactionIndex < f.Stamp.Time.ReactionIndex);
-            }
-            Assert.AreEqual(f.Founders.Length, f.Recognition.Length);
-            foreach (CandidateRecognition r in f.Recognition)
-            {
-                Assert.AreEqual(RecognitionStatus.Recognized, r.Status);
-                Assert.IsTrue(CandidatePredicate(f.Founders, r.Evidence));
-            }
-            Assert.IsTrue(f.EarliestEvidence.CompareTo(f.Stamp.Time) < 0);
-            Assert.AreEqual("SFL-S3-v1", f.Stamp.RulesVersion);
-            Assert.AreEqual(initial.Configuration.Version, f.Stamp.ConfigurationVersion);
-            Assert.AreEqual(f.Founders.Length, h.Associations.Values.Count(a => a.Origin == f.Id));
+            VerifyFormation(initial, h, f, history, cycles, declarations ?? []);
         }
         foreach (ParticipationWarrant e in h.Entries.Values)
             VerifyParticipation(initial, h, e, history, cycles);
@@ -74,7 +55,11 @@ internal static class HouseholdOracle
             Assert.AreEqual(e.Id, association.End);
             Assert.AreEqual(e.Person, association.Person);
             Assert.AreEqual(e.Household, association.Household);
-            Assert.AreEqual("HouseholdParticipationEnded", history.Single(x => x.Id == e.Stamp.Event).Kind);
+            SemanticEvent ended = VerifyStamp(initial, e.Stamp, "HouseholdParticipationEnded", history);
+            Assert.AreEqual($"Household:{e.Household.Value};Warrant:{e.Id.Value};Association:{e.Association.Value}", ended.Detail);
+            CollectionAssert.AreEqual(new[] { e.Person }, ended.Participants.ToArray());
+            Assert.AreEqual(e.Proposal, ended.Proposal);
+            Assert.AreEqual(new EndHouseholdParticipation(e.Household), ended.Action);
         }
         foreach (Household household in h.Households.Values)
         {
@@ -95,7 +80,6 @@ internal static class HouseholdOracle
                     Assert.IsTrue(live.SetEquals(continuation.Successor));
                     Assert.IsNotEmpty(continuation.Bridges);
                     Assert.IsTrue(continuation.Bridges.All(p => prior.Intersect(live).Any(a => h.Associations[a].Person == p)));
-                    Assert.IsTrue(continuation.Recognition.All(r => r.Status == RecognitionStatus.Recognized));
                     previous = continuation.Id;
                 }
                 else Assert.IsNull(continuation);
@@ -105,8 +89,11 @@ internal static class HouseholdOracle
             if (household.Lifecycle == HouseholdLifecycle.Dissolved)
                 Assert.IsTrue(h.Commitments.Values.Where(c => c.Household == household.Id).All(c => c.TerminatedBy is not null));
         }
+        foreach (ContinuationWarrant continuation in h.Continuations.Values)
+            VerifyContinuation(initial, h, continuation, history, cycles);
         foreach (LineageWarrant l in h.Lineages.Values)
         {
+            VerifyLineage(initial, h, l, history);
             FormationWarrant f = h.Formations[l.Formation];
             HouseholdSnapshot atFormation = cycles.Single(c => c.State.Cycle == f.Stamp.Time.Cycle).Households!;
             Assert.AreEqual(l.Kind == HouseholdLineageKind.DivisionDescendant ? 1 : 2, l.Predecessors.Count);
@@ -258,8 +245,8 @@ internal static class HouseholdOracle
         }
         Assert.IsTrue(entry.Ties.Any(t => t.First == entry.Newcomer || t.Second == entry.Newcomer));
         Assert.AreEqual(2, entry.Recognition.Length, "Both newcomer and bridge evidence are mandatory.");
-        VerifyRecognition(entry.Recognition[0], entry.Newcomer, entry, h, history, cycles);
-        VerifyRecognition(entry.Recognition[1], entry.Bridge, entry, h, history, cycles);
+        VerifyRecognition(entry.Recognition[0], entry.Newcomer, entry.Household, entry.Stamp, h, history, cycles);
+        VerifyRecognition(entry.Recognition[1], entry.Bridge, entry.Household, entry.Stamp, h, history, cycles);
 
         SustainingParticipant[] added = [.. h.Associations.Values.Where(a => a.Origin == entry.Id)];
         Assert.AreEqual(1, added.Length);
@@ -317,27 +304,27 @@ internal static class HouseholdOracle
         a.Provenance.Route == b.Provenance.Route && a.Provenance.Origin == b.Provenance.Origin &&
         a.Provenance.Hops.SequenceEqual(b.Provenance.Hops);
 
-    private static void VerifyRecognition(HouseholdRecognition recognition, PersonId actor, ParticipationWarrant entry,
+    private static void VerifyRecognition(HouseholdRecognition recognition, PersonId actor, HouseholdId household, WarrantStamp stamp,
         HouseholdSnapshot h, SemanticEvent[] history, IReadOnlyList<CycleResult> cycles)
     {
-        Assert.AreEqual(entry.Household, recognition.Household);
+        Assert.AreEqual(household, recognition.Household);
         Assert.AreEqual(RecognitionStatus.Recognized, recognition.Status);
         Assert.IsNotEmpty(recognition.Evidence);
-        List<KnownFact> held = [.. cycles.Single(c => c.State.Cycle == entry.Stamp.Time.Cycle - 1).Epistemic!.Actors[actor].Facts
-            .Where(f => f.Proposition is HouseholdExistenceFact fact && fact.Household == entry.Household)];
-        foreach (SemanticEvent e in history.Where(e => e.Cycle == entry.Stamp.Time.Cycle && e.ReactionIndex < entry.Stamp.Time.ReactionIndex))
+        List<KnownFact> held = [.. cycles.Single(c => c.State.Cycle == stamp.Time.Cycle - 1).Epistemic!.Actors[actor].Facts
+            .Where(f => f.Proposition is HouseholdExistenceFact fact && fact.Household == household)];
+        foreach (SemanticEvent e in history.Where(e => e.Cycle == stamp.Time.Cycle && e.ReactionIndex < stamp.Time.ReactionIndex))
         {
             if (e.Kind == "Communication" && e.Participants[1] == actor)
-                foreach (KnownFact sent in e.TransmittedEvidence.Where(f => f.Proposition is HouseholdExistenceFact fact && fact.Household == entry.Household))
+                foreach (KnownFact sent in e.TransmittedEvidence.Where(f => f.Proposition is HouseholdExistenceFact fact && fact.Household == household))
                     Acquire(new(new(0), sent.Proposition, new(AcquisitionRoute.Communication, sent.Provenance.Origin,
                         [.. sent.Provenance.Hops, new(e.Participants[0], actor, e.Id, new(e.Cycle, e.ReactionIndex))])));
             if (e.Kind is "HouseholdRecognitionAcquired" or "HouseholdDissolutionEvidenceAcquired" && e.Participants.Contains(actor))
             {
                 SemanticEvent origin = Referenced(history, e.Causes.Single());
-                WarrantId? warrant = h.Formations.Values.SingleOrDefault(f => f.Household == entry.Household && f.Stamp.Event == origin.Id)?.Id ??
-                    h.Continuations.Values.SingleOrDefault(c => c.Household == entry.Household && c.Stamp.Event == origin.Id)?.Id;
+                WarrantId? warrant = h.Formations.Values.SingleOrDefault(f => f.Household == household && f.Stamp.Event == origin.Id)?.Id ??
+                    h.Continuations.Values.SingleOrDefault(c => c.Household == household && c.Stamp.Event == origin.Id)?.Id;
                 if (warrant is { } id)
-                    Acquire(new(new(0), new HouseholdExistenceFact(entry.Household, true, id),
+                    Acquire(new(new(0), new HouseholdExistenceFact(household, true, id),
                         new(AcquisitionRoute.Participation, new(actor, origin.Id, new(origin.Cycle, origin.ReactionIndex)), [])));
             }
         }
@@ -349,7 +336,7 @@ internal static class HouseholdOracle
             int index = held.FindIndex(f => SameEvidence(f, fact));
             Assert.IsTrue(index >= 0, "Warrant Recognition must be the named actor's actual precommit basis.");
             held.RemoveAt(index);
-            VerifyProvenance(fact, actor, entry.Stamp.Time, h, history);
+            VerifyProvenance(fact, actor, stamp.Time, h, history);
         }
 
         void Acquire(KnownFact incoming)

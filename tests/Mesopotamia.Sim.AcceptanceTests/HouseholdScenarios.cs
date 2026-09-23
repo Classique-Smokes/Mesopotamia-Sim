@@ -18,7 +18,7 @@ internal sealed partial class HouseholdScenarios
     {
         foreach (Lab lab in labs)
         {
-            HouseholdOracle.Verify(lab.Initial, lab.Sim, lab.Cycles);
+            HouseholdOracle.Verify(lab.Initial, lab.Sim, lab.Cycles, declarations: lab.Declarations);
             FixtureEvidence.Add(new
             {
                 Scenario = scenario,
@@ -75,7 +75,7 @@ internal sealed partial class HouseholdScenarios
         Lab lab = Create(world, challenge);
         CanonicalFormation(lab);
         Assert.AreEqual(1, lab.Sim.HouseholdSnapshot.Households.Count);
-        HouseholdOracle.Verify(lab.Initial, lab.Sim, lab.Cycles);
+        HouseholdOracle.Verify(lab.Initial, lab.Sim, lab.Cycles, declarations: lab.Declarations);
         ProducerEvidence.Add(new
         {
             Producer = "VS-SFL-001",
@@ -262,6 +262,7 @@ internal sealed partial class HouseholdScenarios
         foreach (HouseholdCase c in StructuralCases()) yield return c;
         foreach (HouseholdCase c in AdversarialCases()) yield return c;
         foreach (HouseholdCase c in RepairV2Cases()) yield return c;
+        foreach (HouseholdCase c in RepairV3Cases()) yield return c;
     }
 
     private sealed class Lab(InitialWorld initial, Simulation.ReactionChallenge challenge)

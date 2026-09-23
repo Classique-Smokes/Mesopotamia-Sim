@@ -107,7 +107,8 @@ public sealed class Slice3AcceptanceTests
             return prefixes.Length > 0 && prefixes.All(prefix => prior.Any(p => p.Key.StartsWith(prefix, StringComparison.Ordinal)) &&
                 prior.Where(p => p.Key.StartsWith(prefix, StringComparison.Ordinal)).All(p => p.Value));
         }
-        string oracle = File.ReadAllText(Path.Combine(AcceptanceCatalog.Root, "tests/Mesopotamia.Sim.AcceptanceTests/HouseholdOracle.cs"));
+        string oracle = File.ReadAllText(Path.Combine(AcceptanceCatalog.Root, "tests/Mesopotamia.Sim.AcceptanceTests/HouseholdOracle.cs")) +
+            File.ReadAllText(Path.Combine(AcceptanceCatalog.Root, "tests/Mesopotamia.Sim.AcceptanceTests/HouseholdWarrantOracle.cs"));
         string[] forbidden = ["HouseholdRules.", "EpistemicRules.", "CommunicationRules.", "OrdinarySupport.", "new HouseholdState", ".TryForm(", ".TryLineage(", ".ContinueHousehold("];
         bool independent = forbidden.All(token => !oracle.Contains(token, StringComparison.Ordinal));
         var results = rows.Select(r => new
@@ -138,6 +139,7 @@ public sealed class Slice3AcceptanceTests
         AcceptanceCatalog.WriteSupplement("slice3-cases", cases);
         AcceptanceCatalog.WriteSupplement("slice3-fixtures", suite.FixtureEvidence);
         AcceptanceCatalog.WriteSupplement("slice3-producers", suite.ProducerEvidence);
+        AcceptanceCatalog.WriteSupplement("slice3-repair-v3-controls", suite.RepairV3Evidence);
         Assert.IsEmpty(failures, string.Join("\n", failures));
         Assert.IsTrue(independent);
         Assert.IsTrue(results.Where(r => r.Classification == "REQUIRED").All(r => r.State == "PASS"),

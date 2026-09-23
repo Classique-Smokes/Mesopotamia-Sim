@@ -30,7 +30,15 @@ public sealed partial class Simulation
                 for (int j = unassigned.Count - 1; j >= 0; j--)
                     if (PotentialDependency(component[i], unassigned[j], world) || Scope(component[i]).Overlaps(Scope(unassigned[j])))
                     { component.Add(unassigned[j]); unassigned.RemoveAt(j); }
-            if (component.Count > 1) result.UnionWith(HouseholdResolutionComponent([.. component], payloads));
+            if (component.Count > 1)
+            {
+                // Components with no Household/candidate contact retain the inherited
+                // ordinary resolver, whose synthetic origins are proposal-bound. A
+                // disconnected Household must not turn allocation order into conflict.
+                bool householdDependent = component.SelectMany(Scope).Any(s => !s.StartsWith("P:", StringComparison.Ordinal));
+                result.UnionWith(householdDependent ? HouseholdResolutionComponent([.. component], payloads) :
+                    OrdinaryResolutionFallbacks([.. component], world, payloads));
+            }
         }
         return result;
 
@@ -40,7 +48,7 @@ public sealed partial class Simulation
             if (ActionRules.Target(proposal.Terms, world) is { } target) people.Add(target);
             people.UnionWith(MaterialPeople(proposal, world));
             HashSet<string> scope = [.. people.Select(p => "P:" + p.Value),
-                .. households.Associations.Values.Where(a => a.End is null && people.Contains(a.Person)).Select(a => "H:" + a.Household.Value),
+                .. households.Associations.Values.Where(a => people.Contains(a.Person)).Select(a => "H:" + a.Household.Value),
                 .. epistemic.Candidates.Where(c => c.Core.Any(people.Contains)).Select(c => "C:" + c.Id.Value)];
             if (HouseholdRules.Target(proposal.Terms) is { } h) scope.Add("H:" + h.Value);
             if (proposal.Terms is CommunicateClaim && payloads.TryGetValue(proposal.Id, out var payload))
