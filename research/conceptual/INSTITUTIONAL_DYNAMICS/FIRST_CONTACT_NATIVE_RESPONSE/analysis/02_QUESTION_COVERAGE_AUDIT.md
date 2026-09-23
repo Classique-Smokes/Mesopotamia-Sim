@@ -214,15 +214,17 @@ What remains less explicit:
 
 ## Q12 — Turn the tablet back on the foreigners
 
-**Coverage:** OMITTED
+**Coverage:** TRANSFORMED / PARTIAL
 
 No section explicitly:
 
 - identifies the worst assumption embedded in the questionnaire;
 - replaces that assumption;
-- asks and answers a new native question the foreigners failed to ask.
+- asks and answers a new philosophical continuity/identity/history question in the requested form.
 
-However, the **response format itself** may be relevant to later analysis: instead of answering in the requested numbered form, the responder produced an evidence-status project handoff. That behavioral transformation must be analyzed separately rather than treated as an explicit Q12 answer.
+However, p.80 contains seven **clarifications an external architect should ask the Game Director**, including whether Conservatory vocabulary should remain playful shorthand or become a long-term part of project identity.
+
+The **response format itself** is also relevant to later analysis: instead of answering in the requested numbered form, the responder produced an evidence-status project handoff. These are transformed/partial responses, not full completion of Q12.
 
 ---
 
@@ -248,7 +250,7 @@ The weakest or absent coverage at intake is:
 - Q8's ownership/change of project voice;
 - Q9's reflexive effect of writing history;
 - Q10's artifact-versus-practice disappearance test;
-- Q12's direct challenge to the questionnaire's premises.
+- Q12's direct challenge to the questionnaire's premises remains absent, although the response generates its own practical clarification questions.
 
 The next analytical phase should therefore **not** summarize all 82 pages again. It should create question-bounded native-response packets that preserve the responder's own vocabulary and distinguish:
 
