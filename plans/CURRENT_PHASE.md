@@ -33,10 +33,11 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - Exploratory Observation Batch 001 executed 8 predeclared seeded variants for 30 cycles each; all 8 reached horizon without simulation fault or early deadlock, with raw outputs frozen.
 - Birth Run 001 Master Architect reconciliation classified the narrow autonomous action vocabulary as a reference-policy limitation, not a demonstrated Slice-1 defect; observational checkpoint closed without reopening Slice 1.
 - New Roads/Vizier tablet corpora were source-preserved and fully systematized: current Slice-2 lenses separated from genuine later additions, overlap cross-linked into existing future programs, and redundant core distinctions explicitly identified.
+- Slice-2 Epistemic Observational Pause 001 ran two frozen 12-cycle worlds without simulation fault; raw output was frozen before interpretation. Reconciliation found no demonstrated Slice-2 defect or verification blind spot and classified the visible behavioral thinness as the known reference-policy / deferred-agency limitation.
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / EPISTEMIC OBSERVATION PAUSE NEXT.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / SLICE 3 PRE-IMPLEMENTATION DISCOVERY ACTIVE.**
 
 Verified Slice-1 completion:
 
@@ -165,10 +166,13 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Conduct the planned small **epistemic observational pause** on canonical Slice 2 before detailed Slice-3 implementation planning.
-2. Freeze raw observation output before interpretation, as with Birth Run 001.
-3. Use the pause to inspect divergence, staleness, communication routes, contested Recognition, and subjective gating—not to recalibrate or reopen Slice 2 merely because emergent behavior is surprising.
-4. Then begin Slice-3 discovery/planning for persistent household identity + grounded collective capability.
-5. Do **not** import trust, rumor, reputation, brokerage, richer motivation, household-head mechanics, or strategic communication into the Slice-2 completion record.
+1. Run the three fresh regular Slice-3 discovery commissions:
+   - `tasks/research/SFL_V0_SLICE3_DISCOVERY_A_AUTHORITY_GAPS.md`;
+   - `tasks/research/SFL_V0_SLICE3_DISCOVERY_B_IMPLEMENTATION_SURFACES.md`;
+   - `tasks/research/SFL_V0_SLICE3_DISCOVERY_C_VERIFICATION_TRIGGERS.md`.
+2. Reconcile the three returns before drafting Slice-3 acceptance authority.
+3. Treat `LATER-01` CandidateOrganization equivalence/convergence as a fired trigger. Escalate to the Project Director only if the bounded Slice-3 formation path cannot avoid or derive the missing rule from accepted authority.
+4. Resolve the Slice3/Slice4 boundary for grounded collective capability before implementation: do not pull HouseholdHeadRole / HouseholdDecisionContext forward merely for convenience.
+5. Do **not** use the rustic reference policy as permission to redesign personal agency during Slice 3.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
