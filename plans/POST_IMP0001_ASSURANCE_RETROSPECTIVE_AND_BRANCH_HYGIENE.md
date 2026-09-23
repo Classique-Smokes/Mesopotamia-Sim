@@ -1,6 +1,6 @@
 # Post-IMP-0001 Assurance Retrospective + Branch Hygiene
 
-**Status:** ASSURANCE RETROSPECTIVE COMPLETE / BRANCH CENSUS+RECONCILIATION COMPLETE / CLEANUP EXECUTION PENDING  
+**Status:** COMPLETE — ASSURANCE LESSONS INSTITUTIONALIZED / BRANCH HYGIENE EXECUTED+VERIFIED  
 **Role:** One combined lightweight maintenance/learning task  
 **Purpose:** Capture the durable process lessons from the first independent implementation BLOCK and reduce branch clutter without turning either concern into a new bureaucracy.
 
@@ -15,7 +15,7 @@ Durable records:
 - `research/technical/REPOSITORY_BRANCH_HYGIENE_CENSUS.md`
 - `research/technical/REPOSITORY_BRANCH_HYGIENE_RECONCILIATION.md`
 
-IMP-0001 is VERIFIED COMPLETE, so the former repair/conformance timing gate has cleared. The exact approved deletion set is frozen in the reconciliation record. Physical ref deletion remains a separate low-authority clerical execution because the current GitHub connector does not expose branch deletion.
+IMP-0001 is VERIFIED COMPLETE. The exact approved deletion set was executed by a low-authority Git-capable clerk and independently verified by the Master Architect. Execution record: `research/technical/REPOSITORY_BRANCH_HYGIENE_EXECUTION_RECORD.md`.
 
 ## 2. Guiding principle
 
@@ -163,7 +163,7 @@ The former destructive-cleanup timing gate is satisfied:
 - IMP-0001 was closed VERIFIED COMPLETE;
 - no open PR remains.
 
-Deletion may now proceed **only** from the exact approved set in `REPOSITORY_BRANCH_HYGIENE_RECONCILIATION.md`.
+Deletion has been executed exactly from the approved set in `REPOSITORY_BRANCH_HYGIENE_RECONCILIATION.md`; post-execution verification found 48 intended survivor refs, no extras, no omissions, and no protected-ref drift.
 
 ## 8. Cleanup executor
 
