@@ -1,0 +1,15 @@
+{
+  "Candidate": "5a452078c845b8aa4cc2756f5638517dce87e6e8",
+  "FrozenRef": "imp-0002-slice2-conformance-candidate-v1",
+  "PullRequest": "https://github.com/Classique-Smokes/Mesopotamia-Sim/pull/38",
+  "CIRun": "https://github.com/Classique-Smokes/Mesopotamia-Sim/actions/runs/35828653126",
+  "CIResult": "PASS",
+  "ArtifactId": 10736450597,
+  "ArtifactDigest": "sha256:d45240304b46df405fe2406124f3af5ad5145a66c2e95ad32e7c4f920d54a1f3",
+  "LocalEvidenceSHA256": "2e1ea04d2344b3bf369c4b09b571f2e470b78f26cf4ed08d3203da49588d8394",
+  "Conformance": "PASS",
+  "CanonicalPromotion": "Not performed",
+  "TerminalStatus": "COMPLETE CANDIDATE",
+  "IndependentAssertions": 51,
+  "ConformanceReportSHA256": "8d9c9ebe19ce3b95acde7596436753e02aba76833ead4df206b0002957aae68e"
+}
