@@ -380,20 +380,23 @@ public sealed partial class Simulation
             Record("ExogenousGrain", null, [person.Id], [], [new(person.Id, person.Grain, after, "FixtureInput")], $"Input:{input.Id}");
             state.Validate();
         }
-        foreach (Person person in state.People.Values.OrderBy(p => p.Id.Value).ToArray())
-        {
-            if (person.Grain > 0)
+        // EXPERIMENT ONLY: routine consumption occurs on odd-numbered cycles.
+        // Canonical Slice-1 semantics consume every cycle; this branch must never be promoted.
+        if (cycle % 2 == 1)
+            foreach (Person person in state.People.Values.OrderBy(p => p.Id.Value).ToArray())
             {
-                state.People[person.Id] = ConsumeGrain(person);
-                Record("Consumption", null, [person.Id], [], [new(person.Id, person.Grain, person.Grain - 1, "ConsumptionSink")], "Paid");
+                if (person.Grain > 0)
+                {
+                    state.People[person.Id] = ConsumeGrain(person);
+                    Record("Consumption", null, [person.Id], [], [new(person.Id, person.Grain, person.Grain - 1, "ConsumptionSink")], "Paid");
+                }
+                else
+                {
+                    state.People[person.Id] = ConsumeGrain(person);
+                    Record("MissedConsumption", null, [person.Id], [], [], "NeedsGrain");
+                }
+                state.Validate();
             }
-            else
-            {
-                state.People[person.Id] = ConsumeGrain(person);
-                Record("MissedConsumption", null, [person.Id], [], [], "NeedsGrain");
-            }
-            state.Validate();
-        }
         if (cycle % 5 == 0)
             foreach (Attitude attitude in state.Attitudes.Values.OrderBy(a => a.Id.Value).ToArray())
             {
