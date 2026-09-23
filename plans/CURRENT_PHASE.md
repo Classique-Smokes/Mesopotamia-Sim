@@ -30,11 +30,12 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - IMP-0001 / Slice 1 independently passed K4 on frozen candidate-v3, was promoted to canonical main, and passed post-promotion CI.
 - Post-IMP-0001 assurance retrospective and branch hygiene completed: reviewer lessons institutionalized without new bureaucracy; approved branch cleanup executed and independently verified at 48 retained refs.
 - Birth Run 001 executed autonomously for the declared 30-cycle horizon with no simulation fault; raw package frozen before interpretation.
-- Exploratory Observation Batch 001 executed 8 predeclared seeded variants for 30 cycles each; all 8 reached horizon without simulation fault or early deadlock, with raw outputs frozen and cross-run interpretation deferred.
+- Exploratory Observation Batch 001 executed 8 predeclared seeded variants for 30 cycles each; all 8 reached horizon without simulation fault or early deadlock, with raw outputs frozen.
+- Birth Run 001 Master Architect reconciliation classified the narrow autonomous action vocabulary as a reference-policy limitation, not a demonstrated Slice-1 defect; observational checkpoint closed without reopening Slice 1.
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN 001 RAW FROZEN / DIRECTOR INSPECTION PENDING.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN CHECKPOINT CLOSED / SLICE 2 PRE-IMPLEMENTATION DISCOVERY READY.**
 
 Verified Slice-1 completion:
 
@@ -144,11 +145,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Project Director first-read of Birth Run 001: initial-state declaration, mechanical transcript, and compact cycle summaries. Exploratory Batch 001 raw data is available in parallel but should not displace this first-read.
-2. Record Director observations separately; do not retroactively alter the frozen run.
-3. Only after Director first-read, author Master Architect classification distinguishing defects, model questions, parameter/reference-policy limitations, later-slice capability gaps, and interesting-but-non-actionable behavior.
-4. Do **not** begin Slice-2 implementation until this observational checkpoint is reconciled, unless the Director explicitly waives it.
-5. After the observational checkpoint, retrieve `plans/SFL_V0_INTERSLICE_DISCOVERY_PROMPTS.md` before detailed Slice-2 planning.
-6. Post-IMP-0001 housekeeping is complete; no maintenance item remains ahead of Director inspection.
+1. Execute the bounded research/inventory task `tasks/research/SFL_V0_SLICE2_PREIMPLEMENTATION_DISCOVERY.md`.
+2. Reconcile the return at Master Architect level: distinguish accepted Slice-2 semantics, engineering choices, true escalation items, and later-slice deferrals.
+3. If no consequential semantic blocker remains, prepare the Slice-2 implementation/verification plan before dispatching code.
+4. Do **not** treat the Birth Run reference-policy limitation as permission to invent richer motivation, arbitrary preference weights, historical calibration, or strategic planning inside Slice 2.
+5. Preserve the isolated every-other-cycle long-run experiment as parameter-sensitivity evidence only; it does not modify canonical SFL semantics.
+6. Post-IMP-0001 housekeeping and the Birth Run observational checkpoint are complete.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
