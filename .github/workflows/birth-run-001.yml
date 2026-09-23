@@ -1,0 +1,48 @@
+name: birth-run-001
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/birth-run-001.yml'
+      - 'tools/Mesopotamia.Sim.BirthRunner/**'
+      - 'research/technical/SFL_V0_OBSERVATIONS/RUN-0001_BIRTH/INITIAL_WORLD.json'
+      - 'research/technical/SFL_V0_OBSERVATIONS/RUN-0001_BIRTH/PRE_EXECUTION_DECLARATION.md'
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    name: run-birth-world
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact revision
+        uses: actions/checkout@v4
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.401'
+      - name: SDK information
+        run: dotnet --info
+      - name: Restore birth runner
+        run: dotnet restore tools/Mesopotamia.Sim.BirthRunner/Mesopotamia.Sim.BirthRunner.csproj
+      - name: Execute Birth Run 001
+        run: >
+          dotnet run
+          --project tools/Mesopotamia.Sim.BirthRunner/Mesopotamia.Sim.BirthRunner.csproj
+          --configuration Release
+          --no-restore
+          --
+          --initial-world research/technical/SFL_V0_OBSERVATIONS/RUN-0001_BIRTH/INITIAL_WORLD.json
+          --output artifacts/birth-run-001
+          --revision "$GITHUB_SHA"
+      - name: Upload raw birth package
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: birth-run-001-raw-${{ github.sha }}
+          path: artifacts/birth-run-001/
+          if-no-files-found: error
+          retention-days: 30
