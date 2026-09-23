@@ -35,7 +35,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN CHECKPOINT CLOSED / SLICE 2 PRE-IMPLEMENTATION DISCOVERY READY.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN CHECKPOINT CLOSED / SLICE 2 PARALLEL PRE-IMPLEMENTATION DISCOVERY READY.**
 
 Verified Slice-1 completion:
 
@@ -145,11 +145,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Execute the bounded research/inventory task `tasks/research/SFL_V0_SLICE2_PREIMPLEMENTATION_DISCOVERY.md`.
-2. Reconcile the return at Master Architect level: distinguish accepted Slice-2 semantics, engineering choices, true escalation items, and later-slice deferrals.
-3. If no consequential semantic blocker remains, prepare the Slice-2 implementation/verification plan before dispatching code.
-4. Do **not** treat the Birth Run reference-policy limitation as permission to invent richer motivation, arbitrary preference weights, historical calibration, or strategic planning inside Slice 2.
-5. Preserve the isolated every-other-cycle long-run experiment as parameter-sensitivity evidence only; it does not modify canonical SFL semantics.
-6. Post-IMP-0001 housekeeping and the Birth Run observational checkpoint are complete.
+1. Dispatch the three bounded Slice-2 discovery commissions via `tasks/research/SFL_V0_SLICE2_PARALLEL_DISCOVERY_DISPATCH.md`: accepted authority, implementation surfaces, and verification triggers.
+2. In parallel, the Master Architect performs `plans/NEW_TABLET_COLLECTIONS_SYSTEMATIZATION_PLAN.md` against the newly preserved source collections; delegated survey workers must not use those tablets as requirements.
+3. Reconcile all three survey returns plus the separate tablet synthesis at Master Architect level: distinguish accepted Slice-2 semantics, engineering choices, true escalation items, later-slice deferrals, and purely conceptual/future seams.
+4. If no consequential semantic blocker remains, prepare the Slice-2 implementation/verification plan before dispatching code.
+5. Do **not** treat Birth Run or tablet observations as permission to invent richer motivation, arbitrary preference weights, historical calibration, or strategic planning inside Slice 2.
+6. Preserve the isolated every-other-cycle long-run experiment as parameter-sensitivity evidence only; it does not modify canonical SFL semantics.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
