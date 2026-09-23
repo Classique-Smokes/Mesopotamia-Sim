@@ -36,7 +36,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / SLICE 2 ACCEPTANCE FROZEN / IMP-0002 READY FOR DISPATCH.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / EPISTEMIC OBSERVATION PAUSE NEXT.**
 
 Verified Slice-1 completion:
 
@@ -45,6 +45,15 @@ Verified Slice-1 completion:
 - independent K4: `research/technical/IMP-0001/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3.md` — **PASS**
 - canonical promotion merge: `262dc6e1d846761110fcd6a063bf8b4aa267b3dc`
 - post-promotion CI: run `35800043322` — **PASS**
+
+Verified Slice-2 completion:
+
+- task: `tasks/implementation/IMP-0002_SFL_V0_SLICE2_SUBJECTIVE_KNOWLEDGE.md`
+- frozen candidate: `imp-0002-slice2-conformance-candidate-v1` @ `5a452078c845b8aa4cc2756f5638517dce87e6e8`
+- fresh independent conformance: `research/technical/IMP-0002/IMP-0002_INDEPENDENT_CONFORMANCE_REVIEW_FRESH.md` — **PASS — PROMOTE**
+- canonical promotion merge: `3887d1d9984f5606c816afb84365cc3f455f52b4`
+- post-promotion CI: run `35833252462` — **PASS**
+- final record: `research/technical/IMP-0002/IMP-0002_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
 
 Frozen Slice-1 acceptance authority:
 
@@ -156,11 +165,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Dispatch `tasks/implementation/IMP-0002_SFL_V0_SLICE2_SUBJECTIVE_KNOWLEDGE.md` from canonical main on branch `implementation/imp-0002-slice2-epistemic`.
-2. Implementation must obey frozen `SFL-V0-S2-ACCEPTANCE-v1` and preserve all exact Slice-1 regression bindings.
-3. Freeze an exact implementation candidate before fresh post-implementation conformance review.
-4. Escalate only if implementation requires new proposition meaning, knowledge entitlement, evidence precedence, event-specific nonparticipant observation, or later-slice substrate.
-5. Do **not** import richer motivation, trust, rumor, reputation, brokerage, household/head mechanics, or strategic communication into Slice 2.
-6. After verified completion, conduct the planned small epistemic observational pause before Slice 3.
+1. Conduct the planned small **epistemic observational pause** on canonical Slice 2 before detailed Slice-3 implementation planning.
+2. Freeze raw observation output before interpretation, as with Birth Run 001.
+3. Use the pause to inspect divergence, staleness, communication routes, contested Recognition, and subjective gating—not to recalibrate or reopen Slice 2 merely because emergent behavior is surprising.
+4. Then begin Slice-3 discovery/planning for persistent household identity + grounded collective capability.
+5. Do **not** import trust, rumor, reputation, brokerage, richer motivation, household-head mechanics, or strategic communication into the Slice-2 completion record.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
