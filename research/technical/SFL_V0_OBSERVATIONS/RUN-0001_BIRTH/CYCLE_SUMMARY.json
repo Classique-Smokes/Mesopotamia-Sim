@@ -1,0 +1,8482 @@
+[
+  {
+    "cycle": 1,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 0,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 45
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 30
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 15
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -5
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 30
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 10
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 35
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 40
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -20
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 5
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 105,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 80,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 1,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 14
+      },
+      {
+        "proposal": 2,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 15
+      },
+      {
+        "proposal": 3,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 16
+      },
+      {
+        "proposal": 4,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 17
+      },
+      {
+        "proposal": 5,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 18
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 2,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 55
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 40
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 15
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -5
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 30
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 20
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 35
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 50
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -10
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 5
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 135,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 90,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 70,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 6,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 37
+      },
+      {
+        "proposal": 7,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 38
+      },
+      {
+        "proposal": 8,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 39
+      },
+      {
+        "proposal": 9,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 40
+      },
+      {
+        "proposal": 10,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 41
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "Consumption": 4,
+      "Gift": 4,
+      "Help": 1,
+      "MissedConsumption": 1,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 3,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 65
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 50
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 15
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -5
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 30
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 30
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 45
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 60
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -10
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 5
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 165,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 120,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 70,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 11,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 62
+      },
+      {
+        "proposal": 12,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 63
+      },
+      {
+        "proposal": 13,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 64
+      },
+      {
+        "proposal": 14,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 65
+      },
+      {
+        "proposal": 15,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 66
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "Consumption": 5,
+      "Gift": 5,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 4,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 75
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 60
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 15
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -5
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 30
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 30
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 45
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 70
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -10
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 5
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 195,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 150,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 90,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 16,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 85
+      },
+      {
+        "proposal": 17,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 86
+      },
+      {
+        "proposal": 18,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 87
+      },
+      {
+        "proposal": 19,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 88
+      },
+      {
+        "proposal": 20,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 89
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 5,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 73
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 58
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 13
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -4
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 28
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 38
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 53
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 78
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -9
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 3
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 56,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 86,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 136,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 21,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 116
+      },
+      {
+        "proposal": 22,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 117
+      },
+      {
+        "proposal": 23,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 118
+      },
+      {
+        "proposal": 24,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 119
+      },
+      {
+        "proposal": 25,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 120
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "AttitudeDecay": 10,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 6,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 83
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 68
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 13
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -4
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 28
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 38
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 63
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 88
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -9
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 3
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 219,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 174,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 106,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 156,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 26,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 138
+      },
+      {
+        "proposal": 27,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 139
+      },
+      {
+        "proposal": 28,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 140
+      },
+      {
+        "proposal": 29,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 141
+      },
+      {
+        "proposal": 30,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 142
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 7,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 93
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 78
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 13
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -4
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 28
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 48
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 73
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 98
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -9
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 3
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 249,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 204,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 56,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 126,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 176,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 31,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 162
+      },
+      {
+        "proposal": 32,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 163
+      },
+      {
+        "proposal": 33,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 164
+      },
+      {
+        "proposal": 34,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 165
+      },
+      {
+        "proposal": 35,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 166
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "Consumption": 5,
+      "Gift": 5,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 8,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 88
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 13
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -4
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 28
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 58
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 83
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -9
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 3
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 279,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 234,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 56,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 146,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 36,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 187
+      },
+      {
+        "proposal": 37,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 188
+      },
+      {
+        "proposal": 38,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 189
+      },
+      {
+        "proposal": 39,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 190
+      },
+      {
+        "proposal": 40,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 191
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "Consumption": 5,
+      "Gift": 5,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 9,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 88
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 13
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -4
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 28
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 58
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 83
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -9
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 3
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 166,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 41,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 208
+      },
+      {
+        "proposal": 42,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 209
+      },
+      {
+        "proposal": 43,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 210
+      },
+      {
+        "proposal": 44,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 211
+      },
+      {
+        "proposal": 45,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 212
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 1,
+      "Consumption": 5,
+      "Farm": 4,
+      "Gift": 1,
+      "Proposal": 5,
+      "Response": 1
+    }
+  },
+  {
+    "cycle": 10,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 96
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 11
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -3
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 66
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 91
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 98
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -8
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 1
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 294,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 258,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 52,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 46,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 238
+      },
+      {
+        "proposal": 47,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 239
+      },
+      {
+        "proposal": 48,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 240
+      },
+      {
+        "proposal": 49,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 241
+      },
+      {
+        "proposal": 50,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 242
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "AttitudeDecay": 10,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 11,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 11
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -3
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 66
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -8
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 1
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 288,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 182,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 51,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 261
+      },
+      {
+        "proposal": 52,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 262
+      },
+      {
+        "proposal": 53,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 263
+      },
+      {
+        "proposal": 54,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 264
+      },
+      {
+        "proposal": 55,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 265
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 12,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 11
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -3
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 76
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -8
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 1
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 52,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 56,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 285
+      },
+      {
+        "proposal": 57,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 286
+      },
+      {
+        "proposal": 58,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 287
+      },
+      {
+        "proposal": 59,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 288
+      },
+      {
+        "proposal": 60,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 289
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "Consumption": 5,
+      "Gift": 5,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 13,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 11
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -3
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 86
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -8
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 1
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 52,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 61,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 307
+      },
+      {
+        "proposal": 62,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 308
+      },
+      {
+        "proposal": 63,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 309
+      },
+      {
+        "proposal": 64,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 310
+      },
+      {
+        "proposal": 65,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 311
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 2,
+      "Consumption": 5,
+      "Farm": 3,
+      "Gift": 2,
+      "Proposal": 5,
+      "Response": 2
+    }
+  },
+  {
+    "cycle": 14,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 11
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -3
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 86
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -8
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 1
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 66,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 328
+      },
+      {
+        "proposal": 67,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 329
+      },
+      {
+        "proposal": 68,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 330
+      },
+      {
+        "proposal": 69,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 331
+      },
+      {
+        "proposal": 70,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 332
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 15,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 9
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -2
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 24
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 94
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -7
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 294,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 294,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 48,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 71,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 362
+      },
+      {
+        "proposal": 72,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 363
+      },
+      {
+        "proposal": 73,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 364
+      },
+      {
+        "proposal": 74,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 365
+      },
+      {
+        "proposal": 75,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 366
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "AttitudeDecay": 10,
+      "Consumption": 5,
+      "Gift": 5,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 16,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 9
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -2
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 24
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 94
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -7
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 76,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 386
+      },
+      {
+        "proposal": 77,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 387
+      },
+      {
+        "proposal": 78,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 388
+      },
+      {
+        "proposal": 79,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 389
+      },
+      {
+        "proposal": 80,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 390
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 17,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 9
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -2
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 24
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -7
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 48,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 81,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 408
+      },
+      {
+        "proposal": 82,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 409
+      },
+      {
+        "proposal": 83,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 410
+      },
+      {
+        "proposal": 84,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 411
+      },
+      {
+        "proposal": 85,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 412
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 18,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 9
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -2
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 34
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -7
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 48,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 86,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 430
+      },
+      {
+        "proposal": 87,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 431
+      },
+      {
+        "proposal": 88,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 432
+      },
+      {
+        "proposal": 89,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 433
+      },
+      {
+        "proposal": 90,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 434
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 19,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 9
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -2
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 34
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -7
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 68,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 91,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 453
+      },
+      {
+        "proposal": 92,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 454
+      },
+      {
+        "proposal": 93,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 455
+      },
+      {
+        "proposal": 94,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 456
+      },
+      {
+        "proposal": 95,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 457
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 20,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 0,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 7
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -1
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 42
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 98
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -6
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 294,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 294,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 64,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 96,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 487
+      },
+      {
+        "proposal": 97,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 488
+      },
+      {
+        "proposal": 98,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 489
+      },
+      {
+        "proposal": 99,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 490
+      },
+      {
+        "proposal": 100,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 491
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "AttitudeDecay": 10,
+      "Consumption": 5,
+      "Gift": 5,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 21,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 0,
+        "NeedsGrain": true,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 7
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -1
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 52
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 98
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": -6
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "Feasibility",
+        "TechnicalFallback": false,
+        "selected": null
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 101,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 509
+      },
+      {
+        "proposal": 102,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 510
+      },
+      {
+        "proposal": 103,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 511
+      },
+      {
+        "proposal": 104,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 512
+      },
+      {
+        "proposal": 105,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Unable",
+        "Reason": "InsufficientAvailableGrain",
+        "eventId": 508
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 1,
+      "Consumption": 4,
+      "Farm": 3,
+      "Gift": 1,
+      "MissedConsumption": 1,
+      "Proposal": 5,
+      "Response": 1,
+      "Unable": 1
+    }
+  },
+  {
+    "cycle": 22,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 7
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -1
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 62
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 98
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": 4
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 104,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 106,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 529
+      },
+      {
+        "proposal": 107,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 530
+      },
+      {
+        "proposal": 108,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 531
+      },
+      {
+        "proposal": 109,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 532
+      },
+      {
+        "proposal": 110,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 533
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "Consumption": 4,
+      "Gift": 4,
+      "Help": 1,
+      "MissedConsumption": 1,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 23,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 7
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -1
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 72
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 98
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": 4
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 124,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 111,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 553
+      },
+      {
+        "proposal": 112,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 554
+      },
+      {
+        "proposal": 113,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 555
+      },
+      {
+        "proposal": 114,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 556
+      },
+      {
+        "proposal": 115,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 557
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 24,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 0,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 7
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": -1
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 82
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 98
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": 4
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 144,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 116,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 576
+      },
+      {
+        "proposal": 117,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 577
+      },
+      {
+        "proposal": 118,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 578
+      },
+      {
+        "proposal": 119,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 579
+      },
+      {
+        "proposal": 120,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 580
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 25,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 0,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 98
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 5
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": 0
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 90
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 96
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": 2
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 294,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 160,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 192,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 121,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 610
+      },
+      {
+        "proposal": 122,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 611
+      },
+      {
+        "proposal": 123,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 612
+      },
+      {
+        "proposal": 124,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 613
+      },
+      {
+        "proposal": 125,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 614
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "AttitudeDecay": 10,
+      "Consumption": 4,
+      "Gift": 4,
+      "Help": 1,
+      "MissedConsumption": 1,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 26,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 0,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 0,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 5
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": 0
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 96
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": 12
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 294,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 126,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 633
+      },
+      {
+        "proposal": 127,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 634
+      },
+      {
+        "proposal": 128,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 635
+      },
+      {
+        "proposal": 129,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 636
+      },
+      {
+        "proposal": 130,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 637
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 4,
+      "Farm": 1,
+      "Gift": 3,
+      "Help": 1,
+      "MissedConsumption": 1,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 27,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 0,
+        "NeedsGrain": true,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 5
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": 0
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 96
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": 12
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "Feasibility",
+        "TechnicalFallback": false,
+        "selected": null
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 131,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Unable",
+        "Reason": "InsufficientAvailableGrain",
+        "eventId": 648
+      },
+      {
+        "proposal": 132,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 655
+      },
+      {
+        "proposal": 133,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 656
+      },
+      {
+        "proposal": 134,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 657
+      },
+      {
+        "proposal": 135,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 658
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 1,
+      "Consumption": 3,
+      "Farm": 2,
+      "Gift": 1,
+      "Help": 1,
+      "MissedConsumption": 2,
+      "Proposal": 5,
+      "Response": 2,
+      "Unable": 1
+    }
+  },
+  {
+    "cycle": 28,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 5
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": 0
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 96
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": 12
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 192,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 136,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 675
+      },
+      {
+        "proposal": 137,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 676
+      },
+      {
+        "proposal": 138,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 677
+      },
+      {
+        "proposal": 139,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 678
+      },
+      {
+        "proposal": 140,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 679
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 4,
+      "Gift": 4,
+      "Help": 1,
+      "MissedConsumption": 1,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 29,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 0,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 0,
+        "NeedsGrain": false,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 5
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": 0
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 100
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 96
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": 12
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 300,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 192,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 141,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 697
+      },
+      {
+        "proposal": 142,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 698
+      },
+      {
+        "proposal": 143,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 699
+      },
+      {
+        "proposal": 144,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 700
+      },
+      {
+        "proposal": 145,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 701
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 30,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Aru",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Bela",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Dagan",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Iltani",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Samu",
+        "Grain": 0,
+        "NeedsGrain": true,
+        "dwelling": 2
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 102,
+        "from": 2,
+        "to": 1,
+        "Value": 98
+      },
+      {
+        "id": 103,
+        "from": 2,
+        "to": 3,
+        "Value": 3
+      },
+      {
+        "id": 104,
+        "from": 3,
+        "to": 2,
+        "Value": 0
+      },
+      {
+        "id": 105,
+        "from": 3,
+        "to": 4,
+        "Value": 98
+      },
+      {
+        "id": 106,
+        "from": 4,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 107,
+        "from": 4,
+        "to": 5,
+        "Value": 98
+      },
+      {
+        "id": 108,
+        "from": 5,
+        "to": 4,
+        "Value": 94
+      },
+      {
+        "id": 109,
+        "from": 5,
+        "to": 1,
+        "Value": 10
+      },
+      {
+        "id": 110,
+        "from": 1,
+        "to": 5,
+        "Value": 0
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Aru",
+        "Context": "Response",
+        "Profile": "Feasibility",
+        "TechnicalFallback": false,
+        "selected": null
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 294,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Bela",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Dagan",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Iltani",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Samu",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "RequestGiftOrHelp",
+          "FinalScore": 100,
+          "terms": {
+            "kind": "RequestGiftOrHelp",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 146,
+        "actor": 1,
+        "actorName": "Aru",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 729
+      },
+      {
+        "proposal": 147,
+        "actor": 2,
+        "actorName": "Bela",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 730
+      },
+      {
+        "proposal": 148,
+        "actor": 3,
+        "actorName": "Dagan",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 731
+      },
+      {
+        "proposal": 149,
+        "actor": 4,
+        "actorName": "Iltani",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 732
+      },
+      {
+        "proposal": 150,
+        "actor": 5,
+        "actorName": "Samu",
+        "kind": "Unable",
+        "Reason": "InsufficientAvailableGrain",
+        "eventId": 728
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 2,
+      "AttitudeDecay": 10,
+      "Consumption": 3,
+      "Farm": 1,
+      "Gift": 2,
+      "Help": 1,
+      "MissedConsumption": 2,
+      "Proposal": 5,
+      "Response": 3,
+      "Unable": 1
+    }
+  }
+]

@@ -1,0 +1,148 @@
+{
+  "cycle": 30,
+  "people": [
+    {
+      "id": 1,
+      "Name": "Aru",
+      "sex": "Male",
+      "Grain": 2,
+      "NeedsGrain": false
+    },
+    {
+      "id": 2,
+      "Name": "Bela",
+      "sex": "Female",
+      "Grain": 2,
+      "NeedsGrain": false
+    },
+    {
+      "id": 3,
+      "Name": "Dagan",
+      "sex": "Male",
+      "Grain": 3,
+      "NeedsGrain": false
+    },
+    {
+      "id": 4,
+      "Name": "Iltani",
+      "sex": "Female",
+      "Grain": 5,
+      "NeedsGrain": false
+    },
+    {
+      "id": 5,
+      "Name": "Samu",
+      "sex": "Male",
+      "Grain": 0,
+      "NeedsGrain": true
+    }
+  ],
+  "dwellings": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ],
+  "residences": [
+    {
+      "id": 1,
+      "person": 1,
+      "dwelling": 1
+    },
+    {
+      "id": 2,
+      "person": 2,
+      "dwelling": 1
+    },
+    {
+      "id": 3,
+      "person": 3,
+      "dwelling": 2
+    },
+    {
+      "id": 4,
+      "person": 4,
+      "dwelling": 2
+    },
+    {
+      "id": 5,
+      "person": 5,
+      "dwelling": 2
+    }
+  ],
+  "attitudes": [
+    {
+      "id": 101,
+      "from": 1,
+      "to": 2,
+      "Value": 100
+    },
+    {
+      "id": 102,
+      "from": 2,
+      "to": 1,
+      "Value": 98
+    },
+    {
+      "id": 103,
+      "from": 2,
+      "to": 3,
+      "Value": 3
+    },
+    {
+      "id": 104,
+      "from": 3,
+      "to": 2,
+      "Value": 0
+    },
+    {
+      "id": 105,
+      "from": 3,
+      "to": 4,
+      "Value": 98
+    },
+    {
+      "id": 106,
+      "from": 4,
+      "to": 3,
+      "Value": 100
+    },
+    {
+      "id": 107,
+      "from": 4,
+      "to": 5,
+      "Value": 98
+    },
+    {
+      "id": 108,
+      "from": 5,
+      "to": 4,
+      "Value": 94
+    },
+    {
+      "id": 109,
+      "from": 5,
+      "to": 1,
+      "Value": 10
+    },
+    {
+      "id": 110,
+      "from": 1,
+      "to": 5,
+      "Value": 0
+    }
+  ],
+  "kinships": [
+    {
+      "id": 201,
+      "first": 1,
+      "second": 2,
+      "kind": "Sibling"
+    }
+  ],
+  "marriages": [],
+  "debts": [],
+  "favours": []
+}
