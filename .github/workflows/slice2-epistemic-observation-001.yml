@@ -1,0 +1,49 @@
+name: slice2-epistemic-observation-001
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  observe:
+    if: github.head_ref == 'observation/slice2-epistemic-pause-001'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout observation branch
+        uses: actions/checkout@v5
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.401
+
+      - name: Restore observation runner
+        run: dotnet restore tools/Mesopotamia.Sim.ObservationRunner/Mesopotamia.Sim.ObservationRunner.csproj
+
+      - name: Verify observation runner formatting
+        run: dotnet format tools/Mesopotamia.Sim.ObservationRunner/Mesopotamia.Sim.ObservationRunner.csproj --verify-no-changes --no-restore
+
+      - name: Build observation runner
+        run: dotnet build tools/Mesopotamia.Sim.ObservationRunner/Mesopotamia.Sim.ObservationRunner.csproj --configuration Release --no-restore
+
+      - name: Execute frozen observation plan
+        env:
+          OBSERVATION_REVISION: ${{ github.event.pull_request.head.sha }}
+          OBSERVATION_DOTNET_SDK: 10.0.401
+        run: >-
+          dotnet run
+          --project tools/Mesopotamia.Sim.ObservationRunner/Mesopotamia.Sim.ObservationRunner.csproj
+          --configuration Release
+          --no-build
+          --
+          --output artifacts/observation/SFL_V0_SLICE2_PAUSE_001
+
+      - name: Upload raw observation package
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sfl-slice2-epistemic-observation-001-raw
+          path: artifacts/observation/SFL_V0_SLICE2_PAUSE_001/
+          if-no-files-found: error
