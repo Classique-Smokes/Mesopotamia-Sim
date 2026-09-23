@@ -88,3 +88,9 @@ Master Architect idea-level reconciliation of the Roads and Retired Vizier corpo
 `CONCEPT_FAMILY_CROSS_INDEX.md`
 
 Navigation index connecting overlapping concept families across SFL, Social Epistemic Dynamics, Institutional Dynamics, and future agency/attention work so related ideas are retrieved together rather than independently rediscovered.
+
+### Cross-program challenge cases
+
+`CROSS_PROGRAM_CHALLENGE_CASES/`
+
+Composite future stress tests that deliberately span multiple conceptual programs and therefore should not be owned or forgotten by any one subsystem. Current seed: **The Accidental Specialist**.
