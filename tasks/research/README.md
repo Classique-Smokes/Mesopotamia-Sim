@@ -5,10 +5,14 @@ This directory contains bounded research, review and maintenance commissions. Th
 ## Live / ready
 
 - `RES-0001_OLD_BABYLONIAN_NIPPUR/` — RETURNS COMPLETE / RECONCILIATION PENDING. Historical research on individual → relationship → household foundations in Old Babylonian Nippur. Durable returns are indexed at `research/historical/RES-0001/`.
-- `POST_IMP0001_BRANCH_HYGIENE_CENSUS.md` — READY FOR LOW-AUTHORITY READ-ONLY DELEGATION. Inventory/classify remote branches; **no deletion authority**.
+- `SFL_V0_SLICE2_PREIMPLEMENTATION_DISCOVERY.md` — SPLIT INTO THREE PARALLEL LOW-AUTHORITY COMMISSIONS; dispatch index: `SFL_V0_SLICE2_PARALLEL_DISCOVERY_DISPATCH.md`.
+- `SFL_V0_SLICE2_DISCOVERY_A_AUTHORITY.md` — accepted subjective-information / recognition authority inventory.
+- `SFL_V0_SLICE2_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — current implementation seam/gap map.
+- `SFL_V0_SLICE2_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — frozen verification/deferred-row trigger map.
 
 ## Closed / historical
 
+- `POST_IMP0001_BRANCH_HYGIENE_CENSUS.md` — COMPLETED; census, reconciliation and deletion execution verified. Final record: `../../research/technical/REPOSITORY_BRANCH_HYGIENE_EXECUTION_RECORD.md`.
 - `TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/` — **CLOSED / PASS**. Final closure evidence: `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`.
 - `GOV-0001_MASTER_ARCHITECT_RULEBOOK_EVAL/` — CLOSED / PROMOTED under DEC-0009.
 
