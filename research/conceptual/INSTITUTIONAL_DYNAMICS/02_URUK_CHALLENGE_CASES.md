@@ -184,6 +184,16 @@ Test:
 - actor can affect institutional interpretation indirectly;
 - role may disappear with the holder or later become formalized.
 
+### The Accidental Specialist
+
+An arbitrary low-level contingency causes one actor to repeat behavior until other actors build expectations, resources, relationships, or dependencies around the pattern. Remove the original cause and test whether the resulting social specialization persists, decays, transfers, or formalizes.
+
+Full cross-program case:
+
+`../CROSS_PROGRAM_CHALLENGE_CASES/THE_ACCIDENTAL_SPECIALIST.md`
+
+This challenge deliberately spans subjective knowledge/reputation, work specialization, effective centrality, informal role formation, and causal/social genealogy. Do not reduce it to any one of those families.
+
 ## 10. Use
 
 A future design candidate should not be accepted merely because it handles its happy path.
