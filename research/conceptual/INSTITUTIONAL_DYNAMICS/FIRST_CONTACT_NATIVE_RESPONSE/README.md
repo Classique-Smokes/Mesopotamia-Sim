@@ -26,6 +26,7 @@ Do not rewrite the foreign response to fit Uruk terminology.
 
 - `source/A_TABLET_OF_QUESTIONS_SENT_ACROSS_THE_BORDER.md` — exact delivered questionnaire.
 - `source/DELIVERY_EVIDENCE.md` — reconstruction of the blind-delivery evidence and the responder's declared response strategy.
+- `source/WONDER_GATHER_HIGH_FIDELITY_PROJECT_HANDOFF_2026-09-23_PARSED.md` — complete parsed-text archive of the received 82-page response, preserving page markers.
 - `analysis/00_INTAKE_MANIFEST.md` — source hashes, page count, branch basis, and provenance status.
 - `analysis/01_RESPONSE_STRUCTURE_MAP.md` — section/page census only.
 - `analysis/02_QUESTION_COVERAGE_AUDIT.md` — maps the twelve questions to the response without yet judging the substance.
