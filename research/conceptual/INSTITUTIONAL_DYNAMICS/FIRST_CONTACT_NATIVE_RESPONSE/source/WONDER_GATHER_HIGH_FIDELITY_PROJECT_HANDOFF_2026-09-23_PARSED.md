@@ -1066,3 +1066,1067 @@ carry capacity;
 gathering percentage;
 construction percentage.
 They are intentionally described as temporary
+
+
+outcome controls.
+They should not be mistaken for the intended final
+fantasy-facing customization language.
+Living Body boundary
+Current procedural movement architecture is
+deliberately hybrid:
+NavMesh owns logical/root movement;
+procedural presentation reacts to measured root
+motion;
+feet/legs/body adapt visually;
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+29
+
+<PARSED TEXT FOR PAGE: 30 / 82>
+
+physics does not currently determine gameplay
+position.
+This preserves RTS control while testing whether
+more embodiment is valuable.
+Important invariants / boundaries
+Current project architecture strongly favors:
+explicit dependencies;
+small components;
+stable GUID preservation;
+runtime/editor assembly separation;
+no UnityEditor references in runtime;
+non-destructive scene generation;
+retaining old milestone scenes for regression/
+reference;
+validating candidate group destinations before
+issuing movement;
+preserving previous valid movement when a new
+order is invalid;
+remembering original production payment/
+duration for refund/cancellation semantics;
+protecting human uncommitted workspace state.
+Intentionally deferred major
+systems
+combat;
+personality;
+courage/morale;
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+30
+
+<PARSED TEXT FOR PAGE: 31 / 82>
+
+arbitrary body anatomy;
+active ragdolls;
+multiple final resources;
+full custom progression;
+design-budget pricing;
+custom base property system;
+multiplayer;
+DOTS/ECS adoption;
+final art/UI;
+localization;
+controller support;
+large-scale performance architecture.
+6. Current workflow
+The observed workflow is roughly:
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+31
+
+<PARSED TEXT FOR PAGE: 32 / 82>
+
+idea / human reaction
+ ↓
+clarify the question
+ ↓
+small bounded milestone
+ ↓
+implementation in an isolated/safe working context
+ ↓
+focused automated tests
+ ↓
+rendered/runtime visual probe when relevant
+ ↓
+correction
+ ↓
+full regression run
+ ↓
+Windows development build
+ ↓
+validation/playtest documentation
+ ↓
+commit
+ ↓
+human experiential playtest
+ ↓
+next question
+Idea / milestone definition
+Usually begins in conversation with the Game
+Director.
+The important discipline is preserving open design
+questions instead of opportunistically deciding them
+because code requires a temporary value.
+Artifact:
+milestone request / design discussion;
+sometimes update to GAME_VISION.md .
+• 
+• 
+32
+
+<PARSED TEXT FOR PAGE: 33 / 82>
+
+Common failure risk:
+implementation convenience becoming accidental
+design authority.
+Implementation
+Historically much work has been performed in an
+isolated validation/development copy rather than
+directly over the user's active working directory.
+This practice arose partly to preserve local human
+modifications.
+Artifacts:
+C#;
+scenes/prefabs/materials;
+editor authoring utilities;
+tests.
+Common failure risk:
+misunderstood scope;
+test setup assumptions;
+provisional architecture becoming over￾generalized.
+Scene/prefab authoring
+The project prefers Unity editor authoring APIs.
+Setup scripts often create new experimental scenes
+and refuse destructive overwrite.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+33
+
+<PARSED TEXT FOR PAGE: 34 / 82>
+
+This has produced preserved vertical slices rather
+than one continuously mutated scene.
+Focused testing
+New behavior gets narrow tests first.
+Failures are investigated rather than simply
+weakening assertions.
+The validation log contains multiple examples where
+the test itself was wrong, and the project records
+that distinction.
+Visual/runtime probe
+For UI/procedural movement, scripted captures have
+been used to inspect:
+clipping;
+layout;
+body pose;
+slope contact;
+selection-ring orientation;
+scroll states.
+Temporary capture code is removed before final
+build.
+Regression
+After focused behavior stabilizes, the broader
+PlayMode suite is run.
+• 
+• 
+• 
+• 
+• 
+• 
+34
+
+<PARSED TEXT FOR PAGE: 35 / 82>
+
+Latest documented full suite:
+61 passed, 0 failed.
+Build
+Milestones commonly produce a Windows x64
+development build.
+The implementation agent does not necessarily
+perform a full human-feel play session of that
+standalone build.
+Human acceptance
+Playtest documents tell the Game Director what to
+inspect.
+This is where work often reaches a genuine
+integration bottleneck: technical work may be ready,
+but the next direction depends on high-context
+human judgment.
+7. AI and agent usage
+High-context conversational/design
+AI - Threadkeeper
+Effective responsibilities:
+retain/reconstruct design history;
+interpret why systems exist;
+• 
+• 
+35
+
+<PARSED TEXT FOR PAGE: 36 / 82>
+
+compare current implementation with original
+intent;
+help shape milestones;
+detect semantic drift;
+distinguish scaffold from intended end state;
+integrate information across many project
+surfaces.
+It should not be treated as the authoritative store of
+current code state.
+The repository now explicitly tries to move
+retrievable state out of this role so attention can be
+spent on integration rather than storage.
+Implementation AI/developer -
+Worldsmith
+Repository history describes Codex/AI-assisted
+implementation handling substantial Unity
+engineering:
+code;
+scene authoring;
+editor utilities;
+tests;
+debugging;
+build/validation work;
+documentation updates.
+These sessions appear task/milestone scoped rather
+than permanently shared-memory agents.
+Continuity is reconstructed from repository artifacts.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+36
+
+<PARSED TEXT FOR PAGE: 37 / 82>
+
+Game Director - Keeper of the
+Horizon
+Human role.
+Controls:
+creative authority;
+milestone priority;
+experiential acceptance;
+design locking/unlocking;
+interpretation of whether a technically valid
+outcome belongs in Wonder Gather.
+This role is intentionally not automated away.
+Fresh independent reviewer - Guest
+Cartographer
+This is newly formalized as optional, not routine.
+Use case:
+silent + consequential risk;
+e.g. save migrations, stable IDs/GUID semantics,
+graph-meaning rewrites, destructive data
+changes, future multiplayer authority.
+There is no standing independent-review process
+today.
+Persistent versus disposable context
+Human Game Director: persistent.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+37
+
+<PARSED TEXT FOR PAGE: 38 / 82>
+
+High-context conversational AI: relatively
+persistent but non-canonical and imperfect.
+Implementation AI sessions: comparatively
+disposable/task scoped.
+Repository: durable shared memory.
+Do agents share context directly?
+No evidence of a live shared multi-agent memory
+fabric.
+Context transfer happens via:
+Git repository;
+current-state/design/architecture docs;
+tests;
+validation history;
+the human owner;
+prompts/handoffs.
+Do agents mutate the repository?
+Yes, implementation agents can directly implement
+and author project changes.
+The high-context design role is also capable of
+repository documentation updates when explicitly
+asked, but should not silently mutate gameplay/
+design state.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+38
+
+<PARSED TEXT FOR PAGE: 39 / 82>
+
+Common AI failure modes observed
+Observed failures include:
+wrong/incomplete API calls causing compile
+failure;
+test setup omitting necessary state;
+edge-condition ordering errors;
+incorrect assertion overloads;
+UI sizing assumptions;
+technically passing behavior that still violates a
+stronger physical invariant;
+initial inability to reconstruct all design context
+because key rationale lived only in conversation.
+The project's response has generally been stronger
+evidence/documentation, not broad bureaucracy.
+8. Failure history and scar
+tissue
+This section is intentionally concrete.
+Failure A - Design context was not
+durable enough
+What happened
+The project began primarily as a long design
+conversation. When implementation started, an
+earlier detailed design dossier was referenced but
+not available to the implementation agent.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+39
+
+<PARSED TEXT FOR PAGE: 40 / 82>
+
+Why
+Conversation context had been functioning as the
+effective specification.
+How detected
+Repository bootstrapping revealed that the agent
+could not independently recover all intended design
+truth.
+What changed
+Docs/DesignBrief.md was created from recovered
+context; later Docs/GAME_VISION.md became the
+canonical living design source.
+Scar tissue
+The project now explicitly distinguishes design
+statuses and has recently added CURRENT_STATE.md
+and DESIGN_RATIONALE.md to reduce dependence on
+conversational memory.
+Failure B - Unity/package
+incompatibility
+What happened
+The initial template/package state included an Input
+System version incompatible with removed APIs.
+Why
+Editor/package version mismatch.
+Detected by
+Compilation/import.
+What changed
+Dependency versions were updated/pinned for the
+current Unity 6.6 environment.
+40
+
+<PARSED TEXT FOR PAGE: 41 / 82>
+
+Scar tissue
+Package lock state and Unity version are treated as
+concrete technical context.
+Failure C - Group arrival crowding
+What happened
+First group movement spacing caused crowding
+near destinations.
+Why
+1.8-unit spacing was insufficient for arriving agents
+among already settled neighbors.
+Detected by
+Runtime testing.
+What changed
+Prototype spacing increased to 2.4.
+Scar tissue
+Group movement validates separate reachable
+destinations rather than issuing every unit the same
+point.
+Failure D - residual movement on
+lifecycle disable
+What happened
+A disabled gathering unit could retain residual
+motion after path reset.
+Why
+ResetPath alone was insufficient to guarantee a
+stopped agent state.
+41
+
+<PARSED TEXT FOR PAGE: 42 / 82>
+
+Detected by
+A stricter lifecycle assertion.
+What changed
+Agent stop state and velocity clearing became
+explicit.
+Scar tissue
+Tests increasingly check invariants beyond broad
+end results.
+Failure E - tests themselves were
+sometimes wrong
+Examples include:
+construction test assuming the wrong world
+location;
+unit-performance test omitting ChooseBuilding
+before placement;
+gathering deadline assuming too many trips in
+too little time;
+wrong NUnit overload in building-network
+assertions.
+Why
+The test harness encoded assumptions that were not
+actually part of runtime behavior.
+Detected by
+Failed focused runs and manual inspection.
+What changed
+Tests were corrected without weakening runtime
+expectations.
+• 
+• 
+• 
+• 
+42
+
+<PARSED TEXT FOR PAGE: 43 / 82>
+
+Scar tissue
+Validation.md carefully distinguishes runtime
+failure from test/setup failure.
+Failure F - persistence error filter
+omitted a real category
+What happened
+Initial faction persistence run passed only 5/8 tests.
+Why
+InvalidDataException was missing from the
+storage-error handling filter.
+Detected by
+Persistence tests.
+What changed
+Error handling was corrected.
+Later persistence work also added:
+save locks;
+hash/state conflict detection;
+backups;
+recovery behavior.
+Scar tissue
+Persistence is treated more defensively because
+player-authored civilizations are high-value state.
+• 
+• 
+• 
+• 
+43
+
+<PARSED TEXT FOR PAGE: 44 / 82>
+
+Failure G - validation-order edge
+case in multiple blueprints
+What happened
+AddUnit returned early at roster capacity before
+checking whether a supplied duplicate blueprint
+belonged to the faction.
+Why
+Validation checks were ordered incorrectly.
+Detected by
+Boundary testing.
+What changed
+Ownership validation moved ahead of the limit
+return.
+Failure H - UI problems visible only
+in rendered output
+Observed examples:
+incorrectly scaled arrows;
+clipped note text;
+horizontal overflow;
+clipped footer;
+long-name overflow.
+Why
+Logic tests did not encode layout/readability.
+Detected by
+Rendered screenshot probes.
+• 
+• 
+• 
+• 
+• 
+44
+
+<PARSED TEXT FOR PAGE: 45 / 82>
+
+What changed
+Iterative layout corrections followed by repeated
+probes.
+Scar tissue
+Green logic tests are not treated as UI acceptance.
+Failure I - Living Body hid physical
+inconsistencies
+What happened
+The Living Body work exposed several different
+categories of failure:
+compile error from a missing raycast argument;
+constant-leg-length assertion found an
+approximately 0.688m leg against 0.68m intent;
+visual inspection revealed excessive crouch and
+feet landing behind the root;
+selection rings remained horizontal and
+intersected slopes.
+Why
+Different parts of the implementation violated
+different invariants: API correctness, geometric
+constraint, visual plausibility, presentation
+alignment.
+Detected by
+compile;
+stronger automated invariant;
+rendered screenshots.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+45
+
+<PARSED TEXT FOR PAGE: 46 / 82>
+
+What changed
+API corrected;
+pelvis minimum-height clamp removed;
+rest posture and predictive landing placement
+revised;
+arm counter-swing tied to actual steps;
+selection rings aligned to support normals.
+Scar tissue
+Procedural movement now demonstrates especially
+clearly that tests and visual judgment are
+complementary evidence systems.
+Failure J - high-context AI was
+becoming a coordination bottleneck
+What happened
+An external architecture questionnaire asked the
+high-context AI to reconstruct nearly the entire
+project: design, truth surfaces, architecture, history,
+failures, governance, AI roles, continuity risk, and its
+own role.
+Why
+Although project state had become more durable,
+cross-project meaning still depended heavily on one
+context-rich conversational role.
+Detected by
+The handoff exercise itself.
+• 
+• 
+• 
+• 
+• 
+46
+
+<PARSED TEXT FOR PAGE: 47 / 82>
+
+What changed
+The project adopted a lightweight continuity layer:
+CURRENT_STATE.md ;
+DESIGN_RATIONALE.md ;
+PROJECT_CULTURE.md ;
+expanded AGENTS.md context routing;
+explicit human-workspace protection.
+Scar tissue
+New shorthand:
+durable state belongs in retrievable artifacts;
+high-context intelligence should spend attention
+on integration and meaning.
+9. Existing harness /
+governance / process
+machinery
+Wonder Gather already has a functioning lightweight
+harness.
+AGENTS.md
+Why it exists: fast behavioral constraints for agents.
+Actually used: yes; repository structure and recent
+work align with it.
+Overhead: low.
+• 
+• 
+• 
+• 
+• 
+47
+
+<PARSED TEXT FOR PAGE: 48 / 82>
+
+Failures mitigated: context overloading, design￾authority drift, workspace destruction, evidence
+overclaiming.
+CURRENT_STATE.md
+Why: eliminate expensive "where are we?"
+reconstruction.
+Actually used: newly added; too early for long-term
+evidence of effectiveness.
+Overhead: intentionally tiny.
+Risk: can become stale if milestone changes are not
+reflected.
+GAME_VISION.md
+Why: durable design authority and status
+separation.
+Actually used: yes; maintained over project
+evolution.
+Overhead: moderate but high value.
+Failures mitigated: implementation accidentally
+becoming design law; lost design context.
+DESIGN_RATIONALE.md
+Why: preserve a small set of dangerous-to-lose
+"whys."
+Actually used: newly added.
+Overhead: intended to remain low by limiting
+48
+
+<PARSED TEXT FOR PAGE: 49 / 82>
+
+entries.
+Failure targeted: semantic drift that still looks
+superficially compliant.
+PROJECT_CULTURE.md
+Why: define collaboration roles, context routing,
+workspace protection, and consequence-sensitive
+review in memorable language.
+Actually used: newly added.
+Overhead: low if treated as optional shorthand
+rather than bureaucracy.
+UnityProjectContext.md
+Why: disposable implementation-agent continuity.
+Actually used: yes, updated milestone by milestone.
+Overhead: moderate.
+Failures mitigated: rediscovery and violation of
+earlier architectural boundaries.
+Validation.md
+Why: preserve execution history, failures, tests,
+builds, and limitations.
+Actually used: extensively.
+Overhead: meaningful but directly tied to
+milestones.
+Failures mitigated: false confidence and repeated
+mistakes.
+49
+
+<PARSED TEXT FOR PAGE: 50 / 82>
+
+Milestone playtest docs
+Why: separate objective verification from Game
+Director experiential judgment.
+Actually used: yes.
+Overhead: low/moderate and task-specific.
+PlayMode regression suite
+Why: protect accumulated behavior while rapidly
+iterating with AI.
+Actually used: constantly.
+Growth: from a few early tests to 61 current
+regression tests.
+Failures mitigated: regressions across movement/
+economy/creator/persistence/locomotion.
+Editor scene-authoring utilities
+Why: deterministic/non-destructive scene creation.
+Actually used: yes.
+Failure mitigated: accidental overwrites and fragile
+manual scene setup.
+Stable-ID + schema/migration
+machinery
+Why: preserve player-authored faction identity
+across versions.
+Actually used: yes.
+Overhead: relatively high, justified by consequence.
+50
+
+<PARSED TEXT FOR PAGE: 51 / 82>
+
+Atomic save/recovery machinery
+Includes:
+temporary writes;
+replacement;
+.bak files;
+locks;
+hash conflict detection;
+deleted-item recovery.
+Why: protect player-authored civilizations.
+Git workflow
+Current reality:
+mostly main -centric history;
+no active issue tracker;
+one historical PR used specifically for the docs￾only continuity/governance change;
+no evidence that mandatory PRs are normal
+project policy;
+no visible repository CI gate currently serving as
+authoritative validation.
+Validation is primarily local + documented.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+51
+
+<PARSED TEXT FOR PAGE: 52 / 82>
+
+10. Coordination bottlenecks
+Primary scarce resource: creative
+integration
+The main bottleneck is not writing code.
+The scarce resource is answering:
+Does this technically plausible thing still
+belong to Wonder Gather?
+That judgment currently belongs to the Game
+Director.
+It is especially required for:
+movement;
+pacing;
+aesthetic tone;
+customization meaning;
+autonomy;
+UI philosophy;
+choosing the next experiment.
+High-context integration
+The Threadkeeper role is useful because the project
+contains relationships among decisions made far
+apart in time.
+Example:
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+52
+
+<PARSED TEXT FOR PAGE: 53 / 82>
+
+"procedural bodies" cannot be evaluated purely as a
+locomotion feature because they connect to:
+observation-as-gameplay;
+unit attachment;
+future personality;
+combat;
+performance scale;
+multiplayer authority.
+The continuity layer reduces raw reconstruction cost,
+but cross-system meaning still requires integration.
+Manual playtesting
+A number of milestones become technically ready
+before they become experientially accepted.
+The current project is exactly in that state.
+That makes the Game Director a legitimate waiting
+point, not an avoidable inefficiency.
+Context transfer to new agents
+This was previously expensive.
+It should now be cheaper because:
+agents begin at CURRENT_STATE.md ;
+then follow only the relevant context path.
+This improvement is new and not yet validated over
+many future milestones.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+53
+
+<PARSED TEXT FOR PAGE: 54 / 82>
+
+Implementation versus integration
+bottlenecks
+Implementation bottleneck: comparatively low at
+present. AI-assisted engineering has produced small
+slices quickly.
+Integration bottleneck: high and increasing as
+systems become more interdependent.
+Questions such as "what should become generic
+now?" or "is this behavior desirable enough to justify
+architectural cost?" increasingly dominate over raw
+coding difficulty.
+Knowledge dangerous to lose
+Especially dangerous:
+civilization-as-deck/network;
+design value vs in-match cost;
+customization as meaningful fictional authorship,
+not raw sliders;
+procedural physicality as embodiment, not
+slapstick spectacle;
+simple commands + rich readable interpretation;
+observation as part of play;
+warnings preferred over prohibition for strange
+designs where possible;
+progression itself is player-authored and may be
+absent;
+implementation is not design authority.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+54
+
+<PARSED TEXT FOR PAGE: 55 / 82>
+
+Most of this is now durable in GAME_VISION.md and 
+DESIGN_RATIONALE.md .
+11. Reversibility and risk
+map
+Cheap and reversible
+Examples:
+placeholder colors/materials;
+HUD copy;
+movement tuning values;
+temporary unit costs;
+test-scene geometry;
+screenshot probes;
+provisional gait timing.
+Failure cost: low.
+Appropriate process: lightweight iteration.
+Expensive but reversible
+Examples:
+creator UI architecture;
+locomotion algorithm;
+provisional performance model;
+economy behavior;
+faction-editor interaction flow.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+55
+
+<PARSED TEXT FOR PAGE: 56 / 82>
+
+Failure cost: moderate; redesign/refactor possible.
+Appropriate process: focused tests + regressions +
+human inspection.
+Difficult to reverse
+Examples:
+save-schema semantics;
+stable blueprint IDs;
+civilization graph meaning;
+command/interface contracts after many systems
+depend on them;
+player-data compatibility promises.
+Failure cost: high.
+Appropriate process: explicit design reconciliation,
+stronger evidence, possibly fresh review.
+Potentially project-corrupting
+Examples:
+silent destructive save migration;
+broken GUID identity;
+mass rewriting of player-created factions;
+implementation silently converting open design
+into durable semantics;
+future multiplayer authority architecture that
+conflicts with physical simulation assumptions.
+Failure cost: very high and potentially silent.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+56
+
+<PARSED TEXT FOR PAGE: 57 / 82>
+
+Appropriate process: isolate candidate, scrutinize
+architecture, fresh independent review before trust.
+Errors easy to detect
+compile errors;
+broken references;
+failing deterministic tests;
+invalid JSON/schema;
+obvious UI clipping;
+unavailable NavMesh routes.
+Errors likely to remain silent
+migration that preserves syntax but changes
+meaning;
+semantic drift from original creative intent;
+stale project-state docs;
+accidental reliance on provisional assumptions;
+save compatibility differences older builds cannot
+understand;
+physical behavior that passes invariants but feels
+wrong.
+Errors likely to compound
+worker-specific assumptions leaking into future
+generic unit architecture;
+single-resource assumptions becoming structural;
+persistence DTOs becoming coupled to temporary
+prototype semantics;
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+57
+
+<PARSED TEXT FOR PAGE: 58 / 82>
+
+final customization model being built around raw
+outcome sliders;
+networking introduced after gameplay assumes
+unconstrained local-only physical authority.
+These are risk directions, not claims that all have
+already happened.
+12. What should probably
+NOT be formalized
+Several areas would currently be harmed by more
+governance.
+Exact procedural movement style
+Still exploratory.
+Do not create rigid gait policy.
+Final trait vocabulary
+Strength, dexterity, courage, discipline, etc. are not a
+finished schema.
+Do not freeze a taxonomy prematurely.
+Resource system
+Current supplies is a proving scaffold.
+Do not create governance around it as though it
+were the final economy.
+• 
+• 
+58
+
+<PARSED TEXT FOR PAGE: 59 / 82>
+
+Design-budget formula
+The two-cost concept is locked; exact mathematics
+are not.
+Do not formalize formulas before enough prototypes
+exist.
+Tech/progression representation
+Player-designed progression is core, but the
+concrete representation remains open.
+Do not standardize a conventional tech tree just
+because it is familiar.
+Combat physics
+Active ragdolls, hit resolution, weapon contact,
+balance, and damage semantics are unresolved
+research areas.
+Do not govern implementation that has not yet
+earned a stable shape.
+Low-risk tuning
+Camera speed, foot lift, temporary cost values, test
+colors, wording, and placeholder proportions do not
+need review ceremony.
+59
+
+<PARSED TEXT FOR PAGE: 60 / 82>
+
+Mandatory PR / CI / ADR
+bureaucracy
+This does not currently need governance.
+There is no demonstrated coordination problem that
+justifies mandatory PR review, broad ADR
+production, or remote CI as a prerequisite to
+ordinary exploration.
+That may change if team size, external releases, or
+compatibility obligations change.
+13. Continuity and
+succession risk
+If the implementation AI
+disappeared tomorrow
+Loss would be manageable.
+A successor could reconstruct most current technical
+state from:
+source code;
+CURRENT_STATE.md ;
+UnityProjectContext.md ;
+Validation.md ;
+playtest docs;
