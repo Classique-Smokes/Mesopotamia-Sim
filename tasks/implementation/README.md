@@ -4,7 +4,7 @@
 
 ## Active
 
-None. Slice 2 remains gated by the Birth Run 001 observational pause.
+None.
 
 ## Completed
 
@@ -12,7 +12,7 @@ None. Slice 2 remains gated by the Birth Run 001 observational pause.
 
 ## Ready for dispatch
 
-None.
+- `IMP-0002_SFL_V0_SLICE2_SUBJECTIVE_KNOWLEDGE.md` — **READY FOR DISPATCH** after canonical merge of the frozen Slice-2 acceptance package. Frozen authority: `SFL-V0-S2-ACCEPTANCE-v1` at ref `sfl-v0-slice2-acceptance-v1`.
 
 ## Rules
 
