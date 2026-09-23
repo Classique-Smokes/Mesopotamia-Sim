@@ -27,7 +27,14 @@ public sealed partial class Simulation
 
     public WorldSnapshot Snapshot => published;
     public Configuration Configuration => initial.Configuration;
-    private string ActiveRulesVersion => initial.Configuration.Version == "SFL-S3-v1" ? "SFL-S3-v1" : Configuration.RulesVersion;
+    // Scenario names do not select semantics. Attribute each context to the rules it exercises.
+    private static string RulesVersionFor(ActionTerms? terms, ActorEpistemicState actor) => terms switch
+    {
+        RequestHouseholdParticipation or InviteHouseholdParticipation or EndHouseholdParticipation => HouseholdRulesVersion,
+        CommunicateClaim { Claim: HeldHouseholdRecognition } => HouseholdRulesVersion,
+        CommunicateClaim { Claim: HeldFact fact } when actor.Facts.Any(f => f.Id == fact.Evidence && f.Proposition is HouseholdExistenceFact) => HouseholdRulesVersion,
+        _ => Configuration.RulesVersion
+    };
     public EpistemicSnapshot EpistemicSnapshot => publishedEpistemic;
     public ActorEpistemicState EpistemicStateOf(PersonId actor) => publishedEpistemic.Actors[actor];
 }

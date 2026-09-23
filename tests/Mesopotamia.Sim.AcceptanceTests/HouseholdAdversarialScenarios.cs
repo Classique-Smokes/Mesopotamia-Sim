@@ -31,7 +31,8 @@ internal sealed partial class HouseholdScenarios
                 Assert.AreEqual(moveFirst ? OutcomeKind.InvalidatedAtResolution : OutcomeKind.Committed, admission.Kind);
                 Assert.AreEqual(moveFirst ? 0 : 1, lab.Sim.HouseholdSnapshot.Entries.Count);
                 Assert.IsTrue(result.Outcomes.All(o => result.Events.Single(e => e.Id == o.Event).TechnicalFallback));
-                Assert.IsTrue(result.Decisions.Where(d => d.Context == "Response").All(d => d.RulesVersion == "SFL-S3-v1"));
+                Assert.AreEqual("SFL-S3-v1", result.Decisions.Single(d => d.Context == "Response" && d.Actor == P(1)).RulesVersion);
+                Assert.AreEqual("SFL-S2-v1", result.Decisions.Single(d => d.Context == "Response" && d.Actor == P(4)).RulesVersion);
             }
         });
         yield return new("DisconnectedHouseholdDoesNotChangeContinuity", ["087", "088", "085"], () =>

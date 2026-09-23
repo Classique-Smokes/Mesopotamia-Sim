@@ -96,7 +96,8 @@ public sealed partial class Simulation
                 string? invalid = ActionRules.Invalid(proposal, decisionSnapshot) ?? HouseholdRules.Invalid(proposal, households);
                 if (invalid is null && proposal.Terms is CommunicateClaim claim &&
                     !CommunicationRules.Holds(decisionEpistemic.Actors[proposal.Actor], claim.Claim)) invalid = "PropositionNotHeld";
-                SemanticEvent proposed = Record("Proposal", proposal.Id, [proposal.Actor], [], [], ActionRules.Describe(proposal.Terms));
+                SemanticEvent proposed = Record("Proposal", proposal.Id, [proposal.Actor], [], [], ActionRules.Describe(proposal.Terms),
+                    rulesVersion: RulesVersionFor(proposal.Terms, decisionEpistemic.Actors[proposal.Actor]));
                 events[^1] = proposed with { Action = proposal.Terms };
                 if (invalid is not null)
                 {
@@ -198,7 +199,14 @@ public sealed partial class Simulation
             publishedHouseholds = households.Snapshot(cycle);
             bool deadlock = state.People.Count > 0 && state.People.Values.All(p => p.NeedsGrain && p.Grain == 0) &&
                 !FutureInputsResolveMaterialBlock();
-            ImmutableArray<DecisionTrace> completedDecisions = decisions.Select(d => d with { Cycle = cycle, RulesVersion = ActiveRulesVersion }).ToImmutableArray();
+            ImmutableArray<DecisionTrace> completedDecisions = decisions.Select(d => d with
+            {
+                Cycle = cycle,
+                ConfigurationVersion = initial.Configuration.Version,
+                RulesVersion = d.Proposal is { } id ? events.Single(e => e.Kind == "Proposal" && e.Proposal == id).RulesVersion :
+                    d.Candidates.Any(c => RulesVersionFor(c.Terms, decisionEpistemic.Actors[d.Actor]) == HouseholdRulesVersion)
+                        ? HouseholdRulesVersion : Configuration.RulesVersion
+            }).ToImmutableArray();
             decisionHistory.AddRange(completedDecisions);
             return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = completedDecisions, Epistemic = publishedEpistemic, Households = publishedHouseholds };
         }
@@ -435,11 +443,11 @@ public sealed partial class Simulation
     }
 
     private SemanticEvent Record(string kind, ProposalId? proposal, ImmutableArray<PersonId> participants,
-        ImmutableArray<EventId> causes, ImmutableArray<MaterialChange> material, string detail, bool fallback = false)
+        ImmutableArray<EventId> causes, ImmutableArray<MaterialChange> material, string detail, bool fallback = false, string? rulesVersion = null)
     {
         SemanticEvent entry = new(new(checked(nextEvent++)), cycle, checked(reactionIndex++), kind, proposal,
             participants, causes, material, detail, initial.Configuration.Version, fallback)
-        { RulesVersion = ActiveRulesVersion };
+        { RulesVersion = rulesVersion ?? (proposal is { } id ? events.SingleOrDefault(e => e.Kind == "Proposal" && e.Proposal == id)?.RulesVersion : null) ?? Configuration.RulesVersion };
         events.Add(entry);
         return entry;
     }

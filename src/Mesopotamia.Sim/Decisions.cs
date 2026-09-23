@@ -30,6 +30,7 @@ public sealed record DecisionTrace(PersonId Actor, ProposalId? Proposal, string 
 {
     public long Cycle { get; init; }
     public string RulesVersion { get; init; } = Configuration.RulesVersion;
+    public string ConfigurationVersion { get; init; } = "";
 }
 public sealed record ParticipantOutcome(EventId Event, ProposalId Proposal, OutcomeKind Kind, string Reason);
 public sealed record CauseKey(string Rule, EventId Trigger, PersonId From, PersonId To);

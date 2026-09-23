@@ -10,6 +10,8 @@ The only additional controlled writes are inert candidate declarations, explicit
 
 The Slice-3 output package contains `slice3-results.json` (implementation SHA, dirty-state flag, exact frozen identities, individual results and inherited evidence), `slice3-cases.json`, `slice3-fixtures.json`, and `slice3-producers.json`. CI checks out the exact PR head and uploads the combined `sfl-slice1-slice2-slice3-acceptance-evidence` artifact. Fresh independent exact-candidate conformance remains a separate mandatory gate.
 
+`HouseholdRepairV2Scenarios` adds detached participation-warrant corruptions (P17/P18/P19 and isolated identity, timing, endpoint, residence, tie and provenance controls), custom-label/mixed-rule provenance, and remote-bearer staleness followed by accepted communication. The independent oracle binds participation to proposal/acceptance history, reconstructs current associations and the residence/tie precommit state, checks real support events, and validates both actors' held recognition bases and source/communication chains. It uses no production participation validator or continuity classifier.
+
 ## Retained Slice-1 and Slice-2 verification
 
 This project is the executable verification surface for IMP-0001.

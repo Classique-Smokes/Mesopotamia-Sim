@@ -45,7 +45,7 @@ No checkpoint format, concurrency, stochastic policy, or head/office/spending au
 
 To exercise selection, use `PersonalPolicy("SFL-COMMUNICATION-LAB-v1") { Communication = ... }`. Its pinned 100-point communication preference is laboratory configuration, not accepted autonomous social motivation. The actor-specific gate precedes scoring and the trace carries the exact relevant evidence. Existing Slice-1 profiles retain their behavior and explicit observation inputs; those inputs do not become a generic nonparticipant perception system.
 
-Current state retains stale facts until accepted evidence supersedes them. Precedence is limited to newer direct evidence and newer event-backed reports in the accepted cases. There is no universal factual-conflict algebra, trust model, invented claims, or behavior-affecting epistemic cache. `RulesVersion` on semantic events and decisions identifies `SFL-S2-v1` separately from a caller-supplied scenario configuration label.
+Current state retains stale facts until accepted evidence supersedes them. Precedence is limited to newer direct evidence and newer event-backed reports in the accepted cases. There is no universal factual-conflict algebra, trust model, invented claims, or behavior-affecting epistemic cache. `RulesVersion` on semantic events and decisions identifies the rules exercised separately from the caller-supplied `ConfigurationVersion` label. Ordinary inherited actions retain `SFL-S2-v1` even in a cycle that also exercises household actions.
 
 ## Household substrate (IMP-0003)
 
@@ -63,7 +63,9 @@ Household dependency analysis partitions affected people, households and candida
 
 Provision commitments are authoritative backing, not grain ownership or spending permission. The internal verification-only prerequisite seam requires fixture and producer provenance. Runtime solicitation, household spending and head/office state are absent. Exposed capacity is zero for NeedsGrain and otherwise `max(0, grain - 2)`; participation end and dissolution terminate backing without confiscation.
 
-Use `new Configuration("SFL-S3-v1")` for Slice-3 laboratory runs. Household warrants/events identify the S3 rule version independently of the scenario configuration label. The legacy S2 configuration/profile and its existing assertions are retained. Slice-3 mechanism scenarios submit typed household actions; this slice does not extend the autonomous policy with new social motivation.
+Scenario configuration labels are arbitrary and do not select rule semantics. Household participation/exit proposals, responses and outcomes, household fact/Recognition communication, and household warrants/events identify `SFL-S3-v1`. Mixed cycles retain S2 provenance for ordinary inherited actions. Decision traces retain the scenario label separately as `ConfigurationVersion`. Slice-3 mechanism scenarios submit typed household actions; this slice does not extend the autonomous policy with new social motivation.
+
+Continuation evidence is acquired only by direct parties to its causal entry/exit transition. Other current sustaining participants retain their prior Recognition and provenance until accepted communication or direct participation supplies new evidence. Their retained, explicit bridge evidence can support a ContinuationWarrant without granting them automatic knowledge of the new transition.
 
 ## Verification
 

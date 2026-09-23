@@ -71,11 +71,12 @@ public sealed partial class Simulation
         EventId previousEvent = previous?.Stamp.Event ?? households.Formations[previousId].Stamp.Event;
         ImmutableArray<HouseholdRecognition> recognition = [.. bridges.Select(b => epistemic.Of(b).HouseholdRecognitions.Single(r => r.Household == h))];
         WarrantId id = households.AllocateWarrant();
-        SemanticEvent e = HouseholdEvent("HouseholdContinued", [.. current.Select(a => a.Person)], [cause.Id, previousEvent],
+        SemanticEvent e = HouseholdEvent("HouseholdContinued", cause.Participants, [cause.Id, previousEvent],
             $"Household:{h.Value};Warrant:{id.Value};Previous:{previousId.Value};Transition:{transition.Value}");
         households.Continuations.Add(id, new(id, h, previousId, transition, prior, [.. current.Select(a => a.Id)], bridges, recognition, Stamp(e)));
-        // Direct participants in this sustaining transition acquire its evidence; outsiders retain their old basis.
-        RecognizeHousehold(h, id, true, [.. current.Select(a => a.Person)], e);
+        // A retained bridge basis is evidence for continuity, not an observation entitlement.
+        // Only direct parties to the causal transition acquire its new evidence.
+        RecognizeHousehold(h, id, true, cause.Participants, e);
     }
 
     private void RecognizeHousehold(HouseholdId h, WarrantId warrant, bool continues, ImmutableArray<PersonId> participants, SemanticEvent cause)

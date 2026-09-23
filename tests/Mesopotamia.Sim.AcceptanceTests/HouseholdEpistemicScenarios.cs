@@ -18,6 +18,8 @@ internal sealed partial class HouseholdScenarios
             Assert.IsTrue(old.Evidence.SequenceEqual(lab.Sim.EpistemicStateOf(P(4)).HouseholdRecognitions.Single().Evidence));
             Exit(lab, h, 2);
             Assert.IsTrue(old.Evidence.SequenceEqual(lab.Sim.EpistemicStateOf(P(4)).HouseholdRecognitions.Single().Evidence));
+            // The exit party has direct continuation evidence; the retained bearer needs communication.
+            lab.Step((2, new CommunicateClaim(P(1), new HeldHouseholdRecognition(h))));
             lab.Step((1, new CommunicateClaim(P(4), new HeldHouseholdRecognition(h))));
             HouseholdRecognition refreshed = lab.Sim.EpistemicStateOf(P(4)).HouseholdRecognitions.Single();
             Assert.AreEqual(RecognitionStatus.Recognized, refreshed.Status);
