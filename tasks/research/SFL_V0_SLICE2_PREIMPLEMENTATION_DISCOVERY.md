@@ -1,6 +1,6 @@
 # SFL v0 Slice 2 — Pre-Implementation Discovery Inventory
 
-**Status:** READY FOR LOW-AUTHORITY DELEGATION  
+**Status:** SPLIT INTO THREE PARALLEL LOW-AUTHORITY COMMISSIONS  
 **Class:** Research / inventory / implementation-readiness discovery  
 **No implementation authority:** yes  
 **No semantic promotion authority:** yes  
@@ -109,22 +109,23 @@ Do not:
 - pull household/office/checkpoint mechanics forward;
 - promote Institutional Dynamics concepts into Slice 2.
 
-## 6. Return format
+## 6. Delegated return structure
 
-Add only:
+This umbrella task is now executed through:
 
-`research/technical/SFL_V0_SLICE2_PREIMPLEMENTATION_DISCOVERY.md`
+- `SFL_V0_SLICE2_DISCOVERY_A_AUTHORITY.md`;
+- `SFL_V0_SLICE2_DISCOVERY_B_IMPLEMENTATION_SURFACES.md`;
+- `SFL_V0_SLICE2_DISCOVERY_C_VERIFICATION_TRIGGERS.md`.
 
-The report should include:
+Dispatch/reconciliation boundary:
 
-- retrieved authority list;
-- accepted-semantics inventory;
-- implementation-gap map;
-- deferred-verification map;
-- bounded escalation list;
-- recommended next planning action.
+`SFL_V0_SLICE2_PARALLEL_DISCOVERY_DISPATCH.md`
 
-Do not edit production code, accepted spec, ADRs, verification authority, or observation records.
+The three workers return separate reports. They do **not** author a combined `SFL_V0_SLICE2_PREIMPLEMENTATION_DISCOVERY.md`.
+
+The Master Architect owns the combined synthesis after retrieving all three returns plus the separately preserved conceptual tablets.
+
+Do not edit production code, accepted spec, ADRs, verification authority, observation records, or the new tablet source collections.
 
 ## 7. Completion condition
 
