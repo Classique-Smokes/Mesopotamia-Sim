@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / IMP-0003 CANDIDATE-v2 FROZEN / FRESH CONFORMANCE NEXT.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / IMP-0003 CANDIDATE-v2 BLOCKED / REPAIR-v3 ACTIVE.**
 
 Verified Slice-1 completion:
 
@@ -116,6 +116,14 @@ IMP-0003 candidate-v2:
 - repair report: `tasks/implementation/IMP-0003_REPAIR_V2_REPORT.md`
 - S1-084 adaptation gate: **UNFIRED**
 - fresh conformance task: `tasks/implementation/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V2_PACKET.md`
+
+IMP-0003 candidate-v2 BLOCK review:
+
+- report: `research/technical/IMP-0003/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V2.md`
+- verdict: **BLOCK — IMPLEMENTATION / VERIFICATION DEFECT**
+- reconciliation: `research/technical/IMP-0003/IMP-0003_CANDIDATE_V2_BLOCK_RECONCILIATION.md`
+- repair packet: `tasks/implementation/IMP-0003_CANDIDATE_V2_BLOCK_REPAIR_PACKET.md`
+- repair branch: `implementation/imp-0003-slice3-repair-v3`
 
 TRES-0010 closure evidence:
 
@@ -210,10 +218,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Dispatch `tasks/implementation/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V2_PACKET.md` against immutable candidate-v2 `imp-0003-slice3-conformance-candidate-v2`.
-2. Do not merge/promote PR #56 unless fresh conformance returns **PASS — PROMOTE**.
-3. If candidate-v2 BLOCKs, preserve it unchanged and reconcile only the new defect set.
-4. If candidate-v2 PASSes, promote the exact candidate, run canonical post-merge CI, and write the IMP-0003 final completion/promotion record.
-5. After successful promotion, run `plans/SFL_V0_SLICE3_POSTIMPLEMENTATION_OBSERVATION_PLAN.md` before detailed Slice-4 planning.
+1. Dispatch `tasks/implementation/IMP-0003_CANDIDATE_V2_BLOCK_REPAIR_PACKET.md` on `implementation/imp-0003-slice3-repair-v3`.
+2. Preserve immutable candidate-v2 `imp-0003-slice3-conformance-candidate-v2` @ `69ae753da2e05450766a9042ac6958fa7aa0b3e7`.
+3. Repair only the remaining warrant-oracle gaps and false fallback normalization defect.
+4. After exact-head CI, freeze candidate-v3 and commission a fresh whole-candidate conformance review.
+5. Promote only on **PASS — PROMOTE**.
+6. After successful promotion, run `plans/SFL_V0_SLICE3_POSTIMPLEMENTATION_OBSERVATION_PLAN.md` before detailed Slice-4 planning.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
