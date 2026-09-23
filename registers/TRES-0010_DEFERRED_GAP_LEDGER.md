@@ -15,7 +15,7 @@ A deferred item must be resolved before the trigger named below. Deferral is not
 
 | ID | Gap | Current disposition | Trigger for resolution | Slice-1 impact |
 |---|---|---|---|---|
-| LATER-01 | CandidateOrganization same-candidate equivalence / convergence before formation | DEFERRED | Before household-formation implementation can create/reconcile multiple candidate labels/evidence paths | None; CandidateOrganization/household formation absent from IMP-0001 |
+| LATER-01 | CandidateOrganization same-candidate equivalence / convergence before formation | **FIRED / BOUNDED DEFERRED** | Slice 3 proceeds with one stable inert candidate referent per prospective formation episode and no multi-label convergence. Resolve before any implementation creates/reconciles distinct referents as the same prospective organization. | No Slice-1/2 impact; general convergence remains semantically unresolved. |
 | LATER-02 | Actor departure transition semantics if departure becomes executable | DEFERRED | Before any implementation slice enables actor departure as fixture/generated/runtime input | IMP-0001 explicitly excludes executable departure; fixed Slice-1 population |
 | LATER-03 | Rejoin / re-exit lineage-source selection when one founder has repeated predecessor-participation history | DEFERRED | Before lineage classification accepts such histories | None; lineage absent from IMP-0001 |
 | LATER-04 | Authority-destroying transition versus already accepted authority-dependent action in same cycle | DEFERRED | Before head/household authority transitions and authority-dependent actions coexist executably | None; household/head actions absent from IMP-0001 |
@@ -25,12 +25,12 @@ A deferred item must be resolved before the trigger named below. Deferral is not
 
 | ID | Item | Current disposition | Trigger for resolution | Slice-1 impact |
 |---|---|---|---|---|
-| VH-01 | Exit-side ContinuationWarrant verification should explicitly prove the semantic requirement from both entry/exit directions | DEFERRED HARDENING | Before continuity becomes implementation-completion evidence | None |
+| VH-01 | Exit-side ContinuationWarrant verification should explicitly prove the semantic requirement from both entry/exit directions | **FIRED / SLICE-3 REQUIRED HARDENING** | Slice-3 continuity completion authority | Must be explicit in Slice-3 acceptance evidence. |
 | VH-02 | Generated-history validity must not be circularly filtered by the production gate under test | DEFERRED HARDENING | If generated histories become required completion evidence | Generated histories are UNEXERCISED for Slice 1 |
-| VH-03 | “Verified checkpoint” reuse should carry verifiable producer/pass/fixture-audit provenance | DEFERRED HARDENING | Before downstream cards rely on produced checkpoints as accepted fixtures | Checkpoint/save-load deferred from Slice 1 |
+| VH-03 | “Verified checkpoint” reuse should carry verifiable producer/pass/fixture-audit provenance | **FIRED / SLICE-3 REQUIRED HARDENING** | Any Slice-3 downstream witness reusing produced Household state | This is scenario producer provenance, not engine save/restore. |
 | VH-04 | Checkpoint omission mutants need a continuation suffix that causally exercises the omitted state | DEFERRED HARDENING | Before checkpoint omission mutation becomes completion evidence | Checkpoint/save-load deferred from Slice 1 |
-| VH-05 | Event-observer eligibility and recognition updates after decisive dissolution/head-vacancy evidence need explicit verification | DEFERRED HARDENING | Before recognition + lifecycle/head vacancy are implemented together | Household recognition/head absent from Slice 1 |
-| VH-06 | Household/reaction-chain derived-state refresh timing needs targeted verification | DEFERRED HARDENING | Before later household reactions depend on derived/cache refresh within closure | Slice-1 cache authority still covered by frozen manifest structural/rebuild checks |
+| VH-05 | Event-observer eligibility and recognition updates after decisive dissolution/head-vacancy evidence need explicit verification | **PARTIALLY FIRED** | Slice 3 must cover lifecycle/continuity recognition using already accepted participation/communication routes; head-vacancy half remains Slice 4. | No generic nonparticipant observation may be invented. |
+| VH-06 | Household/reaction-chain derived-state refresh timing needs targeted verification | **FIRED / SLICE-3 REQUIRED HARDENING** | Formation/participation/continuity/lifecycle/lineage reaction closure | Preserve cache nonauthority and stable-cycle publication. |
 
 ## Closed / non-deferred TRES-0010 concerns
 

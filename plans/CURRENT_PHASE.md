@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / SLICE 3 PRE-IMPLEMENTATION DISCOVERY ACTIVE.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / SLICE 3 DISCOVERY RECONCILED / ACCEPTANCE AUTHORITY NEXT.**
 
 Verified Slice-1 completion:
 
@@ -166,13 +166,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Run the three fresh regular Slice-3 discovery commissions:
-   - `tasks/research/SFL_V0_SLICE3_DISCOVERY_A_AUTHORITY_GAPS.md`;
-   - `tasks/research/SFL_V0_SLICE3_DISCOVERY_B_IMPLEMENTATION_SURFACES.md`;
-   - `tasks/research/SFL_V0_SLICE3_DISCOVERY_C_VERIFICATION_TRIGGERS.md`.
-2. Reconcile the three returns before drafting Slice-3 acceptance authority.
-3. Treat `LATER-01` CandidateOrganization equivalence/convergence as a fired trigger. Escalate to the Project Director only if the bounded Slice-3 formation path cannot avoid or derive the missing rule from accepted authority.
-4. Resolve the Slice3/Slice4 boundary for grounded collective capability before implementation: do not pull HouseholdHeadRole / HouseholdDecisionContext forward merely for convenience.
-5. Do **not** use the rustic reference policy as permission to redesign personal agency during Slice 3.
+1. Draft a separate Slice-3 acceptance/applicability authority from `research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md`.
+2. Make formation, continuity, lifecycle, Household Recognition, controlled lineage, provision-backing/derived-capacity substrate, and exact prior-slice regressions omission-detectable.
+3. Keep general CandidateOrganization convergence deferred under the bounded one-referent-per-formation-episode rule; escalate only if implementation needs multi-label convergence.
+4. Keep head/office, provision solicitation/spending, mediated marriage, and HouseholdDecisionContext in Slice 4.
+5. Commission a fresh regular pre-code review and freeze only after **PASS — MAY FREEZE UNCHANGED**.
+6. Do **not** begin IMP-0003 coding before that freeze.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
