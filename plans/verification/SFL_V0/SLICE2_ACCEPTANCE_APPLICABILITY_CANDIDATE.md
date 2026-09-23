@@ -216,7 +216,7 @@ It may not call production:
 - evidence-precedence helper;
 - CandidateRecognition derivation helper whose output is under judgment.
 
-If fresh review finds this concrete witness still requires an unaccepted semantic distinction, candidate v2 BLOCKS and that exact distinction is escalated.
+If fresh review finds this concrete witness still requires an unaccepted semantic distinction, this candidate BLOCKS and that exact distinction is escalated.
 
 ## 8. Applicability table
 
