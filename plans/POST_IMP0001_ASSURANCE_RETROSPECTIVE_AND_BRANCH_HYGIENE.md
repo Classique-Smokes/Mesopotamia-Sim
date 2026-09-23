@@ -1,6 +1,6 @@
 # Post-IMP-0001 Assurance Retrospective + Branch Hygiene
 
-**Status:** ASSURANCE RETROSPECTIVE COMPLETE / BRANCH CENSUS PENDING  
+**Status:** ASSURANCE RETROSPECTIVE COMPLETE / BRANCH CENSUS+RECONCILIATION COMPLETE / CLEANUP EXECUTION PENDING  
 **Role:** One combined lightweight maintenance/learning task  
 **Purpose:** Capture the durable process lessons from the first independent implementation BLOCK and reduce branch clutter without turning either concern into a new bureaucracy.
 
@@ -8,13 +8,14 @@
 
 The assurance-retrospective workstream is complete and has already been promoted into the existing assurance protocol without adding a new governance layer.
 
-The remaining workstream is repository branch hygiene:
+The branch-hygiene census and Master Architect reconciliation are complete.
 
-1. delegate the read-only census;
-2. reconcile only ambiguous/evidence-sensitive refs;
-3. perform destructive cleanup only after the **active IMP-0001 conformance lineage** no longer needs the affected refs.
+Durable records:
 
-At present IMP-0001 is in repair-v3 after candidate-v2 K4 BLOCK. The census may run now, but cleanup must not interfere with repair-v3, candidate-v3 freezing, or fresh candidate-v3 review.
+- `research/technical/REPOSITORY_BRANCH_HYGIENE_CENSUS.md`
+- `research/technical/REPOSITORY_BRANCH_HYGIENE_RECONCILIATION.md`
+
+IMP-0001 is VERIFIED COMPLETE, so the former repair/conformance timing gate has cleared. The exact approved deletion set is frozen in the reconciliation record. Physical ref deletion remains a separate low-authority clerical execution because the current GitHub connector does not expose branch deletion.
 
 ## 2. Guiding principle
 
@@ -153,17 +154,16 @@ Do not delete a branch merely because its commits are old.
 
 ## 7. Timing of destructive cleanup
 
-Read-only census may begin now.
+The former destructive-cleanup timing gate is satisfied:
 
-Actual branch deletion should wait until:
+- repair-v3 returned;
+- candidate-v3 was frozen;
+- fresh K4 returned PASS;
+- candidate-v3 was promoted to canonical main;
+- IMP-0001 was closed VERIFIED COMPLETE;
+- no open PR remains.
 
-- repair-v3 has returned;
-- candidate-v3 (or any later candidate) has been frozen;
-- its fresh K4 disposition is known;
-- the disposition of PR #7, PR #16 and active repair PR #23 is clear;
-- no branch scheduled for deletion is still required to reproduce the active repair/conformance lineage.
-
-Because v2 BLOCKed, preserve all refs needed for the v3 repair/review lineage and clean only unrelated branches until that lineage settles.
+Deletion may now proceed **only** from the exact approved set in `REPOSITORY_BRANCH_HYGIENE_RECONCILIATION.md`.
 
 ## 8. Cleanup executor
 
