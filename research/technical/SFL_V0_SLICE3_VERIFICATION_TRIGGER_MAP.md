@@ -148,7 +148,7 @@ New Slice-3 acceptance coverage is required for:
 
 The controlled lineage family is **REQUIRED in Slice 3**.
 
-Reason: SPEC `7.7 makes lineage part of household formation/identity semantics; every canonical lineage prerequisite is available from Slice-3 formation/participation/lifecycle substrate; lineage has no head-role, household-decision, or checkpoint dependency; no later Stage-4 slice is assigned the household-lineage substrate.
+Reason: SPEC §7.7 makes lineage part of household formation/identity semantics; every canonical lineage prerequisite is available from Slice-3 formation/participation/lifecycle substrate; lineage has no head-role, household-decision, or checkpoint dependency; no later Stage-4 slice is assigned the household-lineage substrate.
 
 Required cards:
 
@@ -180,7 +180,7 @@ Why this is not a mere test-detail choice:
 - VS-SFL-041/042 require household-mode expenditure through a head;
 - VS-SFL-044 is explicitly head reconsideration;
 - VS-SFL-046 is actual collective expenditure;
-- SPEC `8.5 says collective action requires Active H + occupied head + valid authority + backing/capacity;
+- SPEC §8.5 says collective action requires Active H + occupied head + valid authority + backing/capacity;
 - Slice 4, not Slice 3, owns the representative/head role.
 
 Therefore this commission does not invent a headless provision-request path merely to satisfy the phrase “grounded collective capability.”
@@ -235,7 +235,7 @@ VS-SFL-075 is especially important for Slice 3. The suite must observe the same-
 | VS-SFL-086 — decision-trace completeness | **REGRESSION-PROTECTED INHERITED**; applies to any actual personal/response context used by Slice-3 participation scenarios |
 | VS-SFL-087 — causal explanation surface | **STILL FUTURE / UNEXERCISED as the canonical rendered-explanation obligation**; its causal-intervention method is still appropriate for independent Slice-3 oracles |
 
-Important distinction: engine checkpoint/restore remains Slice 5, but VH-03 verification-checkpoint provenance fires now because continuity/lineage scenarios reuse verified upstream scenario results. See `8.
+Important distinction: engine checkpoint/restore remains Slice 5, but VH-03 verification-checkpoint provenance fires now because continuity/lineage scenarios reuse verified upstream scenario results. See §8.
 
 ### 4.10 Lower-Level Social Fabric and Response Decision families
 
@@ -931,17 +931,17 @@ The acceptance manifest should therefore not freeze until the separate authority
 
 ### Exact inherited regressions
 
-At minimum the Slice-3 authority must explicitly bind the IDs listed in `9, including:
+At minimum the Slice-3 authority must explicitly bind the IDs listed in §9, including:
 
 - S2-001 through the cited objective/subjective/no-sync set;
-- the exact S2 communication/provenance/staleness set S2-020F/R through S2-033 identified in `9.2;
+- the exact S2 communication/provenance/staleness set S2-020F/R through S2-033 identified in §9.2;
 - S1-098-CORE / S1-105 initiative-response accounting;
 - S1-085 / S1-META-04 / S1-MUT-26 / S2-050 observer noninterference;
 - S1-META-03 / S2-008 locality;
 - S1-081 / S1-META-02 / S1-GLOBAL-FALLBACK / S2-052 / S2-053 fallback/ID quarantine;
 - S1-084 / S1-META-05 / S1-MUT-24 / S2-054 cache nonauthority;
 - S1-074-IDEMP / S1-MUT-22 / S1-MUT-23 and S2 receipt-no-reactivation stable-closure protections;
-- S1-091-MEANING-SEPARATION, S1-095-NO-RESIDENCE, S1-096-NO-HH, S1-096-MARRIAGE-CONTROL, and the failure/revalidation rows identified in `9.9;
+- S1-091-MEANING-SEPARATION, S1-095-NO-RESIDENCE, S1-096-NO-HH, S1-096-MARRIAGE-CONTROL, and the failure/revalidation rows identified in §9.9;
 - S1/S2 trace/configuration truth and both frozen-manifest integrity baselines.
 
 ### Acceptance-manifest blocker status
