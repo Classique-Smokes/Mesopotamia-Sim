@@ -1,0 +1,9 @@
+{
+  "name": "AUTONOMOUS-BASELINE",
+  "stopReason": "Horizon:12",
+  "finalCycle": 12,
+  "faulted": false,
+  "semanticEvents": 268,
+  "decisions": 96,
+  "failure": null
+}
