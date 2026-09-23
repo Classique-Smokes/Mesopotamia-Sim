@@ -9,6 +9,9 @@ This directory contains bounded research, review and maintenance commissions. Th
 - `SFL_V0_SLICE2_DISCOVERY_A_AUTHORITY.md` — accepted subjective-information / recognition authority inventory.
 - `SFL_V0_SLICE2_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — current implementation seam/gap map.
 - `SFL_V0_SLICE2_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — frozen verification/deferred-row trigger map.
+- `SFL_V0_SLICE3_DISCOVERY_A_AUTHORITY_GAPS.md` — **READY**. Accepted Slice-3 semantic boundary, Slice3/Slice4 split, and fired deferred gaps including LATER-01.
+- `SFL_V0_SLICE3_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — **READY**. Current verified kernel → household identity/capability implementation seam map.
+- `SFL_V0_SLICE3_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — **READY**. Canonical Stage-3 cards → Slice-3 completion applicability map.
 
 ## Closed / historical
 
