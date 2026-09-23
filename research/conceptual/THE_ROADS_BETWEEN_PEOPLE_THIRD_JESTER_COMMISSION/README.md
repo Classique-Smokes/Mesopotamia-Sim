@@ -24,3 +24,13 @@ These are observer artifacts only.
 They are not historical evidence, accepted simulation semantics, architecture, implementation requirements, or project authority.
 
 Their intended value is to preserve **causal texture and challenge questions** that later historical research and simulation design may choose to investigate.
+
+## Derived systematization
+
+The source collection remains unchanged authority-wise. Derived reconciliation lives at:
+
+- `../SOCIAL_EPISTEMIC_DYNAMICS/` — primary future conceptual home;
+- `../TABLET_IDEA_RECONCILIATION.md` — idea-by-idea current/later/redundancy classification;
+- `../CONCEPT_FAMILY_CROSS_INDEX.md` — cross-program discoverability where Roads overlaps Institutional Dynamics.
+
+Do not read the derived files as replacements for the tablets; they are indexes and interpretations over the preserved sources.
