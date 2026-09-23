@@ -180,11 +180,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Promote the frozen Slice-3 authority and IMP-0003 packet to canonical `main`.
-2. Dispatch `tasks/implementation/IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` on `implementation/imp-0003-slice3-household`.
-3. If the implementation would alter the exact `WorldState` private-field inventory or the frozen S1-084 structural audit, stop that triggering change and dispatch `tasks/research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md` first.
-4. Keep general CandidateOrganization convergence deferred under the one-referent-per-formation-episode boundary; escalate only if implementation needs multi-label convergence.
-5. Keep head/office, endogenous provision solicitation/spending, mediated marriage, HouseholdDecisionContext, and checkpoint/restore out of Slice 3.
-6. After all frozen acceptance evidence passes, freeze an exact IMP-0003 implementation candidate and commission fresh independent post-implementation conformance before promotion.
+1. Dispatch `tasks/implementation/IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` on `implementation/imp-0003-slice3-household`.
+2. If the implementation would alter the exact `WorldState` private-field inventory or the frozen S1-084 structural audit, stop that triggering change and dispatch `tasks/research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md` first.
+3. Keep general CandidateOrganization convergence deferred under the one-referent-per-formation-episode boundary; escalate only if implementation needs multi-label convergence.
+4. Keep head/office, endogenous provision solicitation/spending, mediated marriage, HouseholdDecisionContext, and checkpoint/restore out of Slice 3.
+5. After all frozen acceptance evidence passes, freeze an exact IMP-0003 implementation candidate and commission fresh independent post-implementation conformance before promotion.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
