@@ -99,41 +99,41 @@ internal static class Program
         transcript.AppendLine($"- {stopReason}");
         File.WriteAllText(Path.Combine(output, "HUMAN_TRANSCRIPT.md"), transcript.ToString());
 
-        string readme = $"""# SFL v0 Slice-1 Birth Run 001
-
-**Run:** {definition.RunId}  
-**Revision:** `{revision}`  
-**Executed UTC:** {executedAt}  
-**Configuration:** `{simulation.Configuration.Version}`  
-**Declared horizon:** {definition.HorizonCycles} cycles  
-**Stable cycles completed:** {simulation.Snapshot.Cycle}  
-**Stop reason:** `{stopReason}`  
-**Simulation faulted:** {simulation.IsFaulted}
-
-## Runner
-
-- production public simulation path only;
-- repeated `Simulation.RunAutonomousCycle()`;
-- no per-cycle proposal injection;
-- no response injection;
-- no candidate/score/winner injection;
-- no verification-only `ReactionChallenge` access.
-
-Runtime: `{RuntimeInformation.FrameworkDescription}` / `{RuntimeInformation.OSDescription}`.
-
-## Raw package
-
-- `INITIAL_WORLD.json`
-- `RUN_METADATA.json`
-- `CYCLE_SUMMARY.json`
-- `SEMANTIC_HISTORY.json`
-- `DECISION_HISTORY.json`
-- `FINAL_SNAPSHOT.json`
-- `HUMAN_TRANSCRIPT.md`
-
-This package is raw observational evidence. It is not historical calibration and contains no Master Architect interpretation.
-""";
-        File.WriteAllText(Path.Combine(output, "README.md"), readme);
+        StringBuilder readme = new();
+        readme.AppendLine("# SFL v0 Slice-1 Birth Run 001");
+        readme.AppendLine();
+        readme.AppendLine($"**Run:** {definition.RunId}  ");
+        readme.AppendLine($"**Revision:** `{revision}`  ");
+        readme.AppendLine($"**Executed UTC:** {executedAt}  ");
+        readme.AppendLine($"**Configuration:** `{simulation.Configuration.Version}`  ");
+        readme.AppendLine($"**Declared horizon:** {definition.HorizonCycles} cycles  ");
+        readme.AppendLine($"**Stable cycles completed:** {simulation.Snapshot.Cycle}  ");
+        readme.AppendLine($"**Stop reason:** `{stopReason}`  ");
+        readme.AppendLine($"**Simulation faulted:** {simulation.IsFaulted}");
+        readme.AppendLine();
+        readme.AppendLine("## Runner");
+        readme.AppendLine();
+        readme.AppendLine("- production public simulation path only;");
+        readme.AppendLine("- repeated `Simulation.RunAutonomousCycle()`;");
+        readme.AppendLine("- no per-cycle proposal injection;");
+        readme.AppendLine("- no response injection;");
+        readme.AppendLine("- no candidate/score/winner injection;");
+        readme.AppendLine("- no verification-only `ReactionChallenge` access.");
+        readme.AppendLine();
+        readme.AppendLine($"Runtime: `{RuntimeInformation.FrameworkDescription}` / `{RuntimeInformation.OSDescription}`.");
+        readme.AppendLine();
+        readme.AppendLine("## Raw package");
+        readme.AppendLine();
+        readme.AppendLine("- `INITIAL_WORLD.json`");
+        readme.AppendLine("- `RUN_METADATA.json`");
+        readme.AppendLine("- `CYCLE_SUMMARY.json`");
+        readme.AppendLine("- `SEMANTIC_HISTORY.json`");
+        readme.AppendLine("- `DECISION_HISTORY.json`");
+        readme.AppendLine("- `FINAL_SNAPSHOT.json`");
+        readme.AppendLine("- `HUMAN_TRANSCRIPT.md`");
+        readme.AppendLine();
+        readme.AppendLine("This package is raw observational evidence. It is not historical calibration and contains no Master Architect interpretation.");
+        File.WriteAllText(Path.Combine(output, "README.md"), readme.ToString());
         return 0;
     }
 
