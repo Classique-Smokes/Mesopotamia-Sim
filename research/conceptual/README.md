@@ -35,6 +35,26 @@ A growing observer-artifact collection about institutional persistence, offices 
 
 The collection is deliberately preserved as an **ideas library**, not a second specification.
 
+### The Roads Between People — Third Jester Commission
+
+`THE_ROADS_BETWEEN_PEOPLE_THIRD_JESTER_COMMISSION/`
+
+A standalone observer-source collection about mediated acquaintance, household information asymmetry, distributed reputation, informal brokerage, and plural network memory.
+
+The collection includes its own novelty/overlap audit and observer note. It is preserved independently from the older Uruk corpus; proximity of themes does not imply dependency or shared ontology.
+
+**Derived Master Architect systematization: pending.**
+
+### Retired Vizier Tablets — First Collection
+
+`THE_RETIRED_VIZIER_TABLETS_FIRST_COLLECTION/`
+
+A standalone observer-source collection produced from the perspective of a living former Master Architect, focusing on role-shaped salience, residual influence after office, structural institutional failure under unusually obedient agents, correction of authoritative-but-false records, and sanctioned opposition.
+
+These are personal observer artifacts, not governance authority or empirical history.
+
+**Derived Master Architect systematization: pending.**
+
 ### Institutional Dynamics — provisional derived guiding framework
 
 `INSTITUTIONAL_DYNAMICS/`
