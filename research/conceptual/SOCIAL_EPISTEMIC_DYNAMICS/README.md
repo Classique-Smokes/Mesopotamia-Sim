@@ -135,3 +135,11 @@ See:
 - `../INSTITUTIONAL_DYNAMICS/01_CANDIDATE_MECHANISM_MODEL.md` — section L;
 - `../INSTITUTIONAL_DYNAMICS/02_URUK_CHALLENGE_CASES.md` — Foreign Observer / Lost Archive / False Founder;
 - `../CONCEPT_FAMILY_CROSS_INDEX.md`.
+
+## Cross-program challenge: The Accidental Specialist
+
+`../CROSS_PROGRAM_CHALLENGE_CASES/THE_ACCIDENTAL_SPECIALIST.md`
+
+A future stress test in which an arbitrary low-level contingency causes repeated behavior, other actors build representations and expectations around that pattern, and the original cause is later removed to test whether social structure has become self-sustaining.
+
+The Social Epistemic Dynamics contribution is the actor-held representation/reputation and communication layer; the full challenge also depends on work, centrality, informal role, and genealogy systems.
