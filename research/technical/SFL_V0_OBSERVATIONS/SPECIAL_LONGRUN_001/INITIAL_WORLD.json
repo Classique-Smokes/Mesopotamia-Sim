@@ -1,0 +1,46 @@
+{
+  "runId": "SPECIAL-LONGRUN-001-EVERY-OTHER-CONSUMPTION",
+  "horizonCycles": 1000,
+  "configuration": {
+    "version": "SFL-S1-v1-EXPERIMENT-CONSUME-ODD-CYCLES"
+  },
+  "people": [
+    { "id": 1, "name": "Samu", "sex": "Male", "grain": 2, "needsGrain": false },
+    { "id": 2, "name": "Rima", "sex": "Female", "grain": 3, "needsGrain": false },
+    { "id": 3, "name": "Hani", "sex": "Female", "grain": 3, "needsGrain": false },
+    { "id": 4, "name": "Kima", "sex": "Female", "grain": 3, "needsGrain": false },
+    { "id": 5, "name": "Enna", "sex": "Female", "grain": 2, "needsGrain": false },
+    { "id": 6, "name": "Pala", "sex": "Female", "grain": 7, "needsGrain": false }
+  ],
+  "dwellings": [{ "id": 1 }, { "id": 2 }, { "id": 3 }],
+  "residences": [
+    { "id": 1, "person": 1, "dwelling": 1 },
+    { "id": 2, "person": 2, "dwelling": 2 },
+    { "id": 3, "person": 3, "dwelling": 3 },
+    { "id": 4, "person": 4, "dwelling": 2 },
+    { "id": 5, "person": 5, "dwelling": 2 },
+    { "id": 6, "person": 6, "dwelling": 3 }
+  ],
+  "attitudes": [
+    { "id": 101, "from": 1, "to": 2, "value": -33 },
+    { "id": 102, "from": 2, "to": 1, "value": 35 },
+    { "id": 103, "from": 1, "to": 3, "value": -54 },
+    { "id": 104, "from": 3, "to": 1, "value": 53 },
+    { "id": 105, "from": 1, "to": 4, "value": 10 },
+    { "id": 106, "from": 4, "to": 1, "value": -9 },
+    { "id": 107, "from": 2, "to": 5, "value": -1 },
+    { "id": 108, "from": 5, "to": 2, "value": -38 },
+    { "id": 109, "from": 3, "to": 6, "value": -29 },
+    { "id": 110, "from": 6, "to": 3, "value": 33 },
+    { "id": 111, "from": 4, "to": 6, "value": -28 },
+    { "id": 112, "from": 6, "to": 4, "value": 22 },
+    { "id": 113, "from": 5, "to": 6, "value": -29 },
+    { "id": 114, "from": 6, "to": 5, "value": -43 }
+  ],
+  "kinships": [
+    { "id": 201, "first": 1, "second": 4, "kind": "Sibling" },
+    { "id": 202, "first": 3, "second": 4, "kind": "ParentChild" }
+  ],
+  "marriages": [],
+  "inputs": []
+}
