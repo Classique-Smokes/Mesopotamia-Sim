@@ -12,7 +12,8 @@ This directory contains bounded research, review and maintenance commissions. Th
 - `SFL_V0_SLICE3_DISCOVERY_A_AUTHORITY_GAPS.md` — **RETURN COMPLETE**. Durable return: `../../research/technical/SFL_V0_SLICE3_AUTHORITY_AND_GAP_INVENTORY.md`.
 - `SFL_V0_SLICE3_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — **RETURN COMPLETE**. Durable return: `../../research/technical/SFL_V0_SLICE3_IMPLEMENTATION_SURFACE_MAP.md`.
 - `SFL_V0_SLICE3_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — **RETURN COMPLETE**. Durable return: `../../research/technical/SFL_V0_SLICE3_VERIFICATION_TRIGGER_MAP.md`.
-- Slice-3 reconciliation: `../../research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md` — **READY FOR ACCEPTANCE AUTHORITY DRAFT**.
+- Slice-3 reconciliation: `../../research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md` — acceptance authority now frozen under `SFL-V0-S3-ACCEPTANCE-v1`.
+- `IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md` — **CONDITIONAL TRIGGER TASK**. Run before any IMP-0003 change that would alter the exact `WorldState` private-field inventory or the frozen S1-084 structural evidence path.
 
 ## Closed / historical
 
