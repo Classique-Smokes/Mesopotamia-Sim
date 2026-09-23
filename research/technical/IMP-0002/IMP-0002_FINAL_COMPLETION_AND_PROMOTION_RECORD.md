@@ -101,6 +101,14 @@ Not introduced:
 - richer autonomous communication motivation;
 - universal proposition/conflict algebra.
 
+## Future lessons retrieval
+
+Compact future-facing synthesis:
+
+`research/technical/IMP-0002/IMP-0002_FUTURE_LESSONS_INDEX.md`
+
+This index compresses implementation, fresh-conformance, and observational lessons for later slices without changing Slice-2 authority.
+
 ## Completion judgment
 
 **IMP-0002 / SFL v0 Slice 2 is VERIFIED COMPLETE.**

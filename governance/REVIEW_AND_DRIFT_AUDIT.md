@@ -66,6 +66,23 @@ Do not impose a fixed calendar cadence until project workflow makes one useful.
 - Can a fresh agent following `AGENTS.md → START_HERE → CURRENT_PHASE → local indexes/registers` discover every authority, active artifact, and required supporting context it is expected to use?
 - Have navigation files accumulated stale or low-value links that should instead remain reachable only through their owning canonical artifact?
 
+
+### 8. Milestone learning retention
+At consequential subsystem/slice completion, ask whether implementation, independent review, or post-implementation observation produced any **surprising future-relevant lesson** that would otherwise require chat archaeology or reconstruction from several records.
+
+If yes:
+
+- leave one compact local future-lessons index near the subsystem/slice completion record;
+- derive it from durable implementation/review/observation evidence;
+- distinguish observed lesson from accepted requirement;
+- link to the source records rather than duplicating their full detail;
+- record only lessons that materially affect future risk maps, retrieval, verification strategy, observability, abstraction expectations, or later research questions;
+- do not convert the index into simulation authority or a new acceptance gate.
+
+If no material lesson exists, record nothing merely to satisfy ceremony.
+
+The purpose is retrieval compression, not retrospective bureaucracy.
+
 ## Audit output
 
 Produce a concise report with:
@@ -75,6 +92,6 @@ Produce a concise report with:
 - **Undocumented change** — behavior/architecture changed without a corresponding accepted artifact.
 - **Stale assumption** — assumption requires review.
 - **Open escalation** — consequential conflict requires decision.
-- **Housekeeping** — navigation/version/reference cleanup that does not alter project meaning.
+- **Housekeeping** — navigation/version/reference cleanup that does not alter project meaning, including missing milestone-learning indexes when consequential future lessons would otherwise be hard to retrieve.
 
 For each discrepancy, identify the higher-authority artifact and the lower-level conflict. Do **not** automatically rewrite the higher-authority artifact to match the lower one.
