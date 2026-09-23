@@ -3,7 +3,7 @@
   "stopReason": "Horizon:12",
   "finalCycle": 12,
   "faulted": false,
-  "semanticEvents": 273,
-  "decisions": 94,
+  "semanticEvents": 257,
+  "decisions": 90,
   "failure": null
 }
