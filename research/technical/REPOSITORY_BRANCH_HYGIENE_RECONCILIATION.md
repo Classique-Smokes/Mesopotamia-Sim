@@ -1,6 +1,6 @@
 # Repository Branch Hygiene — Master Architect Reconciliation
 
-**Status:** FINAL KEEP/DELETE DECISION / DELETION EXECUTION PENDING  
+**Status:** FINAL / CLEANUP EXECUTED / VERIFIED  
 **Census:** `REPOSITORY_BRANCH_HYGIENE_CENSUS.md`  
 **Decision owner:** Master Architect  
 **Deletion authority:** only the exact approved set below; executor may not expand it
@@ -120,7 +120,7 @@ Therefore destructive cleanup is intentionally not simulated by force-moving ref
 - final remote branch list;
 - any head mismatch from this approval.
 
-Until that execution occurs, the repository is logically reconciled but not physically de-cluttered.
+Execution is complete. Independent post-execution remote verification is recorded in `REPOSITORY_BRANCH_HYGIENE_EXECUTION_RECORD.md`; the remote now contains exactly 48 intended survivor refs.
 
 ## 7. Assurance-learning workstream
 
@@ -141,6 +141,4 @@ Candidate-v2 and candidate-v3 then exercised those stronger practices successful
 
 ## 8. Completion condition
 
-This housekeeping workstream is complete at the decision/governance level.
-
-Physical branch hygiene remains one bounded clerical execution step using the approved set above. It is non-semantic and should not reopen Slice-1 verification or delay Birth Run 001 once the branch executor has completed or the Director explicitly accepts executing cleanup later.
+This housekeeping workstream is complete at both the decision/governance and physical-ref levels. The approved deletion set was executed exactly, retained evidence refs were independently reverified, and branch hygiene no longer gates Birth Run 001.
