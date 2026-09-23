@@ -1,6 +1,6 @@
-# Slice-1 reference kernel
+# Slice-1 and Slice-2 reference kernel
 
-The production library implements IMP-0001's fixed-population, single-threaded lower-level laboratory. Repository semantic authority remains the accepted specification and ADRs linked from the task packet.
+The production library implements IMP-0001's fixed-population, single-threaded lower-level laboratory and IMP-0002's bounded actor-specific epistemic extension. Repository semantic authority remains the accepted specification and ADRs linked from the task packets.
 
 ## Running a world
 
@@ -33,8 +33,20 @@ Action commits prepare a complete copied state, check arithmetic and invariants,
 
 Invalid terms remain diagnostic `InvalidTerms` and do not activate responses or social failure knowledge. Valid attempts distinguish `Declined`, `Unable`, and `InvalidatedAtResolution`. Arithmetic/runtime failure faults the simulation, preserves its previously published snapshot, and prevents continuation; partial diagnostic history may remain for inspection and is not a completed cycle. The internal verification-only reaction challenge seam is inaccessible from the public API and exercises duplicate/closure controls.
 
-No checkpoint format, concurrency, stochastic policy, general communication, household, recognition, or later-slice authority is introduced. IDs and in-memory counters are explicit; future persistence needs its own accepted versioned contract.
+No checkpoint format, concurrency, stochastic policy, household lifecycle, or later-slice authority is introduced. IDs and in-memory counters are explicit; future persistence needs its own accepted versioned contract.
+
+## Subjective knowledge and communication
+
+`EpistemicStateOf(person)` and `EpistemicSnapshot` expose immutable completed-cycle actor state. `CycleResult.Epistemic` is the matching cycle view. They are separate from objective `Snapshot` and from the retained Slice-1 participant-outcome `KnowledgeOf` API. Own-state, direct-party relation/claim, participation, and communicated facts retain acquisition route and original source/event order. Communication appends sender/recipient/delivery provenance without replacing the underlying evidence time. Observer history is not a policy input.
+
+`InitialWorld.Knowledge` supplies explicitly fixture-originated inherited evidence, never an acquisition result under test. The bounded `InitialWorld.Candidates` supports one inert referent with a fixed core and declared live status. It neither discovers organizations nor creates households. Recognition is derived from held shared-residence, connecting durable-tie, and distinct-cycle support evidence. Candidate labels are not evidence. The frozen RG-01 single-valued Residence contradiction becomes `Contested`; IDs and delivery order never select its winner. The declared live flag limits this laboratory referent; no expiry clock or social lifecycle is inferred.
+
+`CommunicateClaim(recipient, new HeldFact(evidenceId))` or `CommunicateClaim(recipient, new HeldRecognition(candidateId))` goes through the ordinary personal proposal/validation/commit path. It has a recipient but no response decision. It transmits the captured held evidence only to that recipient, costs the sender's personal initiative, and cannot activate fresh same-cycle voluntary behavior. The sender's captured evidence and Recognition are revalidated before commit. A same-cycle update that displaces them can invalidate the attempt; the existing detached dependency analysis discloses consequential stable-ID fallback for these interactions. This fallback never resolves Recognition conflict.
+
+To exercise selection, use `PersonalPolicy("SFL-COMMUNICATION-LAB-v1") { Communication = ... }`. Its pinned 100-point communication preference is laboratory configuration, not accepted autonomous social motivation. The actor-specific gate precedes scoring and the trace carries the exact relevant evidence. Existing Slice-1 profiles retain their behavior and explicit observation inputs; those inputs do not become a generic nonparticipant perception system.
+
+Current state retains stale facts until accepted evidence supersedes them. Precedence is limited to newer direct evidence and newer event-backed reports in the accepted cases. There is no universal factual-conflict algebra, trust model, invented claims, or behavior-affecting epistemic cache. `RulesVersion` on semantic events and decisions identifies `SFL-S2-v1` separately from a caller-supplied scenario configuration label.
 
 ## Verification
 
-Run the four canonical commands in root `AGENTS.md`. The acceptance runner emits individual frozen-row evidence and fixture/oracle/fault supplements under ignored `artifacts/acceptance/`; CI uploads these as `slice1-acceptance-evidence`. See the required [implementation report](../../tasks/implementation/IMP-0001_IMPLEMENTATION_REPORT.md) for the durable per-ID index and independent-review status.
+Run the four canonical commands in root `AGENTS.md`. The acceptance runners emit individual frozen-row evidence and fixture/oracle/fault supplements under ignored `artifacts/acceptance/`; CI uploads these as `sfl-slice1-slice2-acceptance-evidence`. Slice-2 evidence is separately prefixed `slice2-`; frozen Slice-1 classifications remain unchanged. Fresh conformance review of the exact candidate remains required.

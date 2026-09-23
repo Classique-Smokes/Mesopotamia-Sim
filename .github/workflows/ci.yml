@@ -40,6 +40,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: slice1-acceptance-evidence
+          name: sfl-slice1-slice2-acceptance-evidence
           path: artifacts/acceptance/
           if-no-files-found: warn

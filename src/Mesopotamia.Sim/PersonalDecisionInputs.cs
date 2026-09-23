@@ -9,6 +9,7 @@ internal sealed record PersonalDecisionInputs(
     ImmutableArray<Kinship> Kinships, ImmutableArray<Marriage> Marriages,
     ImmutableArray<Debt> Debts, ImmutableArray<Favour> Favours)
 {
+    internal ActorEpistemicState? Epistemic { get; init; }
     internal int AttitudeOf(PersonId from, PersonId to) => Attitudes.SingleOrDefault(a => a.From == from && a.To == to)?.Value ?? 0;
     internal bool AreKin(PersonId person) => Kinships.Any(k => k.First == person || k.Second == person);
     internal bool AreMarried(PersonId person) => Marriages.Any(m => m.Groom == person || m.Bride == person);
@@ -16,6 +17,7 @@ internal sealed record PersonalDecisionInputs(
 
     internal PersonId? Target(ActionTerms terms) => terms switch
     {
+        CommunicateClaim a => a.Recipient,
         OfferGift a => a.Target,
         RequestGiftOrHelp a => a.Target,
         OfferLoan a => a.Target,
@@ -35,6 +37,7 @@ internal sealed record PersonalDecisionInputs(
     // need, unrelated marriage, and unobserved residence are world-stage checks.
     internal string? Gate(ActionTerms terms) => terms switch
     {
+        CommunicateClaim a => Epistemic is null || !CommunicationRules.Holds(Epistemic, a.Claim) ? "PropositionNotHeld" : null,
         Farm => Own.NeedsGrain ? "NeedsGrain" : null,
         OfferGift a => Own.Grain < a.Amount ? "InsufficientAvailableGrain" : null,
         OfferLoan a => Own.Grain < a.Amount ? "InsufficientAvailableGrain" : null,
@@ -66,7 +69,8 @@ internal sealed record PersonalDecisionInputs(
         .. Debts.Select(d => $"Debt:{d.Id.Value};Creditor:{d.Creditor.Value};Debtor:{d.Debtor.Value};Original:{d.Original};Remaining:{d.Remaining};CommittedCycle:{d.CommittedCycle};DueReviewed:{d.DueReviewed};Origin:{d.Origin.Value};Basis:{(d.Creditor == Own.Id || d.Debtor == Own.Id ? "DirectPartyClaim" : "ExplicitPolicyObservation")}"),
         .. Favours.Select(f => $"Favour:{f.Id.Value};Debtor:{f.Debtor.Value};Holder:{f.Holder.Value};Outstanding:{f.Outstanding};Origin:{f.Origin.Value};Basis:DirectPartyClaim"),
         .. Policy.ObservedSexes.OrderBy(p => p.Key.Value).Select(p => $"ObservedSex:{p.Key.Value}:{p.Value};Basis:ExplicitPolicyObservation"),
-        .. Policy.ObservedResidences.OrderBy(p => p.Key.Value).Select(p => $"ObservedResidence:{p.Key.Value}:{p.Value.Value};Basis:ExplicitPolicyObservation")
+        .. Policy.ObservedResidences.OrderBy(p => p.Key.Value).Select(p => $"ObservedResidence:{p.Key.Value}:{p.Value.Value};Basis:ExplicitPolicyObservation"),
+        .. CommunicationRules.Trace(Epistemic, Policy.Communication)
     ];
 }
 
@@ -74,10 +78,10 @@ internal sealed record PersonalDecisionInputs(
 // and trace receive the resulting immutable view, never the objective snapshot.
 internal static class PersonalInputCapture
 {
-    internal static PersonalDecisionInputs Capture(PersonId actor, PersonalPolicy policy, WorldSnapshot snapshot)
+    internal static PersonalDecisionInputs Capture(PersonId actor, PersonalPolicy policy, WorldSnapshot snapshot, ActorEpistemicState? epistemic = null)
     {
         if (policy.Amount <= 0) throw new ArgumentException("Policy amount must be positive.", nameof(policy));
-        if (policy.Profile is not ("SCORE-VP-002" or "SCORE-VP-004" or "SCORE-VP-005" or "SCORE-VP-006" or "SFL-PERSONAL-REFERENCE-v1"))
+        if (policy.Profile is not ("SCORE-VP-002" or "SCORE-VP-004" or "SCORE-VP-005" or "SCORE-VP-006" or "SFL-PERSONAL-REFERENCE-v1" or "SFL-COMMUNICATION-LAB-v1"))
             throw new ArgumentException("Unsupported personal profile.", nameof(policy));
         if (policy.ObservedDebts.Any(id => !snapshot.Debts.ContainsKey(id)) ||
             policy.ObservedSexes.Values.Any(sex => !Enum.IsDefined(sex)) ||
@@ -99,6 +103,7 @@ internal static class PersonalInputCapture
         known.Remove(actor);
         if (known.Any(p => !snapshot.People.ContainsKey(p))) throw new ArgumentException("Invalid observed actor.", nameof(policy));
         return new(snapshot.People[actor], snapshot.HomeOf(actor), policy, [.. known.OrderBy(p => p.Value)],
-            attitudes, kinships, marriages, debts, favours);
+            attitudes, kinships, marriages, debts, favours)
+        { Epistemic = epistemic };
     }
 }

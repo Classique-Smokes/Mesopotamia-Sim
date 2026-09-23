@@ -19,7 +19,10 @@ public sealed record Debt(RelationId Id, PersonId Creditor, PersonId Debtor, lon
     long Remaining, long CommittedCycle, bool DueReviewed, EventId Origin);
 public sealed record Favour(RelationId Id, PersonId Debtor, PersonId Holder, bool Outstanding, EventId Origin);
 public sealed record GrainInput(long Id, long Cycle, PersonId Person, long Delta);
-public sealed record Configuration(string Version = "SFL-S1-v1");
+public sealed record Configuration(string Version = "SFL-S2-v1")
+{
+    public const string RulesVersion = "SFL-S2-v1";
+}
 
 public sealed record InitialWorld(
     ImmutableArray<Person> People,
@@ -29,7 +32,11 @@ public sealed record InitialWorld(
     ImmutableArray<Kinship> Kinships,
     ImmutableArray<Marriage> Marriages,
     ImmutableArray<GrainInput> Inputs,
-    Configuration Configuration);
+    Configuration Configuration)
+{
+    public ImmutableArray<InitialKnowledge> Knowledge { get; init; } = [];
+    public ImmutableArray<CandidateReferent> Candidates { get; init; } = [];
+}
 
 /// <summary>Immutable materialized view. Dictionaries are authoritative copies, not derived caches.</summary>
 public sealed record WorldSnapshot(
