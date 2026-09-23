@@ -65,6 +65,9 @@ internal static class ActionRules
     internal static string Describe(ActionTerms terms) => terms switch
     {
         Farm => "Farm",
+        RequestHouseholdParticipation a => FormattableString.Invariant($"RequestHouseholdParticipation({a.Household.Value},{a.Bridge.Value})"),
+        InviteHouseholdParticipation a => FormattableString.Invariant($"InviteHouseholdParticipation({a.Household.Value},{a.Newcomer.Value})"),
+        EndHouseholdParticipation a => FormattableString.Invariant($"EndHouseholdParticipation({a.Household.Value})"),
         CommunicateClaim a => FormattableString.Invariant($"CommunicateClaim({a.Recipient.Value},{a.Claim})"),
         OfferGift a => FormattableString.Invariant($"OfferGift({a.Target.Value},{a.Amount})"),
         RequestGiftOrHelp a => FormattableString.Invariant($"RequestGiftOrHelp({a.Target.Value},{a.Amount})"),
@@ -83,6 +86,8 @@ internal static class ActionRules
     internal static PersonId? Target(ActionTerms terms, WorldSnapshot snapshot) => terms switch
     {
         CommunicateClaim a => a.Recipient,
+        RequestHouseholdParticipation a => a.Bridge,
+        InviteHouseholdParticipation a => a.Newcomer,
         OfferGift gift => gift.Target,
         RequestGiftOrHelp help => help.Target,
         OfferLoan loan => loan.Target,
@@ -102,7 +107,8 @@ internal static class ActionRules
             return "InvalidCounterparty";
         return proposal.Terms switch
         {
-            CommunicateClaim a => a.Claim is HeldFact { Evidence.Value: > 0 } or HeldRecognition { Candidate.Value: > 0 } ? null : "InvalidClaimReference",
+            CommunicateClaim a => a.Claim is HeldFact { Evidence.Value: > 0 } or HeldRecognition { Candidate.Value: > 0 } or HeldHouseholdRecognition { Household.Value: > 0 } ? null : "InvalidClaimReference",
+            RequestHouseholdParticipation or InviteHouseholdParticipation or EndHouseholdParticipation => null,
             Farm => null,
             OfferGift gift => gift.Amount > 0 ? null : "PositiveIntegralGrainRequired",
             RequestGiftOrHelp help => help.Amount > 0 ? null : "PositiveIntegralGrainRequired",
@@ -126,6 +132,7 @@ internal static class ActionRules
     internal static string? Infeasible(Proposal proposal, WorldSnapshot snapshot) => proposal.Terms switch
     {
         CommunicateClaim => null,
+        RequestHouseholdParticipation or InviteHouseholdParticipation or EndHouseholdParticipation => null,
         Farm => snapshot.People[proposal.Actor].NeedsGrain ? "NeedsGrain" : null,
         OfferGift gift => snapshot.People[proposal.Actor].Grain < gift.Amount ? "InsufficientAvailableGrain" : null,
         RequestGiftOrHelp help => snapshot.People[help.Target].Grain < help.Amount ? "InsufficientAvailableGrain" : null,

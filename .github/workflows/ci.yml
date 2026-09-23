@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Set up .NET
         uses: actions/setup-dotnet@v6
@@ -40,6 +42,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: sfl-slice1-slice2-acceptance-evidence
+          name: sfl-slice1-slice2-slice3-acceptance-evidence
           path: artifacts/acceptance/
           if-no-files-found: warn

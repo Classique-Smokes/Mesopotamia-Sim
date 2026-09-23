@@ -1,5 +1,17 @@
 # Slice-1 and Slice-2 Acceptance Test Surface
 
+## Slice-3 extension
+
+`Slice3AcceptanceTests` verifies frozen `SFL-V0-S3-ACCEPTANCE-v1` (blob `1aae13dc27572361fe99c31ef8aee0444d39364a`) and emits all 109 rows individually: 96 REQUIRED, 11 DEFERRED and two UNEXERCISED. The runner reexecutes earlier acceptance runners rather than relying on method ordering. Its inherited table reports all 128 Slice-1 and 46 Slice-2 REQUIRED bindings. Slice-1's accepted independent conformance row is linked to its historical completion record; this is explicitly not independent conformance of the new candidate.
+
+`HouseholdScenarios` and its partial files run canonical formation, ablations, both bilateral entry directions, full turnover, bridge handoff, lifecycle, recognition routes/conflict, controlled lineage, provision backing, structural checks and metamorphic controls through the real kernel. `HouseholdOracle` independently reconstructs warrant chains, lifecycle, lineage prerequisites and grain continuity from public evidence. Detached corrupt formation/continuation witnesses must fail that same checker. Actual duplicate-reaction and skipped-closure challenges remain separate from focused negative and structural evidence; a general mutation framework is not claimed.
+
+The only additional controlled writes are inert candidate declarations, explicitly fixture-marked held household evidence where acquisition is not the assertion target, and pre-existing provision commitments under frozen §3.1. No fixture writes Household, formation/participation/continuation/lineage warrants, final Recognition, lifecycle or capacity results. Produced household reuse records the producer/pass/fixture/configuration/output identity. There is no engine save/restore API.
+
+The Slice-3 output package contains `slice3-results.json` (implementation SHA, dirty-state flag, exact frozen identities, individual results and inherited evidence), `slice3-cases.json`, `slice3-fixtures.json`, and `slice3-producers.json`. CI checks out the exact PR head and uploads the combined `sfl-slice1-slice2-slice3-acceptance-evidence` artifact. Fresh independent exact-candidate conformance remains a separate mandatory gate.
+
+## Retained Slice-1 and Slice-2 verification
+
 This project is the executable verification surface for IMP-0001.
 
 IMP-0002 adds `Slice2AcceptanceTests` and `Slice2Scenarios` alongside the unchanged Slice-1 runner. The Slice-2 runner verifies frozen manifest `SFL-V0-S2-ACCEPTANCE-v1`, blob `e4872531cf780d51fa1863f2a0b87e2424a71b69`, and the 46 REQUIRED / nine DEFERRED census. It emits each full ID, executes all 18 exact Slice-1 regression bindings independently of test-method ordering, and fails missing or unsuccessful REQUIRED evidence.

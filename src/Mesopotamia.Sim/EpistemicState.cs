@@ -26,6 +26,7 @@ public sealed record EvidenceProvenance(AcquisitionRoute Route, EvidenceOrigin O
 [JsonDerivedType(typeof(FavourFact), "favour")]
 [JsonDerivedType(typeof(ParticipationFact), "participation")]
 [JsonDerivedType(typeof(SupportFact), "support")]
+[JsonDerivedType(typeof(HouseholdExistenceFact), "household")]
 public abstract record FactualProposition;
 public sealed record OwnStateFact(Person Person) : FactualProposition;
 public sealed record ResidenceFact(PersonId Person, DwellingId Dwelling) : FactualProposition;
@@ -36,7 +37,10 @@ public sealed record DebtFact(Debt Debt) : FactualProposition;
 public sealed record FavourFact(Favour Favour) : FactualProposition;
 public sealed record ParticipationFact(ParticipantOutcome Outcome) : FactualProposition;
 public enum SupportKind { Gift, Help, Loan, FavourFulfilment }
-public sealed record SupportFact(EventId Event, long Cycle, PersonId First, PersonId Second, SupportKind Kind) : FactualProposition;
+public sealed record SupportFact(EventId Event, long Cycle, PersonId First, PersonId Second, SupportKind Kind) : FactualProposition
+{
+    public EvidenceOrder? Order { get; init; }
+}
 public sealed record KnownFact(EvidenceId Id, FactualProposition Proposition, EvidenceProvenance Provenance);
 
 /// <summary>Inert laboratory referent, never an organization or a formation result.</summary>
@@ -45,6 +49,9 @@ public sealed record CandidateRecognition(CandidateId Candidate, RecognitionStat
 public sealed record ActorEpistemicState(PersonId Actor, ImmutableArray<KnownFact> Facts,
     ImmutableArray<CandidateRecognition> Recognitions)
 {
+    public ImmutableArray<HouseholdRecognition> HouseholdRecognitions { get; init; } = [];
+    public RecognitionStatus HouseholdRecognitionOf(HouseholdId household) =>
+        HouseholdRecognitions.SingleOrDefault(r => r.Household == household)?.Status ?? RecognitionStatus.Unknown;
     public RecognitionStatus RecognitionOf(CandidateId candidate) =>
         Recognitions.SingleOrDefault(r => r.Candidate == candidate)?.Status ?? RecognitionStatus.Unknown;
 }
@@ -65,6 +72,7 @@ internal static class EpistemicRules
         (FavourFact x, FavourFact y) => x.Favour.Id == y.Favour.Id,
         (ParticipationFact x, ParticipationFact y) => x.Outcome.Event == y.Outcome.Event,
         (SupportFact x, SupportFact y) => x.Event == y.Event,
+        (HouseholdExistenceFact x, HouseholdExistenceFact y) => x.Household == y.Household,
         _ => false
     };
 
@@ -80,7 +88,7 @@ internal static class EpistemicRules
 
     internal static CandidateRecognition Recognize(CandidateReferent candidate, ImmutableArray<KnownFact> facts)
     {
-        if (!candidate.IsLive) return new(candidate.Id, RecognitionStatus.Unknown, []);
+        if (!candidate.IsLive || candidate.Core.Length < 2) return new(candidate.Id, RecognitionStatus.Unknown, []);
         HashSet<PersonId> core = [.. candidate.Core];
         KnownFact[] relevant = facts.Where(f => f.Proposition switch
         {
@@ -120,15 +128,23 @@ internal static class EpistemicRules
 internal sealed class EpistemicState
 {
     private readonly Dictionary<PersonId, List<KnownFact>> facts;
-    private readonly ImmutableArray<CandidateReferent> candidates;
+    private ImmutableArray<CandidateReferent> candidates;
+    internal ImmutableArray<CandidateReferent> Candidates => candidates;
+    internal void DeclareCandidate(CandidateReferent candidate)
+    {
+        if (candidate.Id.Value <= 0 || candidates.Any(c => c.Id == candidate.Id) || candidate.Core.IsDefaultOrEmpty ||
+            candidate.Core.Distinct().Count() != candidate.Core.Length || candidate.Core.Any(p => !facts.ContainsKey(p)))
+            throw new ArgumentException("A candidate requires a fresh stable referent and a declared nonempty core.", nameof(candidate));
+        candidates = candidates.Add(candidate);
+    }
     private long nextEvidence;
 
     internal EpistemicState(InitialWorld initial)
     {
         facts = initial.People.ToDictionary(p => p.Id, _ => new List<KnownFact>());
         candidates = initial.Candidates;
-        if (candidates.Length > 1 || candidates.Any(c => c.Id.Value <= 0 || c.Core.Length < 2 || c.Core.Distinct().Count() != c.Core.Length || c.Core.Any(p => !facts.ContainsKey(p))))
-            throw new ArgumentException("Only one bounded candidate with a valid fixed core is supported.", nameof(initial));
+        if (candidates.Select(c => c.Id).Distinct().Count() != candidates.Length || candidates.Any(c => c.Id.Value <= 0 || c.Core.Length < 1 || c.Core.Distinct().Count() != c.Core.Length || c.Core.Any(p => !facts.ContainsKey(p))))
+            throw new ArgumentException("Each bounded episode requires its own inert candidate with a valid fixed core; convergence is unsupported.", nameof(initial));
         KnownFact[] seeds = initial.Knowledge.SelectMany(k => k.Facts).ToArray();
         if (initial.Knowledge.Any(k => !facts.ContainsKey(k.Actor)) || seeds.Any(f => f.Id.Value <= 0 || string.IsNullOrWhiteSpace(f.Provenance.Origin.Fixture) ||
                 f.Provenance.Route != AcquisitionRoute.Fixture || f.Provenance.Hops.IsDefault || !f.Provenance.Hops.IsEmpty ||
@@ -168,7 +184,14 @@ internal sealed class EpistemicState
     internal ActorEpistemicState Of(PersonId actor)
     {
         ImmutableArray<KnownFact> held = [.. facts[actor].OrderBy(f => f.Id.Value)];
-        return new(actor, held, [.. candidates.OrderBy(c => c.Id.Value).Select(c => EpistemicRules.Recognize(c, held))]);
+        return new(actor, held, [.. candidates.OrderBy(c => c.Id.Value).Select(c => EpistemicRules.Recognize(c, held))])
+        {
+            HouseholdRecognitions = [.. held.Where(f => f.Proposition is HouseholdExistenceFact)
+                .GroupBy(f => ((HouseholdExistenceFact)f.Proposition).Household).OrderBy(g => g.Key.Value)
+                .Select(g => new HouseholdRecognition(g.Key,
+                    g.All(f => ((HouseholdExistenceFact)f.Proposition).Continues) ? RecognitionStatus.Recognized :
+                    g.Any(f => ((HouseholdExistenceFact)f.Proposition).Continues) ? RecognitionStatus.Contested : RecognitionStatus.Unknown, [.. g]))]
+        };
     }
     internal EpistemicSnapshot Snapshot(long cycle) => new(cycle, facts.Keys.ToImmutableDictionary(p => p, Of));
     internal void Acquire(PersonId actor, FactualProposition proposition, AcquisitionRoute route, EvidenceOrigin origin)

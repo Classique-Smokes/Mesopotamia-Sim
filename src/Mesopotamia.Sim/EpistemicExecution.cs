@@ -9,12 +9,14 @@ internal static class CommunicationRules
     {
         HeldFact fact => state.Facts.Any(f => f.Id == fact.Evidence),
         HeldRecognition recognition => state.RecognitionOf(recognition.Candidate) == RecognitionStatus.Recognized,
+        HeldHouseholdRecognition recognition => state.HouseholdRecognitionOf(recognition.Household) == RecognitionStatus.Recognized,
         _ => false
     };
     internal static ImmutableArray<KnownFact> Payload(ActorEpistemicState state, HeldClaim claim) => claim switch
     {
         HeldFact fact => [state.Facts.Single(f => f.Id == fact.Evidence)],
         HeldRecognition recognition => state.Recognitions.Single(r => r.Candidate == recognition.Candidate && r.Status == RecognitionStatus.Recognized).Evidence,
+        HeldHouseholdRecognition recognition => state.HouseholdRecognitions.Single(r => r.Household == recognition.Household && r.Status == RecognitionStatus.Recognized).Evidence,
         _ => throw new InvalidOperationException("Unsupported held proposition.")
     };
     internal static bool StillHolds(ActorEpistemicState state, HeldClaim claim, ImmutableArray<KnownFact> captured) =>
@@ -61,7 +63,10 @@ public sealed partial class Simulation
     }
 
     private void AcquireCommittedFacts(SemanticEvent entry)
-        => AcquireCommittedFacts(epistemic, state, entry);
+    {
+        AcquireCommittedFacts(epistemic, state, entry);
+        if (OrdinarySupport.From(entry) is { } support) households.Supports.TryAdd(entry.Id, support);
+    }
 
     private static void AcquireCommittedFacts(EpistemicState epistemic, WorldState state, SemanticEvent entry)
     {
@@ -69,16 +74,8 @@ public sealed partial class Simulation
         {
             EvidenceOrigin origin = new(participant, entry.Id, new(entry.Cycle, entry.ReactionIndex));
             AcquireDirectFacts(epistemic, state, participant, origin);
-            SupportKind? support = entry.Kind switch
-            {
-                "Gift" => SupportKind.Gift,
-                "Help" or "RelationshipMediatedReciprocalHelp" => SupportKind.Help,
-                "Loan" => SupportKind.Loan,
-                "CalledFavourFulfilled" => SupportKind.FavourFulfilment,
-                _ => null
-            };
-            if (support is { } kind)
-                epistemic.Acquire(participant, new SupportFact(entry.Id, entry.Cycle, entry.Participants[0], entry.Participants[1], kind),
+            if (OrdinarySupport.From(entry) is { } support)
+                epistemic.Acquire(participant, support,
                     AcquisitionRoute.Participation, origin);
         }
     }
