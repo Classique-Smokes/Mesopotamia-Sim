@@ -111,9 +111,14 @@ Questions:
 - actor-specific recognition;
 - residual influence;
 - claims based on former authority;
-- whether procedures or tradition permit restoration.
+- whether procedures or tradition permit restoration;
+- whether the surrounding trust/access/habit network has actually reorganized around the successor;
+- whether predecessor **non-action** is required for practical succession;
+- whether prestige persists after current operational competence decays.
 
-Failure mode exposed: treating prior legitimacy as current authority.
+Failure mode exposed: treating prior legitimacy as current authority, or treating legal succession as automatically complete social succession.
+
+**Extension source:** `08_RETIRED_VIZIER_EXTENSIONS.md`.
 
 ## 7. The False Founder
 
@@ -137,9 +142,12 @@ Questions:
 - which identity/authority claims each recognizes;
 - how trade/diplomacy/cooperation depends on subjective institutional models;
 - how later information changes recognition;
-- whether foreign recognition affects practical capability without defining objective continuity.
+- whether foreign recognition affects practical capability without defining objective continuity;
+- whether differing social routes produce locally coherent but divergent histories before any official record resolves them.
 
 Failure mode exposed: global omniscience.
+
+**Cross-program extension:** `../SOCIAL_EPISTEMIC_DYNAMICS/` preserves the lower-level “plural network memory” problem that can exist before institutional recognition is involved.
 
 ## 9. Companion-case extensions
 
