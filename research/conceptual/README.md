@@ -43,7 +43,7 @@ A standalone observer-source collection about mediated acquaintance, household i
 
 The collection includes its own novelty/overlap audit and observer note. It is preserved independently from the older Uruk corpus; proximity of themes does not imply dependency or shared ontology.
 
-**Derived Master Architect systematization: pending.**
+**Derived Master Architect systematization:** complete; see `TABLET_IDEA_RECONCILIATION.md`, `CONCEPT_FAMILY_CROSS_INDEX.md`, and `SOCIAL_EPISTEMIC_DYNAMICS/`.
 
 ### Retired Vizier Tablets — First Collection
 
@@ -53,7 +53,7 @@ A standalone observer-source collection produced from the perspective of a livin
 
 These are personal observer artifacts, not governance authority or empirical history.
 
-**Derived Master Architect systematization: pending.**
+**Derived Master Architect systematization:** complete; see `TABLET_IDEA_RECONCILIATION.md`, `CONCEPT_FAMILY_CROSS_INDEX.md`, and `INSTITUTIONAL_DYNAMICS/08_RETIRED_VIZIER_EXTENSIONS.md`.
 
 ### Institutional Dynamics — provisional derived guiding framework
 
@@ -78,3 +78,13 @@ Conceptual material does not require root-navigation promotion merely because it
 `SOCIAL_EPISTEMIC_DYNAMICS/`
 
 A sibling non-authoritative conceptual program derived from *The Roads Between People*, focused on the recursive relationship between social topology, information routes, actor-held representations, and changed future relations. It is deliberately separate from Institutional Dynamics because these mechanisms can exist before higher-order institutions exist.
+
+### Tablet idea reconciliation
+
+`TABLET_IDEA_RECONCILIATION.md`
+
+Master Architect idea-level reconciliation of the Roads and Retired Vizier corpora: current Slice-2 lenses, genuine later additions, meaningful overlap, and truly redundant conceptual payload.
+
+`CONCEPT_FAMILY_CROSS_INDEX.md`
+
+Navigation index connecting overlapping concept families across SFL, Social Epistemic Dynamics, Institutional Dynamics, and future agency/attention work so related ideas are retrieved together rather than independently rediscovered.

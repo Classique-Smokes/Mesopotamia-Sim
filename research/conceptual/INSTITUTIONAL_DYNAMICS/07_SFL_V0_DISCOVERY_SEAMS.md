@@ -101,6 +101,27 @@ After Slice 2 is runnable, inspect:
 - whether an actor can know an event yet interpret its social meaning differently;
 - whether causal provenance of knowledge remains inspectable.
 
+### Roads-derived Slice-2 challenge lenses
+
+The later *Roads Between People* corpus sharpens several things worth observing **without changing Slice-2 authority**:
+
+- information route/provenance should remain visible rather than collapsing into content alone;
+- actors should be able to remain differently informed about the same objective world;
+- direct participation/observation should not imply magical synchronization of everyone nearby;
+- stale/mediated information should remain causally inspectable;
+- unresolved incompatible social interpretation should remain visibly contested rather than silently converging;
+- higher-order shorthand such as “the household knows” must not erase the individual epistemic states underneath it.
+
+These are challenge lenses only.
+
+Do **not** pull into Slice 2 the Roads corpus' later questions about trust, rumor mutation, distributed reputation, brokerage power, rich memory degradation, or network-cluster social worlds.
+
+See:
+
+- `../SOCIAL_EPISTEMIC_DYNAMICS/`;
+- `../TABLET_IDEA_RECONCILIATION.md`;
+- `../CONCEPT_FAMILY_CROSS_INDEX.md`.
+
 ### Seeds of later institutional questions
 
 If the representation works, it supplies ingredients for:

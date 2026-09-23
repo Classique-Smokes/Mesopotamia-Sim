@@ -1,16 +1,22 @@
 # Proposed Post-v0 Conceptual Directions
 
 **Status:** DURABLE NON-AUTHORITATIVE / PROVISIONAL GUIDING FRAMEWORK — amended after focused review of the original Uruk Accident seed  
-**Purpose:** Preserve a concise entry point into the broader institutional-dynamics conceptual program.  
+**Purpose:** Preserve a concise entry point into the project's broader post-v0 conceptual programs and seams.  
 **Authority:** None. This is not a roadmap, specification, backlog, or design decision.
 
-The earlier three workstreams remain useful, but they are now understood as **subordinate mechanism families** inside a larger research problem—not a universal ontology:
+The earlier three workstreams remain useful, but they are now understood as **subordinate mechanism families** inside the Institutional Dynamics research problem—not a universal ontology.
 
 > **Institutional identity, persistence, recognition, authority, capability, memory, and genealogy.**
 
-Full provisional package:
+Full provisional institutional package:
 
 `INSTITUTIONAL_DYNAMICS/`
+
+The later Roads corpus also established a distinct sibling program:
+
+`SOCIAL_EPISTEMIC_DYNAMICS/`
+
+That program asks how social relations become information routes, how actor-held representations propagate and diverge, and how changed representations recursively reshape later social networks. These mechanisms can exist below institutional scale and should not be absorbed into Institutional Dynamics merely because institutions later use them.
 
 ## 1. Umbrella question
 
@@ -101,7 +107,34 @@ SFL v0 should first demonstrate:
 
 The project should learn from those results before selecting a generalized institutional path.
 
-## 7. Explicit non-commitments
+## 7. Sibling / adjacent future directions
+
+### Social Epistemic Dynamics
+
+Primary later questions:
+
+- mediated relationship ancestry;
+- group information environments without group minds;
+- distributed social representation / reputation;
+- informational brokerage and bypass cost;
+- plural network memory.
+
+Some lower-level substrate arrives in SFL Slice 2, but trust, rumor mutation, reputation, brokerage power, and rich network-memory dynamics remain later research/design questions.
+
+### Richer Individual Agency / Attention seam
+
+The Retired Vizier corpus adds a distinct future question about **role-conditioned salience**: sustained responsibility may shape what becomes cognitively salient, creating expertise and blindness together.
+
+This belongs with future motivation/attention/capacity/planning work. It is not yet mature enough to justify a standalone program or current v0 mechanics.
+
+### Cross-program navigation
+
+Use:
+
+- `TABLET_IDEA_RECONCILIATION.md` for idea-level current/later/redundancy disposition;
+- `CONCEPT_FAMILY_CROSS_INDEX.md` for overlap between programs.
+
+## 8. Explicit non-commitments
 
 This note does not:
 

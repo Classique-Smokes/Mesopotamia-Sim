@@ -39,3 +39,13 @@ A future architect may find one distinction useful and ignore the rest.
 That is appropriate.
 
 The tablets are attempts to preserve causal texture that a formal repository cannot recover by itself.
+
+## Derived systematization
+
+The source collection remains non-authoritative and intact. Derived reconciliation lives at:
+
+- `../INSTITUTIONAL_DYNAMICS/08_RETIRED_VIZIER_EXTENSIONS.md` — primary future conceptual integration;
+- `../TABLET_IDEA_RECONCILIATION.md` — idea-by-idea current/later/redundancy classification;
+- `../CONCEPT_FAMILY_CROSS_INDEX.md` — links to the older mechanism families extended by these tablets.
+
+Do not treat the derived files as simulation requirements.

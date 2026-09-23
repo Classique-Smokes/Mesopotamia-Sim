@@ -159,6 +159,22 @@ Its value is to add **different subjective worlds** and make those differences c
 
 Richer motivation, planning, trust, rumor, reputation, brokerage and role-shaped salience remain separate future problems.
 
+### Final tablet-systematization link
+
+The tablet corpora have now been reconciled idea-by-idea in:
+
+- `research/conceptual/TABLET_IDEA_RECONCILIATION.md`;
+- `research/conceptual/CONCEPT_FAMILY_CROSS_INDEX.md`.
+
+For Slice 2, the only promoted **planning lenses** are:
+
+- preserve sparse actor-specific epistemic state;
+- preserve route/provenance;
+- exercise real actor divergence, stale state and contestation;
+- preserve anti-omniscience and no magical group mind.
+
+Trust, rumor mutation, reputation, brokerage, role-conditioned salience, post-office influence and institutional correction remain later conceptual material and are not Slice-2 requirements.
+
 ## 9. Next work
 
 1. Author Slice-2 acceptance/applicability authority.

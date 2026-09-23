@@ -106,3 +106,41 @@ These extensions are mostly later than Slice 2 or outside v0 entirely.
 The archive/correction and sanctioned-opposition themes may eventually interact with documentary memory, office succession, and institutional epistemics.
 
 Role-conditioned salience belongs to richer agency/attention work, not the current minimal subjective-information slice.
+
+
+## 8. Redundancy / overlap disposition
+
+The corpus should not create duplicate mechanism families for distinctions already represented elsewhere.
+
+### Already established — no new family
+
+- office/role separate from holder;
+- formal authority distinct from effective influence;
+- recognition distinct from objective truth;
+- official/remembered history distinct from causal history;
+- durable artifact not automatically true;
+- institutional action grounded in people/roles rather than a collective ghost.
+
+The tablets remain useful challenge cases for these distinctions.
+
+### Genuine extensions
+
+- role-conditioned salience / expertise-and-blindness;
+- post-office **social** succession and predecessor shadow;
+- residual legitimacy versus decaying competence;
+- institutional error under sincere actors as a coordination/epistemic problem;
+- correction history and institutional corrigibility;
+- sanctioned opposition / credible contradiction.
+
+### Primary cross-links
+
+- post-office succession → mechanism families B/C/D/K and `02_URUK_CHALLENGE_CASES.md` “Returning Predecessor”;
+- structural failure under sincere actors → mechanism family J;
+- archive correction → mechanism families H/L;
+- sanctioned opposition → mechanism families C/D/I;
+- role-conditioned salience → future richer agency/attention seam, with J as the closest existing institutional family.
+
+See also:
+
+- `../TABLET_IDEA_RECONCILIATION.md`;
+- `../CONCEPT_FAMILY_CROSS_INDEX.md`.
