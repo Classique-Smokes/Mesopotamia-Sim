@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / SLICE 3 DISCOVERY RECONCILED / ACCEPTANCE AUTHORITY NEXT.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / SLICE 3 ACCEPTANCE FROZEN / IMP-0003 READY FOR DISPATCH.**
 
 Verified Slice-1 completion:
 
@@ -72,6 +72,20 @@ Frozen Slice-2 acceptance authority:
 - frozen manifest SHA `e4872531cf780d51fa1863f2a0b87e2424a71b69`
 - freeze record `plans/verification/SFL_V0/SLICE2_ACCEPTANCE_FREEZE_RECORD.md`
 - final pre-code review **PASS — MAY FREEZE UNCHANGED**
+
+Frozen Slice-3 acceptance authority:
+
+- `plans/verification/SFL_V0/SLICE3_ACCEPTANCE_MANIFEST.md`
+- version `SFL-V0-S3-ACCEPTANCE-v1`
+- frozen ref `sfl-v0-slice3-acceptance-v1`
+- freeze commit `25160f33c994fd5f3e277ae98f03e55d37c878dd`
+- frozen manifest SHA `1aae13dc27572361fe99c31ef8aee0444d39364a`
+- freeze record `plans/verification/SFL_V0/SLICE3_ACCEPTANCE_FREEZE_RECORD.md`
+- final pre-code review `research/technical/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW_V3_FINAL.md` — **PASS — MAY FREEZE UNCHANGED**
+- census: 109 unique AcceptanceIds = 96 REQUIRED / 11 DEFERRED / 2 UNEXERCISED
+- exact inherited expansion: 128 Slice-1 REQUIRED + 46 Slice-2 REQUIRED
+- IMP-0003 packet: `tasks/implementation/IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md`
+- conditional S1-084 gate: `tasks/research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md`
 
 TRES-0010 closure evidence:
 
@@ -166,11 +180,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Draft a separate Slice-3 acceptance/applicability authority from `research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md`.
-2. Make formation, continuity, lifecycle, Household Recognition, controlled lineage, provision-backing/derived-capacity substrate, and exact prior-slice regressions omission-detectable.
-3. Keep general CandidateOrganization convergence deferred under the bounded one-referent-per-formation-episode rule; escalate only if implementation needs multi-label convergence.
-4. Keep head/office, provision solicitation/spending, mediated marriage, and HouseholdDecisionContext in Slice 4.
-5. Commission a fresh regular pre-code review and freeze only after **PASS — MAY FREEZE UNCHANGED**.
-6. Do **not** begin IMP-0003 coding before that freeze.
+1. Dispatch `tasks/implementation/IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` on `implementation/imp-0003-slice3-household`.
+2. If the implementation would alter the exact `WorldState` private-field inventory or the frozen S1-084 structural audit, stop that triggering change and dispatch `tasks/research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md` first.
+3. Keep general CandidateOrganization convergence deferred under the one-referent-per-formation-episode boundary; escalate only if implementation needs multi-label convergence.
+4. Keep head/office, endogenous provision solicitation/spending, mediated marriage, HouseholdDecisionContext, and checkpoint/restore out of Slice 3.
+5. After all frozen acceptance evidence passes, freeze an exact IMP-0003 implementation candidate and commission fresh independent post-implementation conformance before promotion.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.

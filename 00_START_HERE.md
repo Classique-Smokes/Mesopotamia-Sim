@@ -38,15 +38,20 @@ Accepted foundation:
 Active work:
 
 - IMP-0001 / Slice 1: **VERIFIED COMPLETE**
-- verified candidate-v3: `imp-0001-slice1-conformance-candidate-v3` @ `06e25644879dd8505e24fcaeb43256f69c29c15f`
-- independent K4: `research/technical/IMP-0001/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3.md` — **PASS**
-- canonical promotion: `262dc6e1d846761110fcd6a063bf8b4aa267b3dc`; post-promotion CI `35800043322` PASS
-- final completion record: `research/technical/IMP-0001/IMP-0001_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
-- **next substantive activity:** `plans/SFL_V0_SLICE1_BIRTH_OBSERVATION_PLAN.md` before Slice 2
-- frozen Slice-1 acceptance authority remains `SFL-V0-S1-ACCEPTANCE-v1`
-- failed candidate-v1/v2 refs remain historical evidence pending branch-hygiene reconciliation
-- TRES-0010 pre-implementation gate: **CLOSED / PASS**
-- GOV-0001 rulebook restructuring: **PROMOTED / DEC-0009 ACCEPTED**
+- IMP-0002 / Slice 2: **VERIFIED COMPLETE**
+- Slice-3 acceptance authority: **FROZEN / PASS**
+  - manifest: `plans/verification/SFL_V0/SLICE3_ACCEPTANCE_MANIFEST.md`
+  - version/ref: `SFL-V0-S3-ACCEPTANCE-v1` / `sfl-v0-slice3-acceptance-v1`
+  - freeze commit: `25160f33c994fd5f3e277ae98f03e55d37c878dd`
+  - frozen manifest SHA: `1aae13dc27572361fe99c31ef8aee0444d39364a`
+  - final pre-code review: `research/technical/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW_V3_FINAL.md` — **PASS — MAY FREEZE UNCHANGED**
+- IMP-0003 / Slice 3: **READY FOR DISPATCH**
+  - task: `tasks/implementation/IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md`
+  - planned branch: `implementation/imp-0003-slice3-household`
+- conditional S1-084 implementation gate:
+  - `tasks/research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md`
+  - fires before any change to the exact `WorldState` private-field inventory or current S1-084 structural evidence path.
+- head/office, endogenous provision solicitation/spending, mediated marriage authority, and checkpoint/restore remain later-slice work.
 
 Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 
@@ -62,6 +67,7 @@ Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 - Decision register: `decisions/DECISION_REGISTER.md`
 - Accepted architecture: `architecture/accepted/`
 - Accepted SFL specification: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
+- Frozen Slice-3 acceptance authority: `plans/verification/SFL_V0/SLICE3_ACCEPTANCE_MANIFEST.md`
 - Active assumptions: `registers/ASSUMPTIONS_REGISTER.md`
 - Open/resolved design questions: `registers/OPEN_ISSUES_REGISTER.md`
 - Current phase: `plans/CURRENT_PHASE.md`
