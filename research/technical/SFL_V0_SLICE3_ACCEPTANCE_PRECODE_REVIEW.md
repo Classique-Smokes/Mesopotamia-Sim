@@ -1,274 +1,286 @@
-# SFL v0 Slice 3 Acceptance Authority — Fresh Pre-Code Review Return
+# SFL v0 Slice 3 — Fresh Acceptance Pre-Code Review
 
-**Status:** BLOCK — REVIEW FRESHNESS / ANTI-ANCHORING REQUIREMENT NOT SATISFIED  
-**Review target:** `SFL-V0-S3-ACCEPTANCE-v1-candidate1`  
-**Exact reviewed candidate commit:** `f2a55f875024e5b341b12a3577799ce200f39ec9`  
-**Exact reviewed candidate blob:** `6045a330bf267a3189752b98ec990f1b5d6956a9`  
+**Review date:** 2026-09-23  
+**Repository:** `Classique-Smokes/Mesopotamia-Sim`  
+**Review branch:** `review/sfl-v0-slice3-acceptance-precode-20260923-r1`  
+**Review commission:** `tasks/research/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW.md`  
 **Candidate path:** `plans/verification/SFL_V0/SLICE3_ACCEPTANCE_MANIFEST.md`  
-**Canonical authority base:** `main` at `221e579ba8805ff6de23a73f73b2e4d2431011a8`  
-**Commission:** `tasks/research/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW.md`  
-**PR context:** draft PR #46, `SFL v0 Slice 3 — acceptance authority candidate v1`  
-**Review branch:** `review/sfl-v0-slice3-acceptance-precode-20260923-r1`
+**Candidate commit:** `f2a55f875024e5b341b12a3577799ce200f39ec9`  
+**Expected candidate blob:** `6045a330bf267a3189752b98ec990f1b5d6956a9`  
+**Observed candidate blob:** `6045a330bf267a3189752b98ec990f1b5d6956a9`  
+**Canonical accepted-authority base used for independent derivation:** `221e579ba8805ff6de23a73f73b2e4d2431011a8`
 
-## 1. Verdict
+# Verdict
 
 **BLOCK**
 
-This return does **not** identify an operative semantic/applicability defect in the exact candidate bytes. The block is procedural and review-validity related: this reviewer read the candidate before independently deriving the expected Slice-3 boundary from the accepted source set. That violates the commission's explicit §6 anti-anchoring restriction, so this return cannot honestly serve as the fresh source-first review required to authorize **PASS — MAY FREEZE UNCHANGED**.
+The target-integrity check passed, but the candidate is not safe to freeze unchanged. Four operative acceptance-authority defects remain:
 
-The candidate therefore must **not** be frozen on the authority of this review.
+1. the controlled pre-existing `HouseholdProvisionCommitment` fixture prerequisite is not uniquely authorized by accepted fixture authority;
+2. Household existence/continuity Recognition is not made omission-detectable across its required acquisition/conflict surface;
+3. the accepted closed set of qualifying person-person support meanings is referenced generically but never frozen as an omission-detectable Slice-3 census;
+4. the purportedly exact inherited regression bundle `S3-R11-FROZEN-AUTHORITY-INTEGRITY` uses a vague “all prior REQUIRED suites” binding instead of exact prior AcceptanceIds.
 
-Smallest faithful repair: recommission the exact candidate to a fresh reviewer/context that has not read the candidate or the prohibited Slice-3 discovery/reconciliation material, require source-first derivation, then compare that derivation to commit `f2a55f875024e5b341b12a3577799ce200f39ec9` / blob `6045a330bf267a3189752b98ec990f1b5d6956a9`. This finding, by itself, requires no operative change to the candidate text.
+Because each requires an operative authority/acceptance change or upstream authority resolution, the candidate must remain unchanged and return for reconciliation, a new candidate, and fresh re-review.
 
-## 2. Exact-target / repository checks
+## 1. Independence procedure and target integrity
 
-Mechanical checks completed against the exact candidate and canonical base:
+The first repository content read for this commission was the complete review commission at:
 
-- candidate commit `f2a55f875024e5b341b12a3577799ce200f39ec9` has the canonical base commit `221e579ba8805ff6de23a73f73b2e4d2431011a8` as its sole parent;
-- that candidate commit adds only `plans/verification/SFL_V0/SLICE3_ACCEPTANCE_MANIFEST.md`;
-- the candidate file blob is exactly `6045a330bf267a3189752b98ec990f1b5d6956a9`;
-- draft PR #46 has exactly two changed files: the candidate manifest plus the pre-code review commission;
-- no candidate/accepted/frozen authority file was edited by this review;
-- the review return is the only file added on the isolated review branch.
+`tasks/research/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW.md`
 
-## 3. Source-derived Slice-3 boundary summary
+The candidate was not opened until the expected Slice-3 semantic and verification boundary had been independently derived from accepted authority and the required canonical verification package. The prohibited Slice-3 discovery/reconciliation documents were not read for that derivation or for the verdict.
 
-The accepted sources establish the following boundary.
+After the independent boundary was fixed, the exact candidate path was fetched at commit `f2a55f875024e5b341b12a3577799ce200f39ec9`. GitHub reported blob `6045a330bf267a3189752b98ec990f1b5d6956a9`, exactly matching the commissioned target. No target-integrity block applies.
 
-### Required in Slice 3
+## 2. Independently derived Slice-3 boundary
 
-Slice 3 is the first executable Household substrate. It must cover:
+The following boundary was fixed before opening the candidate.
 
-- Household formation from lower-level residence, durable ties, distinct-cycle qualifying support history, and founder-specific evidence-backed `CandidateRecognition`;
-- persistent Household numerical identity plus provenance-bearing `FormationWarrant` and founding `SustainingParticipant` associations;
-- bilateral post-formation participation, explicit participation end, historical continuity transmission, complete founder turnover, and no identity-by-snapshot-similarity shortcut;
-- stable-cycle Active / Inactive / Dissolved lifecycle, Inactive reactivation through the sole bearer, same-cycle bridge handoff, and Dissolved no-resurrection;
-- Household existence/continuity Recognition over the already accepted subjective-information substrate, without passive synchronization or engine-state omniscience;
-- controlled v0 division/consolidation lineage, explicit predecessor-source provenance, fresh-evidence conditions, ambiguity-withholds-lineage behavior, rebuildable direct `DerivedFrom`, and distinct transitive `AncestorOf`;
-- participant-backed `HouseholdProvisionCommitment` state and derived mobilizable capacity semantics, while personal grain remains personal;
-- deterministic reaction closure, idempotence, stable-cycle publication, derived-state nonauthority/rebuildability, locality, observer noninterference, fallback quarantine, and exact inherited regressions.
+### 2.1 Required Slice-3 substrate
 
-Primary anchors: `SPEC-SFL-0001` §§6–9, ADR-0001, ADR-0003, ADR-0004, the canonical formation/continuity/lineage/recognition/provision families, and the cross-cutting verification contract.
+Slice 3 must make executable, omission-detectable, and independently checkable:
 
-### Outside Slice 3
+- **Formation:** at least two distinct founders; shared residence; a connected durable-tie structure; at least two qualifying committed support events on different cycles; every required founder's actor-held, uncontested `CandidateRecognition`; an inert/nonauthoritative candidate label; a provenance-bearing `FormationWarrant`; one persistent Household numerical identity; founding `SustainingParticipant` associations; founders' direct Household existence Recognition; no primitive `FormHousehold` ingress and no hidden universal Members authority.
+- **Qualifying support meanings:** the accepted formation predicate's qualifying ordinary committed support set is accepted gift/help, loan provision, and favour fulfilment. Household-originated support is not independent formation/continuity or fresh-lineage evidence.
+- **Participation:** entry only to Active H or Inactive H with exactly one live continuity bearer; explicit request/invite with named-counterpart acceptance; newcomer Household Recognition; a live bridge that recognizes the same H; shared residence; durable tie; qualifying post-formation support; a provenance-bearing `ParticipationWarrant`; explicit `ParticipationEndWarrant` for exit.
+- **Continuity:** identity is carried only through an explicit historical transmission chain and `ContinuationWarrant`; endpoint similarity, residence, assets, kinship, or overlap are insufficient. Complete founder turnover remains possible. A valid continuity/participation interpretation for existing non-Dissolved H takes precedence over consuming the same evidence to form a duplicate H.
+- **Lifecycle:** 2+ sustaining participants = Active; exactly 1 = Inactive/live bearer; 0 = Dissolved, published only at stable reaction closure. Inactive may reactivate through its sole bearer. Dissolved cannot reactivate as the same identity. Same-cycle bridge handoff resolves entry/continuity before the bridge's accepted exit where the accepted narrow priority applies.
+- **Household Recognition:** actor-specific, provenance-bearing Recognition of “H exists/continues” uses the accepted Recognition state model `Unknown / Recognized / Contested`; does not passively synchronize from objective engine state/history; does not use IDs as a winner rule; can be transmitted only through accepted evidence/communication routes; and is genuinely causal for participation where required.
+- **Controlled lineage:** zero-or-one behaviorally inert, rule-versioned `LineageWarrant`; explicit `ParticipationEndWarrant` founder-source provenance; fresh ordinary person-person evidence; predecessor lifecycle preconditions; ambiguity withholds lineage rather than formation; direct `DerivedFrom` differs from transitive `AncestorOf`; projections are rebuildable; no inherited causal state; repeated predecessor rejoin/re-exit source selection remains outside the controlled classifier.
+- **Provision substrate:** a valid `HouseholdProvisionCommitment(Person -> Household)` keeps grain personal; capacity is `max(0, grain - 2)`; `NeedsGrain` exposes zero; no pooled treasury exists; mobilizable capacity is derived/rebuildable; participation end and dissolution terminate the relevant commitments without confiscation. However, accepted v0 acquisition is explicitly acceptance-based and head-scoped, so a Slice-3 test prerequisite cannot be invented by verification.
+- **Reaction / determinism / observability:** causal reaction closure and idempotence; monotone `ReactionIndex`; stable-closure lifecycle publication; no behavior-affecting stale derived authority; nonsemantic iteration/ID metamorphics within their legitimate domains; locality and observer noninterference; independent oracles and audited fixture write sets.
+- **Frozen regressions:** Slice-1 and Slice-2 frozen authority remains immutable; exact inherited regression bindings remain visible and lossless.
 
-The accepted sequencing permits Slice 3 to exclude executable:
+### 2.2 Must remain deferred
 
-- HouseholdHeadRole appointment/vacancy/succession and head Recognition;
-- `HouseholdDecisionContext` / separate household initiative;
-- endogenous head-scoped provision solicitation and reconsideration;
-- Household support / mediated-marriage dowry spending and contributor debit execution;
-- mediated-marriage authority topology and authority-destroying head races;
-- exact engine checkpoint/restore continuation;
-- generic CandidateOrganization multi-label convergence;
-- general fission/merger/reconsolidation theory and repeated predecessor rejoin/re-exit source selection;
-- generic nonparticipant perception infrastructure;
-- generated-history framework as a Slice-3 completion gate;
-- rendered causal-explanation surface.
+Slice 3 must not pull forward:
 
-This is consistent with `plans/CURRENT_PHASE.md`'s Stage-4 slice order and, more importantly, does not contradict the accepted SPEC/ADR semantics.
+- HouseholdHeadRole appointment/vacancy/succession or head Recognition;
+- HouseholdDecisionContext or separate household initiative;
+- head-scoped provision solicitation/reconsideration;
+- household support, dowry expenditure, contributor debit/ranking execution, or generic spending;
+- mediated-marriage authority topology;
+- authority-destroying races requiring executable head authority;
+- general multi-label CandidateOrganization convergence/equivalence;
+- repeated predecessor rejoin/re-exit lineage-source generalization;
+- generic nonparticipant observation/perception;
+- engine checkpoint/restore continuation, which remains Slice 5;
+- general generated-history infrastructure or rendered explanation as a Slice-3 completion gate.
 
-## 4. Candidate census / frozen-regression audit
+## 3. Accepted/canonical sources actually consulted
 
-Independent mechanical recount of the exact candidate:
+The review consulted the following source set before or during comparison:
 
-- **103 unique AcceptanceIds**
-- **90 REQUIRED**
-- **11 DEFERRED**
-- **2 UNEXERCISED**
-- duplicate AcceptanceIds: **0**
+- `AGENTS.md`
+- `00_START_HERE.md`
+- `founding/00_MESOPOTAMIA_SIMULATION_PROJECT_SEED.md`
+- `governance/MASTER_ARCHITECT_GUIDE.md`
+- `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`
+- `decisions/DEC-0001_FOUNDATIONAL_SOCIAL_FABRIC.md`
+- `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
+- `architecture/accepted/ADR-0001_ACTIVE_SOCIAL_STATE_REPRESENTATION.md`
+- `architecture/accepted/ADR-0002_HIERARCHICAL_INDIVIDUAL_AGENCY.md`
+- `architecture/accepted/ADR-0003_PROGRESSIVE_DERIVED_STATE_SPECIALIZATION.md`
+- `architecture/accepted/ADR-0004_REFERENCE_SIMULATION_KERNEL.md`
+- `architecture/accepted/ADR-0005_HOST_RUNTIME.md`
+- frozen Slice-1 manifest `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md` at freeze commit `55377cc34b8bc3ccbf9cdf5029e9791dae965987`
+- `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md`
+- frozen Slice-2 manifest `plans/verification/SFL_V0/SLICE2_ACCEPTANCE_MANIFEST.md` at freeze commit `88f876298852553d6afca76e743a5a811ff9f0fd`
+- `plans/verification/SFL_V0/SLICE2_ACCEPTANCE_FREEZE_RECORD.md`
+- `plans/verification/SFL_V0/FORMATION_FAMILY.md`
+- `plans/verification/SFL_V0/CONTINUITY_TURNOVER_FAMILY.md`
+- `plans/verification/SFL_V0/LINEAGE_FAMILY.md`
+- `plans/verification/SFL_V0/RECOGNITION_INFORMATION_FAMILY.md`
+- `plans/verification/SFL_V0/PROVISION_GROUNDING_FAMILY.md`
+- `plans/verification/SFL_V0/NO_SELF_CONFIRMATION_FAMILY.md`
+- `plans/verification/SFL_V0/RESOLUTION_REACTION_FAMILY.md`
+- `plans/verification/SFL_V0/DETERMINISM_RECOVERY_EXPLAINABILITY_FAMILY.md`
+- `plans/verification/SFL_V0/CROSS_CUTTING_VERIFICATION_CONTRACT.md`
+- only after the independent derivation was fixed: the exact candidate `plans/verification/SFL_V0/SLICE3_ACCEPTANCE_MANIFEST.md` at the commissioned commit/blob.
 
-The self-census is exact.
+Repository access used the GitHub connector for immutable-ref/path reads plus deterministic text parsing for census and exact inherited-ID validation.
 
-The exact inherited regression bundles reference 74 unique Slice-1/Slice-2 AcceptanceIds. Every referenced ID exists in the frozen manifests.
+## 4. Candidate census
 
-Frozen authority identities on the canonical base also match their freeze records:
+Independent recount of candidate applicability rows:
 
-- Slice 1 manifest blob: `efd2d0aab4579a78a3e7a0fc8d027c15f2f5e766`;
-- Slice 2 manifest blob: `e4872531cf780d51fa1863f2a0b87e2424a71b69`.
+| Status | Count |
+|---|---:|
+| REQUIRED | 90 |
+| DEFERRED | 11 |
+| UNEXERCISED | 2 |
+| **Total** | **103** |
 
-The nine prior Slice-1 obligations named as newly fired by Slice 3 all exist and remain historically **DEFERRED** in the frozen Slice-1 manifest:
+Results:
 
-- `S1-075`;
-- `S1-BND-FORMATION`;
-- `S1-BND-LINEAGE`;
-- `S1-META-09`;
-- `S1-MUT-01`;
-- `S1-MUT-02`;
-- `S1-MUT-05`;
-- `S1-MUT-07`;
-- `S1-MUT-09`.
-
-The candidate correctly treats new Slice-3 evidence as firing those obligations without rewriting their historical frozen status.
+- 103 unique `AcceptanceId` values were found.
+- No duplicate Slice-3 `AcceptanceId` was found.
+- The claimed 90 / 11 / 2 status totals are correct.
+- Every DEFERRED/UNEXERCISED row carries a visible reason or trigger.
+- No arithmetic census defect was found.
+- REQUIRED rows each state a primary completion obligation, although Findings F-03 and F-04 show that two broad/grouped surfaces are not omission-detectable enough to support their wording.
 
 ## 5. Findings
 
-| ID | Class | Source anchor | Candidate location | Finding / consequence | Smallest faithful repair |
+| Finding ID | Accepted source anchor | Candidate row/section | Defect | Consequence | Smallest faithful repair |
 |---|---|---|---|---|---|
-| RV-01 | **BLOCK — review validity** | review commission §6, Independence / anti-anchoring restriction; commission §§3 and 9 | whole review process, not an operative candidate row | The candidate was read before the source-first derivation was fixed. The reviewer therefore cannot certify that the final comparison was unanchored as required. A PASS from this review would misstate provenance and cannot satisfy the freeze gate. | Re-run the review in a genuinely fresh context/reviewer. Derive expected Slice-3 applicability from accepted sources first, fix the finding set, then read/compare the exact candidate. No candidate text change is required by this finding. |
+| **F-01 — controlled provision prerequisite is not uniquely fixture-authorized** | SPEC §1.1 fixture authority; SPEC §8.1 `HouseholdProvisionCommitment` is explicitly accepted and §8.4 makes request/reconsideration a head-role scope; canonical `PROVISION_GROUNDING_FAMILY.md` VS-SFL-040 obtains the commitment through head request + participant acceptance; `CROSS_CUTTING_VERIFICATION_CONTRACT.md` §6 permits lower-level controlled setup and allows endogenous downstream facts via previously verified producers, but does not authorize direct writing of this Household commitment relation. | §3.1; `S3-070`–`S3-076`; `S3-D06` | The candidate states that a “controlled pre-existing valid HouseholdProvisionCommitment” may be supplied under SPEC fixture authority while simultaneously deferring the accepted head-scoped acquisition path to Slice 4. Accepted fixture authority does not uniquely establish that this endogenous Household relation may be injected as a fresh prerequisite, and Slice 3 has no previously verified in-scope producer for it. | Capacity/backing tests could pass over a state whose acquisition has no accepted causal producer, silently creating the exact headless acquisition semantic the commission requires the reviewer to challenge. The commission explicitly requires BLOCK when this fixture authority is not uniquely supported. | Resolve the fixture authority in accepted authority before a new candidate, or move the affected provision prerequisite/coverage to a slice with a valid accepted producer. Do not repair this merely by stronger candidate prose and do not invent a headless acquisition action. |
+| **F-02 — Household Recognition acquisition/conflict surface is incomplete** | SPEC §§6.1–6.6 require `Unknown / Recognized / Contested` for Recognition propositions including “household H exists/continues,” provenance-bearing communication, no passive synchronization, and causal action gating; SPEC §§7.2 and 7.4 make founder H Recognition and newcomer H Recognition consequential. Frozen Slice-2 §§4/7/8 deliberately limit Slice-2-native Recognition completion to `RC-CANDIDATE`, so CandidateRecognition evidence does not discharge the Household proposition. | `S3-040`–`S3-047`, especially `S3-041`, `S3-042`, `S3-044`, `S3-046`; §3 Household Recognition fixture rule | The candidate proves founder direct acquisition and says later H evidence updates only through direct participation or communication, but it does not require an endogenous outsider/newcomer Unknown→Recognized Household acquisition through `CommunicateClaim/Inform`. It also has no H-specific incompatible-evidence→`Contested` case and no requirement that `Contested` fail the participation Recognition gate. `S3-044` permits direct-participation/communication route self-selection, while §3 allows controlled actor-held evidence when acquisition is not the target. | An implementation could leave Household Recognition communication acquisition unimplemented, or collapse conflicting H evidence to Unknown/another non-Contested outcome, and still satisfy the candidate while using fixture-seeded Recognized state for participation. That weakens accepted actor-specific causal Recognition. | Add omission-detectable H-proposition subcases for communication acquisition with provenance, direct-participation update where applicable, incomparable H evidence producing/retaining `Contested`, and `Contested` suppressing the participation gate, with no ID/arrival/global-state winner. |
+| **F-03 — “qualifying support” is broader than frozen evidence coverage** | SPEC §7.2 defines the accepted qualifying support set exactly as accepted gift/help, loan provision, and favour fulfilment; SPEC §7.4 reuses qualifying post-formation support for participation; SPEC §7.7.3 requires fresh ordinary person-person qualifying support for lineage; `NO_SELF_CONFIRMATION_FAMILY.md` VS-SFL-050/052 excludes Household-originated support as independent formation/fresh-lineage evidence. | `S3-005`, `S3-026`, `S3-050`, `S3-053` and other rows using the unexpanded phrase “qualifying support” | The candidate freezes recurrence/freshness timing but never freezes or structurally audits the accepted event-kind census. The canonical formation narrative can be satisfied with gift/help alone. A production classifier that accepts gift/help but accidentally omits loan provision or favour fulfilment could satisfy the candidate's sampled positive/count/freshness cases. | The completion authority does not detect omission of accepted members of a closed semantic predicate, and the broad “qualifying support” wording exceeds the evidence domain that the manifest actually requires. | Add an exact table-driven or structural support-kind census proving all accepted ordinary kinds are eligible wherever the shared qualifying-support predicate is used, and that Household-originated support remains excluded. This need not multiply every scenario combination. |
+| **F-04 — inherited regression bundle R11 is not exact** | Commission §7/J and §10 require exact inherited regression bindings; `SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md` §5 permits grouped rows only when the expected member set is frozen and omission-detectable. | `S3-R11-FROZEN-AUTHORITY-INTEGRITY` | The row is inside “Exact inherited regression bundles” but binds “all prior REQUIRED suites remain green” rather than enumerating exact prior `AcceptanceId` members. Manifest version/blob/ref integrity does not itself prove every individual prior REQUIRED row was executed and reported. | A suite-level or aggregate green signal can hide a missing/skipped prior acceptance row, defeating the commission's explicit exact-ID regression requirement. | Keep the frozen-manifest identity check, but expand the regression obligation to the exact prior REQUIRED AcceptanceIds (or an equivalently frozen candidate-resident exact expansion that completion must report one-by-one). |
 
-### Candidate semantic/applicability findings
+## 6. Required explicit determinations
 
-**None found in this contaminated-but-source-grounded audit.**
+### 6.1 Controlled provision fixture authority
 
-That statement is not a substitute for the required fresh review. It records that the subsequent source comparison did not uncover an operative repair that should be smuggled into a process-only BLOCK.
+**Determination: not uniquely supported by accepted authority — BLOCK.**
 
-## 6. Explicit mandatory questions
+The accepted SPEC allows bounded lower-level facts/exogenous events as fixtures and forbids fixtures from directly writing endogenous results being proved. The provision commitment is an accepted Household relation that is explicitly accepted by a participant, and the canonical positive producer uses the head-scoped request/accept path. The candidate defers that producer to Slice 4 but asserts direct prerequisite injection in Slice 3.
 
-### 6.1 Controlled provision prerequisite
+The prerequisite may describe a semantically possible state, including a state that could persist after a head later vacates, but semantic possibility is not the same as accepted fixture authority. No accepted source uniquely authorizes fresh fixture creation of that relation for Slice-3 completion. F-01 controls.
 
-**Substantive audit result: no semantic invention found. Fresh reviewer must independently reconfirm.**
+### 6.2 LATER-01 / bounded one-candidate avoidance
 
-`SPEC-SFL-0001` §8.1 already defines `HouseholdProvisionCommitment(Person -> Household)`, personal ownership retention, reserve arithmetic, `NeedsGrain` zero capacity, explicit acceptance, derived mobilizable capacity, and dissolution termination. The acquisition path is head-scoped in §§8.2–8.5 and is appropriately deferred to Slice 4.
+**Determination: candidate boundary is faithful; no finding.**
 
-For verification mechanics, the cross-cutting contract explicitly distinguishes fixture inputs from endogenous results under judgment and anticipates a card declaring an additional fixture write beyond its generally allowed set. The frozen Slice-2 authority also establishes the accepted pattern that controlled provenance-bearing semantic pre-state may be supplied when its acquisition is not the assertion target.
+The candidate uses exactly one inert stable CandidateOrganization referent per bounded formation episode, makes the label/ID non-evidentiary and nonauthoritative, and fires LATER-01 if implementation would need to merge/reconcile distinct candidate referents. Nothing reviewed requires stable candidate identity to become a convergence rule. `S3-D01`, `S3-086`, and `S3-090` correctly quarantine that future semantic question.
 
-The candidate's §3.1 seam is correspondingly narrow:
+### 6.3 Household Recognition acquisition routes
 
-- the prerequisite is explicitly fixture-marked;
-- it does not claim headless solicitation/acceptance;
-- it does not write the derived capacity result;
-- it creates no head/office state;
-- it transfers no grain;
-- it is excluded from formation/continuity evidence;
-- commitment acquisition/reconsideration remains deferred.
+**Determination: accepted routes are actor-held and provenance-bearing; candidate coverage is incomplete — F-02.**
 
-Rows S3-071 through S3-076 can therefore test accepted downstream state/capacity/termination semantics without inventing a headless acquisition mechanism. S3-070 must continue to be understood as a controlled pre-state/state-semantics witness, **not** evidence that Slice 3 implements the accepted acquisition transition.
+Founders directly recognize the H produced by their formation event. Outsiders/newcomers do not acquire H Recognition from engine/global Household state, diagnostic history, co-residence, or stable IDs. Where an actor was not a direct participant in the decisive event, communication of a proposition held by the sender is the accepted general route available in the reviewed authority; generic nonparticipant observation remains deliberately unaccepted/deferred.
 
-### 6.2 LATER-01 / one-candidate bounded avoidance
-
-**Substantive audit result: bounded avoidance is faithful.**
-
-The accepted SPEC gives `CandidateRecognition(C)` meaning for a candidate referent but does not define a general equivalence/convergence algorithm over multiple competing candidate labels. The candidate uses one inert stable referent per bounded formation episode, explicitly forbids candidate ID/label from becoming evidence, and fires LATER-01 if implementation needs to reconcile distinct referents/evidence paths. That avoids silently solving an undefined general convergence problem.
-
-### 6.3 Household Recognition acquisition route
-
-**Substantive audit result: bounded Slice-3 route is faithful.**
-
-The accepted information model permits automatic direct-party/direct-participation knowledge and otherwise requires valid event-specific observation or communication. It forbids passive synchronization.
-
-The candidate does not invent a generic nonparticipant observation entitlement. For Slice-3 completion witnesses it uses direct participation and communication with provenance/precedence, while leaving generic perception/observation infrastructure outside the slice. This is a bounded implementation/verification choice, not a claim that accepted event-specific observation semantics cease to exist.
-
-Engine-side H existence, diagnostics, IDs, container order, and message arrival are explicitly barred from becoming actor evidence/winner rules.
+The candidate correctly blocks passive/global synchronization, but it does not make outsider/newcomer communication acquisition and H-specific `Contested` behavior mandatory completion evidence.
 
 ### 6.4 Controlled lineage scope
 
-**Substantive audit result: faithful and deliberately narrow.**
+**Determination: candidate scope is faithful; no lineage finding.**
 
-The candidate tracks the accepted controlled-v0 rules:
-
-- ordinary successor formation remains independent;
-- zero-or-one `LineageWarrant`;
-- division requires a continuing non-Dissolved predecessor and fresh post-exit support;
-- consolidation requires both predecessors Dissolved plus fresh post-dissolution cross-predecessor support;
-- each founder source cites an explicit `ParticipationEndWarrant`;
-- ambiguity withholds lineage rather than choosing by ID/order;
-- lineage transfers no causal state or numerical identity;
-- direct `DerivedFrom` remains distinct from transitive `AncestorOf`;
-- repeated predecessor rejoin/re-exit source-selection generalization remains visibly deferred.
+The candidate preserves independent ordinary formation, direct predecessor source provenance through explicit `ParticipationEndWarrant`, fresh-evidence timing, division predecessor continuity, consolidation predecessor dissolution, ambiguity withholding, zero-or-one warrant, direct/transitive distinction, rebuildability, temporal/direct-edge invariants, lineage historical persistence, and no inherited causal state. Repeated predecessor rejoin/re-exit source selection remains visibly deferred through `S3-065`/`S3-D03`.
 
 ### 6.5 S1-084 regression adaptation
 
-**Substantive audit result: candidate preserves the frozen invariant.**
+**Determination: candidate handles the structural adaptation correctly; no finding.**
 
-Frozen S1-084 requires derived-rebuild/stale-cache authority evidence, with structural evidence allowed when no behavior-affecting derived cache exists. Slice 3 necessarily introduces new authoritative Household/warrant state and may force an implementation-level exact-structure test to change even though the frozen semantic obligation does not.
+Frozen `S1-084` remains REQUIRED and protects derived rebuild/stale-cache nonauthority. Candidate `S3-R07` binds `S1-084`, `S1-META-05`, `S1-MUT-24`, and `S2-054-CACHE-NONAUTHORITY`. Candidate `S3-093` explicitly requires preservation of the underlying no-hidden-derived-authority invariant and requires a separately reviewed lossless adaptation if an exact private-field inventory necessarily changes.
 
-S3-093 correctly forbids deleting/loosening the inherited invariant for convenience and requires any necessary exact-structure test adaptation to be lossless and separately reviewed. The frozen Slice-1 manifest/status itself must remain unchanged.
+This is not permission for implementation to loosen or delete the frozen regression. The candidate is correct on this point.
 
-## 7. Adversarial attempts and outcomes
+## 7. Broad-claim review
 
-| Probe | Outcome |
-|---|---|
-| 1. Find a REQUIRED row supported only by discovery prose | **No operative example found** in the subsequent accepted-source comparison. Formation, participation, lifecycle, Recognition, lineage, provision state/capacity, closure, and regression rows all mapped to accepted SPEC/ADR or frozen verification authority. |
-| 2. Find an accepted Slice-3 semantic obligation missing from the manifest | **None found.** The candidate covers the Stage-4 Slice-3 household substrate named by the accepted SPEC and operational slice boundary. |
-| 3. Find wording broader than its evidence domain | Potentially broad Recognition-route and nonauthority phrases were challenged. In context they are bounded by the Slice-3 completion scope and paired structural/metamorphic/causal evidence requirements. **No operative repair fixed.** |
-| 4. Test whether the provision fixture creates hidden headless acquisition | **No**, if enforced exactly as §3.1 states. It is controlled pre-state; acquisition remains a nonclaim/Slice-4 obligation. |
-| 5. Test whether one-candidate setup creates convergence authority | **No.** ID/label is non-evidence and multi-referent reconciliation fires LATER-01. |
-| 6. Test whether H Recognition can be satisfied by engine/global state | **No.** Candidate explicitly requires actor-held evidence/provenance and forbids engine-side state as evidence. |
-| 7. Test whether similar endpoint can pass continuity without explicit history | **No.** Positive and broken-bridge rows require explicit warrant/history transmission and reject endpoint similarity. |
-| 8. Test whether lineage leaks inherited causal state | **No.** S3-060 and the inherited mutation/regression bindings explicitly forbid it. |
-| 9. Test whether Slice-4 behavior is accidentally required | **No operative pull-forward found.** Head/office, household initiative, solicitation/reconsideration, spending, mediated marriage, and head races are explicitly deferred. |
-| 10. Test inherited IDs for nonexistent/misnamed bindings | **Pass.** Mechanical lookup found every one of the 74 unique cited Slice-1/Slice-2 IDs in the frozen manifests. |
+The broad phrases were challenged against their required evidence spans.
 
-## 8. Broad-claim evidence scope
+- **“same identity” / “no resurrection”:** adequately bounded by explicit warrant-chain continuity, broken-bridge control, stable lifecycle closure, and new-identity requirement after Dissolved; no finding.
+- **“no passive sync” / “no ID winner”:** the candidate has direct negative controls, but accepted H Recognition also includes `Contested` and communication acquisition. F-02 is the remaining breadth defect.
+- **“no hidden authority” / “derived”:** candidate structural/cache/rebuild obligations and S1-084 preservation are adequate except that the provision prerequisite itself lacks accepted producer/fixture authority (F-01).
+- **“qualifying support”:** evidence scope does not freeze all accepted members of the predicate; F-03.
+- **“all prior REQUIRED suites”:** not an exact inherited binding; F-04.
+- **“exact”:** census arithmetic and explicitly named R01–R10 bindings were mechanically validated; R11 is the exception described in F-04.
 
-The candidate generally pairs broad wording with an evidence form capable of matching the scope:
+## 8. Exact inherited-regression validation
 
-- formation/participation predicates: independent reconstruction plus controlled ablations/boundaries;
-- same numerical identity: explicit warrant-chain provenance rather than endpoint similarity;
-- no passive Recognition synchronization: paired objective-equal/subjective-different and stale-retention evidence;
-- lineage nonauthority: explicit accepted nontransfer list plus causal-state ablation/inherited mutant;
-- derived state: structural absence or discard/rebuild/stale-cache challenge;
-- no resurrection: lifecycle state-machine positive/negative control;
-- no hidden household-membership authority: structural/API audit plus formation/continuity controls;
-- nonsemantic iteration/ID invariance: metamorphic executions with stable-ID fallback deliberately quarantined;
-- all inherited REQUIRED evidence remains green: the expected member set is defined by immutable frozen Slice-1/Slice-2 manifests rather than implementer-selected “relevant” tests.
+### 8.1 Frozen authority identities
 
-No broad-claim candidate wording was fixed as an operative blocker in this audit.
+Slice 1:
 
-## 9. Sources consulted
+- version: `SFL-V0-S1-ACCEPTANCE-v1`
+- frozen ref: `sfl-v0-slice1-acceptance-v1`
+- freeze commit: `55377cc34b8bc3ccbf9cdf5029e9791dae965987`
+- final frozen manifest content SHA: `efd2d0aab4579a78a3e7a0fc8d027c15f2f5e766`
 
-Accepted/canonical source set consulted:
+Slice 2:
 
-- `AGENTS.md`;
-- `00_START_HERE.md`;
-- `founding/00_MESOPOTAMIA_SIMULATION_PROJECT_SEED.md`;
-- `decisions/DEC-0001_FOUNDATIONAL_SOCIAL_FABRIC.md`;
-- `governance/MASTER_ARCHITECT_GUIDE.md`;
-- `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`;
-- `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`;
-- all accepted ADRs under `architecture/accepted/` (ADR-0001 through ADR-0005 at the canonical base);
-- `plans/CURRENT_PHASE.md` for non-authoritative operational slice sequencing;
-- `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md`;
-- `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md`;
-- `plans/verification/SFL_V0/SLICE2_ACCEPTANCE_MANIFEST.md`;
-- `plans/verification/SFL_V0/SLICE2_ACCEPTANCE_FREEZE_RECORD.md`;
-- `plans/verification/SFL_V0/FORMATION_FAMILY.md`;
-- `plans/verification/SFL_V0/CONTINUITY_TURNOVER_FAMILY.md`;
-- `plans/verification/SFL_V0/LINEAGE_FAMILY.md`;
-- `plans/verification/SFL_V0/RECOGNITION_INFORMATION_FAMILY.md`;
-- `plans/verification/SFL_V0/PROVISION_GROUNDING_FAMILY.md`;
-- `plans/verification/SFL_V0/NO_SELF_CONFIRMATION_FAMILY.md`;
-- `plans/verification/SFL_V0/RESOLUTION_REACTION_FAMILY.md`;
-- `plans/verification/SFL_V0/DETERMINISM_RECOVERY_EXPLAINABILITY_FAMILY.md`;
-- `plans/verification/SFL_V0/CROSS_CUTTING_VERIFICATION_CONTRACT.md`;
-- exact candidate commit/blob identified above;
-- the review commission itself.
+- version: `SFL-V0-S2-ACCEPTANCE-v1`
+- frozen ref: `sfl-v0-slice2-acceptance-v1`
+- freeze commit: `88f876298852553d6afca76e743a5a811ff9f0fd`
+- final frozen manifest content SHA: `e4872531cf780d51fa1863f2a0b87e2424a71b69`
 
-## 10. Tools / mechanical checks
+No candidate wording reclassifies a frozen prior status.
 
-Used the connected GitHub repository interface to:
+### 8.2 Named inherited bindings
 
-- inspect PR #46 metadata/diff;
-- fetch exact files at pinned refs/commits;
-- enumerate accepted ADR and verification directories;
-- verify the candidate commit parent/file/blob identity;
-- recount candidate AcceptanceIds/statuses and duplicates;
-- resolve exact inherited regression IDs against frozen manifests;
-- verify frozen manifest blobs against freeze records;
-- verify the historical statuses of the nine newly fired Slice-1 obligations.
+The exact S1/S2 IDs named by candidate bundles `S3-R01` through `S3-R10` were mechanically resolved against the two frozen manifests:
 
-No discovery/reconciliation report listed as prohibited by commission §6 was opened or read.
+- **74 distinct exact inherited references checked**
+- **69 historically REQUIRED**
+- **5 historically DEFERRED in Slice 1 and subsequently supplied by Slice 2**
+- **0 nonexistent/misnamed references**
 
-## 11. Contamination disclosure
+The five historically Slice-1-DEFERRED exact bindings are:
 
-**Material contamination occurred.**
+- `S1-076`
+- `S1-098-COMMUNICATION`
+- `S1-META-08`
+- `S1-MUT-27`
+- `S1-MUT-28`
 
-Before performing the source-first derivation, this reviewer inspected the PR diff and therefore read the candidate manifest. That is contrary to the commission's explicit anti-anchoring sequence.
+Their appearance as later evidence bindings does not rewrite their frozen Slice-1 historical status.
 
-The following prohibited discovery/reconciliation reports were **not** read:
+The nine candidate §6 “newly fired prior Stage-3 obligations” were also checked and all exist as frozen Slice-1 DEFERRED rows:
 
-- `research/technical/SFL_V0_SLICE3_AUTHORITY_AND_GAP_INVENTORY.md`;
-- `research/technical/SFL_V0_SLICE3_IMPLEMENTATION_SURFACE_MAP.md`;
-- `research/technical/SFL_V0_SLICE3_VERIFICATION_TRIGGER_MAP.md`;
-- `research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md`.
+- `S1-075`
+- `S1-BND-FORMATION`
+- `S1-BND-LINEAGE`
+- `S1-META-09`
+- `S1-MUT-01`
+- `S1-MUT-02`
+- `S1-MUT-05`
+- `S1-MUT-07`
+- `S1-MUT-09`
 
-Prior project-chat context existed and therefore cannot be claimed absent. It was not treated as authority.
+The candidate correctly states that their historical Slice-1 statuses are not edited.
 
-Because candidate exposure happened before the independent derivation was fixed, this review cannot meet the commission's freshness standard even though the later source-grounded comparison found no operative candidate defect.
+No nonexistent, misnamed, weakened, or materially omitted exact ID was found inside R01–R10. The remaining inherited-regression defect is F-04: R11's unexpanded “all prior REQUIRED suites” clause is not an exact-ID binding.
 
-## 12. Return condition
+## 9. Required adversarial attempts
 
-Do **not** freeze `SFL-V0-S3-ACCEPTANCE-v1-candidate1` on this review.
+| # | Attempt | Outcome |
+|---:|---|---|
+| 1 | Find a REQUIRED row supported only by discovery/reconciliation prose rather than accepted authority. | **Finding produced: F-01.** The provision fixture prerequisite is asserted by the candidate but is not uniquely granted by accepted fixture authority. No discovery/reconciliation document was needed or read to establish this. |
+| 2 | Find an accepted Slice-3 obligation missing from the candidate. | **Finding produced: F-02 and F-03.** H-specific Recognition acquisition/`Contested` completion and the closed qualifying-support event-kind census are not omission-detectable. |
+| 3 | Find wording broader than the evidence domain. | **Finding produced: F-03.** “qualifying support” spans gift/help, loan provision, and favour fulfilment, but the manifest does not require the event-kind domain to be enumerated/reconstructed independently. F-04 is a second breadth/omission example for “all prior REQUIRED suites.” |
+| 4 | Test whether controlled provision fixture creates hidden headless acquisition semantics. | **Finding produced: F-01.** The accepted producer is head-scoped while the candidate injects the commitment prerequisite without accepted fixture authority for that endogenous relation. |
+| 5 | Test whether stable candidate identity is being used as implicit convergence authority. | **No finding.** One-candidate episodes are explicitly bounded; ID/label is non-evidence; LATER-01 fires before distinct-referent reconciliation. |
+| 6 | Test whether Household Recognition can be satisfied through engine/global state rather than actor evidence. | **No direct global-state bypass found.** §3 and `S3-041`/`S3-046` forbid it. **Related F-02 remains:** the positive communication acquisition and H-specific `Contested` path are not mandatory. |
+| 7 | Test whether similar final endpoint can pass continuity despite a broken bridge. | **No finding.** `S3-030`, `S3-032`, `S3-037`, and `S3-038` require explicit transmission and reject endpoint similarity/resurrection/duplicate use of the same evidence. |
+| 8 | Test whether lineage leaks inherited causal state. | **No finding.** `S3-060` explicitly denies transfer of resources/claims/authority/Recognition/roles/residence/attitudes/pending processes/lifecycle/numerical identity, and rebuildable lineage projections are separated from behavioral authority. |
+| 9 | Test whether a Slice-4 action is accidentally required by Slice 3. | **No executable Slice-4 action requirement found.** Head/office, household initiative, solicitation/reconsideration, spending, dowry, mediated marriage, and head-authority races are deferred. F-01 concerns an unsupported prerequisite state, not an explicit Slice-4 action row. |
+| 10 | Test for nonexistent, misnamed, weakened, or materially omitted inherited high-risk regression binding. | **No nonexistent/misnamed R01–R10 ID found; S1-084 is preserved losslessly. Finding produced: F-04** because R11 uses an aggregate “all prior REQUIRED suites” clause rather than exact inherited IDs, leaving omission detection weaker than the commission requires. |
 
-Recommission a genuinely fresh source-first review of the unchanged exact target. If that fresh review returns **PASS — MAY FREEZE UNCHANGED**, the candidate may proceed through the stated freeze/handoff mechanics. If it finds an operative defect, return that defect to the Master Architect and issue a new candidate/re-review as required.
+## 10. Fixture and oracle independence assessment
+
+The candidate's general fixture policy is otherwise strong: formation, participation/continuity, Recognition, and lineage witnesses are prohibited from writing the endogenous result they claim to prove, and reused H state must come from a verified producer with recorded provenance. The controlled provision prerequisite is the sole fixture-authority block identified.
+
+The candidate's oracle rules correctly forbid production formation/CandidateRecognition, continuity/lineage, Recognition, capacity, and derived-state helpers from grading their own outputs. Independent reconstruction from public history/state, simple arithmetic, direct warrant references, and metamorphic relations is the correct posture. No separate circular-oracle finding was found.
+
+## 11. Provenance / contamination disclosure
+
+The anti-anchoring order was preserved.
+
+Before the independent derivation was substantially complete, I did **not** read:
+
+- `research/technical/SFL_V0_SLICE3_AUTHORITY_AND_GAP_INVENTORY.md`
+- `research/technical/SFL_V0_SLICE3_IMPLEMENTATION_SURFACE_MAP.md`
+- `research/technical/SFL_V0_SLICE3_VERIFICATION_TRIGGER_MAP.md`
+- `research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md`
+- any prior Slice-3 acceptance review return
+- prior reviewer conclusions, chat summaries, or Master Architect reasoning advocating PASS/BLOCK
+- the candidate manifest itself.
+
+One early repository directory-enumeration response, used to identify canonical file names, exposed **filenames/paths and Git metadata only** for the prohibited Slice-3 research files. Their contents, excerpts, findings, conclusions, and reasoning were not opened or read. This metadata exposure did not supply a substantive conclusion and did not alter the independent derivation.
+
+After the independent derivation and initial finding frame were fixed, I opened only the exact commissioned candidate. I did **not** consult any of the prohibited Slice-3 discovery/reconciliation document contents afterward because the accepted authority was sufficient to determine the findings and verdict.
+
+The review-return path already existed on the review branch when the final artifact was written. After the finding set and verdict were fixed, I retrieved only that path's directory metadata (name/path/blob SHA/size) so the permitted file could be replaced; I did not read its existing content.
+
+No candidate file, accepted source, frozen prior manifest, implementation code, or other repository content was modified by this review. The only permitted mutation is this review return.
+
+## 12. Return instruction
+
+**BLOCK.**
+
+Do not freeze the reviewed candidate. Do not authorize implementation from it. Do not alter the candidate on this review branch.
+
+Return F-01 through F-04 for reconciliation. Any resulting operative candidate change requires a new candidate identity and fresh independent pre-code review.
