@@ -35,7 +35,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN CHECKPOINT CLOSED / SLICE 2 PARALLEL PRE-IMPLEMENTATION DISCOVERY READY.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / BIRTH RUN CLOSED / SLICE 2 DISCOVERY RECONCILED / ACCEPTANCE+IMPLEMENTATION PLANNING NEXT.**
 
 Verified Slice-1 completion:
 
@@ -145,10 +145,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Dispatch the three bounded Slice-2 discovery commissions via `tasks/research/SFL_V0_SLICE2_PARALLEL_DISCOVERY_DISPATCH.md`: accepted authority, implementation surfaces, and verification triggers.
-2. In parallel, the Master Architect performs `plans/NEW_TABLET_COLLECTIONS_SYSTEMATIZATION_PLAN.md` against the newly preserved source collections; delegated survey workers must not use those tablets as requirements.
-3. Reconcile all three survey returns plus the separate tablet synthesis at Master Architect level: distinguish accepted Slice-2 semantics, engineering choices, true escalation items, later-slice deferrals, and purely conceptual/future seams.
-4. If no consequential semantic blocker remains, prepare the Slice-2 implementation/verification plan before dispatching code.
+1. Discovery and tablet reconciliation are complete: `research/technical/SFL_V0_SLICE2_PREIMPLEMENTATION_RECONCILIATION.md`.
+2. Author a separate Slice-2 acceptance/applicability authority that references rather than edits the frozen Slice-1 manifest.
+3. Author the bounded Slice-2 implementation packet from the reconciliation and three preserved discovery returns.
+4. Escalate only if a required witness depends on an unaccepted event-specific observation rule or other genuinely missing semantic distinction.
 5. Do **not** treat Birth Run or tablet observations as permission to invent richer motivation, arbitrary preference weights, historical calibration, or strategic planning inside Slice 2.
 6. Preserve the isolated every-other-cycle long-run experiment as parameter-sensitivity evidence only; it does not modify canonical SFL semantics.
 
