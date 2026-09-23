@@ -2130,3 +2130,857 @@ CURRENT_STATE.md ;
 UnityProjectContext.md ;
 Validation.md ;
 playtest docs;
+
+Git history;
+tests.
+This is a major improvement over project inception.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+60
+
+<PARSED TEXT FOR PAGE: 61 / 82>
+
+If the high-context Threadkeeper
+disappeared tomorrow
+More nuance would be lost, but much less than
+before the continuity work.
+Harder-to-reconstruct areas would include:
+relationships among distant design discussions;
+intensity of creative preferences;
+discarded alternatives;
+subtle meanings of "wonder," "gentle
+commander," "grounded," and "alive";
+why a particular compromise felt dangerous even
+if it was technically valid.
+DESIGN_RATIONALE.md now protects some of this.
+If the Game Director disappeared
+tomorrow
+This is the most severe continuity loss.
+The repository can preserve decisions and
+reasoning.
+It cannot authoritatively decide whether:
+movement feels alive;
+UI feels inviting;
+a compromise belongs aesthetically;
+the game still expresses the intended emotional
+center.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+61
+
+<PARSED TEXT FOR PAGE: 62 / 82>
+
+The project intentionally preserves this human
+authority rather than pretending to eliminate it.
+What can be reconstructed from the
+repository alone
+A successor can determine with good confidence:
+active gameplay milestone;
+current runtime architecture;
+save format;
+test state;
+most locked design pillars;
+historical milestone sequence;
+current known limitations;
+agent working constraints;
+recent continuity/governance additions.
+What remains difficult to
+reconstruct
+uncommitted local Unity state;
+current human judgment that has not yet been
+written down;
+design rationale not yet promoted into 
+DESIGN_RATIONALE.md ;
+recent conversational alternatives;
+exactly what the Game Director currently wants to
+prioritize if not written in CURRENT_STATE.md .
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+62
+
+<PARSED TEXT FOR PAGE: 63 / 82>
+
+Can a successor determine current
+project state from the repository
+alone?
+Yes, substantially.
+That is now one of the project's strengths.
+The new continuity layer was specifically added to
+improve this.
+14. Current unresolved
+tensions
+Do not resolve these in a harness.
+They are game-design/architecture tensions that
+require future experiments.
+Freeform civilization design vs
+multiplayer balance
+The project wants enormous authorship freedom
+and fair matchmaking.
+Both are central.
+Fictional customization vs direct
+numeric control
+Prototype percentages are useful for proving effects.
+63
+
+<PARSED TEXT FOR PAGE: 64 / 82>
+
+The final creative language should ideally be body/
+equipment/personality/structure choices that
+generate many outcomes indirectly.
+The mapping is open.
+Physical emergence vs RTS
+responsiveness
+More physical authority may create richer
+individuality.
+It may also harm control, performance, determinism,
+and networking.
+Unit autonomy vs player agency
+Personality should matter enough to affect behavior.
+Too much disobedience makes the game feel
+broken.
+Readable causality is likely essential, but exact
+boundaries are unresolved.
+Individual variation vs competitive
+predictability
+Variation could create attachment and stories.
+It could also make identical blueprints strategically
+inconsistent.
+64
+
+<PARSED TEXT FOR PAGE: 65 / 82>
+
+Grandeur vs intimacy
+The world should feel large while battles remain
+readable enough to appreciate individual bodies.
+Actual scale targets are open.
+Open Workshop freedom vs
+exploitability
+Bringing saved custom civilizations into
+matchmaking creates enormous future legality/
+pricing challenges.
+Warnings vs hard restrictions
+The Game Director prefers warnings for strange or
+fragile civilizations.
+Some multiplayer-invalid constructions will
+eventually require actual rejection.
+That line is unresolved.
+Player-authored progression vs
+standardized balancing assumptions
+A faction can have deep progression, shallow
+progression, or none.
+How design value fairly compares those structures is
+unresolved.
+65
+
+<PARSED TEXT FOR PAGE: 66 / 82>
+
+Current worker lineage vs generic
+capability architecture
+The prototype historically grew from a worker￾centric model.
+The intended final unit model is much broader.
+When to generalize without prematurely rewriting
+everything is open.
+NavMesh-root embodiment vs
+future physical authority
+The current Living Body cleanly separates gameplay
+root and presentation.
+Whether later bodies gain partial/full physical
+authority remains open.
+15. Three representative
+work episodes
+Episode 1 - smooth extension:
+worker production
+Request
+After construction was accepted, add unit
+production.
+Path
+• production definition added;
+66
+
+<PARSED TEXT FOR PAGE: 67 / 82>
+
+queue/payment/refund semantics implemented;
+safe spawn placement added;
+produced units registered into RTS systems;
+HUD controls added;
+focused tests run;
+full regression suite run;
+visual/runtime probe checked;
+Windows build produced;
+validation/playtest docs updated.
+Outcome
+22 gameplay tests passed, 0 failed at that milestone.
+What it reveals
+When architecture and milestone scope are clear, AI￾assisted implementation progresses quickly and
+coherently.
+Episode 2 - serious coordination
+problem: reconstructing project
+truth
+Request
+Begin implementing the large game concept from
+prior discussion.
+Problem
+The implementation agent did not actually have the
+detailed design context that the project implicitly
+assumed existed.
+Path
+absence of durable design truth discovered;
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+67
+
+<PARSED TEXT FOR PAGE: 68 / 82>
+
+conversation history mined for confirmed
+decisions;
+initial DesignBrief.md produced;
+later replaced/superseded by the more complete 
+GAME_VISION.md ;
+project gradually externalized architecture/
+history/validation as well.
+Outcome
+The repository became capable of carrying far more
+project continuity independently of one chat.
+What it reveals
+The project's most important process machinery
+arose from real continuity pain, not from abstract
+governance ambition.
+Episode 3 - representative current
+work: The Living Body
+Request
+Begin testing whether units can feel physically alive
+through procedural locomotion.
+Path
+isolated new scene created;
+shared rig/materials/ramp/NavMesh authored;
+compile issue fixed;
+focused tests passed;
+stronger constant-leg-length invariant added;
+that invariant exposed a hidden geometric error;
+rendered captures exposed crouch/foot￾placement issues;
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+68
+
+<PARSED TEXT FOR PAGE: 69 / 82>
+
+those were corrected;
+later capture exposed slope-intersecting selection
+rings;
+ring orientation corrected;
+temporary probe removed;
+full suite run: 61/61 passed;
+Windows build produced;
+human playtest guide written.
+Current outcome
+Technical Ready - Game Director playtest pending.
+What it reveals
+This is the mature Wonder Gather loop: small
+experiment, multiple evidence modes, explicit limits,
+then human integration.
+16. What the high-context AI
+currently does for the
+project
+The effective role is now called Threadkeeper in
+project culture.
+That name is mnemonic, not authority.
+What people rely on this role to
+remember/reconstruct
+original game concept;
+why particular mechanics were proposed;
+how current scaffolds relate to intended systems;
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+69
+
+<PARSED TEXT FOR PAGE: 70 / 82>
+
+creative priorities;
+earlier alternatives;
+how apparently separate systems connect;
+the emotional purpose behind technical choices.
+Judgments this role routinely makes
+core design vs incidental prototype;
+whether a question needs a decision now or
+should remain open;
+whether a proposed technical solution preserves
+the intended experience;
+whether the project is drifting toward
+conventional RTS abstractions;
+which context actually matters for a new task;
+how to translate vague human reactions into a
+bounded next experiment.
+Context this role historically carried
+that was poorly externalized
+The weakest externalization was often not the rule
+but the reason.
+Example:
+"procedural bodies are important" is weaker than:
+watching a civilization you authored physically
+exist is itself part of the reward.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+70
+
+<PARSED TEXT FOR PAGE: 71 / 82>
+
+The new DESIGN_RATIONALE.md exists specifically to
+reduce this vulnerability.
+Mistakes this role is particularly
+useful at preventing
+Semantic substitutions such as:
+"custom units" → raw stat sliders;
+"procedural bodies" → physics for its own sake;
+"player-designed progression" → conventional
+fixed tech tree;
+"wonder" → fantasy visual dressing;
+"autonomy" → random order refusal;
+"slow" → merely making timers longer.
+These mistakes can satisfy a shallow reading of
+requirements while damaging the intended game.
+Where this role was becoming
+overloaded
+It was previously asked to function simultaneously
+as:
+design historian;
+project-state database;
+architecture index;
+rationale archive;
+milestone planner;
+integration reviewer.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+71
+
+<PARSED TEXT FOR PAGE: 72 / 82>
+
+That is exactly what the recent external-handoff
+exercise exposed.
+The project's response was not "give the AI even
+more context."
+It was to improve retrieval and durable memory so
+high-context attention can be spent on integration.
+What parts should live durably
+instead
+Already moved or moving into the repository:
+active state → CURRENT_STATE.md ;
+locked/open design → GAME_VISION.md ;
+high-value reasons → DESIGN_RATIONALE.md ;
+technical history → UnityProjectContext.md ;
+execution evidence → Validation.md ;
+working-agent constraints → AGENTS.md ;
+collaboration/risk shorthand → 
+PROJECT_CULTURE.md .
+The Threadkeeper should not become the
+filesystem.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+72
+
+<PARSED TEXT FOR PAGE: 73 / 82>
+
+17. Do not misunderstand
+these things
+1. The current worker-derived unit
+model is not the final unit
+architecture.
+It is historical scaffolding from the earliest RTS loop.
+2. supplies is not the final economy.
+It is one provisional resource used to prove
+gathering/building/production.
+3. Unit-performance percentages are
+not the intended final customization
+fantasy.
+They are temporary outcome controls.
+4. The current faction creator is not
+the final creation UI.
+It is a functional relationship editor/proving
+environment.
+5. Schema/version identifiers do not
+define the final game's conceptual
+vocabulary.
+They describe the current persistence
+implementation.
+73
+
+<PARSED TEXT FOR PAGE: 74 / 82>
+
+6. The Living Body is not active￾ragdoll locomotion.
+NavMesh still owns gameplay movement.
+7. Reachability is not balance.
+The validator answers a structural graph question
+only.
+8. Sixty-one passing tests do not
+mean the game is complete or the
+milestone is experientially accepted.
+They prove covered technical invariants.
+9. The multiplayer-focused game has
+no multiplayer implementation yet.
+This is deliberate sequencing.
+10. Implemented is not Locked.
+This distinction is foundational.
+11. The new Conservatory
+vocabulary is mnemonic, not a layer
+of authority above plain engineering
+terms.
+If metaphor creates confusion, discard the metaphor.
+74
+
+<PARSED TEXT FOR PAGE: 75 / 82>
+
+12. The project does not currently
+have a mandatory PR/CI/reviewer
+bureaucracy.
+The one merged PR was a deliberate docs-only
+continuity-layer change, not evidence of a standing
+policy.
+13. CURRENT_STATE.md being
+technically oriented around 
+d9b5f4d4 while repo head is 
+d03e0456 is not gameplay
+divergence.
+d03e0456 changed continuity/docs only.
+14. The apparent simplicity of the
+current prototype is deliberate.
+The project is validating one difficult axis at a time.
+18. Artifact map
+Artifact Purpose Authority Current? Why it
+matters
+Docs/
+CURRENT_ST
+ATE.md
+Current
+milestone
+router
+High for
+present
+state
+Yes Fast answer
+to "where
+are we
+now?"
+Docs/
+GAME_VISIO
+N.md
+Living
+design
+source of
+truth
+Highest
+durable
+design
+Yes Separates
+Locked /
+Direction /
+Possible /
+Open /
+75
+
+<PARSED TEXT FOR PAGE: 76 / 82>
+
+Artifact Purpose Authority Current? Why it
+matters
+Implement
+ed
+Docs/
+DESIGN_RAT
+IONALE.md
+Preserve
+dangerous￾to-lose
+"why"
+Supporting
+design
+rationale
+Yes Prevents
+semantic
+drift that
+still looks
+compliant
+Docs/
+PROJECT_CU
+LTURE.md
+Roles,
+context
+routing,
+risk￾sensitive
+working
+culture
+Operational
+shorthand
+Yes Defines
+lightweight
+collaboratio
+n without
+bureaucrac
+y
+AGENTS.md Agent
+working
+agreement
+High
+operational
+authority
+Yes Tells agents
+what to
+read,
+protect,
+and not
+overclaim
+Docs/AI/
+UnityProje
+ctContext.
+md
+Technical
+continuity/
+history
+High
+technical
+context
+Yes Allows
+disposable
+implement
+ation
+agents to
+reconstruct
+architectur
+e
+Docs/
+Validation
+.md
+Tests,
+failures,
+builds,
+limitations
+High
+execution
+evidence
+Yes Best source
+for real scar
+tissue
+Docs/
+LivingBody
+Playtest.m
+d
+Current
+human
+acceptance
+guide
+High for
+current
+experiential
+gate
+Yes Defines
+what
+remains for
+the Game
+76
+
+<PARSED TEXT FOR PAGE: 77 / 82>
+
+Artifact Purpose Authority Current? Why it
+matters
+Director to
+judge
+Assets/
+_WonderGat
+her/
+Scripts/
+Civilizati
+ons/
+Civilization
+runtime/
+graph
+model
+Highest
+implement
+ation truth
+Yes Core
+blueprint/
+reachability
+semantics
+Assets/
+_WonderGat
+her/
+Scripts/
+Creator/
+Player
+faction
+authoring/
+persistence
+Highest
+implement
+ation truth
+Yes Current
+editor/save
+architectur
+e
+Assets/
+_WonderGat
+her/
+Scripts/
+Units/
+Procedural
+Biped.cs
+Current
+body
+experiment
+Highest
+implement
+ation truth
+Yes Defines
+what Living
+Body
+actually is
+today
+Git main
+history
+Provenance High Yes Shows how
+the project
+actually
+evolved
+Historical but useful:
+Docs/DesignBrief.md - early recovered design
+context; superseded by GAME_VISION.md .
+• 
+77
+
+<PARSED TEXT FOR PAGE: 78 / 82>
+
+19. Confidence and missing
+evidence
+High confidence
+This handoff is high-confidence about:
+current repo head;
+current milestone;
+Unity version;
+current test/build status as documented;
+civilization graph semantics;
+current faction save/version architecture;
+present role/authority split;
+current continuity-layer documents;
+historical milestone sequence;
+major documented failures;
+areas explicitly not implemented;
+lack of active GitHub issues;
+existence of one merged continuity-layer PR.
+These points were checked against the current
+repository rather than recalled only from
+conversation.
+Moderate confidence / inference
+These depend partly on observed practice rather
+than a formal enforcement mechanism:
+how consistently future implementation agents
+will begin at CURRENT_STATE.md ;
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+78
+
+<PARSED TEXT FOR PAGE: 79 / 82>
+
+whether the new Conservatory role vocabulary
+will naturally persist;
+how often future work will use branches/PRs;
+whether every implementation session uses the
+same AI configuration;
+whether all local work always happens in isolated
+copies before final commit;
+whether there are informal task lists outside the
+repository.
+Important materials not inspected /
+not available
+This handoff does not include direct inspection of:
+any uncommitted local Unity working tree state;
+ignored raw XML test reports;
+local Windows build binary contents;
+private agent transcripts;
+private collaborator notes;
+any external task tracker not surfaced in the
+repository;
+future design discussion that has not yet been
+promoted into durable files.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+79
+
+<PARSED TEXT FOR PAGE: 80 / 82>
+
+Clarifications an external architect
+should ask the Game Director if
+needed
+If the later harness-design question depends on
+them, ask:
+Has the Living Body been manually playtested
+since CURRENT_STATE.md was written?
+Has a next milestone already been chosen outside
+the repository?
+Is there important uncommitted local Unity work
+not represented on GitHub?
+Which implementation AI/environment is
+currently being used for the next coding
+milestone?
+Does the Game Director want the current
+Conservatory vocabulary to remain playful
+shorthand only, or become a long-term part of the
+project's identity?
+Has any external collaborator begun depending
+on save compatibility or repository workflow
+promises?
+Is any near-term multiplayer work planned, or is it
+still intentionally deferred?
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+80
+
+<PARSED TEXT FOR PAGE: 81 / 82>
+
+Bottom-line
+characterization for the
+external architect
+Wonder Gather is a young, highly exploratory, AI￾assisted game project whose technical execution
+is moving faster than its creative/architectural
+questions can safely be frozen.
+Its most important coordination problem is not lack
+of coding capacity.
+It is preserving coherence while a very flexible game
+concept becomes concrete through experiments.
+The project already has a lightweight but meaningful
+harness:
+canonical design truth;
+a current-state router;
+high-value rationale memory;
+technical continuity;
+durable validation history;
+automated regression coverage;
+human experiential acceptance;
+explicit agent constraints;
+consequence-sensitive review guidance.
+The project has deliberately not adopted heavy
+governance where no real problem yet justifies it.
+The human Game Director remains the irreplaceable
+creative integrator.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+81
+
+<PARSED TEXT FOR PAGE: 82 / 82>
+
+The implementation AI is productive when tasks are
+bounded.
+The high-context AI is most valuable as an
+interpreter of relationships and rationale, not as the
+sole archive.
+The repository is now increasingly capable of
+transferring technical state between agents on its
+own.
+The most important remaining continuity risk is not
+"where is the code?"
+It is preserving enough why that future contributors
+can build the right game rather than merely satisfy
+the right nouns.
+That is the project as it actually exists today.
+82
