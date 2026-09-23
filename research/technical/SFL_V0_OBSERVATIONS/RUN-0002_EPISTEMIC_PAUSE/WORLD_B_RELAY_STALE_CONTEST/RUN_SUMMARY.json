@@ -1,0 +1,9 @@
+{
+  "name": "RELAY-STALE-CONTEST",
+  "stopReason": "Horizon:12",
+  "finalCycle": 12,
+  "faulted": false,
+  "semanticEvents": 257,
+  "decisions": 90,
+  "failure": null
+}

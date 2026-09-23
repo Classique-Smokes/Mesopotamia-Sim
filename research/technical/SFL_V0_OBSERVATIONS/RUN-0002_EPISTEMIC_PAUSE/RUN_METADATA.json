@@ -1,0 +1,12 @@
+{
+  "observation": "SFL_V0_SLICE2_PAUSE_001",
+  "sourceRevision": "4526649deadb06c64bdfed8f8b825c20f8c001ea",
+  "dotnetSdk": "10.0.401",
+  "rulesVersion": "SFL-S2-v1",
+  "plan": "plans/SFL_V0_SLICE2_EPISTEMIC_OBSERVATION_PAUSE_001.md",
+  "horizons": {
+    "autonomousBaseline": 12,
+    "relayStaleContest": 12
+  },
+  "interpretation": "RAW_ONLY"
+}
