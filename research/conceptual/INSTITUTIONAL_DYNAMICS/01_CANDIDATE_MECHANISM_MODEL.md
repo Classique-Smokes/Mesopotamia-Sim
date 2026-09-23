@@ -163,6 +163,8 @@ Candidate machinery:
 
 Responsibility should remain distinct from formal title and from actual influence.
 
+**Challenge composition:** `../CROSS_PROGRAM_CHALLENGE_CASES/THE_ACCIDENTAL_SPECIALIST.md` also belongs here because socially routed repeated work can become specialization/dependency without proving intrinsic skill or preference.
+
 **Cross-link:** the Retired Vizier *Palace of Obedient Scribes* case adds a useful challenge here: common-mode reasoning, decomposition and integration scarcity can produce serious failure even when actors are sincere and compliant. This is an extension of the coordination/knowledge family, not a separate “obedience” mechanism.
 
 ### K. Effective centrality / influence
@@ -182,6 +184,8 @@ Effective centrality may be derived from:
 This creates a route for informal roles to emerge before formal recognition.
 
 **Cross-program link:** Social Epistemic Dynamics treats *The Bridge Everyone Needed* as the information-route view of this same family. That source adds bypass cost, translation/interpretation, route dependency, broker burden/discretion, and the diagnostic value of broker removal. Do not create a second brokerage mechanism family.
+
+**Challenge composition:** `../CROSS_PROGRAM_CHALLENGE_CASES/THE_ACCIDENTAL_SPECIALIST.md` asks whether repeated behavior caused initially by an arbitrary technical contingency can later acquire socially sustained centrality/role structure after the original cause disappears.
 
 ### L. Multiple genealogies and archival rupture
 
