@@ -13,7 +13,7 @@ None.
 
 ## Ready for dispatch
 
-None.
+- `IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` — **READY AFTER CANONICAL FREEZE PROMOTION**. Implements persistent Household identity, participation/continuity/lifecycle, Household Recognition, controlled lineage, and grounded provision backing/capacity under frozen `SFL-V0-S3-ACCEPTANCE-v1`. Planned branch: `implementation/imp-0003-slice3-household`. Conditional S1-084 gate: `../research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md`.
 
 ## Rules
 
