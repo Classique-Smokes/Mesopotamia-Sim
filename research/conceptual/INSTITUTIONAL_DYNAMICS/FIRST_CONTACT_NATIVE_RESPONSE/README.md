@@ -29,5 +29,11 @@ Do not rewrite the foreign response to fit Uruk terminology.
 - `analysis/00_INTAKE_MANIFEST.md` — source hashes, page count, branch basis, and provenance status.
 - `analysis/01_RESPONSE_STRUCTURE_MAP.md` — section/page census only.
 - `analysis/02_QUESTION_COVERAGE_AUDIT.md` — maps the twelve questions to the response without yet judging the substance.
+- `analysis/questions/` — twelve question-bounded native-response packets.
+- `analysis/13_NATIVE_CONCEPT_MAP.md` — reconstructs the response's own conceptual machinery.
+- `analysis/14_OBSERVER_SHEET_RECONCILIATION.md` — reconciles the response against the pre-frozen private observer sheet.
+- `analysis/15_CROSS_SOURCE_COMPARISON.md` — compares witnessed chain, correspondence, history, and handoff.
+- `analysis/16_RESPONSE_FORM_AND_TENSION_AUDIT.md` — preserves response-form transformation and unresolved tensions.
+- `analysis/17_FINAL_OBSERVER_SYNTHESIS.md` — first-pass synthesis after all lower-level artifacts.
 
 The original 82-page PDF is identified by cryptographic hash in the intake manifest and remains the source-of-record attachment for this intake. Analysis artifacts must retain page/line provenance back to that source.
