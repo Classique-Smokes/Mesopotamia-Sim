@@ -25,6 +25,7 @@ Do not rewrite the foreign response to fit Uruk terminology.
 ## Source and intake files
 
 - `source/A_TABLET_OF_QUESTIONS_SENT_ACROSS_THE_BORDER.md` — exact delivered questionnaire.
+- `source/PRIVATE_DELIVERY_PROTOCOL_FOR_LUIS.md` — exact pre-delivery courier protocol that constrained the blind first pass and required the private observer sheet to remain hidden.
 - `source/DELIVERY_EVIDENCE.md` — reconstruction of the blind-delivery evidence and the responder's declared response strategy.
 - `source/WONDER_GATHER_HIGH_FIDELITY_PROJECT_HANDOFF_2026-09-23_PARSED.md` — complete parsed-text archive of the received 82-page response, preserving page markers.
 - `analysis/00_INTAKE_MANIFEST.md` — source hashes, page count, branch basis, and provenance status.
@@ -32,7 +33,7 @@ Do not rewrite the foreign response to fit Uruk terminology.
 - `analysis/02_QUESTION_COVERAGE_AUDIT.md` — maps the twelve questions to the response without yet judging the substance.
 - `analysis/questions/` — twelve question-bounded native-response packets.
 - `analysis/13_NATIVE_CONCEPT_MAP.md` — reconstructs the response's own conceptual machinery.
-- `analysis/14_OBSERVER_SHEET_RECONCILIATION.md` — reconciles the response against the pre-frozen private observer sheet.
+- `analysis/14_OBSERVER_SHEET_RECONCILIATION.md` — reconciles the response against the pre-frozen observer dimensions; the exact pre-delivery observer-sheet text is not separately recoverable and that provenance limit is recorded in the file.
 - `analysis/15_CROSS_SOURCE_COMPARISON.md` — compares witnessed chain, correspondence, history, and handoff.
 - `analysis/16_RESPONSE_FORM_AND_TENSION_AUDIT.md` — preserves response-form transformation and unresolved tensions.
 - `analysis/17_FINAL_OBSERVER_SYNTHESIS.md` — first-pass synthesis after all lower-level artifacts.
