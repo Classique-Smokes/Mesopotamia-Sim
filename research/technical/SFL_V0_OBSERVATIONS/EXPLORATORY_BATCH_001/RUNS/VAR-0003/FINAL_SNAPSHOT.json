@@ -1,0 +1,180 @@
+{
+  "cycle": 30,
+  "people": [
+    {
+      "id": 1,
+      "Name": "Enna",
+      "sex": "Male",
+      "Grain": 0,
+      "NeedsGrain": false
+    },
+    {
+      "id": 2,
+      "Name": "Kima",
+      "sex": "Female",
+      "Grain": 5,
+      "NeedsGrain": false
+    },
+    {
+      "id": 3,
+      "Name": "Nadi",
+      "sex": "Male",
+      "Grain": 3,
+      "NeedsGrain": false
+    },
+    {
+      "id": 4,
+      "Name": "Saba",
+      "sex": "Female",
+      "Grain": 1,
+      "NeedsGrain": false
+    },
+    {
+      "id": 5,
+      "Name": "Tari",
+      "sex": "Male",
+      "Grain": 5,
+      "NeedsGrain": false
+    }
+  ],
+  "dwellings": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ],
+  "residences": [
+    {
+      "id": 1,
+      "person": 1,
+      "dwelling": 3
+    },
+    {
+      "id": 2,
+      "person": 2,
+      "dwelling": 2
+    },
+    {
+      "id": 3,
+      "person": 3,
+      "dwelling": 2
+    },
+    {
+      "id": 4,
+      "person": 4,
+      "dwelling": 1
+    },
+    {
+      "id": 5,
+      "person": 5,
+      "dwelling": 2
+    }
+  ],
+  "attitudes": [
+    {
+      "id": 101,
+      "from": 1,
+      "to": 2,
+      "Value": 65
+    },
+    {
+      "id": 102,
+      "from": 1,
+      "to": 3,
+      "Value": 31
+    },
+    {
+      "id": 103,
+      "from": 1,
+      "to": 4,
+      "Value": 0
+    },
+    {
+      "id": 104,
+      "from": 2,
+      "to": 1,
+      "Value": 96
+    },
+    {
+      "id": 105,
+      "from": 2,
+      "to": 4,
+      "Value": 32
+    },
+    {
+      "id": 106,
+      "from": 2,
+      "to": 5,
+      "Value": 98
+    },
+    {
+      "id": 107,
+      "from": 3,
+      "to": 1,
+      "Value": 39
+    },
+    {
+      "id": 108,
+      "from": 3,
+      "to": 4,
+      "Value": 100
+    },
+    {
+      "id": 109,
+      "from": 3,
+      "to": 5,
+      "Value": 5
+    },
+    {
+      "id": 110,
+      "from": 4,
+      "to": 1,
+      "Value": 21
+    },
+    {
+      "id": 111,
+      "from": 4,
+      "to": 2,
+      "Value": -41
+    },
+    {
+      "id": 112,
+      "from": 4,
+      "to": 3,
+      "Value": 100
+    },
+    {
+      "id": 113,
+      "from": 4,
+      "to": 5,
+      "Value": 36
+    },
+    {
+      "id": 114,
+      "from": 5,
+      "to": 2,
+      "Value": 100
+    },
+    {
+      "id": 115,
+      "from": 5,
+      "to": 3,
+      "Value": -28
+    },
+    {
+      "id": 116,
+      "from": 5,
+      "to": 4,
+      "Value": 3
+    }
+  ],
+  "kinships": [],
+  "marriages": [],
+  "debts": [],
+  "favours": []
+}

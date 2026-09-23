@@ -1,0 +1,15 @@
+{
+  "runId": "EXPLORATORY-BATCH-001-VAR-0006",
+  "revision": "9a933537f63ddfc429f9c3efc094d84e4c2ee48e",
+  "executedAtUtc": "2026-09-23T01:48:54.0463036\u002B00:00",
+  "declaredHorizonCycles": 30,
+  "completedStableCycles": 30,
+  "stopReason": "Horizon:30",
+  "simulationFaulted": false,
+  "fault": null,
+  "configurationVersion": "SFL-S1-v1",
+  "dotnetFramework": ".NET 10.0.12",
+  "runtimeVersion": "10.0.12",
+  "os": "Ubuntu 24.04.5 LTS",
+  "runnerProject": "tools/Mesopotamia.Sim.BirthRunner/Mesopotamia.Sim.BirthRunner.csproj"
+}

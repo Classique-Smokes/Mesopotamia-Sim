@@ -1,0 +1,130 @@
+{
+  "runId": "EXPLORATORY-BATCH-001-VAR-0007",
+  "horizonCycles": 30,
+  "configuration": {
+    "version": "SFL-S1-v1"
+  },
+  "people": [
+    {
+      "id": 1,
+      "name": "Kima",
+      "sex": "Male",
+      "grain": 5,
+      "needsGrain": false
+    },
+    {
+      "id": 2,
+      "name": "Bira",
+      "sex": "Female",
+      "grain": 7,
+      "needsGrain": false
+    },
+    {
+      "id": 3,
+      "name": "Nadi",
+      "sex": "Male",
+      "grain": 5,
+      "needsGrain": false
+    },
+    {
+      "id": 4,
+      "name": "Rima",
+      "sex": "Male",
+      "grain": 2,
+      "needsGrain": false
+    }
+  ],
+  "dwellings": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ],
+  "residences": [
+    {
+      "id": 1,
+      "person": 1,
+      "dwelling": 1
+    },
+    {
+      "id": 2,
+      "person": 2,
+      "dwelling": 3
+    },
+    {
+      "id": 3,
+      "person": 3,
+      "dwelling": 2
+    },
+    {
+      "id": 4,
+      "person": 4,
+      "dwelling": 2
+    }
+  ],
+  "attitudes": [
+    {
+      "id": 101,
+      "from": 1,
+      "to": 3,
+      "value": 43
+    },
+    {
+      "id": 102,
+      "from": 1,
+      "to": 4,
+      "value": -2
+    },
+    {
+      "id": 103,
+      "from": 2,
+      "to": 3,
+      "value": -22
+    },
+    {
+      "id": 104,
+      "from": 2,
+      "to": 4,
+      "value": 6
+    },
+    {
+      "id": 105,
+      "from": 3,
+      "to": 1,
+      "value": 3
+    },
+    {
+      "id": 106,
+      "from": 3,
+      "to": 2,
+      "value": -32
+    },
+    {
+      "id": 107,
+      "from": 4,
+      "to": 1,
+      "value": -36
+    },
+    {
+      "id": 108,
+      "from": 4,
+      "to": 2,
+      "value": -34
+    }
+  ],
+  "kinships": [
+    {
+      "id": 201,
+      "first": 2,
+      "second": 4,
+      "kind": "ParentChild"
+    }
+  ],
+  "marriages": [],
+  "inputs": []
+}

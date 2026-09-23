@@ -1,0 +1,8801 @@
+[
+  {
+    "cycle": 1,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": -1
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 26
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 59
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -21
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 20
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 38
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": -36
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 51
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 68
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 7
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 76
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 52,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 118,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 116,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 132,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 1,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 15
+      },
+      {
+        "proposal": 2,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 16
+      },
+      {
+        "proposal": 3,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 17
+      },
+      {
+        "proposal": 4,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 18
+      },
+      {
+        "proposal": 5,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 19
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 2,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": -1
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 26
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 69
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -21
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 20
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 48
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": -36
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 51
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 78
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 7
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 86
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 118,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 76,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 136,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 152,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 6,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 38
+      },
+      {
+        "proposal": 7,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 39
+      },
+      {
+        "proposal": 8,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 40
+      },
+      {
+        "proposal": 9,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 41
+      },
+      {
+        "proposal": 10,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 42
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 3,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": -1
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 26
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 79
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -21
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 20
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 48
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": -26
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 51
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 88
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 7
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 96
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 52,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 96,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 156,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 172,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 11,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 61
+      },
+      {
+        "proposal": 12,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 62
+      },
+      {
+        "proposal": 13,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 63
+      },
+      {
+        "proposal": 14,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 64
+      },
+      {
+        "proposal": 15,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 65
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 4,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": -1
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 26
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 89
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -21
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 20
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 58
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": -26
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 51
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 98
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 7
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 158,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 96,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 176,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 192,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 16,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 84
+      },
+      {
+        "proposal": 17,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 85
+      },
+      {
+        "proposal": 18,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 86
+      },
+      {
+        "proposal": 19,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 87
+      },
+      {
+        "proposal": 20,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 88
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 5,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 24
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 24
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 97
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -20
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 18
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 66
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": -15
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 49
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 5
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 98
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 48,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 174,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 112,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 21,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 119
+      },
+      {
+        "proposal": 22,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 120
+      },
+      {
+        "proposal": 23,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 121
+      },
+      {
+        "proposal": 24,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 122
+      },
+      {
+        "proposal": 25,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 123
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "AttitudeDecay": 12,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 6,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 24
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 24
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 97
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -20
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 18
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 76
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": -5
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 49
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 5
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 48,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 194,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 26,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 141
+      },
+      {
+        "proposal": 27,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 142
+      },
+      {
+        "proposal": 28,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 143
+      },
+      {
+        "proposal": 29,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 144
+      },
+      {
+        "proposal": 30,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 145
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 7,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 24
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 24
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -20
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 18
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 76
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": -5
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 49
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 5
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 152,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 31,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 162
+      },
+      {
+        "proposal": 32,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 163
+      },
+      {
+        "proposal": 33,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 164
+      },
+      {
+        "proposal": 34,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 165
+      },
+      {
+        "proposal": 35,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 166
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 8,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 24
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 24
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -20
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 18
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 86
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 5
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 49
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 5
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 48,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 152,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 36,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 185
+      },
+      {
+        "proposal": 37,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 186
+      },
+      {
+        "proposal": 38,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 187
+      },
+      {
+        "proposal": 39,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 188
+      },
+      {
+        "proposal": 40,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 189
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "Consumption": 5,
+      "Gift": 5,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 9,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 24
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 24
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -20
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 18
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 96
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 5
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 49
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 5
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 172,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 41,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 209
+      },
+      {
+        "proposal": 42,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 210
+      },
+      {
+        "proposal": 43,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 211
+      },
+      {
+        "proposal": 44,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 212
+      },
+      {
+        "proposal": 45,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 213
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 10,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 22
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 22
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 98
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -19
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 16
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 13
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 47
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 3
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 44,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 46,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 244
+      },
+      {
+        "proposal": 47,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 245
+      },
+      {
+        "proposal": 48,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 246
+      },
+      {
+        "proposal": 49,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 247
+      },
+      {
+        "proposal": 50,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 248
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "AttitudeDecay": 12,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 11,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 22
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 22
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -19
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 16
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 23
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 47
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 3
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 44,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 51,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 266
+      },
+      {
+        "proposal": 52,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 267
+      },
+      {
+        "proposal": 53,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 268
+      },
+      {
+        "proposal": 54,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 269
+      },
+      {
+        "proposal": 55,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 270
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 12,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 22
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 22
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -19
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 16
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 23
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 47
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 3
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 56,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 288
+      },
+      {
+        "proposal": 57,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 289
+      },
+      {
+        "proposal": 58,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 290
+      },
+      {
+        "proposal": 59,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 291
+      },
+      {
+        "proposal": 60,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 292
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 13,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 22
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 22
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -19
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 16
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 33
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 47
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 3
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 44,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 61,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 311
+      },
+      {
+        "proposal": 62,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 312
+      },
+      {
+        "proposal": 63,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 313
+      },
+      {
+        "proposal": 64,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 314
+      },
+      {
+        "proposal": 65,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 315
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 14,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 22
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 22
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -19
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 16
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 33
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 47
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 3
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 66,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 333
+      },
+      {
+        "proposal": 67,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 334
+      },
+      {
+        "proposal": 68,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 335
+      },
+      {
+        "proposal": 69,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 336
+      },
+      {
+        "proposal": 70,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 337
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 15,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 20
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 20
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -18
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 14
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 98
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 41
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 45
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 98
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 1
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 40,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 71,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 366
+      },
+      {
+        "proposal": 72,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 367
+      },
+      {
+        "proposal": 73,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 368
+      },
+      {
+        "proposal": 74,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 369
+      },
+      {
+        "proposal": 75,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 370
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "AttitudeDecay": 12,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 16,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 20
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 20
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -18
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 14
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 51
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 45
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 1
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 40,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 76,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 389
+      },
+      {
+        "proposal": 77,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 390
+      },
+      {
+        "proposal": 78,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 391
+      },
+      {
+        "proposal": 79,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 392
+      },
+      {
+        "proposal": 80,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 393
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "Consumption": 5,
+      "Gift": 5,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 17,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 20
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 20
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -18
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 14
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 51
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 45
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 1
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 81,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 413
+      },
+      {
+        "proposal": 82,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 414
+      },
+      {
+        "proposal": 83,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 415
+      },
+      {
+        "proposal": 84,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 416
+      },
+      {
+        "proposal": 85,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 417
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 18,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 20
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 20
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -18
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 14
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 61
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 45
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 1
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 40,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 86,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 436
+      },
+      {
+        "proposal": 87,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 437
+      },
+      {
+        "proposal": 88,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 438
+      },
+      {
+        "proposal": 89,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 439
+      },
+      {
+        "proposal": 90,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 440
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 19,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 20
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 20
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -18
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 14
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 61
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 45
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 1
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 91,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 458
+      },
+      {
+        "proposal": 92,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 459
+      },
+      {
+        "proposal": 93,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 460
+      },
+      {
+        "proposal": 94,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 461
+      },
+      {
+        "proposal": 95,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 462
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 20,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 18
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 18
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -17
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 12
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 69
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 43
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 98
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 36,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 96,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 492
+      },
+      {
+        "proposal": 97,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 493
+      },
+      {
+        "proposal": 98,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 494
+      },
+      {
+        "proposal": 99,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 495
+      },
+      {
+        "proposal": 100,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 496
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "AttitudeDecay": 12,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 21,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 18
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 18
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -17
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 12
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 79
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 43
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 36,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 101,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 515
+      },
+      {
+        "proposal": 102,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 516
+      },
+      {
+        "proposal": 103,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 517
+      },
+      {
+        "proposal": 104,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 518
+      },
+      {
+        "proposal": 105,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 519
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 22,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 18
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 18
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -17
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 12
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 79
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 43
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 106,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 537
+      },
+      {
+        "proposal": 107,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 538
+      },
+      {
+        "proposal": 108,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 539
+      },
+      {
+        "proposal": 109,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 540
+      },
+      {
+        "proposal": 110,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 541
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 23,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 18
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 18
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -17
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 12
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 89
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 43
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 36,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 111,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 559
+      },
+      {
+        "proposal": 112,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 560
+      },
+      {
+        "proposal": 113,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 561
+      },
+      {
+        "proposal": 114,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 562
+      },
+      {
+        "proposal": 115,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 563
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 24,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 18
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 18
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -17
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 12
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 89
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 43
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 116,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 581
+      },
+      {
+        "proposal": 117,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 582
+      },
+      {
+        "proposal": 118,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 583
+      },
+      {
+        "proposal": 119,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 584
+      },
+      {
+        "proposal": 120,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 585
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 25,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 16
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 16
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -16
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 10
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 97
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 41
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 32,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 121,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 616
+      },
+      {
+        "proposal": 122,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 617
+      },
+      {
+        "proposal": 123,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 618
+      },
+      {
+        "proposal": 124,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 619
+      },
+      {
+        "proposal": 125,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 620
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 5,
+      "AttitudeDecay": 12,
+      "Consumption": 5,
+      "Gift": 5,
+      "Proposal": 5,
+      "Response": 5
+    }
+  },
+  {
+    "cycle": 26,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 16
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 16
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -16
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 10
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 41
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 32,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 5,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 126,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 640
+      },
+      {
+        "proposal": 127,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 641
+      },
+      {
+        "proposal": 128,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 642
+      },
+      {
+        "proposal": 129,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 643
+      },
+      {
+        "proposal": 130,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 644
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 27,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 26
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 16
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -16
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 10
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 41
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 131,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 662
+      },
+      {
+        "proposal": 132,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 663
+      },
+      {
+        "proposal": 133,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 664
+      },
+      {
+        "proposal": 134,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 665
+      },
+      {
+        "proposal": 135,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 666
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 3,
+      "Consumption": 5,
+      "Farm": 2,
+      "Gift": 3,
+      "Proposal": 5,
+      "Response": 3
+    }
+  },
+  {
+    "cycle": 28,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 36
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 16
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -16
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 10
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 41
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 52,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 136,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 684
+      },
+      {
+        "proposal": 137,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 685
+      },
+      {
+        "proposal": 138,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 686
+      },
+      {
+        "proposal": 139,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 687
+      },
+      {
+        "proposal": 140,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 688
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 29,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 36
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 16
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 100
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -16
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 10
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 41
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 100
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 72,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 2,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 200,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 141,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 707
+      },
+      {
+        "proposal": 142,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 708
+      },
+      {
+        "proposal": 143,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 709
+      },
+      {
+        "proposal": 144,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 710
+      },
+      {
+        "proposal": 145,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 711
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  },
+  {
+    "cycle": 30,
+    "materialDeadlock": false,
+    "people": [
+      {
+        "id": 1,
+        "Name": "Rima",
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Name": "Kima",
+        "Grain": 1,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Name": "Aki",
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 4,
+        "Name": "Nadi",
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 2
+      },
+      {
+        "id": 5,
+        "Name": "Pala",
+        "Grain": 0,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "attitudes": [
+      {
+        "id": 101,
+        "from": 1,
+        "to": 3,
+        "Value": 0
+      },
+      {
+        "id": 102,
+        "from": 1,
+        "to": 4,
+        "Value": 44
+      },
+      {
+        "id": 103,
+        "from": 1,
+        "to": 5,
+        "Value": 14
+      },
+      {
+        "id": 104,
+        "from": 2,
+        "to": 3,
+        "Value": 98
+      },
+      {
+        "id": 105,
+        "from": 2,
+        "to": 4,
+        "Value": -15
+      },
+      {
+        "id": 106,
+        "from": 3,
+        "to": 1,
+        "Value": 8
+      },
+      {
+        "id": 107,
+        "from": 3,
+        "to": 2,
+        "Value": 100
+      },
+      {
+        "id": 108,
+        "from": 4,
+        "to": 1,
+        "Value": 100
+      },
+      {
+        "id": 109,
+        "from": 4,
+        "to": 2,
+        "Value": 39
+      },
+      {
+        "id": 110,
+        "from": 4,
+        "to": 5,
+        "Value": 100
+      },
+      {
+        "id": 111,
+        "from": 5,
+        "to": 1,
+        "Value": 0
+      },
+      {
+        "id": 112,
+        "from": 5,
+        "to": 4,
+        "Value": 98
+      }
+    ],
+    "debts": [],
+    "favours": [],
+    "marriages": [],
+    "selectedDecisions": [
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 68,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 1,
+        "actorName": "Rima",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 2,
+        "actorName": "Kima",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 3,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Farm",
+          "FinalScore": 60,
+          "terms": {
+            "kind": "Farm"
+          }
+        }
+      },
+      {
+        "actor": 3,
+        "actorName": "Aki",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": true,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 1,
+            "Amount": 1
+          }
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 4,
+        "actorName": "Nadi",
+        "Context": "Response",
+        "Profile": "SCORE-RP-001",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "Accept",
+          "FinalScore": 100,
+          "terms": null
+        }
+      },
+      {
+        "actor": 5,
+        "actorName": "Pala",
+        "Context": "Personal",
+        "Profile": "SFL-PERSONAL-REFERENCE-v1",
+        "TechnicalFallback": false,
+        "selected": {
+          "Meaning": "OfferGift",
+          "FinalScore": 196,
+          "terms": {
+            "kind": "OfferGift",
+            "target": 4,
+            "Amount": 1
+          }
+        }
+      }
+    ],
+    "outcomes": [
+      {
+        "proposal": 146,
+        "actor": 1,
+        "actorName": "Rima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 742
+      },
+      {
+        "proposal": 147,
+        "actor": 2,
+        "actorName": "Kima",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 743
+      },
+      {
+        "proposal": 148,
+        "actor": 3,
+        "actorName": "Aki",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 744
+      },
+      {
+        "proposal": 149,
+        "actor": 4,
+        "actorName": "Nadi",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 745
+      },
+      {
+        "proposal": 150,
+        "actor": 5,
+        "actorName": "Pala",
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 746
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 4,
+      "AttitudeDecay": 12,
+      "Consumption": 5,
+      "Farm": 1,
+      "Gift": 4,
+      "Proposal": 5,
+      "Response": 4
+    }
+  }
+]

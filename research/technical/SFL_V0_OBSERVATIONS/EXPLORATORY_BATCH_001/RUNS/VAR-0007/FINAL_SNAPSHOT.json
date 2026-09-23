@@ -1,0 +1,127 @@
+{
+  "cycle": 30,
+  "people": [
+    {
+      "id": 1,
+      "Name": "Kima",
+      "sex": "Male",
+      "Grain": 1,
+      "NeedsGrain": false
+    },
+    {
+      "id": 2,
+      "Name": "Bira",
+      "sex": "Female",
+      "Grain": 2,
+      "NeedsGrain": false
+    },
+    {
+      "id": 3,
+      "Name": "Nadi",
+      "sex": "Male",
+      "Grain": 0,
+      "NeedsGrain": false
+    },
+    {
+      "id": 4,
+      "Name": "Rima",
+      "sex": "Male",
+      "Grain": 3,
+      "NeedsGrain": false
+    }
+  ],
+  "dwellings": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ],
+  "residences": [
+    {
+      "id": 1,
+      "person": 1,
+      "dwelling": 1
+    },
+    {
+      "id": 2,
+      "person": 2,
+      "dwelling": 3
+    },
+    {
+      "id": 3,
+      "person": 3,
+      "dwelling": 2
+    },
+    {
+      "id": 4,
+      "person": 4,
+      "dwelling": 2
+    }
+  ],
+  "attitudes": [
+    {
+      "id": 101,
+      "from": 1,
+      "to": 3,
+      "Value": 100
+    },
+    {
+      "id": 102,
+      "from": 1,
+      "to": 4,
+      "Value": 0
+    },
+    {
+      "id": 103,
+      "from": 2,
+      "to": 3,
+      "Value": -6
+    },
+    {
+      "id": 104,
+      "from": 2,
+      "to": 4,
+      "Value": 100
+    },
+    {
+      "id": 105,
+      "from": 3,
+      "to": 1,
+      "Value": 100
+    },
+    {
+      "id": 106,
+      "from": 3,
+      "to": 2,
+      "Value": -26
+    },
+    {
+      "id": 107,
+      "from": 4,
+      "to": 1,
+      "Value": -20
+    },
+    {
+      "id": 108,
+      "from": 4,
+      "to": 2,
+      "Value": 98
+    }
+  ],
+  "kinships": [
+    {
+      "id": 201,
+      "first": 2,
+      "second": 4,
+      "kind": "ParentChild"
+    }
+  ],
+  "marriages": [],
+  "debts": [],
+  "favours": []
+}
