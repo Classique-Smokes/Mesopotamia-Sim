@@ -1,7 +1,8 @@
 # 14 — Pre-Frozen Observer Sheet Reconciliation
 
 **Purpose:** compare the received response against the observation dimensions frozen before delivery.  
-**Rule:** this is not a score for agreement with Uruk. It records what the experiment actually yielded.
+**Rule:** this is not a score for agreement with Uruk. It records what the experiment actually yielded.  
+**Provenance limit:** the preserved pre-delivery courier protocol explicitly says not to reveal the private observer sheet, establishing that such a control existed before the first response. A separately preserved byte-identical copy of the sheet itself was not located during intake closure. The dimensions below therefore preserve the reconciliation used during intake, but the exact pre-delivery wording and ordering of the observer sheet cannot be independently verified. Treat claims about a "pre-frozen expectation" as dimension-level comparisons, not exact-text comparisons.
 
 ## 1. Collective referent
 
