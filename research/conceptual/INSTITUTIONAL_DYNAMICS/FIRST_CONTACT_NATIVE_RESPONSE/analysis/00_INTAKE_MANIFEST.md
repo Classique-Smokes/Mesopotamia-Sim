@@ -48,6 +48,8 @@ This means the first-pass response was **blind with respect to Uruk's hidden ana
 
 The PDF was also rendered page-by-page and visually scanned before structural analysis. No hidden alternate questionnaire-response section was found outside the parsed text.
 
+Repository parsed-text archive: `source/WONDER_GATHER_HIGH_FIDELITY_PROJECT_HANDOFF_2026-09-23_PARSED.md` (Files-reader extraction with preserved page markers; source PDF hash above remains the byte-level identity anchor).
+
 ## Provenance finding at intake
 
 The response is **not formatted as twelve direct answers**. It is a transformed response artifact: a high-fidelity project handoff generated after receipt of the tablet.
