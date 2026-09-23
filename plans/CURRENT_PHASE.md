@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / IMP-0003 CANDIDATE FROZEN / FRESH CONFORMANCE NEXT.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / IMP-0003 CANDIDATE-v1 BLOCKED / REPAIR-v2 ACTIVE.**
 
 Verified Slice-1 completion:
 
@@ -97,6 +97,14 @@ IMP-0003 implementation candidate:
 - implementation report: `tasks/implementation/IMP-0003_IMPLEMENTATION_REPORT.md`
 - S1-084 conditional adaptation gate: **UNFIRED**
 - fresh conformance task: `tasks/implementation/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_PACKET.md`
+
+IMP-0003 candidate-v1 BLOCK review:
+
+- report: `research/technical/IMP-0003/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_FRESH.md`
+- verdict: **BLOCK — IMPLEMENTATION / VERIFICATION DEFECT**
+- reconciliation: `research/technical/IMP-0003/IMP-0003_CANDIDATE_V1_BLOCK_RECONCILIATION.md`
+- repair packet: `tasks/implementation/IMP-0003_CANDIDATE_V1_BLOCK_REPAIR_PACKET.md`
+- repair branch: `implementation/imp-0003-slice3-repair-v2`
 
 TRES-0010 closure evidence:
 
@@ -191,11 +199,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Dispatch `tasks/implementation/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_PACKET.md` against immutable candidate `imp-0003-slice3-conformance-candidate-v1`.
-2. Do not promote PR #51 unless fresh conformance returns **PASS — PROMOTE**.
-3. If conformance BLOCKs, reconcile the bounded defect and preserve the failed candidate/ref before repair.
-4. If conformance PASSes, promote the exact candidate, run post-merge CI, and write the IMP-0003 final completion/promotion record.
-5. After promotion, run the lightweight learning checkpoint in `plans/SFL_V0_SLICE3_POSTIMPLEMENTATION_OBSERVATION_PLAN.md` before detailed Slice-4 planning; this is observational learning, not an acceptance gate.
-6. Keep general CandidateOrganization convergence, head/office, endogenous provision solicitation/spending, mediated marriage, HouseholdDecisionContext, and checkpoint/restore outside Slice 3.
+1. Dispatch `tasks/implementation/IMP-0003_CANDIDATE_V1_BLOCK_REPAIR_PACKET.md` on `implementation/imp-0003-slice3-repair-v2`.
+2. Preserve failed immutable candidate `imp-0003-slice3-conformance-candidate-v1` @ `6b9d40e33b94d9094c02fe3d9f026914dd7986ec`.
+3. Repair only the confirmed oracle/provenance/continuation-recognition defects; do not reopen frozen Slice-3 semantics.
+4. After exact-head CI, freeze a new candidate-v2 and commission fresh independent conformance.
+5. Promote only on **PASS — PROMOTE**.
+6. After successful promotion, run `plans/SFL_V0_SLICE3_POSTIMPLEMENTATION_OBSERVATION_PLAN.md` before detailed Slice-4 planning.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
