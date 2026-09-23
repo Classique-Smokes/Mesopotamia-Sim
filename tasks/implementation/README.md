@@ -4,7 +4,7 @@
 
 ## Active
 
-None.
+- `IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` — **COMPLETE CANDIDATE / FRESH CONFORMANCE ACTIVE**. Immutable candidate `imp-0003-slice3-conformance-candidate-v1` @ `6b9d40e33b94d9094c02fe3d9f026914dd7986ec`; exact-head CI `35910481737` PASS. Fresh review task: `IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_PACKET.md`.
 
 ## Completed
 
@@ -13,7 +13,7 @@ None.
 
 ## Ready for dispatch
 
-- `IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` — **READY FOR DISPATCH**. Implements persistent Household identity, participation/continuity/lifecycle, Household Recognition, controlled lineage, and grounded provision backing/capacity under frozen `SFL-V0-S3-ACCEPTANCE-v1`. Planned branch: `implementation/imp-0003-slice3-household`. Conditional S1-084 gate: `../research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md`.
+- `IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_PACKET.md` — fresh exact-candidate review of `imp-0003-slice3-conformance-candidate-v1`.
 
 ## Rules
 

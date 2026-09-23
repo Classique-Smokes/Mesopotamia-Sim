@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / SLICE 3 ACCEPTANCE FROZEN / IMP-0003 READY FOR DISPATCH.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / IMP-0003 CANDIDATE FROZEN / FRESH CONFORMANCE NEXT.**
 
 Verified Slice-1 completion:
 
@@ -86,6 +86,17 @@ Frozen Slice-3 acceptance authority:
 - exact inherited expansion: 128 Slice-1 REQUIRED + 46 Slice-2 REQUIRED
 - IMP-0003 packet: `tasks/implementation/IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md`
 - conditional S1-084 gate: `tasks/research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md`
+
+IMP-0003 implementation candidate:
+
+- candidate ref: `imp-0003-slice3-conformance-candidate-v1`
+- exact candidate SHA: `6b9d40e33b94d9094c02fe3d9f026914dd7986ec`
+- implementation PR: #51
+- exact-head CI: run `35910481737` — **PASS**
+- evidence artifact: `10772553766`, digest `sha256:b345696d803d25beeb574d5b261748d4c88776ea81a81d7a7a20ef7e64350029`
+- implementation report: `tasks/implementation/IMP-0003_IMPLEMENTATION_REPORT.md`
+- S1-084 conditional adaptation gate: **UNFIRED**
+- fresh conformance task: `tasks/implementation/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_PACKET.md`
 
 TRES-0010 closure evidence:
 
@@ -180,10 +191,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Dispatch `tasks/implementation/IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` on `implementation/imp-0003-slice3-household`.
-2. If the implementation would alter the exact `WorldState` private-field inventory or the frozen S1-084 structural audit, stop that triggering change and dispatch `tasks/research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md` first.
-3. Keep general CandidateOrganization convergence deferred under the one-referent-per-formation-episode boundary; escalate only if implementation needs multi-label convergence.
-4. Keep head/office, endogenous provision solicitation/spending, mediated marriage, HouseholdDecisionContext, and checkpoint/restore out of Slice 3.
-5. After all frozen acceptance evidence passes, freeze an exact IMP-0003 implementation candidate and commission fresh independent post-implementation conformance before promotion.
+1. Dispatch `tasks/implementation/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_PACKET.md` against immutable candidate `imp-0003-slice3-conformance-candidate-v1`.
+2. Do not promote PR #51 unless fresh conformance returns **PASS — PROMOTE**.
+3. If conformance BLOCKs, reconcile the bounded defect and preserve the failed candidate/ref before repair.
+4. If conformance PASSes, promote the exact candidate, run post-merge CI, and write the IMP-0003 final completion/promotion record.
+5. After promotion, run the lightweight learning checkpoint in `plans/SFL_V0_SLICE3_POSTIMPLEMENTATION_OBSERVATION_PLAN.md` before detailed Slice-4 planning; this is observational learning, not an acceptance gate.
+6. Keep general CandidateOrganization convergence, head/office, endogenous provision solicitation/spending, mediated marriage, HouseholdDecisionContext, and checkpoint/restore outside Slice 3.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
