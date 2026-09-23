@@ -66,4 +66,4 @@ Implementation may translate them into executable tests/harness code but may not
 
 - `SLICE3_ACCEPTANCE_MANIFEST.md` — **FROZEN Slice-3 verification/completion authority**, version `SFL-V0-S3-ACCEPTANCE-v1`, frozen ref `sfl-v0-slice3-acceptance-v1`.
 - `SLICE3_ACCEPTANCE_FREEZE_RECORD.md` — reviewed candidate/frozen SHA identities, final `PASS — MAY FREEZE UNCHANGED`, review lineage, immutability rule, and the conditional S1-084 adaptation trigger.
-- Final fresh review: `../../research/technical/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW_V3_FINAL.md`.
+- Final fresh review: `research/technical/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW_V3_FINAL.md`.
