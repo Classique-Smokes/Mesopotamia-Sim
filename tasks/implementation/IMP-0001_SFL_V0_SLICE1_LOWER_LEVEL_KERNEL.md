@@ -2,7 +2,7 @@
 
 **Task ID:** IMP-0001  
 **Commissioned by:** Master Architect  
-**Status:** CANDIDATE-v3 FROZEN / FRESH INDEPENDENT CONFORMANCE PENDING  
+**Status:** VERIFIED COMPLETE  
 **Dispatched:** 2026-09-22  
 **Implementation branch:** `implementation/imp-0001-slice1`  
 **Frozen failed candidate:** `imp-0001-slice1-conformance-candidate-v1` @ `7e11dab7697121eb0dbb169ba46210d81b80586e`  
@@ -12,6 +12,10 @@
 **Frozen candidate-v3:** `imp-0001-slice1-conformance-candidate-v3` @ `06e25644879dd8505e24fcaeb43256f69c29c15f`  
 **Fresh K4 packet:** `tasks/implementation/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`  
 **Context mode:** PROJECT-CONTEXT
+
+**Completion record:** `../../research/technical/IMP-0001/IMP-0001_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`  
+**Independent K4:** PASS on candidate-v3  
+**Canonical promotion:** `262dc6e1d846761110fcd6a063bf8b4aa267b3dc`  
 
 ## Dispatch gate — released
 
@@ -23,7 +27,7 @@ Closure evidence:
 - frozen Slice-1 acceptance authority `SFL-V0-S1-ACCEPTANCE-v1`
 - `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_FREEZE_RECORD.md`
 
-SCF-001 fired and is implemented by the canonical root toolchain/CI scaffold. SCF-002 fired: the frozen external acceptance authority remains immutable, and executable/CI mapping to every REQUIRED AcceptanceId is now an active IMP-0001 completion obligation.
+SCF-001 fired and is implemented by the canonical root toolchain/CI scaffold. SCF-002 fired for this task and was retired after verified completion; durable completion evidence now lives in the frozen manifest, executable acceptance surface, CI and independent K4 record.
 
 Any newly discovered conflict with accepted semantics/architecture still triggers the escalation rules in this packet; closure is not permission to improvise new project meaning.
 
