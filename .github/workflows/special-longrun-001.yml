@@ -1,0 +1,57 @@
+name: special-longrun-001
+
+on:
+  push:
+    branches:
+      - experiment/consumption-every-other-cycle-longrun
+    paths:
+      - '.github/workflows/special-longrun-001.yml'
+      - 'src/Mesopotamia.Sim/Execution.cs'
+      - 'src/Mesopotamia.Sim/MaterialRecovery.cs'
+      - 'research/technical/SFL_V0_OBSERVATIONS/SPECIAL_LONGRUN_001/**'
+
+permissions:
+  contents: read
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact experimental revision
+        uses: actions/checkout@v5
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.401
+
+      - name: Restore runner
+        run: dotnet restore tools/Mesopotamia.Sim.BirthRunner/Mesopotamia.Sim.BirthRunner.csproj
+
+      - name: Build experimental kernel and runner
+        run: dotnet build tools/Mesopotamia.Sim.BirthRunner/Mesopotamia.Sim.BirthRunner.csproj --configuration Release --no-restore
+
+      - name: Execute 1000-cycle long run
+        run: >
+          dotnet run
+          --project tools/Mesopotamia.Sim.BirthRunner/Mesopotamia.Sim.BirthRunner.csproj
+          --configuration Release
+          --no-build
+          --no-restore
+          --
+          --initial-world research/technical/SFL_V0_OBSERVATIONS/SPECIAL_LONGRUN_001/INITIAL_WORLD.json
+          --output artifacts/special-longrun-001
+          --revision "$GITHUB_SHA"
+
+      - name: Produce compact mechanical sample
+        run: |
+          set -euo pipefail
+          jq '[.[] | select(.cycle == 1 or .cycle == 2 or .cycle == 5 or .cycle == 10 or .cycle == 25 or .cycle == 50 or .cycle == 100 or .cycle == 200 or .cycle == 300 or .cycle == 500 or .cycle == 750 or .cycle == 1000)]' artifacts/special-longrun-001/CYCLE_SUMMARY.json > artifacts/special-longrun-001/SAMPLED_CYCLES.json
+          sha256sum artifacts/special-longrun-001/* > artifacts/special-longrun-001/SHA256SUMS.txt
+
+      - name: Upload full raw experiment
+        uses: actions/upload-artifact@v4
+        with:
+          name: special-longrun-001-raw-${{ github.sha }}
+          path: artifacts/special-longrun-001/
+          retention-days: 30
