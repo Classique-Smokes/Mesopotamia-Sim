@@ -32,6 +32,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - Birth Run 001 executed autonomously for the declared 30-cycle horizon with no simulation fault; raw package frozen before interpretation.
 - Exploratory Observation Batch 001 executed 8 predeclared seeded variants for 30 cycles each; all 8 reached horizon without simulation fault or early deadlock, with raw outputs frozen.
 - Birth Run 001 Master Architect reconciliation classified the narrow autonomous action vocabulary as a reference-policy limitation, not a demonstrated Slice-1 defect; observational checkpoint closed without reopening Slice 1.
+- New Roads/Vizier tablet corpora were source-preserved and fully systematized: current Slice-2 lenses separated from genuine later additions, overlap cross-linked into existing future programs, and redundant core distinctions explicitly identified.
 
 ## Active
 
@@ -145,7 +146,7 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Discovery and tablet reconciliation are complete: `research/technical/SFL_V0_SLICE2_PREIMPLEMENTATION_RECONCILIATION.md`.
+1. Discovery and tablet reconciliation are complete: `research/technical/SFL_V0_SLICE2_PREIMPLEMENTATION_RECONCILIATION.md`; idea-level tablet disposition: `research/conceptual/TABLET_IDEA_RECONCILIATION.md` and `research/conceptual/CONCEPT_FAMILY_CROSS_INDEX.md`.
 2. Author a separate Slice-2 acceptance/applicability authority that references rather than edits the frozen Slice-1 manifest.
 3. Author the bounded Slice-2 implementation packet from the reconciliation and three preserved discovery returns.
 4. Escalate only if a required witness depends on an unaccepted event-specific observation rule or other genuinely missing semantic distinction.
