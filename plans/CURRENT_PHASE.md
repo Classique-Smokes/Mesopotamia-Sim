@@ -30,6 +30,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - IMP-0001 / Slice 1 independently passed K4 on frozen candidate-v3, was promoted to canonical main, and passed post-promotion CI.
 - Post-IMP-0001 assurance retrospective and branch hygiene completed: reviewer lessons institutionalized without new bureaucracy; approved branch cleanup executed and independently verified at 48 retained refs.
 - Birth Run 001 executed autonomously for the declared 30-cycle horizon with no simulation fault; raw package frozen before interpretation.
+- Exploratory Observation Batch 001 executed 8 predeclared seeded variants for 30 cycles each; all 8 reached horizon without simulation fault or early deadlock, with raw outputs frozen and cross-run interpretation deferred.
 
 ## Active
 
@@ -143,7 +144,7 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Project Director first-read of Birth Run 001: initial-state declaration, mechanical transcript, and compact cycle summaries.
+1. Project Director first-read of Birth Run 001: initial-state declaration, mechanical transcript, and compact cycle summaries. Exploratory Batch 001 raw data is available in parallel but should not displace this first-read.
 2. Record Director observations separately; do not retroactively alter the frozen run.
 3. Only after Director first-read, author Master Architect classification distinguishing defects, model questions, parameter/reference-policy limitations, later-slice capability gaps, and interesting-but-non-actionable behavior.
 4. Do **not** begin Slice-2 implementation until this observational checkpoint is reconciled, unless the Director explicitly waives it.
