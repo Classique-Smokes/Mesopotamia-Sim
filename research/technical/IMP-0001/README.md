@@ -1,6 +1,6 @@
 # IMP-0001 Technical Review Evidence
 
-**Status:** Active conformance/repair lineage for SFL v0 Slice 1
+**Status:** CLOSED — IMP-0001 VERIFIED COMPLETE
 
 ## Candidate-v1
 
@@ -30,11 +30,13 @@ The v2 reviewer independently cleared the v1 repair areas and found two new narr
 - ref: `imp-0001-slice1-conformance-candidate-v3`
 - SHA: `06e25644879dd8505e24fcaeb43256f69c29c15f`
 - implementation branch: `implementation/imp-0001-slice1-repair-v3`
-- draft PR: #23
+- promoted PR: #23
 - Master Architect reconciliation: `../../tasks/implementation/IMP-0001_CANDIDATE_V3_RECONCILIATION_AND_DISPATCH.md`
-- fresh K4 packet: `../../tasks/implementation/IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3_PACKET.md`
-- independent result: **PENDING**
+- fresh K4 report: `IMP-0001_INDEPENDENT_CONFORMANCE_REVIEW_V3.md`
+- independent result: **PASS**
+- canonical promotion merge: `262dc6e1d846761110fcd6a063bf8b4aa267b3dc`
+- final completion record: `IMP-0001_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
 
 Candidate-v3 addresses the two candidate-v2 blockers under unchanged accepted semantics: MaterialDeadlock future recovery projection and precise TechnicalFallback attribution under intersecting constraints.
 
-IMP-0001 is not VERIFIED COMPLETE until `S1-GLOBAL-CONFORMANCE` receives fresh independent PASS.
+IMP-0001 is VERIFIED COMPLETE. `S1-GLOBAL-CONFORMANCE` was awarded by the fresh candidate-v3 K4 PASS.
