@@ -106,13 +106,17 @@ public sealed partial class Simulation
             if (lifecycle == h.Lifecycle) continue;
             ImmutableArray<EventId> causes = [.. households.Exits.Values.Where(e => e.Household == h.Id && e.Stamp.Time.Cycle == cycle).Select(e => e.Stamp.Event),
                 .. households.Continuations.Values.Where(c => c.Household == h.Id && c.Stamp.Time.Cycle == cycle).Select(c => c.Stamp.Event)];
-            SemanticEvent e = HouseholdEvent("HouseholdLifecycle", [.. current.Select(a => a.Person)], causes, $"Household:{h.Id.Value};{lifecycle}");
+            // Only the terminal exit directly participates in dissolution. Earlier
+            // leavers do not learn later exits merely because they share a cycle.
+            ImmutableArray<PersonId> participants = lifecycle == HouseholdLifecycle.Dissolved
+                ? [households.Exits.Values.Where(x => x.Household == h.Id).MaxBy(x => x.Stamp.Time)!.Person]
+                : [.. current.Select(a => a.Person)];
+            SemanticEvent e = HouseholdEvent("HouseholdLifecycle", participants, causes, $"Household:{h.Id.Value};{lifecycle}");
             households.Households[h.Id] = h with { Lifecycle = lifecycle, LifecycleEvent = e.Id, LifecycleTime = new(e.Cycle, e.ReactionIndex) };
             if (lifecycle == HouseholdLifecycle.Dissolved)
             {
                 TerminateCommitments(h.Id, null, e.Id);
-                ImmutableArray<PersonId> lastParticipants = [.. households.Exits.Values.Where(x => x.Household == h.Id && x.Stamp.Time.Cycle == cycle).Select(x => x.Person).Distinct()];
-                RecognizeHousehold(h.Id, h.Formation, false, lastParticipants, e);
+                RecognizeHousehold(h.Id, h.Formation, false, participants, e);
             }
         }
         foreach (CandidateReferent candidate in epistemic.Candidates.OrderBy(c => c.Id.Value)) TryForm(candidate);

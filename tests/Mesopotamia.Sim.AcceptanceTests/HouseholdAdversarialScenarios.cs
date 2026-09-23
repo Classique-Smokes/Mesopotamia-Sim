@@ -8,6 +8,15 @@ internal sealed partial class HouseholdScenarios
 {
     private IEnumerable<HouseholdCase> AdversarialCases()
     {
+        yield return new("DissolutionDoesNotInformEarlierSameCycleLeavers", ["041", "043", "045"], () =>
+        {
+            Lab lab = Form(); HouseholdId h = H(lab); Exit(lab, h, 3);
+            lab.Step((1, new EndHouseholdParticipation(h)), (2, new EndHouseholdParticipation(h)));
+            Assert.AreEqual(HouseholdLifecycle.Dissolved, lab.Sim.HouseholdSnapshot.Households[h].Lifecycle);
+            Assert.AreEqual(RecognitionStatus.Recognized, lab.Sim.EpistemicStateOf(P(1)).HouseholdRecognitionOf(h));
+            Assert.AreEqual(RecognitionStatus.Unknown, lab.Sim.EpistemicStateOf(P(2)).HouseholdRecognitionOf(h));
+            Assert.AreEqual(RecognitionStatus.Recognized, lab.Sim.EpistemicStateOf(P(3)).HouseholdRecognitionOf(h));
+        });
         yield return new("ImmediateRevalidationAndDisclosedTechnicalConflict", ["020", "024", "090", "092"], () =>
         {
             foreach (bool moveFirst in new[] { false, true })

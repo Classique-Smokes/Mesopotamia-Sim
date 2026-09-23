@@ -30,7 +30,7 @@ The exact tested implementation SHA and working-tree cleanliness are emitted by 
 
 ## Verification and audits
 
-The acceptance package runs 24 Slice-3 scenario groups and audits 71 worlds. It reports all 109 frozen Slice-3 rows: **96 REQUIRED PASS, 11 DEFERRED, two UNEXERCISED**. Inherited reporting contains **128 Slice-1 and 46 Slice-2 REQUIRED PASS** bindings.
+The acceptance package runs 25 Slice-3 scenario groups and audits 72 worlds. It reports all 109 frozen Slice-3 rows: **96 REQUIRED PASS, 11 DEFERRED, two UNEXERCISED**. Inherited reporting contains **128 Slice-1 and 46 Slice-2 REQUIRED PASS** bindings.
 
 The inherited `S1-GLOBAL-CONFORMANCE` binding cites the accepted Slice-1 candidate-v3 independent review/completion record. The original Slice-1 runner remains unchanged and continues to distinguish coder evidence from external review. This inherited provenance does not certify the new Slice-3 implementation.
 
@@ -43,6 +43,8 @@ Coverage includes the canonical three-founder causal schedule; cardinality and p
 Actual internal challenges exercise duplicate automatic causes and skipped closure. Focused ablations and structural alternatives remain distinct from injected mutants; a general mutation/generation framework is not claimed. The same-grain NeedsGrain comparison exercises the pure capacity boundary without weakening the existing valid-world invariant.
 
 One implementation defect was found and repaired by the new adverse-order case: a newcomer residence change initially escaped household dependency grouping because the newcomer was not yet a participant. Affected-person keys now group the residence/admission race, and the test verifies both immediate invalidation and technical-fallback disclosure.
+
+Final source review also narrowed direct dissolution acquisition to the terminal exiting participant. Earlier same-cycle leavers retain their stale recognition until valid communication; a dedicated regression prevents cycle-wide information leakage.
 
 ## Root commands and delivery
 
