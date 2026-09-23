@@ -24,6 +24,7 @@ Use this index when a future reader encounters one concept and needs to find its
 | Sanctioned opposition / credible contradiction | Retired Vizier extension + Institutional Dynamics C/D/I | Current project governance analogy | Vizier: Priest |
 | Higher-order grounding / no collective ghost | Institutional Dynamics thesis + SFL household program | Social Epistemic Dynamics group-information cases | Roads: House, Fire |
 | Richer motivation / attention / planning | Future agency seam; not yet a standalone program | Birth Run reference-policy limitation; role-conditioned salience | Vizier: Seal |
+| Accidental specialization becoming socially sustained | `CROSS_PROGRAM_CHALLENGE_CASES/THE_ACCIDENTAL_SPECIALIST.md` | Social Epistemic Dynamics reputation; Institutional Dynamics J/K/L; future informal-role/agency work | Special Long Run 001 empirical seed |
 
 ## Rules for future use
 
