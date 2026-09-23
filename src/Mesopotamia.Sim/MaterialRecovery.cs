@@ -32,8 +32,9 @@ public sealed partial class Simulation
                 // ordinary execution still faults at the scheduled cycle.
                 return false;
             }
-            foreach (Person person in projected.Values.ToArray())
-                projected[person.Id] = ConsumeGrain(person);
+            if (inputs.Key % 2 == 1)
+                foreach (Person person in projected.Values.ToArray())
+                    projected[person.Id] = ConsumeGrain(person);
             if (projected.Values.Any(p => !p.NeedsGrain)) return true;
         }
         return false;
