@@ -1,0 +1,178 @@
+{
+  "runId": "EXPLORATORY-BATCH-001-VAR-0008",
+  "horizonCycles": 30,
+  "configuration": {
+    "version": "SFL-S1-v1"
+  },
+  "people": [
+    {
+      "id": 1,
+      "name": "Enna",
+      "sex": "Male",
+      "grain": 2,
+      "needsGrain": false
+    },
+    {
+      "id": 2,
+      "name": "Hani",
+      "sex": "Female",
+      "grain": 2,
+      "needsGrain": false
+    },
+    {
+      "id": 3,
+      "name": "Pala",
+      "sex": "Female",
+      "grain": 7,
+      "needsGrain": false
+    },
+    {
+      "id": 4,
+      "name": "Saba",
+      "sex": "Male",
+      "grain": 4,
+      "needsGrain": false
+    },
+    {
+      "id": 5,
+      "name": "Rima",
+      "sex": "Male",
+      "grain": 5,
+      "needsGrain": false
+    },
+    {
+      "id": 6,
+      "name": "Dumu",
+      "sex": "Male",
+      "grain": 8,
+      "needsGrain": false
+    }
+  ],
+  "dwellings": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ],
+  "residences": [
+    {
+      "id": 1,
+      "person": 1,
+      "dwelling": 2
+    },
+    {
+      "id": 2,
+      "person": 2,
+      "dwelling": 3
+    },
+    {
+      "id": 3,
+      "person": 3,
+      "dwelling": 2
+    },
+    {
+      "id": 4,
+      "person": 4,
+      "dwelling": 3
+    },
+    {
+      "id": 5,
+      "person": 5,
+      "dwelling": 3
+    },
+    {
+      "id": 6,
+      "person": 6,
+      "dwelling": 1
+    }
+  ],
+  "attitudes": [
+    {
+      "id": 101,
+      "from": 1,
+      "to": 2,
+      "value": 63
+    },
+    {
+      "id": 102,
+      "from": 1,
+      "to": 6,
+      "value": -29
+    },
+    {
+      "id": 103,
+      "from": 2,
+      "to": 1,
+      "value": -4
+    },
+    {
+      "id": 104,
+      "from": 2,
+      "to": 3,
+      "value": 66
+    },
+    {
+      "id": 105,
+      "from": 3,
+      "to": 2,
+      "value": 22
+    },
+    {
+      "id": 106,
+      "from": 3,
+      "to": 5,
+      "value": -30
+    },
+    {
+      "id": 107,
+      "from": 4,
+      "to": 5,
+      "value": 28
+    },
+    {
+      "id": 108,
+      "from": 4,
+      "to": 6,
+      "value": 25
+    },
+    {
+      "id": 109,
+      "from": 5,
+      "to": 3,
+      "value": -40
+    },
+    {
+      "id": 110,
+      "from": 5,
+      "to": 4,
+      "value": -5
+    },
+    {
+      "id": 111,
+      "from": 6,
+      "to": 1,
+      "value": -21
+    },
+    {
+      "id": 112,
+      "from": 6,
+      "to": 4,
+      "value": 65
+    }
+  ],
+  "kinships": [
+    {
+      "id": 201,
+      "first": 4,
+      "second": 5,
+      "kind": "ParentChild"
+    }
+  ],
+  "marriages": [],
+  "inputs": []
+}

@@ -1,0 +1,196 @@
+{
+  "runId": "EXPLORATORY-BATCH-001-VAR-0005",
+  "horizonCycles": 30,
+  "configuration": {
+    "version": "SFL-S1-v1"
+  },
+  "people": [
+    {
+      "id": 1,
+      "name": "Luma",
+      "sex": "Female",
+      "grain": 7,
+      "needsGrain": false
+    },
+    {
+      "id": 2,
+      "name": "Hani",
+      "sex": "Male",
+      "grain": 7,
+      "needsGrain": false
+    },
+    {
+      "id": 3,
+      "name": "Zami",
+      "sex": "Female",
+      "grain": 1,
+      "needsGrain": false
+    },
+    {
+      "id": 4,
+      "name": "Aki",
+      "sex": "Male",
+      "grain": 5,
+      "needsGrain": false
+    },
+    {
+      "id": 5,
+      "name": "Tari",
+      "sex": "Female",
+      "grain": 5,
+      "needsGrain": false
+    }
+  ],
+  "dwellings": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ],
+  "residences": [
+    {
+      "id": 1,
+      "person": 1,
+      "dwelling": 1
+    },
+    {
+      "id": 2,
+      "person": 2,
+      "dwelling": 2
+    },
+    {
+      "id": 3,
+      "person": 3,
+      "dwelling": 2
+    },
+    {
+      "id": 4,
+      "person": 4,
+      "dwelling": 2
+    },
+    {
+      "id": 5,
+      "person": 5,
+      "dwelling": 3
+    }
+  ],
+  "attitudes": [
+    {
+      "id": 101,
+      "from": 1,
+      "to": 2,
+      "value": -13
+    },
+    {
+      "id": 102,
+      "from": 1,
+      "to": 4,
+      "value": 57
+    },
+    {
+      "id": 103,
+      "from": 1,
+      "to": 5,
+      "value": 19
+    },
+    {
+      "id": 104,
+      "from": 2,
+      "to": 1,
+      "value": 31
+    },
+    {
+      "id": 105,
+      "from": 2,
+      "to": 3,
+      "value": -15
+    },
+    {
+      "id": 106,
+      "from": 2,
+      "to": 4,
+      "value": -34
+    },
+    {
+      "id": 107,
+      "from": 2,
+      "to": 5,
+      "value": 18
+    },
+    {
+      "id": 108,
+      "from": 3,
+      "to": 2,
+      "value": -3
+    },
+    {
+      "id": 109,
+      "from": 3,
+      "to": 4,
+      "value": -32
+    },
+    {
+      "id": 110,
+      "from": 3,
+      "to": 5,
+      "value": 27
+    },
+    {
+      "id": 111,
+      "from": 4,
+      "to": 1,
+      "value": -34
+    },
+    {
+      "id": 112,
+      "from": 4,
+      "to": 2,
+      "value": -50
+    },
+    {
+      "id": 113,
+      "from": 4,
+      "to": 3,
+      "value": 5
+    },
+    {
+      "id": 114,
+      "from": 5,
+      "to": 1,
+      "value": 3
+    },
+    {
+      "id": 115,
+      "from": 5,
+      "to": 2,
+      "value": 2
+    },
+    {
+      "id": 116,
+      "from": 5,
+      "to": 3,
+      "value": 76
+    }
+  ],
+  "kinships": [
+    {
+      "id": 201,
+      "first": 3,
+      "second": 5,
+      "kind": "Sibling"
+    },
+    {
+      "id": 202,
+      "first": 1,
+      "second": 4,
+      "kind": "Sibling"
+    }
+  ],
+  "marriages": [],
+  "inputs": []
+}

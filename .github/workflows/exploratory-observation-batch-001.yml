@@ -1,0 +1,81 @@
+name: exploratory-observation-batch-001
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/exploratory-observation-batch-001.yml'
+      - 'research/technical/SFL_V0_OBSERVATIONS/EXPLORATORY_BATCH_001/BATCH_DECLARATION.md'
+      - 'research/technical/SFL_V0_OBSERVATIONS/EXPLORATORY_BATCH_001/WORLDS/**'
+
+permissions:
+  contents: write
+
+jobs:
+  execute-and-freeze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact declaration revision
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.401'
+
+      - name: Restore observation runner
+        run: dotnet restore tools/Mesopotamia.Sim.BirthRunner/Mesopotamia.Sim.BirthRunner.csproj
+
+      - name: Execute eight declared worlds
+        run: |
+          set -euo pipefail
+          root="research/technical/SFL_V0_OBSERVATIONS/EXPLORATORY_BATCH_001"
+          rm -rf "$root/RUNS"
+          mkdir -p "$root/RUNS"
+
+          for world in "$root"/WORLDS/*.json; do
+            name="$(basename "$world" .json)"
+            out="$root/RUNS/$name"
+            echo "=== $name ==="
+            dotnet run               --project tools/Mesopotamia.Sim.BirthRunner/Mesopotamia.Sim.BirthRunner.csproj               --configuration Release               --no-restore               --               --initial-world "$world"               --output "$out"               --revision "$GITHUB_SHA"
+          done
+
+      - name: Record mechanical batch identity
+        run: |
+          set -euo pipefail
+          root="research/technical/SFL_V0_OBSERVATIONS/EXPLORATORY_BATCH_001"
+          {
+            echo "# Exploratory Observation Batch 001 — Execution Record"
+            echo
+            echo "**Status:** RAW RUNS FROZEN / INTERPRETATION PENDING  "
+            echo "**Declaration revision:** `$GITHUB_SHA`  "
+            echo "**Scenario count:** 8  "
+            echo "**Horizon:** 30 cycles each"
+            echo
+            echo "All runs used the production public `Simulation.RunAutonomousCycle()` path with no per-cycle proposal/response injection."
+            echo
+            echo "Per-run stop/fault details are preserved in each `RUNS/VAR-*/RUN_METADATA.json`."
+          } > "$root/BATCH_EXECUTION_RECORD.md"
+
+          find "$root/RUNS" -type f -print0 | sort -z | xargs -0 sha256sum > "$root/RAW_SHA256SUMS.txt"
+
+      - name: Freeze raw batch and retire one-shot executor
+        run: |
+          set -euo pipefail
+          root="research/technical/SFL_V0_OBSERVATIONS/EXPLORATORY_BATCH_001"
+          git config user.name "Exploratory Batch Archivist"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$root/RUNS" "$root/BATCH_EXECUTION_RECORD.md" "$root/RAW_SHA256SUMS.txt"
+          git rm .github/workflows/exploratory-observation-batch-001.yml
+          git commit -m "observations: freeze Exploratory Batch 001 raw runs"
+          git push origin HEAD:main
+
+      - name: Upload combined raw batch
+        uses: actions/upload-artifact@v4
+        with:
+          name: exploratory-batch-001-raw-${{ github.sha }}
+          path: research/technical/SFL_V0_OBSERVATIONS/EXPLORATORY_BATCH_001/
+          retention-days: 30
