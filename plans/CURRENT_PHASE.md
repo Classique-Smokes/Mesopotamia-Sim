@@ -28,6 +28,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 - GOV-0001 fresh-agent evaluations A/B/C returned **PASS** from the frozen candidate; central reconciliation found no material rule loss, owner conflict, routing defect, or repair requirement.
 - DEC-0009 accepted and GOV-0001 promoted the layered Master Architect rulebook; post-merge retrieval verification passed 23/23 checks.
 - IMP-0001 / Slice 1 independently passed K4 on frozen candidate-v3, was promoted to canonical main, and passed post-promotion CI.
+- Post-IMP-0001 assurance retrospective and branch hygiene completed: reviewer lessons institutionalized without new bureaucracy; approved branch cleanup executed and independently verified at 48 retained refs.
 
 ## Active
 
@@ -138,6 +139,6 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 3. Do **not** begin Slice-2 implementation until Director inspection of Birth Run 001, unless the Director explicitly waives the pause.
 4. Classify observations before changing the model; one Slice-1 run is not historical calibration or evidence about unimplemented household/institutional dynamics.
 5. After the observational checkpoint, retrieve `plans/SFL_V0_INTERSLICE_DISCOVERY_PROMPTS.md` before detailed Slice-2 planning.
-6. Branch-hygiene census and Master Architect reconciliation are complete; the exact approved deletion set awaits low-authority ref-deletion execution. This clerical cleanup must preserve the retained frozen evidence refs and does not alter the Birth Run gate.
+6. Post-IMP-0001 housekeeping is complete; branch cleanup is executed and verified, and no housekeeping item remains ahead of Birth Run 001.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
