@@ -55,3 +55,15 @@ Implementation may translate them into executable tests/harness code but may not
 - `SLICE1_ACCEPTANCE_MANIFEST.md` — **FROZEN Slice-1 verification/completion authority**, version `SFL-V0-S1-ACCEPTANCE-v1`, subordinate to accepted semantics/architecture. Frozen ref: `sfl-v0-slice1-acceptance-v1`.
 - `SLICE1_ACCEPTANCE_FREEZE_RECORD.md` — freeze commit/SHA identity, R2 PASS provenance, and immutability rule.
 - Supporting CallFavor applicability derivation: `research/technical/TRES-0010/CALLFAVOR_SLICE1_APPLICABILITY_RECONCILIATION.md`.
+
+
+## Slice-2 acceptance applicability
+
+- `SLICE2_ACCEPTANCE_MANIFEST.md` — **FROZEN Slice-2 verification/completion authority**, version `SFL-V0-S2-ACCEPTANCE-v1`, frozen ref `sfl-v0-slice2-acceptance-v1`.
+- `SLICE2_ACCEPTANCE_FREEZE_RECORD.md` — exact freeze commit/SHA identity, final PASS provenance, and immutability rule.
+
+## Slice-3 acceptance applicability
+
+- `SLICE3_ACCEPTANCE_MANIFEST.md` — **FROZEN Slice-3 verification/completion authority**, version `SFL-V0-S3-ACCEPTANCE-v1`, frozen ref `sfl-v0-slice3-acceptance-v1`.
+- `SLICE3_ACCEPTANCE_FREEZE_RECORD.md` — reviewed candidate/frozen SHA identities, final `PASS — MAY FREEZE UNCHANGED`, review lineage, immutability rule, and the conditional S1-084 adaptation trigger.
+- Final fresh review: `../../research/technical/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW_V3_FINAL.md`.
