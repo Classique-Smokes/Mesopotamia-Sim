@@ -124,7 +124,7 @@ Director-blocked Slice-4 implementation boundary:
 - immutable boundary ref: `sfl-v0-slice4-implementation-boundary-blocked-v1`
 - exact boundary commit: `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
 - block record: `plans/verification/SFL_V0/SLICE4_BLOCKED_IMPLEMENTATION_BOUNDARY_RECORD.md`
-- cause: consequential Director-identified semantic gap; details pending Director challenge
+- cause: local semantic gap resolved/promoted by DEC-0011; implementation remains blocked pending SID-ASSURANCE-v1 pilot, successor Slice-4 acceptance, and inherited-verification adaptation closure
 - current Slice-4 acceptance v1 remains immutable historical evidence but is **operationally blocked from authorizing implementation**
 - coding bārû dispatch: **FORBIDDEN while block is active**
 
