@@ -95,9 +95,11 @@ Slice-4 acceptance candidate2 / freeze:
 Semantic-interaction-delta failsafe rollout:
 
 - implementation plan: `plans/GOVERNANCE_SEMANTIC_INTERACTION_DELTA_FAILSAFE_IMPLEMENTATION_PLAN.md`
-- immutable rollout candidate: `governance-semantic-interaction-delta-rollout-v1-candidate1` @ `7c09edee119c253aaad1fe96eeb8ad63f625225d`
-- policy blob: `634ca400c1827f02f24d7042754bc5beafe89e17`
-- implementation-plan blob: `ac2a62eeabe4e9806aff3e20c1c24f1a63048177`
+- candidate1: `governance-semantic-interaction-delta-rollout-v1-candidate1` @ `7c09edee119c253aaad1fe96eeb8ad63f625225d` — **SUPERSEDED BEFORE REVIEW** by hostile pre-review challenge
+- active immutable rollout candidate: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`
+- candidate2 policy blob: `510ed36a15eb2912b50b0c9eda43953b1b6779bd`
+- candidate2 implementation-plan blob: `f7e22b372ebb1b805fba3ec6ecb84d7852b0329d`
+- pre-review challenge reconciliation: `research/technical/GOV-0002_PRE_REVIEW_HOSTILE_CHALLENGE_RECONCILIATION.md`
 - independent governance review: `tasks/research/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW.md`
 - governance promotion status: **NOT YET AUTHORIZED**
 - planned sequence: independent review -> Director approval -> canonical protocol/checklist/template promotion -> Slice-4 pilot -> pilot reconciliation -> successor Slice-4 acceptance
