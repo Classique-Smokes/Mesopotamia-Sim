@@ -102,7 +102,7 @@ Semantic-interaction-delta failsafe:
 - acceptance-freeze gate: `governance/checklists/ARTIFACT_FREEZE_CHECKLIST.md`
 - reviewed rollout candidate2: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`
 - independent review: `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md` — **PASS — POLICY READY FOR DIRECTOR PROMOTION**
-- canonical promotion: **COMPLETE / pending merge of this promotion branch**
+- canonical promotion: **COMPLETE / VERIFIED** — `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PROMOTION_RECORD.md`
 - mandatory next gate: Slice-4 SID pilot before any successor Slice-4 acceptance candidate
 - Slice-4 implementation remains **DIRECTOR BLOCKED** until pilot + successor acceptance + inherited-adaptation gates close
 
