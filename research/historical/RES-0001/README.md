@@ -1,6 +1,6 @@
 # RES-0001 — Old Babylonian Nippur Household Foundations
 
-**Status:** ADVISORY RESEARCH INDEX / A–H RETURNS INGESTED
+**Status:** ADVISORY RESEARCH INDEX / A–H RETURNS + RE-DERIVED RECONCILIATION INGESTED
 
 This directory preserves the recoverable outputs of the eight independent RES-0001 research streams commissioned under `tasks/research/RES-0001_OLD_BABYLONIAN_NIPPUR/`.
 
@@ -27,7 +27,9 @@ The relevant recoverable contents of all eight A–H returns are now present on 
 
 ## Reconciliation status
 
-The intended RES-0001R cross-stream reconciliation task is preserved in `RES-0001R_RECONCILIATION_PENDING.md`. No completed reconciliation result was found in the recovered workspace.
+RES-0001R is **COMPLETE / RE-DERIVED / ADVISORY**. The restored reconciliation return is preserved under [`reconciliation/`](reconciliation/), with provenance and restoration limits recorded in [`RES-0001R_RECONCILIATION_RESTORATION_RECORD.md`](RES-0001R_RECONCILIATION_RESTORATION_RECORD.md).
+
+The return contains **43 `HEC-` reconciliation candidates**. `HEC-` identifiers are not canonical `HE-` Historical Evidence Register entries. Historical-evidence promotion remains a separate Master Architect review/action.
 
 ## Context discipline
 
