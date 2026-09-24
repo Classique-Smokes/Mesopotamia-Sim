@@ -1,4 +1,4 @@
-# Governance Plan — Compositional Affordance / Participant-Aliasing Failsafe
+# Governance Plan — Semantic Interaction Delta Failsafe
 
 **Status:** PROPOSED / DIRECTOR REVIEW  
 **Date:** 2026-09-24  
@@ -7,46 +7,69 @@
 **Motivating failure:** Slice-4 office-holder private-resource supplementation omission  
 **Primary owner if accepted:** `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`
 
-## 1. Problem class
+## 1. Protected failure class
 
-The project already has strong assurance for:
+The protected failure class is broader than participant aliasing or omitted compositional affordance.
 
-- conformance to accepted semantics;
-- parameter validity;
-- same-cycle composition/conflict;
-- nested action/transaction completion;
-- authority/precondition races;
-- exact acceptance applicability;
-- independent verification/oracle adequacy.
+> **A new semantic layer changes the possibility space of the already-existing world in a way nobody explicitly considered.**
 
-Those mechanisms can still certify an incomplete semantic world if an ordinary causal affordance was never represented in the specification at all.
+That change may make something:
 
-The missing Slice-4 private-supplement path demonstrated this failure class:
+- newly possible;
+- newly impossible;
+- narrower;
+- dependent on a new condition;
+- newly coupled to another system;
+- causally rerouted through a different authority/resource/knowledge path;
+- stranded across a new transition;
+- sensitive to two semantic positions collapsing onto one actor.
 
-> independently valid capacities existed, but the model never asked what became possible when the same underlying person simultaneously carried several of them.
+The project already has strong assurance for conformance to **named accepted semantics**. That machinery cannot discover every plausible history that never entered the semantic vocabulary.
 
-This is a **semantic expressibility / negative-space** problem.
+The failsafe therefore targets **semantic interaction delta before acceptance freeze**.
 
-The failsafe must help discover plausible missing meanings **before acceptance freeze** without pretending to guarantee completeness of human behavior.
+It does not claim to prove completeness of human behavior.
 
-## 2. Design goals
+## 2. Why the prior framing was too narrow
+
+The Slice-4 hole happened through:
+
+`head = private owner = voluntary actor`
+
+so participant aliasing was the immediate symptom.
+
+But future failures may not contain any same-person alias.
+
+Examples of the broader class include:
+
+- geography makes an older obligation infeasible or changes what fulfilment means;
+- ownership/control alters an older residence capability;
+- a new epistemic gate suppresses an old action path;
+- inheritance changes the survival/meaning of an old claim through a transition;
+- a new institutional layer accidentally erases an older personal capability;
+- a new transition creates an unhandled intermediate/carryover case even though both endpoints are valid.
+
+Participant aliasing remains a mandatory probe when relevant, but it is one subtype of semantic interaction delta.
+
+## 3. Design goals
 
 The failsafe must:
 
-1. target semantic expressibility rather than duplicate conformance review;
-2. focus on newly introduced or newly interacting semantic surfaces;
-3. explicitly test same-PersonId role/capacity composition;
-4. use fresh-context imagination without granting reviewers semantic authority;
-5. block acceptance freeze only for genuine unresolved consequential meaning;
-6. create almost no ceremony when the trigger does not fire;
-7. scale by auditing deltas, not the full historical model;
-8. leave durable closure evidence for future agents;
+1. detect meaningful new↔old semantic interactions before implementation hardens them;
+2. check both **new affordances** and **lost/narrowed old affordances**;
+3. inspect transition carryover, not only stable endpoint behavior;
+4. explicitly test participant aliasing when multiple positions may coincide;
+5. use fresh-context negative-space challenge without granting reviewers semantic authority;
+6. scale by auditing the **semantic delta/frontier**, not the whole accumulated project;
+7. block acceptance freeze only for genuine consequential unresolved meaning;
+8. create almost no ceremony when the trigger does not fire;
 9. reuse existing protocols, task templates, registers, and freeze mechanics;
-10. remain removable/revisable if experience shows it creates noise rather than discoveries.
+10. distinguish semantic expressibility from agency accessibility and endogenous reachability;
+11. remain revisable/removable if experience shows it produces mostly noise.
 
-## 3. No new governance layer
+## 4. No new governance layer
 
-Do **not** create a new standing protocol, board, or register.
+Do **not** create a new standing protocol, board, or semantic-interaction register.
 
 The durable owner remains:
 
@@ -54,416 +77,584 @@ The durable owner remains:
 
 Detailed recurring mechanics should live in one compact checklist:
 
-`governance/checklists/COMPOSITIONAL_AFFORDANCE_AND_ALIASING_CHECKLIST.md`
+`governance/checklists/SEMANTIC_INTERACTION_DELTA_CHECKLIST.md`
 
-Existing artifacts remain responsible for:
+Existing owners remain responsible for:
 
-- delegation / fresh review;
+- fresh review/delegation;
 - decision promotion;
-- deferred-gap registration;
+- deferred/open gaps;
 - acceptance freeze;
-- implementation dispatch.
+- implementation dispatch;
+- post-implementation conformance.
 
-The Master Architect Guide does not need substantive duplication because it already routes consequential specification→implementation work into the assurance protocol and instructs process improvement after repeated Director correction.
+The Master Architect Guide and Constitution should not duplicate the mechanism.
 
-## 4. Trigger gate
+## 5. Trigger gate — semantic interaction frontier
 
-Every consequential preimplementation reconciliation must record one line:
+Every consequential preimplementation reconciliation records:
 
-> **Compositional-affordance / aliasing trigger:** FIRED / NOT FIRED — [reason]
+> **Semantic-interaction-delta trigger:** FIRED / NOT FIRED — [reason]
 
-### Trigger FIRED when a slice introduces or materially changes at least one of:
+### FIRES when newly introduced semantics can materially interact with an existing capability/path through at least one of these mechanisms
 
-1. office / representative / delegated mode alongside ordinary personal agency;
-2. multiple authority sources one person may simultaneously carry;
-3. ownership versus control distinctions;
-4. institutional access to privately owned resources;
-5. multi-position transactions where roles may alias;
-6. higher-order actor action carried through a lower-level person;
-7. nested consent / authorization;
-8. succession / former-holder behavior;
-9. a new resource contributor / claimant / counterparty position that can coincide with another existing position;
-10. any design where one PersonId may plausibly occupy two newly interacting causal positions.
+The new layer:
 
-### Trigger NOT FIRED
+1. **reads** existing authoritative/subjective state in a new way;
+2. **writes** state that existing actions/relations depend upon;
+3. adds a new **gate/precondition** to an existing action or capability;
+4. adds/removes/reorders an **action candidate** or response path;
+5. competes for or reallocates an existing **resource/capacity**;
+6. changes **ownership, control, authority, legitimacy, or representation**;
+7. changes **knowledge, observation, recognition, visibility, or information routing**;
+8. introduces a new **identity/lifecycle/transition** that existing state must survive or cross;
+9. introduces **space/geography/time/topology** that can affect old causal paths;
+10. introduces **inheritance/succession/transfer** of claims, obligations, resources, roles, or identity;
+11. introduces a higher-order actor/institution that can enable, suppress, mediate, or absorb older personal action;
+12. introduces multi-position semantics where positions may alias onto one actor;
+13. otherwise creates a plausible new↔old causal interaction on the slice's consequential path.
 
-No further artifact is required when:
+This is the **interaction frontier**: the bounded set of existing semantic surfaces the new layer can actually touch.
 
-- the change is local/routine;
-- no new actor mode/position/authority/ownership interaction exists;
-- the behavior stays entirely within already audited semantic positions.
+### NOT FIRED
 
-The reconciliation records why and proceeds normally.
+Record NOT FIRED when the change is consequentially local and does not create a new interaction frontier with existing semantics.
 
-## 5. Audit A — compositional affordance
+No further audit artifact is required.
 
-When the trigger fires, inspect only:
+## 6. Frontier discovery — how to keep the audit bounded
 
-- newly introduced capacities/positions; and
-- existing capacities that can now be jointly carried with them.
+When the trigger fires, first identify only the affected prior surfaces.
 
-Do **not** enumerate the Cartesian product of all project actions.
+For the new semantic layer/transition, ask which existing things it can:
 
-### Required question
+- enable;
+- suppress;
+- gate;
+- invalidate;
+- consume;
+- transfer;
+- inherit;
+- expose/hide;
+- reroute;
+- reinterpret;
+- cause to compete;
+- carry across a transition.
 
-> Which independently valid capacities can the same underlying actor combine in one causal episode, and does the model accidentally forbid an ordinary combination merely because those capacities were designed separately?
+Do not enumerate all historical actions/objects.
 
-### Compact output
+The output is a small **interaction-frontier list** used by the lenses below.
 
-Default location: a table embedded in the slice's normal preimplementation reconciliation.
+## 7. Lens A — newly possible / compositional affordance
 
-Only create a separate audit file when the table is too large to remain readable.
+For every material new↔old frontier:
 
-Recommended columns:
+> **What ordinary causal history becomes newly possible because the new layer combines with existing capacities, resources, relations, authority, knowledge, or actions?**
 
-| Surface | Capacity/position A | Capacity/position B | Plausible composition | Classification | Authority / trigger | Acceptance implication |
-|---|---|---|---|---|---|---|
+This includes same-actor capacity composition but is not limited to it.
 
-Classification vocabulary:
+Classify each material candidate.
 
-- **SUPPORTED** — existing accepted semantics can express it;
-- **PROHIBITED** — accepted authority explicitly forbids it;
-- **IRRELEVANT / COMMUTING** — alias/composition has no semantic consequence;
-- **DEFERRED** — intentionally outside current slice, with an explicit trigger;
-- **UNRESOLVED** — consequential meaning is missing and must be decided before freeze.
+Typical findings:
 
-Absence from the current action catalogue is never sufficient evidence for PROHIBITED.
+- existing semantics already support it;
+- accepted authority explicitly prohibits it;
+- it is intentionally deferred;
+- it reveals a genuine missing meaning.
 
-## 6. Audit B — participant aliasing
+Absence from the current action catalogue is not evidence of prohibition.
 
-For each consequential multi-position action or transaction newly introduced / materially changed, list its semantic positions.
+## 8. Lens B — capability preservation / non-erasure / dependency shift
 
-Examples of positions:
+Do **not** impose a blanket rule that all old capabilities must survive every new layer.
 
-- initiator;
-- target;
-- role-holder;
-- private resource owner;
-- contributor;
-- recipient;
-- nominee;
-- nominator;
-- bride/groom;
-- creditor/debtor;
-- claimant/witness;
-- former holder/current participant.
+New semantics may intentionally narrow or condition old behavior.
 
-### Required question
+Instead ask:
 
-> Which positions may legally be occupied by the same PersonId, and what happens when they alias?
+> **What previously valid capabilities, relations, obligations, claims, or causal paths are affected by the new layer?**
 
-Audit only meaningful pairs/triples; do not enumerate impossible or obviously irrelevant combinations.
+Then:
 
-For each material alias, classify:
+> **Did anything that used to be possible become impossible, narrower, newly conditional, rerouted, or dependent on a new state without explicit authority?**
 
-- SUPPORTED;
-- PROHIBITED;
-- IRRELEVANT / COMMUTING;
-- DEFERRED;
-- UNRESOLVED.
+### Old-world projection test
 
-### Mandatory alias-effect prompts
+Where meaningful, construct the **neutral embedding** of the old world into the new model:
 
-When two positions collapse to one PersonId, ask whether aliasing changes:
+- set the new layer to the neutral/inert/default condition representing the old scenario;
+- preserve the old causal inputs;
+- ask whether the previously valid history remains semantically equivalent.
 
-1. **independent cognition** — does a response context disappear because there is no independent counterparty?
-2. **initiative accounting** — does the actor accidentally gain/lose an initiative?
-3. **authority** — does self-authorization become possible or forbidden?
-4. **resource identity** — can one stock/claim be double-counted?
-5. **provenance** — are two causal roles still distinguishable in history?
-6. **conflict/revalidation** — do two legs now compete for the same state/capacity?
-7. **cardinality** — does one-person aliasing collapse a required multi-party condition?
-8. **persistence/succession** — does a role-derived state incorrectly transfer with the office?
-9. **subjective knowledge** — does direct participation in one capacity improperly grant knowledge in another?
-10. **automatic consequences** — would treating one episode as two actions double-fire attitudes/favours/evidence?
+If not, classify the delta.
 
-This list is a prompt, not a new semantic doctrine.
+This is a review principle, not a requirement that every layer possess a literal neutral value.
 
-## 7. Fresh negative-space challenge
+### Dispositions for old-capability changes
 
-If the trigger fires for a consequential slice, run one fresh-context challenge **before acceptance freeze**.
+- **PRESERVED** — old capability remains equivalent on the relevant old-world projection;
+- **INTENDED CHANGE** — accepted authority explicitly changes it;
+- **DERIVED CONSEQUENCE** — the change follows necessarily from already accepted semantics without a new choice;
+- **DEFERRED** — interaction intentionally not resolved yet, with trigger;
+- **UNRESOLVED** — consequential meaning is missing;
+- **ACCIDENTAL GAP / REGRESSION** — no authority supports the loss/narrowing and the intended world still needs the path.
 
-Purpose:
+`DERIVED CONSEQUENCE` requires a clear authority derivation; it may not be used as a label for implementation intuition.
 
-> seek ordinary actions/histories missing from the accepted vocabulary, not defects in already-named requirements.
+## 9. Lens C — new dependency / coupling / causal retargeting
 
-### Independence design
+A new layer may leave an action technically possible while changing **why**, **through whom**, or **under which authority/state** it works.
 
-Use a fresh reviewer not responsible for the slice's semantic design or implementation.
+Ask:
 
-The first-stage challenge should receive:
+- did an old action gain a new required dependency?
+- did its authority move from person to office/institution or vice versa?
+- did its resource source change?
+- did its subjective-information requirement change?
+- did its provenance/identity meaning change?
+- did an old independent subsystem become coupled to another?
+- can the new layer shadow an older action even though that action still exists nominally?
 
-- the newly introduced semantic objects/modes/powers;
-- real project invariants and exclusions;
-- the relevant social situation;
-- enough accepted context to avoid impossible suggestions.
+Classify material changes using the same PRESERVED / INTENDED CHANGE / DERIVED CONSEQUENCE / DEFERRED / UNRESOLVED / ACCIDENTAL GAP vocabulary.
 
-It should **not** be seeded with:
+This lens catches “capability still exists in code” cases whose causal meaning silently changed.
 
-- the current action catalogue as a brainstorming list;
-- acceptance-row IDs;
+## 10. Lens D — transition carryover / path closure
+
+For each consequential **new or materially changed transition**, explicitly ask:
+
+> **What existing causal state survives, transfers, suspends, terminates, or becomes invalid across this transition?**
+
+Inspect where applicable:
+
+- claims;
+- obligations/debts/favours;
+- ownership/control;
+- residence/location;
+- relationships;
+- knowledge/recognition;
+- permissions/authority;
+- resource commitments;
+- pending proposals/processes;
+- role occupancy;
+- identity/lineage;
+- cooldown/timing state.
+
+Then ask:
+
+> **Can every intended valid pre-state reach the intended valid post-state without an undefined semantic hole, orphaned state, accidental reset, or impossible crossing?**
+
+Endpoint validity alone is not sufficient.
+
+A missing carryover rule that changes project meaning is UNRESOLVED, not implementation discretion.
+
+## 11. Lens E — participant aliasing
+
+When an action/transaction contains multiple semantic positions, ask:
+
+> **Which positions may legally be occupied by the same PersonId, and what changes when they alias?**
+
+Audit only meaningful aliases.
+
+Classify each as:
+
+- **SUPPORTED**;
+- **PROHIBITED**;
+- **IRRELEVANT / COMMUTING**;
+- **DEFERRED**;
+- **UNRESOLVED**.
+
+### Alias-effect prompts
+
+Check whether aliasing changes:
+
+1. independent cognition / need for response context;
+2. initiative accounting;
+3. self-authorization;
+4. resource identity / double counting;
+5. causal provenance;
+6. conflict/revalidation;
+7. cardinality/multi-party conditions;
+8. persistence/succession;
+9. subjective knowledge entitlement;
+10. automatic consequences / duplicate effects.
+
+Aliasing is an important probe, not the definition of the overall failure class.
+
+## 12. Compact semantic-delta table
+
+Default location: inside the slice's existing preimplementation reconciliation.
+
+Create a separate file only when readability demands it.
+
+Recommended schema:
+
+| New/changed surface | Existing affected capability/path | Delta lens/type | Before | After / question | Disposition | Authority / trigger | Acceptance implication |
+|---|---|---|---|---|---|---|---|
+
+Useful delta-type labels:
+
+- `NEW_AFFORDANCE`
+- `SUPPRESSED_OR_NARROWED`
+- `NEW_DEPENDENCY`
+- `CAUSAL_RETARGETING`
+- `NEW_CONFLICT_OR_SHARED_CAPACITY`
+- `TRANSITION_CARRYOVER`
+- `PARTICIPANT_ALIAS`
+- `NO_MATERIAL_DELTA`
+
+Do not create a permanent global ledger.
+
+## 13. Fresh negative-space challenge
+
+If the trigger fires for a consequential slice, commission **one fresh-context reviewer before acceptance freeze**.
+
+The reviewer is not asked to verify the specification.
+
+The reviewer is asked to challenge the possibility-space delta.
+
+### Supplied context
+
+Give:
+
+- the new semantic objects/modes/transitions;
+- the relevant old capabilities/pathways at the interaction frontier;
+- real accepted invariants/exclusions;
+- enough domain situation to avoid nonsense.
+
+Do **not** seed with:
+
+- current acceptance-row IDs;
+- existing action catalogue as the brainstorming list;
 - prior negative-space findings;
 - preferred missing affordances.
 
-### Required return
+### Reviewer prompts
 
-Normally **3–7** ordinary concrete actions/histories that a person in the modeled situation might plausibly attempt.
+Return normally **3–7** concrete ordinary histories/questions spanning as relevant:
 
-For each:
+1. **new possibility** — what might now be possible because old and new semantics interact?
+2. **lost/narrowed possibility** — what might now stop working or require a new condition?
+3. **transition hole** — what might break while moving between new states?
+4. **aliasing** — what apparently separate positions might be the same actor?
+5. **causal retargeting** — what old behavior might still occur but through the wrong authority/resource/knowledge path?
 
-- concrete narrative;
-- involved capacities / semantic positions;
-- why it is ordinary/plausible within the supplied model situation;
-- no recommendation about what the project *should* allow.
+The reviewer produces **questions/counterexamples**, not semantics.
 
-The reviewer produces questions, not semantics.
+## 14. Master Architect reconciliation of the challenge
 
-### Reconciliation pass
+The Master Architect classifies each reviewer return against full canonical authority.
 
-The Master Architect then classifies each challenge against full canonical authority:
+Possible disposition:
 
-- SUPPORTED;
-- PROHIBITED;
-- DEFERRED;
+- SUPPORTED / PRESERVED;
+- PROHIBITED / INTENDED CHANGE;
+- DERIVED CONSEQUENCE;
 - IRRELEVANT;
-- UNRESOLVED.
+- DEFERRED with trigger;
+- UNRESOLVED;
+- ACCIDENTAL GAP / REGRESSION.
 
-Any consequential UNRESOLVED item blocks acceptance freeze until promoted or explicitly deferred with valid authority.
+Any consequential UNRESOLVED or ACCIDENTAL GAP blocks acceptance freeze until repaired or validly deferred.
 
-Do not count the number of reviewer ideas as a quality score.
+Agreement/count of reviewer ideas is not evidence.
 
-## 8. Why the challenge is separated from acceptance review
+## 15. Why this remains separate from acceptance review
 
 Acceptance review asks:
 
-> Is the acceptance authority complete and subordinate relative to accepted semantics?
+> **Is completion authority complete relative to accepted semantics?**
 
-The negative-space challenge asks:
+Semantic-interaction-delta review asks:
 
-> What ordinary possibility may never have entered accepted semantics?
+> **Did the new layer change the world's possibility space in a way our accepted semantics never classified?**
 
-These must remain distinct.
-
-A reviewer cannot prove semantic completeness by checking an acceptance table derived from the same vocabulary.
+A perfect acceptance review cannot answer the second question if both specification and manifest omit the possibility.
 
 Therefore:
 
-- negative-space challenge occurs before final acceptance freeze;
-- acceptance reviewer checks that any triggered challenge was performed and reconciled;
-- acceptance reviewer does not inherit authority to create new semantics from a challenge.
+**semantic-delta closure -> acceptance candidate/review -> freeze**
 
-## 9. Acceptance-freeze gate
+not the reverse.
 
-Amend acceptance-authority review/freeze procedure so that, when the trigger FIRED, freeze requires:
+The final acceptance reviewer verifies that required semantic-delta work was performed and reconciled; they do not create missing semantics themselves.
 
-1. compositional-affordance table completed;
-2. material participant aliases classified;
-3. fresh negative-space challenge returned;
-4. every challenge dispositioned;
-5. no consequential UNRESOLVED item remains;
-6. any newly accepted meaning is present in the acceptance candidate;
-7. any deliberate deferral has a visible trigger;
-8. no reviewer question was silently converted into semantics by verification.
+## 16. Acceptance-freeze gate
 
-A freeze record records:
+When trigger = FIRED, acceptance freeze requires:
 
-- trigger FIRED / NOT FIRED;
-- audit location;
-- negative-space challenge path or N/A;
-- reconciliation/disposition path;
-- unresolved count = 0 for freeze.
+1. interaction frontier identified;
+2. relevant delta lenses completed;
+3. meaningful same-person aliases classified where applicable;
+4. transition carryover audited for new consequential transitions;
+5. fresh negative-space challenge complete;
+6. every challenge dispositioned;
+7. consequential `UNRESOLVED = 0`;
+8. consequential `ACCIDENTAL GAP / REGRESSION = 0` or repaired before freeze;
+9. any accepted new/changed meaning present in the acceptance candidate;
+10. deliberate deferrals retain explicit triggers;
+11. no verification artifact silently creates the missing rule.
 
-This should become one line in the existing artifact-freeze checklist, not a new freeze protocol.
+Freeze record fields:
 
-## 10. Implementation-packet failsafe
+- `Semantic-interaction-delta trigger: FIRED|NOT FIRED`
+- `Delta-closure location: <path>|N/A`
+- `Negative-space challenge: <path>|N/A`
+- `Consequential unresolved: 0|N`
+- `Accidental gaps outstanding: 0|N`
 
-When the trigger fired, the implementation packet must identify the closure record among its required inputs.
+## 17. Implementation-packet stop rule
 
-Add one escalation clause to the standard implementation template:
+When the trigger fired, the implementation packet cites the semantic-delta closure among required inputs.
 
-> If implementation reveals a consequential same-PersonId alias, cross-context capacity composition, or ordinary affordance not classified by the accepted closure record, STOP rather than treating absence as prohibition or implementation discretion.
+Add this standard escalation:
 
-This prevents a coder from “solving” a newly exposed negative-space question locally.
+> **If implementation reveals a consequential new↔old semantic interaction, same-person alias, transition carryover, suppression/narrowing, or causal dependency not classified by the accepted semantic-delta closure, STOP. Do not infer that absence means prohibition, support, or implementation discretion.**
 
-It does not require the coder to repeat the audit.
+The bārû does not repeat the whole audit.
 
-## 11. Scaling strategy
+## 18. Scaling as the project grows
 
 ### Delta-based, not cumulative
 
-Future slice N audits:
+Slice N audits:
 
-- capacities/positions added or materially changed by N;
-- existing capacities newly connected to them.
+- new/changed semantics in N;
+- prior surfaces they can materially touch.
 
-It does **not** re-audit all prior slice combinations.
+It does not re-audit the entire project.
 
-### Re-trigger on seam changes
+### Reopen only on interaction change
 
-A previously closed alias/composition is reopened only when:
+A previously classified interaction reopens only when:
 
-- one of its participating semantic positions changes materially;
-- a new authority/resource channel makes the old classification no longer obviously valid;
+- one participating semantic surface changes materially;
+- a new layer creates a new dependency/resource/authority/information path through it;
+- a new transition crosses it;
 - implementation/observation produces a concrete counterexample.
 
-### Bound the review surface
+### One reviewer by default
 
-Defaults:
+Normally:
 
-- one compact audit table;
+- one compact frontier/delta table;
 - one fresh negative-space reviewer;
-- 3–7 ordinary challenges;
-- no parallel review swarm unless the surface is unusually large/novel.
+- 3–7 counterexamples/questions.
 
-### Existing registers only
+Use multiple reviewers only for unusually large/novel semantic frontiers.
 
-- genuine unresolved semantics -> existing open/deferred gap mechanism;
-- accepted consequential choice -> Decision Register;
-- surprising implementation lesson -> existing future-lessons index;
-- no separate “affordance register.”
+### No new global register
 
-## 12. Mechanical enforcement
+Use existing decisions, open/deferred gaps, reconciliation, acceptance authority, and future-lessons artifacts.
 
-Do not build a large tool initially.
+## 19. Mechanical enforcement
 
-Use stable textual markers first:
+Initially use stable textual markers only.
 
-- `Compositional-affordance / aliasing trigger: FIRED|NOT FIRED`
+Expected markers in consequential preimplementation/freeze records:
+
+- `Semantic-interaction-delta trigger: FIRED|NOT FIRED`
+- `Delta-closure: COMPLETE <path>|N/A`
 - `Negative-space challenge: COMPLETE <path>|N/A`
-- `Unresolved consequential affordances: 0|N`
+- `Consequential unresolved: 0|N`
+- `Accidental gaps outstanding: 0|N`
 
-Add them to the expected preimplementation/freeze structure.
+After 2–3 triggered slices, consider a tiny repository lint that checks only marker completeness.
 
-After **2–3 consequential slices**, evaluate whether simple repository linting is worthwhile.
+Do not automate semantic classification.
 
-A future linter could check that an acceptance freeze record cannot claim readiness when:
+## 20. Pilot on currently blocked Slice 4
 
-- trigger = FIRED;
-- challenge is missing;
-- unresolved count != 0.
+Run the full mechanism before producing the DEC-0011 successor acceptance candidate.
 
-Do not automate semantic classification itself.
+### Interaction frontier
 
-## 13. Pilot on the currently blocked Slice 4
+At minimum include:
 
-Before producing the DEC-0011 successor acceptance candidate:
+- personal agency ↔ HouseholdDecisionContext;
+- head role authority ↔ private ownership;
+- head ↔ persistent provision contributor;
+- Household material action ↔ personal material action/shared grain;
+- head/bride/groom mediated-marriage positions;
+- nominator/nominee/head/current participant;
+- support recipient/head/contributor;
+- succession/vacancy ↔ commitments/private transaction terms;
+- Active/Inactive/Dissolved transitions ↔ pending Household actions;
+- objective occupancy ↔ subjective head Recognition;
+- participation end ↔ head role/provision/continuity.
 
-1. mark Slice 4 trigger **FIRED**;
-2. perform the compositional-affordance audit over:
-   - Person ordinary agency;
-   - HouseholdDecisionContext carrier;
-   - head role authority;
-   - private resource ownership;
-   - persistent provision contributor;
-   - mediated-marriage responder/bride/groom positions;
-   - nominator/nominee/current participant positions;
-   - outgoing/former head;
-   - support recipient;
-3. perform the participant-aliasing table for the consequential Slice-4 transactions;
-4. commission one fresh negative-space challenge;
-5. reconcile every returned challenge;
-6. if another genuine missing meaning appears, patch semantics before successor acceptance;
-7. only then cut the successor Slice-4 acceptance candidate.
+### Old-world projection
 
-This is the first real field test of the failsafe.
+Verify that introducing the office layer does not accidentally erase, in otherwise equivalent old-world conditions:
 
-The existing Director implementation BLOCK remains active throughout.
+- ordinary personal action;
+- lower-level person-person transfer;
+- standing provision commitment semantics;
+- participation/continuity semantics;
+- actor-specific knowledge/Recognition boundaries.
 
-## 14. Proposed repository changes after Director approval
+Any intended change must trace to accepted authority.
+
+### Transition carryover
+
+Audit at minimum:
+
+- appointment;
+- succession;
+- head participation end/vacancy;
+- Active -> Inactive;
+- Inactive -> Active;
+- Dissolution.
+
+Classify survival/termination/transfer of existing commitments, pending actions, private transaction terms, Recognition, and personal capabilities.
+
+### Participant aliasing
+
+Classify material aliases including:
+
+- head = private contributor;
+- head = standing provision contributor;
+- head = bride;
+- head = groom;
+- head = support recipient;
+- nominator = nominee;
+- outgoing head = continuing provision contributor after succession;
+- current participant = other relevant transaction positions.
+
+Do not presume each is legal; classify from authority.
+
+### Fresh challenge
+
+Commission one fresh reviewer using the semantic frontier, not the action catalogue.
+
+If another missing semantic meaning appears, repair it before successor acceptance.
+
+## 21. Proposed repository changes after Director approval
 
 ### Modify
 
 `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`
 
-Add:
+Add to §3 Semantic closure:
 
-- trigger subsection inside §3 Semantic closure checklist;
-- compositional-affordance / participant-aliasing audit requirements;
-- negative-space challenge requirement;
-- acceptance-freeze check in §10;
-- implementation readiness/escalation link in §13–14.
+- semantic-interaction-delta trigger;
+- interaction-frontier identification;
+- delta lenses:
+  - new affordance;
+  - suppression/narrowing/old-world projection;
+  - new dependency/causal retargeting;
+  - transition carryover;
+  - participant aliasing when relevant;
+- fresh negative-space challenge.
+
+Add to §10 Acceptance authority review:
+
+- confirm triggered delta closure occurred before candidate freeze;
+- confirm no consequential unresolved/accidental gaps remain.
+
+Add to §13–14:
+
+- implementation packet references closure;
+- implementation stop rule for newly exposed unclassified semantic interactions.
 
 ### Add
 
-`governance/checklists/COMPOSITIONAL_AFFORDANCE_AND_ALIASING_CHECKLIST.md`
+`governance/checklists/SEMANTIC_INTERACTION_DELTA_CHECKLIST.md`
 
-Purpose:
+Contains:
 
-- compact prompt/table template;
-- trigger checklist;
-- alias-effect prompts;
-- disposition vocabulary;
-- no new authority.
+- trigger prompts;
+- frontier discovery prompts;
+- compact delta table;
+- old-world projection check;
+- transition carryover prompts;
+- alias prompts;
+- negative-space challenge template;
+- disposition vocabulary.
 
 ### Modify
 
 `governance/checklists/ARTIFACT_FREEZE_CHECKLIST.md`
 
-Add one conditional check:
+Conditional check:
 
-- if compositional-affordance trigger FIRED, require closed audit + negative-space challenge + zero consequential unresolved findings before acceptance freeze.
+- if trigger FIRED, require completed semantic-delta closure + negative-space challenge + zero consequential unresolved/accidental gaps.
 
 ### Modify
 
 `tasks/IMPLEMENTATION_TASK_PACKET_TEMPLATE.md`
 
-Add one conditional required-input/escalation sentence for an accepted affordance/aliasing closure record.
+Add the conditional semantic-delta closure input and stop rule.
 
 ### Do not modify initially
 
 - Master Architect Guide;
 - Working Constitution;
-- general delegation protocol;
+- delegation protocol;
 - Review and Drift Audit;
-- ordinary implementation/test processes.
+- ordinary implementation/test workflow.
 
-Avoid duplicated rules.
+Avoid duplication.
 
-## 15. Governance-change verification
+## 22. Independent governance review before promotion
 
-Before promoting these protocol changes, run one independent governance review asking:
+Before canonizing the governance change, commission one fresh governance reviewer.
 
-1. does the failsafe actually target the failure class rather than duplicate existing review?
-2. is the trigger narrow enough to avoid routine ceremony?
-3. can a fresh reviewer still discover negative-space cases without being anchored by the action catalogue?
-4. does the process preserve Director authority over new semantics?
-5. is the alias classification useful without implying exhaustive human-world completeness?
-6. can a future MA apply it from repository instructions alone?
-7. can a low-value/noisy audit be recognized and revised later?
+Ask whether the proposed mechanism:
 
-This is a process review, not another social-model review.
+1. protects the broader new-layer↔old-world failure class rather than only aliasing;
+2. catches both newly possible and newly suppressed/narrowed histories;
+3. handles transition gaps;
+4. remains bounded/delta-based;
+5. avoids treating “conservative extension” as an absolute semantic law;
+6. leaves new semantic choices with the Director;
+7. does not duplicate existing composition/conflict/conformance review;
+8. provides enough fresh-context negative-space challenge to buy imagination;
+9. remains usable by a future Master Architect from repository instructions alone;
+10. has a clear removal/narrowing path if it becomes ceremony.
 
-## 16. Evaluation after adoption
+## 23. Effectiveness review after adoption
 
-After the next **2–3 triggered consequential slices**, perform a small governance effectiveness check.
+After the next **2–3 triggered consequential slices**, review:
 
-Record:
+- material gaps found;
+- false positives/noise;
+- whether findings duplicated existing assurance;
+- Master Architect effort;
+- reviewer effort;
+- whether old-world projection caught regressions;
+- whether transition carryover found real holes;
+- whether the mechanism caused premature semantic expansion;
+- trigger clarity.
 
-- number/type of material missing affordances found;
-- number of false-positive/noise challenges;
-- whether any issue would likely have been found by existing assurance anyway;
-- MA effort / reviewer effort;
-- whether the audit caused premature semantic expansion;
-- whether trigger conditions were clear.
+Then:
 
-Possible outcomes:
-
-- retain unchanged;
-- narrow triggers;
-- simplify checklist;
-- add lightweight lint;
-- retire the mechanism if it produces mostly ceremony.
+- retain;
+- narrow;
+- simplify;
+- add tiny lint;
+- or retire.
 
 The failsafe must earn continued existence.
 
-## 17. Success criterion
+## 24. Success criterion
 
-The mechanism succeeds if future architecture has a durable habit of asking:
+The durable habits become:
 
-> when one person can inhabit several causal capacities at once, what combinations become possible?
+> **When adding a semantic layer, identify the old world it can touch.**
 
-and:
+Then ask:
 
-> which semantic positions can collapse onto the same person?
+> **What became newly possible?**
 
-without asking the bureaucracy to imagine the entire human world or forcing the Project Director to remember every ordinary affordance manually.
+> **What became newly impossible, narrower, or newly dependent?**
+
+> **What causal state must survive or transform across the new transitions?**
+
+> **Which apparently separate positions may actually be the same actor?**
+
+And finally:
+
+> **What ordinary possibility might still be missing from all of our categories?**
+
+This protects the broad interaction-delta failure class without asking the project to model the entire human possibility space.
