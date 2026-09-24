@@ -16,10 +16,26 @@
 
 ## Reconciliation package
 
-Original RES-0001R package SHA-256: `74acf3a88625e9730defee95dc6ff66fd4f5f8c7e6afdebde64ad5c9dee6ef2b`.
+Historical original RES-0001R package SHA-256: `74acf3a88625e9730defee95dc6ff66fd4f5f8c7e6afdebde64ad5c9dee6ef2b`.
 
-**Status:** pending; no completed reconciliation return recovered.
+This historical hash is preserved as provenance for the lost earlier package and is **not** the hash of the re-derived return.
+
+**Re-derived return status:** COMPLETE / RE-DERIVED / ADVISORY
+**Re-derived return ZIP SHA-256:** `77a8755c1a4545e17c4452cc2c0ef36e0e53bcc165c6db9de650335a405bdf54`
+**Durable reconciliation path:** `reconciliation/`
+**Restoration record:** `RES-0001R_RECONCILIATION_RESTORATION_RECORD.md`
+
+| Re-derived output | SHA-256 |
+|---|---|
+| `README.md` | `37b05accb3f2b43ceb8f867a6445bea83d431b6b831ebddd082953ccdadb13d0` |
+| `01_MASTER_PROPOSITION_SET.md` | `2d6687f29ef60892f98d2b2fbe39ed239d3e25a686f14c8dfe24b181e048f725` |
+| `02_EVIDENCE_CONCORDANCE.csv` | `b3c182616ef76e156f6778e8dfeb79d1c7b3c880be03f7c873caa49e19a2568b` |
+| `03_DISPUTE_AND_QUARANTINE_REGISTER.md` | `aeb191fbfb6be7be578165867de221a74fb6defe8cb0657f302e47535c6e958b` |
+| `04_CANDIDATE_CLAIM_CROSSWALK.csv` | `942b8ec373b05d66ac1a1d7d1137c5077103b4c7cd3720e450dbc1e375e40f16` |
+| `05_RECONCILIATION_QA.md` | `755a7d4632847e97c1d9e0ca0609f47cf53b75127a0cb5b00eda59bec52a6b30` |
+
+`HEC-` identifiers in the restored return are reconciliation candidates only; they are not canonical `HE-` Historical Evidence Register IDs.
 
 ## Preservation note
 
-All eight streams now have their authoritative result and relevant unique supporting research artifacts in ordinary Git text/data form. Redundant delivery wrappers and alternate renderings are not part of the durable research tree. The original source-archive hashes above preserve provenance to the recovered source packages. A–H retain equal advisory status pending reconciliation.
+All eight streams now have their authoritative result and relevant unique supporting research artifacts in ordinary Git text/data form. Redundant delivery wrappers and alternate renderings are not part of the durable research tree. The original source-archive hashes above preserve provenance to the recovered source packages. A–H and the re-derived reconciliation remain advisory pending any separate Historical Evidence Register promotion.
