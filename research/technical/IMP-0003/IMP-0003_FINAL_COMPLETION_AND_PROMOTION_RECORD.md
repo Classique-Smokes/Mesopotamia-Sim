@@ -201,6 +201,18 @@ This observation:
 
 After its Master Architect reconciliation, write the compact Slice-3 future-lessons index required by milestone-learning housekeeping.
 
+## Future lessons retrieval
+
+Compact implementation + review + observation synthesis:
+
+`research/technical/IMP-0003/IMP-0003_FUTURE_LESSONS_INDEX.md`
+
+Observation reconciliation:
+
+`research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`
+
+These are non-authoritative retrieval aids and do not alter Slice-3 completion.
+
 ## Final status
 
 **IMP-0003 / Slice 3: VERIFIED COMPLETE.**
