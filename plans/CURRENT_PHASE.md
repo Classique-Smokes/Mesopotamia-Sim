@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / DEC-0010 PROMOTION / SLICE 4 ACCEPTANCE DRAFTING ACTIVE.**
+**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 ACCEPTANCE CANDIDATE1 FROZEN FOR PRE-CODE REVIEW.**
 
 Verified Slice-1 completion:
 
@@ -68,6 +68,18 @@ Verified Slice-3 completion:
 - post-implementation observation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/` — **COMPLETE / RECONCILED**
 - observation MA reconciliation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`
 - compact future lessons: `research/technical/IMP-0003/IMP-0003_FUTURE_LESSONS_INDEX.md`
+
+Slice-4 acceptance candidate1:
+
+- candidate ref: `sfl-v0-slice4-acceptance-v1-candidate1`
+- exact candidate commit: `a1cd8c9848bb94ca3351d804964c070cc279aa3a`
+- candidate path: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_CANDIDATE.md`
+- candidate blob: `1600332fda22ed1215485bb432e570ff9c08d52f`
+- version: `SFL-V0-S4-ACCEPTANCE-v1-candidate1`
+- census: **160 = 149 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**
+- inherited exact REQUIRED: **270 = 128 S1 + 46 S2 + 96 S3**
+- fresh review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`
+- freeze/coding status: **NOT AUTHORIZED** pending independent pre-code verdict and inherited-adaptation closure.
 
 Slice-4 discovery reconciliation:
 
@@ -282,10 +294,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Draft the complete Slice-4 acceptance/applicability candidate from promoted DEC-0010 + accepted SPEC/verification + reconciled discovery.
-2. Commission fresh independent pre-code review against the exact candidate commit/blob.
-3. Repair the candidate if review finds omission/overreach; freeze only the exact independently accepted content.
-4. Close inherited Slice-3 structural-test adaptations losslessly where later Slice-4 types/state make literal absence/field-count witnesses obsolete.
-5. Only after acceptance freeze and adaptation closure, issue the bounded Slice-4 implementation packet.
+1. Run fresh independent review from `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` against exact candidate ref/commit/blob.
+2. If BLOCK, preserve candidate1 and repair only the identified acceptance/semantic defect set into candidate2.
+3. If **PASS — MAY FREEZE UNCHANGED**, freeze the exact candidate as `SFL-V0-S4-ACCEPTANCE-v1`.
+4. Close the inherited Slice-3 structural/literal-witness adaptations losslessly before implementation touches those surfaces.
+5. Only after acceptance freeze + adaptation closure, issue the bounded Slice-4 implementation packet.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
