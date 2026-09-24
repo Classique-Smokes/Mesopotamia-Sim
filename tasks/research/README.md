@@ -4,6 +4,8 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
+- `IMP-0003_SLICE3_POSTIMPLEMENTATION_OBSERVATION.md` — **READY FOR DISPATCH / NON-GATING**. Lightweight raw-first observation of the promoted Slice-3 Household substrate before detailed Slice-4 planning. Governing plan: `../../plans/SFL_V0_SLICE3_POSTIMPLEMENTATION_OBSERVATION_PLAN.md`.
+
 - `RES-0001_OLD_BABYLONIAN_NIPPUR/` — RETURNS COMPLETE / RECONCILIATION PENDING. Historical research on individual → relationship → household foundations in Old Babylonian Nippur. Durable returns are indexed at `research/historical/RES-0001/`.
 - `SFL_V0_SLICE2_PREIMPLEMENTATION_DISCOVERY.md` — SPLIT INTO THREE PARALLEL LOW-AUTHORITY COMMISSIONS; dispatch index: `SFL_V0_SLICE2_PARALLEL_DISCOVERY_DISPATCH.md`.
 - `SFL_V0_SLICE2_DISCOVERY_A_AUTHORITY.md` — accepted subjective-information / recognition authority inventory.
