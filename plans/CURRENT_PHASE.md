@@ -158,7 +158,7 @@ Slice-4 successor acceptance v2:
 - candidate blob: `67008d03a943e6cd6a9a9e269be7c6efeefc229b`
 - candidate census: **173 = 162 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**
 - all frozen v1 AcceptanceId/status/obligation rows inherited unchanged; 12 new REQUIRED rows S4-176..187 cover DEC-0013 D1–D6 + implementation-facing resource-scaffold guardrails
-- fresh review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **READY FOR DISPATCH**
+- fresh review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **READY FOR DISPATCH / NOT YET HANDED TO A REVIEWER**
 - freeze/coding status: **NOT AUTHORIZED** pending fresh whole-candidate verdict and later inherited-adaptation closure
 
 Private-resource supplementation semantic patch:
