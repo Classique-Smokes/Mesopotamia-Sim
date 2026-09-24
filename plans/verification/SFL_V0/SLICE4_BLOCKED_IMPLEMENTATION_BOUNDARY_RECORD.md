@@ -66,11 +66,34 @@ The repair must preserve:
 - transaction supplement is funding provenance for the Household effect, not a second person-person Gift/Help;
 - no inheritance/rebinding of a predecessor's private supplement on succession.
 
-One semantic choice remains unresolved because it changes who pays:
+The Project Director subsequently rejected the global source-priority framing. DEC-0011 now defines an explicit transaction funding plan with optional exact holder-private X and residual commitment-backed requirement C-X. No local semantic choice remains open for this capability.
 
-`proposals/SFL_V0_SLICE4_PRIVATE_SUPPLEMENT_FUNDING_ORDER_DECISION.md`
+Canonical decision:
 
-Frozen Slice-4 acceptance v1 is therefore confirmed insufficient for implementation authorization. A separately reviewed successor acceptance version will be required after semantic promotion.
+`decisions/DEC-0011_TRANSACTION_SPECIFIC_OFFICE_HOLDER_PRIVATE_SUPPLEMENTATION.md`
+
+The earlier funding-order proposal is retained only as superseded reasoning.
+
+Frozen Slice-4 acceptance v1 remains confirmed insufficient for implementation authorization. A separately reviewed successor acceptance version is required.
+
+## 3B. Local semantic repair disposition
+
+Local semantic repair status: **RESOLVED / PROMOTED**.
+
+Promoted owners now include:
+
+- `SPEC-SFL-0001`;
+- `DEC-0011`;
+- provision grounding verification;
+- head/dual-mode verification;
+- response decision verification;
+- resolution/reaction verification;
+- cross-cutting verification;
+- reference policy verification configuration.
+
+The Director BLOCK remains active because the current frozen Slice-4 acceptance v1 predates DEC-0011 and cannot authorize implementation. A successor acceptance version must receive fresh review/freeze.
+
+The separate governance/process challenge announced by the Project Director is also still pending and may affect the unblock procedure, but it does not change the already-promoted local semantics.
 
 ## 4. Inherited-verification adaptation state
 
