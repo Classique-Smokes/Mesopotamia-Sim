@@ -92,13 +92,13 @@ Slice-4 acceptance candidate2 / freeze:
 - freeze record: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_FREEZE_RECORD.md`
 - coding status: **NOT YET AUTHORIZED** pending inherited-verification adaptation approval.
 
-Compositional-affordance governance failsafe:
+Semantic-interaction-delta governance failsafe:
 
 - advisory process lesson: `research/technical/PROCESS_LESSON_COMPOSITIONAL_AFFORDANCE_AND_PARTICIPANT_ALIASING.md`
-- MA rollout plan: `plans/GOVERNANCE_COMPOSITIONAL_AFFORDANCE_FAILSAFE_PLAN.md`
+- MA rollout plan: `plans/GOVERNANCE_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PLAN.md`
 - status: **PROPOSED / DIRECTOR REVIEW**
 - intended owner: `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`
-- design: trigger-based delta audit + participant-aliasing classification + one fresh negative-space challenge before consequential acceptance freeze
+- design: trigger-based interaction-frontier audit over newly possible, newly suppressed/narrowed, newly dependent/retargeted, transition-carryover, and participant-aliasing deltas + one fresh negative-space challenge before consequential acceptance freeze
 - pilot target: currently blocked Slice 4 before DEC-0011 successor acceptance candidate
 - no governance authority changed yet
 
