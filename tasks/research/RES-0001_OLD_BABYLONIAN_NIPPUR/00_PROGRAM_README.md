@@ -1,6 +1,6 @@
 # RES-0001 — Old Babylonian Nippur Household Foundations Research Program
 
-**Status:** RETURNS COMPLETE / RECONCILIATION COMPLETE  
+**Status:** RETURNS COMPLETE / RECONCILIATION COMPLETE
 **Commissioned:** 2026-09-19  
 **Commissioned by:** Master Architect following explicit Human Project Director approval  
 **Research frame:** Old Babylonian Nippur, approximately 1900–1600 BCE, emphasizing private/legal archives and archaeologically contextualized residential evidence.
