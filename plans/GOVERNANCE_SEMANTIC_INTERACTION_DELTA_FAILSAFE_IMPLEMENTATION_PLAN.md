@@ -1,13 +1,13 @@
 # Implementation Plan — Semantic Interaction Delta Failsafe
 
-**Status:** READY FOR GOVERNANCE REVIEW / NOT YET ACCEPTED POLICY  
+**Status:** CANONICAL PROMOTION COMPLETE / SLICE-4 PILOT NEXT  
 **Date:** 2026-09-24  
 **Owner:** Master Architect  
 **Policy proposal:** `plans/GOVERNANCE_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PLAN.md`  
 **Prior policy-only candidate ref:** `governance-semantic-interaction-delta-failsafe-v1-candidate1` @ `8c101d82efd781bca48b1222e4e9b7a4b274f6f0` — valid historical provenance  
 **Current rollout candidate:** superseded candidate1; candidate2 identity pinned after hostile pre-review repair  
 **Current project block:** Slice-4 implementation remains Director-BLOCKED  
-**Implementation authority:** none until explicit Director approval after independent governance review
+**Implementation authority:** accepted under DEC-0012. Canonical policy edits promoted; Slice-4 pilot remains required before successor Slice-4 acceptance.
 
 ## 1. Objective
 
@@ -543,12 +543,12 @@ The policy is **not** considered validated merely because the Markdown edits are
 
 At present:
 
-- policy concept: PROPOSED;
-- rollout mapping: READY FOR REVIEW;
-- accepted governance: UNCHANGED;
+- policy concept: ACCEPTED under DEC-0012;
+- independent governance review: PASS — POLICY READY FOR DIRECTOR PROMOTION;
+- canonical governance promotion: COMPLETE;
 - Slice-4 implementation: BLOCKED;
-- successor Slice-4 acceptance: MUST NOT START until the pilot runs under an accepted policy.
+- successor Slice-4 acceptance: MUST NOT START until the mandatory Slice-4 pilot closes cleanly under SID-ASSURANCE-v1.
 
 Immediate next action:
 
-run the independent governance review task against the repaired immutable rollout candidate2.
+run the Slice-4 Semantic Interaction Delta pilot, including independent frozen Pass A, Pass B negative-space challenge, Master Architect reconciliation, and closure-freshness verification.
