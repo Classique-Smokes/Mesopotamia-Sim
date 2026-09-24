@@ -27,6 +27,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0009 | Layered Master Architect Rulebook Refactor | ACCEPTED | Constitutional | 2026-09-21 | 2026-09-22 | `DEC-0009_MASTER_ARCHITECT_RULEBOOK_REFACTOR.md` |
 | DEC-0010 | Slice-4 Authority Use Before Authority Destruction | ACCEPTED | Architectural / social-semantic | 2026-09-24 | 2026-09-24 | `DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md` |
 | DEC-0011 | Transaction-Specific Office-Holder Private Supplementation | ACCEPTED | Architectural / social-semantic | 2026-09-24 | 2026-09-24 | `DEC-0011_TRANSACTION_SPECIFIC_OFFICE_HOLDER_PRIVATE_SUPPLEMENTATION.md` |
+| DEC-0012 | Semantic Interaction Delta Failsafe | ACCEPTED | Constitutional / process governance | 2026-09-24 | 2026-09-24 | `DEC-0012_SEMANTIC_INTERACTION_DELTA_FAILSAFE.md` |
 
 ## Accepted summaries
 
@@ -41,6 +42,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 - **DEC-0009:** the Master Architect rulebook uses a compact constitutional core that routes consequence-triggered work to single-owner protocols, templates/checklists, and mechanical enforcement where mature.
 - **DEC-0010:** in bounded Slice-4 same-cycle races, an otherwise-valid accepted action/role transition may perform its valid last act before an accepted transition destroys the head/Household authority or institutional status it depends on; no rebinding or technical-ID authority is introduced.
 - **DEC-0011:** a current valid office-holder may explicitly contribute an exact transaction-specific amount of privately owned disposable grain to one authorized Household material action; the remaining cost is funded through ordinary persistent commitment backing, with no extra personal initiative/response, no standing-capacity inflation, no double counting, and exact source provenance.
+- **DEC-0012:** consequential new semantic layers use the trigger-based `SID-ASSURANCE-v1` Semantic Interaction Delta Failsafe before acceptance freeze: bounded new↔old frontier analysis, independently frozen fresh-reviewer Pass A before MA-frontier reveal, Pass-B negative-space challenge over the reconciled union, authority-bearing dispositions, semantic-base freshness/revalidation, implementation stop-on-unclassified-interaction, and evidence-based sunset after 2–3 triggered slices.
 
 ## Entry template
 
