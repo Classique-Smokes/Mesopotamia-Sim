@@ -92,6 +92,16 @@ Slice-4 acceptance candidate2 / freeze:
 - freeze record: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_FREEZE_RECORD.md`
 - coding status: **NOT YET AUTHORIZED** pending inherited-verification adaptation approval.
 
+Compositional-affordance governance failsafe:
+
+- advisory process lesson: `research/technical/PROCESS_LESSON_COMPOSITIONAL_AFFORDANCE_AND_PARTICIPANT_ALIASING.md`
+- MA rollout plan: `plans/GOVERNANCE_COMPOSITIONAL_AFFORDANCE_FAILSAFE_PLAN.md`
+- status: **PROPOSED / DIRECTOR REVIEW**
+- intended owner: `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`
+- design: trigger-based delta audit + participant-aliasing classification + one fresh negative-space challenge before consequential acceptance freeze
+- pilot target: currently blocked Slice 4 before DEC-0011 successor acceptance candidate
+- no governance authority changed yet
+
 Private-resource supplementation semantic patch:
 
 - MA reconciliation: `research/technical/SFL_V0_SLICE4_PRIVATE_RESOURCE_SUPPLEMENTATION_RECONCILIATION.md`
