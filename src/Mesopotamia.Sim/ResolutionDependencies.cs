@@ -10,6 +10,14 @@ public sealed partial class Simulation
     private HashSet<ProposalId> ResolutionFallbacks(Proposal[] accepted, WorldSnapshot snapshot,
         IReadOnlyDictionary<ProposalId, ImmutableArray<KnownFact>> communicationPayloads)
     {
+        if (households.Households.Count > 0 || accepted.Any(p => HouseholdRules.Target(p.Terms) is not null))
+            return HouseholdResolutionFallbacks(accepted, communicationPayloads);
+        return OrdinaryResolutionFallbacks(accepted, snapshot, communicationPayloads);
+    }
+
+    private HashSet<ProposalId> OrdinaryResolutionFallbacks(Proposal[] accepted, WorldSnapshot snapshot,
+        IReadOnlyDictionary<ProposalId, ImmutableArray<KnownFact>> communicationPayloads)
+    {
         HashSet<ProposalId> fallback = [];
         List<Proposal> unassigned = [.. accepted.OrderBy(p => p.Id.Value)];
         while (unassigned.Count > 0)

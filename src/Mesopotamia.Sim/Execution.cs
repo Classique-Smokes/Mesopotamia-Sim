@@ -24,12 +24,17 @@ public sealed record SemanticEvent(EventId Id, long Cycle, int ReactionIndex, st
     public ActionTerms? Action { get; init; }
     public string RulesVersion { get; init; } = Configuration.RulesVersion;
     public ImmutableArray<KnownFact> TransmittedEvidence { get; init; } = [];
+    // Observer-only acquisition receipts bind exact retained identities to their
+    // acquisition boundary, including evidence superseded later in the cycle.
+    public ImmutableArray<AcquiredFact> AcquiredEvidence { get; init; } = [];
 }
+public sealed record AcquiredFact(PersonId Actor, KnownFact Fact);
 public sealed record CycleResult(WorldSnapshot State, ImmutableArray<Outcome> Outcomes,
     ImmutableArray<SemanticEvent> Events, bool MaterialDeadlock)
 {
     public ImmutableArray<DecisionTrace> Decisions { get; init; } = [];
     public EpistemicSnapshot? Epistemic { get; init; }
+    public HouseholdSnapshot? Households { get; init; }
 }
 
 public sealed partial class Simulation
@@ -92,10 +97,11 @@ public sealed partial class Simulation
             foreach (Proposal proposal in proposals.OrderBy(p => p.Id.Value))
             {
                 usedProposals.Add(proposal.Id);
-                string? invalid = ActionRules.Invalid(proposal, decisionSnapshot);
+                string? invalid = ActionRules.Invalid(proposal, decisionSnapshot) ?? HouseholdRules.Invalid(proposal, households);
                 if (invalid is null && proposal.Terms is CommunicateClaim claim &&
                     !CommunicationRules.Holds(decisionEpistemic.Actors[proposal.Actor], claim.Claim)) invalid = "PropositionNotHeld";
-                SemanticEvent proposed = Record("Proposal", proposal.Id, [proposal.Actor], [], [], ActionRules.Describe(proposal.Terms));
+                SemanticEvent proposed = Record("Proposal", proposal.Id, [proposal.Actor], [], [], ActionRules.Describe(proposal.Terms),
+                    rulesVersion: RulesVersionFor(proposal.Terms, decisionEpistemic.Actors[proposal.Actor]));
                 events[^1] = proposed with { Action = proposal.Terms };
                 if (invalid is not null)
                 {
@@ -104,12 +110,12 @@ public sealed partial class Simulation
                 }
                 if (proposal.Terms is CommunicateClaim communication)
                     communicationPayloads.Add(proposal.Id, CommunicationRules.Payload(decisionEpistemic.Actors[proposal.Actor], communication.Claim));
-                string? inability = ActionRules.Infeasible(proposal, decisionSnapshot);
+                string? inability = ActionRules.Infeasible(proposal, decisionSnapshot) ?? HouseholdRules.Infeasible(proposal, decisionSnapshot, households, epistemic);
                 PersonId? target = ActionRules.Target(proposal.Terms, decisionSnapshot);
                 if (inability is not null)
                 {
                     if (target is { } unableTarget && proposal.Terms is not CommunicateClaim)
-                        decisions.Add(new(unableTarget, proposal.Id, "Response", "Feasibility", [], [inability], false));
+                        decisions.Add(new(unableTarget, proposal.Id, "Response", "Feasibility", [], [inability, .. HouseholdDecisionEvidence(proposal, decisionEpistemic)], false));
                     Finish(proposal, OutcomeKind.Unable, inability, proposed.Id, outcomes);
                     continue;
                 }
@@ -142,7 +148,8 @@ public sealed partial class Simulation
                             prefersAccept == (response == accept) ? 100 : 0),
                         scripted ? null : prefersAccept == (response == accept) ? 100 : 0, response == choice);
                     decisions.Add(new(respondent, proposal.Id, "Response", scripted ? "MECHANISM-RESPONSE-v1" : profile,
-                        [.. candidates], [$"OwnGrain:{decisionSnapshot.People[respondent].Grain}", $"Proposal:{proposal.Id.Value}"], false));
+                        [.. candidates], [$"OwnGrain:{decisionSnapshot.People[respondent].Grain}", $"Proposal:{proposal.Id.Value}",
+                            .. HouseholdDecisionEvidence(proposal, decisionEpistemic)], false));
                     cause = Record("Response", proposal.Id, [respondent], [proposed.Id], [], choice.ToString()).Id;
                     if (choice == refuse)
                     {
@@ -158,10 +165,12 @@ public sealed partial class Simulation
             }
             HashSet<PersonId> moved = [];
             HashSet<ProposalId> resolutionFallbacks = ResolutionFallbacks([.. accepted.Select(a => a.Proposal)], decisionSnapshot, communicationPayloads);
-            foreach (var attempt in accepted)
+            foreach (Proposal orderedProposal in HouseholdRules.Order(accepted.Select(a => a.Proposal)))
             {
+                var attempt = accepted.Single(a => a.Proposal.Id == orderedProposal.Id);
                 Proposal proposal = attempt.Proposal;
-                string? loss = ResolutionLoss(proposal, state.Snapshot(cycle), moved);
+                string? loss = ResolutionLoss(proposal, state.Snapshot(cycle), moved) ?? HouseholdRules.Invalid(proposal, households) ??
+                    HouseholdRules.Infeasible(proposal, state.Snapshot(cycle), households, epistemic);
                 if (loss is null && proposal.Terms is CommunicateClaim claim &&
                     !CommunicationRules.StillHolds(epistemic.Of(proposal.Actor), claim.Claim, communicationPayloads[proposal.Id])) loss = "PropositionNoLongerHeld";
                 bool fallback = resolutionFallbacks.Contains(proposal.Id);
@@ -186,14 +195,24 @@ public sealed partial class Simulation
             }
             if (Challenge != ReactionChallenge.SkipClosure) CloseAttitudes(batch);
             if (!batch.IsClosed) throw new InvalidOperationException("PendingAutomaticReactions");
+            CloseHouseholds();
+            if (Challenge == ReactionChallenge.DuplicateCauses) CloseHouseholds();
             if (batch.DuplicateCount > 0) Record("DuplicateReactionRejected", null, [], [], [], FormattableString.Invariant($"Duplicates:{batch.DuplicateCount}"));
             published = state.Snapshot(cycle);
             publishedEpistemic = epistemic.Snapshot(cycle);
+            publishedHouseholds = households.Snapshot(cycle);
             bool deadlock = state.People.Count > 0 && state.People.Values.All(p => p.NeedsGrain && p.Grain == 0) &&
                 !FutureInputsResolveMaterialBlock();
-            ImmutableArray<DecisionTrace> completedDecisions = decisions.Select(d => d with { Cycle = cycle }).ToImmutableArray();
+            ImmutableArray<DecisionTrace> completedDecisions = decisions.Select(d => d with
+            {
+                Cycle = cycle,
+                ConfigurationVersion = initial.Configuration.Version,
+                RulesVersion = d.Proposal is { } id ? events.Single(e => e.Kind == "Proposal" && e.Proposal == id).RulesVersion :
+                    d.Candidates.Any(c => RulesVersionFor(c.Terms, decisionEpistemic.Actors[d.Actor]) == HouseholdRulesVersion)
+                        ? HouseholdRulesVersion : Configuration.RulesVersion
+            }).ToImmutableArray();
             decisionHistory.AddRange(completedDecisions);
-            return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = completedDecisions, Epistemic = publishedEpistemic };
+            return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = completedDecisions, Epistemic = publishedEpistemic, Households = publishedHouseholds };
         }
         catch
         {
@@ -336,6 +355,7 @@ public sealed partial class Simulation
     private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch, ImmutableArray<KnownFact> communicationPayload = default)
     {
         if (proposal.Terms is CommunicateClaim) return CommitCommunication(proposal, cause, fallback, communicationPayload);
+        if (HouseholdRules.Target(proposal.Terms) is not null) return CommitHousehold(proposal, cause, fallback);
         Proposal outer = proposal;
         EvaluatedTransaction evaluated = EvaluateTransaction(state, proposal, cycle, new(nextEvent));
         state = evaluated.State;
@@ -427,10 +447,11 @@ public sealed partial class Simulation
     }
 
     private SemanticEvent Record(string kind, ProposalId? proposal, ImmutableArray<PersonId> participants,
-        ImmutableArray<EventId> causes, ImmutableArray<MaterialChange> material, string detail, bool fallback = false)
+        ImmutableArray<EventId> causes, ImmutableArray<MaterialChange> material, string detail, bool fallback = false, string? rulesVersion = null)
     {
         SemanticEvent entry = new(new(checked(nextEvent++)), cycle, checked(reactionIndex++), kind, proposal,
-            participants, causes, material, detail, initial.Configuration.Version, fallback);
+            participants, causes, material, detail, initial.Configuration.Version, fallback)
+        { RulesVersion = rulesVersion ?? (proposal is { } id ? events.SingleOrDefault(e => e.Kind == "Proposal" && e.Proposal == id)?.RulesVersion : null) ?? Configuration.RulesVersion };
         events.Add(entry);
         return entry;
     }
