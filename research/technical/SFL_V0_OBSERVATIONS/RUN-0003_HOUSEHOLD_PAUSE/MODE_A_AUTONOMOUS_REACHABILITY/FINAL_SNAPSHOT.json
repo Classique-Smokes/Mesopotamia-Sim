@@ -1,0 +1,4079 @@
+{
+  "world": {
+    "Cycle": 12,
+    "people": [
+      {
+        "Id": {
+          "Value": 1
+        },
+        "Name": "Person1",
+        "Sex": 0,
+        "Grain": 48,
+        "NeedsGrain": false
+      },
+      {
+        "Id": {
+          "Value": 2
+        },
+        "Name": "Person2",
+        "Sex": 1,
+        "Grain": 48,
+        "NeedsGrain": false
+      },
+      {
+        "Id": {
+          "Value": 3
+        },
+        "Name": "Person3",
+        "Sex": 0,
+        "Grain": 48,
+        "NeedsGrain": false
+      },
+      {
+        "Id": {
+          "Value": 4
+        },
+        "Name": "Person4",
+        "Sex": 1,
+        "Grain": 48,
+        "NeedsGrain": false
+      },
+      {
+        "Id": {
+          "Value": 5
+        },
+        "Name": "Person5",
+        "Sex": 0,
+        "Grain": 48,
+        "NeedsGrain": false
+      },
+      {
+        "Id": {
+          "Value": 6
+        },
+        "Name": "Person6",
+        "Sex": 1,
+        "Grain": 48,
+        "NeedsGrain": false
+      }
+    ],
+    "dwellings": [
+      {
+        "Id": {
+          "Value": 1
+        }
+      },
+      {
+        "Id": {
+          "Value": 2
+        }
+      }
+    ],
+    "residences": [
+      {
+        "Id": {
+          "Value": 101
+        },
+        "Person": {
+          "Value": 1
+        },
+        "Dwelling": {
+          "Value": 1
+        }
+      },
+      {
+        "Id": {
+          "Value": 102
+        },
+        "Person": {
+          "Value": 2
+        },
+        "Dwelling": {
+          "Value": 1
+        }
+      },
+      {
+        "Id": {
+          "Value": 103
+        },
+        "Person": {
+          "Value": 3
+        },
+        "Dwelling": {
+          "Value": 1
+        }
+      },
+      {
+        "Id": {
+          "Value": 104
+        },
+        "Person": {
+          "Value": 4
+        },
+        "Dwelling": {
+          "Value": 1
+        }
+      },
+      {
+        "Id": {
+          "Value": 105
+        },
+        "Person": {
+          "Value": 5
+        },
+        "Dwelling": {
+          "Value": 1
+        }
+      },
+      {
+        "Id": {
+          "Value": 106
+        },
+        "Person": {
+          "Value": 6
+        },
+        "Dwelling": {
+          "Value": 1
+        }
+      }
+    ],
+    "attitudes": [],
+    "kinships": [
+      {
+        "Id": {
+          "Value": 201
+        },
+        "First": {
+          "Value": 1
+        },
+        "Second": {
+          "Value": 2
+        },
+        "Kind": 1
+      },
+      {
+        "Id": {
+          "Value": 202
+        },
+        "First": {
+          "Value": 2
+        },
+        "Second": {
+          "Value": 3
+        },
+        "Kind": 1
+      },
+      {
+        "Id": {
+          "Value": 203
+        },
+        "First": {
+          "Value": 1
+        },
+        "Second": {
+          "Value": 4
+        },
+        "Kind": 1
+      },
+      {
+        "Id": {
+          "Value": 204
+        },
+        "First": {
+          "Value": 2
+        },
+        "Second": {
+          "Value": 5
+        },
+        "Kind": 1
+      },
+      {
+        "Id": {
+          "Value": 205
+        },
+        "First": {
+          "Value": 3
+        },
+        "Second": {
+          "Value": 6
+        },
+        "Kind": 1
+      },
+      {
+        "Id": {
+          "Value": 206
+        },
+        "First": {
+          "Value": 4
+        },
+        "Second": {
+          "Value": 5
+        },
+        "Kind": 1
+      }
+    ],
+    "marriages": [],
+    "debts": [],
+    "favours": []
+  },
+  "epistemic": [
+    {
+      "actor": 1,
+      "facts": [
+        {
+          "id": 1000,
+          "proposition": {
+            "kind": "Residence",
+            "person": 1,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1001,
+          "proposition": {
+            "kind": "Residence",
+            "person": 2,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1002,
+          "proposition": {
+            "kind": "Residence",
+            "person": 3,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1003,
+          "proposition": {
+            "kind": "Residence",
+            "person": 4,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1004,
+          "proposition": {
+            "kind": "Residence",
+            "person": 5,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1005,
+          "proposition": {
+            "kind": "Residence",
+            "person": 6,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1006,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 201,
+            "first": 1,
+            "second": 2,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1007,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 202,
+            "first": 2,
+            "second": 3,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1008,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 203,
+            "first": 1,
+            "second": 4,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1009,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 204,
+            "first": 2,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1010,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 205,
+            "first": 3,
+            "second": 6,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1011,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 206,
+            "first": 4,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1073,
+          "proposition": {
+            "kind": "Residence",
+            "person": 1,
+            "dwelling": 1
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 1,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1074,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 201,
+            "first": 1,
+            "second": 2,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 1,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1075,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 203,
+            "first": 1,
+            "second": 4,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 1,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1103,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 13,
+            "proposal": 1,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 13,
+            "cycle": 1,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1121,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 31,
+            "proposal": 7,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 31,
+            "cycle": 2,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1139,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 49,
+            "proposal": 13,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 49,
+            "cycle": 3,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1157,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 67,
+            "proposal": 19,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 67,
+            "cycle": 4,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1175,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 85,
+            "proposal": 25,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 85,
+            "cycle": 5,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1193,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 103,
+            "proposal": 31,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 103,
+            "cycle": 6,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1211,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 121,
+            "proposal": 37,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 121,
+            "cycle": 7,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1229,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 139,
+            "proposal": 43,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 139,
+            "cycle": 8,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1247,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 157,
+            "proposal": 49,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 157,
+            "cycle": 9,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1265,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 175,
+            "proposal": 55,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 175,
+            "cycle": 10,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1283,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 193,
+            "proposal": 61,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 193,
+            "cycle": 11,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1300,
+          "proposition": {
+            "kind": "OwnState",
+            "person": 1,
+            "Grain": 48,
+            "NeedsGrain": false
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 1,
+            "eventId": 211,
+            "cycle": 12,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1301,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 211,
+            "proposal": 67,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 211,
+            "cycle": 12,
+            "reactionIndex": 12,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      ],
+      "candidates": [
+        {
+          "candidate": 1,
+          "status": "Unknown",
+          "evidence": [
+            {
+              "id": 1000,
+              "proposition": {
+                "kind": "Residence",
+                "person": 1,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1001,
+              "proposition": {
+                "kind": "Residence",
+                "person": 2,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1002,
+              "proposition": {
+                "kind": "Residence",
+                "person": 3,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1006,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 201,
+                "first": 1,
+                "second": 2,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1007,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 202,
+                "first": 2,
+                "second": 3,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1073,
+              "proposition": {
+                "kind": "Residence",
+                "person": 1,
+                "dwelling": 1
+              },
+              "route": "OwnState",
+              "origin": {
+                "source": 1,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": null
+              },
+              "hops": []
+            },
+            {
+              "id": 1074,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 201,
+                "first": 1,
+                "second": 2,
+                "relation": "Sibling"
+              },
+              "route": "DirectParty",
+              "origin": {
+                "source": 1,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": null
+              },
+              "hops": []
+            }
+          ]
+        }
+      ],
+      "households": []
+    },
+    {
+      "actor": 2,
+      "facts": [
+        {
+          "id": 1012,
+          "proposition": {
+            "kind": "Residence",
+            "person": 1,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1013,
+          "proposition": {
+            "kind": "Residence",
+            "person": 2,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1014,
+          "proposition": {
+            "kind": "Residence",
+            "person": 3,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1015,
+          "proposition": {
+            "kind": "Residence",
+            "person": 4,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1016,
+          "proposition": {
+            "kind": "Residence",
+            "person": 5,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1017,
+          "proposition": {
+            "kind": "Residence",
+            "person": 6,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1018,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 201,
+            "first": 1,
+            "second": 2,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1019,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 202,
+            "first": 2,
+            "second": 3,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1020,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 203,
+            "first": 1,
+            "second": 4,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1021,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 204,
+            "first": 2,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1022,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 205,
+            "first": 3,
+            "second": 6,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1023,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 206,
+            "first": 4,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1077,
+          "proposition": {
+            "kind": "Residence",
+            "person": 2,
+            "dwelling": 1
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 2,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1078,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 201,
+            "first": 1,
+            "second": 2,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 2,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1079,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 202,
+            "first": 2,
+            "second": 3,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 2,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1080,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 204,
+            "first": 2,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 2,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1105,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 14,
+            "proposal": 2,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 14,
+            "cycle": 1,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1123,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 32,
+            "proposal": 8,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 32,
+            "cycle": 2,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1141,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 50,
+            "proposal": 14,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 50,
+            "cycle": 3,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1159,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 68,
+            "proposal": 20,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 68,
+            "cycle": 4,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1177,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 86,
+            "proposal": 26,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 86,
+            "cycle": 5,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1195,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 104,
+            "proposal": 32,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 104,
+            "cycle": 6,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1213,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 122,
+            "proposal": 38,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 122,
+            "cycle": 7,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1231,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 140,
+            "proposal": 44,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 140,
+            "cycle": 8,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1249,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 158,
+            "proposal": 50,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 158,
+            "cycle": 9,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1267,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 176,
+            "proposal": 56,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 176,
+            "cycle": 10,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1285,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 194,
+            "proposal": 62,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 194,
+            "cycle": 11,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1302,
+          "proposition": {
+            "kind": "OwnState",
+            "person": 2,
+            "Grain": 48,
+            "NeedsGrain": false
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 2,
+            "eventId": 212,
+            "cycle": 12,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1303,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 212,
+            "proposal": 68,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 212,
+            "cycle": 12,
+            "reactionIndex": 13,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      ],
+      "candidates": [
+        {
+          "candidate": 1,
+          "status": "Unknown",
+          "evidence": [
+            {
+              "id": 1012,
+              "proposition": {
+                "kind": "Residence",
+                "person": 1,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1013,
+              "proposition": {
+                "kind": "Residence",
+                "person": 2,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1014,
+              "proposition": {
+                "kind": "Residence",
+                "person": 3,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1018,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 201,
+                "first": 1,
+                "second": 2,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1019,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 202,
+                "first": 2,
+                "second": 3,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1077,
+              "proposition": {
+                "kind": "Residence",
+                "person": 2,
+                "dwelling": 1
+              },
+              "route": "OwnState",
+              "origin": {
+                "source": 2,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": null
+              },
+              "hops": []
+            },
+            {
+              "id": 1078,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 201,
+                "first": 1,
+                "second": 2,
+                "relation": "Sibling"
+              },
+              "route": "DirectParty",
+              "origin": {
+                "source": 2,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": null
+              },
+              "hops": []
+            },
+            {
+              "id": 1079,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 202,
+                "first": 2,
+                "second": 3,
+                "relation": "Sibling"
+              },
+              "route": "DirectParty",
+              "origin": {
+                "source": 2,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": null
+              },
+              "hops": []
+            }
+          ]
+        }
+      ],
+      "households": []
+    },
+    {
+      "actor": 3,
+      "facts": [
+        {
+          "id": 1024,
+          "proposition": {
+            "kind": "Residence",
+            "person": 1,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1025,
+          "proposition": {
+            "kind": "Residence",
+            "person": 2,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1026,
+          "proposition": {
+            "kind": "Residence",
+            "person": 3,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1027,
+          "proposition": {
+            "kind": "Residence",
+            "person": 4,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1028,
+          "proposition": {
+            "kind": "Residence",
+            "person": 5,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1029,
+          "proposition": {
+            "kind": "Residence",
+            "person": 6,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1030,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 201,
+            "first": 1,
+            "second": 2,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1031,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 202,
+            "first": 2,
+            "second": 3,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1032,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 203,
+            "first": 1,
+            "second": 4,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1033,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 204,
+            "first": 2,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1034,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 205,
+            "first": 3,
+            "second": 6,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1035,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 206,
+            "first": 4,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1082,
+          "proposition": {
+            "kind": "Residence",
+            "person": 3,
+            "dwelling": 1
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 3,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1083,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 202,
+            "first": 2,
+            "second": 3,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 3,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1084,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 205,
+            "first": 3,
+            "second": 6,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 3,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1107,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 15,
+            "proposal": 3,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 15,
+            "cycle": 1,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1125,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 33,
+            "proposal": 9,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 33,
+            "cycle": 2,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1143,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 51,
+            "proposal": 15,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 51,
+            "cycle": 3,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1161,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 69,
+            "proposal": 21,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 69,
+            "cycle": 4,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1179,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 87,
+            "proposal": 27,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 87,
+            "cycle": 5,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1197,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 105,
+            "proposal": 33,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 105,
+            "cycle": 6,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1215,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 123,
+            "proposal": 39,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 123,
+            "cycle": 7,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1233,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 141,
+            "proposal": 45,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 141,
+            "cycle": 8,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1251,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 159,
+            "proposal": 51,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 159,
+            "cycle": 9,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1269,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 177,
+            "proposal": 57,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 177,
+            "cycle": 10,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1287,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 195,
+            "proposal": 63,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 195,
+            "cycle": 11,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1304,
+          "proposition": {
+            "kind": "OwnState",
+            "person": 3,
+            "Grain": 48,
+            "NeedsGrain": false
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 3,
+            "eventId": 213,
+            "cycle": 12,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1305,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 213,
+            "proposal": 69,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 213,
+            "cycle": 12,
+            "reactionIndex": 14,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      ],
+      "candidates": [
+        {
+          "candidate": 1,
+          "status": "Unknown",
+          "evidence": [
+            {
+              "id": 1024,
+              "proposition": {
+                "kind": "Residence",
+                "person": 1,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1025,
+              "proposition": {
+                "kind": "Residence",
+                "person": 2,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1026,
+              "proposition": {
+                "kind": "Residence",
+                "person": 3,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1030,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 201,
+                "first": 1,
+                "second": 2,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1031,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 202,
+                "first": 2,
+                "second": 3,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1082,
+              "proposition": {
+                "kind": "Residence",
+                "person": 3,
+                "dwelling": 1
+              },
+              "route": "OwnState",
+              "origin": {
+                "source": 3,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": null
+              },
+              "hops": []
+            },
+            {
+              "id": 1083,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 202,
+                "first": 2,
+                "second": 3,
+                "relation": "Sibling"
+              },
+              "route": "DirectParty",
+              "origin": {
+                "source": 3,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": null
+              },
+              "hops": []
+            }
+          ]
+        }
+      ],
+      "households": []
+    },
+    {
+      "actor": 4,
+      "facts": [
+        {
+          "id": 1036,
+          "proposition": {
+            "kind": "Residence",
+            "person": 1,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1037,
+          "proposition": {
+            "kind": "Residence",
+            "person": 2,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1038,
+          "proposition": {
+            "kind": "Residence",
+            "person": 3,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1039,
+          "proposition": {
+            "kind": "Residence",
+            "person": 4,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1040,
+          "proposition": {
+            "kind": "Residence",
+            "person": 5,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1041,
+          "proposition": {
+            "kind": "Residence",
+            "person": 6,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1042,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 201,
+            "first": 1,
+            "second": 2,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1043,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 202,
+            "first": 2,
+            "second": 3,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1044,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 203,
+            "first": 1,
+            "second": 4,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1045,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 204,
+            "first": 2,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1046,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 205,
+            "first": 3,
+            "second": 6,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1047,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 206,
+            "first": 4,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1086,
+          "proposition": {
+            "kind": "Residence",
+            "person": 4,
+            "dwelling": 1
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 4,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1087,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 203,
+            "first": 1,
+            "second": 4,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 4,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1088,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 206,
+            "first": 4,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 4,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1109,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 16,
+            "proposal": 4,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 16,
+            "cycle": 1,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1127,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 34,
+            "proposal": 10,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 34,
+            "cycle": 2,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1145,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 52,
+            "proposal": 16,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 52,
+            "cycle": 3,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1163,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 70,
+            "proposal": 22,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 70,
+            "cycle": 4,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1181,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 88,
+            "proposal": 28,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 88,
+            "cycle": 5,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1199,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 106,
+            "proposal": 34,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 106,
+            "cycle": 6,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1217,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 124,
+            "proposal": 40,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 124,
+            "cycle": 7,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1235,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 142,
+            "proposal": 46,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 142,
+            "cycle": 8,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1253,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 160,
+            "proposal": 52,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 160,
+            "cycle": 9,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1271,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 178,
+            "proposal": 58,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 178,
+            "cycle": 10,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1289,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 196,
+            "proposal": 64,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 196,
+            "cycle": 11,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1306,
+          "proposition": {
+            "kind": "OwnState",
+            "person": 4,
+            "Grain": 48,
+            "NeedsGrain": false
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 4,
+            "eventId": 214,
+            "cycle": 12,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1307,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 214,
+            "proposal": 70,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 4,
+            "eventId": 214,
+            "cycle": 12,
+            "reactionIndex": 15,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      ],
+      "candidates": [
+        {
+          "candidate": 1,
+          "status": "Unknown",
+          "evidence": [
+            {
+              "id": 1036,
+              "proposition": {
+                "kind": "Residence",
+                "person": 1,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1037,
+              "proposition": {
+                "kind": "Residence",
+                "person": 2,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1038,
+              "proposition": {
+                "kind": "Residence",
+                "person": 3,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1042,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 201,
+                "first": 1,
+                "second": 2,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1043,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 202,
+                "first": 2,
+                "second": 3,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            }
+          ]
+        }
+      ],
+      "households": []
+    },
+    {
+      "actor": 5,
+      "facts": [
+        {
+          "id": 1048,
+          "proposition": {
+            "kind": "Residence",
+            "person": 1,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1049,
+          "proposition": {
+            "kind": "Residence",
+            "person": 2,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1050,
+          "proposition": {
+            "kind": "Residence",
+            "person": 3,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1051,
+          "proposition": {
+            "kind": "Residence",
+            "person": 4,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1052,
+          "proposition": {
+            "kind": "Residence",
+            "person": 5,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1053,
+          "proposition": {
+            "kind": "Residence",
+            "person": 6,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1054,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 201,
+            "first": 1,
+            "second": 2,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1055,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 202,
+            "first": 2,
+            "second": 3,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1056,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 203,
+            "first": 1,
+            "second": 4,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1057,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 204,
+            "first": 2,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1058,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 205,
+            "first": 3,
+            "second": 6,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1059,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 206,
+            "first": 4,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1090,
+          "proposition": {
+            "kind": "Residence",
+            "person": 5,
+            "dwelling": 1
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 5,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1091,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 204,
+            "first": 2,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 5,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1092,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 206,
+            "first": 4,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 5,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1111,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 17,
+            "proposal": 5,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 17,
+            "cycle": 1,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1129,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 35,
+            "proposal": 11,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 35,
+            "cycle": 2,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1147,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 53,
+            "proposal": 17,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 53,
+            "cycle": 3,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1165,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 71,
+            "proposal": 23,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 71,
+            "cycle": 4,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1183,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 89,
+            "proposal": 29,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 89,
+            "cycle": 5,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1201,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 107,
+            "proposal": 35,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 107,
+            "cycle": 6,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1219,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 125,
+            "proposal": 41,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 125,
+            "cycle": 7,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1237,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 143,
+            "proposal": 47,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 143,
+            "cycle": 8,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1255,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 161,
+            "proposal": 53,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 161,
+            "cycle": 9,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1273,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 179,
+            "proposal": 59,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 179,
+            "cycle": 10,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1291,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 197,
+            "proposal": 65,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 197,
+            "cycle": 11,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1308,
+          "proposition": {
+            "kind": "OwnState",
+            "person": 5,
+            "Grain": 48,
+            "NeedsGrain": false
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 5,
+            "eventId": 215,
+            "cycle": 12,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1309,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 215,
+            "proposal": 71,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 5,
+            "eventId": 215,
+            "cycle": 12,
+            "reactionIndex": 16,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      ],
+      "candidates": [
+        {
+          "candidate": 1,
+          "status": "Unknown",
+          "evidence": [
+            {
+              "id": 1048,
+              "proposition": {
+                "kind": "Residence",
+                "person": 1,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1049,
+              "proposition": {
+                "kind": "Residence",
+                "person": 2,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1050,
+              "proposition": {
+                "kind": "Residence",
+                "person": 3,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1054,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 201,
+                "first": 1,
+                "second": 2,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1055,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 202,
+                "first": 2,
+                "second": 3,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            }
+          ]
+        }
+      ],
+      "households": []
+    },
+    {
+      "actor": 6,
+      "facts": [
+        {
+          "id": 1060,
+          "proposition": {
+            "kind": "Residence",
+            "person": 1,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1061,
+          "proposition": {
+            "kind": "Residence",
+            "person": 2,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1062,
+          "proposition": {
+            "kind": "Residence",
+            "person": 3,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1063,
+          "proposition": {
+            "kind": "Residence",
+            "person": 4,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1064,
+          "proposition": {
+            "kind": "Residence",
+            "person": 5,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1065,
+          "proposition": {
+            "kind": "Residence",
+            "person": 6,
+            "dwelling": 1
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1066,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 201,
+            "first": 1,
+            "second": 2,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1067,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 202,
+            "first": 2,
+            "second": 3,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1068,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 203,
+            "first": 1,
+            "second": 4,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1069,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 204,
+            "first": 2,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1070,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 205,
+            "first": 3,
+            "second": 6,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1071,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 206,
+            "first": 4,
+            "second": 5,
+            "relation": "Sibling"
+          },
+          "route": "Fixture",
+          "origin": {
+            "source": null,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": "OBS-S3-LOWER-LEVEL"
+          },
+          "hops": []
+        },
+        {
+          "id": 1094,
+          "proposition": {
+            "kind": "Residence",
+            "person": 6,
+            "dwelling": 1
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 6,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1095,
+          "proposition": {
+            "kind": "Kinship",
+            "id": 205,
+            "first": 3,
+            "second": 6,
+            "relation": "Sibling"
+          },
+          "route": "DirectParty",
+          "origin": {
+            "source": 6,
+            "eventId": null,
+            "cycle": 0,
+            "reactionIndex": 0,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1113,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 18,
+            "proposal": 6,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 18,
+            "cycle": 1,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1131,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 36,
+            "proposal": 12,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 36,
+            "cycle": 2,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1149,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 54,
+            "proposal": 18,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 54,
+            "cycle": 3,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1167,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 72,
+            "proposal": 24,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 72,
+            "cycle": 4,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1185,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 90,
+            "proposal": 30,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 90,
+            "cycle": 5,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1203,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 108,
+            "proposal": 36,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 108,
+            "cycle": 6,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1221,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 126,
+            "proposal": 42,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 126,
+            "cycle": 7,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1239,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 144,
+            "proposal": 48,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 144,
+            "cycle": 8,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1257,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 162,
+            "proposal": 54,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 162,
+            "cycle": 9,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1275,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 180,
+            "proposal": 60,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 180,
+            "cycle": 10,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1293,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 198,
+            "proposal": 66,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 198,
+            "cycle": 11,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1310,
+          "proposition": {
+            "kind": "OwnState",
+            "person": 6,
+            "Grain": 48,
+            "NeedsGrain": false
+          },
+          "route": "OwnState",
+          "origin": {
+            "source": 6,
+            "eventId": 216,
+            "cycle": 12,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        },
+        {
+          "id": 1311,
+          "proposition": {
+            "kind": "Participation",
+            "eventId": 216,
+            "proposal": 72,
+            "outcome": "Committed",
+            "Reason": ""
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 6,
+            "eventId": 216,
+            "cycle": 12,
+            "reactionIndex": 17,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      ],
+      "candidates": [
+        {
+          "candidate": 1,
+          "status": "Unknown",
+          "evidence": [
+            {
+              "id": 1060,
+              "proposition": {
+                "kind": "Residence",
+                "person": 1,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1061,
+              "proposition": {
+                "kind": "Residence",
+                "person": 2,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1062,
+              "proposition": {
+                "kind": "Residence",
+                "person": 3,
+                "dwelling": 1
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1066,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 201,
+                "first": 1,
+                "second": 2,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            },
+            {
+              "id": 1067,
+              "proposition": {
+                "kind": "Kinship",
+                "id": 202,
+                "first": 2,
+                "second": 3,
+                "relation": "Sibling"
+              },
+              "route": "Fixture",
+              "origin": {
+                "source": null,
+                "eventId": null,
+                "cycle": 0,
+                "reactionIndex": 0,
+                "Fixture": "OBS-S3-LOWER-LEVEL"
+              },
+              "hops": []
+            }
+          ]
+        }
+      ],
+      "households": []
+    }
+  ],
+  "households": {
+    "cycle": 12,
+    "households": [],
+    "formations": [],
+    "associations": [],
+    "entries": [],
+    "exits": [],
+    "continuations": [],
+    "lineages": [],
+    "commitments": []
+  }
+}

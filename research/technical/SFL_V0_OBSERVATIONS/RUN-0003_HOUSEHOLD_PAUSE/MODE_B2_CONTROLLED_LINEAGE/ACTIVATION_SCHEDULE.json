@@ -1,0 +1,149 @@
+[
+  {
+    "label": "predecessor-support-p1-p3",
+    "cycle": 1,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 1,
+        "actor": 1,
+        "action": {
+          "kind": "OfferGift",
+          "target": 3,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "predecessor-support-p3-p2",
+    "cycle": 2,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 2,
+        "actor": 3,
+        "action": {
+          "kind": "OfferGift",
+          "target": 2,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "predecessor-communicate-cycle2-support-to-p1",
+    "cycle": 3,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 3,
+        "actor": 3,
+        "action": {
+          "kind": "CommunicateClaim",
+          "recipient": 1,
+          "claim": {
+            "kind": "HeldFact",
+            "evidence": 1119
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "predecessor-communicate-cycle1-support-to-p2",
+    "cycle": 4,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 4,
+        "actor": 3,
+        "action": {
+          "kind": "CommunicateClaim",
+          "recipient": 2,
+          "claim": {
+            "kind": "HeldFact",
+            "evidence": 1105
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "p1-exits-predecessor",
+    "cycle": 5,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 5,
+        "actor": 1,
+        "action": {
+          "kind": "EndHouseholdParticipation",
+          "household": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "p2-exits-predecessor",
+    "cycle": 6,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 6,
+        "actor": 2,
+        "action": {
+          "kind": "EndHouseholdParticipation",
+          "household": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "fresh-postexit-support-p1-p2",
+    "cycle": 7,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 7,
+        "actor": 1,
+        "action": {
+          "kind": "OfferGift",
+          "target": 2,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "fresh-postexit-support-p2-p1",
+    "cycle": 8,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 8,
+        "actor": 2,
+        "action": {
+          "kind": "OfferGift",
+          "target": 1,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "declare-successor-candidate",
+    "cycle": 8,
+    "kind": "InertCandidateDeclaration",
+    "candidate": 2,
+    "core": [
+      1,
+      2
+    ]
+  },
+  {
+    "label": "close-successor-formation",
+    "cycle": 9,
+    "kind": "EmptyPublicCycle"
+  }
+]

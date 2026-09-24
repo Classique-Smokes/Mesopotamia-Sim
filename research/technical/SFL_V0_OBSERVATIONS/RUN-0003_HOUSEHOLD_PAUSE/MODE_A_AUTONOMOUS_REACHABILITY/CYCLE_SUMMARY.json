@@ -1,0 +1,1130 @@
+[
+  {
+    "label": "autonomous-1",
+    "cycle": 1,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 1,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 13
+      },
+      {
+        "proposal": 2,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 14
+      },
+      {
+        "proposal": 3,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 15
+      },
+      {
+        "proposal": 4,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 16
+      },
+      {
+        "proposal": 5,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 17
+      },
+      {
+        "proposal": 6,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 18
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 15,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 15,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 15,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 15,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 15,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 15,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-2",
+    "cycle": 2,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 7,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 31
+      },
+      {
+        "proposal": 8,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 32
+      },
+      {
+        "proposal": 9,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 33
+      },
+      {
+        "proposal": 10,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 34
+      },
+      {
+        "proposal": 11,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 35
+      },
+      {
+        "proposal": 12,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 36
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 18,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 18,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 18,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 18,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 18,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 18,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-3",
+    "cycle": 3,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 13,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 49
+      },
+      {
+        "proposal": 14,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 50
+      },
+      {
+        "proposal": 15,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 51
+      },
+      {
+        "proposal": 16,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 52
+      },
+      {
+        "proposal": 17,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 53
+      },
+      {
+        "proposal": 18,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 54
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 21,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 21,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 21,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 21,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 21,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 21,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-4",
+    "cycle": 4,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 19,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 67
+      },
+      {
+        "proposal": 20,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 68
+      },
+      {
+        "proposal": 21,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 69
+      },
+      {
+        "proposal": 22,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 70
+      },
+      {
+        "proposal": 23,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 71
+      },
+      {
+        "proposal": 24,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 72
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 24,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 24,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 24,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 24,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 24,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 24,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-5",
+    "cycle": 5,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 25,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 85
+      },
+      {
+        "proposal": 26,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 86
+      },
+      {
+        "proposal": 27,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 87
+      },
+      {
+        "proposal": 28,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 88
+      },
+      {
+        "proposal": 29,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 89
+      },
+      {
+        "proposal": 30,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 90
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 27,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 27,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 27,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 27,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 27,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 27,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-6",
+    "cycle": 6,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 31,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 103
+      },
+      {
+        "proposal": 32,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 104
+      },
+      {
+        "proposal": 33,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 105
+      },
+      {
+        "proposal": 34,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 106
+      },
+      {
+        "proposal": 35,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 107
+      },
+      {
+        "proposal": 36,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 108
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 30,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 30,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 30,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 30,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 30,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 30,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-7",
+    "cycle": 7,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 37,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 121
+      },
+      {
+        "proposal": 38,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 122
+      },
+      {
+        "proposal": 39,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 123
+      },
+      {
+        "proposal": 40,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 124
+      },
+      {
+        "proposal": 41,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 125
+      },
+      {
+        "proposal": 42,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 126
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 33,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 33,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 33,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 33,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 33,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 33,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-8",
+    "cycle": 8,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 43,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 139
+      },
+      {
+        "proposal": 44,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 140
+      },
+      {
+        "proposal": 45,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 141
+      },
+      {
+        "proposal": 46,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 142
+      },
+      {
+        "proposal": 47,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 143
+      },
+      {
+        "proposal": 48,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 144
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 36,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 36,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 36,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 36,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 36,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 36,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-9",
+    "cycle": 9,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 49,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 157
+      },
+      {
+        "proposal": 50,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 158
+      },
+      {
+        "proposal": 51,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 159
+      },
+      {
+        "proposal": 52,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 160
+      },
+      {
+        "proposal": 53,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 161
+      },
+      {
+        "proposal": 54,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 162
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 39,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 39,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 39,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 39,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 39,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 39,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-10",
+    "cycle": 10,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 55,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 175
+      },
+      {
+        "proposal": 56,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 176
+      },
+      {
+        "proposal": 57,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 177
+      },
+      {
+        "proposal": 58,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 178
+      },
+      {
+        "proposal": 59,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 179
+      },
+      {
+        "proposal": 60,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 180
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 42,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 42,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 42,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 42,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 42,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 42,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-11",
+    "cycle": 11,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 61,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 193
+      },
+      {
+        "proposal": 62,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 194
+      },
+      {
+        "proposal": 63,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 195
+      },
+      {
+        "proposal": 64,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 196
+      },
+      {
+        "proposal": 65,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 197
+      },
+      {
+        "proposal": 66,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 198
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 45,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 45,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 45,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 45,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 45,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 45,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "autonomous-12",
+    "cycle": 12,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 67,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 211
+      },
+      {
+        "proposal": 68,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 212
+      },
+      {
+        "proposal": 69,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 213
+      },
+      {
+        "proposal": 70,
+        "actor": 4,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 214
+      },
+      {
+        "proposal": 71,
+        "actor": 5,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 215
+      },
+      {
+        "proposal": 72,
+        "actor": 6,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 216
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "Farm": 6,
+      "Proposal": 6
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 48,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 48,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 48,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 48,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 48,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 48,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  }
+]

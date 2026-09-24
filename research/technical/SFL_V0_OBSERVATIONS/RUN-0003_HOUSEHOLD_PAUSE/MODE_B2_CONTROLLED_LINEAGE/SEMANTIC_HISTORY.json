@@ -1,0 +1,2929 @@
+[
+  {
+    "id": 1,
+    "Cycle": 1,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 2,
+    "Cycle": 1,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 3,
+    "Cycle": 1,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 4,
+    "Cycle": 1,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 5,
+    "Cycle": 1,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 6,
+    "Cycle": 1,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 7,
+    "Cycle": 1,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 1,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "OfferGift(3,1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "OfferGift",
+      "target": 3,
+      "Amount": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 8,
+    "Cycle": 1,
+    "ReactionIndex": 7,
+    "Kind": "Response",
+    "proposal": 1,
+    "participants": [
+      3
+    ],
+    "causes": [
+      7
+    ],
+    "material": [],
+    "Detail": "Accept",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 9,
+    "Cycle": 1,
+    "ReactionIndex": 8,
+    "Kind": "Gift",
+    "proposal": 1,
+    "participants": [
+      1,
+      3
+    ],
+    "causes": [
+      8
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 11,
+        "After": 10,
+        "Meaning": "Gift"
+      },
+      {
+        "person": 3,
+        "Before": 11,
+        "After": 12,
+        "Meaning": "Gift"
+      }
+    ],
+    "Detail": "OfferGift(3,1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "OfferGift",
+      "target": 3,
+      "Amount": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 10,
+    "Cycle": 1,
+    "ReactionIndex": 9,
+    "Kind": "AttitudeComposition",
+    "proposal": null,
+    "participants": [
+      3,
+      1
+    ],
+    "causes": [
+      9
+    ],
+    "material": [],
+    "Detail": "0-\u003E10",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [
+      {
+        "Rule": "Gift",
+        "trigger": 9,
+        "from": 3,
+        "to": 1,
+        "Delta": 10
+      }
+    ],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 11,
+    "Cycle": 2,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 10,
+        "After": 9,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 12,
+    "Cycle": 2,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 11,
+        "After": 10,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 13,
+    "Cycle": 2,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 14,
+    "Cycle": 2,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 11,
+        "After": 10,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 15,
+    "Cycle": 2,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 11,
+        "After": 10,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 16,
+    "Cycle": 2,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 11,
+        "After": 10,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 17,
+    "Cycle": 2,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 2,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "OfferGift(2,1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "OfferGift",
+      "target": 2,
+      "Amount": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 18,
+    "Cycle": 2,
+    "ReactionIndex": 7,
+    "Kind": "Response",
+    "proposal": 2,
+    "participants": [
+      2
+    ],
+    "causes": [
+      17
+    ],
+    "material": [],
+    "Detail": "Accept",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 19,
+    "Cycle": 2,
+    "ReactionIndex": 8,
+    "Kind": "Gift",
+    "proposal": 2,
+    "participants": [
+      3,
+      2
+    ],
+    "causes": [
+      18
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 11,
+        "After": 10,
+        "Meaning": "Gift"
+      },
+      {
+        "person": 2,
+        "Before": 10,
+        "After": 11,
+        "Meaning": "Gift"
+      }
+    ],
+    "Detail": "OfferGift(2,1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "OfferGift",
+      "target": 2,
+      "Amount": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 20,
+    "Cycle": 2,
+    "ReactionIndex": 9,
+    "Kind": "AttitudeComposition",
+    "proposal": null,
+    "participants": [
+      2,
+      3
+    ],
+    "causes": [
+      19
+    ],
+    "material": [],
+    "Detail": "0-\u003E10",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [
+      {
+        "Rule": "Gift",
+        "trigger": 19,
+        "from": 2,
+        "to": 3,
+        "Delta": 10
+      }
+    ],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 21,
+    "Cycle": 3,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 9,
+        "After": 8,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 22,
+    "Cycle": 3,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 11,
+        "After": 10,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 23,
+    "Cycle": 3,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 10,
+        "After": 9,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 24,
+    "Cycle": 3,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 10,
+        "After": 9,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 25,
+    "Cycle": 3,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 10,
+        "After": 9,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 26,
+    "Cycle": 3,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 10,
+        "After": 9,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 27,
+    "Cycle": 3,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 3,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "CommunicateClaim(1,HeldFact { Evidence = EvidenceId { Value = 1119 } })",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "CommunicateClaim",
+      "recipient": 1,
+      "claim": {
+        "kind": "HeldFact",
+        "evidence": 1119
+      }
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 28,
+    "Cycle": 3,
+    "ReactionIndex": 7,
+    "Kind": "Communication",
+    "proposal": 3,
+    "participants": [
+      3,
+      1
+    ],
+    "causes": [
+      27
+    ],
+    "material": [],
+    "Detail": "CommunicateClaim(1,HeldFact { Evidence = EvidenceId { Value = 1119 } })",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "CommunicateClaim",
+      "recipient": 1,
+      "claim": {
+        "kind": "HeldFact",
+        "evidence": 1119
+      }
+    },
+    "contributions": [],
+    "transmittedEvidence": [
+      {
+        "id": 1119,
+        "proposition": {
+          "kind": "Support",
+          "eventId": 19,
+          "Cycle": 2,
+          "first": 3,
+          "second": 2,
+          "supportKind": "Gift",
+          "Order": {
+            "Cycle": 2,
+            "ReactionIndex": 8
+          }
+        },
+        "route": "Participation",
+        "origin": {
+          "source": 3,
+          "eventId": 19,
+          "cycle": 2,
+          "reactionIndex": 8,
+          "Fixture": null
+        },
+        "hops": []
+      }
+    ],
+    "acquiredEvidence": [
+      {
+        "actor": 1,
+        "fact": {
+          "id": 1130,
+          "proposition": {
+            "kind": "Support",
+            "eventId": 19,
+            "Cycle": 2,
+            "first": 3,
+            "second": 2,
+            "supportKind": "Gift",
+            "Order": {
+              "Cycle": 2,
+              "ReactionIndex": 8
+            }
+          },
+          "route": "Communication",
+          "origin": {
+            "source": 3,
+            "eventId": 19,
+            "cycle": 2,
+            "reactionIndex": 8,
+            "Fixture": null
+          },
+          "hops": [
+            {
+              "sender": 3,
+              "recipient": 1,
+              "eventId": 28,
+              "cycle": 3,
+              "reactionIndex": 7
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "Cycle": 4,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 8,
+        "After": 7,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 30,
+    "Cycle": 4,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 10,
+        "After": 9,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 31,
+    "Cycle": 4,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 9,
+        "After": 8,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 32,
+    "Cycle": 4,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 9,
+        "After": 8,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 33,
+    "Cycle": 4,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 9,
+        "After": 8,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 34,
+    "Cycle": 4,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 9,
+        "After": 8,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 35,
+    "Cycle": 4,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 4,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "CommunicateClaim(2,HeldFact { Evidence = EvidenceId { Value = 1105 } })",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "CommunicateClaim",
+      "recipient": 2,
+      "claim": {
+        "kind": "HeldFact",
+        "evidence": 1105
+      }
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 36,
+    "Cycle": 4,
+    "ReactionIndex": 7,
+    "Kind": "Communication",
+    "proposal": 4,
+    "participants": [
+      3,
+      2
+    ],
+    "causes": [
+      35
+    ],
+    "material": [],
+    "Detail": "CommunicateClaim(2,HeldFact { Evidence = EvidenceId { Value = 1105 } })",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "CommunicateClaim",
+      "recipient": 2,
+      "claim": {
+        "kind": "HeldFact",
+        "evidence": 1105
+      }
+    },
+    "contributions": [],
+    "transmittedEvidence": [
+      {
+        "id": 1105,
+        "proposition": {
+          "kind": "Support",
+          "eventId": 9,
+          "Cycle": 1,
+          "first": 1,
+          "second": 3,
+          "supportKind": "Gift",
+          "Order": {
+            "Cycle": 1,
+            "ReactionIndex": 8
+          }
+        },
+        "route": "Participation",
+        "origin": {
+          "source": 3,
+          "eventId": 9,
+          "cycle": 1,
+          "reactionIndex": 8,
+          "Fixture": null
+        },
+        "hops": []
+      }
+    ],
+    "acquiredEvidence": [
+      {
+        "actor": 2,
+        "fact": {
+          "id": 1139,
+          "proposition": {
+            "kind": "Support",
+            "eventId": 9,
+            "Cycle": 1,
+            "first": 1,
+            "second": 3,
+            "supportKind": "Gift",
+            "Order": {
+              "Cycle": 1,
+              "ReactionIndex": 8
+            }
+          },
+          "route": "Communication",
+          "origin": {
+            "source": 3,
+            "eventId": 9,
+            "cycle": 1,
+            "reactionIndex": 8,
+            "Fixture": null
+          },
+          "hops": [
+            {
+              "sender": 3,
+              "recipient": 2,
+              "eventId": 36,
+              "cycle": 4,
+              "reactionIndex": 7
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "Cycle": 4,
+    "ReactionIndex": 8,
+    "Kind": "CandidateRecognitionEstablished",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [
+      9,
+      10,
+      19,
+      28
+    ],
+    "material": [],
+    "Detail": "Candidate:1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 38,
+    "Cycle": 4,
+    "ReactionIndex": 9,
+    "Kind": "CandidateRecognitionEstablished",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [
+      19,
+      20,
+      9,
+      36
+    ],
+    "material": [],
+    "Detail": "Candidate:1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 39,
+    "Cycle": 4,
+    "ReactionIndex": 10,
+    "Kind": "CandidateRecognitionEstablished",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [
+      9,
+      10,
+      19,
+      20
+    ],
+    "material": [],
+    "Detail": "Candidate:1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 40,
+    "Cycle": 4,
+    "ReactionIndex": 11,
+    "Kind": "HouseholdFormation",
+    "proposal": null,
+    "participants": [
+      1,
+      2,
+      3
+    ],
+    "causes": [
+      37,
+      38,
+      39,
+      9,
+      19
+    ],
+    "material": [],
+    "Detail": "Household:1;Warrant:1;Candidate:1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 41,
+    "Cycle": 4,
+    "ReactionIndex": 12,
+    "Kind": "SustainingParticipationFounded",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [
+      40
+    ],
+    "material": [],
+    "Detail": "Household:1;Association:1;Warrant:1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 42,
+    "Cycle": 4,
+    "ReactionIndex": 13,
+    "Kind": "SustainingParticipationFounded",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [
+      40
+    ],
+    "material": [],
+    "Detail": "Household:1;Association:2;Warrant:1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 43,
+    "Cycle": 4,
+    "ReactionIndex": 14,
+    "Kind": "SustainingParticipationFounded",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [
+      40
+    ],
+    "material": [],
+    "Detail": "Household:1;Association:3;Warrant:1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 44,
+    "Cycle": 4,
+    "ReactionIndex": 15,
+    "Kind": "HouseholdRecognitionAcquired",
+    "proposal": null,
+    "participants": [
+      1,
+      2,
+      3
+    ],
+    "causes": [
+      40
+    ],
+    "material": [],
+    "Detail": "Household:1;Warrant:1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": [
+      {
+        "actor": 1,
+        "fact": {
+          "id": 1142,
+          "proposition": {
+            "kind": "HouseholdExistence",
+            "household": 1,
+            "Continues": true,
+            "warrant": 1
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 40,
+            "cycle": 4,
+            "reactionIndex": 11,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      },
+      {
+        "actor": 2,
+        "fact": {
+          "id": 1143,
+          "proposition": {
+            "kind": "HouseholdExistence",
+            "household": 1,
+            "Continues": true,
+            "warrant": 1
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 40,
+            "cycle": 4,
+            "reactionIndex": 11,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      },
+      {
+        "actor": 3,
+        "fact": {
+          "id": 1144,
+          "proposition": {
+            "kind": "HouseholdExistence",
+            "household": 1,
+            "Continues": true,
+            "warrant": 1
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 3,
+            "eventId": 40,
+            "cycle": 4,
+            "reactionIndex": 11,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "Cycle": 5,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 7,
+        "After": 6,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 46,
+    "Cycle": 5,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 9,
+        "After": 8,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 47,
+    "Cycle": 5,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 8,
+        "After": 7,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 48,
+    "Cycle": 5,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 8,
+        "After": 7,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 49,
+    "Cycle": 5,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 8,
+        "After": 7,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 50,
+    "Cycle": 5,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 8,
+        "After": 7,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 51,
+    "Cycle": 5,
+    "ReactionIndex": 6,
+    "Kind": "AttitudeDecay",
+    "proposal": null,
+    "participants": [
+      3,
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "10-\u003E8",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 52,
+    "Cycle": 5,
+    "ReactionIndex": 7,
+    "Kind": "AttitudeDecay",
+    "proposal": null,
+    "participants": [
+      2,
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "10-\u003E8",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 53,
+    "Cycle": 5,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 5,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "EndHouseholdParticipation(1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "EndHouseholdParticipation",
+      "household": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 54,
+    "Cycle": 5,
+    "ReactionIndex": 9,
+    "Kind": "HouseholdParticipationEnded",
+    "proposal": 5,
+    "participants": [
+      1
+    ],
+    "causes": [
+      53
+    ],
+    "material": [],
+    "Detail": "Household:1;Warrant:2;Association:1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "EndHouseholdParticipation",
+      "household": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 55,
+    "Cycle": 5,
+    "ReactionIndex": 10,
+    "Kind": "HouseholdContinued",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [
+      54,
+      40
+    ],
+    "material": [],
+    "Detail": "Household:1;Warrant:3;Previous:1;Transition:2",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 56,
+    "Cycle": 5,
+    "ReactionIndex": 11,
+    "Kind": "HouseholdRecognitionAcquired",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [
+      55
+    ],
+    "material": [],
+    "Detail": "Household:1;Warrant:3",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": [
+      {
+        "actor": 1,
+        "fact": {
+          "id": 1155,
+          "proposition": {
+            "kind": "HouseholdExistence",
+            "household": 1,
+            "Continues": true,
+            "warrant": 3
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 55,
+            "cycle": 5,
+            "reactionIndex": 10,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "Cycle": 6,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 6,
+        "After": 5,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 58,
+    "Cycle": 6,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 8,
+        "After": 7,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 59,
+    "Cycle": 6,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 7,
+        "After": 6,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 60,
+    "Cycle": 6,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 7,
+        "After": 6,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 61,
+    "Cycle": 6,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 7,
+        "After": 6,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 62,
+    "Cycle": 6,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 7,
+        "After": 6,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 63,
+    "Cycle": 6,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 6,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "EndHouseholdParticipation(1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "EndHouseholdParticipation",
+      "household": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 64,
+    "Cycle": 6,
+    "ReactionIndex": 7,
+    "Kind": "HouseholdParticipationEnded",
+    "proposal": 6,
+    "participants": [
+      2
+    ],
+    "causes": [
+      63
+    ],
+    "material": [],
+    "Detail": "Household:1;Warrant:4;Association:2",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "EndHouseholdParticipation",
+      "household": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 65,
+    "Cycle": 6,
+    "ReactionIndex": 8,
+    "Kind": "HouseholdContinued",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [
+      64,
+      55
+    ],
+    "material": [],
+    "Detail": "Household:1;Warrant:5;Previous:3;Transition:4",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 66,
+    "Cycle": 6,
+    "ReactionIndex": 9,
+    "Kind": "HouseholdRecognitionAcquired",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [
+      65
+    ],
+    "material": [],
+    "Detail": "Household:1;Warrant:5",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": [
+      {
+        "actor": 2,
+        "fact": {
+          "id": 1163,
+          "proposition": {
+            "kind": "HouseholdExistence",
+            "household": 1,
+            "Continues": true,
+            "warrant": 5
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 65,
+            "cycle": 6,
+            "reactionIndex": 8,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "Cycle": 6,
+    "ReactionIndex": 10,
+    "Kind": "HouseholdLifecycle",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [
+      64,
+      65
+    ],
+    "material": [],
+    "Detail": "Household:1;Inactive",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 68,
+    "Cycle": 7,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 5,
+        "After": 4,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 69,
+    "Cycle": 7,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 7,
+        "After": 6,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 70,
+    "Cycle": 7,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 6,
+        "After": 5,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 71,
+    "Cycle": 7,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 6,
+        "After": 5,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 72,
+    "Cycle": 7,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 6,
+        "After": 5,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 73,
+    "Cycle": 7,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 6,
+        "After": 5,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 74,
+    "Cycle": 7,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 7,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "OfferGift(2,1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "OfferGift",
+      "target": 2,
+      "Amount": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 75,
+    "Cycle": 7,
+    "ReactionIndex": 7,
+    "Kind": "Response",
+    "proposal": 7,
+    "participants": [
+      2
+    ],
+    "causes": [
+      74
+    ],
+    "material": [],
+    "Detail": "Accept",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 76,
+    "Cycle": 7,
+    "ReactionIndex": 8,
+    "Kind": "Gift",
+    "proposal": 7,
+    "participants": [
+      1,
+      2
+    ],
+    "causes": [
+      75
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 4,
+        "After": 3,
+        "Meaning": "Gift"
+      },
+      {
+        "person": 2,
+        "Before": 6,
+        "After": 7,
+        "Meaning": "Gift"
+      }
+    ],
+    "Detail": "OfferGift(2,1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "OfferGift",
+      "target": 2,
+      "Amount": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 77,
+    "Cycle": 7,
+    "ReactionIndex": 9,
+    "Kind": "AttitudeComposition",
+    "proposal": null,
+    "participants": [
+      2,
+      1
+    ],
+    "causes": [
+      76
+    ],
+    "material": [],
+    "Detail": "0-\u003E10",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [
+      {
+        "Rule": "Gift",
+        "trigger": 76,
+        "from": 2,
+        "to": 1,
+        "Delta": 10
+      }
+    ],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 78,
+    "Cycle": 8,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 3,
+        "After": 2,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 79,
+    "Cycle": 8,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 7,
+        "After": 6,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 80,
+    "Cycle": 8,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 5,
+        "After": 4,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 81,
+    "Cycle": 8,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 5,
+        "After": 4,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 82,
+    "Cycle": 8,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 5,
+        "After": 4,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 83,
+    "Cycle": 8,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 5,
+        "After": 4,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 84,
+    "Cycle": 8,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 8,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "OfferGift(1,1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "OfferGift",
+      "target": 1,
+      "Amount": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 85,
+    "Cycle": 8,
+    "ReactionIndex": 7,
+    "Kind": "Response",
+    "proposal": 8,
+    "participants": [
+      1
+    ],
+    "causes": [
+      84
+    ],
+    "material": [],
+    "Detail": "Accept",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 86,
+    "Cycle": 8,
+    "ReactionIndex": 8,
+    "Kind": "Gift",
+    "proposal": 8,
+    "participants": [
+      2,
+      1
+    ],
+    "causes": [
+      85
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 6,
+        "After": 5,
+        "Meaning": "Gift"
+      },
+      {
+        "person": 1,
+        "Before": 2,
+        "After": 3,
+        "Meaning": "Gift"
+      }
+    ],
+    "Detail": "OfferGift(1,1)",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "OfferGift",
+      "target": 1,
+      "Amount": 1
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 87,
+    "Cycle": 8,
+    "ReactionIndex": 9,
+    "Kind": "AttitudeComposition",
+    "proposal": null,
+    "participants": [
+      1,
+      2
+    ],
+    "causes": [
+      86
+    ],
+    "material": [],
+    "Detail": "0-\u003E10",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [
+      {
+        "Rule": "Gift",
+        "trigger": 86,
+        "from": 1,
+        "to": 2,
+        "Delta": 10
+      }
+    ],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 88,
+    "Cycle": 9,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 3,
+        "After": 2,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 89,
+    "Cycle": 9,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 5,
+        "After": 4,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 90,
+    "Cycle": 9,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 4,
+        "After": 3,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 91,
+    "Cycle": 9,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 4,
+        "After": 3,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 92,
+    "Cycle": 9,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 4,
+        "After": 3,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 93,
+    "Cycle": 9,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 4,
+        "After": 3,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 94,
+    "Cycle": 9,
+    "ReactionIndex": 6,
+    "Kind": "CandidateRecognitionEstablished",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [
+      76,
+      77,
+      86,
+      87
+    ],
+    "material": [],
+    "Detail": "Candidate:2",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 95,
+    "Cycle": 9,
+    "ReactionIndex": 7,
+    "Kind": "CandidateRecognitionEstablished",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [
+      76,
+      77,
+      86,
+      87
+    ],
+    "material": [],
+    "Detail": "Candidate:2",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 96,
+    "Cycle": 9,
+    "ReactionIndex": 8,
+    "Kind": "HouseholdFormation",
+    "proposal": null,
+    "participants": [
+      1,
+      2
+    ],
+    "causes": [
+      94,
+      95,
+      76,
+      86
+    ],
+    "material": [],
+    "Detail": "Household:2;Warrant:6;Candidate:2",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 97,
+    "Cycle": 9,
+    "ReactionIndex": 9,
+    "Kind": "SustainingParticipationFounded",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [
+      96
+    ],
+    "material": [],
+    "Detail": "Household:2;Association:4;Warrant:6",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 98,
+    "Cycle": 9,
+    "ReactionIndex": 10,
+    "Kind": "SustainingParticipationFounded",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [
+      96
+    ],
+    "material": [],
+    "Detail": "Household:2;Association:5;Warrant:6",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 99,
+    "Cycle": 9,
+    "ReactionIndex": 11,
+    "Kind": "HouseholdRecognitionAcquired",
+    "proposal": null,
+    "participants": [
+      1,
+      2
+    ],
+    "causes": [
+      96
+    ],
+    "material": [],
+    "Detail": "Household:2;Warrant:6",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": [
+      {
+        "actor": 1,
+        "fact": {
+          "id": 1199,
+          "proposition": {
+            "kind": "HouseholdExistence",
+            "household": 2,
+            "Continues": true,
+            "warrant": 6
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 1,
+            "eventId": 96,
+            "cycle": 9,
+            "reactionIndex": 8,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      },
+      {
+        "actor": 2,
+        "fact": {
+          "id": 1200,
+          "proposition": {
+            "kind": "HouseholdExistence",
+            "household": 2,
+            "Continues": true,
+            "warrant": 6
+          },
+          "route": "Participation",
+          "origin": {
+            "source": 2,
+            "eventId": 96,
+            "cycle": 9,
+            "reactionIndex": 8,
+            "Fixture": null
+          },
+          "hops": []
+        }
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "Cycle": 9,
+    "ReactionIndex": 12,
+    "Kind": "HouseholdLineage",
+    "proposal": null,
+    "participants": [
+      1,
+      2
+    ],
+    "causes": [
+      96,
+      54,
+      64,
+      76,
+      86
+    ],
+    "material": [],
+    "Detail": "Successor:2;Warrant:7;Kind:DivisionDescendant",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S3-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  }
+]

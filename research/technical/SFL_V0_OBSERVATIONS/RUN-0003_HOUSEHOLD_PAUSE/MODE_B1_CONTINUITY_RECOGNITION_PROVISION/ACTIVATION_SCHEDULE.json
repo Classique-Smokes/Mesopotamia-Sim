@@ -1,0 +1,405 @@
+[
+  {
+    "label": "ordinary-support-p1-p3",
+    "cycle": 1,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 1,
+        "actor": 1,
+        "action": {
+          "kind": "OfferGift",
+          "target": 3,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "ordinary-support-p3-p2",
+    "cycle": 2,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 2,
+        "actor": 3,
+        "action": {
+          "kind": "OfferGift",
+          "target": 2,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "communicate-cycle2-support-to-p1",
+    "cycle": 3,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 3,
+        "actor": 3,
+        "action": {
+          "kind": "CommunicateClaim",
+          "recipient": 1,
+          "claim": {
+            "kind": "HeldFact",
+            "evidence": 1119
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "communicate-cycle1-support-to-p2",
+    "cycle": 4,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 4,
+        "actor": 3,
+        "action": {
+          "kind": "CommunicateClaim",
+          "recipient": 2,
+          "claim": {
+            "kind": "HeldFact",
+            "evidence": 1105
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "communicate-household-recognition-to-p4",
+    "cycle": 5,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 5,
+        "actor": 1,
+        "action": {
+          "kind": "CommunicateClaim",
+          "recipient": 4,
+          "claim": {
+            "kind": "HeldHouseholdRecognition",
+            "household": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "postformation-support-p1-p4",
+    "cycle": 6,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 6,
+        "actor": 1,
+        "action": {
+          "kind": "OfferGift",
+          "target": 4,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "p4-requests-participation-via-p1",
+    "cycle": 7,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 7,
+        "actor": 4,
+        "action": {
+          "kind": "RequestHouseholdParticipation",
+          "household": 1,
+          "bridge": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "controlled-provision-prerequisite-p1",
+    "cycle": 7,
+    "kind": "ManifestAuthorizedControlledPrerequisite",
+    "authority": "SFL-V0-S3-ACCEPTANCE-v1 \u00A73.1",
+    "method": "Simulation.SupplyProvisionFixture",
+    "person": 1,
+    "household": 1,
+    "provenance": {
+      "Fixture": "F-S3-PREEXISTING-COMMITMENT",
+      "Producer": "IMP-0003-OBS-001",
+      "OutputIdentity": "RUN-0003-B1-H1-P1"
+    }
+  },
+  {
+    "label": "personal-gift-changes-capacity",
+    "cycle": 8,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 8,
+        "actor": 1,
+        "action": {
+          "kind": "OfferGift",
+          "target": 6,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "connected-compatible-loans",
+    "cycle": 9,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 9,
+        "actor": 1,
+        "action": {
+          "kind": "OfferLoan",
+          "target": 3,
+          "Amount": 1
+        }
+      },
+      {
+        "id": 10,
+        "actor": 2,
+        "action": {
+          "kind": "OfferLoan",
+          "target": 3,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "communicate-household-recognition-to-p5",
+    "cycle": 10,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 11,
+        "actor": 2,
+        "action": {
+          "kind": "CommunicateClaim",
+          "recipient": 5,
+          "claim": {
+            "kind": "HeldHouseholdRecognition",
+            "household": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "postformation-support-p2-p5",
+    "cycle": 11,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 12,
+        "actor": 2,
+        "action": {
+          "kind": "OfferGift",
+          "target": 5,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "residence-admission-dependency",
+    "cycle": 12,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 13,
+        "actor": 6,
+        "action": {
+          "kind": "InviteResidence",
+          "target": 5,
+          "destination": 2
+        }
+      },
+      {
+        "id": 14,
+        "actor": 5,
+        "action": {
+          "kind": "RequestHouseholdParticipation",
+          "household": 1,
+          "bridge": 2
+        }
+      }
+    ]
+  },
+  {
+    "label": "p5-returns-to-dwelling1",
+    "cycle": 13,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 15,
+        "actor": 5,
+        "action": {
+          "kind": "MoveResidence",
+          "target": 2,
+          "destination": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "founder-p1-exits",
+    "cycle": 14,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 16,
+        "actor": 1,
+        "action": {
+          "kind": "EndHouseholdParticipation",
+          "household": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "founder-p2-exits",
+    "cycle": 15,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 17,
+        "actor": 2,
+        "action": {
+          "kind": "EndHouseholdParticipation",
+          "household": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "founder-p3-exits",
+    "cycle": 16,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 18,
+        "actor": 3,
+        "action": {
+          "kind": "EndHouseholdParticipation",
+          "household": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "latest-continuation-report-p3-to-p4",
+    "cycle": 17,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 19,
+        "actor": 3,
+        "action": {
+          "kind": "CommunicateClaim",
+          "recipient": 4,
+          "claim": {
+            "kind": "HeldHouseholdRecognition",
+            "household": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "updated-household-report-p4-to-p5",
+    "cycle": 18,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 20,
+        "actor": 4,
+        "action": {
+          "kind": "CommunicateClaim",
+          "recipient": 5,
+          "claim": {
+            "kind": "HeldHouseholdRecognition",
+            "household": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "label": "fresh-support-p4-p5",
+    "cycle": 19,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 21,
+        "actor": 4,
+        "action": {
+          "kind": "OfferGift",
+          "target": 5,
+          "Amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "p5-requests-reactivation-entry-via-p4",
+    "cycle": 20,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 22,
+        "actor": 5,
+        "action": {
+          "kind": "RequestHouseholdParticipation",
+          "household": 1,
+          "bridge": 4
+        }
+      }
+    ]
+  },
+  {
+    "label": "p4-exits",
+    "cycle": 21,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 23,
+        "actor": 4,
+        "action": {
+          "kind": "EndHouseholdParticipation",
+          "household": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "p5-terminal-exit",
+    "cycle": 22,
+    "kind": "ScriptedCycle",
+    "proposals": [
+      {
+        "id": 24,
+        "actor": 5,
+        "action": {
+          "kind": "EndHouseholdParticipation",
+          "household": 1
+        }
+      }
+    ]
+  },
+  {
+    "label": "communicate-dissolution-fact-p5-to-p4",
+    "cycle": 22,
+    "kind": "DeclaredActionUnavailable",
+    "reason": "P5HeldNoDissolutionFactAtDeclaredStep"
+  }
+]

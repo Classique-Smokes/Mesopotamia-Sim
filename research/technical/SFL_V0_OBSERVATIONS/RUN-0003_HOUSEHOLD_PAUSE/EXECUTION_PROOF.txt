@@ -1,0 +1,8 @@
+observation=IMP-0003-OBS-001
+source_revision=f7ca9525d17ed20758058df7aff97b2f47e5a01a
+harness_revision=ecd1ebb5affbe0749d87e1aa47f4847e067e480d
+production_test_diff_from_source=EMPTY
+canonical_restore=PASS
+canonical_format=PASS
+canonical_build=PASS
+canonical_test=PASS

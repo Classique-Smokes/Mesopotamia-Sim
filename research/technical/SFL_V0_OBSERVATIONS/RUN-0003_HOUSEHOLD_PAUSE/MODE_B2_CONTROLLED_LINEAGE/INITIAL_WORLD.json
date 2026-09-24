@@ -1,0 +1,2441 @@
+{
+  "People": [
+    {
+      "Id": {
+        "Value": 1
+      },
+      "Name": "Person1",
+      "Sex": 0,
+      "Grain": 12,
+      "NeedsGrain": false
+    },
+    {
+      "Id": {
+        "Value": 2
+      },
+      "Name": "Person2",
+      "Sex": 1,
+      "Grain": 12,
+      "NeedsGrain": false
+    },
+    {
+      "Id": {
+        "Value": 3
+      },
+      "Name": "Person3",
+      "Sex": 0,
+      "Grain": 12,
+      "NeedsGrain": false
+    },
+    {
+      "Id": {
+        "Value": 4
+      },
+      "Name": "Person4",
+      "Sex": 1,
+      "Grain": 12,
+      "NeedsGrain": false
+    },
+    {
+      "Id": {
+        "Value": 5
+      },
+      "Name": "Person5",
+      "Sex": 0,
+      "Grain": 12,
+      "NeedsGrain": false
+    },
+    {
+      "Id": {
+        "Value": 6
+      },
+      "Name": "Person6",
+      "Sex": 1,
+      "Grain": 12,
+      "NeedsGrain": false
+    }
+  ],
+  "Dwellings": [
+    {
+      "Id": {
+        "Value": 1
+      }
+    },
+    {
+      "Id": {
+        "Value": 2
+      }
+    }
+  ],
+  "Residences": [
+    {
+      "Id": {
+        "Value": 101
+      },
+      "Person": {
+        "Value": 1
+      },
+      "Dwelling": {
+        "Value": 1
+      }
+    },
+    {
+      "Id": {
+        "Value": 102
+      },
+      "Person": {
+        "Value": 2
+      },
+      "Dwelling": {
+        "Value": 1
+      }
+    },
+    {
+      "Id": {
+        "Value": 103
+      },
+      "Person": {
+        "Value": 3
+      },
+      "Dwelling": {
+        "Value": 1
+      }
+    },
+    {
+      "Id": {
+        "Value": 104
+      },
+      "Person": {
+        "Value": 4
+      },
+      "Dwelling": {
+        "Value": 1
+      }
+    },
+    {
+      "Id": {
+        "Value": 105
+      },
+      "Person": {
+        "Value": 5
+      },
+      "Dwelling": {
+        "Value": 1
+      }
+    },
+    {
+      "Id": {
+        "Value": 106
+      },
+      "Person": {
+        "Value": 6
+      },
+      "Dwelling": {
+        "Value": 1
+      }
+    }
+  ],
+  "Attitudes": [],
+  "Kinships": [
+    {
+      "Id": {
+        "Value": 201
+      },
+      "First": {
+        "Value": 1
+      },
+      "Second": {
+        "Value": 2
+      },
+      "Kind": 1
+    },
+    {
+      "Id": {
+        "Value": 202
+      },
+      "First": {
+        "Value": 2
+      },
+      "Second": {
+        "Value": 3
+      },
+      "Kind": 1
+    },
+    {
+      "Id": {
+        "Value": 203
+      },
+      "First": {
+        "Value": 1
+      },
+      "Second": {
+        "Value": 4
+      },
+      "Kind": 1
+    },
+    {
+      "Id": {
+        "Value": 204
+      },
+      "First": {
+        "Value": 2
+      },
+      "Second": {
+        "Value": 5
+      },
+      "Kind": 1
+    },
+    {
+      "Id": {
+        "Value": 205
+      },
+      "First": {
+        "Value": 3
+      },
+      "Second": {
+        "Value": 6
+      },
+      "Kind": 1
+    },
+    {
+      "Id": {
+        "Value": 206
+      },
+      "First": {
+        "Value": 4
+      },
+      "Second": {
+        "Value": 5
+      },
+      "Kind": 1
+    }
+  ],
+  "Marriages": [],
+  "Inputs": [],
+  "Configuration": {
+    "Version": "SFL-S3-v1"
+  },
+  "Knowledge": [
+    {
+      "Actor": {
+        "Value": 1
+      },
+      "Facts": [
+        {
+          "Id": {
+            "Value": 1000
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 1
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1001
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 2
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1002
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 3
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1003
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 4
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1004
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 5
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1005
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 6
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1006
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 201
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 2
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1007
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 202
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 3
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1008
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 203
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 4
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1009
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 204
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1010
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 205
+              },
+              "First": {
+                "Value": 3
+              },
+              "Second": {
+                "Value": 6
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1011
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 206
+              },
+              "First": {
+                "Value": 4
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        }
+      ]
+    },
+    {
+      "Actor": {
+        "Value": 2
+      },
+      "Facts": [
+        {
+          "Id": {
+            "Value": 1012
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 1
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1013
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 2
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1014
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 3
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1015
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 4
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1016
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 5
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1017
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 6
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1018
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 201
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 2
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1019
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 202
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 3
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1020
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 203
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 4
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1021
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 204
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1022
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 205
+              },
+              "First": {
+                "Value": 3
+              },
+              "Second": {
+                "Value": 6
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1023
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 206
+              },
+              "First": {
+                "Value": 4
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        }
+      ]
+    },
+    {
+      "Actor": {
+        "Value": 3
+      },
+      "Facts": [
+        {
+          "Id": {
+            "Value": 1024
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 1
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1025
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 2
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1026
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 3
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1027
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 4
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1028
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 5
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1029
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 6
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1030
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 201
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 2
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1031
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 202
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 3
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1032
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 203
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 4
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1033
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 204
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1034
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 205
+              },
+              "First": {
+                "Value": 3
+              },
+              "Second": {
+                "Value": 6
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1035
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 206
+              },
+              "First": {
+                "Value": 4
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        }
+      ]
+    },
+    {
+      "Actor": {
+        "Value": 4
+      },
+      "Facts": [
+        {
+          "Id": {
+            "Value": 1036
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 1
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1037
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 2
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1038
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 3
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1039
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 4
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1040
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 5
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1041
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 6
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1042
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 201
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 2
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1043
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 202
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 3
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1044
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 203
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 4
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1045
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 204
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1046
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 205
+              },
+              "First": {
+                "Value": 3
+              },
+              "Second": {
+                "Value": 6
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1047
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 206
+              },
+              "First": {
+                "Value": 4
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        }
+      ]
+    },
+    {
+      "Actor": {
+        "Value": 5
+      },
+      "Facts": [
+        {
+          "Id": {
+            "Value": 1048
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 1
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1049
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 2
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1050
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 3
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1051
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 4
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1052
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 5
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1053
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 6
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1054
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 201
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 2
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1055
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 202
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 3
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1056
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 203
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 4
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1057
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 204
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1058
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 205
+              },
+              "First": {
+                "Value": 3
+              },
+              "Second": {
+                "Value": 6
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1059
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 206
+              },
+              "First": {
+                "Value": 4
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        }
+      ]
+    },
+    {
+      "Actor": {
+        "Value": 6
+      },
+      "Facts": [
+        {
+          "Id": {
+            "Value": 1060
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 1
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1061
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 2
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1062
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 3
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1063
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 4
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1064
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 5
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1065
+          },
+          "Proposition": {
+            "kind": "residence",
+            "Person": {
+              "Value": 6
+            },
+            "Dwelling": {
+              "Value": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1066
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 201
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 2
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1067
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 202
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 3
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1068
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 203
+              },
+              "First": {
+                "Value": 1
+              },
+              "Second": {
+                "Value": 4
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1069
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 204
+              },
+              "First": {
+                "Value": 2
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1070
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 205
+              },
+              "First": {
+                "Value": 3
+              },
+              "Second": {
+                "Value": 6
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        },
+        {
+          "Id": {
+            "Value": 1071
+          },
+          "Proposition": {
+            "kind": "kinship",
+            "Kinship": {
+              "Id": {
+                "Value": 206
+              },
+              "First": {
+                "Value": 4
+              },
+              "Second": {
+                "Value": 5
+              },
+              "Kind": 1
+            }
+          },
+          "Provenance": {
+            "Route": 4,
+            "Origin": {
+              "Source": null,
+              "Event": null,
+              "Order": {
+                "Cycle": 0,
+                "ReactionIndex": 0
+              },
+              "Fixture": "OBS-S3-LOWER-LEVEL"
+            },
+            "Hops": []
+          }
+        }
+      ]
+    }
+  ],
+  "Candidates": [
+    {
+      "Id": {
+        "Value": 1
+      },
+      "Core": [
+        {
+          "Value": 1
+        },
+        {
+          "Value": 2
+        },
+        {
+          "Value": 3
+        }
+      ],
+      "IsLive": true
+    }
+  ]
+}

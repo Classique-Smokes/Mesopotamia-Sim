@@ -1,0 +1,5762 @@
+[
+  {
+    "id": 1,
+    "Cycle": 1,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 2,
+    "Cycle": 1,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 3,
+    "Cycle": 1,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 4,
+    "Cycle": 1,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 5,
+    "Cycle": 1,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 6,
+    "Cycle": 1,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 12,
+        "After": 11,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 7,
+    "Cycle": 1,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 1,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 8,
+    "Cycle": 1,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 2,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 9,
+    "Cycle": 1,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 3,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 10,
+    "Cycle": 1,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 4,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 11,
+    "Cycle": 1,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 5,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 12,
+    "Cycle": 1,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 6,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 13,
+    "Cycle": 1,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 1,
+    "participants": [
+      1
+    ],
+    "causes": [
+      7
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 11,
+        "After": 15,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 14,
+    "Cycle": 1,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 2,
+    "participants": [
+      2
+    ],
+    "causes": [
+      8
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 11,
+        "After": 15,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 15,
+    "Cycle": 1,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 3,
+    "participants": [
+      3
+    ],
+    "causes": [
+      9
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 11,
+        "After": 15,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 16,
+    "Cycle": 1,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 4,
+    "participants": [
+      4
+    ],
+    "causes": [
+      10
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 11,
+        "After": 15,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 17,
+    "Cycle": 1,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 5,
+    "participants": [
+      5
+    ],
+    "causes": [
+      11
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 11,
+        "After": 15,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 18,
+    "Cycle": 1,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 6,
+    "participants": [
+      6
+    ],
+    "causes": [
+      12
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 11,
+        "After": 15,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 19,
+    "Cycle": 2,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 15,
+        "After": 14,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 20,
+    "Cycle": 2,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 15,
+        "After": 14,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 21,
+    "Cycle": 2,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 15,
+        "After": 14,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 22,
+    "Cycle": 2,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 15,
+        "After": 14,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 23,
+    "Cycle": 2,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 15,
+        "After": 14,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 24,
+    "Cycle": 2,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 15,
+        "After": 14,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 25,
+    "Cycle": 2,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 7,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 26,
+    "Cycle": 2,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 8,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 27,
+    "Cycle": 2,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 9,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 28,
+    "Cycle": 2,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 10,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 29,
+    "Cycle": 2,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 11,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 30,
+    "Cycle": 2,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 12,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 31,
+    "Cycle": 2,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 7,
+    "participants": [
+      1
+    ],
+    "causes": [
+      25
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 14,
+        "After": 18,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 32,
+    "Cycle": 2,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 8,
+    "participants": [
+      2
+    ],
+    "causes": [
+      26
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 14,
+        "After": 18,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 33,
+    "Cycle": 2,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 9,
+    "participants": [
+      3
+    ],
+    "causes": [
+      27
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 14,
+        "After": 18,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 34,
+    "Cycle": 2,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 10,
+    "participants": [
+      4
+    ],
+    "causes": [
+      28
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 14,
+        "After": 18,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 35,
+    "Cycle": 2,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 11,
+    "participants": [
+      5
+    ],
+    "causes": [
+      29
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 14,
+        "After": 18,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 36,
+    "Cycle": 2,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 12,
+    "participants": [
+      6
+    ],
+    "causes": [
+      30
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 14,
+        "After": 18,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 37,
+    "Cycle": 3,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 18,
+        "After": 17,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 38,
+    "Cycle": 3,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 18,
+        "After": 17,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 39,
+    "Cycle": 3,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 18,
+        "After": 17,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 40,
+    "Cycle": 3,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 18,
+        "After": 17,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 41,
+    "Cycle": 3,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 18,
+        "After": 17,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 42,
+    "Cycle": 3,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 18,
+        "After": 17,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 43,
+    "Cycle": 3,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 13,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 44,
+    "Cycle": 3,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 14,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 45,
+    "Cycle": 3,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 15,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 46,
+    "Cycle": 3,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 16,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 47,
+    "Cycle": 3,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 17,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 48,
+    "Cycle": 3,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 18,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 49,
+    "Cycle": 3,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 13,
+    "participants": [
+      1
+    ],
+    "causes": [
+      43
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 17,
+        "After": 21,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 50,
+    "Cycle": 3,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 14,
+    "participants": [
+      2
+    ],
+    "causes": [
+      44
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 17,
+        "After": 21,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 51,
+    "Cycle": 3,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 15,
+    "participants": [
+      3
+    ],
+    "causes": [
+      45
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 17,
+        "After": 21,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 52,
+    "Cycle": 3,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 16,
+    "participants": [
+      4
+    ],
+    "causes": [
+      46
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 17,
+        "After": 21,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 53,
+    "Cycle": 3,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 17,
+    "participants": [
+      5
+    ],
+    "causes": [
+      47
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 17,
+        "After": 21,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 54,
+    "Cycle": 3,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 18,
+    "participants": [
+      6
+    ],
+    "causes": [
+      48
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 17,
+        "After": 21,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 55,
+    "Cycle": 4,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 21,
+        "After": 20,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 56,
+    "Cycle": 4,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 21,
+        "After": 20,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 57,
+    "Cycle": 4,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 21,
+        "After": 20,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 58,
+    "Cycle": 4,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 21,
+        "After": 20,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 59,
+    "Cycle": 4,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 21,
+        "After": 20,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 60,
+    "Cycle": 4,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 21,
+        "After": 20,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 61,
+    "Cycle": 4,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 19,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 62,
+    "Cycle": 4,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 20,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 63,
+    "Cycle": 4,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 21,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 64,
+    "Cycle": 4,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 22,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 65,
+    "Cycle": 4,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 23,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 66,
+    "Cycle": 4,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 24,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 67,
+    "Cycle": 4,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 19,
+    "participants": [
+      1
+    ],
+    "causes": [
+      61
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 20,
+        "After": 24,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 68,
+    "Cycle": 4,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 20,
+    "participants": [
+      2
+    ],
+    "causes": [
+      62
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 20,
+        "After": 24,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 69,
+    "Cycle": 4,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 21,
+    "participants": [
+      3
+    ],
+    "causes": [
+      63
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 20,
+        "After": 24,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 70,
+    "Cycle": 4,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 22,
+    "participants": [
+      4
+    ],
+    "causes": [
+      64
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 20,
+        "After": 24,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 71,
+    "Cycle": 4,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 23,
+    "participants": [
+      5
+    ],
+    "causes": [
+      65
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 20,
+        "After": 24,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 72,
+    "Cycle": 4,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 24,
+    "participants": [
+      6
+    ],
+    "causes": [
+      66
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 20,
+        "After": 24,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 73,
+    "Cycle": 5,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 24,
+        "After": 23,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 74,
+    "Cycle": 5,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 24,
+        "After": 23,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 75,
+    "Cycle": 5,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 24,
+        "After": 23,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 76,
+    "Cycle": 5,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 24,
+        "After": 23,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 77,
+    "Cycle": 5,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 24,
+        "After": 23,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 78,
+    "Cycle": 5,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 24,
+        "After": 23,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 79,
+    "Cycle": 5,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 25,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 80,
+    "Cycle": 5,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 26,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 81,
+    "Cycle": 5,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 27,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 82,
+    "Cycle": 5,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 28,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 83,
+    "Cycle": 5,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 29,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 84,
+    "Cycle": 5,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 30,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 85,
+    "Cycle": 5,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 25,
+    "participants": [
+      1
+    ],
+    "causes": [
+      79
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 23,
+        "After": 27,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 86,
+    "Cycle": 5,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 26,
+    "participants": [
+      2
+    ],
+    "causes": [
+      80
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 23,
+        "After": 27,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 87,
+    "Cycle": 5,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 27,
+    "participants": [
+      3
+    ],
+    "causes": [
+      81
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 23,
+        "After": 27,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 88,
+    "Cycle": 5,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 28,
+    "participants": [
+      4
+    ],
+    "causes": [
+      82
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 23,
+        "After": 27,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 89,
+    "Cycle": 5,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 29,
+    "participants": [
+      5
+    ],
+    "causes": [
+      83
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 23,
+        "After": 27,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 90,
+    "Cycle": 5,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 30,
+    "participants": [
+      6
+    ],
+    "causes": [
+      84
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 23,
+        "After": 27,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 91,
+    "Cycle": 6,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 27,
+        "After": 26,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 92,
+    "Cycle": 6,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 27,
+        "After": 26,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 93,
+    "Cycle": 6,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 27,
+        "After": 26,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 94,
+    "Cycle": 6,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 27,
+        "After": 26,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 95,
+    "Cycle": 6,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 27,
+        "After": 26,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 96,
+    "Cycle": 6,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 27,
+        "After": 26,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 97,
+    "Cycle": 6,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 31,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 98,
+    "Cycle": 6,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 32,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 99,
+    "Cycle": 6,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 33,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 100,
+    "Cycle": 6,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 34,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 101,
+    "Cycle": 6,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 35,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 102,
+    "Cycle": 6,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 36,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 103,
+    "Cycle": 6,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 31,
+    "participants": [
+      1
+    ],
+    "causes": [
+      97
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 26,
+        "After": 30,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 104,
+    "Cycle": 6,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 32,
+    "participants": [
+      2
+    ],
+    "causes": [
+      98
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 26,
+        "After": 30,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 105,
+    "Cycle": 6,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 33,
+    "participants": [
+      3
+    ],
+    "causes": [
+      99
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 26,
+        "After": 30,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 106,
+    "Cycle": 6,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 34,
+    "participants": [
+      4
+    ],
+    "causes": [
+      100
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 26,
+        "After": 30,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 107,
+    "Cycle": 6,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 35,
+    "participants": [
+      5
+    ],
+    "causes": [
+      101
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 26,
+        "After": 30,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 108,
+    "Cycle": 6,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 36,
+    "participants": [
+      6
+    ],
+    "causes": [
+      102
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 26,
+        "After": 30,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 109,
+    "Cycle": 7,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 30,
+        "After": 29,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 110,
+    "Cycle": 7,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 30,
+        "After": 29,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 111,
+    "Cycle": 7,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 30,
+        "After": 29,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 112,
+    "Cycle": 7,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 30,
+        "After": 29,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 113,
+    "Cycle": 7,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 30,
+        "After": 29,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 114,
+    "Cycle": 7,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 30,
+        "After": 29,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 115,
+    "Cycle": 7,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 37,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 116,
+    "Cycle": 7,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 38,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 117,
+    "Cycle": 7,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 39,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 118,
+    "Cycle": 7,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 40,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 119,
+    "Cycle": 7,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 41,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 120,
+    "Cycle": 7,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 42,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 121,
+    "Cycle": 7,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 37,
+    "participants": [
+      1
+    ],
+    "causes": [
+      115
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 29,
+        "After": 33,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 122,
+    "Cycle": 7,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 38,
+    "participants": [
+      2
+    ],
+    "causes": [
+      116
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 29,
+        "After": 33,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 123,
+    "Cycle": 7,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 39,
+    "participants": [
+      3
+    ],
+    "causes": [
+      117
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 29,
+        "After": 33,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 124,
+    "Cycle": 7,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 40,
+    "participants": [
+      4
+    ],
+    "causes": [
+      118
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 29,
+        "After": 33,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 125,
+    "Cycle": 7,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 41,
+    "participants": [
+      5
+    ],
+    "causes": [
+      119
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 29,
+        "After": 33,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 126,
+    "Cycle": 7,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 42,
+    "participants": [
+      6
+    ],
+    "causes": [
+      120
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 29,
+        "After": 33,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 127,
+    "Cycle": 8,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 33,
+        "After": 32,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 128,
+    "Cycle": 8,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 33,
+        "After": 32,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 129,
+    "Cycle": 8,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 33,
+        "After": 32,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 130,
+    "Cycle": 8,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 33,
+        "After": 32,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 131,
+    "Cycle": 8,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 33,
+        "After": 32,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 132,
+    "Cycle": 8,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 33,
+        "After": 32,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 133,
+    "Cycle": 8,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 43,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 134,
+    "Cycle": 8,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 44,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 135,
+    "Cycle": 8,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 45,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 136,
+    "Cycle": 8,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 46,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 137,
+    "Cycle": 8,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 47,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 138,
+    "Cycle": 8,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 48,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 139,
+    "Cycle": 8,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 43,
+    "participants": [
+      1
+    ],
+    "causes": [
+      133
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 32,
+        "After": 36,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 140,
+    "Cycle": 8,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 44,
+    "participants": [
+      2
+    ],
+    "causes": [
+      134
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 32,
+        "After": 36,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 141,
+    "Cycle": 8,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 45,
+    "participants": [
+      3
+    ],
+    "causes": [
+      135
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 32,
+        "After": 36,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 142,
+    "Cycle": 8,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 46,
+    "participants": [
+      4
+    ],
+    "causes": [
+      136
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 32,
+        "After": 36,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 143,
+    "Cycle": 8,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 47,
+    "participants": [
+      5
+    ],
+    "causes": [
+      137
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 32,
+        "After": 36,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 144,
+    "Cycle": 8,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 48,
+    "participants": [
+      6
+    ],
+    "causes": [
+      138
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 32,
+        "After": 36,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 145,
+    "Cycle": 9,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 36,
+        "After": 35,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 146,
+    "Cycle": 9,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 36,
+        "After": 35,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 147,
+    "Cycle": 9,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 36,
+        "After": 35,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 148,
+    "Cycle": 9,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 36,
+        "After": 35,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 149,
+    "Cycle": 9,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 36,
+        "After": 35,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 150,
+    "Cycle": 9,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 36,
+        "After": 35,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 151,
+    "Cycle": 9,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 49,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 152,
+    "Cycle": 9,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 50,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 153,
+    "Cycle": 9,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 51,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 154,
+    "Cycle": 9,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 52,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 155,
+    "Cycle": 9,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 53,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 156,
+    "Cycle": 9,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 54,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 157,
+    "Cycle": 9,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 49,
+    "participants": [
+      1
+    ],
+    "causes": [
+      151
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 35,
+        "After": 39,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 158,
+    "Cycle": 9,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 50,
+    "participants": [
+      2
+    ],
+    "causes": [
+      152
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 35,
+        "After": 39,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 159,
+    "Cycle": 9,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 51,
+    "participants": [
+      3
+    ],
+    "causes": [
+      153
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 35,
+        "After": 39,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 160,
+    "Cycle": 9,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 52,
+    "participants": [
+      4
+    ],
+    "causes": [
+      154
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 35,
+        "After": 39,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 161,
+    "Cycle": 9,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 53,
+    "participants": [
+      5
+    ],
+    "causes": [
+      155
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 35,
+        "After": 39,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 162,
+    "Cycle": 9,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 54,
+    "participants": [
+      6
+    ],
+    "causes": [
+      156
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 35,
+        "After": 39,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 163,
+    "Cycle": 10,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 39,
+        "After": 38,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 164,
+    "Cycle": 10,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 39,
+        "After": 38,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 165,
+    "Cycle": 10,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 39,
+        "After": 38,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 166,
+    "Cycle": 10,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 39,
+        "After": 38,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 167,
+    "Cycle": 10,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 39,
+        "After": 38,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 168,
+    "Cycle": 10,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 39,
+        "After": 38,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 169,
+    "Cycle": 10,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 55,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 170,
+    "Cycle": 10,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 56,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 171,
+    "Cycle": 10,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 57,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 172,
+    "Cycle": 10,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 58,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 173,
+    "Cycle": 10,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 59,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 174,
+    "Cycle": 10,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 60,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 175,
+    "Cycle": 10,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 55,
+    "participants": [
+      1
+    ],
+    "causes": [
+      169
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 38,
+        "After": 42,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 176,
+    "Cycle": 10,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 56,
+    "participants": [
+      2
+    ],
+    "causes": [
+      170
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 38,
+        "After": 42,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 177,
+    "Cycle": 10,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 57,
+    "participants": [
+      3
+    ],
+    "causes": [
+      171
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 38,
+        "After": 42,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 178,
+    "Cycle": 10,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 58,
+    "participants": [
+      4
+    ],
+    "causes": [
+      172
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 38,
+        "After": 42,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 179,
+    "Cycle": 10,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 59,
+    "participants": [
+      5
+    ],
+    "causes": [
+      173
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 38,
+        "After": 42,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 180,
+    "Cycle": 10,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 60,
+    "participants": [
+      6
+    ],
+    "causes": [
+      174
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 38,
+        "After": 42,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 181,
+    "Cycle": 11,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 42,
+        "After": 41,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 182,
+    "Cycle": 11,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 42,
+        "After": 41,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 183,
+    "Cycle": 11,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 42,
+        "After": 41,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 184,
+    "Cycle": 11,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 42,
+        "After": 41,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 185,
+    "Cycle": 11,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 42,
+        "After": 41,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 186,
+    "Cycle": 11,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 42,
+        "After": 41,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 187,
+    "Cycle": 11,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 61,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 188,
+    "Cycle": 11,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 62,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 189,
+    "Cycle": 11,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 63,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 190,
+    "Cycle": 11,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 64,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 191,
+    "Cycle": 11,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 65,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 192,
+    "Cycle": 11,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 66,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 193,
+    "Cycle": 11,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 61,
+    "participants": [
+      1
+    ],
+    "causes": [
+      187
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 41,
+        "After": 45,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 194,
+    "Cycle": 11,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 62,
+    "participants": [
+      2
+    ],
+    "causes": [
+      188
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 41,
+        "After": 45,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 195,
+    "Cycle": 11,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 63,
+    "participants": [
+      3
+    ],
+    "causes": [
+      189
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 41,
+        "After": 45,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 196,
+    "Cycle": 11,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 64,
+    "participants": [
+      4
+    ],
+    "causes": [
+      190
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 41,
+        "After": 45,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 197,
+    "Cycle": 11,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 65,
+    "participants": [
+      5
+    ],
+    "causes": [
+      191
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 41,
+        "After": 45,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 198,
+    "Cycle": 11,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 66,
+    "participants": [
+      6
+    ],
+    "causes": [
+      192
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 41,
+        "After": 45,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 199,
+    "Cycle": 12,
+    "ReactionIndex": 0,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 1,
+        "Before": 45,
+        "After": 44,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 200,
+    "Cycle": 12,
+    "ReactionIndex": 1,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 2,
+        "Before": 45,
+        "After": 44,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 201,
+    "Cycle": 12,
+    "ReactionIndex": 2,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 3,
+        "Before": 45,
+        "After": 44,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 202,
+    "Cycle": 12,
+    "ReactionIndex": 3,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 4,
+        "Before": 45,
+        "After": 44,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 203,
+    "Cycle": 12,
+    "ReactionIndex": 4,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 5,
+        "Before": 45,
+        "After": 44,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 204,
+    "Cycle": 12,
+    "ReactionIndex": 5,
+    "Kind": "Consumption",
+    "proposal": null,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [
+      {
+        "person": 6,
+        "Before": 45,
+        "After": 44,
+        "Meaning": "ConsumptionSink"
+      }
+    ],
+    "Detail": "Paid",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": null,
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 205,
+    "Cycle": 12,
+    "ReactionIndex": 6,
+    "Kind": "Proposal",
+    "proposal": 67,
+    "participants": [
+      1
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 206,
+    "Cycle": 12,
+    "ReactionIndex": 7,
+    "Kind": "Proposal",
+    "proposal": 68,
+    "participants": [
+      2
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 207,
+    "Cycle": 12,
+    "ReactionIndex": 8,
+    "Kind": "Proposal",
+    "proposal": 69,
+    "participants": [
+      3
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 208,
+    "Cycle": 12,
+    "ReactionIndex": 9,
+    "Kind": "Proposal",
+    "proposal": 70,
+    "participants": [
+      4
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 209,
+    "Cycle": 12,
+    "ReactionIndex": 10,
+    "Kind": "Proposal",
+    "proposal": 71,
+    "participants": [
+      5
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 210,
+    "Cycle": 12,
+    "ReactionIndex": 11,
+    "Kind": "Proposal",
+    "proposal": 72,
+    "participants": [
+      6
+    ],
+    "causes": [],
+    "material": [],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 211,
+    "Cycle": 12,
+    "ReactionIndex": 12,
+    "Kind": "Farm",
+    "proposal": 67,
+    "participants": [
+      1
+    ],
+    "causes": [
+      205
+    ],
+    "material": [
+      {
+        "person": 1,
+        "Before": 44,
+        "After": 48,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 212,
+    "Cycle": 12,
+    "ReactionIndex": 13,
+    "Kind": "Farm",
+    "proposal": 68,
+    "participants": [
+      2
+    ],
+    "causes": [
+      206
+    ],
+    "material": [
+      {
+        "person": 2,
+        "Before": 44,
+        "After": 48,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 213,
+    "Cycle": 12,
+    "ReactionIndex": 14,
+    "Kind": "Farm",
+    "proposal": 69,
+    "participants": [
+      3
+    ],
+    "causes": [
+      207
+    ],
+    "material": [
+      {
+        "person": 3,
+        "Before": 44,
+        "After": 48,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 214,
+    "Cycle": 12,
+    "ReactionIndex": 15,
+    "Kind": "Farm",
+    "proposal": 70,
+    "participants": [
+      4
+    ],
+    "causes": [
+      208
+    ],
+    "material": [
+      {
+        "person": 4,
+        "Before": 44,
+        "After": 48,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 215,
+    "Cycle": 12,
+    "ReactionIndex": 16,
+    "Kind": "Farm",
+    "proposal": 71,
+    "participants": [
+      5
+    ],
+    "causes": [
+      209
+    ],
+    "material": [
+      {
+        "person": 5,
+        "Before": 44,
+        "After": 48,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  },
+  {
+    "id": 216,
+    "Cycle": 12,
+    "ReactionIndex": 17,
+    "Kind": "Farm",
+    "proposal": 72,
+    "participants": [
+      6
+    ],
+    "causes": [
+      210
+    ],
+    "material": [
+      {
+        "person": 6,
+        "Before": 44,
+        "After": 48,
+        "Meaning": "FarmSource"
+      }
+    ],
+    "Detail": "Farm",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "RulesVersion": "SFL-S2-v1",
+    "TechnicalFallback": false,
+    "action": {
+      "kind": "Farm"
+    },
+    "contributions": [],
+    "transmittedEvidence": [],
+    "acquiredEvidence": []
+  }
+]
