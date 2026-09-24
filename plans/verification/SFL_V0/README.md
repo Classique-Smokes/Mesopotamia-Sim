@@ -67,3 +67,13 @@ Implementation may translate them into executable tests/harness code but may not
 - `SLICE3_ACCEPTANCE_MANIFEST.md` — **FROZEN Slice-3 verification/completion authority**, version `SFL-V0-S3-ACCEPTANCE-v1`, frozen ref `sfl-v0-slice3-acceptance-v1`.
 - `SLICE3_ACCEPTANCE_FREEZE_RECORD.md` — reviewed candidate/frozen SHA identities, final `PASS — MAY FREEZE UNCHANGED`, review lineage, immutability rule, and the conditional S1-084 adaptation trigger.
 - Final fresh review: `research/technical/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW_V3_FINAL.md`.
+
+
+## Slice-4 acceptance applicability
+
+- `SLICE4_ACCEPTANCE_MANIFEST.md` — **FROZEN Slice-4 verification/completion authority**, version `SFL-V0-S4-ACCEPTANCE-v1`, frozen ref `sfl-v0-slice4-acceptance-v1`.
+- `SLICE4_ACCEPTANCE_FREEZE_RECORD.md` — reviewed candidate/frozen identities, final `PASS — MAY FREEZE UNCHANGED`, census, immutability rule, and inherited-verification adaptation gate.
+- Final fresh review: `research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`.
+- Frozen census: **161 unique AcceptanceIds = 150 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**.
+- Exact inherited expansion: **270 REQUIRED = 128 Slice 1 + 46 Slice 2 + 96 Slice 3**.
+- Implementation remains blocked until independent approval of the inherited verification adaptation plan.
