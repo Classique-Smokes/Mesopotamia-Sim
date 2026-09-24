@@ -104,7 +104,18 @@ Semantic-interaction-delta failsafe:
 - independent review: `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md` — **PASS — POLICY READY FOR DIRECTOR PROMOTION**
 - canonical promotion: **COMPLETE / VERIFIED** — `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PROMOTION_RECORD.md`
 - mandatory next gate: Slice-4 SID pilot before any successor Slice-4 acceptance candidate
-- Slice-4 SID pilot status: **PASS A DISPATCHED / MA FRONTIER WITHHELD**
+- SID retrospective screening wave:
+
+- status: **READY FOR PARALLEL DISPATCH**
+- purpose: screen completed Slices 1–3 under SID-ASSURANCE-v1 without automatically reopening them
+- dispatch: `tasks/research/SID_RETRO_SCREEN_SLICES1_3_DISPATCH.md`
+- Slice 1 task: `tasks/research/SID_RETRO_SCREEN_SLICE1.md`
+- Slice 2 task: `tasks/research/SID_RETRO_SCREEN_SLICE2.md`
+- Slice 3 task: `tasks/research/SID_RETRO_SCREEN_SLICE3.md`
+- rule: later-slice semantics may not be projected backward as missing requirements
+- full retro-SID audit occurs only if a screen returns concrete evidence warranting it
+
+Slice-4 SID pilot status: **PASS A DISPATCHED / MA FRONTIER WITHHELD**
   - MA frontier immutable ref: `sfl-v0-slice4-sid-ma-frontier-v1` (do not expose before Pass A freeze)
   - Pass-A dispatch ref: `sfl-v0-slice4-sid-passa-dispatch-v1` @ `179e955e5398f954b56e73f93954a595f75d4653`
   - task: `tasks/research/SFL_V0_SLICE4_SID_PASSA_INDEPENDENT_FRONTIER.md`
