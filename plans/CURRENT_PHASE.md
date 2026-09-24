@@ -104,6 +104,11 @@ Semantic-interaction-delta failsafe:
 - independent review: `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md` — **PASS — POLICY READY FOR DIRECTOR PROMOTION**
 - canonical promotion: **COMPLETE / VERIFIED** — `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PROMOTION_RECORD.md`
 - mandatory next gate: Slice-4 SID pilot before any successor Slice-4 acceptance candidate
+- Slice-4 SID pilot status: **PASS A DISPATCHED / MA FRONTIER WITHHELD**
+  - MA frontier immutable ref: `sfl-v0-slice4-sid-ma-frontier-v1` (do not expose before Pass A freeze)
+  - Pass-A dispatch ref: `sfl-v0-slice4-sid-passa-dispatch-v1` @ `179e955e5398f954b56e73f93954a595f75d4653`
+  - task: `tasks/research/SFL_V0_SLICE4_SID_PASSA_INDEPENDENT_FRONTIER.md`
+  - next after return: verify report-only branch -> pin Pass-A report -> reveal MA frontier for Pass B
 - Slice-4 implementation remains **DIRECTOR BLOCKED** until pilot + successor acceptance + inherited-adaptation gates close
 
 Private-resource supplementation semantic patch:
