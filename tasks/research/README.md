@@ -4,6 +4,8 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
+- `SFL_V0_SLICE4_SID_PASSB_NEGATIVE_SPACE_CHALLENGE.md` — **READY FOR DISPATCH / SID PASS B**. Pass A is immutably frozen; reviewer now sees MA frontier + justified union and returns 3–7 concrete negative-space histories/questions without resolving semantics.
+
 - `SID_RETRO_SCREEN_SLICES1_3_DISPATCH.md` — **READY FOR PARALLEL DISPATCH**. Three independent retrospective SID screens for completed Slices 1–3; screen first, reopen only on concrete evidence.
 
 - `SFL_V0_SLICE4_SID_PASSA_INDEPENDENT_FRONTIER.md` — **READY FOR DISPATCH / SID PASS A**. Fresh reviewer independently maps the Slice-4 interaction frontier before seeing the Master Architect frontier. Return must be report-only and frozen before Pass B.
