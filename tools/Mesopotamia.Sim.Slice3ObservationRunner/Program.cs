@@ -157,10 +157,13 @@ Mode B1 uses exactly one manifest-authorized controlled pre-existing provision c
         run.Step("p4-exits", (4, new EndHouseholdParticipation(h)));
         run.Step("p5-terminal-exit", (5, new EndHouseholdParticipation(h)));
 
-        KnownFact dissolved = run.Sim.EpistemicStateOf(P(5)).Facts
-            .Last(f => f.Proposition is HouseholdExistenceFact fact && fact.Household == h && !fact.Continues);
-        run.Step("communicate-dissolution-fact-p5-to-p4",
-            (5, new CommunicateClaim(P(4), new HeldFact(dissolved.Id))));
+        KnownFact? dissolved = run.Sim.EpistemicStateOf(P(5)).Facts
+            .LastOrDefault(f => f.Proposition is HouseholdExistenceFact fact && fact.Household == h && !fact.Continues);
+        if (dissolved is not null)
+            run.Step("communicate-dissolution-fact-p5-to-p4",
+                (5, new CommunicateClaim(P(4), new HeldFact(dissolved.Id))));
+        else
+            run.RecordUnavailable("communicate-dissolution-fact-p5-to-p4", "P5HeldNoDissolutionFactAtDeclaredStep");
 
         run.Save();
         WriteJson(Path.Combine(directory, "NARRATIVE_IDENTIFIERS.json"), new
@@ -344,6 +347,18 @@ Mode B1 uses exactly one manifest-authorized controlled pre-existing provision c
             });
             Sim.DeclareCandidate(candidate);
             CaptureCheckpoint(label);
+        }
+
+        internal void RecordUnavailable(string label, string reason)
+        {
+            schedule.Add(new
+            {
+                label,
+                cycle = Sim.Snapshot.Cycle,
+                kind = "DeclaredActionUnavailable",
+                reason
+            });
+            CaptureCheckpoint(label + "-unavailable");
         }
 
         internal void SupplyProvisionFixture(string label, PersonId person, HouseholdId household, ProvisionFixtureProvenance provenance)
