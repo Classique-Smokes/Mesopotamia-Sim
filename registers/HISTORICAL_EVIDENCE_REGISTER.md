@@ -12,11 +12,11 @@ Use qualitative confidence tied to the recorded evidence, e.g. `LOW / MODERATE /
 
 ## Active evidence intake
 
-`RES-0001 — Old Babylonian Nippur Household Foundations` has received all eight auxiliary returns (A–H). They remain advisory. `RES-0001R` is prepared as a specialized reconciliation task to deduplicate shared underlying sources, preserve disagreement, and produce compact register-ready candidates. No claim becomes a canonical `HE-` entry until Master Architect review after that reconciliation.
+`RES-0001 — Old Babylonian Nippur Household Foundations` has received all eight auxiliary returns (A–H), and the independently re-derived `RES-0001R` reconciliation is **COMPLETE / RE-DERIVED / ADVISORY**. The reconciliation supplies **43 `HEC-` candidates** after source-level deduplication, dispute/quarantine preservation, and source-access/generalization controls. Reconciliation availability therefore no longer blocks historical-evidence review. `HEC-` identifiers are reconciliation candidates only; no candidate becomes a canonical `HE-` entry without a separate Master Architect promotion review.
 
 ## Current register
 
-No project-specific historical evidence claims have yet been accepted into this register. The references named in the Seed remain founding context and should be entered here only when bounded research analyzes specific claims from them.
+No project-specific historical evidence claims have yet been accepted into this register. The references named in the Seed remain founding context and should be entered here only when bounded research analyzes specific claims from them. RES-0001R now makes 43 `HEC-` candidates available for a future Master Architect historical-evidence promotion review; none is automatically a canonical `HE-` entry.
 
 ## Entry template
 
