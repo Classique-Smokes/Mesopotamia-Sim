@@ -220,6 +220,53 @@ None are valid household-role actions.
 
 Equivalent person-person proposals may still be available through ordinary personal agency where independently permitted.
 
+
+---
+
+## VS-SFL-067 — Valid last act before authority destruction
+
+**Level:** closed-loop / same-cycle authority race  
+**Semantic source:** SPEC §9.2 + DEC-0010.
+
+### Initial state
+
+Active H with current head A and sufficient valid backing for one in-scope Household action.
+
+From the same committed decision snapshot, construct paired accepted attempts such that:
+
+- one is an otherwise-valid authority-dependent Household action under A; and
+- the other would destroy the exact current authority/status required by that action.
+
+Exercise at minimum:
+
+1. A's accepted participation end -> head vacancy;
+2. valid A -> B succession;
+3. accepted participation/status transition that would make H Inactive/Dissolved;
+4. a role/appointment transition whose required current participant/status would otherwise be removed by the paired destructive transition.
+
+### Assertions
+
+For each pair:
+
+1. resolve the authority/status-dependent attempt before the paired authority/status-destroying transition;
+2. immediately revalidate every other action-relevant precondition normally;
+3. preserve any more-specific accepted semantic/domain priority;
+4. if the protected attempt remains otherwise valid, it commits under the still-current authority/status;
+5. the destructive transition then resolves normally;
+6. a pending old-head action never rebinds to successor B;
+7. technical ID, proposal/container order, and generic technical fallback do not determine the authority result;
+8. reversing nonsemantic input/proposal enumeration does not change the semantic result.
+
+### Negative controls
+
+- make one independent non-authority precondition fail before commit -> the protected attempt must still fail ordinary revalidation;
+- make the attempt authority-invalid already at the committed decision snapshot -> DEC-0010 does not revive it;
+- introduce a more-specific accepted semantic priority that blocks the attempt -> DEC-0010 does not override that priority.
+
+### Scope note
+
+This card proves the narrow v0 precedence only. It does not create general resignation, contested succession, multiple claimants, or office sovereignty.
+
 ## Family semantic mutants that must be detected
 
 - auto-elect lowest/highest stable ID when headless;
@@ -230,4 +277,7 @@ Equivalent person-person proposals may still be available through ordinary perso
 - household context consumes P's personal initiative;
 - personal context sees effects proposed by H in the same cycle before central resolution;
 - household score reuses P's personal score;
-- head directly mutates participant grain/residence/relations outside scoped actions.
+- head directly mutates participant grain/residence/relations outside scoped actions;
+- same-cycle authority-destroying transition preempts an otherwise-valid accepted authority-dependent last act contrary to DEC-0010;
+- old-head action is rebound to the successor;
+- proposal/container/stable-ID order silently decides the authority race.
