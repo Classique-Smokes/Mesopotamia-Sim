@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 DISCOVERY RECONCILED / PENDING DIRECTOR LATER-04 DECISION.**
+**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / DEC-0010 PROMOTION / SLICE 4 ACCEPTANCE DRAFTING ACTIVE.**
 
 Verified Slice-1 completion:
 
@@ -75,10 +75,11 @@ Slice-4 discovery reconciliation:
 - implementation surface return: `research/technical/SFL_V0_SLICE4_IMPLEMENTATION_SURFACE_MAP.md`
 - verification trigger return: `research/technical/SFL_V0_SLICE4_VERIFICATION_TRIGGER_MAP.md`
 - MA reconciliation: `research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`
-- LATER-04 Director proposal: `proposals/SFL_V0_SLICE4_LATER_04_AUTHORITY_RACE_DECISION.md`
+- LATER-04: **CLOSED by DEC-0010 — authority-use before authority destruction**
+- accepted decision: `decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`
 - LATER-05: **CLOSED by already accepted authority**
-- acceptance draft: ready after/around decision; freeze blocked until LATER-04 approval
-- coding status: **NOT AUTHORIZED**
+- acceptance drafting: **AUTHORIZED**
+- acceptance freeze/coding: **NOT YET AUTHORIZED** pending independent pre-code review + freeze + inherited structural-adaptation closure
 
 Slice-4 preimplementation discovery:
 
@@ -281,11 +282,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Project Director resolves `proposals/SFL_V0_SLICE4_LATER_04_AUTHORITY_RACE_DECISION.md` — choose bounded authority-use-before-destruction or authority-destruction-before-use semantics.
-2. Master Architect promotes the approved LATER-04 rule losslessly into SPEC + canonical verification + deferred-gap ledger.
-3. Draft the complete Slice-4 acceptance/applicability candidate using the reconciled discovery map.
-4. Run independent pre-code review; repair if needed; freeze Slice-4 acceptance authority only on PASS.
-5. Close inherited Slice-3 structural-test adaptations losslessly where later Slice-4 types/state make literal absence/field-count witnesses obsolete.
-6. Only after freeze and adaptation closure, issue the bounded Slice-4 implementation packet.
+1. Draft the complete Slice-4 acceptance/applicability candidate from promoted DEC-0010 + accepted SPEC/verification + reconciled discovery.
+2. Commission fresh independent pre-code review against the exact candidate commit/blob.
+3. Repair the candidate if review finds omission/overreach; freeze only the exact independently accepted content.
+4. Close inherited Slice-3 structural-test adaptations losslessly where later Slice-4 types/state make literal absence/field-count witnesses obsolete.
+5. Only after acceptance freeze and adaptation closure, issue the bounded Slice-4 implementation packet.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.

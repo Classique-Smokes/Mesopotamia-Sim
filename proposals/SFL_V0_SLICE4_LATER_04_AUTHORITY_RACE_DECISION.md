@@ -1,10 +1,10 @@
 # Slice 4 / LATER-04 — Same-Cycle Authority-Destruction Decision
 
-**Status:** DIRECTOR DECISION REQUIRED / PROPOSAL ONLY  
+**Status:** ACCEPTED / PROMOTED BY DEC-0010  
 **Date:** 2026-09-24  
 **Trigger:** Slice 4 representative/head-role implementation  
 **Source reconciliation:** `research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`  
-**Authority:** none until explicitly accepted by the Project Director.
+**Authority:** historical proposal record; accepted decision is `decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`.
 
 ## Question
 
@@ -96,3 +96,16 @@ After explicit approval, the Master Architect must promote the chosen rule lossl
 - Slice-4 acceptance/applicability authority.
 
 Only then may Slice-4 acceptance freeze proceed.
+
+
+## Director disposition
+
+The Project Director explicitly selected **Option A — authority-use before authority destruction** on 2026-09-24:
+
+> Let them perform the last valid act before leaving. For sure.
+
+Canonical accepted decision:
+
+`decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`
+
+This proposal is retained as decision lineage. DEC-0010 and the promoted SPEC/verification language are controlling authority.

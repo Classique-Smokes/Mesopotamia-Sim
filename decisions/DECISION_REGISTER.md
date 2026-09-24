@@ -25,6 +25,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0007 | Reference Simulation Kernel | ACCEPTED | Architectural | 2026-09-20 | 2026-09-20 | `DEC-0007_REFERENCE_SIMULATION_KERNEL.md` |
 | DEC-0008 | Host Runtime | ACCEPTED | Architectural | 2026-09-21 | 2026-09-21 | `DEC-0008_HOST_RUNTIME.md` |
 | DEC-0009 | Layered Master Architect Rulebook Refactor | ACCEPTED | Constitutional | 2026-09-21 | 2026-09-22 | `DEC-0009_MASTER_ARCHITECT_RULEBOOK_REFACTOR.md` |
+| DEC-0010 | Slice-4 Authority Use Before Authority Destruction | ACCEPTED | Architectural / social-semantic | 2026-09-24 | 2026-09-24 | `DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md` |
 
 ## Accepted summaries
 
@@ -37,6 +38,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 - **DEC-0007:** the first laboratory uses a single-process deterministic reference kernel with proposal/commit mutation, stable cycle-state publication after reaction closure, explicit process state, simulation-owned randomness boundaries, semantic history, and complete continuation checkpoints.
 - **DEC-0008:** the first laboratory uses C# 14 / .NET 10 LTS as its host runtime.
 - **DEC-0009:** the Master Architect rulebook uses a compact constitutional core that routes consequence-triggered work to single-owner protocols, templates/checklists, and mechanical enforcement where mature.
+- **DEC-0010:** in bounded Slice-4 same-cycle races, an otherwise-valid accepted action/role transition may perform its valid last act before an accepted transition destroys the head/Household authority or institutional status it depends on; no rebinding or technical-ID authority is introduced.
 
 ## Entry template
 

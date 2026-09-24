@@ -246,6 +246,38 @@ The following accepted provenance properties are already canonically exercised i
 
 This card requires those tests to remain part of the Stage-3 resolution/information acceptance set; do not duplicate their oracle using production recognition code.
 
+
+---
+
+## VS-SFL-077 — Authority-use precedence before authority destruction
+
+**Level:** cross-family resolution precedence  
+**Semantic source:** SPEC §9.2 + DEC-0010.  
+**Primary detailed witness:** `HEAD_ROLE_AND_DUAL_MODE_FAMILY.md#VS-SFL-067`.
+
+### Claim
+
+When an otherwise-valid accepted action/role transition and an accepted same-cycle transition arise from the same committed snapshot, and the latter would destroy the exact head/Household authority or institutional status the former still requires, the authority/status-dependent attempt resolves first.
+
+### Assertions
+
+- the protected attempt still undergoes immediate precommit revalidation for all other preconditions;
+- more-specific semantic/domain priorities remain controlling;
+- after the protected attempt resolves, the authority/status-destroying transition resolves normally;
+- no pending action is rebound to a successor;
+- an invalid-at-snapshot action is not revived;
+- technical IDs, proposal order, collection order, and generic fallback do not select the precedence;
+- nonsemantic enumeration permutations preserve the same semantic history modulo technical identities.
+
+### Regression boundary
+
+This precedence is distinct from:
+
+- Slice-3 continuity bridge-handoff priority;
+- provision support > other Household provision > ordinary personal transfer;
+- Residence conflict;
+- generic equal-priority technical fallback.
+
 ## Family semantic mutants that must be detected
 
 - map every failed request to "rejected";
@@ -257,4 +289,7 @@ This card requires those tests to remain part of the Stage-3 resolution/informat
 - resolve same-person Residence conflicts by container/proposal iteration order or allow multiple Residence commits;
 - fire one automatic cause twice;
 - clamp independent direct attitude causes one-by-one so queue order changes bounded result;
-- publish/checkpoint completed cycle state before reaction closure.
+- publish/checkpoint completed cycle state before reaction closure;
+- resolve an authority-destroying transition before the valid accepted authority-dependent last act protected by DEC-0010;
+- rebind an old-head action to a successor;
+- use technical ID/order as an authority-precedence rule.
