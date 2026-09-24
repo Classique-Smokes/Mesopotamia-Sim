@@ -165,4 +165,177 @@
 - **Evidence character:** DIRECT LEGAL EVIDENCE
 - **Disagreements / variant readings:** Ages, prior maternal history, residence, and some wording await a current critical check; the sale provision is conditional and not evidence that it was carried out.
 - **Confidence:** **HIGH for constituted relationship and stated terms**
-- 
+- **Confidence rationale:** The relationship and support/property clauses are explicit in the published instrument.
+- **Limits on generalization:** No universal adoption/marriage procedure, no residence inference, and no claim that all repudiation led to sale.
+- **Relevance to simulation questions (descriptive only):** Shows a created kin relation linked to support and estate provisions.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0011 — PBS 8/2, 116 links sibling kinship, religious title, maintenance, inheritance conditions, and a female witness
+
+- **Claim / proposition:** PBS 8/2, 116 identifies Bēltani as sister and LUKUR/nadītu of Ninurta, obligates four named brothers/heirs to maintain her, attaches inheritance consequences and a lifetime field-alienation restriction to that arrangement, and names Unnubtum, another nadītu of Ninurta, as a witness.
+- **Period / date range:** Rīm-Sîn 50, month II.
+- **Geography / archive / context:** Nippur; CBS 07112; P262151; tablet and envelope are parallel witnesses to one agreement, not two transactions.
+- **Underlying primary evidence:** PBS 8/2, 116 = CBS 07112 = P262151; tablet obv. 1–13 and rev. clauses; envelope parallel.
+- **Relevant secondary scholarship:** Stone 1982 on nadītu women; Richardson 2012 provides a separate women-as-witness discussion; the narrow clauses are available in the digital edition based on Chiera 1922.
+- **RES-0001 source returns:** B, D, H.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** The exact field-reference interpretation remains open; actual maintenance performance and shared residence are not established.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** The named relations, title, obligation, restriction, and witness role are explicit in the edited tablet/envelope.
+- **Limits on generalization:** One sibling group and one witness; no citywide rule for maintenance, titled women, inheritance, or residence.
+- **Relevance to simulation questions (descriptive only):** Shows multiple simultaneous but non-identical kinship, institutional, entitlement, and witness roles.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0012 — SAOC 44, 1 combines marriage with affiliation of a wife’s three children
+
+- **Claim / proposition:** SAOC 44, 1 combines a new marriage with the affiliation of the wife’s three children; its interpretation as a widow’s remarriage is a secondary reconstruction rather than a directly verified clause in this reconciliation.
+- **Period / date range:** Rīm-Sîn 30, month VII (c. 1793 BCE in return B).
+- **Geography / archive / context:** Nippur TA 180 XI foundation; 3N-T 852; IM 58763; P224324.
+- **Underlying primary evidence:** SAOC 44, 1 (P224324); Stone 1987 Appendix IV; concordance to MC 3, 14.
+- **Relevant secondary scholarship:** Stol 2012, p. 145 n. 67, citing Stone and Owen 1991, pp. 49–50.
+- **RES-0001 source returns:** B.
+- **Evidence character:** MIXED: DIRECT DOCUMENT + SECONDARY LIFE-STAGE INTERPRETATION
+- **Disagreements / variant readings:** Widowhood is mediated through scholarship; ages, residence sequence, and the modern edition were not independently verified in return B.
+- **Confidence:** **MODERATE**
+- **Confidence rationale:** Marriage/child affiliation is catalogued, but the widow-remarriage framing depends on secondary concordance and an unread modern edition.
+- **Limits on generalization:** One relationship transition; not a standard widowhood or step-parenting pattern.
+- **Relevance to simulation questions (descriptive only):** Provides a bounded example of marriage linked to pre-existing children.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0013 — Adoption instruments can link heirship/property to lifetime support obligations
+
+- **Claim / proposition:** Two inspected Nippur adoption instruments combine heirship or property arrangements with obligations to provide support during the adopter’s lifetime.
+- **Period / date range:** Lipit-Enlil d and Rīm-Sîn I 43.
+- **Geography / archive / context:** Ur-Lumma/Lu-Bau and Narāmtum/Ur-Pabilsaga records from Nippur-attributed legal corpora.
+- **Underlying primary evidence:** OECT 8, 20 = MC 3, 23 = P283648, rev. 3–8; TMH 10, 6 = P504399, obv. 18–rev. 1.
+- **Relevant secondary scholarship:** Stone and Owen 1991; Goddeeris 2016; Van Wyk 2019a; Földi 2019 where cited in return C.
+- **RES-0001 source returns:** C.
+- **Evidence character:** DIRECT EVIDENCE + CROSS-CASE SYNTHESIS
+- **Disagreements / variant readings:** Actual support delivery, adopter age, childlessness, and co-residence are not established by the clauses.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** Two different dossiers independently contain the same narrow legal linkage.
+- **Limits on generalization:** Not a universal purpose of adoption and not a frequency estimate.
+- **Relevance to simulation questions (descriptive only):** Documents succession relationships with continuing personal obligations.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0014 — Narāmtum’s adoption instrument records a paternal gift history for her assets
+
+- **Claim / proposition:** TMH 10, 6 identifies Narāmtum as a nadītu/lukur of Lugal-aba and records that assets used in her adoption arrangement with Ur-Pabilsaga had been given to her by her father.
+- **Period / date range:** Rīm-Sîn I 43, month VIII.
+- **Geography / archive / context:** Nippur; Narāmtum dossier; female religious-status property holder and male adoptee.
+- **Underlying primary evidence:** TMH 10, 6 = P504399 = HS 2213, obv. 1–17.
+- **Relevant secondary scholarship:** Goddeeris 2016; Van Wyk 2019a; Földi 2019, p. 251.
+- **RES-0001 source returns:** C.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** The text identifies a paternal gift, not necessarily an inheritance at the father’s death; damaged dependent-person labels remain qualified.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** Adopter identity, title, and gift attribution are explicit in the instrument.
+- **Limits on generalization:** One titled woman and one property history; no universal gender/property rule.
+- **Relevance to simulation questions (descriptive only):** Shows a documented female property history feeding into an intergenerational legal arrangement.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0015 — Narāmtum’s earlier adoption remained consequential in a later estate division
+
+- **Claim / proposition:** Narāmtum’s adoption of Ur-Pabilsaga was invoked in a later estate division involving Ur-Pabilsaga and Narubtum, and that later division allocated distinct property shares including named enslaved persons.
+- **Period / date range:** Rīm-Sîn I 43 to Samsu-iluna 4, month X, day 21.
+- **Geography / archive / context:** Nippur; Narāmtum–Ur-Pabilsaga–Narubtum dossier.
+- **Underlying primary evidence:** TMH 10, 6 (P504399); TMH 10, 18a (P504411); BE 6/2, 23 = TMH 10, 18b (P453321); associated envelope witness.
+- **Relevant secondary scholarship:** Goddeeris 2016; Földi 2019; Van Wyk 2019a.
+- **RES-0001 source returns:** C; overlaps the same BE 6/2, 23 evidence discussed by A/D/E.
+- **Evidence character:** DIRECT DOSSIER EVIDENCE + LONGITUDINAL SYNTHESIS
+- **Disagreements / variant readings:** Intermediate archive coverage is incomplete; all-property versus older one-third readings and stronger co-ownership reconstructions remain disputed.
+- **Confidence:** **HIGH for the linked endpoints; MODERATE for the fuller dossier reconstruction**
+- **Confidence rationale:** The adoption and later division are textually linked, but intermediate social/property history is reconstructed.
+- **Limits on generalization:** No continuous co-residence, complete genealogy, or uninterrupted ownership sequence follows.
+- **Relevance to simulation questions (descriptive only):** Shows durable legal consequences across a later redistribution episode.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0016 — BE 6/2, 28 combines living allocation, conditional heirship, and annual support
+
+- **Claim / proposition:** BE 6/2, 28 records a living father’s division together with conditional heirship/property consequences and an annual support obligation.
+- **Period / date range:** Samsu-iluna 8, month III.
+- **Geography / archive / context:** Nippur; Ipquša–Ea-turam–Ea-tayar instrument; CBS 11173; P266334.
+- **Underlying primary evidence:** BE 6/2, 28 = CBS 11173 = P266334, obv. 7–18 and rev. 1–8.
+- **Relevant secondary scholarship:** Poebel 1909 edition; no additional theory is required for the narrow clause combination.
+- **RES-0001 source returns:** E, H.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** Obv. 9 is damaged; actual delivery/performance and broader motives are not established.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** Allocation, conditional inheritance, and annual support coexist explicitly in one document.
+- **Limits on generalization:** One instrument; not a universal succession/support regime.
+- **Relevance to simulation questions (descriptive only):** Separates property allocation, affiliation, obligation, and realized performance.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0017 — An adoptive heirship relationship could be judicially terminated with future claims excluded
+
+- **Claim / proposition:** SAOC 44, 24 records judges directing the termination of Ilī-u-Šamaš’s heirship and a no-claim instrument extending the exclusion to his heirs.
+- **Period / date range:** Undated Old Babylonian record; absolute date unresolved in the supplied return.
+- **Geography / archive / context:** Nippur; Ilī-u-Šamaš, Mārti-erṣetim, and adopter Amurrum-šēmi; 3N-T0873; P224339.
+- **Underlying primary evidence:** SAOC 44, 24 = P224339 = IM 058783, obv. 14–rev. 3, with damaged prior narrative obv. 1–13.
+- **Relevant secondary scholarship:** Stone 1987; Meinhold 2020 collations incorporated in the consulted digital text.
+- **RES-0001 source returns:** C.
+- **Evidence character:** DIRECT JUDICIAL/LEGAL EVIDENCE
+- **Disagreements / variant readings:** Narrative damage remains; the reported twenty years do not establish age at adoption; debt motive and later compliance are not independently verified.
+- **Confidence:** **HIGH for the judicial instruction and no-claim scope**
+- **Confidence rationale:** The revised text directly records termination and future-claim exclusion.
+- **Limits on generalization:** One case; no revocation frequency and no claim that every social tie ended.
+- **Relevance to simulation questions (descriptive only):** Provides a documented rupture within an adoptive succession relationship.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0018 — BE 6/2, 57 protects specified office/property claims within an adoption arrangement
+
+- **Claim / proposition:** BE 6/2, 57 records an adoption in which specified office/property rights of the adoptee are protected against claims by a named adoptive brother.
+- **Period / date range:** Samsu-iluna 22, month VI, day 16.
+- **Geography / archive / context:** Nippur; Tab-balatu/Beltia, adoptee Habil-ahi, and named brother Ninurta-gamil; Istanbul 1995; P283605.
+- **Underlying primary evidence:** BE 6/2, 57; Poebel 1909, pp. 30–31; catalogue p. 152.
+- **Relevant secondary scholarship:** Stone and Owen 1991 is a later re-edition lead; Yamada 2011 only supplies a comparative pointer and is not Nippur evidence.
+- **RES-0001 source returns:** G; E uses the document only as a conditional-language parallel.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** The later re-edition was not directly read; the relationship to Ablum and whether adoption transferred cultic qualification/duty remain unresolved.
+- **Confidence:** **MODERATE**
+- **Confidence rationale:** The property/no-claim clauses are explicit in the early edition, while some prosopographic and institutional interpretation remains unchecked.
+- **Limits on generalization:** One adoption arrangement; not a general adoption motive or rule of priestly qualification.
+- **Relevance to simulation questions (descriptive only):** Shows created kinship alongside protected pre-existing rights.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0019 — BE 6/2, 24 contains a conditional sale/enslavement sanction, not a recorded performance
+
+- **Claim / proposition:** BE 6/2, 24 stipulates sale following adoptees’ repudiation of their adoptive parents; the instrument does not report that the repudiation or sale actually occurred.
+- **Period / date range:** Samsu-iluna 4, month XI.
+- **Geography / archive / context:** Nippur; Ea-idinnam, Kuritum, Ili-idinnam, and Ili-ummati; CBS 10891; P266084.
+- **Underlying primary evidence:** BE 6/2, 24; Poebel 1909, pp. 27–29; catalogue p. 148.
+- **Relevant secondary scholarship:** Poebel’s translation distinguishes completed adoption from future breach conditions; BE 6/2, 57 supplies only a parallel conditional structure.
+- **RES-0001 source returns:** E.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** No enforcement event is documented and the clause does not establish prior enslaved status.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** The conditional syntax is distinct from the completed legal act in the same agreement.
+- **Limits on generalization:** Not a citywide punishment rule and not evidence that every breach was enforced.
+- **Relevance to simulation questions (descriptive only):** Separates prospective sanction from realized status change.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0020 — SAOC 44, 53 distinguishes release/manumission, continuing lifetime service, and later status claims
+
+- **Claim / proposition:** SAOC 44, 53 is a manumission-related instrument in which release is temporally qualified by continuing lifetime service and by restrictions on heirs’ later slave-status claims; the record does not establish a subsequent residential move.
+- **Period / date range:** Rīm-Sîn 51, month VIII.
+- **Geography / archive / context:** Nippur; Ur-dulkuga instrument; TA 179 XA-1 / 3N-T 845 / IM 58756; P224357.
+- **Underlying primary evidence:** SAOC 44, 53 (P224357), obv. 4–16; Stone 1987 catalogue.
+- **Relevant secondary scholarship:** Stone 1987 indexes the act as a freeing/manumission.
+- **RES-0001 source returns:** B, H.
+- **Evidence character:** MIXED: EDITED TEXT + CATALOGUE INTERPRETATION
+- **Disagreements / variant readings:** The release expression is restored and queried; another clause is damaged. Residence after the status change is not specified.
+- **Confidence:** **MODERATE**
+- **Confidence rationale:** The temporal/service distinction is supported by surviving clauses, but the key release expression is partly restored.
+- **Limits on generalization:** One damaged instrument; not unrestricted freedom, a general law, or a typical freed-person trajectory.
+- **Relevance to simulation questions (descriptive only):** Separates juridical status, service obligation, inheritance claims, and residence.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0021 — BE 6/2, 8 records paid manumission and future-claim protection, with qualified Nippur provenance
+
+- **Claim / proposition:** BE 6/2, 8 records Ištar-rabiat’s manumission, a ten-shekel payment to Duššubtum, and protection against named heirs’ future claims; its use as Nippur evidence requires an explicit provenance qualification.
+- **Period / date range:** Rīm-Sîn I 51, month V.
+- **Geography / archive / context:** CBS 9183; P264577; probable Nippur documentary origin but conflicting historical find attribution and no secure house/locus.
+- **Underlying primary evidence:** BE 6/2, 8; Poebel 1909, pp. 38–39; CDLI object metadata as cited in return E.
+- **Relevant secondary scholarship:** Return E’s source-critical comparison of catalogue/provenance information.
+- **RES-0001 source returns:** E.
+- **Evidence character:** DIRECT LEGAL EVIDENCE WITH PROVE
