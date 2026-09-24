@@ -92,7 +92,13 @@ public sealed partial class Simulation
         EpistemicState transaction = epistemic.Copy();
         transaction.Receive(proposal.Actor, communication.Recipient, payload, delivery);
         SemanticEvent recorded = Record(delivery.Kind, proposal.Id, delivery.Participants, delivery.Causes, [], delivery.Detail, fallback);
-        events[^1] = recorded with { Action = communication, TransmittedEvidence = payload };
+        events[^1] = recorded with
+        {
+            Action = communication,
+            TransmittedEvidence = payload,
+            AcquiredEvidence = [.. transaction.Of(communication.Recipient).Facts.Where(f =>
+                f.Provenance.Hops.LastOrDefault()?.Event == delivery.Id).Select(f => new AcquiredFact(communication.Recipient, f))]
+        };
         epistemic = transaction;
         return events[^1];
     }

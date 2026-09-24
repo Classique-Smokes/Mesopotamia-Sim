@@ -63,3 +63,12 @@ Before IMP-0001 can be VERIFIED COMPLETE:
 `HouseholdWarrantOracle.cs` completes the independent formation, exit-continuation and lineage checks alongside `HouseholdOracle.cs`. Both files are covered by the dependency audit. Candidate declarations are passed as laboratory inputs; expected Recognition predicates and historical warrant checks do not call production classifiers.
 
 `HouseholdRepairV3Scenarios.cs` adds 63 detached corruptions with four valid controls, eight disconnected-Household compatible-loan permutations, and six positive capacity/communication/favour-debt fallback runs. `slice3-repair-v3-controls.json` records each named result and is included in the canonical CI acceptance artifact. All frozen manifests and the inherited S1-084 structural audit remain unchanged.
+
+
+## IMP-0003 repair-v4 evidence
+
+`HouseholdProjection.cs` compares Household-connected detached commits using boundary-preserving causal identities for newly allocated ordinary relations, events, evidence and embedded factual payloads. It retains Household/warrant/association identities, action outcomes, communication hops and subject-relevant evidence precedence. Own-state refreshes name the accumulated material causes, so the incidental last compatible transfer is not treated as their sole origin.
+
+The independent Household oracle reconstructs stable lifecycle publications and verifies exact event/time, Household, state, causes, participants and rules/configuration. `SemanticEvent.AcquiredEvidence` contains observer-only receipts for direct Household evidence and retained communication acquisitions. The checker derives their content/provenance from actual causal events and delivery payloads, replays Household evidence retention, checks exact stable held IDs, and binds same-cycle warrant bases to those receipts. It does not call production classifiers or use another warrant's basis as the identity oracle.
+
+`HouseholdRepairV4Scenarios.cs` adds eight connected-loan permutations, four ordinary favour/marriage allocation controls, six connected positive-fallback controls, 21 lifecycle corruptions with four valid lifecycle controls, and three fabricated Recognition ID corruptions including same-cycle handoff and communication. The canonical artifact includes every named outcome in `slice3-repair-v4-controls.json`. All earlier repairs, frozen manifests and S1-084 structural evidence remain unchanged.

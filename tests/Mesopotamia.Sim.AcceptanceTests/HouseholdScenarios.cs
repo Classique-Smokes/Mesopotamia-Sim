@@ -263,6 +263,7 @@ internal sealed partial class HouseholdScenarios
         foreach (HouseholdCase c in AdversarialCases()) yield return c;
         foreach (HouseholdCase c in RepairV2Cases()) yield return c;
         foreach (HouseholdCase c in RepairV3Cases()) yield return c;
+        foreach (HouseholdCase c in RepairV4Cases()) yield return c;
     }
 
     private sealed class Lab(InitialWorld initial, Simulation.ReactionChallenge challenge)

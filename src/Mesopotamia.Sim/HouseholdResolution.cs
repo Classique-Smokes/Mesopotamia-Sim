@@ -134,42 +134,4 @@ public sealed partial class Simulation
         }
     }
 
-    private static string HouseholdProjectionKey(Simulation projection, bool faulted)
-    {
-        // Normalize allocated identities through causal origins. Event ordering is
-        // retained only where it changes actual accepted evidence or outcomes.
-        string EventKey(EventId id)
-        {
-            SemanticEvent? e = projection.events.SingleOrDefault(e => e.Id == id);
-            return e is null ? $"External:{id.Value}" : $"{e.Cycle}:{e.Kind}:{e.Proposal?.Value}:{string.Join(',', e.Participants.Select(p => p.Value).Order())}";
-        }
-        string HouseholdKey(HouseholdId h) => $"Candidate:{projection.households.Formations[projection.households.Households[h].Formation].Candidate.Value}";
-        string Fact(KnownFact f) => f.Proposition switch
-        {
-            HouseholdExistenceFact h => $"H:{HouseholdKey(h.Household)}:{h.Continues}",
-            ParticipationFact p => $"P:{p.Outcome.Proposal.Value}:{p.Outcome.Kind}:{p.Outcome.Reason}",
-            SupportFact s => $"S:{EventKey(s.Event)}:{s.Kind}",
-            _ => JsonSerializer.Serialize(f.Proposition)
-        };
-        return JsonSerializer.Serialize(new
-        {
-            faulted,
-            World = ProjectionKey(new(projection.state, [], "", faulted, null), projection.initialSnapshotForProjection()),
-            Households = projection.households.Households.Values.Select(h => new
-            {
-                Key = HouseholdKey(h.Id),
-                h.Lifecycle,
-                Participants = projection.households.Current(h.Id).Select(a => a.Person.Value).Order(),
-                Commitments = projection.households.Commitments.Values.Where(c => c.Household == h.Id).Select(c => new { c.Person, Ended = c.TerminatedBy is not null }).OrderBy(c => c.Person.Value),
-                Lineage = projection.households.Lineages.Values.Where(l => l.Successor == h.Id).Select(l => new { l.Kind, Sources = l.Predecessors.Select(HouseholdKey).Order(StringComparer.Ordinal) })
-            }).OrderBy(h => h.Key, StringComparer.Ordinal),
-            Evidence = projection.epistemic.Snapshot(0).Actors.OrderBy(a => a.Key.Value).Select(a => new
-            {
-                a.Key,
-                Facts = a.Value.Facts.Select(f => $"{Fact(f)}:{f.Provenance.Route}:{f.Provenance.Origin.Source}:{(f.Provenance.Origin.Event is { } e ? EventKey(e) : f.Provenance.Origin.Fixture)}").Order(StringComparer.Ordinal),
-                Recognition = a.Value.HouseholdRecognitions.Select(r => new { H = HouseholdKey(r.Household), r.Status }).OrderBy(r => r.H, StringComparer.Ordinal)
-            })
-        });
-    }
-    private WorldSnapshot initialSnapshotForProjection() => new WorldState(initial).Snapshot(0);
 }

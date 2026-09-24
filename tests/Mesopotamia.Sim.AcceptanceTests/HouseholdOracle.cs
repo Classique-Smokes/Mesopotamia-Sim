@@ -16,6 +16,7 @@ internal static partial class HouseholdOracle
         Assert.AreEqual(history.Count(e => e.Kind == "HouseholdFormation"), h.Formations.Count);
         Assert.AreEqual(history.Count(e => e.Kind == "HouseholdContinued"), h.Continuations.Count);
         Assert.AreEqual(history.Count(e => e.Kind == "HouseholdLineage"), h.Lineages.Count);
+        VerifyAcquisitionReceipts(h, history, cycles);
         foreach (var cycle in history.GroupBy(e => e.Cycle))
         {
             int[] indices = cycle.Select(e => e.ReactionIndex).ToArray();
@@ -86,6 +87,7 @@ internal static partial class HouseholdOracle
             }
             Assert.IsTrue(live.SetEquals(h.Associations.Values.Where(a => a.Household == household.Id && a.End is null).Select(a => a.Id)));
             Assert.AreEqual(live.Count switch { 0 => HouseholdLifecycle.Dissolved, 1 => HouseholdLifecycle.Inactive, _ => HouseholdLifecycle.Active }, household.Lifecycle);
+            VerifyLifecycle(initial, h, household, history);
             if (household.Lifecycle == HouseholdLifecycle.Dissolved)
                 Assert.IsTrue(h.Commitments.Values.Where(c => c.Household == household.Id).All(c => c.TerminatedBy is not null));
         }
@@ -300,7 +302,9 @@ internal static partial class HouseholdOracle
         return world;
     }
 
-    private static bool SameEvidence(KnownFact a, KnownFact b) => a.Proposition == b.Proposition &&
+    private static bool SameEvidence(KnownFact a, KnownFact b) => a.Id == b.Id && SameEvidenceContent(a, b);
+
+    private static bool SameEvidenceContent(KnownFact a, KnownFact b) => a.Proposition == b.Proposition &&
         a.Provenance.Route == b.Provenance.Route && a.Provenance.Origin == b.Provenance.Origin &&
         a.Provenance.Hops.SequenceEqual(b.Provenance.Hops);
 
@@ -312,12 +316,15 @@ internal static partial class HouseholdOracle
         Assert.IsNotEmpty(recognition.Evidence);
         List<KnownFact> held = [.. cycles.Single(c => c.State.Cycle == stamp.Time.Cycle - 1).Epistemic!.Actors[actor].Facts
             .Where(f => f.Proposition is HouseholdExistenceFact fact && fact.Household == household)];
+        HashSet<EvidenceId> consumedReceipts = [];
         foreach (SemanticEvent e in history.Where(e => e.Cycle == stamp.Time.Cycle && e.ReactionIndex < stamp.Time.ReactionIndex))
         {
             if (e.Kind == "Communication" && e.Participants[1] == actor)
-                foreach (KnownFact sent in e.TransmittedEvidence.Where(f => f.Proposition is HouseholdExistenceFact fact && fact.Household == household))
+                foreach (KnownFact sent in e.TransmittedEvidence.Where(f => f.Proposition is HouseholdExistenceFact fact && fact.Household == household &&
+                    !e.TransmittedEvidence.Any(other => other.Proposition is HouseholdExistenceFact newer && newer.Household == household &&
+                        other.Provenance.Origin.Event is not null && other.Provenance.Origin.Order is { } x && f.Provenance.Origin.Order is { } y && x.CompareTo(y) > 0)))
                     Acquire(new(new(0), sent.Proposition, new(AcquisitionRoute.Communication, sent.Provenance.Origin,
-                        [.. sent.Provenance.Hops, new(e.Participants[0], actor, e.Id, new(e.Cycle, e.ReactionIndex))])));
+                        [.. sent.Provenance.Hops, new(e.Participants[0], actor, e.Id, new(e.Cycle, e.ReactionIndex))])), e);
             if (e.Kind is "HouseholdRecognitionAcquired" or "HouseholdDissolutionEvidenceAcquired" && e.Participants.Contains(actor))
             {
                 SemanticEvent origin = Referenced(history, e.Causes.Single());
@@ -325,7 +332,7 @@ internal static partial class HouseholdOracle
                     h.Continuations.Values.SingleOrDefault(c => c.Household == household && c.Stamp.Event == origin.Id)?.Id;
                 if (warrant is { } id)
                     Acquire(new(new(0), new HouseholdExistenceFact(household, true, id),
-                        new(AcquisitionRoute.Participation, new(actor, origin.Id, new(origin.Cycle, origin.ReactionIndex)), [])));
+                        new(AcquisitionRoute.Participation, new(actor, origin.Id, new(origin.Cycle, origin.ReactionIndex)), [])), e);
             }
         }
         Assert.IsNotEmpty(held);
@@ -339,12 +346,21 @@ internal static partial class HouseholdOracle
             VerifyProvenance(fact, actor, stamp.Time, h, history);
         }
 
-        void Acquire(KnownFact incoming)
+        void Acquire(KnownFact incoming, SemanticEvent acquisition)
         {
             bool Newer(KnownFact a, KnownFact b) => a.Provenance.Origin.Order is { } x && b.Provenance.Origin.Order is { } y && x.CompareTo(y) > 0 &&
                 (a.Provenance.Route == AcquisitionRoute.Participation || a.Provenance.Route == AcquisitionRoute.Communication &&
                     a.Provenance.Origin.Event is not null && b.Provenance.Route is AcquisitionRoute.Communication or AcquisitionRoute.Fixture);
             if (held.Any(f => Newer(f, incoming))) return;
+            // Reconstruct content/provenance first, then bind its exact identity to
+            // the observer receipt from that acquisition, never another warrant.
+            AcquiredFact[] receipts = [.. acquisition.AcquiredEvidence.Where(r => r.Actor == actor &&
+                !consumedReceipts.Contains(r.Fact.Id) && SameEvidenceContent(r.Fact, incoming)).OrderBy(r => r.Fact.Id.Value)];
+            Assert.IsNotEmpty(receipts, "Acquisition must identify the exact resulting actor-held fact.");
+            incoming = receipts[0].Fact;
+            consumedReceipts.Add(incoming.Id);
+            Assert.IsGreaterThan(0L, incoming.Id.Value);
+            Assert.IsFalse(held.Any(f => f.Id == incoming.Id), "New acquisition cannot reuse a retained EvidenceId.");
             held.RemoveAll(f => Newer(incoming, f));
             held.Add(incoming);
         }

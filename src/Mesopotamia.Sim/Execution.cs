@@ -24,7 +24,11 @@ public sealed record SemanticEvent(EventId Id, long Cycle, int ReactionIndex, st
     public ActionTerms? Action { get; init; }
     public string RulesVersion { get; init; } = Configuration.RulesVersion;
     public ImmutableArray<KnownFact> TransmittedEvidence { get; init; } = [];
+    // Observer-only acquisition receipts bind exact retained identities to their
+    // acquisition boundary, including evidence superseded later in the cycle.
+    public ImmutableArray<AcquiredFact> AcquiredEvidence { get; init; } = [];
 }
+public sealed record AcquiredFact(PersonId Actor, KnownFact Fact);
 public sealed record CycleResult(WorldSnapshot State, ImmutableArray<Outcome> Outcomes,
     ImmutableArray<SemanticEvent> Events, bool MaterialDeadlock)
 {

@@ -140,6 +140,7 @@ public sealed class Slice3AcceptanceTests
         AcceptanceCatalog.WriteSupplement("slice3-fixtures", suite.FixtureEvidence);
         AcceptanceCatalog.WriteSupplement("slice3-producers", suite.ProducerEvidence);
         AcceptanceCatalog.WriteSupplement("slice3-repair-v3-controls", suite.RepairV3Evidence);
+        AcceptanceCatalog.WriteSupplement("slice3-repair-v4-controls", suite.RepairV4Evidence);
         Assert.IsEmpty(failures, string.Join("\n", failures));
         Assert.IsTrue(independent);
         Assert.IsTrue(results.Where(r => r.Classification == "REQUIRED").All(r => r.State == "PASS"),

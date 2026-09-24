@@ -4,6 +4,137 @@ namespace Mesopotamia.Sim.AcceptanceTests;
 
 internal static partial class HouseholdOracle
 {
+    private static void VerifyAcquisitionReceipts(HouseholdSnapshot h, SemanticEvent[] history, IReadOnlyList<CycleResult> cycles)
+    {
+        Dictionary<PersonId, List<KnownFact>> held = [];
+        HashSet<EvidenceId> acquiredIds = [];
+        foreach (CycleResult cycle in cycles)
+        {
+            // Controlled nondominated-report fixtures are explicitly marked and
+            // are inputs to these laboratory scenarios, not endogenous receipts.
+            foreach (ActorEpistemicState actor in cycle.Epistemic!.Actors.Values)
+                foreach (KnownFact fixture in actor.Facts.Where(f => f.Proposition is HouseholdExistenceFact && f.Provenance.Route == AcquisitionRoute.Fixture))
+                {
+                    Assert.IsFalse(string.IsNullOrWhiteSpace(fixture.Provenance.Origin.Fixture));
+                    if (!held.TryGetValue(actor.Actor, out List<KnownFact>? facts)) held.Add(actor.Actor, facts = []);
+                    if (!facts.Any(f => f.Id == fixture.Id)) facts.Add(fixture);
+                }
+            foreach (SemanticEvent e in history.Where(e => e.Cycle == cycle.State.Cycle))
+            {
+                List<(PersonId Actor, KnownFact Fact)> incoming = [];
+                if (e.Kind == "Communication")
+                    incoming.AddRange(e.TransmittedEvidence.Where(f => f.Proposition is HouseholdExistenceFact).Select(f =>
+                        (e.Participants[1], new KnownFact(new(0), f.Proposition, new(AcquisitionRoute.Communication, f.Provenance.Origin,
+                        [.. f.Provenance.Hops, new(e.Participants[0], e.Participants[1], e.Id, new(e.Cycle, e.ReactionIndex))])))));
+                if (e.Kind is "HouseholdRecognitionAcquired" or "HouseholdDissolutionEvidenceAcquired")
+                {
+                    SemanticEvent origin = Referenced(history, e.Causes.Single());
+                    WarrantStamp stamp;
+                    HouseholdId household;
+                    WarrantId warrant;
+                    bool continues = e.Kind == "HouseholdRecognitionAcquired";
+                    if (origin.Kind == "HouseholdFormation")
+                    {
+                        FormationWarrant? f = h.Formations.Values.SingleOrDefault(f => f.Stamp.Event == origin.Id);
+                        Assert.IsNotNull(f, "Formation acquisition requires its actual warrant.");
+                        household = f.Household; warrant = f.Id; stamp = f.Stamp;
+                    }
+                    else if (origin.Kind == "HouseholdContinued")
+                    {
+                        ContinuationWarrant? c = h.Continuations.Values.SingleOrDefault(c => c.Stamp.Event == origin.Id);
+                        Assert.IsNotNull(c, "Continuation acquisition requires its actual warrant.");
+                        household = c.Household; warrant = c.Id; stamp = c.Stamp;
+                    }
+                    else
+                    {
+                        Assert.IsFalse(continues);
+                        Assert.AreEqual("HouseholdLifecycle", origin.Kind);
+                        Household value = h.Households.Values.Single(x => origin.Detail == $"Household:{x.Id.Value};Dissolved");
+                        household = value.Id; warrant = value.Formation;
+                        stamp = new(origin.Id, new(origin.Cycle, origin.ReactionIndex), origin.RulesVersion, origin.ConfigurationVersion);
+                    }
+                    Assert.AreEqual($"Household:{household.Value};Warrant:{warrant.Value}", e.Detail);
+                    CollectionAssert.AreEqual(origin.Participants.ToArray(), e.Participants.ToArray());
+                    foreach (PersonId actor in e.Participants.Distinct().OrderBy(p => p.Value))
+                        incoming.Add((actor, new(new(0), new HouseholdExistenceFact(household, continues, warrant),
+                            new(AcquisitionRoute.Participation, new(actor, stamp.Event, stamp.Time), []))));
+                }
+                List<AcquiredFact> receipts = [.. e.AcquiredEvidence.Where(r => r.Fact.Proposition is HouseholdExistenceFact)];
+                // Only facts retained after the complete delivery have receipts;
+                // a later payload member can supersede an earlier report.
+                foreach (var acquisition in incoming.Where(a => !incoming.Any(b => b.Actor == a.Actor && Newer(b.Fact, a.Fact))))
+                {
+                    if (!held.TryGetValue(acquisition.Actor, out List<KnownFact>? facts)) held.Add(acquisition.Actor, facts = []);
+                    if (facts.Any(f => Newer(f, acquisition.Fact))) continue;
+                    int index = receipts.FindIndex(r => r.Actor == acquisition.Actor && SameEvidenceContent(r.Fact, acquisition.Fact));
+                    Assert.IsTrue(index >= 0, $"Every retained acquisition needs an exact identity receipt: event={e.Id.Value}/{e.Kind}, actor={acquisition.Actor.Value}, incoming={acquisition.Fact}.");
+                    KnownFact fact = receipts[index].Fact; receipts.RemoveAt(index);
+                    Assert.IsGreaterThan(0L, fact.Id.Value);
+                    Assert.IsTrue(acquiredIds.Add(fact.Id), "Acquisition identities cannot be reused across actors/events.");
+                    facts.RemoveAll(f => Newer(fact, f)); facts.Add(fact);
+                }
+                Assert.IsEmpty(receipts, "Receipt must be justified by the actual acquisition/communication.");
+            }
+            foreach (ActorEpistemicState actor in cycle.Epistemic!.Actors.Values)
+            {
+                KnownFact[] actual = [.. actor.Facts.Where(f => f.Proposition is HouseholdExistenceFact).OrderBy(f => f.Id.Value)];
+                KnownFact[] expected = [.. held.GetValueOrDefault(actor.Actor, []).OrderBy(f => f.Id.Value)];
+                Assert.AreEqual(expected.Length, actual.Length);
+                Assert.IsTrue(expected.Zip(actual).All(pair => SameEvidence(pair.First, pair.Second)),
+                    "Acquisition replay must match exact stable actor-held identities and contents.");
+            }
+        }
+        static bool Newer(KnownFact a, KnownFact b) => a.Proposition is HouseholdExistenceFact x && b.Proposition is HouseholdExistenceFact y &&
+            x.Household == y.Household && a.Provenance.Origin.Order is { } left && b.Provenance.Origin.Order is { } right && left.CompareTo(right) > 0 &&
+            (a.Provenance.Route == AcquisitionRoute.Participation || a.Provenance.Route == AcquisitionRoute.Communication &&
+                a.Provenance.Origin.Event is not null && b.Provenance.Route is AcquisitionRoute.Communication or AcquisitionRoute.Fixture);
+    }
+
+    private static void VerifyLifecycle(InitialWorld initial, HouseholdSnapshot h, Household household, SemanticEvent[] history)
+    {
+        FormationWarrant formation = h.Formations[household.Formation];
+        SemanticEvent expected = VerifyStamp(initial, formation.Stamp, "HouseholdFormation", history);
+        HouseholdLifecycle state = HouseholdLifecycle.Active;
+        HashSet<AssociationId> live = [.. h.Associations.Values.Where(a => a.Origin == formation.Id).Select(a => a.Id)];
+        HashSet<EventId> publications = [];
+        var transitions = h.Entries.Values.Where(e => e.Household == household.Id).Select(e => (e.Id, e.Stamp, Entry: true))
+            .Concat(h.Exits.Values.Where(e => e.Household == household.Id).Select(e => (e.Id, e.Stamp, Entry: false))).OrderBy(e => e.Stamp.Time);
+        foreach (var cycle in transitions.GroupBy(t => t.Stamp.Time.Cycle))
+        {
+            Assert.AreNotEqual(HouseholdLifecycle.Dissolved, state, "No resurrection after stable dissolution.");
+            foreach (var transition in cycle)
+            {
+                if (transition.Entry) live.Add(h.Associations.Values.Single(a => a.Origin == transition.Id).Id);
+                else Assert.IsTrue(live.Remove(h.Exits[transition.Id].Association));
+            }
+            HouseholdLifecycle next = live.Count switch { 0 => HouseholdLifecycle.Dissolved, 1 => HouseholdLifecycle.Inactive, _ => HouseholdLifecycle.Active };
+            SemanticEvent[] events = [.. history.Where(e => e.Cycle == cycle.Key && e.Kind == "HouseholdLifecycle" &&
+                e.Detail.StartsWith($"Household:{household.Id.Value};", StringComparison.Ordinal))];
+            if (state == next) { Assert.IsEmpty(events, "Transient microstates must not publish lifecycle changes."); continue; }
+            Assert.AreEqual(1, events.Length);
+            SemanticEvent published = events[0];
+            Assert.AreEqual($"Household:{household.Id.Value};{next}", published.Detail);
+            Assert.AreEqual("SFL-S3-v1", published.RulesVersion);
+            Assert.AreEqual(initial.Configuration.Version, published.ConfigurationVersion);
+            EventId[] causes = [.. h.Exits.Values.Where(e => e.Household == household.Id && e.Stamp.Time.Cycle == cycle.Key).Select(e => e.Stamp.Event),
+                .. h.Continuations.Values.Where(c => c.Household == household.Id && c.Stamp.Time.Cycle == cycle.Key).Select(c => c.Stamp.Event)];
+            Assert.IsNotEmpty(causes);
+            CollectionAssert.AreEquivalent(causes, published.Causes.ToArray());
+            Assert.IsTrue(history.Where(e => e.Cycle == cycle.Key && e.Kind is "HouseholdParticipation" or "HouseholdParticipationEnded" or "HouseholdContinued")
+                .All(e => e.ReactionIndex < published.ReactionIndex), "Lifecycle must follow voluntary transitions and immediate continuity at stable closure.");
+            PersonId[] participants = next == HouseholdLifecycle.Dissolved ? [h.Exits[cycle.Last().Id].Person] : [.. live.Select(a => h.Associations[a].Person)];
+            CollectionAssert.AreEquivalent(participants, published.Participants.ToArray());
+            publications.Add(published.Id);
+            expected = published; state = next;
+        }
+        CollectionAssert.AreEquivalent(publications.ToArray(), history.Where(e => e.Kind == "HouseholdLifecycle" &&
+            e.Detail.StartsWith($"Household:{household.Id.Value};", StringComparison.Ordinal)).Select(e => e.Id).ToArray());
+        SemanticEvent actual = Referenced(history, household.LifecycleEvent);
+        Assert.AreEqual(expected.Id, actual.Id, "Lifecycle reference must name the latest justified stable publication.");
+        Assert.AreEqual(new EvidenceOrder(actual.Cycle, actual.ReactionIndex), household.LifecycleTime);
+        Assert.AreEqual(state, household.Lifecycle);
+    }
+
     private static SemanticEvent VerifyStamp(InitialWorld initial, WarrantStamp stamp, string kind, SemanticEvent[] history)
     {
         SemanticEvent actual = Referenced(history, stamp.Event);

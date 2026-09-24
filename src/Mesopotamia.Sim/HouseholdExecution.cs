@@ -81,11 +81,17 @@ public sealed partial class Simulation
 
     private void RecognizeHousehold(HouseholdId h, WarrantId warrant, bool continues, ImmutableArray<PersonId> participants, SemanticEvent cause)
     {
-        HouseholdEvent(continues ? "HouseholdRecognitionAcquired" : "HouseholdDissolutionEvidenceAcquired",
+        SemanticEvent acquired = HouseholdEvent(continues ? "HouseholdRecognitionAcquired" : "HouseholdDissolutionEvidenceAcquired",
             participants, [cause.Id], $"Household:{h.Value};Warrant:{warrant.Value}");
+        List<AcquiredFact> receipts = [];
         foreach (PersonId person in participants.Distinct().OrderBy(p => p.Value))
+        {
             epistemic.Acquire(person, new HouseholdExistenceFact(h, continues, warrant), AcquisitionRoute.Participation,
                 new(person, cause.Id, new(cause.Cycle, cause.ReactionIndex)));
+            receipts.AddRange(epistemic.Of(person).Facts.Where(f => f.Proposition == new HouseholdExistenceFact(h, continues, warrant) &&
+                f.Provenance.Route == AcquisitionRoute.Participation && f.Provenance.Origin.Event == cause.Id).Select(f => new AcquiredFact(person, f)));
+        }
+        events[^1] = acquired with { AcquiredEvidence = [.. receipts] };
         // The acquisition event is observer evidence; actor provenance identifies the underlying household event.
     }
 
