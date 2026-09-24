@@ -4,6 +4,9 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
+- `SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` — **READY FOR DISPATCH**. Fresh independent review of immutable Slice-4 acceptance candidate1 `sfl-v0-slice4-acceptance-v1-candidate1` @ `a1cd8c9848bb94ca3351d804964c070cc279aa3a` (blob `1600332fda22ed1215485bb432e570ff9c08d52f`). Verdict required before freeze.
+
+
 - Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / DECISION RESOLVED**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. LATER-04 closed by accepted `../../decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`; LATER-05 closed from accepted authority. Acceptance drafting is active; coding remains unauthorized.
 
 
