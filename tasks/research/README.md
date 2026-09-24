@@ -10,7 +10,6 @@ This directory contains bounded research, review and maintenance commissions. Th
 - Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / DECISION RESOLVED**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. LATER-04 closed by accepted `../../decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`; LATER-05 closed from accepted authority. Acceptance drafting is active; coding remains unauthorized.
 
 
-- `RES-0001_OLD_BABYLONIAN_NIPPUR/` — RETURNS COMPLETE / RECONCILIATION PENDING. Historical research on individual → relationship → household foundations in Old Babylonian Nippur. Durable returns are indexed at `research/historical/RES-0001/`.
 - `SFL_V0_SLICE2_PREIMPLEMENTATION_DISCOVERY.md` — SPLIT INTO THREE PARALLEL LOW-AUTHORITY COMMISSIONS; dispatch index: `SFL_V0_SLICE2_PARALLEL_DISCOVERY_DISPATCH.md`.
 - `SFL_V0_SLICE2_DISCOVERY_A_AUTHORITY.md` — accepted subjective-information / recognition authority inventory.
 - `SFL_V0_SLICE2_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — current implementation seam/gap map.
@@ -21,6 +20,8 @@ This directory contains bounded research, review and maintenance commissions. Th
 - Slice-3 reconciliation: `../../research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md` — acceptance authority now frozen under `SFL-V0-S3-ACCEPTANCE-v1`.
 
 ## Closed / historical
+
+- RES-0001 Old Babylonian Nippur A–H + RES-0001R reconciliation — **COMPLETE / RE-DERIVED / ADVISORY**. Durable reconciliation: `../../research/historical/RES-0001/reconciliation/`; restoration record: `../../research/historical/RES-0001/RES-0001R_RECONCILIATION_RESTORATION_RECORD.md`. Historical-evidence promotion has not yet occurred.
 
 - Slice-4 acceptance candidate1 pre-code review — **BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`; reconciliation: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_CANDIDATE1_BLOCK_RECONCILIATION.md`. No semantic escalation.
 
