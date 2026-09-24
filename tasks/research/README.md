@@ -4,7 +4,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / ONE DIRECTOR DECISION PENDING**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. Director proposal: `../../proposals/SFL_V0_SLICE4_LATER_04_AUTHORITY_RACE_DECISION.md`. LATER-05 closed from accepted authority; LATER-04 blocks acceptance freeze/coding.
+- Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / DECISION RESOLVED**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. LATER-04 closed by accepted `../../decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`; LATER-05 closed from accepted authority. Acceptance drafting is active; coding remains unauthorized.
 
 
 - `RES-0001_OLD_BABYLONIAN_NIPPUR/` — RETURNS COMPLETE / RECONCILIATION PENDING. Historical research on individual → relationship → household foundations in Old Babylonian Nippur. Durable returns are indexed at `research/historical/RES-0001/`.
