@@ -238,6 +238,10 @@ Explicitly state that Pass A identifies frontier candidates only and does not re
 
 ## 9. Return branch discipline
 
+Exact dispatch ref:
+
+`sfl-v0-slice4-sid-passa-dispatch-v1`
+
 Return branch:
 
 `review/slice4-sid-passa-return`
