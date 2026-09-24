@@ -276,6 +276,10 @@ If feasible, generate only response meanings valid for that proposal type, such 
 - nomination/appointment/succession acceptance where applicable;
 - marriage-route acceptance/refusal where applicable.
 
+For a role-scoped Household material response under §8.1.1, one response context may contain multiple semantically `Accept` candidates that differ only in the current holder's explicit transaction funding plan, including no private term or a valid exact private `X`. These remain variants of the same role-scoped acceptance meaning, not nested responses or additional initiatives.
+
+Feasibility is evaluated for each funding-plan variant using current role authority, the holder's private disposable capacity, and the residual commitment-backed requirement. If no valid Accept funding plan exists, the interaction may be `Unable(reason)` under the ordinary feasibility rule. If at least one valid Accept plan exists, the holder's voluntary response policy may choose among feasible Accept variants and Decline. The trace must expose the selected private-resource consent separately from role authority.
+
 Feasible response candidates use the same reference scorer defined above: named exact-integer components, summed `FinalScore`, highest score wins, then any explicitly declared domain tie key or the logged stable-semantic-ID technical fallback.
 
 Response-specific coefficients are laboratory configuration, not independent social semantics.
