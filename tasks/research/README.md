@@ -4,7 +4,11 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- `IMP-0003_SLICE3_POSTIMPLEMENTATION_OBSERVATION.md` — **READY FOR DISPATCH / NON-GATING**. Lightweight raw-first observation of the promoted Slice-3 Household substrate before detailed Slice-4 planning. Governing plan: `../../plans/SFL_V0_SLICE3_POSTIMPLEMENTATION_OBSERVATION_PLAN.md`.
+- `SFL_V0_SLICE4_PARALLEL_DISCOVERY_DISPATCH.md` — **READY FOR PARALLEL DISPATCH**. Index for three fresh-context Slice-4 preimplementation discovery commissions.
+- `SFL_V0_SLICE4_DISCOVERY_A_AUTHORITY_GAPS.md` — accepted head/office/dual-mode authority boundary, LATER-04/LATER-05, and Director-decision map.
+- `SFL_V0_SLICE4_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — promoted Slice-3 kernel seam/pressure map for persistent role, dual-mode agency, authority revalidation, provision/spending, and mediated marriage.
+- `SFL_V0_SLICE4_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — triggered canonical verification, completion witnesses, oracle/fixture rules, and acceptance-manifest readiness.
+
 
 - `RES-0001_OLD_BABYLONIAN_NIPPUR/` — RETURNS COMPLETE / RECONCILIATION PENDING. Historical research on individual → relationship → household foundations in Old Babylonian Nippur. Durable returns are indexed at `research/historical/RES-0001/`.
 - `SFL_V0_SLICE2_PREIMPLEMENTATION_DISCOVERY.md` — SPLIT INTO THREE PARALLEL LOW-AUTHORITY COMMISSIONS; dispatch index: `SFL_V0_SLICE2_PARALLEL_DISCOVERY_DISPATCH.md`.
@@ -15,9 +19,12 @@ This directory contains bounded research, review and maintenance commissions. Th
 - `SFL_V0_SLICE3_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — **RETURN COMPLETE**. Durable return: `../../research/technical/SFL_V0_SLICE3_IMPLEMENTATION_SURFACE_MAP.md`.
 - `SFL_V0_SLICE3_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — **RETURN COMPLETE**. Durable return: `../../research/technical/SFL_V0_SLICE3_VERIFICATION_TRIGGER_MAP.md`.
 - Slice-3 reconciliation: `../../research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md` — acceptance authority now frozen under `SFL-V0-S3-ACCEPTANCE-v1`.
-- `IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md` — **CONDITIONAL TRIGGER TASK**. Run before any IMP-0003 change that would alter the exact `WorldState` private-field inventory or the frozen S1-084 structural evidence path.
 
 ## Closed / historical
+
+- IMP-0003 Slice-3 observation — **COMPLETE / RECONCILED / NON-GATING**. Raw package: `../../research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/`; MA reconciliation: `../../research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`; future-lessons index: `../../research/technical/IMP-0003/IMP-0003_FUTURE_LESSONS_INDEX.md`.
+- `IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md` — historical conditional task; trigger remained **UNFIRED** through verified Slice-3 completion.
+
 
 - `POST_IMP0001_BRANCH_HYGIENE_CENSUS.md` — COMPLETED; census, reconciliation and deletion execution verified. Final record: `../../research/technical/REPOSITORY_BRANCH_HYGIENE_EXECUTION_RECORD.md`.
 - `TRES-0010_PRE_IMPLEMENTATION_RED_TEAM/` — **CLOSED / PASS**. Final closure evidence: `research/technical/TRES-0010/FINAL_CLOSURE_AUDIT_AND_DISPATCH_DECISION.md`.
