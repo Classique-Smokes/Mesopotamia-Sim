@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / IMP-0003 CANDIDATE-v4 FROZEN / FRESH CONFORMANCE NEXT.**
+**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / Slice 3 VERIFIED COMPLETE / POST-IMPLEMENTATION LEARNING PAUSE NEXT.**
 
 Verified Slice-1 completion:
 
@@ -55,6 +55,17 @@ Verified Slice-2 completion:
 - canonical promotion merge: `3887d1d9984f5606c816afb84365cc3f455f52b4`
 - post-promotion CI: run `35833252462` — **PASS**
 - final record: `research/technical/IMP-0002/IMP-0002_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
+
+Verified Slice-3 completion:
+
+- task: `tasks/implementation/IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md`
+- frozen final candidate: `imp-0003-slice3-conformance-candidate-v4` @ `b5e5409ebcaec856a74ab08a7d120a67f6078e36`
+- fresh independent conformance: `research/technical/IMP-0003/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V4.md` — **PASS — PROMOTE**
+- canonical promotion merge: `f7ca9525d17ed20758058df7aff97b2f47e5a01a`
+- post-promotion CI: run `35949005742` — **PASS**
+- post-promotion artifact: `10786959968`, digest `sha256:ea3cabace2b8f5672457416f2b69af3e3224409b1e4c6e903b8821e017d3fb1d`
+- final record: `research/technical/IMP-0003/IMP-0003_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
+- next learning task: `tasks/research/IMP-0003_SLICE3_POSTIMPLEMENTATION_OBSERVATION.md`
 
 Frozen Slice-1 acceptance authority:
 
@@ -248,10 +259,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Dispatch `tasks/implementation/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V4_PACKET.md` against immutable candidate-v4 `imp-0003-slice3-conformance-candidate-v4`.
-2. Do not merge/promote PR #62 unless fresh conformance returns **PASS — PROMOTE**.
-3. If candidate-v4 BLOCKs, preserve it unchanged and reconcile only the newly established defect set.
-4. If candidate-v4 PASSes, promote the exact candidate, run canonical post-merge CI, and write the IMP-0003 final completion/promotion record.
-5. After successful promotion, run `plans/SFL_V0_SLICE3_POSTIMPLEMENTATION_OBSERVATION_PLAN.md` before detailed Slice-4 planning.
+1. Run the lightweight Slice-3 post-implementation learning task: `tasks/research/IMP-0003_SLICE3_POSTIMPLEMENTATION_OBSERVATION.md`.
+2. Preserve raw observation output before interpretation under `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/`.
+3. Reconcile only surprising implementation/runtime lessons that materially inform Slice 4 or later work.
+4. Write the compact Slice-3 future-lessons index required by milestone-learning housekeeping.
+5. Then begin detailed Slice-4 planning from accepted authority plus the reconciled implementation-grounded lessons.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
