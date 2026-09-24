@@ -6,7 +6,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 - `SID_RETRO_SLICE1_PASSA_ALIAS_FRONTIER.md` — **READY / TARGETED RETRO-SID PASS A**. Fresh reviewer independently maps Slice-1 participant-position aliasing/distinct-party frontier from historical authority; MA frontier is sealed separately until Pass A freezes.
 
-- `SFL_V0_SLICE4_SID_PASSB_NEGATIVE_SPACE_CHALLENGE.md` — **READY FOR DISPATCH / SID PASS B**. Pass A is immutably frozen; reviewer now sees MA frontier + justified union and returns 3–7 concrete negative-space histories/questions without resolving semantics.
+- Slice-4 SID Pass B — **COMPLETE / RECONCILED**. Frozen return: `sfl-v0-slice4-sid-passb-v1` @ `77f0f7c64d3ac85f933e6f7c39ee2cd70cf5d7ec`; reconciliation: `../../research/technical/SFL_V0_SLICE4_SID_PASSB_RECONCILIATION.md`; six Director semantic decisions remain before SID closure.
 
 - SID retrospective screening wave — **COMPLETE / RECONCILED**. Reconciliation: `../../research/technical/SID_RETRO_SCREEN_SLICES1_3_RECONCILIATION.md`. Slice 1 -> targeted full retro-SID audit; Slices 2–3 -> NO CLOSER LOOK NEEDED.
 
