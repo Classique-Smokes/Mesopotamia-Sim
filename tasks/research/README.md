@@ -26,8 +26,6 @@ This directory contains bounded research, review and maintenance commissions. Th
 - Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / DECISION RESOLVED**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. LATER-04 closed by accepted `../../decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`; LATER-05 closed from accepted authority. Acceptance drafting is active; coding remains unauthorized.
 
 
-- `RES-0001_RECONCILIATION/RES-0001R_RESTORATION_AND_BUREAUCRACY_REPAIR.md` — **READY FOR JUNIOR-SCRIBE DISPATCH**. Restore the independently re-derived RES-0001R package losslessly, repair stale “reconciliation pending/unavailable” bureaucracy, and preserve HEC≠HE / NO DESIGN DECISION boundaries. Source ZIP attachment required.
-- `RES-0001_OLD_BABYLONIAN_NIPPUR/` — A–H RETURNS COMPLETE; repository still records reconciliation as pending until the restoration task above is completed and reviewed.
 - `SFL_V0_SLICE2_PREIMPLEMENTATION_DISCOVERY.md` — SPLIT INTO THREE PARALLEL LOW-AUTHORITY COMMISSIONS; dispatch index: `SFL_V0_SLICE2_PARALLEL_DISCOVERY_DISPATCH.md`.
 - `SFL_V0_SLICE2_DISCOVERY_A_AUTHORITY.md` — accepted subjective-information / recognition authority inventory.
 - `SFL_V0_SLICE2_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — current implementation seam/gap map.
@@ -38,6 +36,8 @@ This directory contains bounded research, review and maintenance commissions. Th
 - Slice-3 reconciliation: `../../research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md` — acceptance authority now frozen under `SFL-V0-S3-ACCEPTANCE-v1`.
 
 ## Closed / historical
+
+- RES-0001 Old Babylonian Nippur A–H + RES-0001R reconciliation — **COMPLETE / RE-DERIVED / ADVISORY**. Durable reconciliation: `../../research/historical/RES-0001/reconciliation/`; restoration record: `../../research/historical/RES-0001/RES-0001R_RECONCILIATION_RESTORATION_RECORD.md`. Historical-evidence promotion has not yet occurred.
 
 - Slice-4 acceptance candidate2 pre-code review — **PASS — MAY FREEZE UNCHANGED**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`. Frozen authority: `../../plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST.md` / `sfl-v0-slice4-acceptance-v1`.
 
