@@ -1,9 +1,9 @@
 # Governance Plan — Semantic Interaction Delta Failsafe
 
-**Status:** PROPOSED / DIRECTOR REVIEW  
+**Status:** PROMOTED / ACCEPTED UNDER DEC-0012  
 **Date:** 2026-09-24  
 **Owner:** Master Architect  
-**Authority:** planning only; no accepted-governance change until explicitly approved/promoted  
+**Authority:** historical/promotional rationale only. Binding governance now lives in DEC-0012, `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`, and `governance/checklists/SEMANTIC_INTERACTION_DELTA_CHECKLIST.md`.  
 **Motivating failure:** Slice-4 office-holder private-resource supplementation omission  
 **Primary owner if accepted:** `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`
 
