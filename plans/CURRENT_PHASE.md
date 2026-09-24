@@ -107,14 +107,15 @@ Semantic-interaction-delta failsafe:
 
 SID retrospective screening wave:
 
-- status: **READY FOR PARALLEL DISPATCH**
-- purpose: screen completed Slices 1–3 under SID-ASSURANCE-v1 without automatically reopening them
-- dispatch: `tasks/research/SID_RETRO_SCREEN_SLICES1_3_DISPATCH.md`
-- Slice 1 task: `tasks/research/SID_RETRO_SCREEN_SLICE1.md`
-- Slice 2 task: `tasks/research/SID_RETRO_SCREEN_SLICE2.md`
-- Slice 3 task: `tasks/research/SID_RETRO_SCREEN_SLICE3.md`
-- rule: later-slice semantics may not be projected backward as missing requirements
-- full retro-SID audit occurs only if a screen returns concrete evidence warranting it
+- status: **COMPLETE / RECONCILED**
+- reconciliation: `research/technical/SID_RETRO_SCREEN_SLICES1_3_RECONCILIATION.md`
+- Slice 1 screen: **FULL RETRO-SID AUDIT RECOMMENDED** — narrow frontier only: participant-position aliasing / distinct-party admissibility
+- Slice 1 active Pass-A task: `tasks/research/SID_RETRO_SLICE1_PASSA_ALIAS_FRONTIER.md`
+- Slice 1 dispatch ref: `sfl-v0-slice1-retro-sid-passa-dispatch-v1` @ `6f62e9a0a43c0c9e7722bf2e9ff53825469572de`
+- Slice 1 MA frontier sealed ref: `sfl-v0-slice1-retro-sid-ma-frontier-v1` (withheld until Pass A freezes)
+- Slice 2: **NO CLOSER LOOK NEEDED**
+- Slice 3: **NO CLOSER LOOK NEEDED**
+- frozen Slice-1/2/3 acceptance authority remains unchanged
 
 Slice-4 SID pilot status: **PASS A FROZEN / PASS B READY**
 

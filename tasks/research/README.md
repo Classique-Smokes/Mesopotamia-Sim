@@ -4,9 +4,11 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
+- `SID_RETRO_SLICE1_PASSA_ALIAS_FRONTIER.md` — **READY / TARGETED RETRO-SID PASS A**. Fresh reviewer independently maps Slice-1 participant-position aliasing/distinct-party frontier from historical authority; MA frontier is sealed separately until Pass A freezes.
+
 - `SFL_V0_SLICE4_SID_PASSB_NEGATIVE_SPACE_CHALLENGE.md` — **READY FOR DISPATCH / SID PASS B**. Pass A is immutably frozen; reviewer now sees MA frontier + justified union and returns 3–7 concrete negative-space histories/questions without resolving semantics.
 
-- `SID_RETRO_SCREEN_SLICES1_3_DISPATCH.md` — **READY FOR PARALLEL DISPATCH**. Three independent retrospective SID screens for completed Slices 1–3; screen first, reopen only on concrete evidence.
+- SID retrospective screening wave — **COMPLETE / RECONCILED**. Reconciliation: `../../research/technical/SID_RETRO_SCREEN_SLICES1_3_RECONCILIATION.md`. Slice 1 -> targeted full retro-SID audit; Slices 2–3 -> NO CLOSER LOOK NEEDED.
 
 - `SFL_V0_SLICE4_SID_PASSA_INDEPENDENT_FRONTIER.md` — **READY FOR DISPATCH / SID PASS A**. Fresh reviewer independently maps the Slice-4 interaction frontier before seeing the Master Architect frontier. Return must be report-only and frozen before Pass B.
 
