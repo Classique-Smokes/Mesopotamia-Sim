@@ -336,4 +336,103 @@ Give P enough grain that both the selected personal action and the supplemented 
 - a successor inherits/reuses the predecessor's private supplement;
 - same-cycle authority-destroying transition preempts an otherwise-valid accepted authority-dependent last act contrary to DEC-0010;
 - old-head action is rebound to the successor;
-- proposal/container/stable-ID order silently decides the authority race.
+- proposal/container/stable-ID order silently decides the authority race;
+- same-cycle newcomer retroactively expands an already-accepted appointment/succession unanimity cohort;
+- self-nomination is categorically rejected or represented through redundant self-response contexts that erase the explicit semantic predicates;
+- an Inactive sole-bearer cannot fill the persistent role, or role occupancy incorrectly grants Household-mode initiative while Inactive.
+
+
+---
+
+## VS-SFL-069 — Snapshot-bound succession consent cohort
+
+**Level:** same-cycle composition / consent cohort  
+**Semantic source:** SPEC §§8.4, 9.2 + DEC-0013 D2.
+
+### Initial decision snapshot
+
+Active H has current sustaining participants A/B/C and current head A.
+
+From the same committed decision snapshot:
+
+- A->B succession has nominee acceptance and unanimous A/B/C participant acceptance;
+- D has a valid bridge-dependent participation entry through A;
+- A has an accepted participation end.
+
+### Required result
+
+- the succession consent cohort is exactly A/B/C from the common decision snapshot;
+- D's later same-cycle accepted entry does not retroactively become a required succession acceptor;
+- captured cohort members still revalidate live action-relevant eligibility;
+- both the bridge-protected entry and otherwise-valid accepted succession may complete without resolution order manufacturing a new veto;
+- D does not acquire head Recognition merely by entering.
+
+### Mutation controls
+
+Must fail if:
+
+- entry-first resolution silently expands the accepted succession cohort to include D;
+- a captured A/B/C member becomes ineligible and the implementation ignores live revalidation;
+- technical/container order decides whether D has veto power.
+
+---
+
+## VS-SFL-06A — Self-nomination preserves predicates without self-negotiation theatre
+
+**Level:** role alias / nomination = nominee  
+**Semantic source:** SPEC §8.4 + DEC-0013 D5.
+
+Use Active headless H with current participants A/B/C.
+
+A self-nominates.
+
+The explicit act must omission-detectably satisfy:
+
+1. A's nomination;
+2. A's nominee willingness/acceptance;
+3. A's own participant-acceptance predicate.
+
+B and C must still separately accept/recognize the appointment.
+
+No A->A nomination response context is opened.
+
+### Controls
+
+- remove A's nominee willingness -> appointment fails;
+- remove A's participant-acceptance predicate -> appointment fails;
+- remove B or C acceptance -> appointment fails;
+- require redundant technical self-responses despite the explicit multi-capacity act -> fail representation/subordination review;
+- prohibit self-nomination solely because nominator==nominee -> fail.
+
+For nomination of B by A, A's nomination still does not substitute for A's separate participant acceptance.
+
+---
+
+## VS-SFL-06B — Inactive Household may fill an inert head role
+
+**Level:** lifecycle / role occupancy distinct from Household initiative  
+**Semantic source:** SPEC §§8.4–8.5 + DEC-0013 D6.
+
+### Initial state
+
+Inactive H has exactly one current sustaining participant A and a vacant persistent `HouseholdHeadRole(H)`.
+
+A uses the accepted self-nomination/multi-capacity consent path.
+
+### Required result
+
+- A may become occupant of the existing persistent role;
+- H remains Inactive;
+- no `HouseholdDecisionContext` or Household-mode initiative is produced while Inactive;
+- filling the role does not create provision/spend/mediation authority-in-use;
+- later valid reactivation preserves the occupied role identity/occupant;
+- no different-person succession is possible while A is the sole current participant.
+
+### Negative controls
+
+Must fail if implementation:
+
+- requires H to become Active merely to fill the persistent role;
+- treats role filling as reactivation;
+- grants Household-mode initiative to occupied-but-Inactive H;
+- allocates a new role identity on reactivation.
