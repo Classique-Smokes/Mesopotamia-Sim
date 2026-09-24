@@ -4,7 +4,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- `SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md` — **READY FOR DISPATCH**. Fresh whole-manifest review of immutable Slice-4 acceptance candidate2 `sfl-v0-slice4-acceptance-v1-candidate2` @ `5aaf3c131e36a9139ddfa9d225c04f6fc6e86dce` (blob `1ea19ec6c65f2031de920791334b32eaa10f398e`). Candidate1 remains immutable failed review evidence.
+- `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md` — **READY FOR DISPATCH**. Independent losslessness review of immutable adaptation-plan candidate `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` @ `51981cb0ad993fe4529341f2862f50d90d72ec26` (blob `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51`). Slice-4 acceptance itself is already frozen.
 
 
 - Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / DECISION RESOLVED**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. LATER-04 closed by accepted `../../decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`; LATER-05 closed from accepted authority. Acceptance drafting is active; coding remains unauthorized.
@@ -22,6 +22,9 @@ This directory contains bounded research, review and maintenance commissions. Th
 - Slice-3 reconciliation: `../../research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md` — acceptance authority now frozen under `SFL-V0-S3-ACCEPTANCE-v1`.
 
 ## Closed / historical
+
+- Slice-4 acceptance candidate2 pre-code review — **PASS — MAY FREEZE UNCHANGED**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`. Frozen authority: `../../plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST.md` / `sfl-v0-slice4-acceptance-v1`.
+
 
 - Slice-4 acceptance candidate1 pre-code review — **BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`; reconciliation: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_CANDIDATE1_BLOCK_RECONCILIATION.md`. No semantic escalation.
 

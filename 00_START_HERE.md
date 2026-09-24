@@ -39,19 +39,18 @@ Active work:
 
 - IMP-0001 / Slice 1: **VERIFIED COMPLETE**
 - IMP-0002 / Slice 2: **VERIFIED COMPLETE**
-- Slice-3 acceptance authority: **FROZEN / PASS**
-  - manifest: `plans/verification/SFL_V0/SLICE3_ACCEPTANCE_MANIFEST.md`
-  - version/ref: `SFL-V0-S3-ACCEPTANCE-v1` / `sfl-v0-slice3-acceptance-v1`
-  - freeze commit: `25160f33c994fd5f3e277ae98f03e55d37c878dd`
-  - frozen manifest SHA: `1aae13dc27572361fe99c31ef8aee0444d39364a`
-  - final pre-code review: `research/technical/SFL_V0_SLICE3_ACCEPTANCE_PRECODE_REVIEW_V3_FINAL.md` — **PASS — MAY FREEZE UNCHANGED**
-- IMP-0003 / Slice 3: **READY FOR DISPATCH**
-  - task: `tasks/implementation/IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md`
-  - planned branch: `implementation/imp-0003-slice3-household`
-- conditional S1-084 implementation gate:
-  - `tasks/research/IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md`
-  - fires before any change to the exact `WorldState` private-field inventory or current S1-084 structural evidence path.
-- head/office, endogenous provision solicitation/spending, mediated marriage authority, and checkpoint/restore remain later-slice work.
+- IMP-0003 / Slice 3: **VERIFIED COMPLETE**
+- Slice-4 acceptance authority: **FROZEN / PASS**
+  - manifest: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST.md`
+  - version/ref: `SFL-V0-S4-ACCEPTANCE-v1` / `sfl-v0-slice4-acceptance-v1`
+  - freeze commit: `c77131c1dda965521b6b756ec0e91c60e0800673`
+  - frozen manifest blob: `7edff7a0507d68037979b3b5e458864f1f8d6518`
+  - final pre-code review: `research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md` — **PASS — MAY FREEZE UNCHANGED**
+- Slice-4 inherited verification adaptation: **INDEPENDENT REVIEW ACTIVE**
+  - candidate: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1`
+  - review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md`
+- Slice-4 implementation: **NOT YET AUTHORIZED** until the adaptation plan receives `PASS — ADAPTATION PLAN APPROVED`.
+- head/office, endogenous provision/spending, mediated marriage authority, and DEC-0010 are now accepted Slice-4 scope; checkpoint/restore remains Slice 5.
 
 Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 
@@ -67,7 +66,7 @@ Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 - Decision register: `decisions/DECISION_REGISTER.md`
 - Accepted architecture: `architecture/accepted/`
 - Accepted SFL specification: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
-- Frozen Slice-3 acceptance authority: `plans/verification/SFL_V0/SLICE3_ACCEPTANCE_MANIFEST.md`
+- Frozen Slice-4 acceptance authority: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST.md`
 - Active assumptions: `registers/ASSUMPTIONS_REGISTER.md`
 - Open/resolved design questions: `registers/OPEN_ISSUES_REGISTER.md`
 - Current phase: `plans/CURRENT_PHASE.md`
