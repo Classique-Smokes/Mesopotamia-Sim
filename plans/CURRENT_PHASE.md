@@ -92,6 +92,16 @@ Slice-4 acceptance candidate2 / freeze:
 - freeze record: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_FREEZE_RECORD.md`
 - coding status: **NOT YET AUTHORIZED** pending inherited-verification adaptation approval.
 
+Semantic-interaction-delta failsafe rollout:
+
+- implementation plan: `plans/GOVERNANCE_SEMANTIC_INTERACTION_DELTA_FAILSAFE_IMPLEMENTATION_PLAN.md`
+- immutable rollout candidate: `governance-semantic-interaction-delta-rollout-v1-candidate1` @ `7c09edee119c253aaad1fe96eeb8ad63f625225d`
+- policy blob: `634ca400c1827f02f24d7042754bc5beafe89e17`
+- implementation-plan blob: `ac2a62eeabe4e9806aff3e20c1c24f1a63048177`
+- independent governance review: `tasks/research/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW.md`
+- governance promotion status: **NOT YET AUTHORIZED**
+- planned sequence: independent review -> Director approval -> canonical protocol/checklist/template promotion -> Slice-4 pilot -> pilot reconciliation -> successor Slice-4 acceptance
+
 Semantic-interaction-delta governance failsafe:
 
 - advisory process lesson: `research/technical/PROCESS_LESSON_COMPOSITIONAL_AFFORDANCE_AND_PARTICIPANT_ALIASING.md`
