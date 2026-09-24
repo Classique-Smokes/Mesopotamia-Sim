@@ -338,4 +338,179 @@
 - **Underlying primary evidence:** BE 6/2, 8; Poebel 1909, pp. 38–39; CDLI object metadata as cited in return E.
 - **Relevant secondary scholarship:** Return E’s source-critical comparison of catalogue/provenance information.
 - **RES-0001 source returns:** E.
-- **Evidence character:** DIRECT LEGAL EVIDENCE WITH PROVE
+- **Evidence character:** DIRECT LEGAL EVIDENCE WITH PROVENANCE QUALIFICATION
+- **Disagreements / variant readings:** The legal content is explicit; the archaeological/provenance attribution to Nippur is not secure.
+- **Confidence:** **MODERATE**
+- **Confidence rationale:** Textual content is clear, but local scope depends on an argued rather than securely excavated attribution.
+- **Limits on generalization:** Use only as qualified Nippur-attributed evidence; no secure neighborhood/household context.
+- **Relevance to simulation questions (descriptive only):** Shows paid release and future-claim management while preserving provenance uncertainty.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0022 — BE 6/2, 51 records a father-mediated fixed-term hire
+
+- **Claim / proposition:** BE 6/2, 51 records Idin-Ištar, explicitly son of Nabi-Šamaš, hired from Nabi-Šamaš by Lu-Ninsianna for a fixed term with a stated monthly grain payment.
+- **Period / date range:** Samsu-iluna 20, month III, day 21; service through month XII, day 30.
+- **Geography / archive / context:** Nippur legal document; Istanbul Ni 1847; no room-level context established.
+- **Underlying primary evidence:** BE 6/2, 51 = Ni 1847; Poebel 1909, p. 43 and catalogue p. 151; monthly amount 80 qa grain in the edition.
+- **Relevant secondary scholarship:** Poebel’s suggestion about payment timing is commentary, not an explicit clause.
+- **RES-0001 source returns:** E.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** Occupation, age, residence, precise payment recipient, and ownership/status are not stated.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** Kin relation, hiring parties, term, and rate are explicit.
+- **Limits on generalization:** One hire; not a standard wage, proof of child labor, or proof of free self-contracting/enslavement.
+- **Relevance to simulation questions (descriptive only):** Shows paid work mediated through kinship without making kinship and labor status identical.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0023 — Inheritance divisions could allocate heterogeneous asset bundles including named enslaved persons
+
+- **Claim / proposition:** Nippur inheritance divisions could distribute heterogeneous portfolios—land or built property, movable goods, resource entitlements, balancing transfers, and enslaved persons—and BE 6/2, 23 explicitly includes Narubtum as a named female heir while allocating named enslaved people between her and Ur-Pabilsaga’s shares.
+- **Period / date range:** Samsu-iluna 4, month X, day 21 (BE 6/2, 23) and Samsu-iluna 6, month VI, day 14 (BE 6/2, 26).
+- **Geography / archive / context:** Nippur-attributed private inheritance documents; precise house contexts unverified.
+- **Underlying primary evidence:** BE 6/2, 23 = P453321 = Ist Ni 1917; BE 6/2, 26 = Istanbul Ni 45; Poebel 1909.
+- **Relevant secondary scholarship:** No generalized legal theory is necessary; later dossier work by Goddeeris/Földi is relevant to BE 6/2, 23 links.
+- **RES-0001 source returns:** A, C, D, E.
+- **Evidence character:** DIRECT LEGAL EVIDENCE + CROSS-CASE SYNTHESIS
+- **Disagreements / variant readings:** Some older object/name readings in BE 6/2, 26 remain unrecollated; BE 6/2, 23’s wider genealogy/co-ownership interpretation is disputed.
+- **Confidence:** **HIGH for the enumerated allocations; MODERATE for broader dossier reconstruction**
+- **Confidence rationale:** The asset categories and named people are explicit in the editions; multiple agents discussing the same text are not counted as independent corroboration.
+- **Limits on generalization:** No population rate, universal inheritance arrangement, residential roster, or universal gender rule.
+- **Relevance to simulation questions (descriptive only):** Shows differentiated estate composition and person-specific allocation.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0024 — Family-linked resources could carry differentiated rights among named participants
+
+- **Claim / proposition:** Selected Nippur family-linked agreements distinguish person-specific claims and operative rights in resources rather than treating a “household” or family label as a single undifferentiated ownership interest.
+- **Period / date range:** Old Babylonian, especially Samsu-iluna 4 and 13 in the cited examples.
+- **Geography / archive / context:** Private property and inheritance agreements; precise houses not verified.
+- **Underlying primary evidence:** BE 6/2, 11, 12, 23, and 43 as analyzed in return D.
+- **Relevant secondary scholarship:** Poebel 1909; Meinhold 2014/2015 provide later rights/inheritance analysis where relevant.
+- **RES-0001 source returns:** D.
+- **Evidence character:** CROSS-CASE LEGAL SYNTHESIS
+- **Disagreements / variant readings:** The proposition does not supply a complete legal taxonomy or universal household property regime.
+- **Confidence:** **HIGH for existence of differentiated claims**
+- **Confidence rationale:** Multiple explicit instruments distinguish parties, assets, and rights, although each case has its own terms.
+- **Limits on generalization:** No frequency or assumption that all family property was individualized in the same way.
+- **Relevance to simulation questions (descriptive only):** Prevents family/household labels from erasing person-specific claims.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0025 — A house partition could be followed rapidly by share consolidation
+
+- **Claim / proposition:** BE 6/2, 32–35 records a house inheritance partition followed within weeks by three purchases through which one coheir acquired the other documented shares.
+- **Period / date range:** Samsu-iluna 11/07/17 through 11/09/05.
+- **Geography / archive / context:** Nippur-attributed linked house-property deeds; no securely verified house/locus association.
+- **Underlying primary evidence:** BE 6/2, 32 (CBS 9182), 33 (CBS 7002), 34 (CBS 11558), 35 (CBS 11660; case CBS 11562).
+- **Relevant secondary scholarship:** Meinhold 2014, p. 22 n. 45, corrects Poebel’s shorthand and identifies two brothers and a nephew among sellers.
+- **RES-0001 source returns:** D.
+- **Evidence character:** DIRECT SEQUENTIAL LEGAL EVIDENCE
+- **Disagreements / variant readings:** Legal partition does not prove physical walls, separate residences, forced sale, or financial distress; Poebel’s “four brothers” shorthand is corrected.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** Dates, dimensions/neighbors, and linked shares support the sequence beyond name repetition alone.
+- **Limits on generalization:** One sequence; no citywide consolidation rate.
+- **Relevance to simulation questions (descriptive only):** Shows fragmentation and reconsolidation as successive legal events.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0026 — A prior lifetime gift could be recognized in a later estate settlement
+
+- **Claim / proposition:** OECT 8, 4 / MC 3, 25 records a later settlement that acknowledged a prior lifetime gift to Nanna-meša’s daughter Nin-kuzu and combined that acknowledgment with compensation and waiver among other family claimants.
+- **Period / date range:** Old Babylonian; date as treated in the Mannum-mešu-liṣṣur dossier.
+- **Geography / archive / context:** Nippur; family estate settlement.
+- **Underlying primary evidence:** OECT 8, 4 = MC 3, 25 = P283650 = Ashm 1926-0379, obv. 1–20 and rev. 1.
+- **Relevant secondary scholarship:** Meinhold 2014/2015; Stone and Owen 1991; Hunter 1930 primary edition route.
+- **RES-0001 source returns:** C.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** The broader family reconstruction is scholarly; the proposition is limited to the recalled gift and settlement clauses.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** Gift, compensation, and renunciation are recorded in the settlement.
+- **Limits on generalization:** One settlement; not a general rule that all lifetime gifts were offset later.
+- **Relevance to simulation questions (descriptive only):** Shows how earlier transfers could remain relevant in later estate resolution.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0027 — Inherited built-property rights could be exchanged for recurring institutional rights
+
+- **Claim / proposition:** OECT 8, 16 / MC 3, 30 records Mannum exchanging inherited and preferential built-property interests for fractional recurring institutional rights.
+- **Period / date range:** Old Babylonian; within the Mannum-mešu-liṣṣur dossier.
+- **Geography / archive / context:** Nippur property and institutional-rights transaction.
+- **Underlying primary evidence:** OECT 8, 16 = MC 3, 30 = P283643 = Ashm 1926-0384, obv. 1–12 and rev. 1–4.
+- **Relevant secondary scholarship:** Meinhold 2014/2015; Stone and Owen 1991.
+- **RES-0001 source returns:** C.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** The wider economic trajectory is a dossier reconstruction; actual income/performance of the institutional rights is not established.
+- **Confidence:** **HIGH for the exchange itself**
+- **Confidence rationale:** The exchanged categories and fractional rights are explicit.
+- **Limits on generalization:** One transaction; not evidence of unrestricted marketability of every office/right.
+- **Relevance to simulation questions (descriptive only):** Shows that inherited resources could change legal/economic form.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0028 — Earlier expense claims could be recognized in a later settlement with heirs
+
+- **Claim / proposition:** OECT 8, 11 / MC 3, 31 records recognition of Mannum’s earlier expenses for Ibbī-Enlil and a settlement transferring an institutional entitlement from the heirs.
+- **Period / date range:** Old Babylonian; within the Mannum-mešu-liṣṣur dossier.
+- **Geography / archive / context:** Nippur family/property settlement.
+- **Underlying primary evidence:** OECT 8, 11 = MC 3, 31 = P283642 = Ashm 1926-0380; linked heir group also appears in OECT 8, 19 (P283646) with a retained name variant.
+- **Relevant secondary scholarship:** Meinhold 2014/2015; Stone and Owen 1991.
+- **RES-0001 source returns:** C.
+- **Evidence character:** DIRECT LEGAL EVIDENCE WITH PROSOPOGRAPHIC LINK
+- **Disagreements / variant readings:** The recorded claim/examination/settlement is secure; not every cross-document family link is equally certain.
+- **Confidence:** **HIGH for the settlement; MODERATE for all dossier links**
+- **Confidence rationale:** The expense claim and resulting transfer are explicit, while prosopographic identity across records needs caution.
+- **Limits on generalization:** One settlement; no universal rule for reimbursing expenses from heirs.
+- **Relevance to simulation questions (descriptive only):** Shows earlier obligations/claims affecting later estate holders.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0029 — MC 3, 51 should use the revised Samsu-iluna 10 date
+
+- **Claim / proposition:** The published re-edition of MC 3, 51 / CUSAS 15, 23 dates the partition to Samsu-iluna 10 rather than the older year-23 attribution; arguments that depend on the older chronology require reconsideration.
+- **Period / date range:** Samsu-iluna 10 according to the re-edition.
+- **Geography / archive / context:** Nippur Mannum-mešu-liṣṣur dossier.
+- **Underlying primary evidence:** MC 3, 51 = CUSAS 15, 23 = P270657 as re-edited by Meinhold; compared with OECT 8, 16 (P283643).
+- **Relevant secondary scholarship:** Meinhold 2015 is the principal correction; Stone and Owen 1991 preserves the older reconstruction context.
+- **RES-0001 source returns:** C.
+- **Evidence character:** SOURCE-CRITICAL CHRONOLOGICAL CORRECTION
+- **Disagreements / variant readings:** The date correction is strong; the broader economic/inheritance reconstruction that follows from it remains interpretive.
+- **Confidence:** **HIGH for revised date; MODERATE for wider reconstruction**
+- **Confidence rationale:** Return C directly prioritizes the published re-edition and its correction.
+- **Limits on generalization:** Corrects this document’s chronology only; does not automatically resolve every dossier sequence.
+- **Relevance to simulation questions (descriptive only):** Prevents an obsolete date from controlling subsequent historical inference.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0030 — House I contracts record changing property interests without a complete resident census
+
+- **Claim / proposition:** The House I legal sequence records changing rights in house property through partition, sale/exchange, joint acquisition, and purchase of another party’s share; the documents do not establish a complete co-resident group or a one-to-one map from legal share to physical occupancy.
+- **Period / date range:** Samsu-iluna 8–18 in the catalogued House I contracts.
+- **Geography / archive / context:** TA House I; NN 42–47; associated finds TA 178/185 XA-1.
+- **Underlying primary evidence:** NN 42–47; SAOC 44 nos. 44/46/47 among the overlapping published contracts.
+- **Relevant secondary scholarship:** Stone 1987, pp. 64–68 and catalogue; Stone 1981 residence interpretation.
+- **RES-0001 source returns:** B, F.
+- **Evidence character:** MIXED LEGAL/ARCHAEOLOGICAL SYNTHESIS
+- **Disagreements / variant readings:** NN 44 area and NN 47 catalogue/narrative tension remain; spatial correlation and move-out events are not independently established.
+- **Confidence:** **MODERATE**
+- **Confidence rationale:** The transaction sequence is catalogued coherently, but residential/architectural mapping is interpretive and readings were not freshly collated.
+- **Limits on generalization:** This group only; no general brotherly co-residence or household-fission pattern.
+- **Relevance to simulation questions (descriptive only):** Separates changing legal interests from a reconstructed resident group.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0031 — One final House I deposit is not six successive documented occupations
+
+- **Claim / proposition:** The six House I transaction documents are associated with a final XA-1 assemblage; their differing transaction dates do not constitute six independently documented occupation phases.
+- **Period / date range:** Texts Samsu-iluna 8–18; later XA-1 deposition.
+- **Geography / archive / context:** TA 178 and TA 185, House I.
+- **Underlying primary evidence:** Catalogued findspots of NN 42–47.
+- **Relevant secondary scholarship:** Stone 1987, pp. 65–67.
+- **RES-0001 source returns:** F.
+- **Evidence character:** ARCHAEOLOGICAL SOURCE-CRITICAL SYNTHESIS
+- **Disagreements / variant readings:** Original deposit formation and reassigned phase chronology were not independently checked; retained archive and intra-building dispersal are interpretations.
+- **Confidence:** **MODERATE**
+- **Confidence rationale:** Find attribution is internally consistent, but stratigraphy is mediated through later synthesis.
+- **Limits on generalization:** Does not prove the whole deposit was undisturbed or that every text concerns the same building.
+- **Relevance to simulation questions (descriptive only):** Prevents a property archive from becoming an artificial sequence of named resident phases.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0032 — TA House F instructional activity does not identify the later legal household
+
+- **Claim / proposition:** TA House F’s earlier assemblage strongly supports local instructional activity, but the later legal texts from the building do not establish the identity or household composition of the earlier teaching occupants.
+- **Period / date range:** Earlier field level 10 / Stone XI, principally 1740s BCE; later XA-1 legal assemblage.
+- **Geography / archive / context:** TA House F (not TB House F).
+- **Underlying primary evidence:** Exercise tablets, installations, joins, and later NN 11–17 as summarized in the supplied studies.
+- **Relevant secondary scholarship:** Robson 2001, pp. 39–45; Stone 1987, pp. 56–59.
+- **RES-0001 source 
