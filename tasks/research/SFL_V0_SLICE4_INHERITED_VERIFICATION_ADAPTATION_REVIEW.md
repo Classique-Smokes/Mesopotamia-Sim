@@ -1,5 +1,6 @@
 # SFL v0 Slice 4 — Independent Inherited Verification Adaptation Review
 
+**Status:** SUSPENDED BY DIRECTOR SEMANTIC BLOCK — a return may be preserved, but cannot authorize implementation while the block is active  
 **Task type:** fresh regular chat / clean-context independent verification-adaptation review  
 **Role:** independent assurance reviewer  
 **Authority:** advisory verdict only; do not edit candidate plan, frozen manifests, or production code
