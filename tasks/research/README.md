@@ -4,7 +4,9 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md` — **READY FOR DISPATCH**. Independent losslessness review of immutable adaptation-plan candidate `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` @ `51981cb0ad993fe4529341f2862f50d90d72ec26` (blob `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51`). Slice-4 acceptance itself is already frozen.
+- Slice-4 Director semantic block — **ACTIVE**. Frozen boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`. Await Director's local semantic-gap + governance challenge before any implementation authorization.
+
+- `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md` — **SUSPENDED AS FORWARD GATE BY DIRECTOR SEMANTIC BLOCK**. Independent losslessness review of immutable adaptation-plan candidate `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` @ `51981cb0ad993fe4529341f2862f50d90d72ec26` (blob `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51`). Slice-4 acceptance itself is already frozen.
 
 
 - Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / DECISION RESOLVED**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. LATER-04 closed by accepted `../../decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`; LATER-05 closed from accepted authority. Acceptance drafting is active; coding remains unauthorized.
