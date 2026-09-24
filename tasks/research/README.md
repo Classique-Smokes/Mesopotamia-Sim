@@ -4,10 +4,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- `SFL_V0_SLICE4_PARALLEL_DISCOVERY_DISPATCH.md` — **READY FOR PARALLEL DISPATCH**. Index for three fresh-context Slice-4 preimplementation discovery commissions.
-- `SFL_V0_SLICE4_DISCOVERY_A_AUTHORITY_GAPS.md` — accepted head/office/dual-mode authority boundary, LATER-04/LATER-05, and Director-decision map.
-- `SFL_V0_SLICE4_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — promoted Slice-3 kernel seam/pressure map for persistent role, dual-mode agency, authority revalidation, provision/spending, and mediated marriage.
-- `SFL_V0_SLICE4_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — triggered canonical verification, completion witnesses, oracle/fixture rules, and acceptance-manifest readiness.
+- Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / ONE DIRECTOR DECISION PENDING**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. Director proposal: `../../proposals/SFL_V0_SLICE4_LATER_04_AUTHORITY_RACE_DECISION.md`. LATER-05 closed from accepted authority; LATER-04 blocks acceptance freeze/coding.
 
 
 - `RES-0001_OLD_BABYLONIAN_NIPPUR/` — RETURNS COMPLETE / RECONCILIATION PENDING. Historical research on individual → relationship → household foundations in Old Babylonian Nippur. Durable returns are indexed at `research/historical/RES-0001/`.
@@ -21,6 +18,9 @@ This directory contains bounded research, review and maintenance commissions. Th
 - Slice-3 reconciliation: `../../research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md` — acceptance authority now frozen under `SFL-V0-S3-ACCEPTANCE-v1`.
 
 ## Closed / historical
+
+- Slice-4 parallel discovery commissions — **COMPLETE**. Returns: `../../research/technical/SFL_V0_SLICE4_AUTHORITY_AND_GAP_INVENTORY.md`, `../../research/technical/SFL_V0_SLICE4_IMPLEMENTATION_SURFACE_MAP.md`, `../../research/technical/SFL_V0_SLICE4_VERIFICATION_TRIGGER_MAP.md`. Dispatch index retained at `SFL_V0_SLICE4_PARALLEL_DISCOVERY_DISPATCH.md`.
+
 
 - IMP-0003 Slice-3 observation — **COMPLETE / RECONCILED / NON-GATING**. Raw package: `../../research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/`; MA reconciliation: `../../research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`; future-lessons index: `../../research/technical/IMP-0003/IMP-0003_FUTURE_LESSONS_INDEX.md`.
 - `IMP-0003_S1_084_STRUCTURAL_ADAPTATION_REVIEW.md` — historical conditional task; trigger remained **UNFIRED** through verified Slice-3 completion.

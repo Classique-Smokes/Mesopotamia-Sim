@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / Slice 3 OBSERVATION CLOSED / SLICE 4 PREIMPLEMENTATION DISCOVERY ACTIVE.**
+**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 DISCOVERY RECONCILED / PENDING DIRECTOR LATER-04 DECISION.**
 
 Verified Slice-1 completion:
 
@@ -68,6 +68,17 @@ Verified Slice-3 completion:
 - post-implementation observation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/` — **COMPLETE / RECONCILED**
 - observation MA reconciliation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`
 - compact future lessons: `research/technical/IMP-0003/IMP-0003_FUTURE_LESSONS_INDEX.md`
+
+Slice-4 discovery reconciliation:
+
+- authority/gap return: `research/technical/SFL_V0_SLICE4_AUTHORITY_AND_GAP_INVENTORY.md`
+- implementation surface return: `research/technical/SFL_V0_SLICE4_IMPLEMENTATION_SURFACE_MAP.md`
+- verification trigger return: `research/technical/SFL_V0_SLICE4_VERIFICATION_TRIGGER_MAP.md`
+- MA reconciliation: `research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`
+- LATER-04 Director proposal: `proposals/SFL_V0_SLICE4_LATER_04_AUTHORITY_RACE_DECISION.md`
+- LATER-05: **CLOSED by already accepted authority**
+- acceptance draft: ready after/around decision; freeze blocked until LATER-04 approval
+- coding status: **NOT AUTHORIZED**
 
 Slice-4 preimplementation discovery:
 
@@ -270,11 +281,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Dispatch the three fresh-context Slice-4 discovery commissions indexed at `tasks/research/SFL_V0_SLICE4_PARALLEL_DISCOVERY_DISPATCH.md`.
-2. Reconcile the three returns into `research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`.
-3. If a consequential semantic gap is established, route only that exact question to the Project Director; otherwise proceed without ceremony.
-4. Draft the Slice-4 acceptance/applicability candidate from accepted authority + reconciled verification map.
-5. Obtain independent pre-code review and freeze Slice-4 acceptance authority only on PASS.
-6. Only after freeze, issue the bounded Slice-4 implementation packet.
+1. Project Director resolves `proposals/SFL_V0_SLICE4_LATER_04_AUTHORITY_RACE_DECISION.md` — choose bounded authority-use-before-destruction or authority-destruction-before-use semantics.
+2. Master Architect promotes the approved LATER-04 rule losslessly into SPEC + canonical verification + deferred-gap ledger.
+3. Draft the complete Slice-4 acceptance/applicability candidate using the reconciled discovery map.
+4. Run independent pre-code review; repair if needed; freeze Slice-4 acceptance authority only on PASS.
+5. Close inherited Slice-3 structural-test adaptations losslessly where later Slice-4 types/state make literal absence/field-count witnesses obsolete.
+6. Only after freeze and adaptation closure, issue the bounded Slice-4 implementation packet.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
