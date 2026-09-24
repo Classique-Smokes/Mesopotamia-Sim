@@ -92,27 +92,19 @@ Slice-4 acceptance candidate2 / freeze:
 - freeze record: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_FREEZE_RECORD.md`
 - coding status: **NOT YET AUTHORIZED** pending inherited-verification adaptation approval.
 
-Semantic-interaction-delta failsafe rollout:
+Semantic-interaction-delta failsafe:
 
-- implementation plan: `plans/GOVERNANCE_SEMANTIC_INTERACTION_DELTA_FAILSAFE_IMPLEMENTATION_PLAN.md`
-- candidate1: `governance-semantic-interaction-delta-rollout-v1-candidate1` @ `7c09edee119c253aaad1fe96eeb8ad63f625225d` — **SUPERSEDED BEFORE REVIEW** by hostile pre-review challenge
-- active immutable rollout candidate: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`
-- candidate2 policy blob: `510ed36a15eb2912b50b0c9eda43953b1b6779bd`
-- candidate2 implementation-plan blob: `f7e22b372ebb1b805fba3ec6ecb84d7852b0329d`
-- pre-review challenge reconciliation: `research/technical/GOV-0002_PRE_REVIEW_HOSTILE_CHALLENGE_RECONCILIATION.md`
-- independent governance review: `tasks/research/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW.md`
-- governance promotion status: **NOT YET AUTHORIZED**
-- planned sequence: independent review -> Director approval -> canonical protocol/checklist/template promotion -> Slice-4 pilot -> pilot reconciliation -> successor Slice-4 acceptance
-
-Semantic-interaction-delta governance failsafe:
-
-- advisory process lesson: `research/technical/PROCESS_LESSON_COMPOSITIONAL_AFFORDANCE_AND_PARTICIPANT_ALIASING.md`
-- MA rollout plan: `plans/GOVERNANCE_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PLAN.md`
-- status: **PROPOSED / DIRECTOR REVIEW**
-- intended owner: `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`
-- design: trigger-based interaction-frontier audit over newly possible, newly suppressed/narrowed, newly dependent/retargeted, transition-carryover, and participant-aliasing deltas + one fresh negative-space challenge before consequential acceptance freeze
-- pilot target: currently blocked Slice 4 before DEC-0011 successor acceptance candidate
-- no governance authority changed yet
+- policy: **ACCEPTED / ACTIVE** under `DEC-0012_SEMANTIC_INTERACTION_DELTA_FAILSAFE.md`
+- policy label: `SID-ASSURANCE-v1`
+- normative owner: `governance/SPECIFICATION_TO_IMPLEMENTATION_ASSURANCE_PROTOCOL.md`
+- operational checklist: `governance/checklists/SEMANTIC_INTERACTION_DELTA_CHECKLIST.md`
+- implementation-task stop rule: `tasks/IMPLEMENTATION_TASK_PACKET_TEMPLATE.md`
+- acceptance-freeze gate: `governance/checklists/ARTIFACT_FREEZE_CHECKLIST.md`
+- reviewed rollout candidate2: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`
+- independent review: `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md` — **PASS — POLICY READY FOR DIRECTOR PROMOTION**
+- canonical promotion: **COMPLETE / pending merge of this promotion branch**
+- mandatory next gate: Slice-4 SID pilot before any successor Slice-4 acceptance candidate
+- Slice-4 implementation remains **DIRECTOR BLOCKED** until pilot + successor acceptance + inherited-adaptation gates close
 
 Private-resource supplementation semantic patch:
 
