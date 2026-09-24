@@ -1,0 +1,32 @@
+{
+  "title": "Mode B2 \u2014 Controlled Lineage",
+  "stableCycles": 9,
+  "simulationFaulted": false,
+  "semanticEvents": 100,
+  "decisions": 4,
+  "households": 2,
+  "formations": 2,
+  "entries": 0,
+  "exits": 2,
+  "continuations": 2,
+  "lineages": 1,
+  "commitments": 0,
+  "eventKinds": {
+    "AttitudeComposition": 4,
+    "AttitudeDecay": 2,
+    "CandidateRecognitionEstablished": 5,
+    "Communication": 2,
+    "Consumption": 54,
+    "Gift": 4,
+    "HouseholdContinued": 2,
+    "HouseholdFormation": 2,
+    "HouseholdLifecycle": 1,
+    "HouseholdLineage": 1,
+    "HouseholdParticipationEnded": 2,
+    "HouseholdRecognitionAcquired": 4,
+    "Proposal": 8,
+    "Response": 4,
+    "SustainingParticipationFounded": 5
+  },
+  "semanticTechnicalFallbackEvents": 0
+}

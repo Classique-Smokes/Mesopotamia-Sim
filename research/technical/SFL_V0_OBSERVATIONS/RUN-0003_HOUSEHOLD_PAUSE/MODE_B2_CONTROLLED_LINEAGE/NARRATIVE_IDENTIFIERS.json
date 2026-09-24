@@ -1,0 +1,14 @@
+{
+  "predecessor": 1,
+  "predecessorLifecycle": "Inactive",
+  "successor": 2,
+  "lineage": [
+    {
+      "id": 7,
+      "kind": "DivisionDescendant",
+      "predecessors": [
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "Cycle": 1,
+    "actor": 3,
+    "proposal": 1,
+    "Context": "Response",
+    "Profile": "SCORE-RP-001",
+    "SubjectiveInputs": [
+      "OwnGrain:11",
+      "Proposal:1"
+    ],
+    "TechnicalFallback": false,
+    "RulesVersion": "SFL-S2-v1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "candidates": [
+      {
+        "Key": "Accept",
+        "Meaning": "Accept",
+        "Eligible": true,
+        "Gate": "",
+        "Components": {
+          "ResponsePreference": 100
+        },
+        "FinalScore": 100,
+        "Selected": true,
+        "terms": null
+      },
+      {
+        "Key": "Decline",
+        "Meaning": "Decline",
+        "Eligible": true,
+        "Gate": "",
+        "Components": {
+          "ResponsePreference": 0
+        },
+        "FinalScore": 0,
+        "Selected": false,
+        "terms": null
+      }
+    ]
+  },
+  {
+    "Cycle": 2,
+    "actor": 2,
+    "proposal": 2,
+    "Context": "Response",
+    "Profile": "SCORE-RP-001",
+    "SubjectiveInputs": [
+      "OwnGrain:10",
+      "Proposal:2"
+    ],
+    "TechnicalFallback": false,
+    "RulesVersion": "SFL-S2-v1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "candidates": [
+      {
+        "Key": "Accept",
+        "Meaning": "Accept",
+        "Eligible": true,
+        "Gate": "",
+        "Components": {
+          "ResponsePreference": 100
+        },
+        "FinalScore": 100,
+        "Selected": true,
+        "terms": null
+      },
+      {
+        "Key": "Decline",
+        "Meaning": "Decline",
+        "Eligible": true,
+        "Gate": "",
+        "Components": {
+          "ResponsePreference": 0
+        },
+        "FinalScore": 0,
+        "Selected": false,
+        "terms": null
+      }
+    ]
+  },
+  {
+    "Cycle": 7,
+    "actor": 2,
+    "proposal": 7,
+    "Context": "Response",
+    "Profile": "SCORE-RP-001",
+    "SubjectiveInputs": [
+      "OwnGrain:6",
+      "Proposal:7"
+    ],
+    "TechnicalFallback": false,
+    "RulesVersion": "SFL-S2-v1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "candidates": [
+      {
+        "Key": "Accept",
+        "Meaning": "Accept",
+        "Eligible": true,
+        "Gate": "",
+        "Components": {
+          "ResponsePreference": 100
+        },
+        "FinalScore": 100,
+        "Selected": true,
+        "terms": null
+      },
+      {
+        "Key": "Decline",
+        "Meaning": "Decline",
+        "Eligible": true,
+        "Gate": "",
+        "Components": {
+          "ResponsePreference": 0
+        },
+        "FinalScore": 0,
+        "Selected": false,
+        "terms": null
+      }
+    ]
+  },
+  {
+    "Cycle": 8,
+    "actor": 1,
+    "proposal": 8,
+    "Context": "Response",
+    "Profile": "SCORE-RP-001",
+    "SubjectiveInputs": [
+      "OwnGrain:2",
+      "Proposal:8"
+    ],
+    "TechnicalFallback": false,
+    "RulesVersion": "SFL-S2-v1",
+    "ConfigurationVersion": "SFL-S3-v1",
+    "candidates": [
+      {
+        "Key": "Accept",
+        "Meaning": "Accept",
+        "Eligible": true,
+        "Gate": "",
+        "Components": {
+          "ResponsePreference": 100
+        },
+        "FinalScore": 100,
+        "Selected": true,
+        "terms": null
+      },
+      {
+        "Key": "Decline",
+        "Meaning": "Decline",
+        "Eligible": true,
+        "Gate": "",
+        "Components": {
+          "ResponsePreference": 0
+        },
+        "FinalScore": 0,
+        "Selected": false,
+        "terms": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "label": "initial",
+    "cycle": 0,
+    "snapshot": {
+      "cycle": 0,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-1",
+    "cycle": 1,
+    "snapshot": {
+      "cycle": 1,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-2",
+    "cycle": 2,
+    "snapshot": {
+      "cycle": 2,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-3",
+    "cycle": 3,
+    "snapshot": {
+      "cycle": 3,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-4",
+    "cycle": 4,
+    "snapshot": {
+      "cycle": 4,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-5",
+    "cycle": 5,
+    "snapshot": {
+      "cycle": 5,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-6",
+    "cycle": 6,
+    "snapshot": {
+      "cycle": 6,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-7",
+    "cycle": 7,
+    "snapshot": {
+      "cycle": 7,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-8",
+    "cycle": 8,
+    "snapshot": {
+      "cycle": 8,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-9",
+    "cycle": 9,
+    "snapshot": {
+      "cycle": 9,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-10",
+    "cycle": 10,
+    "snapshot": {
+      "cycle": 10,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-11",
+    "cycle": 11,
+    "snapshot": {
+      "cycle": 11,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  },
+  {
+    "label": "autonomous-12",
+    "cycle": 12,
+    "snapshot": {
+      "cycle": 12,
+      "households": [],
+      "formations": [],
+      "associations": [],
+      "entries": [],
+      "exits": [],
+      "continuations": [],
+      "lineages": [],
+      "commitments": []
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "title": "Mode A \u2014 Autonomous Reachability",
+  "stableCycles": 12,
+  "simulationFaulted": false,
+  "semanticEvents": 216,
+  "decisions": 72,
+  "households": 0,
+  "formations": 0,
+  "entries": 0,
+  "exits": 0,
+  "continuations": 0,
+  "lineages": 0,
+  "commitments": 0,
+  "eventKinds": {
+    "Consumption": 72,
+    "Farm": 72,
+    "Proposal": 72
+  },
+  "semanticTechnicalFallbackEvents": 0
+}

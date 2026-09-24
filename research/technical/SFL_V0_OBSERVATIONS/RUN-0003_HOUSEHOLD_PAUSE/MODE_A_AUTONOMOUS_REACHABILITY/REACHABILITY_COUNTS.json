@@ -1,0 +1,48 @@
+{
+  "declaredHorizonCycles": 12,
+  "completedStableCycles": 12,
+  "simulationFaulted": false,
+  "finalCandidateRecognition": [
+    {
+      "actor": 1,
+      "status": "Unknown"
+    },
+    {
+      "actor": 2,
+      "status": "Unknown"
+    },
+    {
+      "actor": 3,
+      "status": "Unknown"
+    },
+    {
+      "actor": 4,
+      "status": "Unknown"
+    },
+    {
+      "actor": 5,
+      "status": "Unknown"
+    },
+    {
+      "actor": 6,
+      "status": "Unknown"
+    }
+  ],
+  "householdCount": 0,
+  "formationCount": 0,
+  "participationStartCount": 0,
+  "participationEndCount": 0,
+  "lifecycleChangeCount": 0,
+  "lineageCount": 0,
+  "commitmentCount": 0,
+  "communicationCount": 0,
+  "qualifyingSupportCount": 0,
+  "proposalActionCounts": {
+    "Farm": 72
+  },
+  "selectedPersonalDecisionCounts": {
+    "Farm": 72
+  },
+  "personalDecisionTieFallbackCount": 72,
+  "semanticTechnicalFallbackEventCount": 0
+}

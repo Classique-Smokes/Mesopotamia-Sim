@@ -1,0 +1,50 @@
+[
+  {
+    "label": "after-controlled-provision-prerequisite",
+    "cycle": 7,
+    "household": 1,
+    "householdLifecycle": "Active",
+    "person": 1,
+    "personalGrain": 3,
+    "needsGrain": false,
+    "personExposedCapacity": 1,
+    "activeCommitment": true,
+    "householdMobilizableCapacity": 1
+  },
+  {
+    "label": "after-personal-gift",
+    "cycle": 8,
+    "household": 1,
+    "householdLifecycle": "Active",
+    "person": 1,
+    "personalGrain": 1,
+    "needsGrain": false,
+    "personExposedCapacity": 0,
+    "activeCommitment": true,
+    "householdMobilizableCapacity": 0
+  },
+  {
+    "label": "after-connected-compatible-loan",
+    "cycle": 9,
+    "household": 1,
+    "householdLifecycle": "Active",
+    "person": 1,
+    "personalGrain": 0,
+    "needsGrain": false,
+    "personExposedCapacity": 0,
+    "activeCommitment": true,
+    "householdMobilizableCapacity": 0
+  },
+  {
+    "label": "after-p1-exit",
+    "cycle": 14,
+    "household": 1,
+    "householdLifecycle": "Active",
+    "person": 1,
+    "personalGrain": 0,
+    "needsGrain": true,
+    "personExposedCapacity": 0,
+    "activeCommitment": false,
+    "householdMobilizableCapacity": 0
+  }
+]

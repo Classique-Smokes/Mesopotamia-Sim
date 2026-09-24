@@ -1,0 +1,605 @@
+[
+  {
+    "label": "predecessor-support-p1-p3",
+    "cycle": 1,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 1,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 9
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 1,
+      "Consumption": 6,
+      "Gift": 1,
+      "Proposal": 1,
+      "Response": 1
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 10,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 11,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 12,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 11,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 11,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 11,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "predecessor-support-p3-p2",
+    "cycle": 2,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 2,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 19
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 1,
+      "Consumption": 6,
+      "Gift": 1,
+      "Proposal": 1,
+      "Response": 1
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 9,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 11,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 10,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 10,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 10,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 10,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "predecessor-communicate-cycle2-support-to-p1",
+    "cycle": 3,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 3,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 28
+      }
+    ],
+    "eventKinds": {
+      "Communication": 1,
+      "Consumption": 6,
+      "Proposal": 1
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 8,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 10,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 9,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 9,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 9,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 9,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": []
+  },
+  {
+    "label": "predecessor-communicate-cycle1-support-to-p2",
+    "cycle": 4,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 4,
+        "actor": 3,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 36
+      }
+    ],
+    "eventKinds": {
+      "CandidateRecognitionEstablished": 3,
+      "Communication": 1,
+      "Consumption": 6,
+      "HouseholdFormation": 1,
+      "HouseholdRecognitionAcquired": 1,
+      "Proposal": 1,
+      "SustainingParticipationFounded": 3
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 9,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 8,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 8,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 8,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 8,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": [
+      {
+        "id": 1,
+        "lifecycle": "Active",
+        "participants": [
+          1,
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "label": "p1-exits-predecessor",
+    "cycle": 5,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 5,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 54
+      }
+    ],
+    "eventKinds": {
+      "AttitudeDecay": 2,
+      "Consumption": 6,
+      "HouseholdContinued": 1,
+      "HouseholdParticipationEnded": 1,
+      "HouseholdRecognitionAcquired": 1,
+      "Proposal": 1
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 8,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": [
+      {
+        "id": 1,
+        "lifecycle": "Active",
+        "participants": [
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "label": "p2-exits-predecessor",
+    "cycle": 6,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 6,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 64
+      }
+    ],
+    "eventKinds": {
+      "Consumption": 6,
+      "HouseholdContinued": 1,
+      "HouseholdLifecycle": 1,
+      "HouseholdParticipationEnded": 1,
+      "HouseholdRecognitionAcquired": 1,
+      "Proposal": 1
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 6,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": [
+      {
+        "id": 1,
+        "lifecycle": "Inactive",
+        "participants": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "label": "fresh-postexit-support-p1-p2",
+    "cycle": 7,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 7,
+        "actor": 1,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 76
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 1,
+      "Consumption": 6,
+      "Gift": 1,
+      "Proposal": 1,
+      "Response": 1
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 7,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": [
+      {
+        "id": 1,
+        "lifecycle": "Inactive",
+        "participants": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "label": "fresh-postexit-support-p2-p1",
+    "cycle": 8,
+    "MaterialDeadlock": false,
+    "outcomes": [
+      {
+        "proposal": 8,
+        "actor": 2,
+        "kind": "Committed",
+        "Reason": "",
+        "eventId": 86
+      }
+    ],
+    "eventKinds": {
+      "AttitudeComposition": 1,
+      "Consumption": 6,
+      "Gift": 1,
+      "Proposal": 1,
+      "Response": 1
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 5,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": [
+      {
+        "id": 1,
+        "lifecycle": "Inactive",
+        "participants": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "label": "close-successor-formation",
+    "cycle": 9,
+    "MaterialDeadlock": false,
+    "outcomes": [],
+    "eventKinds": {
+      "CandidateRecognitionEstablished": 2,
+      "Consumption": 6,
+      "HouseholdFormation": 1,
+      "HouseholdLineage": 1,
+      "HouseholdRecognitionAcquired": 1,
+      "SustainingParticipationFounded": 2
+    },
+    "technicalFallbackEvents": [],
+    "people": [
+      {
+        "id": 1,
+        "Grain": 2,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 2,
+        "Grain": 4,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 3,
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 4,
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 5,
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      },
+      {
+        "id": 6,
+        "Grain": 3,
+        "NeedsGrain": false,
+        "dwelling": 1
+      }
+    ],
+    "households": [
+      {
+        "id": 1,
+        "lifecycle": "Inactive",
+        "participants": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "lifecycle": "Active",
+        "participants": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+]

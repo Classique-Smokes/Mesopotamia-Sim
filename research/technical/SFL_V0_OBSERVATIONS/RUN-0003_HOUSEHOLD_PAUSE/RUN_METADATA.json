@@ -1,0 +1,16 @@
+{
+  "observation": "IMP-0003-OBS-001",
+  "sourceRevision": "f7ca9525d17ed20758058df7aff97b2f47e5a01a",
+  "harnessRevision": "ecd1ebb5affbe0749d87e1aa47f4847e067e480d",
+  "executedAtUtc": "2026-09-24T03:21:02.7686991\u002B00:00",
+  "configurationVersion": "SFL-S3-v1",
+  "dotnetFramework": ".NET 10.0.12",
+  "runtimeVersion": "10.0.12",
+  "os": "Ubuntu 24.04.5 LTS",
+  "interpretation": "RAW_ONLY",
+  "modes": [
+    "MODE_A_AUTONOMOUS_REACHABILITY",
+    "MODE_B1_CONTINUITY_RECOGNITION_PROVISION",
+    "MODE_B2_CONTROLLED_LINEAGE"
+  ]
+}
