@@ -2,7 +2,8 @@
 
 **Status:** ACCEPTED — Master Architect operating protocol  
 **Authority:** Subordinate to the Project Seed, Working Constitution, accepted semantics/architecture, and Master Architect Guide  
-**Purpose:** Govern consequential transitions from accepted specification/design into delegated implementation without turning every coding task into a red-team program.
+**Purpose:** Govern consequential transitions from accepted specification/design into delegated implementation without turning every coding task into a red-team program.  
+**Semantic-interaction-delta policy:** `SID-ASSURANCE-v1` under accepted `DEC-0012`.
 
 **Load when:** a subsystem/slice is about to cross a high-inertia specification→implementation boundary, when interacting semantics are complex enough that implementation discretion could create project meaning, or when a separately owned acceptance/completion authority is warranted.  
 **Do not load merely because:** a routine/local implementation task already has bounded accepted contracts and low-cost reversibility.  
@@ -135,6 +136,46 @@ Missing detail remains a visible gap. It is not implementation discretion.
 
 Record unresolved items with a trigger when they can safely be deferred.
 
+### Semantic interaction delta
+
+For consequential new or materially changed semantic layers, record:
+
+`Semantic-interaction-delta trigger: FIRED / NOT FIRED — <reason>`
+
+The trigger FIRES when the new semantics can materially change an existing capability/path through resources, authority, ownership/control, knowledge/Recognition, action/response routing, lifecycle/transition, topology/time/space, inheritance/succession/transfer, higher-order institutional mediation, participant aliasing, or another consequential new↔old causal interaction.
+
+If NOT FIRED, no further semantic-delta artifact is required.
+
+If FIRED:
+
+1. identify the bounded **interaction frontier** — only the existing semantic surfaces the new layer can materially touch;
+2. inspect, where relevant:
+   - newly possible/compositional affordances;
+   - old capabilities suppressed, narrowed, or made newly conditional;
+   - new dependency/coupling/causal retargeting;
+   - transition carryover/path closure;
+   - participant aliasing;
+3. use old-world projection where meaningful as a diagnostic, not as a universal conservative-extension rule;
+4. run one fresh two-pass challenge:
+   - **Pass A:** before seeing the Master Architect frontier, the reviewer independently identifies candidate affected prior surfaces from the new layer plus a subsystem/domain-oriented canonical map of adjacent semantics; durably freeze Pass A before reveal;
+   - **Pass B:** reveal/compare the Master Architect frontier, reconcile the justified union, then challenge that union with a small bounded set of ordinary concrete histories/questions;
+5. reconcile every finding through accepted authority.
+
+Classification alone is not closure:
+
+- `DERIVED CONSEQUENCE` must cite controlling accepted authority;
+- `DEFERRED` clears the current freeze gate only when the deferral itself is authorized, has a durable owner/trigger, leaves the current slice semantically complete/implementable, and cannot be accidentally chosen by implementation;
+- `PROHIBITED / INTENDED CHANGE` and `IRRELEVANT` require explicit authority/rationale.
+
+Consequential `UNRESOLVED` or `ACCIDENTAL GAP / REGRESSION` blocks acceptance freeze.
+
+A delta closure is bound to an exact semantic base. Any later **material semantic change** makes it stale until explicitly re-evaluated as either:
+
+- `REVALIDATED — NO FRONTIER CHANGE`; or
+- `REOPENED — AFFECTED FRONTIER`.
+
+Use `checklists/SEMANTIC_INTERACTION_DELTA_CHECKLIST.md` for the operational prompts, table schema, disposition tests, closure markers, pilot/effectiveness labels, and scaling discipline.
+
 ## 4. Preserve future seams without implementing future slices
 
 Audit only future seams that are already accepted or expensive to retrofit.
@@ -255,6 +296,18 @@ Check for:
 
 A reviewer should re-derive from accepted sources rather than merely checking that a previous defect list was patched.
 
+When the owning preimplementation reconciliation records `Semantic-interaction-delta trigger: FIRED`, acceptance freeze additionally requires:
+
+- current delta closure bound to the semantic base used by the acceptance candidate;
+- independently frozen Pass-A frontier discovery before Master Architect frontier reveal;
+- Pass-B challenge over the reconciled justified frontier union;
+- authority-bearing dispositions;
+- every DEFERRED item satisfying the authorized-deferral test;
+- `Consequential unresolved: 0`;
+- `Accidental gaps outstanding: 0`.
+
+Acceptance review verifies this closure and omission-detectable coverage of resulting accepted meanings; it does not create or silently disposition missing semantics.
+
 ## 11. Optional formalization / exhaustive probe
 
 Use a small reference model, state enumeration, model checker, or combinatorial probe when interaction risk is high and prose review is not discriminating enough.
@@ -301,6 +354,8 @@ Before release, a consequential implementation packet should state:
 
 Implementation discovery remains evidence, not permission to redesign higher-level decisions.
 
+If `SID-ASSURANCE-v1` FIRED for the slice, the implementation packet must cite the accepted semantic-delta closure among its required inputs and carry the standard unclassified-interaction stop rule from the implementation-task template.
+
 ## 14. Release / no-release gate
 
 Release implementation only when all material preconditions for the chosen assurance depth are satisfied.
@@ -313,6 +368,8 @@ A **release** means:
 - remaining uncertainty is either irrelevant to the slice or durably deferred with a trigger.
 
 A **no-release** means the blocking gap is identified by class and owner; do not respond with a vague “needs more review.”
+
+A consequential unresolved semantic-interaction delta, an outstanding accidental gap/regression, or a stale required delta closure is a **no-release** condition.
 
 A release is not a claim that implementation is already correct.
 
@@ -331,6 +388,8 @@ For consequential work, completion should verify not only green tests but confor
 Independent post-implementation review is warranted when the acceptance authority explicitly requires it.
 
 A fresh conformance reviewer may use small reviewer-owned scratch probes against the unchanged public implementation boundary to seek counterexamples to broad claims, hidden input dependencies, or interaction assumptions. Such probes are adversarial evidence, not candidate modifications and not substitutes for required canonical evidence; disclose their setup and results.
+
+If implementation or conformance reveals a consequential new↔old semantic interaction that was not classified by the accepted delta closure, treat it as an escalation/governance miss. Do not normalize it as local implementation behavior or infer that absence from the closure means support, prohibition, or discretion.
 
 ## 16. Completion output
 
@@ -352,4 +411,5 @@ Do not leave future agents to reconstruct assurance state from review chats or b
 - architecture choice: `ARCHITECTURE_DEVELOPMENT_POLICY.md`
 - implementation architecture conflict: `ARCHITECTURE_ESCALATION_RULES.md`
 - implementation packet construction: `../tasks/IMPLEMENTATION_TASK_PACKET_TEMPLATE.md`
+- semantic interaction delta operations: `checklists/SEMANTIC_INTERACTION_DELTA_CHECKLIST.md`
 - drift review: `REVIEW_AND_DRIFT_AUDIT.md`
