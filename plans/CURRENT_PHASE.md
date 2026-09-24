@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 ACCEPTANCE FROZEN / INHERITED VERIFICATION ADAPTATION REVIEW ACTIVE.**
+**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 IMPLEMENTATION BOUNDARY FROZEN / DIRECTOR SEMANTIC BLOCK ACTIVE.**
 
 Verified Slice-1 completion:
 
@@ -91,6 +91,15 @@ Slice-4 acceptance candidate2 / freeze:
 - inherited exact REQUIRED: **270 = 128 S1 + 46 S2 + 96 S3**
 - freeze record: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_FREEZE_RECORD.md`
 - coding status: **NOT YET AUTHORIZED** pending inherited-verification adaptation approval.
+
+Director-blocked Slice-4 implementation boundary:
+
+- immutable boundary ref: `sfl-v0-slice4-implementation-boundary-blocked-v1`
+- exact boundary commit: `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
+- block record: `plans/verification/SFL_V0/SLICE4_BLOCKED_IMPLEMENTATION_BOUNDARY_RECORD.md`
+- cause: consequential Director-identified semantic gap; details pending Director challenge
+- current Slice-4 acceptance v1 remains immutable historical evidence but is **operationally blocked from authorizing implementation**
+- coding bārû dispatch: **FORBIDDEN while block is active**
 
 Slice-4 inherited verification adaptation:
 
@@ -326,10 +335,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Run the fresh independent adaptation review at `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md`.
-2. If BLOCK, preserve the adaptation candidate and repair only the identified losslessness/enforcement defect.
-3. If **PASS — ADAPTATION PLAN APPROVED**, record the adaptation gate closed.
-4. Derive and dispatch the bounded Slice-4 implementation packet citing both frozen acceptance authority and the approved adaptation plan.
-5. Coding bārû must stop on any newly discovered inherited literal witness outside the approved plan rather than self-authorizing a weakening.
+1. Await the Project Director's two-layer challenge: local semantic gap + governance/process implication.
+2. Do not infer or pre-solve the missing semantic rule from current code/tests.
+3. Reconcile the specific semantic patch first, including any composition/race implications.
+4. Reassess whether frozen Slice-4 acceptance v1 remains sufficient; create a successor acceptance version if required.
+5. Reassess the inherited-verification adaptation plan against the repaired boundary.
+6. Only after the Director block is explicitly closed may a Slice-4 coding bārû be dispatched.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
