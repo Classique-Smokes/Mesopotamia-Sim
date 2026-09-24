@@ -21,6 +21,16 @@
 10. Update the smallest navigation/operational surfaces needed for future retrieval.
 11. Verify downstream task packets reference the frozen version/ref/SHA rather than a moving or ambiguous artifact.
 12. Any later operative change requires a new version/freeze cycle rather than silently moving the existing frozen identity.
+13. **Semantic-interaction-delta conditional gate:** when freezing a consequential acceptance artifact whose owning preimplementation reconciliation records `Semantic-interaction-delta trigger: FIRED`:
+    - verify the accepted delta closure is bound to the semantic base used by the candidate;
+    - verify fresh-reviewer Pass A was durably fixed before Master Architect frontier reveal;
+    - verify Pass B challenged the reconciled justified frontier union;
+    - verify every disposition has authority-bearing closure rationale and every DEFERRED item satisfies the authorized-deferral test;
+    - verify `Closure freshness: CURRENT`;
+    - verify `Consequential unresolved: 0`;
+    - verify `Accidental gaps outstanding: 0`;
+    - verify any semantic repairs were promoted before the candidate under review.
+   If the trigger is NOT FIRED, this conditional gate does not apply.
 
 ## Completion test
 

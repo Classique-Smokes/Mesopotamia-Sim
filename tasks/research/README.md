@@ -4,7 +4,9 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- `GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW.md` — **READY FOR DISPATCH — CANDIDATE2**. Fresh independent whole-policy governance review of `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a` (policy blob `510ed36a15eb2912b50b0c9eda43953b1b6779bd`; rollout-plan blob `f7e22b372ebb1b805fba3ec6ecb84d7852b0329d`). Candidate1 was superseded before review.
+- Slice-4 SID pilot — **NEXT GATE / NOT YET DISPATCHED**. Must run `SID-ASSURANCE-v1` frontier audit + frozen independent Pass A + Pass B challenge + MA reconciliation before successor Slice-4 acceptance drafting.
+
+- GOV-0002 Semantic Interaction Delta Failsafe review — **COMPLETE / PASS / PROMOTED UNDER DEC-0012**. Exact review: `../../research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md`; candidate2: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`.
 
 - Slice-4 Director semantic block — **ACTIVE**. Frozen boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`. Await Director's local semantic-gap + governance challenge before any implementation authorization.
 

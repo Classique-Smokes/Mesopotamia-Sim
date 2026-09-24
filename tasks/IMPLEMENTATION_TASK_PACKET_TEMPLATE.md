@@ -16,6 +16,7 @@
 - **Required non-authoritative supporting / engineering context:**
 - **Applicable invariants:**
 - **Other canonical constraints:**
+- **Semantic-interaction-delta closure:** [if `SID-ASSURANCE-v1` FIRED for this scope, identify the accepted/current closure path/ref/semantic base; otherwise N/A]
 
 State precedence explicitly where more than one class is present: accepted semantic/architectural authority controls meaning; verification authority defines completion obligations but does not create semantics; supporting/engineering context cannot silently override either.
 
@@ -84,6 +85,8 @@ Stop and report rather than silently changing project architecture if implementa
 Also escalate when the task cannot meet its acceptance criteria without altering an accepted assumption or when observed behavior materially contradicts the specification.
 
 If a frozen acceptance/applicability authority exists, also escalate when a REQUIRED row cannot be translated without adding/choosing semantics, when its expected result appears unsupported by accepted authority, or when implementation would require changing/reclassifying that frozen authority.
+
+If an accepted `SID-ASSURANCE-v1` closure applies, also **STOP and escalate** if implementation exposes a consequential new↔old semantic interaction, suppression/narrowing, transition carryover case, causal dependency/retargeting, shared-capacity interaction, or participant alias that the closure did not classify. Do not infer that absence means support, prohibition, deferral, or implementation discretion. The implementation agent does not repeat the full semantic-delta audit.
 
 ## 10. Work-state discipline
 
