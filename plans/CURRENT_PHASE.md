@@ -92,6 +92,16 @@ Slice-4 acceptance candidate2 / freeze:
 - freeze record: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_FREEZE_RECORD.md`
 - coding status: **NOT YET AUTHORIZED** pending inherited-verification adaptation approval.
 
+Private-resource supplementation semantic patch:
+
+- MA reconciliation: `research/technical/SFL_V0_SLICE4_PRIVATE_RESOURCE_SUPPLEMENTATION_RECONCILIATION.md`
+- core Director requirement: current head may explicitly and voluntarily contribute privately owned disposable grain to one otherwise-valid Household material action without first creating a persistent provision commitment
+- standing `MobilizableCapacity(H)` remains commitment-derived
+- supplement is transaction-specific, nonpersistent, provenance-bearing, does not consume another personal initiative, and is not a self-response
+- frozen Slice-4 acceptance v1 is confirmed **insufficient for implementation authorization** and requires a successor version after semantic promotion
+- one remaining Director choice: funding order between ordinary commitment-backed allocation and the head's explicit private supplement
+- decision packet: `proposals/SFL_V0_SLICE4_PRIVATE_SUPPLEMENT_FUNDING_ORDER_DECISION.md`
+
 Director-blocked Slice-4 implementation boundary:
 
 - immutable boundary ref: `sfl-v0-slice4-implementation-boundary-blocked-v1`
@@ -335,11 +345,12 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Await the Project Director's two-layer challenge: local semantic gap + governance/process implication.
-2. Do not infer or pre-solve the missing semantic rule from current code/tests.
-3. Reconcile the specific semantic patch first, including any composition/race implications.
-4. Reassess whether frozen Slice-4 acceptance v1 remains sufficient; create a successor acceptance version if required.
-5. Reassess the inherited-verification adaptation plan against the repaired boundary.
+1. Project Director resolves `proposals/SFL_V0_SLICE4_PRIVATE_SUPPLEMENT_FUNDING_ORDER_DECISION.md`.
+2. Promote the complete transaction-specific private-supplement semantics into SPEC + canonical verification.
+3. Draft a successor Slice-4 acceptance candidate/version; do not modify frozen v1.
+4. Run fresh whole-candidate pre-code review and freeze the successor only on PASS.
+5. Reassess the inherited-verification adaptation plan against the repaired semantic/acceptance boundary.
 6. Only after the Director block is explicitly closed may a Slice-4 coding bārû be dispatched.
+7. The separate broader governance/process challenge remains pending Director return after this local repair.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
