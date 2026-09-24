@@ -267,6 +267,58 @@ For each pair:
 
 This card proves the narrow v0 precedence only. It does not create general resignation, contested succession, multiple claimants, or office sovereignty.
 
+---
+
+## VS-SFL-068 — Private supplement consent inside one Household action
+
+**Level:** closed-loop / dual-capacity holder behavior  
+**Semantic source:** SPEC §§8.1.1, 8.4, 8.5 + DEC-0011.
+
+### Initial state
+
+Active H with current head P and a permitted Household material action available.
+
+Use a world where:
+
+- P has sufficient disposable grain for a private supplement;
+- standing Household commitment backing alone is insufficient for the selected action;
+- P's ordinary personal initiative is independently consumed by a compatible personal action;
+- the Household action remains otherwise valid.
+
+### Deliberation assertions
+
+- P has exactly one personal decision trace;
+- H has exactly one HouseholdDecisionContext through P;
+- the Household action carries one explicit private-supplement term X authorized by P as private owner;
+- no second personal initiative is created;
+- no self-directed provision proposal/response context is created;
+- the trace distinguishes:
+  - Household/role authority for the institutional act;
+  - P's private-property consent for X.
+
+### Commit assertions
+
+If all live preconditions remain valid:
+
+- the Household action commits with the exact funding plan;
+- P's personal initiative count remains one;
+- no persistent provision commitment is created by the transaction-specific supplement;
+- P's remaining private grain stays private.
+
+### No-consent companion
+
+Keep the same H/action/capacity but remove P's private-supplement authorization.
+
+- office authority alone cannot debit P's uncommitted private grain;
+- if standing commitment backing remains insufficient, the Household action cannot commit.
+
+### Compatible personal-action companion
+
+Give P enough grain that both the selected personal action and the supplemented Household action remain feasible after accepted priority/revalidation.
+
+- both may commit;
+- the supplement does not consume or cancel the personal initiative merely because P is the same person in both capacities.
+
 ## Family semantic mutants that must be detected
 
 - auto-elect lowest/highest stable ID when headless;
@@ -278,6 +330,10 @@ This card proves the narrow v0 precedence only. It does not create general resig
 - personal context sees effects proposed by H in the same cycle before central resolution;
 - household score reuses P's personal score;
 - head directly mutates participant grain/residence/relations outside scoped actions;
+- office occupancy silently exposes the holder's private grain without explicit transaction-specific consent;
+- private supplementation consumes a second personal initiative or opens a self-response context;
+- one transaction-specific supplement silently creates a persistent provision commitment;
+- a successor inherits/reuses the predecessor's private supplement;
 - same-cycle authority-destroying transition preempts an otherwise-valid accepted authority-dependent last act contrary to DEC-0010;
 - old-head action is rebound to the successor;
 - proposal/container/stable-ID order silently decides the authority race.
