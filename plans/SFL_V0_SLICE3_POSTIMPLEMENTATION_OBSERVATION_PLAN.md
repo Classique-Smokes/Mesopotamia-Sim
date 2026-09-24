@@ -1,9 +1,12 @@
 # SFL v0 Slice 3 — Post-Implementation Learning Observation Plan
 
-**Status:** PREPARED / RUN ONLY AFTER IMP-0003 PROMOTION  
+**Status:** EXECUTED / CLOSED / NON-GATING  
 **Authority:** observational project-learning plan; not simulation authority and not an acceptance gate  
 **Trigger:** IMP-0003 fresh conformance `PASS — PROMOTE` + canonical promotion + post-merge CI PASS  
-**Purpose:** learn only the surprising implementation/runtime facts that should inform later slices, especially Slice 4 planning.
+**Purpose:** learn only the surprising implementation/runtime facts that should inform later slices, especially Slice 4 planning.  
+**Execution record:** `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/`  
+**Master Architect reconciliation:** `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`  
+**Roadmap disposition:** no observation-grounded reason to pause before Slice 4.
 
 ## 1. Principle
 
