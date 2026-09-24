@@ -745,6 +745,10 @@ Accepted but incompatible proposals may fail as `InvalidatedAtResolution`; this 
 
 If a valid same-cycle `ParticipationWarrant` explicitly depends on sustaining participant P as its continuity bridge and P also has an accepted participation-end proposal, resolve the bridged entry and its continuity reaction before P's exit. This is a narrow causal-handoff priority, not a general rule that entry outranks exit.
 
+**Authority-use before authority destruction.** If two accepted same-cycle attempts arise from the same committed decision snapshot, and one otherwise-valid attempt depends on current head/Household authority or current institutional status that the other accepted transition would destroy, resolve the authority/status-dependent attempt first. Then resolve the authority/status-destroying transition normally.
+
+This is a narrow v0 causal precedence permitting a valid last act before departure, vacancy, succession, or operational-status loss. Immediately before the protected attempt commits, every other action-relevant precondition still revalidates normally, and any more-specific accepted semantic/domain priority still applies. A pending old-head action does not rebind to a successor. Proposal/container order, technical IDs, and generic technical fallback do not decide authority validity.
+
 ### 9.3 Automatic reactions
 
 Same-cycle automatic reactions are cause-keyed/idempotent.
@@ -913,3 +917,4 @@ Relevant:
 - 2026-09-21 — Director-approved final Stage-3 semantic gates: fixed-rank/exhaust-in-order multi-contributor provision allocation and exact reference scorer aggregation (`FinalScore = sum(named integer components)`) with explicit semantic/domain tie handling and disclosed technical-ID fallback.
 - 2026-09-21 — Director-approved TRES-0008 closure repairs: deterministic `ResponseDecisionContext` using the same exact component scorer; response feasibility precedes voluntary scoring; responses do not consume personal initiative and remain centrally resolved; removed the orphan generic commitment-breach attitude row rather than inventing a generic commitment subsystem.
 - 2026-09-21 — Director-approved TRES-0010 B2 Slice-1 semantic closure: order-independent direct same-cycle attitude composition; one committed Residence transition per person/cycle with explicit conflict invalidation; response-closed called-favour payloads and commit-tied favour consumption; positive integral v0 grain action quantities with explicit validation/repayment bounds; atomic explicit benefit-for-favour under pair-capacity constraints.
+- 2026-09-24 — Director-approved DEC-0010 Slice-4 authority-race closure: an otherwise-valid accepted authority/status-dependent action or role transition resolves before the accepted same-cycle transition that would destroy its required current authority/status; all other preconditions still revalidate, no pending action rebinds to a successor, and technical IDs/fallback cannot create authority precedence.
