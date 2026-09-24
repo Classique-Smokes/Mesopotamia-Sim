@@ -110,9 +110,10 @@ SID retrospective screening wave:
 - status: **COMPLETE / RECONCILED**
 - reconciliation: `research/technical/SID_RETRO_SCREEN_SLICES1_3_RECONCILIATION.md`
 - Slice 1 screen: **FULL RETRO-SID AUDIT RECOMMENDED** — narrow frontier only: participant-position aliasing / distinct-party admissibility
-- Slice 1 active Pass-A task: `tasks/research/SID_RETRO_SLICE1_PASSA_ALIAS_FRONTIER.md`
-- Slice 1 dispatch ref: `sfl-v0-slice1-retro-sid-passa-dispatch-v1` @ `6f62e9a0a43c0c9e7722bf2e9ff53825469572de`
-- Slice 1 MA frontier sealed ref: `sfl-v0-slice1-retro-sid-ma-frontier-v1` (withheld until Pass A freezes)
+- Slice 1 Pass A: **COMPLETE / FROZEN** at `sfl-v0-slice1-retro-sid-passa-v1` @ `b6d0321ffa95053aba295cb8f4b5f8338c61c3cb`
+- Slice 1 MA frontier: **REVEALED AFTER PASS-A FREEZE** at `sfl-v0-slice1-retro-sid-ma-frontier-v1`
+- Slice 1 frontier union: `research/technical/SID_RETRO_SLICE1_FRONTIER_COMPARISON_AND_PASSB_UNION.md`
+- Slice 1 Pass-B task: `tasks/research/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md` — **READY FOR DISPATCH**
 - Slice 2: **NO CLOSER LOOK NEEDED**
 - Slice 3: **NO CLOSER LOOK NEEDED**
 - frozen Slice-1/2/3 acceptance authority remains unchanged
