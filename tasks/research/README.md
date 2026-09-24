@@ -4,6 +4,8 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
+- `SID_RETRO_SCREEN_SLICES1_3_DISPATCH.md` — **READY FOR PARALLEL DISPATCH**. Three independent retrospective SID screens for completed Slices 1–3; screen first, reopen only on concrete evidence.
+
 - `SFL_V0_SLICE4_SID_PASSA_INDEPENDENT_FRONTIER.md` — **READY FOR DISPATCH / SID PASS A**. Fresh reviewer independently maps the Slice-4 interaction frontier before seeing the Master Architect frontier. Return must be report-only and frozen before Pass B.
 
 - Slice-4 SID pilot — **NEXT GATE / NOT YET DISPATCHED**. Must run `SID-ASSURANCE-v1` frontier audit + frozen independent Pass A + Pass B challenge + MA reconciliation before successor Slice-4 acceptance drafting.
