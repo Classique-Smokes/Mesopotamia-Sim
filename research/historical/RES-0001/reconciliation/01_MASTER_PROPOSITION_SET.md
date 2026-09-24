@@ -684,4 +684,16 @@
 
 ### HEC-0043 — BE 6/2, 29 records a cultivation lease with annual yield-share rent
 
-- **Claim / proposition:** BE 6/2, 29 records Damu-idinnam leasing Ibgatum’s field for cultivation at o
+- **Claim / proposition:** BE 6/2, 29 records Damu-idinnam leasing Ibgatum’s field for cultivation at one-third of returns as annual rent, distinguishing the arrangement from a permanent land sale or a personal hire.
+- **Period / date range:** Samsu-iluna 11, month III.
+- **Geography / archive / context:** Nippur field transaction; CBS 10890.
+- **Underlying primary evidence:** BE 6/2, 29; Poebel 1909, pp. 43–44; catalogue p. 148.
+- **Relevant secondary scholarship:** Poebel distinguishes this field lease from the personal hire of BE 6/2, 51.
+- **RES-0001 source returns:** D, E.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** The labor force, lessee’s residence/status, and actual crop yield/payment are not specified.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** Object, purpose, and one-third return-based rent are explicit in the edition.
+- **Limits on generalization:** One lease; not proof of tenant status, self-performed labor, or standard citywide tenancy.
+- **Relevance to simulation questions (descriptive only):** Shows cultivation access and rent obligation without collapsing them into ownership or personal employment.
+- **Design status:** NO DESIGN DECISION
