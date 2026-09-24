@@ -1,6 +1,6 @@
 # SFL v0 Slice 4 — Preimplementation Discovery Reconciliation
 
-**Status:** MASTER ARCHITECT RECONCILIATION / BLOCKED PENDING ONE DIRECTOR SEMANTIC DECISION  
+**Status:** MASTER ARCHITECT RECONCILIATION / DIRECTOR DECISION RESOLVED / READY FOR ACCEPTANCE PLANNING  
 **Date:** 2026-09-24  
 **Canonical discovery base:** `a7a9bbcdc86d4684762efd203b20225b64b001b7`  
 **Authority:** reconciliation/planning record only; does not itself alter accepted simulation semantics.
@@ -328,13 +328,13 @@ The existing deterministic reference-kernel architecture remains suitable.
 
 ### Acceptance candidate drafting
 
-Technically **READY TO DRAFT**, but drafting before the Director's LATER-04 choice would require explicit unresolved placeholders.
+**READY TO DRAFT.**
 
-Preferred critical path: close LATER-04 first, then draft one complete candidate rather than authoring/fixing a knowingly incomplete acceptance table.
+DEC-0010 resolved LATER-04 with authority-use before authority destruction. No semantic placeholder remains for the bounded Slice-4 acceptance candidate.
 
 ### Acceptance freeze
 
-**BLOCKED pending LATER-04 Director decision.**
+**UNBLOCKED by accepted DEC-0010.** Authority-use before authority destruction is now canonical.
 
 ### Coding
 
@@ -351,4 +351,21 @@ Coding begins only after:
 
 ## 12. Current critical path
 
-**Director LATER-04 decision -> semantic promotion -> Slice-4 acceptance candidate -> independent pre-code review -> freeze -> implementation packet.**
+**DEC-0010 promotion COMPLETE -> Slice-4 acceptance candidate -> independent pre-code review -> freeze -> inherited structural-adaptation closure -> implementation packet.**
+
+Director disposition: **Option A / authority-use before authority destruction**.
+
+
+## 13. Director resolution
+
+On 2026-09-24, the Project Director explicitly approved Option A:
+
+> Let them perform the last valid act before leaving. For sure.
+
+Canonical decision:
+
+`decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`
+
+The accepted rule has been promoted into SPEC §9.2, canonical head/dual-mode verification, resolution/reaction verification, and the deferred-gap ledger.
+
+No further Director-level semantic decision is currently required for bounded Slice-4 acceptance drafting.
