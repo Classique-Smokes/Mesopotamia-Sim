@@ -117,14 +117,19 @@ SID retrospective screening wave:
 - Slice 3: **NO CLOSER LOOK NEEDED**
 - frozen Slice-1/2/3 acceptance authority remains unchanged
 
-Slice-4 SID pilot status: **PASS A FROZEN / PASS B READY**
+Slice-4 SID pilot status: **PASS B COMPLETE / RECONCILED / DIRECTOR DECISIONS REQUIRED**
 
 - MA frontier ref: `sfl-v0-slice4-sid-ma-frontier-v1` @ `cd8c3ccf497bd8df928d5dee5f888188d98dd4ef`
 - frozen Pass-A ref: `sfl-v0-slice4-sid-passa-v1` @ `6a15d40c2c8b9f54bba9c5f5e77a5806a9cee94e`
-- Pass-A report blob: `f42d3f1baec9d103462a95077038dd4032c09ae1`
+- frozen Pass-B ref: `sfl-v0-slice4-sid-passb-v1` @ `77f0f7c64d3ac85f933e6f7c39ee2cd70cf5d7ec`
+- Pass-B report blob: `a63ab9252365f10c6c33ee7c59267b632de281cf`
 - frontier union: `research/technical/SFL_V0_SLICE4_SID_FRONTIER_COMPARISON_AND_PASSB_UNION.md`
-- Pass-B task: `tasks/research/SFL_V0_SLICE4_SID_PASSB_NEGATIVE_SPACE_CHALLENGE.md`
-- next after Pass B: MA authority reconciliation -> semantic repair/decision if needed -> closure freshness verification
+- MA reconciliation: `research/technical/SFL_V0_SLICE4_SID_PASSB_RECONCILIATION.md`
+- decision packet: `proposals/SFL_V0_SLICE4_SID_OPEN_SEMANTIC_DECISIONS.md`
+- `Consequential unresolved: 6`
+- `Accidental gaps outstanding: 0`
+- closure freshness: **CURRENT**, but closure is not complete while unresolved > 0
+- next gate: Director resolves six bounded semantic choices -> targeted semantic promotion -> affected-frontier revalidation -> SID closure
 - Slice-4 implementation remains **DIRECTOR BLOCKED** until pilot + successor acceptance + inherited-adaptation gates close
 
 Private-resource supplementation semantic patch:
