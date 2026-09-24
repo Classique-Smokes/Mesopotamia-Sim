@@ -377,7 +377,7 @@ Must fail if:
 
 ---
 
-## VS-SFL-06A — Self-nomination preserves predicates without self-negotiation theatre
+## VS-SFL-069A — Self-nomination preserves predicates without self-negotiation theatre
 
 **Level:** role alias / nomination = nominee  
 **Semantic source:** SPEC §8.4 + DEC-0013 D5.
@@ -408,7 +408,7 @@ For nomination of B by A, A's nomination still does not substitute for A's separ
 
 ---
 
-## VS-SFL-06B — Inactive Household may fill an inert head role
+## VS-SFL-069B — Inactive Household may fill an inert head role
 
 **Level:** lifecycle / role occupancy distinct from Household initiative  
 **Semantic source:** SPEC §§8.4–8.5 + DEC-0013 D6.
