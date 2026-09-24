@@ -79,11 +79,14 @@ Frozen Slice-4 authority therefore requires lossless adaptation of at least:
 
 This is an enforcement-adaptation gate, not a new social-semantic decision.
 
-Canonical adaptation plan:
+Adaptation plan candidate under review:
 
-`research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_PLAN.md`
+- ref: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1`
+- path: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_PLAN.md`
+- exact commit: `51981cb0ad993fe4529341f2862f50d90d72ec26`
+- plan blob: `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51`
 
-Independent review must pass before the Slice-4 implementation task is dispatched against affected surfaces.
+This plan is not yet approved adaptation authority. Independent review must pass before the Slice-4 implementation task is dispatched against affected surfaces.
 
 ## Immutability rule
 
