@@ -104,7 +104,8 @@ Semantic-interaction-delta failsafe:
 - independent review: `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md` — **PASS — POLICY READY FOR DIRECTOR PROMOTION**
 - canonical promotion: **COMPLETE / VERIFIED** — `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PROMOTION_RECORD.md`
 - mandatory next gate: Slice-4 SID pilot before any successor Slice-4 acceptance candidate
-- SID retrospective screening wave:
+
+SID retrospective screening wave:
 
 - status: **READY FOR PARALLEL DISPATCH**
 - purpose: screen completed Slices 1–3 under SID-ASSURANCE-v1 without automatically reopening them
@@ -115,11 +116,14 @@ Semantic-interaction-delta failsafe:
 - rule: later-slice semantics may not be projected backward as missing requirements
 - full retro-SID audit occurs only if a screen returns concrete evidence warranting it
 
-Slice-4 SID pilot status: **PASS A DISPATCHED / MA FRONTIER WITHHELD**
-  - MA frontier immutable ref: `sfl-v0-slice4-sid-ma-frontier-v1` (do not expose before Pass A freeze)
-  - Pass-A dispatch ref: `sfl-v0-slice4-sid-passa-dispatch-v1` @ `179e955e5398f954b56e73f93954a595f75d4653`
-  - task: `tasks/research/SFL_V0_SLICE4_SID_PASSA_INDEPENDENT_FRONTIER.md`
-  - next after return: verify report-only branch -> pin Pass-A report -> reveal MA frontier for Pass B
+Slice-4 SID pilot status: **PASS A FROZEN / PASS B READY**
+
+- MA frontier ref: `sfl-v0-slice4-sid-ma-frontier-v1` @ `cd8c3ccf497bd8df928d5dee5f888188d98dd4ef`
+- frozen Pass-A ref: `sfl-v0-slice4-sid-passa-v1` @ `6a15d40c2c8b9f54bba9c5f5e77a5806a9cee94e`
+- Pass-A report blob: `f42d3f1baec9d103462a95077038dd4032c09ae1`
+- frontier union: `research/technical/SFL_V0_SLICE4_SID_FRONTIER_COMPARISON_AND_PASSB_UNION.md`
+- Pass-B task: `tasks/research/SFL_V0_SLICE4_SID_PASSB_NEGATIVE_SPACE_CHALLENGE.md`
+- next after Pass B: MA authority reconciliation -> semantic repair/decision if needed -> closure freshness verification
 - Slice-4 implementation remains **DIRECTOR BLOCKED** until pilot + successor acceptance + inherited-adaptation gates close
 
 Private-resource supplementation semantic patch:
