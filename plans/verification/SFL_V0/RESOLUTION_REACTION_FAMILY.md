@@ -278,6 +278,66 @@ This precedence is distinct from:
 - Residence conflict;
 - generic equal-priority technical fallback.
 
+---
+
+## VS-SFL-078 — Exact funding plan revalidation without silent rebalance
+
+**Level:** cross-family material resolution  
+**Semantic source:** SPEC §§8.1.1, 9.2 + DEC-0011.
+
+### Claim
+
+A transaction-specific private contribution X is an exact accepted funding-plan term. It does not reserve grain at deliberation and is not silently renegotiated at commit.
+
+### Positive case
+
+At the common committed snapshot:
+
+- Household action total cost C = 3;
+- current head P explicitly authorizes X = 1;
+- residual commitment requirement R = 2;
+- live private/commitment capacities can satisfy the exact split.
+
+The action may commit atomically with that exact plan.
+
+### Private-capacity-loss challenge
+
+After deliberation/acceptance but before this action commits, let a higher-priority accepted effect legitimately reduce P's live disposable capacity below X.
+
+Assertions:
+
+- the Household action fails ordinary revalidation;
+- no private debit partially persists;
+- no commitment-backed debit partially persists;
+- X is not silently reduced;
+- R is not silently increased/reallocated;
+- there is no same-cycle retry/renegotiation.
+
+### Commitment-capacity-loss challenge
+
+Keep P's private X valid but reduce current valid commitment capacity below R before commit.
+
+Assertions:
+
+- the whole action fails atomically;
+- X is not increased to cover the new shortfall even if P could afford more;
+- no partial material/social effect commits.
+
+### Capacity-gain companion
+
+If commitment capacity increases after the funding plan was selected:
+
+- P still contributes exactly X if the action commits;
+- the engine does not silently reduce X merely because commitments could now cover more.
+
+### Central-priority companion
+
+Pair a supplemented Household action with P's separate ordinary personal transfer from the same snapshot.
+
+- apply the existing Household provision priority class;
+- revalidate live grain after higher-priority commits;
+- supplementation is part of the Household effect, not a separate personal transfer.
+
 ## Family semantic mutants that must be detected
 
 - map every failed request to "rejected";
@@ -292,4 +352,7 @@ This precedence is distinct from:
 - publish/checkpoint completed cycle state before reaction closure;
 - resolve an authority-destroying transition before the valid accepted authority-dependent last act protected by DEC-0010;
 - rebind an old-head action to a successor;
-- use technical ID/order as an authority-precedence rule.
+- use technical ID/order as an authority-precedence rule;
+- silently shrink/increase private supplement X at commit;
+- automatically rebalance C-X when one funding leg loses feasibility;
+- reserve private supplement grain during deliberation so central revalidation cannot see competing effects.

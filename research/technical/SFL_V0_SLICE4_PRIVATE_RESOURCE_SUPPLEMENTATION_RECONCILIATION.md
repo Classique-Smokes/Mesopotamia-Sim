@@ -1,6 +1,6 @@
 # SFL v0 Slice 4 — Office-Holder Private Resource Supplementation Reconciliation
 
-**Status:** MASTER ARCHITECT RECONCILIATION / LOCAL SEMANTIC PATCH IDENTIFIED / ONE DIRECTOR FUNDING-ORDER DECISION PENDING  
+**Status:** MASTER ARCHITECT RECONCILIATION / DIRECTOR CLARIFICATION RESOLVED / DEC-0011 PROMOTED  
 **Date:** 2026-09-24  
 **Blocked implementation boundary:** `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`  
 **Source:** Director clarification “Office-Holder Voluntary Private Resource Supplementation” supplied 2026-09-24  
@@ -305,28 +305,44 @@ At minimum revise/extend:
 
 The reference profile is verification configuration only. It must not imply that Household concern is itself ownership consent; the action trace/terms must record P's explicit private authorization separately from role authority.
 
-## 14. One genuine Director semantic choice remains
+## 14. Director follow-up resolution — no global source priority
 
-Current authority does **not** determine funding order between:
+The Project Director clarified that the earlier A/B funding-order framing was itself incorrect.
 
-- ordinary valid commitment-backed allocation; and
-- P's explicit transaction-specific private supplement.
+Both are valid social histories:
 
-This changes who pays and therefore is not engineering discretion.
+- the head may contribute nothing;
+- the head may cover only a shortfall;
+- the head may voluntarily bear part of the cost despite sufficient ordinary backing;
+- the head may voluntarily bear the entire cost.
 
-Decision packet:
+The accepted semantic abstraction is an explicit transaction funding plan:
+
+- total cost `C`;
+- optional exact private contribution `X` chosen/authorized by current head P as private owner;
+- residual commitment-backed requirement `R = C - X`.
+
+The ordinary fixed-rank commitment allocator funds only `R`. If P also has a persistent commitment, P's effective commitment-side capacity is reduced by X so the same grain is never counted twice.
+
+No global “commitments first” or “private first” priority exists.
+
+This resolution is promoted as:
+
+`decisions/DEC-0011_TRANSACTION_SPECIFIC_OFFICE_HOLDER_PRIVATE_SUPPLEMENTATION.md`
+
+The earlier decision packet is retained as a superseded false-binary reasoning artifact:
 
 `proposals/SFL_V0_SLICE4_PRIVATE_SUPPLEMENT_FUNDING_ORDER_DECISION.md`
 
-No other new Director-level choice is presently established by this reconciliation.
+No further Director-level semantic choice is currently required for this local repair.
 
 ## 15. Unblock sequence
 
-1. Project Director resolves the funding-order question.
-2. Promote the complete private-supplement semantics into SPEC and canonical verification.
+1. **COMPLETE:** Director clarification resolved as DEC-0011.
+2. **COMPLETE:** promote private-supplement semantics into SPEC and canonical verification.
 3. Create a successor Slice-4 acceptance candidate/version; do not modify frozen v1.
 4. Run fresh independent whole-candidate pre-code review.
 5. Freeze the successor acceptance authority only on PASS.
 6. Reassess the inherited-verification adaptation plan against the repaired semantics.
-7. Close the existing Director BLOCK only after those gates are complete.
+7. Close the existing Director BLOCK only after those gates are complete and after any separately required governance-process response is recorded.
 8. Then issue the Slice-4 implementation packet / coding bārû commission.

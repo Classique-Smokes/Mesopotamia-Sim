@@ -158,6 +158,46 @@ The magnitudes 20/40 are verification configuration only. This profile affects p
 
 ---
 
+---
+
+## SCORE-VP-007 — Holder private-supplement consent
+
+**Used by:** `VS-SFL-047`, `VS-SFL-068` and closed-loop DEC-0011 companions  
+**Context:** funding-plan selection inside an existing HouseholdDecisionContext carried by current head P
+
+This profile exists only to make the reference policy's holder-private consent deterministic for verification. It does **not** create another DecisionContext, response, initiative, or Household authority over P's property.
+
+Bindings:
+
+- `TargetHouseholdAction`;
+- `PreferredPrivateSupplement`: either absent or one exact valid positive integer X.
+
+Candidate-generation requirements:
+
+- production must generate only semantically valid funding-plan variants for the target Household action;
+- an absent private term is a valid no-supplement variant;
+- a present X must satisfy DEC-0011 categorical gates;
+- generation of X is attributable to P as private owner, not to Household authority.
+
+Component rules for this verification profile:
+
+- `HouseholdActionConcern`:
+  - +100 for the declared target Household action meaning regardless of otherwise-equivalent funding-plan variant;
+  - 0 for other Household action meanings.
+- `HolderPrivateSupplementPreference`:
+  - when `PreferredPrivateSupplement` is absent: +20 for the no-private-term variant, 0 for X-bearing variants;
+  - when it is X: +20 for the target action carrying exact private X, 0 for other funding-plan variants.
+
+Required trace properties:
+
+- `HouseholdActionConcern` and `HolderPrivateSupplementPreference` are separately named;
+- the latter is explicitly attributed to P's private-property consent;
+- it is not copied from P's ordinary personal-action score;
+- it does not create/consume P's personal initiative;
+- changing only `PreferredPrivateSupplement` may change the funding plan while leaving role authority and the target Household action meaning unchanged.
+
+This is deterministic laboratory configuration, not a claim about historical generosity, sacrifice, or how real office-holders choose X.
+
 ## Response verification profiles
 
 These profiles exercise the accepted `ResponseDecisionContext`. They are deterministic laboratory configuration, not universal social preferences.
@@ -226,6 +266,8 @@ Purpose: produce a genuine voluntary `Declined` outcome through the reference re
 
 The profile never creates authority; role validity/scope is a categorical gate.
 
+For a role-scoped Household material response that may include DEC-0011 private supplementation, `Accept` remains the response meaning. The same current holder's funding-plan consent may be traced/configured through the `SCORE-VP-007` private-supplement subprofile without opening a second response context or changing Accept/Decline cardinality.
+
 ---
 
 ## 3. Profile integrity rules
@@ -238,3 +280,4 @@ The profile never creates authority; role validity/scope is a categorical gate.
 - Closed-loop cards must name the exact profile/version they use.
 - Response profiles never bypass feasibility; an infeasible proposal yields `Unable(reason)` before response scoring.
 - A response profile cannot create a response meaning that is invalid for the proposal type or role scope.
+- Funding-plan verification configuration cannot make office authority imply private-resource consent; private supplement X must remain an explicit holder-authorized term with its own named trace input.

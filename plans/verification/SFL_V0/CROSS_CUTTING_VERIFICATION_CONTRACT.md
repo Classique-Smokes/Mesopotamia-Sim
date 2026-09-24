@@ -29,9 +29,12 @@ Check after every committed transition/reaction closure where applicable and at 
 - repayment amount never exceeds remaining debt;
 - every grain delta has an explicit source/sink/zero-sum transfer;
 - household provision never creates a pooled treasury;
-- collective expenditure debits backing personal grain exactly once;
-- protected 2-grain reserve is never penetrated by provision spend;
-- NeedsGrain contributor exposes zero provision capacity;
+- collective expenditure debits every validated personal funding leg exactly once;
+- transaction-specific holder supplementation requires explicit current-holder private consent and never follows from office occupancy alone;
+- standing Household mobilizable capacity remains persistent-commitment-derived and excludes possible/authorized one-transaction private supplementation;
+- the same person's grain cannot be double-counted through persistent commitment backing and transaction-specific supplementation in one expenditure;
+- protected 2-grain reserve is never penetrated by provision/private-supplement spend;
+- NeedsGrain contributor/holder exposes zero provision/private-supplement capacity;
 - dissolution never confiscates unspent personal grain.
 
 ### Cardinality/domain
@@ -81,7 +84,10 @@ Kinship multiplication must not change stored attitude or satisfy stored-attitud
 - NeedsGrain clearing: grain 0 / 1;
 - **household-provision contributor reserve:** contributor grain 1 / 2 / 3, verifying exposed capacity `max(0, grain-2)` without creating a generic interpersonal-transfer reserve;
 - provision contributor NeedsGrain false/true at same grain;
-- exact collective capacity insufficient / equal / greater than requested spend.
+- exact collective capacity insufficient / equal / greater than requested spend;
+- transaction-specific private supplement term: absent / 1 / C / C+1 for representative cost C > 1;
+- holder private disposable capacity: X-1 / X / X+1 for a fixed valid supplement X;
+- same holder with both standing commitment and private X: verify commitment-side effective capacity is reduced by X before residual-cost allocation.
 
 #### Slice-1 D4 ingress coverage
 
@@ -219,7 +225,14 @@ The suite must detect or classify at least these project-specific faults:
 32. allow multiple same-person Residence transitions to commit in one cycle or choose the winner by container order;
 33. let zero/negative/non-integral grain terms reach response/social effects or silently clamp over-repayment;
 34. let a called-favour payload open a nested voluntary response, consume the favour on Unable/Invalidated, or apply fulfil/refusal attitude effects on non-voluntary failure;
-35. partially commit ExplicitBenefitForFavor when required favour capacity is unavailable, or silently relabel the material leg as Gift/Help.
+35. partially commit ExplicitBenefitForFavor when required favour capacity is unavailable, or silently relabel the material leg as Gift/Help;
+36. let head office authority expose private grain without explicit transaction-specific consent;
+37. treat a transaction-specific private supplement as standing Household mobilizable capacity or as a persistent provision commitment;
+38. double-count the same head grain through both a private supplement leg and unreduced commitment capacity in one transaction;
+39. silently shrink/increase private supplement X or auto-rebalance the agreed funding split at precommit;
+40. treat private supplementation as a separate Gift/Help/favour-bearing action or allow it to become formation/continuity/lineage evidence;
+41. transfer/rebind an old head's private supplement authorization to a successor;
+42. consume an extra personal initiative or create a self-response context for same-person private supplementation.
 
 Report mutant outcome as:
 
@@ -300,6 +313,7 @@ Every canonical card declares allowed fixture writes.
 - lifecycle verdict;
 - head appointment/succession result;
 - provision spend result;
+- final transaction-specific private-supplement authorization/result when endogenous holder choice is under test;
 - actor recognition whose endogenous derivation is being tested.
 
 Downstream cards may start from a previously verified checkpoint containing those facts.
@@ -339,7 +353,7 @@ Do not include these as the primary implementation narrative:
 - **formation:** four-founder connected durable-tie graph with qualifying support on a different pair pattern than VS-SFL-001;
 - **continuity:** turnover order reversed and bridge identities changed, ending with no original founders;
 - **recognition:** stale outsider receives correction through a different participant/provenance chain;
-- **provision:** same accounting claim with contributor identities/grain capacities permuted and a different needy recipient;
+- **provision:** same accounting claim with contributor identities/grain capacities permuted and a different needy recipient; include a held-out split-funding case where the head's X and commitment-backed remainder use different actors/capacities;
 - **head/dual-mode:** different head and personal-action target with the same central conflict structure;
 - **lineage:** different predecessor sizes/addresses with equivalent warrant provenance;
 - **resolution:** equivalent capacity conflict produced by loan/gift/help actors rather than copying VS-SFL-065;

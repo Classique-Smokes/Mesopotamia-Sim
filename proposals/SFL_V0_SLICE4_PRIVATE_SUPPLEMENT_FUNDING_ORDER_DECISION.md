@@ -1,9 +1,9 @@
 # Slice 4 — Transaction-Specific Private Supplement Funding Order
 
-**Status:** DIRECTOR DECISION REQUIRED / PROPOSAL ONLY  
+**Status:** SUPERSEDED / FALSE BINARY FRAMING  
 **Date:** 2026-09-24  
 **Source reconciliation:** `research/technical/SFL_V0_SLICE4_PRIVATE_RESOURCE_SUPPLEMENTATION_RECONCILIATION.md`  
-**Authority:** none until explicit Project Director approval.
+**Authority:** historical reasoning record only. Superseded by accepted DEC-0011.
 
 ## Question
 
@@ -90,3 +90,18 @@ Both options satisfy the Director's core supplementation requirement.
 Current accepted authority does not uniquely choose between them.
 
 A Project Director decision is required before semantic promotion and successor Slice-4 acceptance drafting.
+
+
+## Director follow-up disposition
+
+The Project Director rejected the A/B global-priority framing.
+
+Both cost-bearing patterns are valid social actions.
+
+The accepted repair is not a source-priority rule. The current head explicitly selects an exact transaction-specific private contribution `X` as part of the Household action's funding plan; the remaining `C-X` is funded through ordinary persistent commitment allocation.
+
+Canonical accepted decision:
+
+`decisions/DEC-0011_TRANSACTION_SPECIFIC_OFFICE_HOLDER_PRIVATE_SUPPLEMENTATION.md`
+
+This proposal is retained only to show the superseded reasoning path.

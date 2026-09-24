@@ -256,6 +256,51 @@ Fail if:
 - B is given another voluntary initiative because it responded;
 - response-phase processing overwrites the personal decision trace.
 
+---
+
+## VS-SFL-106 — Role-scoped Accept variants may carry distinct private funding plans
+
+**Level:** closed-loop response / DEC-0011 funding-plan consent
+
+### Initial state
+
+Use an otherwise-valid Household-mediated marriage proposal with total dowry cost C where current head P is the valid role-scoped responder.
+
+Construct a world in which:
+
+- ordinary provision backing can fund the action;
+- P also has disposable private capacity;
+- both `Accept(no private term)` and at least one `Accept(X)` funding-plan variant are semantically feasible.
+
+### Assertions
+
+- there is one `ResponseDecisionContext(P, proposal)`;
+- Accept/Decline remain the response meanings;
+- feasible Accept candidates may differ by explicit funding-plan term X;
+- selecting `Accept(X)` records P's private-property consent separately from role authority;
+- no nested/self response context is opened;
+- no additional personal initiative is consumed;
+- changing only the holder-private funding preference may change X while keeping the proposal, role authority and social Accept meaning unchanged.
+
+### Insufficient-backing companion
+
+Make ordinary backing insufficient but P capable of supplying enough private X.
+
+- at least one feasible `Accept(X)` candidate remains available;
+- the interaction is not classified Unable merely because standing commitment backing alone is insufficient.
+
+Then reduce P's disposable private capacity so no funding plan can cover C.
+
+- no valid Accept funding plan remains;
+- ordinary feasibility semantics may produce `Unable(reason)` before voluntary response scoring.
+
+### No-consent / no-seizure companion
+
+Where backing alone is insufficient but an X-bearing Accept plan would be feasible, use a response policy that chooses Decline.
+
+- no private grain is debited;
+- office authority does not compel supplementation.
+
 ## Family semantic mutants that must be detected
 
 - initiator's score directly determines target acceptance;
@@ -270,4 +315,7 @@ Fail if:
 - called-favour Unable/Invalidated outcome consumes the favour or fires +10/-20;
 - two accepted same-person Residence transitions both commit in one cycle;
 - role response profile grants authority to a non-role actor;
-- response decision trace omits candidates/components/selected response.
+- response decision trace omits candidates/components/selected response;
+- role-scoped material response treats insufficient standing backing as Unable even though a valid X-bearing Accept funding plan exists;
+- Accept with private supplementation opens a second self-response or consumes another personal initiative;
+- response trace fails to distinguish role authority from holder-private consent.
