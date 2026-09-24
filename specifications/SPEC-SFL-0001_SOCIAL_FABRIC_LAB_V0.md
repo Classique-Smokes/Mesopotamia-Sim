@@ -632,6 +632,49 @@ For one expenditure, allocation is determined atomically at precommit revalidati
 
 The resulting debit vector is part of semantic history. The stable-ID step is a disclosed technical fallback, not a social priority.
 
+#### 8.1.1 Transaction-specific office-holder private supplementation
+
+A permitted Household material action with total material cost `C` may carry an optional transaction-specific private contribution personally authorized by the current valid head P.
+
+Let that exact private contribution be `X`.
+
+- absence of the private-supplement term means no private contribution;
+- when present, `X` is a strictly positive integer and `X <= C`;
+- P must separately have valid role authority for the Household action and personal authority over the contributed grain;
+- P's current disposable private capacity for this purpose is bounded by the existing protected-reserve / `NeedsGrain` rules;
+- the remaining commitment-backed funding requirement is exactly `R = C - X`;
+- `R` is funded through currently valid `HouseholdProvisionCommitment` relations under the existing fixed-rank allocation rule.
+
+The private contribution is a transaction term, not a second funding source competing under a global priority rule.
+
+`MobilizableCapacity(H)` remains derived only from persistent provision commitments. P's wealth, possible willingness to contribute, or a transaction-specific `X` does not become standing Household capacity.
+
+The private contribution:
+
+- creates no persistent `HouseholdProvisionCommitment`;
+- creates no Household-owned balance;
+- transfers no ownership before the Household effect commits;
+- consumes no extra personal initiative;
+- opens no self-directed response context;
+- is not a separate Gift, Help, Loan, or favour-bearing personal action.
+
+If P also has a persistent provision commitment to H, the same grain may not be counted twice. For this transaction, P's effective commitment-side exposed capacity is the ordinary exposed capacity remaining after accounting for `X`. The fixed-rank commitment allocator applies to `R` using that residual capacity for P and ordinary live capacities for other contributors.
+
+The funding split is exact. If P's live disposable capacity falls below `X`, if valid commitments cannot fund `R`, or if another action-relevant precondition fails before commit, the whole Household action fails ordinary revalidation/atomicity. The engine does not silently shrink/increase `X`, substitute a successor, or renegotiate the split in the same cycle.
+
+For a successful commit, history must preserve distinct provenance for:
+
+- total cost `C`;
+- P's explicit private authorization `X`;
+- P's actual private debit;
+- residual requirement `R`;
+- each commitment-backed contributor/debit, including any separate commitment-backed debit from P;
+- the Household/head authority that made the action valid.
+
+A single material delta for P may aggregate the final personal-grain change, but funding provenance must still distinguish the private and commitment-backed legs.
+
+Transaction-specific private supplementation cannot serve as independent person-person support evidence for Household formation, participation, continuity, or lineage. It creates no extra ordinary-transfer attitude/favour consequence. For mediated marriage, the already accepted groom->mediating-head favour remains the only route-specific favour created by the transaction.
+
 ### 8.2 Provision reconsideration
 
 Head may ask a non-contributing sustaining participant to reconsider.
@@ -675,6 +718,8 @@ Role scope:
 - receive/resolve household-mediated marriage proposals;
 - participate in succession.
 
+For an otherwise-valid permitted Household material use, the current holder may additionally act in their distinct private-owner capacity to attach the transaction-specific private contribution defined in §8.1.1. This is personal property consent carried by the same person, not an office power over private grain.
+
 The role cannot seize personal grain, command residence or ordinary personal actions, arbitrarily create kinship/debt/favour, alter attitude, or exercise general sovereignty.
 
 Appointment/succession participants directly recognize the resulting head-role state. Outsiders update head recognition only through valid observation/communication.
@@ -688,6 +733,8 @@ Occupied role activates `HouseholdDecisionContext(H, head=P)`.
 - household concerns score separately from P's personal concerns;
 - role/household provide authority and household-scoped records;
 - cognition and non-office subjective knowledge remain tied to P;
+- an optional §8.1.1 private-supplement term is P's explicit personal-property authorization inside that one Household action, not a second personal initiative or response context;
+- the decision/history trace must distinguish institutional action authority from P's private-resource consent;
 - vacant role produces no household initiative.
 
 v0 household-mode concerns:
@@ -696,7 +743,7 @@ v0 household-mode concerns:
 - evaluate/fund mediated marriage;
 - request provision backing/reconsideration.
 
-Household collective action requires an **Active** H, an occupied head role, authority in scope, and sufficient valid backing/capacity. Household existence alone is not capability.
+Household collective action requires an **Active** H, an occupied head role, authority in scope, and sufficient valid transaction funding. Transaction funding may consist of persistent commitment-backed allocation plus an optional exact current-holder private contribution under §8.1.1. Household existence alone is not capability.
 
 Vacancy preserves household identity and provision commitments but suspends household-mode spending/marriage mediation. An Inactive household likewise has no household-mode initiative until it becomes Active again.
 
@@ -734,6 +781,8 @@ For competing household provision use:
 1. eligible NeedsGrain support;
 2. other valid household provision expenditure;
 3. ordinary voluntary personal transfer.
+
+A transaction-specific private supplement does not reserve grain at deliberation. The explicit amount `X`, P's live disposable capacity, the residual commitment requirement `R = C - X`, and all commitment allocations are revalidated together at precommit. The private term is part of the Household action in the same provision-priority class as that action; it is not a separate personal transfer. No global “commitment first” or “private first” priority exists because the agreed `X` partitions the transaction cost before commitment allocation.
 
 Equal-priority unresolved symmetry uses disclosed stable-ID technical fallback.
 
@@ -781,7 +830,7 @@ Consequential proposal/history records retain:
 - rule/configuration version;
 - technical-fallback marker when used.
 
-Formation/continuation warrants, role events, provision commitments, and lineage retain direct supporting event references.
+Formation/continuation warrants, role events, provision commitments, transaction-specific private-supplement authorizations/funding legs, and lineage retain direct supporting event references.
 
 ### 9.5 Material deadlock
 
@@ -813,8 +862,10 @@ Mechanical verification must enforce where applicable:
 - every grain-valued action parameter is a strictly positive integer and categorical invalid terms never reach target response;
 - repayment amount never exceeds remaining debt;
 - every grain change has an explicit source/sink/zero-sum transfer;
-- collective expenditure debits backing personal grain exactly once;
-- provision cannot penetrate protected reserve or draw from NeedsGrain contributor;
+- collective expenditure debits every validated personal funding leg exactly once;
+- one person's grain cannot be double-counted through both persistent commitment backing and transaction-specific private supplementation in the same expenditure;
+- transaction-specific private supplementation creates no persistent commitment or Household treasury;
+- provision/private supplementation cannot penetrate protected reserve or draw from a NeedsGrain holder/contributor;
 - at most one established v0 marriage per person;
 - parent/child and siblings never marry;
 - at most one outstanding favour per ordered pair;
@@ -918,3 +969,4 @@ Relevant:
 - 2026-09-21 — Director-approved TRES-0008 closure repairs: deterministic `ResponseDecisionContext` using the same exact component scorer; response feasibility precedes voluntary scoring; responses do not consume personal initiative and remain centrally resolved; removed the orphan generic commitment-breach attitude row rather than inventing a generic commitment subsystem.
 - 2026-09-21 — Director-approved TRES-0010 B2 Slice-1 semantic closure: order-independent direct same-cycle attitude composition; one committed Residence transition per person/cycle with explicit conflict invalidation; response-closed called-favour payloads and commit-tied favour consumption; positive integral v0 grain action quantities with explicit validation/repayment bounds; atomic explicit benefit-for-favour under pair-capacity constraints.
 - 2026-09-24 — Director-approved DEC-0010 Slice-4 authority-race closure: an otherwise-valid accepted authority/status-dependent action or role transition resolves before the accepted same-cycle transition that would destroy its required current authority/status; all other preconditions still revalidate, no pending action rebinds to a successor, and technical IDs/fallback cannot create authority precedence.
+- 2026-09-24 — Director-approved DEC-0011 private-resource supplementation closure: a current valid Household head may explicitly authorize an exact transaction-specific private contribution `X` to one permitted Household material action; the residual cost `C-X` uses ordinary commitment-backed fixed-rank allocation, with standing capacity unchanged, no extra initiative/response, no double counting, and exact funding provenance.
