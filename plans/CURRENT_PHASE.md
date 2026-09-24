@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slice 1 VERIFIED COMPLETE / Slice 2 VERIFIED COMPLETE / Slice 3 VERIFIED COMPLETE / POST-IMPLEMENTATION LEARNING PAUSE NEXT.**
+**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / Slice 3 OBSERVATION CLOSED / SLICE 4 PREIMPLEMENTATION DISCOVERY ACTIVE.**
 
 Verified Slice-1 completion:
 
@@ -65,7 +65,18 @@ Verified Slice-3 completion:
 - post-promotion CI: run `35949005742` — **PASS**
 - post-promotion artifact: `10786959968`, digest `sha256:ea3cabace2b8f5672457416f2b69af3e3224409b1e4c6e903b8821e017d3fb1d`
 - final record: `research/technical/IMP-0003/IMP-0003_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
-- next learning task: `tasks/research/IMP-0003_SLICE3_POSTIMPLEMENTATION_OBSERVATION.md`
+- post-implementation observation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/` — **COMPLETE / RECONCILED**
+- observation MA reconciliation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`
+- compact future lessons: `research/technical/IMP-0003/IMP-0003_FUTURE_LESSONS_INDEX.md`
+
+Slice-4 preimplementation discovery:
+
+- dispatch index: `tasks/research/SFL_V0_SLICE4_PARALLEL_DISCOVERY_DISPATCH.md`
+- authority/gaps: `tasks/research/SFL_V0_SLICE4_DISCOVERY_A_AUTHORITY_GAPS.md`
+- implementation surfaces: `tasks/research/SFL_V0_SLICE4_DISCOVERY_B_IMPLEMENTATION_SURFACES.md`
+- verification triggers: `tasks/research/SFL_V0_SLICE4_DISCOVERY_C_VERIFICATION_TRIGGERS.md`
+- expected MA reconciliation: `research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`
+- coding status: **NOT YET AUTHORIZED**; acceptance/applicability authority must be reconciled, independently reviewed, and frozen first.
 
 Frozen Slice-1 acceptance authority:
 
@@ -259,10 +270,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Run the lightweight Slice-3 post-implementation learning task: `tasks/research/IMP-0003_SLICE3_POSTIMPLEMENTATION_OBSERVATION.md`.
-2. Preserve raw observation output before interpretation under `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/`.
-3. Reconcile only surprising implementation/runtime lessons that materially inform Slice 4 or later work.
-4. Write the compact Slice-3 future-lessons index required by milestone-learning housekeeping.
-5. Then begin detailed Slice-4 planning from accepted authority plus the reconciled implementation-grounded lessons.
+1. Dispatch the three fresh-context Slice-4 discovery commissions indexed at `tasks/research/SFL_V0_SLICE4_PARALLEL_DISCOVERY_DISPATCH.md`.
+2. Reconcile the three returns into `research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`.
+3. If a consequential semantic gap is established, route only that exact question to the Project Director; otherwise proceed without ceremony.
+4. Draft the Slice-4 acceptance/applicability candidate from accepted authority + reconciled verification map.
+5. Obtain independent pre-code review and freeze Slice-4 acceptance authority only on PASS.
+6. Only after freeze, issue the bounded Slice-4 implementation packet.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
