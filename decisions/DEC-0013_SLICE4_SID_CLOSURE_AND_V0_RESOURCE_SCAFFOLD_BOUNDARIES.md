@@ -1,10 +1,10 @@
 # DEC-0013 — Slice-4 SID Closure and V0 Resource-Scaffold Boundaries
 
-**Status:** PROPOSED  
+**Status:** ACCEPTED  
 **Authority:** Architectural / social-semantic  
 **Opened:** 2026-09-24  
-**Resolved:** —  
-**Approver:** Project Director — explicit approval required  
+**Resolved:** 2026-09-24  
+**Accepted by:** Project Director  
 **Scope:** bounded SFL v0 Slice 4 SID closure plus interpretation/reversibility boundaries for the provisional v0 Household resource scaffold
 
 ## Problem
@@ -24,7 +24,7 @@ TRES-0011 is now complete. Its independent laboratory-fitness, architecture/reve
 
 ## Proposed decision
 
-If accepted by the Project Director, adopt the following six bounded Slice-4 semantics.
+The Project Director explicitly approved this package. Adopt the following six bounded Slice-4 semantics.
 
 ### D1 — bounded Household material priority versus RepayDebt
 
@@ -189,4 +189,4 @@ After explicit Director acceptance:
 
 ## Director disposition
 
-Pending explicit Project Director approval or rejection. Silence, working inclination, or implementation momentum does not count as acceptance.
+**APPROVED — 2026-09-24.** The Project Director explicitly approved DEC-0013 after reviewing the TRES-0011 reconciliation. The Director's stated concern was whether the research wave had produced a material warning against proceeding; the wave produced guardrails and nonclaim warnings but no hold/reopen verdict. This approval accepts D1–D6 and the v0 resource-scaffold boundaries/guardrails recorded above.
