@@ -13,7 +13,7 @@ The Project Director has identified a consequential semantic gap in the planned 
 1. the specific semantic gap hidden in current behavior that must be patched before Slice 4 proceeds; and
 2. the larger governance/process weakness that allowed the gap to survive earlier planning and review.
 
-The semantic details are intentionally **not inferred in this record**. They will be supplied by the Project Director separately.
+The Project Director has now supplied the local semantic clarification. Master Architect reconciliation is recorded at `research/technical/SFL_V0_SLICE4_PRIVATE_RESOURCE_SUPPLEMENTATION_RECONCILIATION.md`. The missing capability is transaction-specific voluntary private supplementation by the current head inside one otherwise-valid Household material action, while preserving the distinction between role authority and private ownership/consent.
 
 ## 2. Exact frozen implementation boundary
 
@@ -47,6 +47,30 @@ The Director BLOCK does **not** rewrite or move this immutable ref.
 However, `SFL-V0-S4-ACCEPTANCE-v1` is now **operationally blocked as implementation-authorizing authority** pending semantic reconciliation.
 
 If the new semantic gap changes Slice-4 acceptance obligations, the remedy is a separately reviewed successor acceptance version/ref. Do not rewrite v1.
+
+## 3A. Local semantic gap now identified
+
+Current Slice-4 v1 allows collective expenditure through valid persistent provision commitments but does not represent a current head explicitly contributing privately owned disposable grain to one authorized Household material action without first creating a standing commitment.
+
+The repair must preserve:
+
+- office authority != private-property authority;
+- no office seizure of private grain;
+- persistent commitment != transaction-specific supplement;
+- no extra personal initiative;
+- no self-response/self-negotiation theatre;
+- standing mobilizable capacity remains commitment-derived;
+- explicit source-attributed material history;
+- reserve/NeedsGrain safety;
+- no double debit when P also has a persistent commitment;
+- transaction supplement is funding provenance for the Household effect, not a second person-person Gift/Help;
+- no inheritance/rebinding of a predecessor's private supplement on succession.
+
+One semantic choice remains unresolved because it changes who pays:
+
+`proposals/SFL_V0_SLICE4_PRIVATE_SUPPLEMENT_FUNDING_ORDER_DECISION.md`
+
+Frozen Slice-4 acceptance v1 is therefore confirmed insufficient for implementation authorization. A separately reviewed successor acceptance version will be required after semantic promotion.
 
 ## 4. Inherited-verification adaptation state
 
