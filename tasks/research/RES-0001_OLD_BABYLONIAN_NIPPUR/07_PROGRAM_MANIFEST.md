@@ -1,7 +1,7 @@
 # RES-0001 Program Manifest
 
 **Program:** Old Babylonian Nippur Household Foundations  
-**Status:** RETURNS COMPLETE / RECONCILIATION COMPLETE  
+**Status:** RETURNS COMPLETE / RECONCILIATION COMPLETE
 **Approved frame date:** 2026-09-19
 
 ## Shared files
