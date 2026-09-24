@@ -20,9 +20,9 @@ Historical original RES-0001R package SHA-256: `74acf3a88625e9730defee95dc6ff66f
 
 This historical hash is preserved as provenance for the lost earlier package and is **not** the hash of the re-derived return.
 
-**Re-derived return status:** COMPLETE / RE-DERIVED / ADVISORY  
-**Re-derived return ZIP SHA-256:** `77a8755c1a4545e17c4452cc2c0ef36e0e53bcc165c6db9de650335a405bdf54`  
-**Durable reconciliation path:** `reconciliation/`  
+**Re-derived return status:** COMPLETE / RE-DERIVED / ADVISORY
+**Re-derived return ZIP SHA-256:** `77a8755c1a4545e17c4452cc2c0ef36e0e53bcc165c6db9de650335a405bdf54`
+**Durable reconciliation path:** `reconciliation/`
 **Restoration record:** `RES-0001R_RECONCILIATION_RESTORATION_RECORD.md`
 
 | Re-derived output | SHA-256 |
