@@ -513,4 +513,175 @@
 - **Geography / archive / context:** TA House F (not TB House F).
 - **Underlying primary evidence:** Exercise tablets, installations, joins, and later NN 11–17 as summarized in the supplied studies.
 - **Relevant secondary scholarship:** Robson 2001, pp. 39–45; Stone 1987, pp. 56–59.
-- **RES-0001 source 
+- **RES-0001 source returns:** F.
+- **Evidence character:** ARCHAEOLOGICAL/TEXTUAL SYNTHESIS
+- **Disagreements / variant readings:** Fragments may be reused; some letters may be exercises; 2023 updates were not read in return F.
+- **Confidence:** **HIGH for instructional activity; MODERATE for the cross-phase identity limit**
+- **Confidence rationale:** The teaching assemblage is well supported, but there is no secure evidentiary bridge identifying the later legal parties as the earlier teaching occupants.
+- **Limits on generalization:** No teacher/pupil count, household size, or citywide schooling model.
+- **Relevance to simulation questions (descriptive only):** Shows activity in a building without turning activity assemblages into a resident roster.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0033 — TB House O’s Atta cache links a dossier to a place, not ownership of the building
+
+- **Claim / proposition:** The concentrated TB House O cache links a substantial temple-office dossier to Atta and to a specific deposit, but the dossier does not establish that Atta owned the excavated building.
+- **Period / date range:** TB E-2; Atta purchases include Samsu-iluna 3–24.
+- **Geography / archive / context:** TB 75 E-2, House O; NN 68–91.
+- **Underlying primary evidence:** Concentrated cache and named transactions, especially NN 69–84.
+- **Relevant secondary scholarship:** Stone 1987, pp. 91–98 and catalogue; original Goetze edition was not independently read in return F.
+- **RES-0001 source returns:** F.
+- **Evidence character:** ARCHAEOLOGICAL/ARCHIVAL SYNTHESIS
+- **Disagreements / variant readings:** Building was incompletely excavated/disturbed; depositor, title to the structure, and co-residents are not directly identified.
+- **Confidence:** **MODERATE**
+- **Confidence rationale:** Archive–person association is convergent, but ownership/residence requires evidence beyond the cache.
+- **Limits on generalization:** No institutional tenancy claim, landlessness claim, or typical-household model.
+- **Relevance to simulation questions (descriptive only):** Separates archive holder, activity, ownership, and residence.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0034 — TB House C subdivision records spatial reorganization without a named legal cause
+
+- **Claim / proposition:** The published TB House C/C-1/C-2 sequence supports physical subdivision and reorganization, but no matching deed establishes that the change was caused by a named family partition or household fission.
+- **Period / date range:** Local level II to I sequence.
+- **Geography / archive / context:** TB House C/C-1/C-2.
+- **Underlying primary evidence:** Architectural changes reported by Stone 1987 from field documentation and the original excavation publication.
+- **Relevant secondary scholarship:** Stone 1987, pp. 86–88; McCown and Haines 1967 was available only through metadata/mediated observations in return F.
+- **RES-0001 source returns:** F.
+- **Evidence character:** ARCHAEOLOGICAL SYNTHESIS
+- **Disagreements / variant readings:** Access details vary among plans/notes; no corresponding legal instrument has been established.
+- **Confidence:** **MODERATE for subdivision; LOW for any specific social cause**
+- **Confidence rationale:** Physical change is published, while causal linkage to a particular family event is absent.
+- **Limits on generalization:** One local building sequence; no citywide family-cycle model.
+- **Relevance to simulation questions (descriptive only):** Keeps material reorganization separate from an invented legal/social event.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0035 — Temple-linked rights could be time-defined and transferred by sale, exchange, or inheritance
+
+- **Claim / proposition:** Selected Nippur documents specify temple-linked rights as recurring annual periods or day/month portions and show such rights entering sale, exchange, and inheritance/division transactions.
+- **Period / date range:** Rīm-Sîn 54 and Samsu-iluna 3, 11–13 in the cited core examples.
+- **Geography / archive / context:** Nippur Martu/Kusu/Nuska/Enlil and other temple-linked rights; no secure household residence inferred.
+- **Underlying primary evidence:** BE 6/2, 36, 37, 39, 43; SAOC 44, 11 (P257361), 69 (P257345), 70 (P257344).
+- **Relevant secondary scholarship:** Poebel 1909; Meinhold 2019 provides specialist context but was only partially/abstractly consulted in some returns.
+- **RES-0001 source returns:** D, G, H.
+- **Evidence character:** DIRECT LEGAL EVIDENCE + CROSS-CASE SYNTHESIS
+- **Disagreements / variant readings:** Annual/time shares do not prove exact days personally worked, net income, universal rotation, or unrestricted alienability/eligibility.
+- **Confidence:** **HIGH for existence of time-defined transferable rights**
+- **Confidence rationale:** Multiple independent ancient transactions explicitly express temporal shares and transfers; duplicate modern discussions are not counted as extra evidence.
+- **Limits on generalization:** Not every temple office and not a universal open market.
+- **Relevance to simulation questions (descriptive only):** Distinguishes entitlement, temporal share, transfer, and actual performance.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0036 — Office-linked rights could form part of differentiated family patrimony
+
+- **Claim / proposition:** Office-linked rights could appear within family property histories alongside other assets and support resources without all family property merging into a single undifferentiated pool.
+- **Period / date range:** Old Babylonian, with Samsu-iluna-period examples.
+- **Geography / archive / context:** Family divisions, inherited/recovered office rights, and adoption/property arrangements in Nippur.
+- **Underlying primary evidence:** BE 6/2, 43 (six-month Enlil office share plus associated livelihood/support land); BE 6/2, 36/66/57 as additional family-office examples used in return G.
+- **Relevant secondary scholarship:** Poebel 1909; Meinhold 2019/2014/2015 as specialist context where cited.
+- **RES-0001 source returns:** E, G; consistent with D.
+- **Evidence character:** DIRECT EVIDENCE + CROSS-CASE SYNTHESIS
+- **Disagreements / variant readings:** A shared father or family link does not prove co-residence; inheritance does not imply inalienability or personal cultic performance.
+- **Confidence:** **HIGH for the documented coexistence of differentiated assets**
+- **Confidence rationale:** BE 6/2, 43 explicitly joins a temporal office share and associated land to a family division; other deeds show similarly differentiated family/office claims.
+- **Limits on generalization:** Named cases only; no prevalence estimate or complete patrimonial system.
+- **Relevance to simulation questions (descriptive only):** Shows institutional rights embedded in family property histories without erasing asset distinctions.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0037 — Some Nippur reacquisitions explicitly invoke the paternal house
+
+- **Claim / proposition:** BE 6/2, 45 and 66 characterize recovered land or office-related resources as belonging to the paternal house; BE 6/2, 45 specifically records a titled woman recovering paternal-house land from another similarly titled woman for silver consideration.
+- **Period / date range:** BE 6/2, 45: Samsu-iluna 14, month XII; exact date of BE 6/2, 66 not recovered in the supplied return.
+- **Geography / archive / context:** Nippur family-property/office recovery deeds; no residential locus inferred.
+- **Underlying primary evidence:** BE 6/2, 45 (Istanbul 2001) and BE 6/2, 66; Poebel 1909.
+- **Relevant secondary scholarship:** Poebel’s “redemption” terminology is retained as editorial interpretation, not converted into a universal compulsory family-repurchase rule.
+- **RES-0001 source returns:** G.
+- **Evidence character:** DIRECT LEGAL EVIDENCE + BOUNDED SYNTHESIS
+- **Disagreements / variant readings:** The precise modern interpretation of SAL-ISḪIB is open; causes of prior alienation and legal mechanism of recovery are not fully established.
+- **Confidence:** **HIGH for paternal-house wording; MODERATE for legal mechanism/title interpretation**
+- **Confidence rationale:** Family-recovery language is explicit in two deeds, while broader legal analogies remain interpretive.
+- **Limits on generalization:** Two deeds only; not all lineage property and not proof that titled women’s land was temple-owned.
+- **Relevance to simulation questions (descriptive only):** Shows family continuity through reacquisition after alienation, including action by titled women.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0038 — BE 6/2, 42 ties deed custody and future-claim liability to succession after a holder’s death
+
+- **Claim / proposition:** BE 6/2, 42 records receipt of deeds concerning an office/inheritance after a former holder’s death together with explicit responsibility for future claims against those deeds.
+- **Period / date range:** Samsu-iluna 13, month XII; the text includes a two-year interval.
+- **Geography / archive / context:** Nippur; Sin-abušu, Nannartum, and Aba-Enlil-dim; CBM 6055 as printed in the early edition.
+- **Underlying primary evidence:** BE 6/2, 42; Poebel 1909, pp. 45–46 and catalogue.
+- **Relevant secondary scholarship:** Poebel’s inference of temple/corporate disposition from witnesses/seals is kept separate from the deed’s wording.
+- **RES-0001 source returns:** G.
+- **Evidence character:** DIRECT LEGAL EVIDENCE + EDITORIAL INTERPRETATION
+- **Disagreements / variant readings:** Recipient’s kinship, payment, and whether the act is a new grant or delivery of pre-existing title are not established.
+- **Confidence:** **MODERATE**
+- **Confidence rationale:** Deed custody and future-claim responsibility are explicit; institutional mechanism is less certain.
+- **Limits on generalization:** One documentary transfer; not a universal temple succession procedure.
+- **Relevance to simulation questions (descriptive only):** Adds documentary custody/liability to the history of institutional rights.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0039 — BE 6/2, 10 records royal referral, council adjudication, and an executed property settlement
+
+- **Claim / proposition:** BE 6/2, 10 narrates a family/property dispute referred by the king to Nippur’s council and culminates in a recorded property settlement and non-claim arrangement concerning earlier family transactions.
+- **Period / date range:** Hammurabi reign.
+- **Geography / archive / context:** Nippur council; heirs of Iškur-rabi and Ududu; Ninlil-related family claims in the interpretations used by return G.
+- **Underlying primary evidence:** BE 6/2, 10 = P259799, especially the proceedings and final conveyance/non-claim clause.
+- **Relevant secondary scholarship:** Poebel 1909; later returns reject using Poebel’s wider theory of the council as proof of a universal appellate hierarchy.
+- **RES-0001 source returns:** D, G.
+- **Evidence character:** DIRECT LEGAL NARRATIVE + BOUNDED INTERPRETATION
+- **Disagreements / variant readings:** Some property terminology in the old edition remains unresolved; the institutional route cannot be generalized to every dispute.
+- **Confidence:** **MODERATE**
+- **Confidence rationale:** The narrated referral and settlement are clear, but fine legal interpretation depends on an early edition.
+- **Limits on generalization:** One case; no claim of standard appellate structure or universal procedure.
+- **Relevance to simulation questions (descriptive only):** Shows one documented route through multiple legal authorities to a family/property settlement.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0040 — Annual payment terminology is not confined to wages
+
+- **Claim / proposition:** In the inspected Nippur texts, annual payment terminology including a₂ occurs in house-rental and parental-support contexts, so that wording cannot by itself be translated as remuneration for labor.
+- **Period / date range:** Samsu-iluna 27 and Samsu-iluna 8 in the cited examples.
+- **Geography / archive / context:** House-rental and parental-support instruments.
+- **Underlying primary evidence:** SAOC 44, 14 (P257362), obv. 1–7; BE 6/2, 28 (P266334), rev. 1–6.
+- **Relevant secondary scholarship:** No full lexical history is asserted; the proposition rests on contrasting uses in the two edited texts.
+- **RES-0001 source returns:** H.
+- **Evidence character:** DIRECT SEMANTIC CROSS-CONTEXT EVIDENCE
+- **Disagreements / variant readings:** Neither occurrence establishes an employer–employee relationship; other contexts of a₂ may differ.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** The same/related annual-payment wording is used in non-wage obligation contexts.
+- **Limits on generalization:** These clauses only; not a comprehensive lexical rule.
+- **Relevance to simulation questions (descriptive only):** Separates support/rent obligations from labor remuneration.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0041 — Selected Nippur loan texts explicitly distinguish interest-bearing from non-interest-bearing obligations
+
+- **Claim / proposition:** The inspected loan texts include obligations explicitly stated as interest-bearing and another text explicitly marked as not bearing interest.
+- **Period / date range:** Hammurabi 38b under the older attribution and Samsu-iluna 10 in the cited examples.
+- **Geography / archive / context:** Nippur private loan documents.
+- **Underlying primary evidence:** BE 6/2, 15; PBS 8/2, 130 = CBS 07157 = P262191.
+- **Relevant secondary scholarship:** Poebel 1909; Chiera 1922/CDLI digital edition for PBS 8/2, 130.
+- **RES-0001 source returns:** D.
+- **Evidence character:** DIRECT LEGAL EVIDENCE + CROSS-CASE CONTRAST
+- **Disagreements / variant readings:** Exact rate/exchange/security and repayment outcome are not supplied by the proposition; older dating/provenance details require normal caution.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** The presence/absence of interest is stated in the edited clauses.
+- **Limits on generalization:** No citywide credit-rate distribution or typical-loan model.
+- **Relevance to simulation questions (descriptive only):** Shows materially different stated credit terms in the same city’s documentary corpus.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0042 — An obligation could use different media at advance and settlement
+
+- **Claim / proposition:** At least one directly read Nippur loan records a silver advance repayable in barley, demonstrating that the medium advanced and the medium of settlement could differ.
+- **Period / date range:** Samsu-iluna 10 for PBS 8/2, 130; supplementary examples span Samsu-iluna 4 and an uncertain Hammurabi-era provenance.
+- **Geography / archive / context:** Nippur private loan documents.
+- **Underlying primary evidence:** PBS 8/2, 130 = P262191 (silver advance, barley return); supplementary BE 6/2, 16 and no. 21 in return D.
+- **Relevant secondary scholarship:** Chiera 1922/CDLI digital edition; Poebel 1909 for the supplementary early-edition examples.
+- **RES-0001 source returns:** D.
+- **Evidence character:** DIRECT LEGAL EVIDENCE
+- **Disagreements / variant readings:** No exchange rate or realized repayment is established; BE 6/2, 16 has qualified provenance and is not essential to the proposition.
+- **Confidence:** **HIGH**
+- **Confidence rationale:** PBS 8/2, 130 directly links different media in advance and settlement clauses.
+- **Limits on generalization:** One secure example plus supplements; not a general monetary/commodity conversion rule.
+- **Relevance to simulation questions (descriptive only):** Shows that an obligation’s accounting medium and settlement medium need not be identical.
+- **Design status:** NO DESIGN DECISION
+
+### HEC-0043 — BE 6/2, 29 records a cultivation lease with annual yield-share rent
+
+- **Claim / proposition:** BE 6/2, 29 records Damu-idinnam leasing Ibgatum’s field for cultivation at o
