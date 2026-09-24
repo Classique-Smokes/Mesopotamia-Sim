@@ -6,7 +6,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 - `TRES-0011_V0_RESOURCE_SCAFFOLD_WAVE_DISPATCH.md` — **READY FOR PARALLEL DISPATCH**. Four independent scribes test whether the crude Household resource/provision scaffold remains fit for SFL v0's laboratory purpose, stays replaceable, aligns with simulation methodology, and avoids historically misleading assumptions. D1–D6 remain unpromoted while this confidence wave runs.
 
-- `SID_RETRO_SLICE1_PASSA_ALIAS_FRONTIER.md` — **READY / TARGETED RETRO-SID PASS A**. Fresh reviewer independently maps Slice-1 participant-position aliasing/distinct-party frontier from historical authority; MA frontier is sealed separately until Pass A freezes.
+- Slice-1 retro-SID Pass A — **COMPLETE / FROZEN** at `sfl-v0-slice1-retro-sid-passa-v1` @ `b6d0321ffa95053aba295cb8f4b5f8338c61c3cb`. Pass-B task: `SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md` — **READY FOR DISPATCH** over the reconciled alias frontier.
 
 - Slice-4 SID Pass B — **COMPLETE / RECONCILED**. Frozen return: `sfl-v0-slice4-sid-passb-v1` @ `77f0f7c64d3ac85f933e6f7c39ee2cd70cf5d7ec`; reconciliation: `../../research/technical/SFL_V0_SLICE4_SID_PASSB_RECONCILIATION.md`; six Director semantic decisions remain before SID closure.
 
