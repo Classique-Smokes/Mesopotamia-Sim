@@ -1,7 +1,7 @@
 # SFL v0 Slice 4 — Acceptance Manifest Candidate
 
 **Status:** CANDIDATE / PRE-CODE REVIEW REQUIRED  
-**Manifest version:** `SFL-V0-S4-ACCEPTANCE-v1-candidate1`  
+**Manifest version:** `SFL-V0-S4-ACCEPTANCE-v1-candidate2`  
 **Owner:** Master Architect  
 **Scope:** Roadmap Stage 4 / Slice 4 — persistent HouseholdHeadRole + occupancy/Recognition + dual-mode Household agency + scoped provision/spending/mediated-marriage authority  
 **Semantic authority:** accepted SPEC-SFL-0001 + accepted ADRs/decisions, including `DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`  
@@ -237,6 +237,7 @@ Detached corruptions must reach the actual independent checker and reject materi
 | S4-112-MEDIATED-EFFECTS-ATOMIC | REQUIRED | Contributor debits, groom credit, marriage, and groom→head favour commit atomically or not at all. |
 | S4-113-MEDIATED-AUTHORITY-REVALIDATION | REQUIRED | Current H/head authority, bride participation, groom subjective gates, marriage eligibility, favour slot, and live provision capacity revalidate before commit. |
 | S4-114-DIRECT-MARRIAGE-ROUTE-NOT-WEAKENED | REQUIRED | Existing direct ProposeMarriage semantics are not broadened to consult objective H state or silently choose mediated authority. |
+| S4-115-MEDIATED-DOWRY-TERM-VALIDITY | REQUIRED | On the Household-mediated ProposeMarriage route, proposedDowry obeys the global grain-term validity rule: zero, negative, and non-integral/unrepresentable-without-coercion terms are categorically rejected before the head's role-scoped ResponseDecisionContext, create no valid social failed-attempt outcome or material/social effect, and do not reach role-scoped response scoring; a valid positive integer may proceed to ordinary mediated-route gates. |
 
 ### F. DEC-0010 same-cycle authority/status precedence and resolution
 
@@ -271,7 +272,7 @@ Detached corruptions must reach the actual independent checker and reject materi
 | S4-146-DERIVED-CACHE-NONAUTHORITY | REQUIRED | Current-head/action-availability/capacity/role-recognition indexes or caches are rebuildable/non-authoritative and cannot change behavior when stale/discarded. |
 | S4-147-DERIVED-REBUILD-EQUIVALENCE | REQUIRED | Discard/rebuild of permitted derived role/authority/capacity projections at stable boundary reproduces identical authoritative queries/outcomes. |
 | S4-148-NONSEMANTIC-ITERATION-METAMORPHIC | REQUIRED | Representative appointment/succession/dual-mode/provision histories are invariant under nonsemantic storage/input enumeration changes except explicitly accepted fallback domains. |
-| S4-149-ISOMORPHIC-ID-RENAMING | REQUIRED | Consistent nonsemantic ID renaming preserves role/Recognition/material outcomes; IDs do not create legitimacy or authority. |
+| S4-149-ISOMORPHIC-ID-RENAMING | REQUIRED | Consistent nonsemantic ID renaming preserves role/Recognition/material outcomes modulo isomorphism except in scenarios deliberately exercising an accepted disclosed stable-ID fallback domain. In such a fallback domain, only the accepted fallback-sensitive assignment may change; legitimacy, authority, total material effect, invariants, and fallback disclosure remain unchanged. |
 | S4-150-STRUCTURAL-AUTHORITY-EXPLICIT | REQUIRED | New role/occupancy/cooldown/commitment authority is explicit, typed, inspectable, and not hidden in derived/cache/diagnostic state. |
 | S4-151-FIXTURE-WRITE-SET-AUDIT | REQUIRED | Every Slice-4 witness declares fixture/producer writes; fixtures never direct-write the role/Recognition/commitment/spend/marriage result under judgment. |
 | S4-152-INDEPENDENT-ORACLE-DEPENDENCY | REQUIRED | Acceptance checkers do not call production role/appointment/Recognition/provision/spend/mediated classifiers as expected-answer oracles when those outputs are under judgment. |
@@ -387,7 +388,7 @@ Fresh independent post-implementation conformance must review an exact immutable
 
 ## 9. Candidate census
 
-Candidate census: **160 unique AcceptanceIds = 149 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**.
+Candidate census: **161 unique AcceptanceIds = 150 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**.
 
 Inherited frozen REQUIRED obligations additionally preserved one-by-one: **270 = 128 Slice 1 + 46 Slice 2 + 96 Slice 3**.
 
