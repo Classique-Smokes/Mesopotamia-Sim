@@ -283,3 +283,130 @@ Must fail if implementation:
 - uses collection order before surplus ranking;
 - penetrates a contributor's reserve;
 - debits any backing grain twice.
+
+
+---
+
+## VS-SFL-047 — Transaction-specific holder funding plan
+
+**Level:** mechanism-isolation / funding-plan semantics  
+**Semantic source:** SPEC §8.1.1 + DEC-0011.
+
+Use an otherwise-valid permitted Household material action with total cost `C = 3`, current head P, and a separate committed contributor A.
+
+### Variant A — no private term
+
+- no holder-private supplement term is present;
+- ordinary valid commitment backing must fund all 3.
+
+If ordinary backing can fund 3, the action may commit with no P private debit.
+
+### Variant B — explicit partial contribution despite sufficient backing
+
+Use the same Household action and a world where ordinary commitments could fund all 3.
+
+P explicitly authorizes exact private contribution `X = 1`.
+
+Assertions:
+
+- P privately funds exactly 1;
+- commitment-backed allocation funds exactly `R = 2`;
+- the allocator does not ignore X merely because standing backing was sufficient;
+- P's contribution is causally identified as private-owner authorization, not office seizure;
+- no persistent provision commitment is created by X.
+
+### Variant C — shortfall supplementation
+
+Ordinary commitment backing can fund only 2.
+
+P explicitly authorizes `X = 1`.
+
+- combined funding permits the action;
+- without X, the otherwise identical action remains unfunded;
+- the Household does not seize P's grain in the no-X control.
+
+### Variant D — full private funding
+
+P authorizes `X = C = 3`.
+
+- commitment-backed funding requirement is 0;
+- the action may commit entirely from P's private disposable grain;
+- standing `MobilizableCapacity(H)` is unchanged by the authorization.
+
+### Quantity controls
+
+- absent term represents no contribution;
+- present X = 0, negative, non-integral/unrepresentable-without-coercion, or X > C is categorically invalid;
+- invalid X does not reach downstream role response/social-failure processing.
+
+### Persistence controls
+
+After one successful X-funded action:
+
+- no new persistent `HouseholdProvisionCommitment(P -> H)` exists unless independently created by the accepted provision-request path;
+- a later Household action receives no private capacity from the earlier X.
+
+---
+
+## VS-SFL-048 — Same holder commitment plus private contribution cannot double-count grain
+
+**Level:** mechanism-isolation / arithmetic oracle  
+**Semantic source:** SPEC §8.1.1 + DEC-0011.
+
+At precommit:
+
+- P is current head;
+- P grain = 7 -> ordinary disposable/exposed capacity 5;
+- P also has a valid persistent provision commitment to H;
+- A grain = 3 -> committed capacity 1;
+- total Household material cost C = 6;
+- P explicitly authorizes private X = 2;
+- residual commitment requirement R = 4.
+
+Expected transaction-local capacities:
+
+- P private leg = exactly 2;
+- P effective commitment-side capacity = 3, not 5;
+- A commitment-side capacity = 1.
+
+Expected funding:
+
+- P private debit = 2;
+- commitment allocation funds R = 4 using P(3) + A(1);
+- P aggregate personal debit = 5, ending grain 2;
+- A debit = 1;
+- no grain unit is counted through both provenance channels.
+
+### Insufficient combined-capacity companion
+
+Raise C so that, after fixing X and reducing P's commitment-side capacity by X, R exceeds actual commitment capacity.
+
+The action must fail atomically even if a naive checker using P's unreduced commitment capacity would appear to make the total sufficient.
+
+### Ranking control
+
+The fixed-rank commitment allocator ranks contributors using their **transaction-local effective commitment capacities after accounting for P's exact X**.
+
+This is arithmetic implied by the fixed funding plan, not a global private-first social priority.
+
+---
+
+## VS-SFL-049 — Private supplementation provenance is not a second personal transfer
+
+**Level:** provenance / nonauthority / causal-legibility
+
+Run both permitted Household material-use meanings with an explicit valid X where applicable:
+
+1. 1-grain Household support;
+2. mediated-marriage dowry.
+
+Assertions:
+
+- history distinguishes role authority, P private authorization, P private debit, commitment-backed debits, recipient/effect, and total cost;
+- the supplement creates no ordinary Gift/Help/Loan event;
+- the supplement creates no ordinary-transfer attitude consequence;
+- the supplement creates no independent favour;
+- the supplement cannot satisfy formation/participation/continuity/fresh-lineage support evidence;
+- Household-originated support remains non-self-confirming;
+- mediated marriage creates exactly the already-accepted groom -> mediating-head favour and no additional favour from X;
+- successor occupancy never inherits or reuses a predecessor's prior X.
