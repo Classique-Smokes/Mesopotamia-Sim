@@ -4,6 +4,8 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
+- `SFL_V0_SLICE4_SID_PASSA_INDEPENDENT_FRONTIER.md` — **READY FOR DISPATCH / SID PASS A**. Fresh reviewer independently maps the Slice-4 interaction frontier before seeing the Master Architect frontier. Return must be report-only and frozen before Pass B.
+
 - Slice-4 SID pilot — **NEXT GATE / NOT YET DISPATCHED**. Must run `SID-ASSURANCE-v1` frontier audit + frozen independent Pass A + Pass B challenge + MA reconciliation before successor Slice-4 acceptance drafting.
 
 - GOV-0002 Semantic Interaction Delta Failsafe review — **COMPLETE / PASS / PROMOTED UNDER DEC-0012**. Exact review: `../../research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md`; candidate2: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`.
