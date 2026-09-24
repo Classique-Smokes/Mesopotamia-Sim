@@ -1,6 +1,6 @@
 # RES-0001 — Old Babylonian Nippur Household Foundations Research Program
 
-**Status:** RETURNS COMPLETE / RECONCILIATION PENDING  
+**Status:** RETURNS COMPLETE / RECONCILIATION COMPLETE  
 **Commissioned:** 2026-09-19  
 **Commissioned by:** Master Architect following explicit Human Project Director approval  
 **Research frame:** Old Babylonian Nippur, approximately 1900–1600 BCE, emphasizing private/legal archives and archaeologically contextualized residential evidence.
@@ -36,7 +36,7 @@ Researchers return **evidence and analysis**, not project decisions. They may id
 
 ## Return process
 
-All eight A–H returns have been received and their durable contents are stored under `research/historical/RES-0001/returns/`. The Master Architect must still reconcile claims, conflicts, source overlap, and generalization limits through RES-0001R before promotion into the Historical Evidence Register. Design translation remains separate.
+All eight A–H returns have been received and their durable contents are stored under `research/historical/RES-0001/returns/`. The RES-0001R reconciliation is now **COMPLETE / RE-DERIVED / ADVISORY** and preserved under `research/historical/RES-0001/reconciliation/`, with restoration provenance at `research/historical/RES-0001/RES-0001R_RECONCILIATION_RESTORATION_RECORD.md`. Historical-evidence promotion into canonical `HE-` entries and any design translation remain separate.
 
 ## Canonical project references
 
