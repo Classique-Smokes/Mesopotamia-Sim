@@ -28,6 +28,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0010 | Slice-4 Authority Use Before Authority Destruction | ACCEPTED | Architectural / social-semantic | 2026-09-24 | 2026-09-24 | `DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md` |
 | DEC-0011 | Transaction-Specific Office-Holder Private Supplementation | ACCEPTED | Architectural / social-semantic | 2026-09-24 | 2026-09-24 | `DEC-0011_TRANSACTION_SPECIFIC_OFFICE_HOLDER_PRIVATE_SUPPLEMENTATION.md` |
 | DEC-0012 | Semantic Interaction Delta Failsafe | ACCEPTED | Constitutional / process governance | 2026-09-24 | 2026-09-24 | `DEC-0012_SEMANTIC_INTERACTION_DELTA_FAILSAFE.md` |
+| DEC-0013 | Slice-4 SID Closure and V0 Resource-Scaffold Boundaries | ACCEPTED | Architectural / social-semantic | 2026-09-24 | 2026-09-24 | `DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md` |
 
 ## Accepted summaries
 
@@ -43,6 +44,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 - **DEC-0010:** in bounded Slice-4 same-cycle races, an otherwise-valid accepted action/role transition may perform its valid last act before an accepted transition destroys the head/Household authority or institutional status it depends on; no rebinding or technical-ID authority is introduced.
 - **DEC-0011:** a current valid office-holder may explicitly contribute an exact transaction-specific amount of privately owned disposable grain to one authorized Household material action; the remaining cost is funded through ordinary persistent commitment backing, with no extra personal initiative/response, no standing-capacity inflation, no double counting, and exact source provenance.
 - **DEC-0012:** consequential new semantic layers use the trigger-based `SID-ASSURANCE-v1` Semantic Interaction Delta Failsafe before acceptance freeze: bounded new↔old frontier analysis, independently frozen fresh-reviewer Pass A before MA-frontier reveal, Pass-B negative-space challenge over the reconciled union, authority-bearing dispositions, semantic-base freshness/revalidation, implementation stop-on-unclassified-interaction, and evidence-based sunset after 2–3 triggered slices.
+- **DEC-0013:** Slice-4 closes the six SID semantic gaps with bounded v0 rules for Household-vs-RepayDebt conflict, snapshot-bound succession consent cohorts, head-as-support-recipient, head self-commitment, self-nomination, and inert Inactive-H role filling; the current resource subsystem is explicitly a synthetic v0 scaffold with replaceability, provenance, nonidentity, sensitivity, and future-redesign guardrails.
 
 ## Entry template
 

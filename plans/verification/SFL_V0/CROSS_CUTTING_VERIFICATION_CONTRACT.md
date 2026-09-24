@@ -232,7 +232,17 @@ The suite must detect or classify at least these project-specific faults:
 39. silently shrink/increase private supplement X or auto-rebalance the agreed funding split at precommit;
 40. treat private supplementation as a separate Gift/Help/favour-bearing action or allow it to become formation/continuity/lineage evidence;
 41. transfer/rebind an old head's private supplement authorization to a successor;
-42. consume an extra personal initiative or create a self-response context for same-person private supplementation.
+42. consume an extra personal initiative or create a self-response context for same-person private supplementation;
+43. let `RepayDebt` preempt otherwise-valid higher Household provision in the bounded shared-grain conflict or treat debt acceptance as an automatic reservation;
+44. let same-cycle newcomer entry retroactively expand an already-accepted appointment/succession consent cohort;
+45. prohibit head-as-support-recipient solely because authorizer==beneficiary, or require a P->P support request/response;
+46. create a head's persistent provision commitment from office occupancy alone, prohibit it solely because head==private owner, or manufacture P->P response theatre;
+47. prohibit self-nomination categorically or drop one of nomination/nominee-willingness/participant-acceptance predicates when roles alias;
+48. treat Inactive role filling as reactivation or grant Household-mode initiative merely because an Inactive role is occupied;
+49. duplicate the Household funding allocator independently across resolver/dependency/commit/history surfaces so the same transaction can derive inconsistent funding participation;
+50. collapse accepted funding-leg provenance into aggregate deltas/free-form detail so private and commitment-backed source authority cannot be reconstructed;
+51. turn `MobilizableCapacity(H)` or another convenience cache into independent Household wealth authority;
+52. make commitment/capacity/private-X state define Household identity, sustaining participation, role identity/occupancy, or Recognition identity.
 
 Report mutant outcome as:
 
@@ -404,3 +414,19 @@ The previously open semantic gates are resolved:
 - canonical closed-loop profiles are pinned in `REFERENCE_SCORING_PROFILES.md`.
 
 Verification must continue to distinguish these controlled v0 choices from historical calibration or permanent cognition/accounting doctrine.
+
+
+## Slice-4 resource-scaffold replaceability controls
+
+DEC-0013 requires the current material subsystem to remain a synthetic v0 scaffold rather than a hidden future-economy commitment.
+
+Acceptance evidence must therefore show:
+
+1. one authoritative live funding-resolution point produces the transaction funding plan used by commit/history;
+2. dependency discovery consumes declared/evaluated material participation instead of separately rediscovering funding policy;
+3. funding history retains typed source/authority/debit provenance;
+4. `MobilizableCapacity(H)` remains rebuildable/non-authoritative derived state;
+5. changing current provision capacity to zero does not alter Household identity/role/Recognition identity;
+6. no generic asset/property/ledger architecture is introduced solely to anticipate a future resource model.
+
+Observation robustness/sensitivity work required by DEC-0013 is a later scientific-interpretation gate, not a substitute for these current executable conformance checks.

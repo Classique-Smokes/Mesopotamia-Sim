@@ -120,18 +120,20 @@ SID retrospective screening wave:
 
 TRES-0011 v0 resource scaffold confidence wave:
 
-- status: **READY FOR PARALLEL DISPATCH**
-- purpose: test whether the intentionally crude Household resource/provision mechanism remains fit for SFL v0's laboratory purpose and replaceable before D1–D6 semantic promotion
-- dispatch: `tasks/research/TRES-0011_V0_RESOURCE_SCAFFOLD_WAVE_DISPATCH.md`
-- A — internal laboratory-fitness audit: `tasks/research/TRES-0011A_V0_RESOURCE_LAB_FITNESS.md`
-- B — architecture/reversibility blast-radius audit: `tasks/research/TRES-0011B_RESOURCE_SEAM_REVERSIBILITY.md`
-- C — external simulation-methodology review: `tasks/research/TRES-0011C_EXTERNAL_SIMULATION_METHODOLOGY.md`
-- D — Mesopotamian household-resource historical pressure test: `tasks/research/TRES-0011D_HISTORICAL_RESOURCE_PRESSURE_TEST.md`
-- Director working inclination on D1–D6 is **NON-AUTHORITATIVE / HELD PENDING WAVE RECONCILIATION**
-- no final Household economy is being designed by this wave
+- status: **COMPLETE / RETURNS PRESERVED / MASTER ARCHITECT RECONCILED**
+- dispatch baseline: `tres-0011-v0-resource-scaffold-wave-v1` @ `76660eaea3be5a6a4612cfd431f9f73fe69a0f0a`
+- A: `research/technical/TRES-0011/TRES-0011A_V0_RESOURCE_LAB_FITNESS.md` — **LAB PURPOSE PRESERVED WITH GUARDRAILS**
+- B: `research/technical/TRES-0011/TRES-0011B_RESOURCE_SEAM_REVERSIBILITY.md` — **REPLACEABLE WITH PREPARATORY GUARDRAILS**
+- C: `research/technical/TRES-0011/TRES-0011C_EXTERNAL_SIMULATION_METHODOLOGY.md` — **FIT ONLY WITH EXPLICIT INTERPRETATION / SENSITIVITY GUARDRAILS**
+- D: `research/technical/TRES-0011/TRES-0011D_HISTORICAL_RESOURCE_PRESSURE_TEST.md` — **SAFE ONLY WITH STRONG HISTORICAL-NONCLAIM GUARDRAILS**
+- MA reconciliation: `research/technical/TRES-0011/TRES-0011_MASTER_ARCHITECT_RECONCILIATION.md`
+- synthesis verdict: **PROCEED WITH EXPLICIT V0 / REDESIGN GUARDRAILS**
+- accepted semantic closure: `decisions/DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md` — **ACCEPTED BY PROJECT DIRECTOR**
+- TRES-0011 does not require a mature Household economy before Slice 4; it does require explicit v0/non-historical boundaries, a narrow funding/provenance seam, later sensitivity checks, and future historical/economic redesign triggers
+- D1–D6 + v0 resource-scaffold guardrails are **PROMOTED** into SPEC + canonical verification; promotion reconciliation: `research/technical/TRES-0011/DEC-0013_PROMOTION_RECONCILIATION.md`
 - Slice-4 implementation BLOCK remains active
 
-Slice-4 SID pilot status: **PASS B COMPLETE / RECONCILED / DIRECTOR DECISIONS REQUIRED**
+Slice-4 SID pilot status: **CLOSED / PASS AFTER DEC-0013**
 
 - MA frontier ref: `sfl-v0-slice4-sid-ma-frontier-v1` @ `cd8c3ccf497bd8df928d5dee5f888188d98dd4ef`
 - frozen Pass-A ref: `sfl-v0-slice4-sid-passa-v1` @ `6a15d40c2c8b9f54bba9c5f5e77a5806a9cee94e`
@@ -139,12 +141,25 @@ Slice-4 SID pilot status: **PASS B COMPLETE / RECONCILED / DIRECTOR DECISIONS RE
 - Pass-B report blob: `a63ab9252365f10c6c33ee7c59267b632de281cf`
 - frontier union: `research/technical/SFL_V0_SLICE4_SID_FRONTIER_COMPARISON_AND_PASSB_UNION.md`
 - MA reconciliation: `research/technical/SFL_V0_SLICE4_SID_PASSB_RECONCILIATION.md`
-- decision packet: `proposals/SFL_V0_SLICE4_SID_OPEN_SEMANTIC_DECISIONS.md`
-- `Consequential unresolved: 6`
+- original decision packet: `proposals/SFL_V0_SLICE4_SID_OPEN_SEMANTIC_DECISIONS.md`
+- accepted post-TRES decision: `decisions/DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md` — **ACCEPTED**
+- closure revalidation: `research/technical/SFL_V0_SLICE4_SID_CLOSURE_REVALIDATION.md` — **CLOSED / PASS**
+- `Consequential unresolved: 0`
 - `Accidental gaps outstanding: 0`
-- closure freshness: **CURRENT**, but closure is not complete while unresolved > 0
-- next gate: Director resolves six bounded semantic choices -> targeted semantic promotion -> affected-frontier revalidation -> SID closure
+- closure freshness: **CURRENT / CLOSED**
+- next gate: fresh independent whole-candidate review of exact successor acceptance v2 candidate1
 - Slice-4 implementation remains **DIRECTOR BLOCKED** until pilot + successor acceptance + inherited-adaptation gates close
+
+Slice-4 successor acceptance v2:
+
+- candidate path: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md`
+- candidate version/ref: `SFL-V0-S4-ACCEPTANCE-v2-candidate1` / `sfl-v0-slice4-acceptance-v2-candidate1`
+- exact candidate commit: `473e521e1d64b3e001c386bf186eafba71c20f5f`
+- candidate blob: `67008d03a943e6cd6a9a9e269be7c6efeefc229b`
+- candidate census: **173 = 162 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**
+- all frozen v1 AcceptanceId/status/obligation rows inherited unchanged; 12 new REQUIRED rows S4-176..187 cover DEC-0013 D1–D6 + implementation-facing resource-scaffold guardrails
+- fresh review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **READY FOR DISPATCH**
+- freeze/coding status: **NOT AUTHORIZED** pending fresh whole-candidate verdict and later inherited-adaptation closure
 
 Private-resource supplementation semantic patch:
 
@@ -175,7 +190,9 @@ Slice-4 inherited verification adaptation:
 - plan blob: `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51`
 - plan path: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_PLAN.md`
 - independent review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md`
-- implementation dispatch: **BLOCKED** until verdict `PASS — ADAPTATION PLAN APPROVED`.
+- review status: **SUSPENDED AS FORWARD GATE** pending successor Slice-4 acceptance v2 review/freeze.
+- after successor freeze, reassess/update the adaptation candidate against DEC-0013 + successor acceptance; then run a fresh independent adaptation review against that exact reassessed candidate.
+- the old review task must **NOT** be dispatched unchanged merely because it was previously commissioned.
 
 Slice-4 acceptance candidate1:
 
@@ -402,11 +419,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Draft a successor Slice-4 acceptance candidate/version incorporating DEC-0011; do not modify frozen v1.
-2. Run fresh independent whole-candidate pre-code review; freeze the successor only on PASS.
-3. Reassess the inherited-verification adaptation plan against the repaired semantic/acceptance boundary.
-4. Preserve and address the Project Director's separate broader governance/process challenge when supplied.
-5. Close the Director implementation BLOCK only after semantic/acceptance/adaptation/governance gates are explicitly reconciled.
+1. Dispatch the fresh independent review from `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` against immutable ref `sfl-v0-slice4-acceptance-v2-candidate1`.
+2. If BLOCK, preserve candidate1 and repair only the identified acceptance/authority defect in a new candidate.
+3. If **PASS — MAY FREEZE UNCHANGED**, freeze exact successor authority as `SFL-V0-S4-ACCEPTANCE-v2`; frozen v1 remains immutable historical evidence.
+4. Reassess the inherited-verification adaptation plan against DEC-0013 + frozen successor acceptance, then commission fresh independent adaptation review.
+5. Close the Director implementation BLOCK only after successor acceptance + adaptation gates are explicitly closed.
 6. Only then issue the Slice-4 implementation packet / coding bārû commission.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.

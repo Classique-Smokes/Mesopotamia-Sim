@@ -4,11 +4,14 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- `TRES-0011_V0_RESOURCE_SCAFFOLD_WAVE_DISPATCH.md` — **READY FOR PARALLEL DISPATCH**. Four independent scribes test whether the crude Household resource/provision scaffold remains fit for SFL v0's laboratory purpose, stays replaceable, aligns with simulation methodology, and avoids historically misleading assumptions. D1–D6 remain unpromoted while this confidence wave runs.
+- `SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **READY FOR DISPATCH**. Fresh independent whole-candidate review of immutable `sfl-v0-slice4-acceptance-v2-candidate1` @ `473e521e1d64b3e001c386bf186eafba71c20f5f` (blob `67008d03a943e6cd6a9a9e269be7c6efeefc229b`). Candidate census: 173 = 162 REQUIRED / 9 DEFERRED / 2 UNEXERCISED.
+
+
+- `TRES-0011_V0_RESOURCE_SCAFFOLD_WAVE_DISPATCH.md` — **COMPLETE / RETURNS PRESERVED / RECONCILED**. MA synthesis: `../../research/technical/TRES-0011/TRES-0011_MASTER_ARCHITECT_RECONCILIATION.md` — **PROCEED WITH EXPLICIT V0 / REDESIGN GUARDRAILS**. Post-wave semantic disposition: `../../decisions/DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md` — **ACCEPTED / PROMOTED**. SID closure: `../../research/technical/SFL_V0_SLICE4_SID_CLOSURE_REVALIDATION.md` — **CLOSED / PASS**.
 
 - Slice-1 retro-SID Pass A — **COMPLETE / FROZEN** at `sfl-v0-slice1-retro-sid-passa-v1` @ `b6d0321ffa95053aba295cb8f4b5f8338c61c3cb`. Pass-B task: `SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md` — **READY FOR DISPATCH** over the reconciled alias frontier.
 
-- Slice-4 SID Pass B — **COMPLETE / RECONCILED**. Frozen return: `sfl-v0-slice4-sid-passb-v1` @ `77f0f7c64d3ac85f933e6f7c39ee2cd70cf5d7ec`; reconciliation: `../../research/technical/SFL_V0_SLICE4_SID_PASSB_RECONCILIATION.md`; six Director semantic decisions remain before SID closure.
+- Slice-4 SID Pass B — **COMPLETE / RECONCILED**. Frozen return: `sfl-v0-slice4-sid-passb-v1` @ `77f0f7c64d3ac85f933e6f7c39ee2cd70cf5d7ec`; reconciliation: `../../research/technical/SFL_V0_SLICE4_SID_PASSB_RECONCILIATION.md`; DEC-0013 is accepted and closure revalidation reports **0 consequential unresolved / 0 accidental gaps**.
 
 - SID retrospective screening wave — **COMPLETE / RECONCILED**. Reconciliation: `../../research/technical/SID_RETRO_SCREEN_SLICES1_3_RECONCILIATION.md`. Slice 1 -> targeted full retro-SID audit; Slices 2–3 -> NO CLOSER LOOK NEEDED.
 
@@ -16,7 +19,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 - GOV-0002 Semantic Interaction Delta Failsafe review — **COMPLETE / PASS / PROMOTED UNDER DEC-0012**. Exact review: `../../research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md`; candidate2: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`.
 
-- Slice-4 Director implementation block — **ACTIVE**. Frozen boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`. Current forward gates are TRES-0011 resource-scaffold reconciliation, Director disposition/promotion of the six bounded SID decisions, SID closure, successor Slice-4 acceptance, and inherited-verification adaptation closure. Coding remains forbidden.
+- Slice-4 Director implementation block — **ACTIVE**. Frozen boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`. Current forward gates are successor Slice-4 acceptance v2 review/freeze and inherited-verification adaptation closure. Coding remains forbidden.
 
 - `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md` — **SUSPENDED AS FORWARD GATE BY DIRECTOR SEMANTIC BLOCK**. Independent losslessness review of immutable adaptation-plan candidate `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` @ `51981cb0ad993fe4529341f2862f50d90d72ec26` (blob `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51`). Slice-4 acceptance itself is already frozen.
 

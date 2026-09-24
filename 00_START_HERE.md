@@ -40,20 +40,24 @@ Active work:
 - IMP-0001 / Slice 1: **VERIFIED COMPLETE**
 - IMP-0002 / Slice 2: **VERIFIED COMPLETE**
 - IMP-0003 / Slice 3: **VERIFIED COMPLETE**
-- Slice-4 acceptance authority: **FROZEN / PASS**
-  - manifest: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST.md`
-  - version/ref: `SFL-V0-S4-ACCEPTANCE-v1` / `sfl-v0-slice4-acceptance-v1`
-  - freeze commit: `c77131c1dda965521b6b756ec0e91c60e0800673`
+- Slice-4 SID pilot: **CLOSED / PASS**
+  - accepted semantic closure: `decisions/DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md`
+  - closure revalidation: `research/technical/SFL_V0_SLICE4_SID_CLOSURE_REVALIDATION.md` — **0 consequential unresolved / 0 accidental gaps**
+  - TRES-0011 synthesis: `research/technical/TRES-0011/TRES-0011_MASTER_ARCHITECT_RECONCILIATION.md` — **PROCEED WITH EXPLICIT V0 / REDESIGN GUARDRAILS**
+- Frozen Slice-4 v1 acceptance: **IMMUTABLE HISTORICAL EVIDENCE**
+  - manifest/ref: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST.md` / `sfl-v0-slice4-acceptance-v1`
   - frozen manifest blob: `7edff7a0507d68037979b3b5e458864f1f8d6518`
-  - final pre-code review: `research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md` — **PASS — MAY FREEZE UNCHANGED**
-- Slice-4 implementation boundary: **DIRECTOR BLOCK ACTIVE**
-  - immutable boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
-  - record: `plans/verification/SFL_V0/SLICE4_BLOCKED_IMPLEMENTATION_BOUNDARY_RECORD.md`
-- Slice-4 inherited verification adaptation: **SUSPENDED AS FORWARD GATE** pending semantic reconciliation
-  - candidate: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1`
-  - review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md`
-- Slice-4 implementation: **BLOCKED BY PROJECT DIRECTOR**. No implementation packet or coding bārû may proceed until the pending semantic gap is reconciled and authority/acceptance are revalidated.
-- head/office, endogenous provision/spending, mediated marriage authority, and DEC-0010 are now accepted Slice-4 scope; checkpoint/restore remains Slice 5.
+- Successor Slice-4 acceptance v2 candidate: **FRESH REVIEW READY**
+  - candidate: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md`
+  - ref: `sfl-v0-slice4-acceptance-v2-candidate1` @ `473e521e1d64b3e001c386bf186eafba71c20f5f`
+  - blob: `67008d03a943e6cd6a9a9e269be7c6efeefc229b`
+  - review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`
+- Slice-4 implementation boundary: **DIRECTOR BLOCK STILL ACTIVE**
+  - immutable original boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
+  - current remaining gates: successor acceptance v2 PASS/freeze, then inherited-verification adaptation reassessment + fresh independent review
+- Slice-4 inherited verification adaptation: **SUSPENDED AS FORWARD GATE** until successor acceptance freezes; the old review packet must not be dispatched unchanged.
+- Slice-4 implementation: **NOT AUTHORIZED**. No implementation packet or coding bārû may proceed until successor acceptance + adaptation closure.
+- checkpoint/restore remains Slice 5.
 
 Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 
@@ -69,7 +73,7 @@ Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 - Decision register: `decisions/DECISION_REGISTER.md`
 - Accepted architecture: `architecture/accepted/`
 - Accepted SFL specification: `specifications/SPEC-SFL-0001_SOCIAL_FABRIC_LAB_V0.md`
-- Frozen Slice-4 acceptance authority: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST.md`
+- Slice-4 verification package / successor candidate: `plans/verification/SFL_V0/README.md`
 - Active assumptions: `registers/ASSUMPTIONS_REGISTER.md`
 - Open/resolved design questions: `registers/OPEN_ISSUES_REGISTER.md`
 - Current phase: `plans/CURRENT_PHASE.md`

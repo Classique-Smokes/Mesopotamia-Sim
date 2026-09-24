@@ -410,3 +410,95 @@ Assertions:
 - Household-originated support remains non-self-confirming;
 - mediated marriage creates exactly the already-accepted groom -> mediating-head favour and no additional favour from X;
 - successor occupancy never inherits or reuses a predecessor's prior X.
+
+
+---
+
+## VS-SFL-050 — Current head may receive Household support
+
+**Level:** alias / institutional-authorizer = beneficiary  
+**Semantic source:** SPEC §8.3 + DEC-0013 D3.
+
+### Initial state
+
+Active H with current head P.
+
+- P is a current `SustainingParticipant`;
+- P is `NeedsGrain` and otherwise eligible for the ordinary 1-grain Household support effect;
+- valid transaction funding exists from other permitted sources;
+- P's current head-role authority is valid.
+
+### Action topology
+
+H proactively proposes support to P through `HouseholdDecisionContext(H, head=P)`.
+
+Do **not** create:
+
+- a P->P support request;
+- a P->P response context;
+- an extra personal initiative.
+
+### Required result
+
+If all ordinary live preconditions remain valid:
+
+- H may commit the 1-grain Household support to P;
+- P's role-authorizer capacity and beneficiary capacity remain distinct in trace/history;
+- the support remains Household-originated;
+- because P is `NeedsGrain`, P exposes neither private-X capacity nor commitment-side exposed capacity under the current scaffold;
+- the support cannot become formation/continuity/fresh-lineage evidence.
+
+### Negative controls
+
+Must fail if implementation:
+
+- rejects P solely because head==recipient;
+- creates self-request/self-response theatre as a precondition;
+- lets office authority expose P's protected/private grain;
+- relabels the Household support as an ordinary personal Help/Gift.
+
+---
+
+## VS-SFL-051 — Current head may explicitly create own persistent v0 provision commitment
+
+**Level:** alias / dual-capacity standing-resource consent  
+**Semantic source:** SPEC §8.2 + DEC-0013 D4.
+
+### Initial state
+
+Active H with current head P.
+
+- P is a current non-contributing `SustainingParticipant`;
+- P is otherwise eligible to expose standing v0 provision capacity;
+- no `HouseholdProvisionCommitment(P -> H)` currently exists.
+
+### Required topology
+
+P may explicitly authorize the persistent commitment in the distinct private-resource capacity while also being the current head.
+
+The trace must preserve separately:
+
+1. H/head institutional request/need authority;
+2. P's private-resource authorization of the standing relation.
+
+No P->P `ResponseDecisionContext` is opened and no second personal initiative is consumed merely to represent the second capacity.
+
+### Required result
+
+- exactly one provenance-bearing `HouseholdProvisionCommitment(P -> H)` is created;
+- office occupancy alone would not have created it;
+- ordinary exposed-capacity, termination, reconsideration and cooldown semantics apply thereafter;
+- the relation remains the synthetic v0 standing-access mechanism and creates no Household-owned treasury/property.
+
+### Refusal / reconsideration companion
+
+Exercise a prior explicit non-consent/refusal by P and verify that the ordinary three-full-cycle + relevant-context-change reconsideration gate still applies. Head occupancy does not erase the refusal history or manufacture a new first request.
+
+### Negative controls
+
+Must fail if implementation:
+
+- creates the commitment merely because P holds office;
+- forbids the relation solely because requester/head and private owner are the same PersonId;
+- uses a self-directed response loop;
+- treats the relation as historical/general Household property rather than current v0 access state.

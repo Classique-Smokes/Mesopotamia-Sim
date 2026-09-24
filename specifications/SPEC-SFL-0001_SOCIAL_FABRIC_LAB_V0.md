@@ -612,6 +612,35 @@ These are controlled v0 proof semantics, not a general theory of inheritance, fi
 
 ## 8. Grounded household capability and head role
 
+### 8.0 V0 resource-scaffold boundary
+
+The resource/provision mechanism in this section is a **synthetic v0 material-grounding scaffold** used to make collective capability, authority, resource conflict, and provenance executable and inspectable.
+
+It does not establish a historically validated Mesopotamian Household economy or a required future production resource architecture.
+
+In particular, v0 does **not** generalize as durable economic ontology:
+
+- personal grain as the sole resource base;
+- protected reserve / `NeedsGrain` exposure as a historical subsistence rule;
+- `HouseholdProvisionCommitment` as a universal or future-normal Household resource institution;
+- commitment-only `MobilizableCapacity(H)`;
+- absence of Household-owned/patrimonial/common resource forms;
+- fixed-rank contributor allocation;
+- the present Household material conflict priorities;
+- transaction-specific current-head private supplementation `X`.
+
+The durable constraints are narrower:
+
+- collective material action remains causally grounded in authoritative resources/rights/obligations plus valid institutional authority;
+- institutional authority and private/resource authority remain distinguishable even when one person carries both capacities;
+- same-person multi-capacity acts preserve each required authority/consent predicate without manufacturing redundant self-negotiation;
+- live material participation and action-relevant preconditions revalidate before commit;
+- successful effects retain structured source/authority/debit provenance;
+- derived standing capacity is not an independently authoritative Household wealth balance;
+- resource mechanics do not define Household identity, participation, role identity/occupancy, or Recognition identity.
+
+Later layers that require a general answer about Household ownership/control, pooled stores, production, inheritance, dues/taxation, labor/service obligations, accounting/budgets, differentiated goods, dependents' consumption claims, unequal asset rights, external institutional transfers, or historically calibrated economic behavior must reopen the resource semantics from a bounded historical/economic research target rather than treating this scaffold as inherited truth.
+
 ### 8.1 Provision commitment
 
 `HouseholdProvisionCommitment(Person -> Household)` gives conditional access to personal grain without transferring ownership before spend.
@@ -683,6 +712,14 @@ Transaction-specific private supplementation cannot serve as independent person-
 
 Head may ask a non-contributing sustaining participant to reconsider.
 
+The current head may also, when otherwise eligible under the v0 scaffold, explicitly authorize their **own** persistent `HouseholdProvisionCommitment(P -> H)` in the distinct private-resource capacity. This is a direct dual-capacity consent path:
+
+- office occupancy alone never creates the commitment or exposes grain;
+- no P->P provision request/response context is manufactured;
+- no extra personal initiative is consumed merely to represent the second semantic capacity;
+- the resulting relation is the same synthetic v0 standing-access relation used for other accepted contributors;
+- ordinary commitment history, termination and reconsideration/cooldown semantics still apply.
+
 After refusal, another request requires:
 
 - 3 full cycles elapsed; and
@@ -697,6 +734,8 @@ Only:
 
 A needy sustaining participant who recognizes the current head may request household support; the head may also proactively propose such support.
 
+The current head remains in the eligible-needy sustaining-participant recipient class. If the current head P is the recipient, use the proactive Household-support topology rather than creating a P->P support request/response context. P's role-authorizer and beneficiary capacities remain distinct. Under the current v0 scaffold, `NeedsGrain` still exposes neither persistent-commitment capacity nor transaction-specific private-X capacity.
+
 No generic household spending authority exists.
 
 Household-originated support cannot serve as independent proof of household formation/continuity.
@@ -707,13 +746,19 @@ Each household has one persistent `HouseholdHeadRole`, vacant or occupied by one
 
 New household begins headless.
 
-- any current `SustainingParticipant` may nominate a current `SustainingParticipant`;
+- any current `SustainingParticipant` may nominate a current `SustainingParticipant`, including themself;
 - an outgoing head may nominate a successor before vacating.
+
+Self-nomination is one explicit multi-capacity act. It must preserve omission-detectably: nomination, nominee willingness/acceptance, and that person's own participant-acceptance predicate. It opens no self-directed nomination response context. Other required participants still accept/recognize separately. For nomination of another person, nomination does not replace the nominator's participant-acceptance predicate.
 
 Appointment/succession requires:
 
 - nominee acceptance;
-- unanimous acceptance/recognition by current sustaining participants.
+- unanimous acceptance/recognition by the sustaining-participant **consent cohort captured from the common committed decision snapshot**.
+
+Every captured member must still satisfy action-relevant live eligibility/revalidation at commit. A person who becomes a sustaining participant later in the same cycle does not retroactively enter an already-accepted appointment/succession consent cohort.
+
+A headless **Inactive** H with exactly one sustaining participant may fill its vacant persistent role through the valid self-nomination/acceptance path. The role may remain occupied while H stays Inactive; filling it does not reactivate H and does not create Household-mode initiative. Nontrivial succession to another current participant cannot occur while H has only that sole bearer.
 
 Role scope:
 
@@ -730,7 +775,7 @@ Appointment/succession participants directly recognize the resulting head-role s
 
 ### 8.5 Household decision mode
 
-Occupied role activates `HouseholdDecisionContext(H, head=P)`.
+Occupied role activates `HouseholdDecisionContext(H, head=P)` only while H is Active. Inactive H may retain or fill the persistent role under §8.4, but role occupancy alone does not create Household-mode initiative.
 
 - P keeps one personal initiative;
 - H gets one separate household initiative through P;
@@ -784,7 +829,9 @@ For competing household provision use:
 
 1. eligible NeedsGrain support;
 2. other valid household provision expenditure;
-3. ordinary voluntary personal transfer.
+3. `RepayDebt` and other ordinary voluntary personal material actions.
+
+For the bounded v0 shared-personal-grain conflict, `RepayDebt` is therefore in the lower personal-material class beneath valid Household provision expenditure. Its debt meaning and due-cycle consequences remain unchanged. This ordering is a v0 conflict-resolution rule, not a historical/legal/moral claim that Household obligations generally outrank debt.
 
 A transaction-specific private supplement does not reserve grain at deliberation. The explicit amount `X`, P's live disposable capacity, the residual commitment requirement `R = C - X`, and all commitment allocations are revalidated together at precommit. The private term is part of the Household action in the same provision-priority class as that action; it is not a separate personal transfer. No global “commitment first” or “private first” priority exists because the agreed `X` partitions the transaction cost before commitment allocation.
 
@@ -797,6 +844,8 @@ Accepted but incompatible proposals may fail as `InvalidatedAtResolution`; this 
 **Atomic explicit bargain revalidation.** Favour-slot availability is an action-relevant precondition of `ExplicitBenefitForFavor`. If that capacity is lost after acceptance but before commit, the whole bargain is `InvalidatedAtResolution(FavourCapacityFull)`; neither the material benefit nor the new favour partially commits.
 
 If a valid same-cycle `ParticipationWarrant` explicitly depends on sustaining participant P as its continuity bridge and P also has an accepted participation-end proposal, resolve the bridged entry and its continuity reaction before P's exit. This is a narrow causal-handoff priority, not a general rule that entry outranks exit.
+
+If that same decision snapshot also contains an already-accepted appointment/succession, later same-cycle participant entry does not expand the transition's captured unanimity cohort. Captured members still revalidate live eligibility. Thus bridge-protected entry and the accepted role transition do not acquire a new consent cardinality merely from resolution order.
 
 **Authority-use before authority destruction.** If two accepted same-cycle attempts arise from the same committed decision snapshot, and one otherwise-valid attempt depends on current head/Household authority or current institutional status that the other accepted transition would destroy, resolve the authority/status-dependent attempt first. Then resolve the authority/status-destroying transition normally.
 
@@ -974,3 +1023,5 @@ Relevant:
 - 2026-09-21 — Director-approved TRES-0010 B2 Slice-1 semantic closure: order-independent direct same-cycle attitude composition; one committed Residence transition per person/cycle with explicit conflict invalidation; response-closed called-favour payloads and commit-tied favour consumption; positive integral v0 grain action quantities with explicit validation/repayment bounds; atomic explicit benefit-for-favour under pair-capacity constraints.
 - 2026-09-24 — Director-approved DEC-0010 Slice-4 authority-race closure: an otherwise-valid accepted authority/status-dependent action or role transition resolves before the accepted same-cycle transition that would destroy its required current authority/status; all other preconditions still revalidate, no pending action rebinds to a successor, and technical IDs/fallback cannot create authority precedence.
 - 2026-09-24 — Director-approved DEC-0011 private-resource supplementation closure: a current valid Household head may explicitly authorize an exact transaction-specific private contribution `X` to one permitted Household material action; the residual cost `C-X` uses ordinary commitment-backed fixed-rank allocation, with standing capacity unchanged, no extra initiative/response, no double counting, and exact funding provenance.
+
+- 2026-09-24 — Director-approved DEC-0013 SID closure/resource-scaffold boundary: RepayDebt classified beneath valid Household provision in the bounded v0 material conflict; appointment/succession unanimity cohort snapshot-bound; head-as-support-recipient, head self-commitment, self-nomination, and inert Inactive-H role filling accepted; current resource mechanism explicitly bounded as a synthetic v0 scaffold with replaceability/nonclaim guardrails.

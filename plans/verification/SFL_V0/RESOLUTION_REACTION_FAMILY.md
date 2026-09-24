@@ -356,3 +356,51 @@ Pair a supplemented Household action with P's separate ordinary personal transfe
 - silently shrink/increase private supplement X at commit;
 - automatically rebalance C-X when one funding leg loses feasibility;
 - reserve private supplement grain during deliberation so central revalidation cannot see competing effects.
+
+
+---
+
+## VS-SFL-079 — Household provision outranks RepayDebt in bounded v0 conflict
+
+**Level:** conflict / v0 material priority  
+**Semantic source:** SPEC §9.2 + DEC-0013 D1.
+
+### Common decision snapshot
+
+Use one debtor/head-or-contributor P whose same live personal grain can support:
+
+- an otherwise-valid accepted `RepayDebt` attempt; and
+- an otherwise-valid accepted Household material expenditure.
+
+Choose quantities so both are individually feasible from the common committed snapshot but cannot both commit after preserving the applicable reserve/live-capacity rules.
+
+Exercise at minimum:
+
+1. eligible NeedsGrain Household support versus `RepayDebt`;
+2. other valid Household provision expenditure versus `RepayDebt`.
+
+### Required result
+
+- valid Household provision resolves in its accepted class before `RepayDebt`;
+- `RepayDebt` then revalidates against the changed live grain state;
+- if no longer feasible, repayment becomes the ordinary non-refusal resolution failure;
+- the debt claim remains and the existing due-cycle one-time social consequence still applies later if balance remains;
+- no debt reservation preempts Household provision merely because repayment was accepted earlier in deliberation.
+
+### Boundary assertions
+
+This witness establishes only the current v0 same-cycle conflict policy.
+
+It must not encode or report the result as:
+
+- a historical priority of Household claims over debt;
+- a moral/legal hierarchy of obligations;
+- a generic future-economy debt rule.
+
+### Mutation controls
+
+Must fail if:
+
+- `RepayDebt` commits first and destroys otherwise-valid higher Household provision capacity;
+- debt acceptance automatically reserves grain;
+- repayment invalidation erases the debt claim or suppresses the ordinary due-cycle consequence.
