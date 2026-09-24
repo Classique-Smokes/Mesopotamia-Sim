@@ -43,7 +43,7 @@ You must not be:
 - future implementer of the policy edits;
 - future Slice-4 coding agent.
 
-Before fixing your provisional verdict, do not read any future Master Architect reconciliation of your review.
+Before fixing your provisional verdict, do not read any future Master Architect reconciliation of your review, and do not read `research/technical/GOV-0002_PRE_REVIEW_HOSTILE_CHALLENGE_RECONCILIATION.md`. The task packet already names the candidate2 repair areas that must be challenged; the reconciliation itself should not anchor your whole-policy judgment.
 
 You may inspect the motivating Slice-4 records only as needed to understand the failure class; do not treat the single self-funding incident as the only valid shape.
 
