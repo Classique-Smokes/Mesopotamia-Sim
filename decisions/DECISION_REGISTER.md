@@ -28,6 +28,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0010 | Slice-4 Authority Use Before Authority Destruction | ACCEPTED | Architectural / social-semantic | 2026-09-24 | 2026-09-24 | `DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md` |
 | DEC-0011 | Transaction-Specific Office-Holder Private Supplementation | ACCEPTED | Architectural / social-semantic | 2026-09-24 | 2026-09-24 | `DEC-0011_TRANSACTION_SPECIFIC_OFFICE_HOLDER_PRIVATE_SUPPLEMENTATION.md` |
 | DEC-0012 | Semantic Interaction Delta Failsafe | ACCEPTED | Constitutional / process governance | 2026-09-24 | 2026-09-24 | `DEC-0012_SEMANTIC_INTERACTION_DELTA_FAILSAFE.md` |
+| DEC-0013 | Slice-4 SID Closure and V0 Resource-Scaffold Boundaries | PROPOSED | Architectural / social-semantic | 2026-09-24 | — | `DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md` |
 
 ## Accepted summaries
 
