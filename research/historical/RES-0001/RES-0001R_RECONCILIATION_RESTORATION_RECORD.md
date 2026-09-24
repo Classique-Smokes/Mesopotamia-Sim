@@ -1,8 +1,8 @@
 # RES-0001R — Reconciliation Restoration Record
 
-**Status:** COMPLETE / RE-DERIVED / ADVISORY  
-**Restoration date:** 2026-09-24  
-**Authority:** Archival/research maintenance only  
+**Status:** COMPLETE / RE-DERIVED / ADVISORY
+**Restoration date:** 2026-09-24
+**Authority:** Archival/research maintenance only
 **Design status:** **NO DESIGN DECISION**
 
 ## Restoration provenance
