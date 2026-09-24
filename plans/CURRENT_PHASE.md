@@ -117,6 +117,19 @@ SID retrospective screening wave:
 - Slice 3: **NO CLOSER LOOK NEEDED**
 - frozen Slice-1/2/3 acceptance authority remains unchanged
 
+TRES-0011 v0 resource scaffold confidence wave:
+
+- status: **READY FOR PARALLEL DISPATCH**
+- purpose: test whether the intentionally crude Household resource/provision mechanism remains fit for SFL v0's laboratory purpose and replaceable before D1–D6 semantic promotion
+- dispatch: `tasks/research/TRES-0011_V0_RESOURCE_SCAFFOLD_WAVE_DISPATCH.md`
+- A — internal laboratory-fitness audit: `tasks/research/TRES-0011A_V0_RESOURCE_LAB_FITNESS.md`
+- B — architecture/reversibility blast-radius audit: `tasks/research/TRES-0011B_RESOURCE_SEAM_REVERSIBILITY.md`
+- C — external simulation-methodology review: `tasks/research/TRES-0011C_EXTERNAL_SIMULATION_METHODOLOGY.md`
+- D — Mesopotamian household-resource historical pressure test: `tasks/research/TRES-0011D_HISTORICAL_RESOURCE_PRESSURE_TEST.md`
+- Director working inclination on D1–D6 is **NON-AUTHORITATIVE / HELD PENDING WAVE RECONCILIATION**
+- no final Household economy is being designed by this wave
+- Slice-4 implementation BLOCK remains active
+
 Slice-4 SID pilot status: **PASS B COMPLETE / RECONCILED / DIRECTOR DECISIONS REQUIRED**
 
 - MA frontier ref: `sfl-v0-slice4-sid-ma-frontier-v1` @ `cd8c3ccf497bd8df928d5dee5f888188d98dd4ef`
