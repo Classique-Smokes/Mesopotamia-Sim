@@ -1,13 +1,17 @@
 # IMP-0003 — Slice-3 Post-Implementation Learning Observation
 
 **Task ID:** IMP-0003-OBS-001  
-**Status:** READY FOR DISPATCH / NON-GATING  
+**Status:** COMPLETE / RECONCILED / NON-GATING  
 **Authority:** observational project-learning task; not simulation authority and not an acceptance gate  
 **Governing plan:** `plans/SFL_V0_SLICE3_POSTIMPLEMENTATION_OBSERVATION_PLAN.md`  
 **Verified implementation:** promotion commit `f7ca9525d17ed20758058df7aff97b2f47e5a01a`  
 **Final reviewed candidate:** `imp-0003-slice3-conformance-candidate-v4` @ `b5e5409ebcaec856a74ab08a7d120a67f6078e36`  
 **Final conformance:** `research/technical/IMP-0003/IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V4.md` — **PASS — PROMOTE**  
-**Post-promotion CI:** `35949005742` — **PASS**
+**Post-promotion CI:** `35949005742` — **PASS**  
+**Completed return:** `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/`  
+**Raw archive:** `c37c20e8c5d7419cd90b55dcb9da31ad3891bdb3`  
+**Observation workflow:** `35950977185` — **PASS**  
+**Master Architect reconciliation:** `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`
 
 ## 1. Objective
 
