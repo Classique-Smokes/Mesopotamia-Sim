@@ -77,3 +77,16 @@ Implementation may translate them into executable tests/harness code but may not
 - Frozen census: **161 unique AcceptanceIds = 150 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**.
 - Exact inherited expansion: **270 REQUIRED = 128 Slice 1 + 46 Slice 2 + 96 Slice 3**.
 - Implementation remains blocked until independent approval of the inherited verification adaptation plan.
+
+
+## Successor Slice-4 v2 candidate after DEC-0013
+
+- Frozen `SLICE4_ACCEPTANCE_MANIFEST.md` / `sfl-v0-slice4-acceptance-v1` remains immutable historical acceptance evidence.
+- Successor candidate: `SLICE4_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md`, version `SFL-V0-S4-ACCEPTANCE-v2-candidate1`.
+- Immutable candidate ref: `sfl-v0-slice4-acceptance-v2-candidate1` @ `473e521e1d64b3e001c386bf186eafba71c20f5f`.
+- Candidate blob: `67008d03a943e6cd6a9a9e269be7c6efeefc229b`.
+- Candidate census: **173 unique = 162 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**.
+- Added post-v1 rows S4-176..187 cover accepted DEC-0013 D1–D6 and current implementation-facing v0 resource-scaffold guardrails.
+- Fresh independent pre-code review task: `../../tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`.
+- Candidate is not implementation authority. Freeze only on fresh **PASS — MAY FREEZE UNCHANGED**.
+- After successor freeze, reassess the inherited-verification adaptation plan before running a fresh independent adaptation review.
