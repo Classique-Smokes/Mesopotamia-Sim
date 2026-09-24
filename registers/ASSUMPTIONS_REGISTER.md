@@ -24,6 +24,8 @@
 
 `SPEC-SFL-0001` currently uses the controlled laboratory assumptions below. They remain replaceable and do not become broader project truth merely by being active.
 
+**RES-0001R availability note:** The reconciliation is now available. This closes only the *availability* part of assumption review triggers that mention reconciled RES-0001 research; it does not validate, retire, or otherwise alter any assumption. Any assumption change still requires targeted historical-evidence promotion/adjudication against that assumption.
+
 | Assumption ID | Status | Assumption | Scope / impact | Review trigger |
 |---|---|---|---|---|
 | ASM-0001 | ACTIVE | Relationship-mediated reciprocity may create a favour only when the recipient's directed attitude toward the benefactor is >= +75 (strong-like). | SFL v0 favour creation and actor evaluation. | Historical evidence, scenario testing, or Pass B/G verification showing the threshold is misleading or unnecessary. |
