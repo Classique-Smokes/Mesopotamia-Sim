@@ -4,7 +4,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- `SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` — **READY FOR DISPATCH**. Fresh independent review of immutable Slice-4 acceptance candidate1 `sfl-v0-slice4-acceptance-v1-candidate1` @ `a1cd8c9848bb94ca3351d804964c070cc279aa3a` (blob `1600332fda22ed1215485bb432e570ff9c08d52f`). Verdict required before freeze.
+- `SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md` — **READY FOR DISPATCH**. Fresh whole-manifest review of immutable Slice-4 acceptance candidate2 `sfl-v0-slice4-acceptance-v1-candidate2` @ `5aaf3c131e36a9139ddfa9d225c04f6fc6e86dce` (blob `1ea19ec6c65f2031de920791334b32eaa10f398e`). Candidate1 remains immutable failed review evidence.
 
 
 - Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / DECISION RESOLVED**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. LATER-04 closed by accepted `../../decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`; LATER-05 closed from accepted authority. Acceptance drafting is active; coding remains unauthorized.
@@ -21,6 +21,9 @@ This directory contains bounded research, review and maintenance commissions. Th
 - Slice-3 reconciliation: `../../research/technical/SFL_V0_SLICE3_PREIMPLEMENTATION_RECONCILIATION.md` — acceptance authority now frozen under `SFL-V0-S3-ACCEPTANCE-v1`.
 
 ## Closed / historical
+
+- Slice-4 acceptance candidate1 pre-code review — **BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`; reconciliation: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_CANDIDATE1_BLOCK_RECONCILIATION.md`. No semantic escalation.
+
 
 - Slice-4 parallel discovery commissions — **COMPLETE**. Returns: `../../research/technical/SFL_V0_SLICE4_AUTHORITY_AND_GAP_INVENTORY.md`, `../../research/technical/SFL_V0_SLICE4_IMPLEMENTATION_SURFACE_MAP.md`, `../../research/technical/SFL_V0_SLICE4_VERIFICATION_TRIGGER_MAP.md`. Dispatch index retained at `SFL_V0_SLICE4_PARALLEL_DISCOVERY_DISPATCH.md`.
 

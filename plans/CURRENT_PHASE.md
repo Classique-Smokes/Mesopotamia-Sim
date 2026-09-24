@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 ACCEPTANCE CANDIDATE1 FROZEN FOR PRE-CODE REVIEW.**
+**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 ACCEPTANCE CANDIDATE1 BLOCKED / CANDIDATE2 FROZEN FOR PRE-CODE REVIEW.**
 
 Verified Slice-1 completion:
 
@@ -68,6 +68,26 @@ Verified Slice-3 completion:
 - post-implementation observation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/` — **COMPLETE / RECONCILED**
 - observation MA reconciliation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`
 - compact future lessons: `research/technical/IMP-0003/IMP-0003_FUTURE_LESSONS_INDEX.md`
+
+Slice-4 acceptance candidate1 review:
+
+- review: `research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`
+- verdict: **BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**
+- reconciliation: `research/technical/SFL_V0_SLICE4_ACCEPTANCE_CANDIDATE1_BLOCK_RECONCILIATION.md`
+- semantic escalation: **NONE**
+- exact repairs: S4-149 accepted fallback exception + mediated dowry grain-term ingress coverage
+
+Slice-4 acceptance candidate2:
+
+- candidate ref: `sfl-v0-slice4-acceptance-v1-candidate2`
+- exact candidate commit: `5aaf3c131e36a9139ddfa9d225c04f6fc6e86dce`
+- candidate path: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_CANDIDATE.md`
+- candidate blob: `1ea19ec6c65f2031de920791334b32eaa10f398e`
+- version: `SFL-V0-S4-ACCEPTANCE-v1-candidate2`
+- census: **161 = 150 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**
+- inherited exact REQUIRED: **270 = 128 S1 + 46 S2 + 96 S3**
+- fresh review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`
+- freeze/coding status: **NOT AUTHORIZED** pending fresh pre-code verdict and inherited-adaptation closure.
 
 Slice-4 acceptance candidate1:
 
@@ -294,9 +314,9 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Run fresh independent review from `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` against exact candidate ref/commit/blob.
-2. If BLOCK, preserve candidate1 and repair only the identified acceptance/semantic defect set into candidate2.
-3. If **PASS — MAY FREEZE UNCHANGED**, freeze the exact candidate as `SFL-V0-S4-ACCEPTANCE-v1`.
+1. Run fresh independent review from `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md` against immutable candidate2.
+2. If BLOCK, preserve candidate2 and repair only the newly identified acceptance/semantic defect set.
+3. If **PASS — MAY FREEZE UNCHANGED**, freeze exact candidate2 as `SFL-V0-S4-ACCEPTANCE-v1`.
 4. Close the inherited Slice-3 structural/literal-witness adaptations losslessly before implementation touches those surfaces.
 5. Only after acceptance freeze + adaptation closure, issue the bounded Slice-4 implementation packet.
 
