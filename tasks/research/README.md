@@ -12,13 +12,11 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 - SID retrospective screening wave — **COMPLETE / RECONCILED**. Reconciliation: `../../research/technical/SID_RETRO_SCREEN_SLICES1_3_RECONCILIATION.md`. Slice 1 -> targeted full retro-SID audit; Slices 2–3 -> NO CLOSER LOOK NEEDED.
 
-- `SFL_V0_SLICE4_SID_PASSA_INDEPENDENT_FRONTIER.md` — **READY FOR DISPATCH / SID PASS A**. Fresh reviewer independently maps the Slice-4 interaction frontier before seeing the Master Architect frontier. Return must be report-only and frozen before Pass B.
 
-- Slice-4 SID pilot — **NEXT GATE / NOT YET DISPATCHED**. Must run `SID-ASSURANCE-v1` frontier audit + frozen independent Pass A + Pass B challenge + MA reconciliation before successor Slice-4 acceptance drafting.
 
 - GOV-0002 Semantic Interaction Delta Failsafe review — **COMPLETE / PASS / PROMOTED UNDER DEC-0012**. Exact review: `../../research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md`; candidate2: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`.
 
-- Slice-4 Director semantic block — **ACTIVE**. Frozen boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`. Await Director's local semantic-gap + governance challenge before any implementation authorization.
+- Slice-4 Director implementation block — **ACTIVE**. Frozen boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`. Current forward gates are TRES-0011 resource-scaffold reconciliation, Director disposition/promotion of the six bounded SID decisions, SID closure, successor Slice-4 acceptance, and inherited-verification adaptation closure. Coding remains forbidden.
 
 - `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md` — **SUSPENDED AS FORWARD GATE BY DIRECTOR SEMANTIC BLOCK**. Independent losslessness review of immutable adaptation-plan candidate `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` @ `51981cb0ad993fe4529341f2862f50d90d72ec26` (blob `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51`). Slice-4 acceptance itself is already frozen.
 
