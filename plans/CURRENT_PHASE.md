@@ -95,12 +95,15 @@ Slice-4 acceptance candidate2 / freeze:
 Private-resource supplementation semantic patch:
 
 - MA reconciliation: `research/technical/SFL_V0_SLICE4_PRIVATE_RESOURCE_SUPPLEMENTATION_RECONCILIATION.md`
-- core Director requirement: current head may explicitly and voluntarily contribute privately owned disposable grain to one otherwise-valid Household material action without first creating a persistent provision commitment
+- accepted decision: `decisions/DEC-0011_TRANSACTION_SPECIFIC_OFFICE_HOLDER_PRIVATE_SUPPLEMENTATION.md`
+- Director follow-up rejected any global “commitments first” / “private first” rule
+- one Household transaction carries total cost C, optional exact current-holder private contribution X, and residual commitment-backed requirement C-X
 - standing `MobilizableCapacity(H)` remains commitment-derived
-- supplement is transaction-specific, nonpersistent, provenance-bearing, does not consume another personal initiative, and is not a self-response
-- frozen Slice-4 acceptance v1 is confirmed **insufficient for implementation authorization** and requires a successor version after semantic promotion
-- one remaining Director choice: funding order between ordinary commitment-backed allocation and the head's explicit private supplement
-- decision packet: `proposals/SFL_V0_SLICE4_PRIVATE_SUPPLEMENT_FUNDING_ORDER_DECISION.md`
+- supplement is transaction-specific, nonpersistent, provenance-bearing, no-extra-initiative, no-self-response, reserve-bounded and nontransferable across succession
+- same head grain cannot be double-counted through private X and persistent commitment backing
+- semantic promotion into SPEC + canonical verification: **COMPLETE**
+- frozen Slice-4 acceptance v1 remains immutable but **insufficient for implementation authorization**
+- next local gate: successor Slice-4 acceptance candidate/version + fresh whole-candidate review
 
 Director-blocked Slice-4 implementation boundary:
 
@@ -345,12 +348,11 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Project Director resolves `proposals/SFL_V0_SLICE4_PRIVATE_SUPPLEMENT_FUNDING_ORDER_DECISION.md`.
-2. Promote the complete transaction-specific private-supplement semantics into SPEC + canonical verification.
-3. Draft a successor Slice-4 acceptance candidate/version; do not modify frozen v1.
-4. Run fresh whole-candidate pre-code review and freeze the successor only on PASS.
-5. Reassess the inherited-verification adaptation plan against the repaired semantic/acceptance boundary.
-6. Only after the Director block is explicitly closed may a Slice-4 coding bārû be dispatched.
-7. The separate broader governance/process challenge remains pending Director return after this local repair.
+1. Draft a successor Slice-4 acceptance candidate/version incorporating DEC-0011; do not modify frozen v1.
+2. Run fresh independent whole-candidate pre-code review; freeze the successor only on PASS.
+3. Reassess the inherited-verification adaptation plan against the repaired semantic/acceptance boundary.
+4. Preserve and address the Project Director's separate broader governance/process challenge when supplied.
+5. Close the Director implementation BLOCK only after semantic/acceptance/adaptation/governance gates are explicitly reconciled.
+6. Only then issue the Slice-4 implementation packet / coding bārû commission.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
