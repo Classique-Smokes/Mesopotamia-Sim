@@ -9,18 +9,18 @@
 
 Immutable rollout candidate:
 
-- ref: `governance-semantic-interaction-delta-rollout-v1-candidate1`
-- exact commit: `7c09edee119c253aaad1fe96eeb8ad63f625225d`
+- ref: `governance-semantic-interaction-delta-rollout-v1-candidate2`
+- exact commit: `dbd8f2f5b81c79b69973463010011fdd7b0e785a`
 
 Policy proposal:
 
 - path: `plans/GOVERNANCE_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PLAN.md`
-- blob: `634ca400c1827f02f24d7042754bc5beafe89e17`
+- blob: `510ed36a15eb2912b50b0c9eda43953b1b6779bd`
 
 Implementation plan:
 
 - path: `plans/GOVERNANCE_SEMANTIC_INTERACTION_DELTA_FAILSAFE_IMPLEMENTATION_PLAN.md`
-- blob: `ac2a62eeabe4e9806aff3e20c1c24f1a63048177`
+- blob: `f7e22b372ebb1b805fba3ec6ecb84d7852b0329d`
 
 ## Why this review exists
 
@@ -43,7 +43,7 @@ You must not be:
 - future implementer of the policy edits;
 - future Slice-4 coding agent.
 
-Before fixing your provisional verdict, do not read any future Master Architect reconciliation of your review.
+Before fixing your provisional verdict, do not read any future Master Architect reconciliation of your review, and do not read `research/technical/GOV-0002_PRE_REVIEW_HOSTILE_CHALLENGE_RECONCILIATION.md`. The task packet already names the candidate2 repair areas that must be challenged; the reconciliation itself should not anchor your whole-policy judgment.
 
 You may inspect the motivating Slice-4 records only as needed to understand the failure class; do not treat the single self-funding incident as the only valid shape.
 
@@ -147,32 +147,67 @@ Confirm aliasing remains a strong subtype rather than the umbrella definition.
 
 Challenge at least one case where aliasing should be PROHIBITED and one where aliasing should be SUPPORTED or IRRELEVANT.
 
-### I. Fresh negative-space challenge
+### I. Fresh negative-space challenge / frontier independence
 
-Evaluate the anti-anchoring design.
+Evaluate the repaired two-pass design.
 
-Does providing the interaction frontier while withholding the action catalogue/acceptance IDs give the reviewer enough truth without turning the task into free-form human-behavior brainstorming?
+#### Pass A
 
-Check whether the requested 3–7 challenges are a reasonable default.
+Can one fresh reviewer, before seeing the MA frontier:
 
-### J. Authority containment
+- inspect the new semantic layer plus a compact canonical map of adjacent old semantics;
+- independently identify plausible prior interaction surfaces;
+- durably freeze that candidate frontier before reveal?
+
+Challenge whether the supplied context is broad enough to detect a surface the MA omitted without degenerating into whole-project free-form exploration.
+
+#### Pass B
+
+After Pass A is frozen:
+
+- is revealing the MA frontier and reconciling the union sufficient to prevent the reviewer from being trapped inside the MA map?
+- are reviewer-only exclusions required to carry enough rationale?
+- does the design still avoid a second reviewer / new bureaucracy?
+
+Then assess whether 3–7 ordinary histories/questions over the reconciled frontier remain a reasonable default.
+
+BLOCK if the fresh reviewer can still only challenge interactions that the MA already selected.
+
+### J. Authority containment / classification gaming
 
 Confirm:
 
 - reviewer challenges are questions/counterexamples, not semantics;
 - Master Architect reconciles against authority;
 - consequential missing meaning returns to Director authority where required;
-- verification/implementation cannot silently decide an UNRESOLVED finding.
+- verification/implementation cannot silently decide an UNRESOLVED finding;
+- DERIVED CONSEQUENCE must cite controlling accepted authority;
+- DEFERRED clears the freeze gate only when the deferral itself is authorized, has a durable owner/trigger, leaves the current slice semantically complete, and cannot be accidentally chosen by implementation;
+- classification labels cannot manufacture closure.
 
-### K. Acceptance-freeze integration
+Attempt at least one adversarial example where a tempting DEFERRED classification would be invalid because the current slice actually needs the answer.
 
-Verify the proposed marker/gate scheme is sufficient and not redundant:
+### K. Acceptance-freeze integration / closure freshness
+
+Verify the marker/gate scheme includes:
 
 - trigger status;
+- exact semantic base for the closure;
 - delta closure;
-- negative-space challenge;
+- independently frozen frontier Pass A;
+- Pass-B challenge;
+- closure freshness;
 - unresolved count;
 - accidental-gap count.
+
+Challenge the staleness rule with a scenario where a material semantic decision lands after closure but before acceptance freeze.
+
+The policy should require explicit re-evaluation and allow either:
+
+- REVALIDATED — NO FRONTIER CHANGE; or
+- REOPENED — AFFECTED FRONTIER.
+
+BLOCK if a stale closure can remain technically "complete" after material semantic authority changes.
 
 Check that acceptance review remains semantically subordinate and does not become the owner of negative-space discovery.
 
@@ -184,14 +219,25 @@ Determine whether the proposed bārû stop rule is:
 - narrow enough not to make every coding surprise an architecture escalation;
 - clear that the coder does not repeat the full audit.
 
-### M. Slice-4 pilot adequacy
+### M. Slice-4 pilot adequacy / efficacy accounting
 
 Assess whether the pilot:
 
 - exercises all major lenses;
-- is broad enough to validate the mechanism;
-- does not use the known DEC-0011 defect as its only success criterion;
+- exercises independent Pass-A frontier discovery;
+- exercises closure freshness/revalidation if the semantic base changes;
+- is broad enough to validate the mechanism's wiring/adequacy;
 - legitimately precedes successor Slice-4 acceptance.
+
+Confirm the policy does **not** count rediscovery/processing of the known DEC-0011 self-funding incident as prospective detection efficacy.
+
+Pilot/effectiveness evidence should distinguish:
+
+- KNOWN CASE PROCESSED;
+- PREVIOUSLY UNKNOWN MATERIAL FINDING;
+- DUPLICATE FINDING where applicable;
+- NOISE / FALSE POSITIVE;
+- NO NEW FINDING.
 
 Suggest the smallest additional pilot probe if one is clearly missing.
 
@@ -215,15 +261,15 @@ Confirm the mechanism can be narrowed, simplified, lightly linted, or retired ba
 
 Create:
 
-`research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW.md`
+`research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md`
 
 Return branch:
 
-`review/gov-0002-semantic-interaction-delta-failsafe-return`
+`review/gov-0002-semantic-interaction-delta-failsafe-candidate2-return`
 
 The return branch must begin from exact rollout candidate commit:
 
-`7c09edee119c253aaad1fe96eeb8ad63f625225d`
+`dbd8f2f5b81c79b69973463010011fdd7b0e785a`
 
 and add only the review report.
 
@@ -231,7 +277,7 @@ and add only the review report.
 
 1. independence / exact-target verification;
 2. provisional verdict;
-3. A–O findings;
+3. A–O findings, including explicit results for frontier independence, closure freshness, deferral integrity and pilot-efficacy accounting;
 4. concrete counterexamples/challenges used;
 5. ceremony/scalability assessment;
 6. smallest required repairs if any;

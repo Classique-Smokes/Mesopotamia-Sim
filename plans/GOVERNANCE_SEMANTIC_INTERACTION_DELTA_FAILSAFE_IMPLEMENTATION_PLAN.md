@@ -4,9 +4,8 @@
 **Date:** 2026-09-24  
 **Owner:** Master Architect  
 **Policy proposal:** `plans/GOVERNANCE_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PLAN.md`  
-**Policy candidate ref:** `governance-semantic-interaction-delta-failsafe-v1-candidate1`  
-**Policy candidate commit:** `8c101d82efd781bca48b1222e4e9b7a4b274f6f0`  
-**Policy candidate blob:** `634ca400c1827f02f24d7042754bc5beafe89e17`  
+**Prior policy-only candidate ref:** `governance-semantic-interaction-delta-failsafe-v1-candidate1` @ `8c101d82efd781bca48b1222e4e9b7a4b274f6f0` — valid historical provenance  
+**Current rollout candidate:** superseded candidate1; candidate2 identity pinned after hostile pre-review repair  
 **Current project block:** Slice-4 implementation remains Director-BLOCKED  
 **Implementation authority:** none until explicit Director approval after independent governance review
 
@@ -82,11 +81,14 @@ The reviewer must challenge:
 5. **Capability preservation semantics** — does old-world projection expose silent losses without imposing an invalid universal conservative-extension law?
 6. **Transition coverage** — does path/carryover auditing catch holes that endpoint checks miss?
 7. **Aliasing as subtype** — is same-PersonId aliasing retained as a strong probe without defining the whole policy?
-8. **Fresh-review independence** — can the negative-space reviewer discover omissions without being anchored by the action catalogue?
-9. **Authority discipline** — do reviewer questions remain advisory, with consequential new meaning still routed to Director authority?
-10. **Scalability** — do delta-based reopening rules keep cost bounded as the project grows?
-11. **Failure containment** — does implementation stop rather than self-classify a newly discovered unclosed interaction?
-12. **Sunset/evaluation** — can the mechanism be narrowed or retired if it becomes bureaucracy rather than protection?
+8. **Fresh-review independence** — can the same negative-space reviewer independently challenge the MA frontier in a frozen Pass A before seeing it, then use the reconciled union in Pass B?
+9. **Closure freshness** — does any later material semantic change force explicit closure revalidation before freeze?
+10. **Deferral integrity** — can DEFERRED/DERIVED labels clear the gate only with authority-bearing justification rather than classification convenience?
+11. **Pilot evidence discipline** — does the rollout distinguish known-case processing from previously unknown prospective findings?
+12. **Authority discipline** — do reviewer questions remain advisory, with consequential new meaning still routed to Director authority?
+13. **Scalability** — do delta-based reopening/revalidation rules keep cost bounded as the project grows?
+14. **Failure containment** — does implementation stop rather than self-classify a newly discovered unclosed interaction?
+15. **Sunset/evaluation** — can the mechanism be narrowed or retired if it becomes bureaucracy rather than protection?
 
 ### Verdicts
 
@@ -139,7 +141,10 @@ Add a subsection **Semantic interaction delta** with:
    - participant aliasing when relevant;
 4. old-world projection as a diagnostic where meaningful;
 5. disposition vocabulary and authority rule;
-6. one fresh negative-space challenge when the trigger fires for consequential scope.
+6. one two-pass fresh negative-space challenge when the trigger fires for consequential scope:
+   - Pass A independently discovers candidate frontier surfaces before seeing the MA frontier;
+   - Pass A is durably fixed;
+   - Pass B reveals/compares the MA frontier, reconciles the union, then challenges the possibility-space delta.
 
 Keep the protocol-level wording compact. Route detailed prompts/table format to the checklist.
 
@@ -148,8 +153,12 @@ Keep the protocol-level wording compact. Route detailed prompts/table format to 
 When trigger FIRED, verify before freeze:
 
 - frontier/delta closure exists;
-- fresh challenge exists;
-- every finding is dispositioned;
+- independent frontier Pass A exists and predates MA-frontier reveal;
+- Pass-B challenge exists over the reconciled frontier union;
+- every finding is dispositioned with authority-bearing closure rationale;
+- every DEFERRED item is itself authorized, has owner/trigger, and leaves the current slice semantically complete;
+- DERIVED CONSEQUENCE items cite controlling authority;
+- closure is current against the exact semantic base used by the acceptance candidate;
 - consequential UNRESOLVED = 0;
 - accidental gaps outstanding = 0;
 - newly accepted meanings are present in semantic/acceptance authority;
@@ -251,12 +260,16 @@ unless later experience proves routing is insufficient.
 After the four canonical edits:
 
 1. compare every normative addition to the Director-approved policy;
-2. confirm no unrelated existing assurance rule was weakened/deleted;
-3. confirm the protocol remains consequence-scaled rather than mandatory for routine work;
-4. confirm the checklist is clearly subordinate/non-authoritative;
-5. confirm the implementation template adds only a conditional stop rule;
-6. confirm no new global register/protocol was accidentally created;
-7. confirm root retrieval remains valid.
+2. verify two-pass frontier independence is preserved operationally, not merely mentioned;
+3. verify closure staleness/revalidation markers are present;
+4. verify DEFERRED cannot clear the gate without authorized deferral semantics;
+5. verify pilot/effectiveness reporting separates known cases from previously unknown findings;
+6. confirm no unrelated existing assurance rule was weakened/deleted;
+7. confirm the protocol remains consequence-scaled rather than mandatory for routine work;
+8. confirm the checklist is clearly subordinate/non-authoritative;
+9. confirm the implementation template adds only a conditional stop rule;
+10. confirm no new global register/protocol was accidentally created;
+11. confirm root retrieval remains valid.
 
 If the canonical wording materially changes approved policy meaning, stop and re-review rather than calling it clerical promotion.
 
@@ -347,62 +360,91 @@ At minimum classify:
 
 Add other material aliases discovered from the frontier.
 
-## 10. Phase P3 — fresh Slice-4 negative-space challenge
+## 10. Phase P3 — fresh Slice-4 two-pass frontier / negative-space challenge
 
-Commission one INDEPENDENT-CONTEXT reviewer.
+Commission **one** INDEPENDENT-CONTEXT reviewer.
 
 Recommended task:
 
 `tasks/research/SFL_V0_SLICE4_SEMANTIC_DELTA_NEGATIVE_SPACE_CHALLENGE.md`
 
-### Anti-anchoring bundle
+The same reviewer performs two sequential passes.
 
-Supply:
+### Pass A — independent frontier discovery
+
+Before seeing the Master Architect's frontier/delta table, supply only:
 
 - high-level accepted Slice-4 objects/powers/transitions;
-- relevant old-world capabilities at the frontier;
+- a compact canonical map of adjacent existing semantics / retrieval entrypoints;
 - genuine invariants/exclusions;
-- the request for ordinary concrete histories.
+- instruction to identify prior surfaces that might interact with, be suppressed by, be crossed by, or be causally retargeted by the new layer.
 
-Do **not** supply before initial return:
+Do **not** supply yet:
 
+- MA frontier list;
+- MA delta classifications;
 - Slice-4 acceptance row catalogue;
-- the self-funding defect taxonomy as a suggested answer;
-- the Master Architect's own delta table conclusions;
-- prior negative-space challenge findings.
+- self-funding defect taxonomy as a suggested answer;
+- prior negative-space findings.
 
-### Required output
+Required Pass-A output:
 
-Normally 3–7 concrete challenges, attempting coverage across:
+- compact candidate frontier;
+- reason each surface might interact;
+- no semantic recommendations.
 
-- newly possible;
-- lost/narrowed;
-- transition hole;
-- alias;
-- causal retargeting.
+**Freeze Pass A before reveal** on the review branch with an exact commit/blob or equivalent immutable identity.
 
-No new semantics/recommendations.
+### Pass B — frontier comparison + ordinary histories
 
-Return on an isolated review branch and add only its report.
+After Pass A is fixed:
+
+1. reveal the MA frontier/delta table;
+2. compare MA-only / reviewer-only / overlapping surfaces;
+3. challenge the justified union;
+4. normally return 3–7 concrete histories/questions across:
+   - newly possible;
+   - lost/narrowed;
+   - transition hole;
+   - alias;
+   - causal retargeting.
+
+The reviewer still creates no semantics.
+
+The final return must preserve both Pass A and Pass B provenance.
 
 ## 11. Phase P4 — Master Architect pilot reconciliation
 
 Reconcile every reviewer challenge into the Slice-4 delta closure.
 
-Every item receives:
+First reconcile the **frontier**:
+
+- every reviewer-only surface receives an inclusion/exclusion judgment with reason;
+- final closure frontier is the justified MA/reviewer union after exclusions.
+
+Every challenge item then receives:
 
 - source narrative;
 - delta type;
 - canonical authority consulted;
 - classification/disposition;
+- authority-bearing closure rationale;
 - whether semantic change is required;
 - acceptance implication;
-- deferred trigger if applicable.
+- for DEFERRED: approving authority, owner/trigger, proof current Slice 4 remains semantically complete, and proof implementation cannot choose the deferred meaning.
 
 Pilot gate:
 
+- `Closure freshness: CURRENT`;
 - `Consequential unresolved: 0`;
 - `Accidental gaps outstanding: 0`.
+
+If any material semantic change lands after closure but before successor acceptance freeze, explicitly re-evaluate trigger/frontier and record either:
+
+- `REVALIDATED — NO FRONTIER CHANGE`; or
+- `REOPENED — AFFECTED FRONTIER`.
+
+Do not rely on a stale closure.
 
 If another real gap is found:
 
@@ -422,7 +464,10 @@ Only after pilot closure:
 3. acceptance reviewer must verify:
    - exact inherited prior requirements;
    - DEC-0011 omission-detectable coverage;
-   - semantic-delta trigger/closure/challenge evidence exists;
+   - semantic-delta trigger/closure evidence exists;
+   - independent Pass-A frontier discovery was frozen before MA-frontier reveal;
+   - closure semantic base matches the candidate's accepted semantic base or has explicit no-frontier-change revalidation;
+   - all DEFERRED/DERIVED closures are authority-bearing;
    - no unresolved/gap markers remain;
    - acceptance did not invent semantic dispositions.
 4. freeze successor only on fresh whole-candidate PASS;
@@ -433,17 +478,26 @@ Only after pilot closure:
 
 After the policy has FIRED on **2–3 consequential slices** (including Slice 4), run one small governance-effectiveness review.
 
-Record:
+Record findings separately as:
 
-- genuine semantic gaps discovered;
+- **KNOWN CASE PROCESSED**;
+- **PREVIOUSLY UNKNOWN MATERIAL FINDING**;
+- **DUPLICATE FINDING**;
+- **NOISE / FALSE POSITIVE**.
+
+Also record:
+
+- whether independent Pass-A frontier discovery found surfaces the MA omitted;
 - meaningful intended changes made visible;
-- false positives/noise;
-- items duplicated by existing assurance;
 - MA effort;
 - reviewer effort;
 - ambiguity in trigger/frontier selection;
+- closure revalidations caused by late semantic changes;
+- whether authorized-deferral discipline prevented classification gaming;
 - evidence of premature semantic expansion;
 - implementation escalations caught by the stop rule.
+
+Do not count the founding Slice-4 self-funding incident as prospective efficacy evidence.
 
 Decision:
 
@@ -477,9 +531,11 @@ The governance policy implementation is complete when:
 2. Director explicitly approves the policy;
 3. protocol/checklist/freeze/template edits are promoted and mechanically verified;
 4. Slice-4 pilot trigger/frontier/audit is complete;
-5. fresh negative-space challenge is reconciled;
-6. pilot has zero consequential unresolved / accidental gaps;
-7. successor Slice-4 acceptance may safely begin under the new policy.
+5. fresh reviewer Pass A independently challenged the frontier and was durably frozen before reveal;
+6. Pass B negative-space challenge is reconciled over the justified union;
+7. closure is current against the successor-acceptance semantic base;
+8. pilot has zero consequential unresolved / accidental gaps and no unjustified deferrals;
+9. successor Slice-4 acceptance may safely begin under the new policy.
 
 The policy is **not** considered validated merely because the Markdown edits are merged. The Slice-4 pilot is part of implementation.
 
@@ -495,4 +551,4 @@ At present:
 
 Immediate next action:
 
-run the independent governance review task against the immutable rollout candidate.
+run the independent governance review task against the repaired immutable rollout candidate2.

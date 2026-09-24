@@ -305,33 +305,57 @@ Useful delta-type labels:
 
 Do not create a permanent global ledger.
 
-## 13. Fresh negative-space challenge
+## 13. Fresh negative-space challenge — two-pass frontier independence
 
 If the trigger fires for a consequential slice, commission **one fresh-context reviewer before acceptance freeze**.
 
-The reviewer is not asked to verify the specification.
+The reviewer is not asked to verify the specification and is not granted semantic authority.
 
-The reviewer is asked to challenge the possibility-space delta.
+The challenge has **two sequential passes using the same reviewer** so the reviewer can challenge both:
 
-### Supplied context
+- the Master Architect's proposed interaction frontier; and
+- the possibility-space delta inside the reconciled frontier.
 
-Give:
+### Pass A — independent frontier discovery
 
-- the new semantic objects/modes/transitions;
-- the relevant old capabilities/pathways at the interaction frontier;
+Before the reviewer may inspect the Master Architect's frontier/delta table, give only:
+
+- the new semantic layer / objects / modes / transitions;
+- a compact canonical map of adjacent existing semantics sufficient to orient the domain;
 - real accepted invariants/exclusions;
-- enough domain situation to avoid nonsense.
+- the local subsystem/retrieval entrypoints needed to inspect those existing semantics.
 
-Do **not** seed with:
+Do **not** reveal yet:
 
+- the Master Architect's interaction-frontier list;
+- the Master Architect's delta classifications;
 - current acceptance-row IDs;
-- existing action catalogue as the brainstorming list;
+- the existing action catalogue as a brainstorming list;
 - prior negative-space findings;
 - preferred missing affordances.
 
-### Reviewer prompts
+Pass A asks:
 
-Return normally **3–7** concrete ordinary histories/questions spanning as relevant:
+> **Independently identify which prior semantic surfaces this new layer might materially interact with, suppress, reroute, inherit from, compete with, or have to cross.**
+
+The reviewer should return a compact candidate-frontier list with reasons.
+
+**Freeze Pass A before reveal.** Persist the Pass-A result with an immutable commit/ref, content hash, or equivalently strong durable identity before the reviewer sees the Master Architect frontier. The purpose is to prevent hindsight from rewriting the supposedly independent frontier discovery.
+
+### Pass B — frontier comparison + negative-space histories
+
+After Pass A is durably fixed:
+
+1. reveal the Master Architect's frontier;
+2. compare reviewer frontier versus MA frontier;
+3. reconcile the **union** of both frontier sets for the challenge;
+4. explicitly flag:
+   - reviewer-only surfaces;
+   - MA-only surfaces;
+   - overlapping surfaces;
+   - any surface rejected as immaterial, with reason.
+
+Then return normally **3–7** concrete ordinary histories/questions over the reconciled frontier, spanning as relevant:
 
 1. **new possibility** — what might now be possible because old and new semantics interact?
 2. **lost/narrowed possibility** — what might now stop working or require a new condition?
@@ -341,9 +365,17 @@ Return normally **3–7** concrete ordinary histories/questions spanning as rele
 
 The reviewer produces **questions/counterexamples**, not semantics.
 
+One reviewer remains the default. The extra protection is **frontier independence**, not another review layer.
+
 ## 14. Master Architect reconciliation of the challenge
 
-The Master Architect classifies each reviewer return against full canonical authority.
+The Master Architect first reconciles the **frontier itself**:
+
+- every reviewer-only frontier surface receives an inclusion/exclusion judgment with canonical rationale;
+- every MA-only surface remains visible;
+- the final challenge/closure frontier is the justified union after exclusions, not automatically the original MA list.
+
+Then the Master Architect classifies each reviewer history/question against full canonical authority.
 
 Possible disposition:
 
@@ -351,13 +383,26 @@ Possible disposition:
 - PROHIBITED / INTENDED CHANGE;
 - DERIVED CONSEQUENCE;
 - IRRELEVANT;
-- DEFERRED with trigger;
+- DEFERRED;
 - UNRESOLVED;
 - ACCIDENTAL GAP / REGRESSION.
 
-Any consequential UNRESOLVED or ACCIDENTAL GAP blocks acceptance freeze until repaired or validly deferred.
+### Classification is not closure by itself
 
-Agreement/count of reviewer ideas is not evidence.
+A disposition clears the freeze gate only when its justification is authority-bearing.
+
+- **DERIVED CONSEQUENCE** must identify the accepted authority from which the consequence follows without a new semantic choice.
+- **DEFERRED** clears the current freeze gate only when:
+  1. the deferral itself is authorized at the required authority level;
+  2. an owner/trigger for reopening is durable;
+  3. the current slice remains semantically complete and implementable without deciding the deferred meaning;
+  4. current implementation cannot accidentally choose the deferred meaning.
+- **IRRELEVANT** must state why the interaction has no consequence for the current semantic frontier.
+- **PROHIBITED / INTENDED CHANGE** must trace to authority that actually prohibits/changes it; absence from the action catalogue is insufficient.
+
+A consequential UNRESOLVED or ACCIDENTAL GAP blocks acceptance freeze.
+
+A tempting label is never evidence. Agreement/count of reviewer ideas is not evidence.
 
 ## 15. Why this remains separate from acceptance review
 
@@ -383,23 +428,49 @@ The final acceptance reviewer verifies that required semantic-delta work was per
 
 When trigger = FIRED, acceptance freeze requires:
 
-1. interaction frontier identified;
-2. relevant delta lenses completed;
-3. meaningful same-person aliases classified where applicable;
-4. transition carryover audited for new consequential transitions;
-5. fresh negative-space challenge complete;
-6. every challenge dispositioned;
-7. consequential `UNRESOLVED = 0`;
-8. consequential `ACCIDENTAL GAP / REGRESSION = 0` or repaired before freeze;
-9. any accepted new/changed meaning present in the acceptance candidate;
-10. deliberate deferrals retain explicit triggers;
-11. no verification artifact silently creates the missing rule.
+1. MA interaction frontier identified;
+2. fresh reviewer Pass-A independent frontier durably fixed;
+3. MA/reviewer frontier comparison reconciled;
+4. relevant delta lenses completed over the justified closure frontier;
+5. meaningful same-person aliases classified where applicable;
+6. transition carryover audited for new consequential transitions;
+7. Pass-B negative-space challenge complete;
+8. every challenge dispositioned with authority-bearing closure rationale;
+9. consequential `UNRESOLVED = 0`;
+10. consequential `ACCIDENTAL GAP / REGRESSION = 0` or repaired before freeze;
+11. any accepted new/changed meaning present in the acceptance candidate;
+12. every DEFERRED item satisfies the authorized-deferral test in §14;
+13. no verification artifact silently creates the missing rule;
+14. the closure is **current against the semantic base used by the acceptance candidate**.
+
+### Closure freshness / staleness rule
+
+A semantic-delta closure is bound to an exact accepted semantic base/ref or equivalent durable authority identity.
+
+Any **material semantic change after closure** makes that closure stale for acceptance freeze until the trigger/frontier is explicitly re-evaluated.
+
+Re-evaluation need not automatically rerun the full audit. It may conclude:
+
+- **REVALIDATED — NO FRONTIER CHANGE** — the semantic change does not alter the trigger/frontier/findings; or
+- **REOPENED — AFFECTED FRONTIER** — rerun only the affected frontier/lenses/challenge material.
+
+The revalidation result must identify:
+
+- the semantic change reviewed;
+- old closure identity;
+- new semantic base;
+- why the frontier is unchanged or which portion reopened.
+
+Acceptance freeze may not rely on a closure whose semantic base predates an unreconciled material semantic change.
 
 Freeze record fields:
 
 - `Semantic-interaction-delta trigger: FIRED|NOT FIRED`
+- `Delta semantic base: <ref/commit/authority identity>|N/A`
 - `Delta-closure location: <path>|N/A`
-- `Negative-space challenge: <path>|N/A`
+- `Independent frontier Pass A: <path/ref/hash>|N/A`
+- `Negative-space challenge Pass B: <path>|N/A`
+- `Closure freshness: CURRENT|STALE|N/A`
 - `Consequential unresolved: 0|N`
 - `Accidental gaps outstanding: 0|N`
 
@@ -424,14 +495,24 @@ Slice N audits:
 
 It does not re-audit the entire project.
 
-### Reopen only on interaction change
+### Reopen / revalidate on semantic change
 
-A previously classified interaction reopens only when:
+A previously classified interaction **reopens** when:
 
 - one participating semantic surface changes materially;
 - a new layer creates a new dependency/resource/authority/information path through it;
 - a new transition crosses it;
 - implementation/observation produces a concrete counterexample.
+
+Separately, **any material semantic change after a closure requires an explicit freshness re-evaluation before acceptance freeze**, even when the likely result is no frontier change.
+
+This makes stale closure mechanically visible without forcing unnecessary full reruns.
+
+A valid no-impact result is:
+
+`REVALIDATED — NO FRONTIER CHANGE`
+
+with the reviewed semantic change and authority identities recorded.
 
 ### One reviewer by default
 
@@ -454,8 +535,11 @@ Initially use stable textual markers only.
 Expected markers in consequential preimplementation/freeze records:
 
 - `Semantic-interaction-delta trigger: FIRED|NOT FIRED`
+- `Delta semantic base: <ref/commit/authority identity>|N/A`
 - `Delta-closure: COMPLETE <path>|N/A`
-- `Negative-space challenge: COMPLETE <path>|N/A`
+- `Independent frontier Pass A: COMPLETE <path/ref/hash>|N/A`
+- `Negative-space challenge Pass B: COMPLETE <path>|N/A`
+- `Closure freshness: CURRENT|STALE|N/A`
 - `Consequential unresolved: 0|N`
 - `Accidental gaps outstanding: 0|N`
 
@@ -466,6 +550,20 @@ Do not automate semantic classification.
 ## 20. Pilot on currently blocked Slice 4
 
 Run the full mechanism before producing the DEC-0011 successor acceptance candidate.
+
+### Pilot purpose — wiring/adequacy, not prospective efficacy
+
+Slice 4 is an excellent test of whether the mechanism can be executed correctly against a real high-interaction slice.
+
+It is **not** unbiased evidence that the failsafe prospectively discovers unknown omissions because the project already knows the founding self-funding defect and why this policy exists.
+
+Pilot reporting must distinguish:
+
+- **KNOWN CASE PROCESSED** — an already-known defect/risk is correctly represented/classified by the mechanism;
+- **PREVIOUSLY UNKNOWN FINDING** — the failsafe surfaces a material interaction/omission not supplied as part of the motivating case;
+- **NO NEW FINDING** — the mechanism executes correctly but discovers nothing previously unknown.
+
+Do not count rediscovery of DEC-0011/self-funding as prospective efficacy evidence.
 
 ### Interaction frontier
 
@@ -615,17 +713,28 @@ Ask whether the proposed mechanism:
 
 ## 23. Effectiveness review after adoption
 
-After the next **2–3 triggered consequential slices**, review:
+After the next **2–3 triggered consequential slices**, review findings in separate evidence classes:
 
-- material gaps found;
-- false positives/noise;
-- whether findings duplicated existing assurance;
+- **KNOWN CASE PROCESSED** — already-known risks/defects the mechanism handled correctly;
+- **PREVIOUSLY UNKNOWN MATERIAL FINDING** — a new omission/interaction the mechanism surfaced prospectively;
+- **DUPLICATE FINDING** — useful but would clearly have been found by an existing assurance step;
+- **NOISE / FALSE POSITIVE** — challenge with no material semantic value.
+
+Also review:
+
 - Master Architect effort;
 - reviewer effort;
+- whether independent Pass-A frontier discovery added surfaces the MA missed;
 - whether old-world projection caught regressions;
 - whether transition carryover found real holes;
+- whether closure staleness/revalidation caught late semantic changes;
+- whether authorized-deferral rules prevented classification gaming;
 - whether the mechanism caused premature semantic expansion;
 - trigger clarity.
+
+The founding Slice-4 self-funding incident is motivating evidence, **not prospective efficacy evidence**.
+
+A policy may still be worth retaining even if it finds no previously unknown omission, but that conclusion must rest on the observed prevention/clarification value rather than counting known cases as discoveries.
 
 Then:
 
