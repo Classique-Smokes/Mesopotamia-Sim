@@ -46,10 +46,13 @@ Active work:
   - freeze commit: `c77131c1dda965521b6b756ec0e91c60e0800673`
   - frozen manifest blob: `7edff7a0507d68037979b3b5e458864f1f8d6518`
   - final pre-code review: `research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md` — **PASS — MAY FREEZE UNCHANGED**
-- Slice-4 inherited verification adaptation: **INDEPENDENT REVIEW ACTIVE**
+- Slice-4 implementation boundary: **DIRECTOR BLOCK ACTIVE**
+  - immutable boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
+  - record: `plans/verification/SFL_V0/SLICE4_BLOCKED_IMPLEMENTATION_BOUNDARY_RECORD.md`
+- Slice-4 inherited verification adaptation: **SUSPENDED AS FORWARD GATE** pending semantic reconciliation
   - candidate: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1`
   - review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md`
-- Slice-4 implementation: **NOT YET AUTHORIZED** until the adaptation plan receives `PASS — ADAPTATION PLAN APPROVED`.
+- Slice-4 implementation: **BLOCKED BY PROJECT DIRECTOR**. No implementation packet or coding bārû may proceed until the pending semantic gap is reconciled and authority/acceptance are revalidated.
 - head/office, endogenous provision/spending, mediated marriage authority, and DEC-0010 are now accepted Slice-4 scope; checkpoint/restore remains Slice 5.
 
 Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
