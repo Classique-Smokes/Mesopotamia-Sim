@@ -4,7 +4,7 @@
 
 ## Active
 
-- `IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` — **CANDIDATE-v3 BLOCKED / REPAIR-v4 ACTIVE**. Candidate-v1/v2/v3 remain immutable failed evidence. Candidate-v3 fresh conformance returned **BLOCK — IMPLEMENTATION / VERIFICATION DEFECT**. Repair packet: `IMP-0003_CANDIDATE_V3_BLOCK_REPAIR_PACKET.md`; repair branch: `implementation/imp-0003-slice3-repair-v4`.
+- `IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` — **CANDIDATE-v4 FROZEN / FRESH CONFORMANCE ACTIVE**. Candidate-v1/v2/v3 remain immutable failed evidence. Candidate-v4 `imp-0003-slice3-conformance-candidate-v4` @ `b5e5409ebcaec856a74ab08a7d120a67f6078e36`; exact-head CI `35945067153` PASS. Fresh review task: `IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V4_PACKET.md`.
 
 ## Completed
 
@@ -13,7 +13,7 @@
 
 ## Ready for dispatch
 
-- `IMP-0003_CANDIDATE_V3_BLOCK_REPAIR_PACKET.md` — bounded repair of Household-connected fallback normalization and lifecycle/Recognition reference verification.
+- `IMP-0003_INDEPENDENT_CONFORMANCE_REVIEW_V4_PACKET.md` — fresh whole-candidate conformance review of immutable candidate-v4.
 
 ## Rules
 
