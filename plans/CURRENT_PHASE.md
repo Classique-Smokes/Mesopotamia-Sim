@@ -504,24 +504,24 @@ Inherited-assurance thread:
 - Project Director decision: `DEC-0015` — **ACCEPTED**
 - promotion audit: `research/technical/DEC-0015_PROMOTION_RECONCILIATION.md` — **PASS**
 - semantic closure: `research/technical/SID_RETRO_SLICE1_CLOSURE_REVALIDATION.md` — **CLOSED / PASS**
-- successor Slice-1 acceptance candidate1: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md`
-- candidate ref: `sfl-v0-slice1-acceptance-v2-candidate1` @ `8ba59585d1a97f7a55968d6980c9110b5af33c7f`
-- candidate blob: `de06f0c8523a49b0e248c5012015622936808eaf`
-- candidate census: **173 = 134 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED**
+- successor Slice-1 acceptance v2: **FROZEN / PASS**
+- frozen manifest: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST_V2.md`
+- frozen ref: `sfl-v0-slice1-acceptance-v2` @ `bf77bb38a8a7bc964159188b7359cb8e9af2b483`
+- frozen blob: `174ccbae57a64f06bd88de233b11a011b4a2b115`
+- frozen census: **173 = 134 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED**
 - frozen-v1 rows preserved byte-for-byte: **167 / 167**
-- fresh review task: `tasks/research/SFL_V0_SLICE1_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`
-- review dispatch ref: `sfl-v0-slice1-acceptance-v2-candidate1-review-dispatch` @ `62e865fd61152f9f692b275d3635b4957f12178c`
-- return branch: `review/slice1-acceptance-v2-candidate1-return`
-- review status: **ARCHITECT-DISPATCHED / NO REVIEWER ACTIVE YET**
-- remaining inherited gate: fresh v2 acceptance PASS/freeze + current implementation conformance
+- fresh review: `research/technical/SFL_V0_SLICE1_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **PASS — MAY FREEZE UNCHANGED**
+- review blob: `e49c41ad949251dac5b86d926c4d88829794af12`
+- freeze record: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_V2_FREEZE_RECORD.md`
+- frozen-ref hygiene: **PASS** — ref remains identical to freeze commit after external freeze-record creation
+- remaining inherited gate: current implementation conformance to frozen v2
 
 ## Next
 
-1. Run fresh whole-candidate review of exact Slice-1 successor v2 candidate1; freeze only on PASS.
-2. Reconcile current implementation conformance to the frozen successor Slice-1 authority.
-3. Issue a corrected Slice-5 acceptance candidate reflecting the new inherited authority and run fresh whole-candidate review.
-4. Freeze Slice-5 acceptance only after those gates close.
-5. Evaluate any conditional inherited-verification adaptation trigger from the chosen Slice-5 design.
-6. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
+1. Reconcile current implementation conformance to frozen Slice-1 successor v2 authority.
+2. Issue a corrected Slice-5 acceptance candidate reflecting the new inherited authority and run fresh whole-candidate review.
+3. Freeze Slice-5 acceptance only after those gates close.
+4. Evaluate any conditional inherited-verification adaptation trigger from the chosen Slice-5 design.
+5. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
