@@ -4,7 +4,7 @@
 
 ## Active
 
-- `IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` — **IN PROGRESS / ESCALATION 01 CLOSED**. Coding bārû is active on `implementation/imp-0004-slice4-household-head-collective-action`. Escalation 01 is closed by DEC-0014 and `../../research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01_CLOSURE.md`. The task is not yet a complete conformance candidate.
+- `IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` — **COMPLETE CANDIDATE / FROZEN FOR INDEPENDENT CONFORMANCE**. Candidate-v1: `imp-0004-slice4-conformance-candidate-v1` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`; exact-head CI `36094176584` PASS; artifact `10846019591`. Fresh review packet: `IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md` — **ARCHITECT-DISPATCHED / READY / NO REVIEWER ACTIVE YET**. PR #109 remains draft/unmerged.
 
 ## Completed
 
@@ -15,7 +15,7 @@
 
 ## Ready for dispatch
 
-No implementation task is waiting for initial dispatch.
+No coding implementation task is waiting for initial dispatch. IMP-0004 is awaiting independent conformance review, not additional coding.
 
 ## Rules
 
