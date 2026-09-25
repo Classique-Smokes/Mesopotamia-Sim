@@ -129,6 +129,7 @@ public sealed partial class Simulation
                 {
                     EventId cause = events.Last(e => e.Proposal == p.Id).Id;
                     SemanticEvent commit = projection.Commit(p, cause, false, batch, payloads.GetValueOrDefault(p.Id));
+                    projection.ObserveSupportNeedTransitions(commit);
                     projection.Learn(p, new(p.Id, p.Actor, OutcomeKind.Committed, "", commit.Id), commit);
                     if (ActionRules.Mover(p) is { } mover) moved.Add(mover);
                     outcomes[p.Id] = "Committed";
@@ -138,6 +139,7 @@ public sealed partial class Simulation
             if (!arithmeticFault)
             {
                 projection.ReviewDebts(batch); projection.CloseAttitudes(batch); projection.CloseHouseholds();
+                projection.ObserveSupportNeedTransitions(projection.events[^1]);
             }
             var result = (outcomes, HouseholdProjectionKey(projection, arithmeticFault));
             evaluated.Add(key, result);

@@ -14,7 +14,16 @@ public sealed record ProposeMediatedMarriage(HouseholdId Household, PersonId Hea
 public sealed record ProvisionProcessKey(HouseholdId Household, PersonId Contributor);
 public sealed record ProvisionContext(long Grain, bool NeedsGrain, int AttitudeTowardHead, PersonId Head,
     ImmutableArray<PersonId> NeedyParticipants);
-public sealed record ProvisionRefusal(ProvisionProcessKey Key, long Cycle, EventId Event, ProvisionContext Context);
+public enum HouseholdMaterialNeedKind { SupportOnset, MediatedDowry }
+public sealed record HouseholdMaterialNeedOccurrence(HouseholdMaterialNeedKind Kind, HouseholdDecisionContext Authority,
+    PersonId Person, AssociationId? Association, EventId Cause, EvidenceOrder Time, ProposeMediatedMarriage? Dowry,
+    ImmutableArray<KnownFact> Evidence);
+public sealed record ProvisionNeedUpdate(ProvisionProcessKey Process, EventId Refusal, HouseholdMaterialNeedOccurrence Occurrence);
+public sealed record ProvisionRefusal(ProvisionProcessKey Key, long Cycle, EventId Event, ProvisionContext Context)
+{
+    public ImmutableArray<AssociationId> EligibleSupportCohort { get; init; } = [];
+    public HouseholdMaterialNeedOccurrence? MaterialNeedChange { get; init; }
+}
 [JsonPolymorphic(TypeDiscriminatorPropertyName = "kind")]
 [JsonDerivedType(typeof(ProvisionFixtureProvenance), "controlled-fixture")]
 [JsonDerivedType(typeof(EndogenousProvisionOrigin), "endogenous-response")]
@@ -39,10 +48,15 @@ public sealed record HouseholdPolicy(string Profile = "SCORE-VP-003")
 /// <summary>Synthetic v0 personal-grain scaffold. This is not a general economic model.</summary>
 internal static class HouseholdFunding
 {
+    private static IEnumerable<HouseholdProvisionCommitment> ValidCommitments(HouseholdSnapshot households, HouseholdId household) =>
+        households.Commitments.Values.Where(c => c.Household == household && c.TerminatedBy is null &&
+            households.Associations.TryGetValue(c.Association, out var a) && a.End is null && a.Person == c.Person && a.Household == household);
+
+    internal static ImmutableArray<PersonId> Sources(HouseholdSnapshot households, HouseholdId household, PersonId? privateOwner) =>
+        [.. ValidCommitments(households, household).Select(c => c.Person).Concat(privateOwner is { } owner ? [owner] : []).Distinct().OrderBy(p => p.Value)];
+
     internal static ImmutableArray<PersonId> Participants(HouseholdSnapshot households, HouseholdId household,
-        PersonId? privateOwner, PersonId recipient) => [.. households.Commitments.Values.Where(c => c.Household == household && c.TerminatedBy is null &&
-            households.Associations.TryGetValue(c.Association, out var a) && a.End is null && a.Person == c.Person && a.Household == household)
-            .Select(c => c.Person).Concat(privateOwner is { } owner ? [owner] : []).Append(recipient).Distinct().OrderBy(p => p.Value)];
+        PersonId? privateOwner, PersonId recipient) => [.. Sources(households, household, privateOwner).Append(recipient).Distinct().OrderBy(p => p.Value)];
 
     internal static (HouseholdFundingResult? Result, string? Failure) Evaluate(WorldSnapshot world,
         HouseholdSnapshot households, HouseholdDecisionContext authority, long cost, PrivateGrainAuthorization? supplement, PersonId recipient)
@@ -55,8 +69,7 @@ internal static class HouseholdFunding
         long x = supplement?.Amount ?? 0;
         if (supplement is not null && supplement.Owner != authority.Head) return (null, "PrivateOwnerNotCurrentHead");
         if (HouseholdSnapshot.ExposedCapacity(world.People[authority.Head]) < x) return (null, "AgreedPrivateFundingUnavailable");
-        var capacities = households.Commitments.Values.Where(c => c.Household == authority.Household && c.TerminatedBy is null &&
-            households.Associations.TryGetValue(c.Association, out var a) && a.End is null && a.Person == c.Person && a.Household == c.Household)
+        var capacities = ValidCommitments(households, authority.Household)
             .Select(c => (Commitment: c, Capacity: Math.Max(0, HouseholdSnapshot.ExposedCapacity(world.People[c.Person]) - (c.Person == authority.Head ? x : 0))))
             .OrderByDescending(c => c.Capacity).ThenBy(c => c.Commitment.Person.Value).ToArray();
         if (capacities.Select(c => c.Commitment.Person).Distinct().Count() != capacities.Length)

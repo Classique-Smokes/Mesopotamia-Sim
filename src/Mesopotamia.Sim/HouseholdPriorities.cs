@@ -20,8 +20,7 @@ public sealed partial class Simulation
         if (HouseholdRules.Before(a, b)) return true;
         WorldSnapshot world = state.Snapshot(cycle);
         int rankA = MaterialRank(a), rankB = MaterialRank(b);
-        if (rankA < rankB && (b.CollectiveAttempt is { Cost: > 0 } || Transfer(b, world) is not null) &&
-            MaterialPeople(a, world).Intersect(MaterialPeople(b, world)).Any()) return true;
+        if (rankA < rankB && SpendingSources(a).Intersect(SpendingSources(b)).Any()) return true;
         if (a.HeadAttempt is { } transition && b.Terms is EndHouseholdParticipation exit &&
             exit.Household == transition.Role.Household && transition.Cohort.Any(p => p.Person == b.Actor)) return true;
         if (a.CollectiveAttempt is not { } act) return false;
@@ -30,6 +29,10 @@ public sealed partial class Simulation
         if (b.Actor == act.Authority.Head) return true;
         int exits = accepted.Count(p => p.Terms is EndHouseholdParticipation e && e.Household == end.Household);
         return households.Current(end.Household).Length - exits < 2;
+
+        IEnumerable<PersonId> SpendingSources(Proposal p) => p.CollectiveAttempt is { Cost: > 0 } spending
+            ? HouseholdFunding.Sources(households.Snapshot(cycle), spending.Authority.Household, spending.Private?.Owner)
+            : Transfer(p, world) is { } transfer ? [transfer.Giver] : [];
     }
 
     private static int MaterialRank(Proposal p) => p.CollectiveAttempt is { Cost: > 0 }

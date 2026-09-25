@@ -68,6 +68,7 @@ public sealed partial class Simulation
     {
         AcquireCommittedFacts(epistemic, state, entry);
         if (OrdinarySupport.From(entry) is { } support) households.Supports.TryAdd(entry.Id, support);
+        ObserveSupportNeedTransitions(entry);
     }
 
     private static void AcquireCommittedFacts(EpistemicState epistemic, WorldState state, SemanticEvent entry)

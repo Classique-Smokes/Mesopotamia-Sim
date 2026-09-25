@@ -54,6 +54,8 @@ public sealed record SemanticEvent(EventId Id, long Cycle, int ReactionIndex, st
     ProposalId? Proposal, ImmutableArray<PersonId> Participants, ImmutableArray<EventId> Causes,
     ImmutableArray<MaterialChange> Material, string Detail, string ConfigurationVersion, bool TechnicalFallback = false)
 {
+    public ProvisionRefusal? ProvisionRefusal { get; init; }
+    public ProvisionNeedUpdate? ProvisionNeedUpdate { get; init; }
     public HouseholdDecisionContext? HouseholdContext { get; init; }
     public HeadTransition? HeadTransition { get; init; }
     public HouseholdFundingResult? Funding { get; init; }
@@ -117,6 +119,8 @@ public sealed partial class Simulation
             Maintenance();
             WorldSnapshot decisionSnapshot = state.Snapshot(cycle);
             EpistemicSnapshot decisionEpistemic = epistemic.Snapshot(cycle);
+            Dictionary<ProvisionProcessKey, EventId> decisionBaselines = households.ProvisionRefusals.ToDictionary(p => p.Key, p => p.Value.Event);
+            List<HouseholdMaterialNeedOccurrence> materialNeeds = [];
             List<Outcome> outcomes = [];
             List<DecisionTrace> decisions = [];
             List<Proposal> proposals = [.. input.Proposals];
@@ -154,7 +158,7 @@ public sealed partial class Simulation
                     communicationPayloads.Add(proposal.Id, CommunicationRules.Payload(decisionEpistemic.Actors[proposal.Actor], communication.Claim));
                 if (HouseholdCollectiveRules.IsCollective(proposal.Terms))
                 {
-                    var collective = AcceptCollective(proposal, proposed.Id, input, decisionSnapshot, decisionEpistemic, decisions, outcomes);
+                    var collective = AcceptCollective(proposal, proposed.Id, input, decisionSnapshot, decisionEpistemic, decisions, outcomes, materialNeeds);
                     if (collective is { } a) accepted.Add(a);
                     continue;
                 }
@@ -217,6 +221,7 @@ public sealed partial class Simulation
                 }
                 accepted.Add((proposal, cause));
             }
+            ObserveDowryNeeds(materialNeeds, decisionBaselines);
             HashSet<PersonId> moved = [];
             HashSet<ProposalId> resolutionFallbacks = ResolutionFallbacks([.. accepted.Select(a => a.Proposal)], decisionSnapshot, communicationPayloads);
             foreach (Proposal orderedProposal in OrderAccepted([.. accepted.Select(a => a.Proposal)]))
@@ -239,6 +244,7 @@ public sealed partial class Simulation
                 else
                 {
                     SemanticEvent committed = Commit(proposal, attempt.Cause, fallback, batch, communicationPayloads.GetValueOrDefault(proposal.Id));
+                    ObserveSupportNeedTransitions(committed);
                     if (ActionRules.Mover(proposal) is { } movedPerson) moved.Add(movedPerson);
                     outcomes.Add(new(proposal.Id, proposal.Actor, OutcomeKind.Committed, "", committed.Id));
                     Learn(proposal, outcomes[^1], committed);
@@ -256,6 +262,7 @@ public sealed partial class Simulation
             if (Challenge != ReactionChallenge.SkipClosure) CloseAttitudes(batch);
             if (!batch.IsClosed) throw new InvalidOperationException("PendingAutomaticReactions");
             CloseHouseholds();
+            ObserveSupportNeedTransitions(events[^1]);
             if (Challenge == ReactionChallenge.DuplicateCauses) CloseHouseholds();
             if (batch.DuplicateCount > 0) Record("DuplicateReactionRejected", null, [], [], [], FormattableString.Invariant($"Duplicates:{batch.DuplicateCount}"));
             published = state.Snapshot(cycle);
@@ -284,7 +291,8 @@ public sealed partial class Simulation
     private Outcome Finish(Proposal proposal, OutcomeKind kind, string reason, EventId cause, List<Outcome> outcomes, bool fallback = false)
     {
         PersonId? target = ActionRules.Target(proposal.Terms, state.Snapshot(cycle));
-        SemanticEvent entry = Record(kind.ToString(), proposal.Id, target is { } t ? [proposal.Actor, t] : [proposal.Actor], [cause], [], reason, fallback);
+        SemanticEvent entry = Record(kind.ToString(), proposal.Id, target is { } t ? [proposal.Actor, t] : [proposal.Actor], [cause], [], reason, fallback,
+            proposal.Terms is NominateHouseholdHead || HouseholdCollectiveRules.IsCollective(proposal.Terms) ? HeadRulesVersion : Configuration.RulesVersion);
         events[^1] = entry with { Action = proposal.Terms };
         Outcome outcome = new(proposal.Id, proposal.Actor, kind, reason, entry.Id);
         outcomes.Add(outcome);

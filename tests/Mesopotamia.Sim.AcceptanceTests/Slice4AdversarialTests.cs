@@ -52,13 +52,15 @@ public sealed class Slice4AdversarialTests
     [TestMethod]
     public void IncomparableHeadEvidenceCannotChooseAuthority()
     {
-        Slice4Lab lab = new(); lab.Appoint();
+        Slice4Lab lab = new(); lab.Appoint(); lab.InformGroom();
         foreach (int head in new[] { 1, 2 })
-            lab.Sim.SupplyHeadEvidenceFixture(Slice4Lab.P(4), new(lab.H, lab.Role.Id, Slice4Lab.P(head), lab.Role.LastTransition),
+            lab.SupplyHeadReport(Slice4Lab.P(4), new(lab.H, lab.Role.Id, Slice4Lab.P(head), lab.Role.LastTransition),
                 new(null, null, null, "F-S4-INCOMPARABLE-REPORTS"));
         HeadRecognition recognition = lab.Sim.EpistemicStateOf(Slice4Lab.P(4)).HeadRecognitions.Single();
         Assert.AreEqual(RecognitionStatus.Contested, recognition.Status); Assert.IsNull(recognition.Occupant); Assert.IsNull(recognition.Role);
         Assert.AreEqual(OutcomeKind.InvalidTerms, lab.Step(4, new CommunicateClaim(Slice4Lab.P(3), new HeldHeadRecognition(lab.H))).Outcomes.Single().Kind);
+        Assert.AreEqual("HeadNotRecognized", lab.Step(4, new ProposeMediatedMarriage(lab.H, lab.Id(1), lab.Id(2), 3)).Outcomes.Single().Reason);
+        Slice4Oracle.Verify(lab);
     }
 
     [TestMethod]

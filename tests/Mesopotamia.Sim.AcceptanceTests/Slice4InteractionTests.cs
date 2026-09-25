@@ -35,6 +35,8 @@ public sealed class Slice4InteractionTests
         Assert.AreEqual(1, result.Events.Count(e => e.Funding is not null));
         Assert.AreEqual(2L, result.State.People[Slice4Lab.P(2)].Grain);
         Assert.IsFalse(result.Events.Any(e => e.Kind == "Declined")); Slice4Oracle.Verify(lab);
+        Assert.IsTrue(result.Events.Any(e => e.TechnicalFallback));
+        Assert.IsFalse(result.Decisions.Any(d => d.TechnicalFallback));
     }
 
     [TestMethod]

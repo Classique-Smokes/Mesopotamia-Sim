@@ -69,7 +69,7 @@ internal static class HouseholdCollectiveRules
                 ProvisionContext now = Context(world, households, household, contributor, authority.Head);
                 if (now.Grain == refusal.Context.Grain && now.NeedsGrain == refusal.Context.NeedsGrain &&
                     now.Head == refusal.Context.Head && now.AttitudeTowardHead == refusal.Context.AttitudeTowardHead &&
-                    !now.NeedyParticipants.Except(refusal.Context.NeedyParticipants).Any()) return "ProvisionContextUnchanged";
+                    refusal.MaterialNeedChange is null) return "ProvisionContextUnchanged";
             }
         }
         if (proposal.Terms is HouseholdSupport or RequestHouseholdSupport)

@@ -11,7 +11,8 @@ public sealed partial class Simulation
     }
 
     private (Proposal Proposal, EventId Cause)? AcceptCollective(Proposal proposal, EventId request, CycleInput input,
-        WorldSnapshot world, EpistemicSnapshot knowledgeSnapshot, List<DecisionTrace> decisions, List<Outcome> outcomes)
+        WorldSnapshot world, EpistemicSnapshot knowledgeSnapshot, List<DecisionTrace> decisions, List<Outcome> outcomes,
+        List<HouseholdMaterialNeedOccurrence> materialNeeds)
     {
         string? failure = HouseholdRules.Infeasible(proposal, world, households, epistemic);
         HouseholdFundingPolicy policy = input.FundingPolicies.GetValueOrDefault(proposal.Id, new());
@@ -21,6 +22,10 @@ public sealed partial class Simulation
         if (failure is not null)
         { Finish(proposal, OutcomeKind.Unable, failure, request, outcomes); return null; }
         HouseholdDecisionContext authority = HouseholdCollectiveRules.Authority(proposal, households)!;
+        if (proposal.Terms is ProposeMediatedMarriage demand)
+            materialNeeds.Add(new(HouseholdMaterialNeedKind.MediatedDowry, authority, proposal.Actor, null, request,
+                new(cycle, reactionIndex - 1), demand, [.. knowledgeSnapshot.Actors[proposal.Actor].Facts.Where(f =>
+                    f.Proposition is HeadRoleFact or HouseholdExistenceFact or SustainingParticipationFact)]));
         PersonId recipient = proposal.Terms is HouseholdSupport support ? support.Recipient : proposal.Actor;
         PersonId? respondent = HouseholdCollectiveRules.Respondent(proposal);
         PrivateGrainAuthorization? selected = proposal.Terms is HouseholdSupport s ? s.Private : null;
@@ -78,8 +83,13 @@ public sealed partial class Simulation
             {
                 Outcome outcome = Finish(proposal, OutcomeKind.Declined, "VoluntaryRefusal", acceptance, outcomes);
                 if (proposal.Terms is RequestProvisionCommitment provision)
+                {
                     households.ProvisionRefusals[new(authority.Household, provision.Contributor)] = new(new(authority.Household, provision.Contributor), cycle,
-                        outcome.Event, HouseholdCollectiveRules.Context(world, households, authority.Household, provision.Contributor, authority.Head));
+                        outcome.Event, HouseholdCollectiveRules.Context(world, households, authority.Household, provision.Contributor, authority.Head))
+                    { EligibleSupportCohort = EligibleSupportCohort(authority.Household) };
+                    int index = events.FindIndex(e => e.Id == outcome.Event);
+                    events[index] = events[index] with { ProvisionRefusal = households.ProvisionRefusals[new(authority.Household, provision.Contributor)] };
+                }
                 return null;
             }
         }

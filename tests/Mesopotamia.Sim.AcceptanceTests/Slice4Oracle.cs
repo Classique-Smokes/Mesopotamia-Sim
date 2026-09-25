@@ -6,8 +6,9 @@ namespace Mesopotamia.Sim.AcceptanceTests;
 /// <summary>Independent reconstruction from initial records and public causal history.</summary>
 internal static class Slice4Oracle
 {
-    internal static void Verify(Slice4Lab lab, HouseholdSnapshot? supplied = null, SemanticEvent[]? suppliedEvents = null)
+    internal static void Verify(Slice4Lab lab, HouseholdSnapshot? supplied = null, SemanticEvent[]? suppliedEvents = null, WorldSnapshot? suppliedWorld = null)
     {
+        WorldSnapshot final = suppliedWorld ?? lab.Sim.Snapshot;
         HouseholdSnapshot h = supplied ?? lab.Sim.HouseholdSnapshot;
         SemanticEvent[] history = suppliedEvents ?? [.. lab.Sim.History];
         Dictionary<PersonId, Person> people = lab.Initial.People.ToDictionary(p => p.Id);
@@ -17,6 +18,8 @@ internal static class Slice4Oracle
         Assert.AreEqual(h.HeadRoles.Count, h.HeadRoles.Values.Select(r => r.Household).Distinct().Count());
         foreach (HouseholdHeadRole role in h.HeadRoles.Values)
         {
+            Assert.Contains(role.Household, h.Households.Keys);
+            Assert.Contains(role.Id, h.HeadRoles.Keys);
             Assert.AreEqual(role.Id, h.HeadRoles[role.Id].Id);
             Assert.AreEqual(h.Formations[h.Households[role.Household].Formation].Stamp.Event, role.Origin);
             occupants.Add(role.Id, null);
@@ -49,7 +52,9 @@ internal static class Slice4Oracle
                     Assert.AreEqual(transition.Consents.Length, transition.Consents.Select(c => (c.Actor, c.Capacity)).Distinct().Count());
                     foreach (SustainingParticipant participant in transition.Cohort)
                     {
-                        Assert.IsTrue(Active(participant, e));
+                        Assert.AreEqual(participant.Person, h.Associations[participant.Id].Person);
+                        Assert.AreEqual(participant.Origin, h.Associations[participant.Id].Origin);
+                        Assert.IsTrue(Active(h.Associations[participant.Id], e));
                         Assert.IsTrue(transition.Consents.Single(c => c.Actor == participant.Person && c.Capacity == HeadConsentCapacity.Participant).Accepted);
                     }
                     Assert.IsTrue(transition.Consents.Single(c => c.Actor == nominee && c.Capacity == HeadConsentCapacity.Nominee).Accepted);
@@ -88,6 +93,7 @@ internal static class Slice4Oracle
             {
                 Assert.IsTrue(e.Kind is "HouseholdSupport" or "HouseholdMediatedMarriage");
                 Assert.AreEqual("SFL-S4-v1", e.RulesVersion);
+                Assert.IsEmpty(e.Contributions, "Collective funding has no ordinary-transfer attitude meaning.");
                 Assert.AreEqual(funding.Authority, e.HouseholdContext);
                 Assert.AreEqual(funding.Authority.Household, h.HeadRoles[funding.Authority.Role].Household);
                 Assert.AreEqual(funding.Authority.Head, occupants[funding.Authority.Role]);
@@ -116,6 +122,10 @@ internal static class Slice4Oracle
                 }
                 Assert.AreEqual(0L, remaining);
                 CollectionAssert.AreEqual(expected.ToArray(), funding.Commitments.ToArray());
+                bool rankTie = expected.Any(leg => contributors.Count(c => c.Capacity == leg.Capacity) > 1);
+                Assert.AreEqual(rankTie, funding.ContributorTie, "Contributor fallback must disclose the independently reconstructed effective-capacity tie.");
+                CollectionAssert.AreEqual(contributors.Select(c => c.Commitment.Person).Concat(funding.Private is { } owner ? [owner.Owner] : [])
+                    .Append(funding.Recipient).Distinct().OrderBy(p => p.Value).ToArray(), funding.PossibleParticipants.ToArray());
                 Dictionary<PersonId, long> deltas = [];
                 foreach (var leg in expected) deltas[leg.Person] = checked(deltas.GetValueOrDefault(leg.Person) - leg.Debit);
                 if (funding.Private is { } p) deltas[p.Owner] = checked(deltas.GetValueOrDefault(p.Owner) - p.Amount);
@@ -127,15 +137,17 @@ internal static class Slice4Oracle
                 {
                     Assert.AreEqual(1L, funding.Cost); Assert.IsTrue(people[funding.Recipient].NeedsGrain);
                     Assert.IsTrue(h.Associations.Values.Any(a => a.Household == funding.Authority.Household && a.Person == funding.Recipient && Active(a, e)));
-                    Assert.IsFalse(lab.Sim.Snapshot.Marriages.Values.Any(m => m.Origin == e.Id));
-                    Assert.IsFalse(lab.Sim.Snapshot.Favours.Values.Any(f => f.Origin == e.Id));
+                    Assert.IsFalse(final.Marriages.Values.Any(m => m.Origin == e.Id));
+                    Assert.IsFalse(final.Favours.Values.Any(f => f.Origin == e.Id));
                 }
                 else
                 {
                     Assert.IsInstanceOfType<ProposeMediatedMarriage>(e.Action);
                     var terms = (ProposeMediatedMarriage)e.Action;
-                    Marriage marriage = lab.Sim.Snapshot.Marriages.Values.Single(m => m.Origin == e.Id);
-                    Favour favour = lab.Sim.Snapshot.Favours.Values.Single(f => f.Origin == e.Id);
+                    Assert.AreEqual(1, final.Marriages.Values.Count(m => m.Origin == e.Id));
+                    Assert.AreEqual(1, final.Favours.Values.Count(f => f.Origin == e.Id));
+                    Marriage marriage = final.Marriages.Values.Single(m => m.Origin == e.Id);
+                    Favour favour = final.Favours.Values.Single(f => f.Origin == e.Id);
                     Assert.AreEqual(funding.Recipient, marriage.Groom); Assert.AreEqual(terms.Bride, marriage.Bride);
                     Assert.AreEqual(marriage.Groom, favour.Debtor); Assert.AreEqual(funding.Authority.Head, favour.Holder);
                     Assert.AreNotEqual(marriage.Groom, favour.Holder);
@@ -154,8 +166,42 @@ internal static class Slice4Oracle
             if (e.Kind == "MissedConsumption") people[e.Participants.Single()] = people[e.Participants.Single()] with { NeedsGrain = true };
         }
         foreach (var role in h.HeadRoles.Values) Assert.AreEqual(occupants[role.Id], role.Occupant);
-        foreach (var p in people) Assert.AreEqual(lab.Sim.Snapshot.People[p.Key].Grain, p.Value.Grain);
-        foreach (var commitment in h.Commitments.Values) VerifyOrigin(commitment, events, h);
+        foreach (var p in people) Assert.AreEqual(final.People[p.Key].Grain, p.Value.Grain);
+        foreach (var commitment in h.Commitments.Values)
+        {
+            Assert.IsFalse(commitment.Provenance is ProvisionFixtureProvenance, "Slice4Lab declares no fixture commitments; endogenous origins cannot be relabelled.");
+            VerifyOrigin(commitment, events, h);
+        }
+        foreach (var refusal in h.ProvisionRefusals.Values)
+        {
+            ProvisionRefusal? baseline = events[refusal.Event].ProvisionRefusal;
+            Assert.IsNotNull(baseline); Assert.AreEqual(baseline.Key, refusal.Key); Assert.AreEqual(baseline.Context, refusal.Context);
+            Assert.AreEqual("Declined", events[refusal.Event].Kind); Assert.AreEqual(events[refusal.Event].Cycle, refusal.Cycle);
+            var updates = history.Where(e => e.ProvisionNeedUpdate?.Refusal == refusal.Event).ToArray();
+            Assert.IsTrue(updates.Length <= 1); Assert.AreEqual(updates.SingleOrDefault()?.ProvisionNeedUpdate?.Occurrence, refusal.MaterialNeedChange);
+            if (refusal.MaterialNeedChange is { } need)
+            {
+                SemanticEvent cause = events[need.Cause]; Assert.IsTrue(Before(events[refusal.Event], cause));
+                Assert.AreEqual(new EvidenceOrder(cause.Cycle, cause.ReactionIndex), need.Time);
+                Assert.AreEqual(refusal.Key.Household, need.Authority.Household);
+                if (need.Kind == HouseholdMaterialNeedKind.MediatedDowry)
+                {
+                    Assert.IsInstanceOfType<ProposeMediatedMarriage>(cause.Action); Assert.AreEqual(cause.Action, need.Dowry);
+                    Assert.IsTrue(need.Dowry!.Dowry > 0); Assert.AreEqual(need.Person, cause.Participants.Single());
+                    Assert.IsTrue(need.Evidence.Any(f => f.Proposition is HeadRoleFact p && p.Role == need.Authority.Role && p.Occupant == need.Authority.Head));
+                    Assert.IsTrue(need.Evidence.Any(f => f.Proposition is HouseholdExistenceFact p && p.Household == refusal.Key.Household && p.Continues));
+                    Assert.IsTrue(need.Evidence.Any(f => f.Proposition is SustainingParticipationFact p && p.Person == need.Dowry.Bride && p.Current));
+                    foreach (KnownFact fact in need.Evidence)
+                        Assert.IsTrue(history.Where(e => Before(e, cause)).SelectMany(e => e.AcquiredEvidence).Any(a => a.Actor == need.Person && a.Fact == fact));
+                }
+                else
+                {
+                    Assert.AreEqual(HouseholdMaterialNeedKind.SupportOnset, need.Kind); Assert.IsNotNull(need.Association);
+                    Assert.AreEqual(need.Person, h.Associations[need.Association.Value].Person); Assert.IsNull(need.Dowry);
+                    Assert.IsTrue(cause.Kind is "MissedConsumption" or "HouseholdParticipation" or "HouseholdHeadAppointed" or "HouseholdReactivated");
+                }
+            }
+        }
         VerifyHeadKnowledge(lab, lab.Sim.EpistemicSnapshot);
 
         SemanticEvent Started(SustainingParticipant a) => events[h.Formations.TryGetValue(a.Origin, out var f) ? f.Stamp.Event : h.Entries[a.Origin].Stamp.Event];
@@ -187,8 +233,23 @@ internal static class Slice4Oracle
                 CollectionAssert.AreEquivalent(group.ToArray(), result.Evidence.ToArray());
                 foreach (KnownFact fact in group)
                 {
+                    if (fact.Provenance.Route == AcquisitionRoute.Fixture)
+                    {
+                        Assert.Contains(new AcquiredFact(actor.Actor, fact), lab.FixtureHeadReports);
+                        Assert.IsFalse(string.IsNullOrWhiteSpace(fact.Provenance.Origin.Fixture));
+                        continue;
+                    }
                     Assert.IsTrue(history.Values.SelectMany(e => e.AcquiredEvidence).Any(r => r.Actor == actor.Actor && r.Fact == fact), "Exact head EvidenceId lacks acquisition receipt.");
                     HeadRoleFact proposition = (HeadRoleFact)fact.Proposition;
+                    if (fact.Provenance.Origin.Fixture is not null)
+                    {
+                        Assert.IsTrue(lab.FixtureHeadReports.Any(r => r.Fact.Proposition == fact.Proposition && r.Fact.Provenance.Origin == fact.Provenance.Origin));
+                        Assert.AreEqual(AcquisitionRoute.Communication, fact.Provenance.Route);
+                        Assert.AreEqual(actor.Actor, fact.Provenance.Hops.Last().Recipient);
+                        foreach (var hop in fact.Provenance.Hops)
+                            Assert.IsTrue(history[hop.Event].TransmittedEvidence.Any(f => f.Proposition == proposition && f.Provenance.Origin == fact.Provenance.Origin));
+                        continue;
+                    }
                     SemanticEvent origin = history[proposition.Transition];
                     Assert.AreEqual(proposition.Transition, fact.Provenance.Origin.Event);
                     Assert.AreEqual(new EvidenceOrder(origin.Cycle, origin.ReactionIndex), fact.Provenance.Origin.Order);
@@ -225,18 +286,33 @@ internal static class Slice4Oracle
                 Assert.AreEqual("Proposal", request.Kind); Assert.AreEqual("Response", response.Kind); Assert.AreEqual("HouseholdProvisionCommitted", created.Kind);
                 Assert.AreEqual(new RequestProvisionCommitment(c.Household, c.Person), request.Action);
                 Assert.AreEqual(origin.Authority.Head, request.Participants.Single()); Assert.AreEqual(c.Person, response.Participants.Single());
+                Assert.AreEqual(c.Person, origin.Contributor);
                 Assert.AreEqual("Accept", response.Detail); Assert.AreEqual(origin.Proposal, request.Proposal);
                 Assert.AreEqual(request.Proposal, response.Proposal); Assert.AreEqual(response.Proposal, created.Proposal);
                 Assert.IsTrue(Before(request, response) && Before(response, created)); Assert.IsEmpty(created.Material);
-                Assert.AreEqual(c.Household, origin.Authority.Household); Assert.AreEqual(origin.Authority, created.HouseholdContext); break;
+                Assert.AreEqual(c.Household, origin.Authority.Household); Assert.AreEqual(origin.Authority, created.HouseholdContext);
+                CheckAuthority(origin.Authority, created); break;
             case SelfProvisionOrigin self:
                 SemanticEvent authorization = history[self.Authorization], creation = history[self.Created];
                 Assert.IsTrue(self.InstitutionalRequest && self.PrivateAuthorization); Assert.AreEqual(c.Person, self.Authority.Head);
                 Assert.AreEqual(c.Household, self.Authority.Household); Assert.AreEqual(self.Authority, creation.HouseholdContext);
                 Assert.AreEqual(new AuthorizeOwnProvisionCommitment(c.Household, true, true), authorization.Action);
+                Assert.AreEqual("Proposal", authorization.Kind); Assert.AreEqual("HouseholdProvisionCommitted", creation.Kind);
+                Assert.AreEqual(self.Proposal, authorization.Proposal); Assert.AreEqual(self.Proposal, creation.Proposal);
+                Assert.AreEqual(c.Person, authorization.Participants.Single());
                 Assert.IsTrue(Before(authorization, creation)); Assert.IsEmpty(creation.Material);
-                Assert.IsFalse(history.Values.Any(e => e.Proposal == self.Proposal && e.Kind == "Response")); break;
+                Assert.IsFalse(history.Values.Any(e => e.Proposal == self.Proposal && e.Kind == "Response"));
+                CheckAuthority(self.Authority, creation); break;
             default: Assert.Fail("Unknown commitment provenance"); break;
+        }
+        void CheckAuthority(HouseholdDecisionContext authority, SemanticEvent creation)
+        {
+            Assert.Contains(authority.Role, h.HeadRoles.Keys);
+            Assert.AreEqual(c.Household, h.HeadRoles[authority.Role].Household);
+            HeadTransition latest = history.Values.Where(e => e.HeadTransition?.Role == authority.Role && Before(e, creation))
+                .OrderBy(e => e.Cycle).ThenBy(e => e.ReactionIndex).Last().HeadTransition!;
+            Assert.AreEqual(authority.Head, latest.Occupant);
+            Assert.IsTrue(creation.Causes.All(history.ContainsKey));
         }
     }
 }
