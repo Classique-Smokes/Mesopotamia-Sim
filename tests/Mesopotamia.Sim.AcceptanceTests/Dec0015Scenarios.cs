@@ -70,7 +70,7 @@ internal sealed partial class Scenarios
                     favourId, new(favourId, new(1), new(1), true, new(900)))
             };
             Proposal selfCall = P(99, 1, new CallFavor(favourId, new Farm()));
-            Equal(new PersonId(1), ActionRules.Target(selfCall.Terms, selfCallSnapshot));
+            Equal(new PersonId(1), ActionRules.Target(selfCall.Terms, selfCallSnapshot)!.Value);
             Equal("InvalidCounterparty", ActionRules.Invalid(selfCall, selfCallSnapshot));
             Equal(0, callControl.Snapshot.Favours.Count);
             Equal(0, callControl.History.Length);
