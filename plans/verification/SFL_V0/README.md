@@ -105,7 +105,7 @@ Implementation may translate them into executable tests/harness code but may not
 - Final review: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md` — **PASS — MAY FREEZE UNCHANGED**.
 - All 176 status-bearing rows are byte-for-byte identical to reviewed candidate2.
 - Frozen v1 remains immutable historical evidence.
-- Implementation remains blocked pending reassessed inherited-verification adaptation + fresh independent approval.
+- Inherited-verification adaptation subsequently received independent approval; implementation release is recorded below.
 
 
 ## Reassessed inherited-verification adaptation candidates
@@ -117,5 +117,8 @@ Implementation may translate them into executable tests/harness code but may not
 - v2 candidate2: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate2` @ `68fddec788b5cf41db5934c8719a6fd1ce474d32`.
 - Candidate2 plan blob: `00c3e64a128fa00e91b99117e321a0e379dd61c5`.
 - Candidate2 changes no semantic mapping; it makes a critical-seam hidden/stale current-head/funding/dependency mutant mandatory in Adaptation B, so a generic unrelated hidden-field fault cannot satisfy the negative proof.
-- Fresh review task: `../../../tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md`.
-- No coding authorization exists until independent **PASS — ADAPTATION PLAN APPROVED** and explicit gate closure.
+- Final candidate2 review: `../../../research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md` — **PASS — ADAPTATION PLAN APPROVED**.
+- Approved exact ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`.
+- Approval/gate-closure record: `SLICE4_INHERITED_VERIFICATION_ADAPTATION_V2_APPROVAL_RECORD.md`.
+- Implementation release record: `SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`.
+- Bounded implementation task: `../../../tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` — **READY FOR DISPATCH**.
