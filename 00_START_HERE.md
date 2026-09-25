@@ -77,6 +77,8 @@ Active work:
   - candidate2 census: **96 = 82 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
   - inherited REQUIRED: **441 = 134 Slice 1 v2 + 46 Slice 2 + 96 Slice 3 + 165 Slice 4 v2**
   - fresh review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`
+  - review return: `review/slice5-acceptance-v1-candidate2-return`
+  - review status: **DISPATCHED / AWAITING RETURN**
   - candidate1/R2 remain immutable historical evidence
   - freeze/coding: **BLOCKED pending fresh whole-candidate PASS; no coding task**
 - Slice-1 retro-SID: **SEMANTIC GAP CLOSED / DEC-0015 ACCEPTED / SUCCESSOR ACCEPTANCE V2 FROZEN / CONFORMANCE PENDING**
