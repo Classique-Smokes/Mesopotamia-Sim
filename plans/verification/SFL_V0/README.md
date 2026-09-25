@@ -122,3 +122,16 @@ Implementation may translate them into executable tests/harness code but may not
 - Approval/gate-closure record: `SLICE4_INHERITED_VERIFICATION_ADAPTATION_V2_APPROVAL_RECORD.md`.
 - Implementation release record: `SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`.
 - Bounded implementation task: `../../../tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` — **READY FOR DISPATCH**.
+
+
+## Slice-5 acceptance candidate
+
+- MA reconciliation: `../../../research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md` — **NO DIRECTOR DECISION CURRENTLY REQUIRED / READY FOR ACCEPTANCE REVIEW**.
+- Candidate1: `SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE.md`, version `SFL-V0-S5-ACCEPTANCE-v1-candidate1`.
+- Immutable candidate1 ref: `sfl-v0-slice5-acceptance-v1-candidate1` @ `1dcfdac9a27679496b1484d5bf183a3f77ba9afc`.
+- Candidate1 blob: `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`.
+- Candidate1 census: **95 = 81 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**.
+- Exact inherited REQUIRED: **435 = 128 Slice 1 + 46 Slice 2 + 96 Slice 3 + 165 Slice 4**.
+- Fresh review task: `../../../tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`.
+- Candidate1 is not frozen and is not coding authority.
+- Final freeze/coding remains blocked until fresh review PASS and reconciliation of the outstanding Slice-1 retro-SID Pass-B consequence.

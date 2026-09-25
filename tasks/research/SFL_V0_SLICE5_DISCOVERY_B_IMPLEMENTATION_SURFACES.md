@@ -3,7 +3,9 @@
 **Task type:** fresh regular chat / clean context  
 **Role:** implementation archaeologist / authoritative-state mapper  
 **Authority:** advisory return only; do not modify production code  
-**Status:** ARCHITECT-DISPATCHED / READY
+**Status:** COMPLETE / RETURN PRESERVED  
+**Return:** `research/technical/SFL_V0_SLICE5_IMPLEMENTATION_SURFACE_MAP.md`  
+**Return head:** `22df93d168bfe9050664f64898b1d2b368cf7d1c`
 
 ## Purpose
 

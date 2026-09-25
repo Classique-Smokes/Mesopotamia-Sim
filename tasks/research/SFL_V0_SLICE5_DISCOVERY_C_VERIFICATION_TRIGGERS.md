@@ -3,7 +3,9 @@
 **Task type:** fresh regular chat / clean context  
 **Role:** verification authority mapper  
 **Authority:** advisory return only; do not edit frozen manifests  
-**Status:** ARCHITECT-DISPATCHED / READY
+**Status:** COMPLETE / RETURN PRESERVED  
+**Return:** `research/technical/SFL_V0_SLICE5_VERIFICATION_TRIGGER_MAP.md`  
+**Return head:** `ae60c2ac8644255f0e8ca847d5b5bc22ada6be63`
 
 ## Purpose
 

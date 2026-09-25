@@ -465,17 +465,20 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 - scope remains non-authoritative conceptual systematization only
 - no further conceptual-ingestion task is active
 
-## Active Slice-5 preimplementation discovery
+## Active Slice-5 acceptance planning
 
-- dispatch status: **ARCHITECT-DISPATCHED / READY**
-- canonical pre-discovery baseline: `26277ed211baaaa9a1dcfaebf98c4fd00a9b4181`
-- dispatch index: `tasks/research/SFL_V0_SLICE5_PARALLEL_DISCOVERY_DISPATCH.md`
-- A authority/gaps: `tasks/research/SFL_V0_SLICE5_DISCOVERY_A_AUTHORITY_GAPS.md` — **READY**
-- B implementation/state surfaces: `tasks/research/SFL_V0_SLICE5_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — **READY**
-- C verification/applicability: `tasks/research/SFL_V0_SLICE5_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — **READY**
-- expected MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
+- discovery A/B/C: **COMPLETE / PRESERVED**
+- MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
+- reconciliation verdict: **NO DIRECTOR DECISION CURRENTLY REQUIRED / READY FOR ACCEPTANCE REVIEW**
+- candidate1 manifest: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE.md`
+- candidate1 ref: `sfl-v0-slice5-acceptance-v1-candidate1` @ `1dcfdac9a27679496b1484d5bf183a3f77ba9afc`
+- candidate1 blob: `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`
+- candidate1 census: **95 = 81 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
+- inherited REQUIRED: **435 = 128 Slice 1 + 46 Slice 2 + 96 Slice 3 + 165 Slice 4**
+- fresh pre-code review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`
+- review status: **ARCHITECT-DISPATCHED / READY / NO REVIEWER ACTIVE YET**
 - coding status: **NOT AUTHORIZED**
-- no Slice-5 acceptance manifest exists yet
+- freeze status: **BLOCKED pending candidate review PASS + retro-SID consequence reconciliation**
 
 Parallel inherited-assurance thread:
 
@@ -488,11 +491,11 @@ Parallel inherited-assurance thread:
 
 ## Next
 
-1. Run Slice-5 discovery A/B/C independently from the exact dispatch baseline.
-2. Run retrospective Slice-1 SID Pass-B independently in parallel.
-3. Master Architect reconciles A/B/C plus any returned retro-SID consequence.
-4. Resolve any consequential semantic gap before drafting Slice-5 completion authority.
-5. Draft a Slice-5 acceptance/applicability candidate, fresh-review it, and freeze only on PASS.
-6. Only after frozen acceptance authority exists may a Slice-5 coding bārû packet be issued; that future packet must include the required Astra effort recommendation.
+1. Dispatch `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` to a fresh independent reviewer against exact candidate1.
+2. In parallel, complete the already-dispatched Slice-1 retro-SID Pass-B challenge.
+3. If candidate1 review BLOCKs, preserve candidate1 and repair/re-review.
+4. If candidate1 review PASSes, reconcile the retro-SID consequence before any freeze.
+5. Freeze Slice-5 acceptance only when candidate review is PASS and inherited authority is current.
+6. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
