@@ -88,3 +88,27 @@ An explicit Household proposal sets `Proposal.HouseholdContext = new(household, 
 Semantic ordering preserves bridge entry before its exit, accepted authority use before its paired destruction, and the accepted shared-grain support/expenditure priority over personal material actions, including repayment and called repayment. Other eligibility, knowledge, capacity and favour-slot gates still revalidate. Detached replay uses the same accepted envelopes and evaluator; causal normalization prevents allocation identity from manufacturing fallback. No new initiative starts after same-cycle appointment or reactivation.
 
 These grain stocks, reserve 2, provision commitments, fixed rank, private X and material priorities are a synthetic v0 grounding scaffold. They are not historical economic claims or a general property, treasury, accounting or payment architecture. The three-cycle reconsideration interval is the deliberately crude anti-repeated-solicitation proxy accepted by DEC-0014, not a psychological or historical model. Future resource and institutional redesign remains a separate accepted work boundary.
+# Exact checkpoint continuation (Slice 5)
+
+After a successful runtime cycle, call `simulation.CaptureCheckpoint()` to obtain
+UTF-8 JSON bytes. Restore with
+`Simulation.RestoreCheckpoint(bytes, expectedConfiguration)`. The caller owns
+storage. The configuration identity and the S2/S3/S4 rule identities must match;
+format migration is unsupported.
+
+Capture rejects cycle zero, unfinished/faulted cycles and verification challenge
+modes. Restore publishes the captured boundary immediately; the next RunCycle
+advances once. Owner-local transport includes every typed authority partition,
+all exact allocators, consumed proposal IDs, the input schedule and causal
+history. Restore assigns state directly and rebuilds published views without
+replaying events or acquiring initial facts.
+
+The original InitialWorld is retained for existing detached-projection bootstrap,
+the schedule and configuration. It never replaces restored current authority.
+DecisionHistory and KnowledgeOf retain observer continuity and do not select
+future behavior. CycleInput policies remain caller-supplied inputs.
+
+Checkpoint bytes are not required to be canonical. IDs and semantic event,
+evidence and provenance order are exact; JSON property and map enumeration are
+not semantic priority. Checkpoints are bounded transport, not editable scenario
+authoring, time travel, a generic workflow engine or a database.

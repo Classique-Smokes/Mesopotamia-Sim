@@ -99,7 +99,9 @@ public sealed partial class Simulation
     public ImmutableArray<ParticipantOutcome> KnowledgeOf(PersonId person) =>
         knowledge.TryGetValue(person, out var facts) ? facts.ToImmutableArray() : [];
 
-    public CycleResult RunCycle(CycleInput input)
+    public CycleResult RunCycle(CycleInput input) => RunCycle(input, null);
+
+    internal CycleResult RunCycle(CycleInput input, Action<string>? checkpointProbe)
     {
         ArgumentNullException.ThrowIfNull(input);
         if (faulted) throw new InvalidOperationException("A failed cycle cannot be resumed.");
@@ -224,6 +226,7 @@ public sealed partial class Simulation
             ObserveDowryNeeds(materialNeeds, decisionBaselines);
             HashSet<PersonId> moved = [];
             HashSet<ProposalId> resolutionFallbacks = ResolutionFallbacks([.. accepted.Select(a => a.Proposal)], decisionSnapshot, communicationPayloads);
+            checkpointProbe?.Invoke("Resolution");
             foreach (Proposal orderedProposal in OrderAccepted([.. accepted.Select(a => a.Proposal)]))
             {
                 var attempt = accepted.Single(a => a.Proposal.Id == orderedProposal.Id);
@@ -259,15 +262,13 @@ public sealed partial class Simulation
                 foreach (AttitudeContribution contribution in batch.Pending.Reverse()) reversed.Add(contribution);
                 batch = reversed;
             }
+            checkpointProbe?.Invoke("Reactions");
             if (Challenge != ReactionChallenge.SkipClosure) CloseAttitudes(batch);
             if (!batch.IsClosed) throw new InvalidOperationException("PendingAutomaticReactions");
             CloseHouseholds();
             ObserveSupportNeedTransitions(events[^1]);
             if (Challenge == ReactionChallenge.DuplicateCauses) CloseHouseholds();
             if (batch.DuplicateCount > 0) Record("DuplicateReactionRejected", null, [], [], [], FormattableString.Invariant($"Duplicates:{batch.DuplicateCount}"));
-            published = state.Snapshot(cycle);
-            publishedEpistemic = epistemic.Snapshot(cycle);
-            publishedHouseholds = households.Snapshot(cycle);
             bool deadlock = state.People.Count > 0 && state.People.Values.All(p => p.NeedsGrain && p.Grain == 0) &&
                 !FutureInputsResolveMaterialBlock();
             ImmutableArray<DecisionTrace> completedDecisions = decisions.Select(d => d with
@@ -279,6 +280,7 @@ public sealed partial class Simulation
                         ? HouseholdRulesVersion : Configuration.RulesVersion
             }).ToImmutableArray();
             decisionHistory.AddRange(completedDecisions);
+            RebuildPublishedState();
             return new(published, outcomes.ToImmutableArray(), events.Skip(start).ToImmutableArray(), deadlock) { Decisions = completedDecisions, Epistemic = publishedEpistemic, Households = publishedHouseholds };
         }
         catch

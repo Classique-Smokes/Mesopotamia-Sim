@@ -130,7 +130,7 @@ internal static class EpistemicRules
     }
 }
 
-internal sealed class EpistemicState
+internal sealed partial class EpistemicState
 {
     private readonly Dictionary<PersonId, List<KnownFact>> facts;
     private ImmutableArray<CandidateReferent> candidates;
@@ -168,7 +168,7 @@ internal sealed class EpistemicState
         {
             OwnStateFact f => facts.ContainsKey(f.Person.Id) && Enum.IsDefined(f.Person.Sex) && f.Person.Grain >= 0 && (!f.Person.NeedsGrain || f.Person.Grain == 0),
             ResidenceFact f => facts.ContainsKey(f.Person) && initial.Dwellings.Any(d => d.Id == f.Dwelling),
-            AttitudeFact f => f.Attitude.Id.Value > 0 && Pair(f.Attitude.From, f.Attitude.To) && f.Attitude.Value is >= -100 and <= 100,
+            AttitudeFact f => f.Attitude.Id.Value > 0 && facts.ContainsKey(f.Attitude.From) && facts.ContainsKey(f.Attitude.To) && f.Attitude.Value is >= -100 and <= 100,
             KinshipFact f => f.Kinship.Id.Value > 0 && Pair(f.Kinship.First, f.Kinship.Second) && Enum.IsDefined(f.Kinship.Kind),
             MarriageFact f => f.Marriage.Id.Value > 0 && Pair(f.Marriage.Groom, f.Marriage.Bride),
             DebtFact f => f.Debt.Id.Value > 0 && Pair(f.Debt.Creditor, f.Debt.Debtor) && f.Debt.Original > 0 && f.Debt.Remaining >= 0 && f.Debt.Remaining <= f.Debt.Original,

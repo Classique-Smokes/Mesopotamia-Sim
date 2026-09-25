@@ -43,10 +43,15 @@ jobs:
         run: |
           ./tests/Run-Slice1V2Mutants.ps1 -Dotnet (Get-Command dotnet).Source -Checkout "$env:RUNNER_TEMP/slice1-v2-mutants" -Evidence "$env:GITHUB_WORKSPACE/artifacts/acceptance/slice1-v2-mutants" -Revision HEAD
 
+      - name: Slice-5 executed continuation fault controls
+        shell: pwsh
+        run: |
+          ./tests/Run-Slice5Mutants.ps1 -Dotnet (Get-Command dotnet).Source -Checkout "$env:RUNNER_TEMP/slice5-mutants" -Evidence "$env:GITHUB_WORKSPACE/artifacts/acceptance/slice5-mutants" -Revision HEAD
+
       - name: Acceptance evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: sfl-slice1-slice2-slice3-slice4-acceptance-evidence
+          name: sfl-slices1-through5-acceptance-evidence
           path: artifacts/acceptance/
           if-no-files-found: warn

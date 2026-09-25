@@ -83,7 +83,7 @@ public sealed record HouseholdSnapshot(long Cycle,
     }
 }
 
-internal sealed class HouseholdState
+internal sealed partial class HouseholdState
 {
     internal Dictionary<HouseholdHeadRoleId, HouseholdHeadRole> HeadRoles { get; } = [];
     internal Dictionary<EventId, HeadTransition> HeadTransitions { get; } = [];

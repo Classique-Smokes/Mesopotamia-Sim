@@ -62,7 +62,7 @@ public sealed record WorldSnapshot(
         Favours.Values.Any(f => f.Debtor == debtor && f.Holder == holder && f.Outstanding);
 }
 
-internal sealed class WorldState
+internal sealed partial class WorldState
 {
     internal Dictionary<PersonId, Person> People { get; }
     internal Dictionary<DwellingId, Dwelling> Dwellings { get; }
