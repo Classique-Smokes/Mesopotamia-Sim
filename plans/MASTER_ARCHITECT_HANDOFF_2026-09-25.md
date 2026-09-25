@@ -377,3 +377,19 @@ No reconstruction of this retired chat should be necessary.
 **Director semantic decision pending:** none from Slice-5 discovery.  
 **Outstanding inherited assurance:** Slice-1 retro-SID Pass-B.  
 **Immediate successor responsibility:** reconcile the actual Slice-5 candidate1 review return, then honor the retro-SID freeze gate.
+
+
+## 13. Office hygiene completed at handoff
+
+The following obsolete historical Slice-2 acceptance draft PRs were closed so they no longer appear as live work:
+
+- PR #32
+- PR #34
+- PR #35
+- PR #36
+
+Their historical branches/artifacts remain available for provenance; they are not current authority.
+
+No implementation PR/task is active.
+
+The live work surface is the Slice-5 acceptance-review return branch plus the separate retro-SID return branch described above.
