@@ -526,14 +526,13 @@ Inherited-assurance thread:
 - promotion PR: #125 — **MERGED**
 - promotion merge: `ad87ec0bd04f689a60dc4d743a6c609e9645e3a7`
 - successor REQUIRED conformance: **134 / 134 satisfied**, with the independent review supplying `S1-GLOBAL-CONFORMANCE`
-- post-promotion CI: run `36132006829` / #330 — **IN PROGRESS**
-- remaining inherited gate: post-promotion canonical CI PASS
+- post-promotion CI: run `36132006829` / #330 — **PASS**
+- final completion record: `research/technical/IMP-0001/IMP-0001_SUCCESSOR_V2_DEC0015_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
+- Slice-1 successor-v2 conformance gate: **CLOSED / PASS**
 
 ## Next
 
-1. Confirm post-promotion canonical CI #330 passes on merge `ad87ec0bd04f689a60dc4d743a6c609e9645e3a7`.
-2. Record final Slice-1 successor-v2 conformance/promotion closure.
-3. Issue a corrected Slice-5 acceptance candidate reflecting frozen Slice-1 v2 authority and run fresh whole-candidate review.
+1. Issue a corrected Slice-5 acceptance candidate reflecting frozen Slice-1 v2 authority and run fresh whole-candidate review.
 4. Freeze Slice-5 acceptance only after those gates close.
 5. Evaluate any conditional inherited-verification adaptation trigger from the chosen Slice-5 design.
 6. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
