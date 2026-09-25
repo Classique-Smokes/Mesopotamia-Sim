@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 PRE-CODE GATES CLOSED / IMP-0004 READY FOR DISPATCH.**
+**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / IMP-0004 CANDIDATE-V1 FROZEN / FRESH INDEPENDENT CONFORMANCE READY.**
 
 Verified Slice-1 completion:
 
@@ -147,12 +147,15 @@ Slice-4 SID pilot status: **CLOSED / PASS AFTER DEC-0013**
 - `Consequential unresolved: 0`
 - `Accidental gaps outstanding: 0`
 - closure freshness: **CURRENT / CLOSED**
-- implementation status: **IMP-0004 IN PROGRESS / ESCALATION 01 CLOSED**
-- coding bārû branch: `implementation/imp-0004-slice4-household-head-collective-action`
-- observed implementation head at escalation closure: `1de66c3c02926e3c65818a083229dd421b60ca76`
-- escalation 01 closure: `research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01_CLOSURE.md`
-- DEC-0014 acceptance/SID freshness: **CURRENT / REVALIDATED — NO FRONTIER CHANGE**
-- Slice-4 implementation remains bounded by frozen v2 + approved adaptation authority + DEC-0014
+- implementation status: **COMPLETE CANDIDATE / FROZEN CANDIDATE-V1**
+- implementation branch/head: `implementation/imp-0004-slice4-household-head-collective-action` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`
+- immutable candidate ref: `imp-0004-slice4-conformance-candidate-v1`
+- candidate freeze record: `research/technical/IMP-0004/IMP-0004_CANDIDATE_V1_FREEZE_RECORD.md`
+- exact-head CI: `36094176584` — **PASS**
+- evidence artifact: `10846019591`, digest `sha256:22c05163d0f119c5ff04c5a1c3d86b1739bf56f15ed406ba8a7acec4706461f6`
+- fresh conformance task: `tasks/implementation/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md`
+- reviewer status: **ARCHITECT-DISPATCHED / READY / NO REVIEWER ACTIVE YET**
+- PR #109: **DRAFT / UNMERGED** pending **PASS — PROMOTE**
 
 Slice-4 successor acceptance v2:
 
@@ -455,11 +458,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Coding bārû retrieves canonical DEC-0014 + escalation-01 closure and continues IMP-0004 from its preserved implementation branch.
-2. In parallel, dispatch `tasks/research/CONCEPT_WAVE_E_ESSENCE_COVERAGE_AUDIT.md` for the final conceptual-library coverage audit.
-3. Coding bārû returns **COMPLETE CANDIDATE / BLOCKED / ESCALATED / INCOMPLETE**, never VERIFIED COMPLETE.
-4. On COMPLETE CANDIDATE, freeze an exact `imp-0004-slice4-conformance-candidate-vN` ref and exact-head CI/evidence identity.
-5. Commission a fresh independent post-implementation conformance review against frozen Slice-4 acceptance v2 + approved adaptation authority + DEC-0014.
-6. Only **PASS — PROMOTE** permits canonical implementation merge and final post-promotion CI/completion record.
+1. Hand `tasks/implementation/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md` to a fresh independent reviewer against immutable `imp-0004-slice4-conformance-candidate-v1`.
+2. Reviewer returns exactly **PASS — PROMOTE**, **BLOCK — IMPLEMENTATION / VERIFICATION DEFECT**, or **BLOCK — SEMANTIC ESCALATION**.
+3. If BLOCK, preserve candidate-v1 and derive a new bounded repair/candidate lineage; coding-bārû repair dispatch must include the required Astra effort recommendation.
+4. If **PASS — PROMOTE**, verify candidate/CI/PR no-drift and merge PR #109 onto canonical `main`.
+5. Run post-promotion canonical CI and write the final IMP-0004 completion/promotion record.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
