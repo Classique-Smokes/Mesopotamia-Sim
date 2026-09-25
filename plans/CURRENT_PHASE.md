@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 IMPLEMENTATION BOUNDARY FROZEN / DIRECTOR SEMANTIC BLOCK ACTIVE.**
+**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / SLICE 4 PRE-CODE GATES CLOSED / IMP-0004 READY FOR DISPATCH.**
 
 Verified Slice-1 completion:
 
@@ -162,7 +162,7 @@ Slice-4 successor acceptance v2:
 - frozen census: **176 = 165 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**
 - freeze record: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_V2_FREEZE_RECORD.md`
 - all 176 status-bearing rows are byte-for-byte identical to reviewed candidate2
-- coding status: **NOT AUTHORIZED** pending inherited-verification adaptation reassessment + fresh independent approval
+- pre-code status: **SUCCESSOR ACCEPTANCE FROZEN / ADAPTATION GATE CLOSED**; implementation release recorded separately below
 
 Private-resource supplementation semantic patch:
 
@@ -175,7 +175,7 @@ Private-resource supplementation semantic patch:
 - same head grain cannot be double-counted through private X and persistent commitment backing
 - semantic promotion into SPEC + canonical verification: **COMPLETE**
 - frozen Slice-4 acceptance v1 remains immutable but **insufficient for implementation authorization**
-- next local gate: successor Slice-4 acceptance candidate/version + fresh whole-candidate review
+- successor-acceptance gate: **CLOSED / PASS**; current implementation authority is frozen v2
 
 Slice-4 implementation release:
 
