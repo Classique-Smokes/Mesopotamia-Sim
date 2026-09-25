@@ -182,20 +182,22 @@ Director-blocked Slice-4 implementation boundary:
 - immutable boundary ref: `sfl-v0-slice4-implementation-boundary-blocked-v1`
 - exact boundary commit: `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
 - block record: `plans/verification/SFL_V0/SLICE4_BLOCKED_IMPLEMENTATION_BOUNDARY_RECORD.md`
-- cause: local semantic gap resolved/promoted by DEC-0011; implementation remains blocked pending SID-ASSURANCE-v1 pilot, successor Slice-4 acceptance, and inherited-verification adaptation closure
-- current Slice-4 acceptance v1 remains immutable historical evidence but is **operationally blocked from authorizing implementation**
+- cause: SID-ASSURANCE-v1 is closed and successor Slice-4 v2 acceptance is frozen; implementation remains blocked solely pending inherited-verification adaptation approval/closure
+- frozen Slice-4 v1 remains immutable historical evidence; frozen v2 is current completion authority but does **not** authorize implementation until adaptation closure
 - coding bārû dispatch: **FORBIDDEN while block is active**
 
 Slice-4 inherited verification adaptation:
 
-- candidate ref: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1`
-- exact plan commit: `51981cb0ad993fe4529341f2862f50d90d72ec26`
-- plan blob: `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51`
+- historical candidate1: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` @ `51981cb0ad993fe4529341f2862f50d90d72ec26`, blob `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51` — **STALE / HISTORICAL**
+- reassessment: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REASSESSMENT.md`
+- reassessed candidate: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1`
+- exact candidate commit: `4f12c30b0f16531fd1e82ac08c2b71e53934ba28`
+- candidate plan blob: `43e27cb6fed1086ffcc687002f7fffd494b528b5`
 - plan path: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_PLAN.md`
-- independent review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md`
-- review status: **SUSPENDED AS FORWARD GATE** pending successor Slice-4 acceptance v2 review/freeze.
-- after successor freeze, reassess/update the adaptation candidate against DEC-0013 + successor acceptance; then run a fresh independent adaptation review against that exact reassessed candidate.
-- the old review task must **NOT** be dispatched unchanged merely because it was previously commissioned.
+- fresh review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md`
+- review status: **READY FOR DISPATCH / NO REVIEWER ACTIVE YET**
+- key reassessment repair: ordinary endogenous commitments retain target-response provenance; accepted head self-commitment uses explicit dual-capacity private-resource consent **without** a P->P response; DEC-0011 private X remains transaction funding provenance and never becomes commitment acquisition
+- coding status: **FORBIDDEN** until verdict `PASS — ADAPTATION PLAN APPROVED` and explicit adaptation-gate closure.
 
 Slice-4 acceptance candidate1:
 
@@ -422,11 +424,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Reassess the inherited-verification adaptation plan against accepted DEC-0011/DEC-0013 + frozen `SFL-V0-S4-ACCEPTANCE-v2`.
-2. Preserve the old adaptation candidate/ref as historical; do not dispatch its stale review packet unchanged.
-3. Freeze an exact reassessed adaptation candidate and commission a fresh independent losslessness review.
-4. If **PASS — ADAPTATION PLAN APPROVED**, explicitly close the adaptation gate.
-5. Close the Director implementation BLOCK only after adaptation closure is recorded.
-6. Only then issue the Slice-4 implementation packet / coding bārû commission.
+1. Hand `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md` to a fresh independent reviewer against immutable ref `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1`.
+2. If BLOCK, preserve candidate1 and repair only the identified losslessness/enforcement defect or semantic escalation.
+3. If **PASS — ADAPTATION PLAN APPROVED**, preserve the report and explicitly record the inherited-verification adaptation gate closed.
+4. Close the Director Slice-4 implementation BLOCK only after that gate closure record is committed.
+5. Then derive and issue the bounded Slice-4 implementation packet / coding bārû commission from frozen acceptance v2 + approved adaptation authority.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
