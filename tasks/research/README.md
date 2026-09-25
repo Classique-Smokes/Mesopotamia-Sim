@@ -4,15 +4,18 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-## Slice-5 preimplementation discovery — architect-dispatched
+## Slice-5 acceptance planning
 
-Dispatch index: `SFL_V0_SLICE5_PARALLEL_DISCOVERY_DISPATCH.md`  
-Canonical starting state: Slices 1–4 **VERIFIED COMPLETE**.
+Discovery dispatch: `SFL_V0_SLICE5_PARALLEL_DISCOVERY_DISPATCH.md` — **COMPLETE / RECONCILED**.
 
-- `SFL_V0_SLICE5_DISCOVERY_A_AUTHORITY_GAPS.md` — **ARCHITECT-DISPATCHED / READY**. Accepted checkpoint/delayed-process authority, stable-boundary meaning, exact-continuation semantics, Director-decision map.
-- `SFL_V0_SLICE5_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — **ARCHITECT-DISPATCHED / READY**. Exhaustive future-causal state inventory, ID/order/config state, scheduled inputs, caches/projections, architecture pressure.
-- `SFL_V0_SLICE5_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — **ARCHITECT-DISPATCHED / READY**. Fired deferred checkpoint rows, omission mutants, exact suffix, inherited regressions, acceptance-readiness.
-- `SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md` — **ARCHITECT-DISPATCHED / READY IN PARALLEL** from immutable historical dispatch ref. It does not block Slice-5 discovery; any real inherited semantic repair must be reconciled before Slice-5 acceptance freeze/coding.
+- A authority/gaps — **COMPLETE**. Return: `../../research/technical/SFL_V0_SLICE5_AUTHORITY_AND_GAP_INVENTORY.md`.
+- B implementation/state surfaces — **COMPLETE**. Return: `../../research/technical/SFL_V0_SLICE5_IMPLEMENTATION_SURFACE_MAP.md`.
+- C verification/applicability — **COMPLETE**. Return: `../../research/technical/SFL_V0_SLICE5_VERIFICATION_TRIGGER_MAP.md`.
+- MA reconciliation: `../../research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md` — **NO DIRECTOR DECISION CURRENTLY REQUIRED / READY FOR ACCEPTANCE REVIEW**.
+- Candidate1: `../verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE.md` / `sfl-v0-slice5-acceptance-v1-candidate1` @ `1dcfdac9a27679496b1484d5bf183a3f77ba9afc`, blob `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`.
+- Candidate1 census: **95 = 81 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**; inherited REQUIRED **435 = 128 + 46 + 96 + 165**.
+- Fresh review: `SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` — **ARCHITECT-DISPATCHED / READY / NO REVIEWER ACTIVE YET**.
+- Slice-1 retro-SID Pass-B remains **ARCHITECT-DISPATCHED / READY IN PARALLEL** and gates final Slice-5 freeze/coding if its material consequence remains unresolved.
 
 No Slice-5 coding bārû is authorized.
 
@@ -40,7 +43,7 @@ This wave is **parallel support / non-blocking** for IMP-0004.
 
 - `TRES-0011_V0_RESOURCE_SCAFFOLD_WAVE_DISPATCH.md` — **COMPLETE / RETURNS PRESERVED / RECONCILED**. MA synthesis: `../../research/technical/TRES-0011/TRES-0011_MASTER_ARCHITECT_RECONCILIATION.md` — **PROCEED WITH EXPLICIT V0 / REDESIGN GUARDRAILS**. Post-wave semantic disposition: `../../decisions/DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md` — **ACCEPTED / PROMOTED**. SID closure: `../../research/technical/SFL_V0_SLICE4_SID_CLOSURE_REVALIDATION.md` — **CLOSED / PASS**.
 
-- Slice-1 retro-SID Pass A — **COMPLETE / FROZEN** at `sfl-v0-slice1-retro-sid-passa-v1` @ `b6d0321ffa95053aba295cb8f4b5f8338c61c3cb`. Pass-B task: `SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md` — **READY FOR DISPATCH** over the reconciled alias frontier.
+- Slice-1 retro-SID Pass A — **COMPLETE / FROZEN** at `sfl-v0-slice1-retro-sid-passa-v1` @ `b6d0321ffa95053aba295cb8f4b5f8338c61c3cb`. Pass-B task: `SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md` — **ARCHITECT-DISPATCHED / READY** over the reconciled alias frontier.
 
 - Slice-4 SID Pass B — **COMPLETE / RECONCILED**. Frozen return: `sfl-v0-slice4-sid-passb-v1` @ `77f0f7c64d3ac85f933e6f7c39ee2cd70cf5d7ec`; reconciliation: `../../research/technical/SFL_V0_SLICE4_SID_PASSB_RECONCILIATION.md`; DEC-0013 is accepted and closure revalidation reports **0 consequential unresolved / 0 accidental gaps**.
 
