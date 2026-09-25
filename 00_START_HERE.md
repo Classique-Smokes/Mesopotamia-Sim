@@ -93,8 +93,9 @@ Active work:
   - final-head CI: `36124403519` — **PASS**
   - independent review: `research/technical/IMP-0001/IMP-0001_SUCCESSOR_V2_DEC0015_INDEPENDENT_CONFORMANCE_REVIEW_V1.md` — **PASS — PROMOTE**
   - promotion merge: `ad87ec0bd04f689a60dc4d743a6c609e9645e3a7`
-  - post-promotion CI: `36132006829` — **IN PROGRESS**
-  - implementation status: **PROMOTED / POST-PROMOTION CI PENDING**
+  - post-promotion CI: `36132006829` — **PASS**
+  - final record: `research/technical/IMP-0001/IMP-0001_SUCCESSOR_V2_DEC0015_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
+  - implementation status: **VERIFIED CONFORMANT / PROMOTED**
 
 Conceptual archive systematization: **COMPLETE / PASS**
 - ingestion register: `research/conceptual/CONCEPTUAL_INGESTION_REGISTER.md`
