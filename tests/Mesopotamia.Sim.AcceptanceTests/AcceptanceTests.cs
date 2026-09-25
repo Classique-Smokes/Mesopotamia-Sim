@@ -66,7 +66,7 @@ public sealed class AcceptanceTests
         });
         bool coverage = rows.Where(r => r.Classification == "REQUIRED" && r.Id is not ("S1-GLOBAL-REQUIRED-COVERAGE" or "S1-GLOBAL-CONFORMANCE"))
             .All(r => results.TryGetValue(r.Id, out var result) && result.Passed && result.References.Length > 0);
-        results["S1-GLOBAL-REQUIRED-COVERAGE"] = (coverage, ["All 167 rows individually emitted; 127 coder-owned REQUIRED must pass; REQUIRED external conformance explicitly awaiting review"]);
+        results["S1-GLOBAL-REQUIRED-COVERAGE"] = (coverage, ["All 173 rows individually emitted; 133 coder-owned REQUIRED must pass; REQUIRED external conformance explicitly awaiting review"]);
         AcceptanceCatalog.WriteSupplement("cases", caseEvidence);
         AcceptanceCatalog.WriteSupplement("fixture-audit", suite.FixtureEvidence);
         AcceptanceCatalog.WriteSupplement("fault-controls", new
@@ -88,6 +88,6 @@ public sealed class AcceptanceTests
         Assert.IsEmpty(failures, string.Join("\n", failures));
         Assert.IsTrue(independent, "Independent checker imported production assertion-target logic.");
         Assert.IsTrue(coverage, "A coder-owned REQUIRED row is missing, failed, or unexecuted.");
-        Assert.AreEqual(128, rows.Count(r => r.Classification == "REQUIRED"));
+        Assert.AreEqual(134, rows.Count(r => r.Classification == "REQUIRED"));
     }
 }
