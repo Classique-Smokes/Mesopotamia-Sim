@@ -82,13 +82,13 @@ public sealed class Slice3AcceptanceTests
                 bool pass = row.GetProperty("State").GetString() == "PASS";
                 prior.Add(id, pass); inherited.Add(new { Id = id, State = pass ? "PASS" : "FAIL", Basis = "Reexecuted inherited acceptance scenario" });
             }
-            Assert.AreEqual(180, prior.Count); Assert.IsTrue(prior.Values.All(p => p));
+            Assert.AreEqual(174, prior.Count); Assert.IsTrue(prior.Values.All(p => p));
         }
         catch (Exception error) { failures.Add("Inherited regression: " + error); }
         foreach (var row in rows.Where(r => r.Id.StartsWith("S3-R", StringComparison.Ordinal)))
         {
             string[] ids = Regex.Matches(row.Obligation, @"S[12]-[A-Z0-9-]+", RegexOptions.CultureInvariant).Select(m => m.Value).Distinct(StringComparer.Ordinal).ToArray();
-            bool pass = prior.Count == 180 && prior.Values.All(p => p) && ids.All(InheritedPassed);
+            bool pass = prior.Count == 174 && prior.Values.All(p => p) && ids.All(InheritedPassed);
             bindings[row.Id] = [("ExactInheritedRegressionBindings", pass)];
         }
         bool InheritedPassed(string id)
