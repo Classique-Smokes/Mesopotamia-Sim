@@ -21,4 +21,6 @@ No implementation task is waiting for initial dispatch.
 
 Implementation agents must read the task packet plus its listed authoritative inputs. Completion requires executable verification evidence.
 
+Every coding-bārû dispatch — initial task, repair, continuation, or post-escalation resumption — must state a recommended implementation effort. Unless the dispatch explicitly names another implementation agent, the recommendation is made assuming **Astra**.
+
 When a task is verified complete, update this index and the current-phase/navigation surfaces as appropriate.
