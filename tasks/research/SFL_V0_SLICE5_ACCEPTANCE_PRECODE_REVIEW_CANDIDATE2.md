@@ -1,6 +1,6 @@
 # SFL v0 Slice 5 — Acceptance Candidate2 Fresh Whole-Candidate Pre-Code Review
 
-**Status:** ARCHITECT-DISPATCH READY / NO REVIEWER ACTIVE YET  
+**Status:** ARCHITECT-DISPATCHED / NO REVIEWER ACTIVE YET  
 **Review type:** fresh independent whole-candidate pre-code acceptance review  
 **Authority:** advisory PASS/BLOCK review only; do not edit accepted semantics, frozen lower-slice authority, candidate2, verification authority, or production code
 
