@@ -52,18 +52,17 @@ Active work:
   - frozen blob: `b0bc79e46f82630ab78cd2f0d0414b748212a411`
   - freeze record: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_V2_FREEZE_RECORD.md`
   - final review: `research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md` — **PASS — MAY FREEZE UNCHANGED**
-  - next gate: inherited-verification adaptation reassessment + fresh independent review
-- Slice-4 implementation boundary: **DIRECTOR BLOCK STILL ACTIVE**
-  - immutable original boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
-  - current remaining gates: successor acceptance v2 PASS/freeze, then inherited-verification adaptation reassessment + fresh independent review
-- Slice-4 inherited verification adaptation: **CANDIDATE2 FRESH REVIEW READY**
-  - candidate1 review: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md` — **BLOCK — LOSSLESSNESS / ENFORCEMENT DEFECT**
-  - candidate2 ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate2` @ `68fddec788b5cf41db5934c8719a6fd1ce474d32`
-  - candidate2 plan blob: `00c3e64a128fa00e91b99117e321a0e379dd61c5`
-  - reassessment: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REASSESSMENT.md`
-  - review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md`
-  - reviewer status: **NO REVIEWER ACTIVE YET**
-- Slice-4 implementation: **NOT AUTHORIZED**. No implementation packet or coding bārû may proceed until adaptation PASS + explicit gate closure.
+  - successor acceptance gate: **CLOSED / PASS**
+- Slice-4 inherited verification adaptation: **APPROVED / GATE CLOSED**
+  - approved ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`
+  - exact plan commit/blob: `68fddec788b5cf41db5934c8719a6fd1ce474d32` / `00c3e64a128fa00e91b99117e321a0e379dd61c5`
+  - final review: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md` — **PASS — ADAPTATION PLAN APPROVED**
+  - approval record: `plans/verification/SFL_V0/SLICE4_INHERITED_VERIFICATION_ADAPTATION_V2_APPROVAL_RECORD.md`
+- Slice-4 implementation boundary: **RELEASED FOR BOUNDED IMPLEMENTATION**
+  - historical blocked boundary remains immutable: `sfl-v0-slice4-implementation-boundary-blocked-v1`
+  - release record: `plans/verification/SFL_V0/SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`
+- IMP-0004: **READY FOR DISPATCH / NO CODING BĀRÛ ACTIVE YET**
+  - task: `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md`
 - checkpoint/restore remains Slice 5.
 
 Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
