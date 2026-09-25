@@ -47,11 +47,13 @@ Active work:
 - Frozen Slice-4 v1 acceptance: **IMMUTABLE HISTORICAL EVIDENCE**
   - manifest/ref: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST.md` / `sfl-v0-slice4-acceptance-v1`
   - frozen manifest blob: `7edff7a0507d68037979b3b5e458864f1f8d6518`
-- Successor Slice-4 acceptance v2 candidate: **FRESH REVIEW READY**
-  - candidate: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md`
-  - ref: `sfl-v0-slice4-acceptance-v2-candidate1` @ `473e521e1d64b3e001c386bf186eafba71c20f5f`
-  - blob: `67008d03a943e6cd6a9a9e269be7c6efeefc229b`
-  - review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`
+- Successor Slice-4 acceptance v2: **CANDIDATE2 FRESH REVIEW READY**
+  - candidate1 review: `research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**
+  - candidate2: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md`
+  - ref: `sfl-v0-slice4-acceptance-v2-candidate2` @ `f14868c7382f2d132ad6636851bd621613785018`
+  - blob: `ea5eb3b3a46f20a53a6e10131524d0e6c12b313d`
+  - review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md`
+  - reviewer status: **NO REVIEWER ACTIVE YET**
 - Slice-4 implementation boundary: **DIRECTOR BLOCK STILL ACTIVE**
   - immutable original boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
   - current remaining gates: successor acceptance v2 PASS/freeze, then inherited-verification adaptation reassessment + fresh independent review
