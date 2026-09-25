@@ -6,7 +6,7 @@
 **Source baseline:** `conceptual-archive-source-2026-09-24-v1` @ `76508f1f766451bdd5ea1a35a16c37adb0dfd682`  
 **Exact Task-D integration head reviewed:** `13143137a7f71956807356fbc9e35f05082ddf3d`  
 **Review branch:** `review/concept-wave-e-coverage-audit-return`  
-**Final integration merge SHA:** `PENDING_FINAL_PR_MERGE`
+**Final integration merge SHA:** `03bd1a4566de99d77b30fee0ae21ef4fc796ba00`
 
 ## Final verdict
 
