@@ -49,8 +49,8 @@ public sealed class Slice4AcceptanceTests
         using JsonDocument inherited = JsonDocument.Parse(File.ReadAllText(Path.Combine(AcceptanceCatalog.Root, "artifacts/acceptance/slice3-results.json")));
         var prior = inherited.RootElement.GetProperty("Inherited").EnumerateArray().Select(e => e.Clone())
             .Concat(inherited.RootElement.GetProperty("Rows").EnumerateArray().Where(e => e.GetProperty("Classification").GetString() == "REQUIRED").Select(e => e.Clone())).ToArray();
-        inheritedPass &= prior.Length == 270 && prior.All(e => e.GetProperty("State").GetString() == "PASS");
-        foreach (var row in rows.Where(r => r.Id.StartsWith("S4-R", StringComparison.Ordinal))) Bind(row.Id, "Exact270InheritedRequired", inheritedPass);
+        inheritedPass &= prior.Length == 276 && prior.All(e => e.GetProperty("State").GetString() == "PASS");
+        foreach (var row in rows.Where(r => r.Id.StartsWith("S4-R", StringComparison.Ordinal))) Bind(row.Id, "Exact276InheritedRequired", inheritedPass);
         BindCode("163", "Frozen manifests and exact inherited census", inheritedPass);
         BindCode("174", "Approved immutable adaptation-plan blob verified before scenario execution", true);
         BindCode("175", "Immutable manifest blob and classification census", true);
