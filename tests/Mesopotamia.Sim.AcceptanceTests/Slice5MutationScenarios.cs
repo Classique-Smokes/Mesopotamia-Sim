@@ -80,7 +80,7 @@ internal sealed partial class Slice5Scenarios
             [CycleInput.Empty, CycleInput.Empty], (a, b) => Slice5Oracle.Same(a.History.Where(e => e.Kind == "AttitudeDecay").ToArray(),
                 b.History.Where(e => e.Kind == "AttitudeDecay").ToArray(), "diagonal decay history"));
         Simulation forgot = Simulation.RestoreCheckpoint(CheckpointCodec.Encode(c with { UsedProposals = [.. c.UsedProposals.Where(p => p.Value != 10)] }), sim.Configuration);
-        Assert.ThrowsExactly<ArgumentException>(() => sim.RunCycle(new([Proposal(10, 1, new Farm())])));
+        Assert.ThrowsExactly<ArgumentException>(() => sim.RunCycle(new([Proposal(10, 1, new OfferGift(P(1), 1))])));
         Assert.AreEqual(OutcomeKind.InvalidTerms, forgot.RunCycle(new([Proposal(10, 1, new OfferGift(P(1), 1))])).Outcomes.Single().Kind);
         Mutations.Add(new { Name = "omit-used-proposal", Classification = "semantic-mismatch", Continuable = true, IntendedAssertion = "duplicate proposal rejected by uninterrupted control, accepted by mutant" });
 
