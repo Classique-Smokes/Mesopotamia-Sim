@@ -76,17 +76,19 @@ Active work:
   - R2 review: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md` — **PASS — MAY FREEZE UNCHANGED**
   - R2 review blob: `828b75b53e7b555f668eff61b20b590f796c7ce6`
   - freeze/coding: **BLOCKED pending successor Slice-1 acceptance/conformance + corrected Slice-5 candidate/review; no coding task**
-- Slice-1 retro-SID: **SEMANTIC GAP CLOSED / DEC-0015 ACCEPTED / SUCCESSOR ACCEPTANCE V2 CANDIDATE1 REVIEW READY**
+- Slice-1 retro-SID: **SEMANTIC GAP CLOSED / DEC-0015 ACCEPTED / SUCCESSOR ACCEPTANCE V2 FROZEN / CONFORMANCE PENDING**
   - task: `tasks/research/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
   - preserved return: `research/technical/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
   - MA reconciliation: `research/technical/SID_RETRO_SLICE1_PASSB_RECONCILIATION.md`
   - accepted decision: `decisions/DEC-0015_RELATION_DIAGONAL_ADMISSIBILITY_AND_SELF_ALIAS_SEMANTICS.md`
   - promotion audit: `research/technical/DEC-0015_PROMOTION_RECONCILIATION.md`
   - closure: `research/technical/SID_RETRO_SLICE1_CLOSURE_REVALIDATION.md` — **0 consequential semantic unresolved**
-  - successor candidate: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md` / `sfl-v0-slice1-acceptance-v2-candidate1`
-  - candidate census: **173 = 134 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED**
-  - review task: `tasks/research/SFL_V0_SLICE1_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`
-  - freeze status: **BLOCKED pending fresh whole-candidate PASS**
+  - frozen successor: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST_V2.md` / `sfl-v0-slice1-acceptance-v2`
+  - freeze commit/blob: `bf77bb38a8a7bc964159188b7359cb8e9af2b483` / `174ccbae57a64f06bd88de233b11a011b4a2b115`
+  - fresh review: `research/technical/SFL_V0_SLICE1_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **PASS — MAY FREEZE UNCHANGED**
+  - frozen census: **173 = 134 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED**
+  - freeze record: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_V2_FREEZE_RECORD.md`
+  - current implementation conformance: **PENDING**
 
 Conceptual archive systematization: **COMPLETE / PASS**
 - ingestion register: `research/conceptual/CONCEPTUAL_INGESTION_REGISTER.md`
