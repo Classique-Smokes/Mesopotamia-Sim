@@ -17,7 +17,7 @@
 
 The first whole-candidate review is preserved at:
 
-`research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md`
+`research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`
 
 Its verdict was **BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**, but the report found no Slice-5 candidate wording or semantic defect. The sole failing gate was inherited frozen-authority identity:
 
@@ -302,7 +302,7 @@ State the exact missing decision; do not choose it.
 
 Create exactly:
 
-`research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`
+`research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md`
 
 on:
 
