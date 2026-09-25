@@ -469,8 +469,8 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 - current handoff record: `plans/MASTER_ARCHITECT_HANDOFF_2026-09-25.md`
 - outgoing chat/thread: **RETIRED AFTER HANDOFF**
-- incoming Master Architect owns reconciliation of the actual Slice-5 acceptance candidate1 review return
-- candidate/return refs remain untouched
+- successor Master Architect has reconciled the first Slice-5 acceptance candidate1 review return
+- first return branch remains untouched as evidence; candidate1 remains immutable
 - no Slice-5 coding bārû is authorized
 - retrospective Slice-1 SID Pass-B remains a separate freeze gate as documented in the handoff
 
@@ -484,10 +484,15 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 - candidate1 blob: `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`
 - candidate1 census: **95 = 81 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
 - inherited REQUIRED: **435 = 128 Slice 1 + 46 Slice 2 + 96 Slice 3 + 165 Slice 4**
-- fresh pre-code review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`
-- review status: **ARCHITECT-DISPATCHED / READY / NO REVIEWER ACTIVE YET**
+- first pre-code review: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` — **BLOCK**, solely inherited Slice-4-v2 frozen-ref identity
+- first review preserved blob: `690d0f9a4e7e8764d68169fd5870a8f6b7b5668a`
+- block reconciliation: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_CANDIDATE1_BLOCK_RECONCILIATION.md`
+- repaired frozen ref: `sfl-v0-slice4-acceptance-v2` -> `66fe54c385f42eeb01308f19b63fff7c670b9bbe`
+- R2 whole-candidate review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md`
+- R2 return branch: `review/slice5-acceptance-v1-candidate1-r2-return`
+- review status: **R2 ARCHITECT-DISPATCHED / NO REVIEWER ACTIVE YET**
 - coding status: **NOT AUTHORIZED**
-- freeze status: **BLOCKED pending candidate review PASS + retro-SID consequence reconciliation**
+- freeze status: **BLOCKED pending R2 PASS + retro-SID consequence reconciliation**
 
 Parallel inherited-assurance thread:
 
@@ -500,11 +505,11 @@ Parallel inherited-assurance thread:
 
 ## Next
 
-1. Dispatch `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` to a fresh independent reviewer against exact candidate1.
+1. Await fresh R2 whole-candidate review return on `review/slice5-acceptance-v1-candidate1-r2-return`.
 2. In parallel, complete the already-dispatched Slice-1 retro-SID Pass-B challenge.
-3. If candidate1 review BLOCKs, preserve candidate1 and repair/re-review.
-4. If candidate1 review PASSes, reconcile the retro-SID consequence before any freeze.
-5. Freeze Slice-5 acceptance only when candidate review is PASS and inherited authority is current.
+3. If R2 BLOCKs, preserve candidate1 and reconcile the exact new defect set.
+4. If R2 PASSes, reconcile the retro-SID consequence before any freeze.
+5. Freeze Slice-5 acceptance only when R2 is PASS and inherited authority is current.
 6. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
