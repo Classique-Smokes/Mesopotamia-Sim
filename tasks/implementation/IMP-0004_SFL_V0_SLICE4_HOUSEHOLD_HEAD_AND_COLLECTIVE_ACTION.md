@@ -2,7 +2,7 @@
 
 **Task ID:** IMP-0004  
 **Commissioned by:** Master Architect  
-**Status:** COMPLETE CANDIDATE / FROZEN AS CONFORMANCE CANDIDATE V1 / INDEPENDENT REVIEW REQUIRED  
+**Status:** VERIFIED COMPLETE / PROMOTED  
 **Context mode:** CODING-PRIEST / PROJECT-CONTEXT — repository authority controls  
 **Implementation agent:** Astra  
 **Recommended effort for DEC-0014 closure continuation:** **HIGH**  
@@ -14,7 +14,7 @@
 
 ## Active implementation status
 
-The coding bārû has returned **COMPLETE CANDIDATE**. Implementation coding is paused at exact frozen candidate-v1 pending fresh independent conformance.
+The coding bārû returned **COMPLETE CANDIDATE** at immutable candidate-v1. Fresh independent whole-candidate conformance returned **PASS — PROMOTE**. The exact reviewed candidate was promoted through PR #109 at `c72ae67dc76ac091331fcd5494c6657eec57f703`, and post-promotion canonical CI `36098636634` passed.
 
 Implementation escalation 01 identified an under-specified reconsideration semantic and correctly stopped.
 
@@ -26,11 +26,11 @@ That escalation is now closed by:
 
 DEC-0014 closure was implemented and the continuation completed to candidate-v1.
 
-**Post-candidate state:** do not continue coding or alter candidate-v1 during conformance review. Any repair after a BLOCK must receive a new coding-bārû continuation/repair dispatch with a fresh Astra effort recommendation under the canonical implementation-task rule.
+Final record: `research/technical/IMP-0004/IMP-0004_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`.
 
-Fresh review packet: `tasks/implementation/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md`.
+Fresh review: `research/technical/IMP-0004/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1.md` — **PASS — PROMOTE**.
 
-A new consequential ambiguity discovered by the reviewer remains a semantic escalation rather than review/implementation discretion.
+IMP-0004 is closed. Further work belongs to later slices or explicitly commissioned repairs; Slice-4 completion does not authorize silent Slice-5 implementation.
 
 ## Dispatch gate
 

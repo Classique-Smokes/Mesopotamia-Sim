@@ -2,10 +2,10 @@
 
 **Review type:** fresh regular chat / clean-context exact-candidate whole-conformance review  
 **Authority:** read-only PASS/BLOCK conformance judgment  
-**Status:** ARCHITECT-DISPATCHED / READY / NO REVIEWER ACTIVE YET  
+**Status:** COMPLETE / PASS — PROMOTE  
 **Implementation candidate ref:** `imp-0004-slice4-conformance-candidate-v1`  
 **Exact candidate SHA:** `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`  
-**Implementation PR:** #109 — draft / must remain unmerged during review  
+**Implementation PR:** #109 — **PROMOTED after PASS** at `c72ae67dc76ac091331fcd5494c6657eec57f703`  
 **Frozen Slice-4 authority:** `SFL-V0-S4-ACCEPTANCE-v2` / `sfl-v0-slice4-acceptance-v2`  
 **Frozen manifest blob:** `b0bc79e46f82630ab78cd2f0d0414b748212a411`  
 **Approved inherited-adaptation ref:** `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`  
@@ -14,7 +14,9 @@
 **Evidence artifact:** **10846019591**, digest `sha256:22c05163d0f119c5ff04c5a1c3d86b1739bf56f15ed406ba8a7acec4706461f6`  
 **Freeze record:** `research/technical/IMP-0004/IMP-0004_CANDIDATE_V1_FREEZE_RECORD.md`  
 **Required return branch:** `review/imp-0004-conformance-v1-independent-return`  
-**Required return path:** `research/technical/IMP-0004/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1.md`
+**Required return path:** `research/technical/IMP-0004/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1.md`  
+**Return commit:** `490d4a3be1895f9a3ba2a436718a1e3c41388828`  
+**Verdict:** **PASS — PROMOTE**
 
 ## 1. Purpose
 
