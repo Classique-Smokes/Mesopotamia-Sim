@@ -504,12 +504,18 @@ Inherited-assurance thread:
 - Project Director decision: `DEC-0015` — **ACCEPTED**
 - promotion audit: `research/technical/DEC-0015_PROMOTION_RECONCILIATION.md` — **PASS**
 - semantic closure: `research/technical/SID_RETRO_SLICE1_CLOSURE_REVALIDATION.md` — **CLOSED / PASS**
-- remaining inherited gate: successor Slice-1 acceptance + current implementation conformance
+- successor Slice-1 acceptance candidate1: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md`
+- candidate ref: `sfl-v0-slice1-acceptance-v2-candidate1` @ `8ba59585d1a97f7a55968d6980c9110b5af33c7f`
+- candidate blob: `de06f0c8523a49b0e248c5012015622936808eaf`
+- candidate census: **173 = 134 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED**
+- frozen-v1 rows preserved byte-for-byte: **167 / 167**
+- fresh review task: `tasks/research/SFL_V0_SLICE1_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`
+- remaining inherited gate: fresh v2 acceptance PASS/freeze + current implementation conformance
 
 ## Next
 
-1. Create/review/freeze successor Slice-1 acceptance for DEC-0015 without rewriting frozen v1.
-2. Reconcile current implementation conformance to the successor Slice-1 authority.
+1. Run fresh whole-candidate review of exact Slice-1 successor v2 candidate1; freeze only on PASS.
+2. Reconcile current implementation conformance to the frozen successor Slice-1 authority.
 3. Issue a corrected Slice-5 acceptance candidate reflecting the new inherited authority and run fresh whole-candidate review.
 4. Freeze Slice-5 acceptance only after those gates close.
 5. Evaluate any conditional inherited-verification adaptation trigger from the chosen Slice-5 design.
