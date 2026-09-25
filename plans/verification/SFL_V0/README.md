@@ -108,13 +108,14 @@ Implementation may translate them into executable tests/harness code but may not
 - Implementation remains blocked pending reassessed inherited-verification adaptation + fresh independent approval.
 
 
-## Reassessed inherited-verification adaptation candidate
+## Reassessed inherited-verification adaptation candidates
 
 - Historical pre-DEC-0013 candidate: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` — retained only for provenance.
 - Reassessment: `../../../research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REASSESSMENT.md`.
-- Current candidate ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1` @ `4f12c30b0f16531fd1e82ac08c2b71e53934ba28`.
-- Current plan blob: `43e27cb6fed1086ffcc687002f7fffd494b528b5`.
-- Plan path: `../../../research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_PLAN.md`.
-- Fresh review task: `../../../tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md`.
-- Candidate preserves the four known inherited literal breakpoints but corrects commitment-provenance adaptation for accepted head self-commitment and strengthens DEC-0011/0013 funding/dependency guardrails.
+- v2 candidate1: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1` @ `4f12c30b0f16531fd1e82ac08c2b71e53934ba28`, blob `43e27cb6fed1086ffcc687002f7fffd494b528b5`.
+- Candidate1 review: `../../../research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md` — **BLOCK — LOSSLESSNESS / ENFORCEMENT DEFECT**.
+- v2 candidate2: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate2` @ `68fddec788b5cf41db5934c8719a6fd1ce474d32`.
+- Candidate2 plan blob: `00c3e64a128fa00e91b99117e321a0e379dd61c5`.
+- Candidate2 changes no semantic mapping; it makes a critical-seam hidden/stale current-head/funding/dependency mutant mandatory in Adaptation B, so a generic unrelated hidden-field fault cannot satisfy the negative proof.
+- Fresh review task: `../../../tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md`.
 - No coding authorization exists until independent **PASS — ADAPTATION PLAN APPROVED** and explicit gate closure.
