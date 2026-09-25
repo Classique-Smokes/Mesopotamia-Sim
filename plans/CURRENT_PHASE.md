@@ -510,6 +510,9 @@ Inherited-assurance thread:
 - candidate census: **173 = 134 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED**
 - frozen-v1 rows preserved byte-for-byte: **167 / 167**
 - fresh review task: `tasks/research/SFL_V0_SLICE1_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`
+- review dispatch ref: `sfl-v0-slice1-acceptance-v2-candidate1-review-dispatch` @ `62e865fd61152f9f692b275d3635b4957f12178c`
+- return branch: `review/slice1-acceptance-v2-candidate1-return`
+- review status: **ARCHITECT-DISPATCHED / NO REVIEWER ACTIVE YET**
 - remaining inherited gate: fresh v2 acceptance PASS/freeze + current implementation conformance
 
 ## Next
