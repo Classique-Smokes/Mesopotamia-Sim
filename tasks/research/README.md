@@ -23,7 +23,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 - Slice-4 Director implementation block — **ACTIVE**. Frozen boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`. Current forward gates are successor Slice-4 acceptance v2 review/freeze and inherited-verification adaptation closure. Coding remains forbidden.
 
-- `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md` — **STALE / DO NOT DISPATCH**. It targets pre-DEC-0013 adaptation candidate1. Frozen successor v2 now requires reassessment; a new review packet will be issued against the reassessed exact candidate.
+- `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md` — **READY FOR DISPATCH / NO REVIEWER ACTIVE YET**. Fresh losslessness/enforcement review of immutable `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1` @ `4f12c30b0f16531fd1e82ac08c2b71e53934ba28` (plan blob `43e27cb6fed1086ffcc687002f7fffd494b528b5`) against frozen Slice-4 acceptance v2. Historical v1 adaptation packet is superseded.
 
 
 - Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / DECISION RESOLVED**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. LATER-04 closed by accepted `../../decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`; LATER-05 closed from accepted authority. Acceptance drafting is active; coding remains unauthorized.
