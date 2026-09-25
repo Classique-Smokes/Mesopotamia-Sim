@@ -4,7 +4,9 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- `SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **READY FOR DISPATCH / NO REVIEWER ACTIVE YET**. Fresh independent whole-candidate review of immutable `sfl-v0-slice4-acceptance-v2-candidate1` @ `473e521e1d64b3e001c386bf186eafba71c20f5f` (blob `67008d03a943e6cd6a9a9e269be7c6efeefc229b`). Candidate census: 173 = 162 REQUIRED / 9 DEFERRED / 2 UNEXERCISED.
+- `SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md` — **READY FOR DISPATCH / NO REVIEWER ACTIVE YET**. Fresh independent whole-candidate review of immutable `sfl-v0-slice4-acceptance-v2-candidate2` @ `f14868c7382f2d132ad6636851bd621613785018` (blob `ea5eb3b3a46f20a53a6e10131524d0e6c12b313d`). Candidate census: 176 = 165 REQUIRED / 9 DEFERRED / 2 UNEXERCISED. Candidate2 preserves all 173 candidate1 rows and adds exactly S4-188..190 for the accepted DEC-0011 private-X contract.
+
+- Slice-4 v2 candidate1 review — **COMPLETE / BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`. No semantic escalation; repair is limited to missing DEC-0011 completion-gating coverage.
 
 
 - `TRES-0011_V0_RESOURCE_SCAFFOLD_WAVE_DISPATCH.md` — **COMPLETE / RETURNS PRESERVED / RECONCILED**. MA synthesis: `../../research/technical/TRES-0011/TRES-0011_MASTER_ARCHITECT_RECONCILIATION.md` — **PROCEED WITH EXPLICIT V0 / REDESIGN GUARDRAILS**. Post-wave semantic disposition: `../../decisions/DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md` — **ACCEPTED / PROMOTED**. SID closure: `../../research/technical/SFL_V0_SLICE4_SID_CLOSURE_REVALIDATION.md` — **CLOSED / PASS**.
