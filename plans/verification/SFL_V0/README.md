@@ -92,3 +92,17 @@ Implementation may translate them into executable tests/harness code but may not
 - Fresh independent pre-code review task: `../../tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md`.
 - Candidate2 is not implementation authority. Freeze only on fresh **PASS — MAY FREEZE UNCHANGED**.
 - After successor freeze, reassess the inherited-verification adaptation plan before running a fresh independent adaptation review.
+
+
+## Frozen Slice-4 successor acceptance v2
+
+- Frozen successor manifest: `SLICE4_ACCEPTANCE_MANIFEST_V2.md`.
+- Version/ref: `SFL-V0-S4-ACCEPTANCE-v2` / `sfl-v0-slice4-acceptance-v2`.
+- Freeze commit: `66fe54c385f42eeb01308f19b63fff7c670b9bbe`.
+- Frozen manifest blob: `b0bc79e46f82630ab78cd2f0d0414b748212a411`.
+- Freeze record: `SLICE4_ACCEPTANCE_V2_FREEZE_RECORD.md`.
+- Frozen census: **176 unique = 165 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**.
+- Final review: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md` — **PASS — MAY FREEZE UNCHANGED**.
+- All 176 status-bearing rows are byte-for-byte identical to reviewed candidate2.
+- Frozen v1 remains immutable historical evidence.
+- Implementation remains blocked pending reassessed inherited-verification adaptation + fresh independent approval.
