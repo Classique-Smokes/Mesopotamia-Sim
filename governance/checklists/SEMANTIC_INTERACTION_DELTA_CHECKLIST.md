@@ -120,6 +120,8 @@ For meaningful multi-position actions/transactions ask:
 
 > Which semantic positions may legally share one PersonId, and what changes when they alias?
 
+For any typed relation/claim introduced or materially affected by the delta, separately verify its owning diagonal/self-endpoint classification. Do not infer relation-diagonal permission from action-role aliasing, or vice versa. A generic relation container must not answer either question by accident.
+
 Check whether aliasing changes:
 
 1. independent cognition / need for response context;

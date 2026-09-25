@@ -77,6 +77,15 @@ For each authoritative stateful object whose identity/history matters, answer wh
 - consumption/satisfaction/retirement/dissolution;
 - historical references that survive state change.
 
+For every typed relation/claim, additionally verify that endpoint identity was classified by the owning semantics:
+
+- endpoint identity domains;
+- whether diagonal/self-endpoint identity is allowed, currently not enabled, or inapplicable/structurally excluded;
+- whether generic representation accidentally imposes a stronger global identity rule;
+- whether an allowed diagonal is being confused with permission for a self-addressed action.
+
+Do not let implementation structure silently decide an omitted diagonal-admissibility question.
+
 Do not require lifecycle machinery for immutable/value objects that do not need it.
 
 ### Parameter validity
