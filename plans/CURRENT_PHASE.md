@@ -474,29 +474,25 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 - no Slice-5 coding bārû is authorized
 - retrospective Slice-1 SID Pass-B is complete; its MA reconciliation found a bounded inherited semantic gap requiring Project Director decision before any Slice-5 freeze
 
-## Active Slice-5 acceptance planning
+## Active Slice-5 acceptance / implementation
 
-- discovery A/B/C: **COMPLETE / PRESERVED**
-- original MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
 - candidate1: **IMMUTABLE HISTORICAL EVIDENCE**
-  - ref: `sfl-v0-slice5-acceptance-v1-candidate1` @ `1dcfdac9a27679496b1484d5bf183a3f77ba9afc`
-  - blob: `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`
-  - R2: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md` — **PASS — MAY FREEZE UNCHANGED** against then-current inherited authority
-  - current disposition: **DO NOT FREEZE** because DEC-0015/Slice-1-v2 materially changed inherited authority
-- DEC-0015 refresh reconciliation: `research/technical/SFL_V0_SLICE5_DEC0015_INHERITED_AUTHORITY_REFRESH_RECONCILIATION.md`
-- candidate2: **CURRENT / NOT FROZEN**
-  - manifest: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE2.md`
-  - ref: `sfl-v0-slice5-acceptance-v1-candidate2` @ `946e95f87721d4c84af10a81e261ddc5fce77636`
-  - blob: `948118a655e002b4af0929e6c563a90608fb9456`
-  - native census: **96 = 82 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
-  - inherited REQUIRED: **441 = 134 Slice 1 v2 + 46 Slice 2 v1 + 96 Slice 3 v1 + 165 Slice 4 v2**
-  - delta from candidate1: **94 rows byte-identical; S5-R00 exact inherited count refreshed; one new REQUIRED S5-021 diagonal-Attitude checkpoint witness**
-- fresh whole-candidate review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`
-- review dispatch ref: `sfl-v0-slice5-acceptance-v1-candidate2-review-dispatch` @ `84e7db0b80a5227d2e43b129a416aefecfce7e49`
-- return branch: `review/slice5-acceptance-v1-candidate2-return`
-- review status: **ARCHITECT-DISPATCHED / NO REVIEWER ACTIVE YET**
-- coding status: **NOT AUTHORIZED**
-- freeze status: **BLOCKED pending candidate2 PASS**
+- candidate2: **PASS / FROZEN AS SLICE-5 v1**
+- frozen manifest: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST.md`
+- frozen ref: `sfl-v0-slice5-acceptance-v1` @ `f0f32f06cdd607b04df4f14c4bc49bcde4d056bf`
+- frozen blob: `1834a1a49203c07af01618066a7e09b25e7e6238`
+- frozen native census: **96 = 82 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
+- inherited REQUIRED: **441 = 134 Slice 1 v2 + 46 Slice 2 v1 + 96 Slice 3 v1 + 165 Slice 4 v2**
+- final pre-code review: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md` — **PASS — MAY FREEZE UNCHANGED**
+- freeze record: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_V1_FREEZE_RECORD.md`
+- implementation design/adaptation gate: `research/technical/SFL_V0_SLICE5_IMPLEMENTATION_DESIGN_AND_ADAPTATION_GATE.md` — **NOT TRIGGERED for approved design**
+- implementation release: `plans/verification/SFL_V0/SLICE5_IMPLEMENTATION_RELEASE_RECORD.md`
+- IMP-0005 task: `tasks/implementation/IMP-0005_SFL_V0_SLICE5_CHECKPOINT_CONTINUATION.md`
+- implementation branch: `implementation/imp-0005-slice5-checkpoint-continuation`
+- immutable dispatch ref: `sfl-v0-slice5-imp0005-dispatch-v1` @ `cdbc6d881a7281a207a8169b9edfa3f60d6f1abe`
+- implementation agent / effort: **Astra / HIGH**
+- implementation status: **DISPATCHED / ACTIVE**
+- promotion status: **BLOCKED pending complete candidate + fresh independent conformance**
 
 Inherited-assurance thread:
 
@@ -536,9 +532,9 @@ Inherited-assurance thread:
 
 ## Next
 
-1. Await fresh whole-candidate review return for exact candidate2.
-2. If **PASS — MAY FREEZE UNCHANGED**, preserve the report and freeze exact candidate2.
-3. Evaluate the conditional inherited-verification adaptation gate against the actual Slice-5 implementation design.
-4. Only then commission a bounded Slice-5 coding bārû.
+1. Await IMP-0005 return on `implementation/imp-0005-slice5-checkpoint-continuation`.
+2. If COMPLETE CANDIDATE, pin exact implementation head and run fresh independent post-implementation conformance.
+3. Promote only on **PASS — PROMOTE**, then verify post-promotion canonical CI.
+4. Any adaptation STOP trigger encountered during implementation reopens the adaptation gate before the triggering edit.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
