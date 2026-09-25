@@ -69,18 +69,15 @@ Active work:
   - promotion merge: `c72ae67dc76ac091331fcd5494c6657eec57f703`
   - post-promotion CI: `36098636634` — **PASS**
   - final record: `research/technical/IMP-0004/IMP-0004_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
-- Slice 5: **CANDIDATE2 AUTHORED / CURRENT INHERITED AUTHORITY / FRESH REVIEW READY / NO CODING**
-  - MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
-  - DEC-0015 refresh reconciliation: `research/technical/SFL_V0_SLICE5_DEC0015_INHERITED_AUTHORITY_REFRESH_RECONCILIATION.md`
-  - candidate2: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE2.md`
-  - candidate2 ref/commit/blob: `sfl-v0-slice5-acceptance-v1-candidate2` @ `946e95f87721d4c84af10a81e261ddc5fce77636` / `948118a655e002b4af0929e6c563a90608fb9456`
-  - candidate2 census: **96 = 82 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
-  - inherited REQUIRED: **441 = 134 Slice 1 v2 + 46 Slice 2 + 96 Slice 3 + 165 Slice 4 v2**
-  - fresh review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`
-  - review return: `review/slice5-acceptance-v1-candidate2-return`
-  - review status: **DISPATCHED / AWAITING RETURN**
-  - candidate1/R2 remain immutable historical evidence
-  - freeze/coding: **BLOCKED pending fresh whole-candidate PASS; no coding task**
+- Slice 5: **FROZEN ACCEPTANCE / BOUNDED IMPLEMENTATION ACTIVE**
+  - frozen manifest/ref: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST.md` / `sfl-v0-slice5-acceptance-v1`
+  - freeze commit/blob: `f0f32f06cdd607b04df4f14c4bc49bcde4d056bf` / `1834a1a49203c07af01618066a7e09b25e7e6238`
+  - final review: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md` — **PASS — MAY FREEZE UNCHANGED**
+  - adaptation gate: **NOT TRIGGERED** for approved no-new-live-authority-field design
+  - task: `tasks/implementation/IMP-0005_SFL_V0_SLICE5_CHECKPOINT_CONTINUATION.md`
+  - implementation branch: `implementation/imp-0005-slice5-checkpoint-continuation`
+  - implementation status: **DISPATCHED / ACTIVE**
+  - candidate1/R2 retained as immutable historical evidence
 - Slice-1 retro-SID: **SEMANTIC GAP CLOSED / DEC-0015 ACCEPTED / SUCCESSOR ACCEPTANCE V2 FROZEN / CONFORMANCE PENDING**
   - task: `tasks/research/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
   - preserved return: `research/technical/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
