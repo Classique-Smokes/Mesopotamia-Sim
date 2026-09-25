@@ -147,19 +147,22 @@ Slice-4 SID pilot status: **CLOSED / PASS AFTER DEC-0013**
 - `Consequential unresolved: 0`
 - `Accidental gaps outstanding: 0`
 - closure freshness: **CURRENT / CLOSED**
-- next gate: fresh independent whole-candidate review of exact successor acceptance v2 candidate1
+- next gate: fresh independent whole-candidate review of exact successor acceptance v2 candidate2
 - Slice-4 implementation remains **DIRECTOR BLOCKED** until pilot + successor acceptance + inherited-adaptation gates close
 
 Slice-4 successor acceptance v2:
 
-- candidate path: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md`
-- candidate version/ref: `SFL-V0-S4-ACCEPTANCE-v2-candidate1` / `sfl-v0-slice4-acceptance-v2-candidate1`
-- exact candidate commit: `473e521e1d64b3e001c386bf186eafba71c20f5f`
-- candidate blob: `67008d03a943e6cd6a9a9e269be7c6efeefc229b`
-- candidate census: **173 = 162 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**
-- all frozen v1 AcceptanceId/status/obligation rows inherited unchanged; 12 new REQUIRED rows S4-176..187 cover DEC-0013 D1–D6 + implementation-facing resource-scaffold guardrails
-- fresh review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **READY FOR DISPATCH / NOT YET HANDED TO A REVIEWER**
-- freeze/coding status: **NOT AUTHORIZED** pending fresh whole-candidate verdict and later inherited-adaptation closure
+- candidate1 ref: `sfl-v0-slice4-acceptance-v2-candidate1` @ `473e521e1d64b3e001c386bf186eafba71c20f5f`, blob `67008d03a943e6cd6a9a9e269be7c6efeefc229b`
+- candidate1 review: `research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**
+- candidate1 blocker: accepted DEC-0011 exact private-X semantics lacked status-bearing completion-gating AcceptanceIds; no semantic escalation or frozen-authority drift
+- candidate2 path: `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_V2_CANDIDATE.md`
+- candidate2 version/ref: `SFL-V0-S4-ACCEPTANCE-v2-candidate2` / `sfl-v0-slice4-acceptance-v2-candidate2`
+- exact candidate2 commit: `f14868c7382f2d132ad6636851bd621613785018`
+- candidate2 blob: `ea5eb3b3a46f20a53a6e10131524d0e6c12b313d`
+- candidate2 census: **176 = 165 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**
+- all 173 candidate1 status-bearing rows remain unchanged; candidate2 adds exactly S4-188..190 for DEC-0011 exact private-X funding plan, same-head commitment/X arithmetic, and exact-term/nontransfer/provenance semantics
+- fresh review task: `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md` — **READY FOR DISPATCH / NOT YET HANDED TO A REVIEWER**
+- freeze/coding status: **NOT AUTHORIZED** pending fresh candidate2 whole-candidate verdict and later inherited-adaptation closure
 
 Private-resource supplementation semantic patch:
 
@@ -419,8 +422,8 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Dispatch the fresh independent review from `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` against immutable ref `sfl-v0-slice4-acceptance-v2-candidate1`.
-2. If BLOCK, preserve candidate1 and repair only the identified acceptance/authority defect in a new candidate.
+1. Dispatch the fresh independent review from `tasks/research/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md` against immutable ref `sfl-v0-slice4-acceptance-v2-candidate2`.
+2. If BLOCK, preserve candidate2 and repair only the identified acceptance/authority defect in a new candidate.
 3. If **PASS — MAY FREEZE UNCHANGED**, freeze exact successor authority as `SFL-V0-S4-ACCEPTANCE-v2`; frozen v1 remains immutable historical evidence.
 4. Reassess the inherited-verification adaptation plan against DEC-0013 + frozen successor acceptance, then commission fresh independent adaptation review.
 5. Close the Director implementation BLOCK only after successor acceptance + adaptation gates are explicitly closed.
