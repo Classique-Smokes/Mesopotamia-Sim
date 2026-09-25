@@ -477,22 +477,24 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 ## Active Slice-5 acceptance planning
 
 - discovery A/B/C: **COMPLETE / PRESERVED**
-- MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
-- reconciliation verdict: **NO DIRECTOR DECISION CURRENTLY REQUIRED / READY FOR ACCEPTANCE REVIEW**
-- candidate1 manifest: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE.md`
-- candidate1 ref: `sfl-v0-slice5-acceptance-v1-candidate1` @ `1dcfdac9a27679496b1484d5bf183a3f77ba9afc`
-- candidate1 blob: `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`
-- candidate1 census: **95 = 81 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
-- inherited REQUIRED: **435 = 128 Slice 1 + 46 Slice 2 + 96 Slice 3 + 165 Slice 4**
-- first pre-code review: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` — **BLOCK**, solely inherited Slice-4-v2 frozen-ref identity
-- first review preserved blob: `690d0f9a4e7e8764d68169fd5870a8f6b7b5668a`
-- block reconciliation: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_CANDIDATE1_BLOCK_RECONCILIATION.md`
-- repaired frozen ref: `sfl-v0-slice4-acceptance-v2` -> `66fe54c385f42eeb01308f19b63fff7c670b9bbe`
-- R2 whole-candidate review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md`
-- R2 return: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md` — **PASS — MAY FREEZE UNCHANGED**
-- R2 review blob: `828b75b53e7b555f668eff61b20b590f796c7ce6`
+- original MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
+- candidate1: **IMMUTABLE HISTORICAL EVIDENCE**
+  - ref: `sfl-v0-slice5-acceptance-v1-candidate1` @ `1dcfdac9a27679496b1484d5bf183a3f77ba9afc`
+  - blob: `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`
+  - R2: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md` — **PASS — MAY FREEZE UNCHANGED** against then-current inherited authority
+  - current disposition: **DO NOT FREEZE** because DEC-0015/Slice-1-v2 materially changed inherited authority
+- DEC-0015 refresh reconciliation: `research/technical/SFL_V0_SLICE5_DEC0015_INHERITED_AUTHORITY_REFRESH_RECONCILIATION.md`
+- candidate2: **CURRENT / NOT FROZEN**
+  - manifest: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE2.md`
+  - ref: `sfl-v0-slice5-acceptance-v1-candidate2` @ `946e95f87721d4c84af10a81e261ddc5fce77636`
+  - blob: `948118a655e002b4af0929e6c563a90608fb9456`
+  - native census: **96 = 82 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
+  - inherited REQUIRED: **441 = 134 Slice 1 v2 + 46 Slice 2 v1 + 96 Slice 3 v1 + 165 Slice 4 v2**
+  - delta from candidate1: **94 rows byte-identical; S5-R00 exact inherited count refreshed; one new REQUIRED S5-021 diagonal-Attitude checkpoint witness**
+- fresh whole-candidate review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`
+- review status: **READY FOR DISPATCH**
 - coding status: **NOT AUTHORIZED**
-- freeze status: **BLOCKED because DEC-0015 materially changed inherited Slice-1 authority; candidate1 R2 PASS is historical evidence only**
+- freeze status: **BLOCKED pending candidate2 PASS**
 
 Inherited-assurance thread:
 
@@ -532,9 +534,9 @@ Inherited-assurance thread:
 
 ## Next
 
-1. Issue a corrected Slice-5 acceptance candidate reflecting frozen Slice-1 v2 authority and run fresh whole-candidate review.
-4. Freeze Slice-5 acceptance only after those gates close.
-5. Evaluate any conditional inherited-verification adaptation trigger from the chosen Slice-5 design.
-6. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
+1. Dispatch fresh whole-candidate review for exact candidate2.
+2. If **PASS — MAY FREEZE UNCHANGED**, preserve the report and freeze exact candidate2.
+3. Evaluate the conditional inherited-verification adaptation gate against the actual Slice-5 implementation design.
+4. Only then commission a bounded Slice-5 coding bārû.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
