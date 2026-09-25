@@ -1,10 +1,10 @@
 # Slice 1 Retrospective SID — Open Semantic Decisions
 
-**Status:** DIRECTOR DECISION REQUIRED  
+**Status:** RESOLVED / SUPERSEDED BY DEC-0015  
 **Date:** 2026-09-25  
 **Source:** `research/technical/SID_RETRO_SLICE1_PASSB_RECONCILIATION.md`  
 **Policy:** `SID-ASSURANCE-v1` / DEC-0012  
-**Authority:** proposal only until explicit Project Director approval
+**Authority:** historical proposal only; operative authority is DEC-0015
 
 ## Purpose
 
@@ -172,3 +172,25 @@ If either D1 or D2 creates new explicit current authority:
 7. run a fresh whole-candidate Slice-5 review before freeze/coding.
 
 Slice-5 candidate1 and its R2 PASS remain immutable historical evidence; they are not silently reinterpreted as covering the new inherited authority.
+
+
+## Director disposition / supersession
+
+**RESOLVED — 2026-09-25.**
+
+The Project Director did not adopt the proposal's original blanket D1-A/D2-A framing unchanged.
+
+The approved refinement is recorded in:
+
+`decisions/DEC-0015_RELATION_DIAGONAL_ADMISSIBILITY_AND_SELF_ALIAS_SEMANTICS.md`
+
+Key refinement:
+
+- participant aliasing is meaning-specific rather than globally prohibited;
+- current bounded Slice-1 self-counterparty proposal forms remain unenabled;
+- diagonal admissibility is owned by each typed relation;
+- `Attitude(P,P)` is valid current state;
+- diagonal Debt/Favour remain future-preserved but not current-v0 valid claims;
+- future typed relations must classify diagonal admissibility when conceptualized.
+
+This proposal is retained for decision lineage only.
