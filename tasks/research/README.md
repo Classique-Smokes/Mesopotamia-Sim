@@ -21,9 +21,9 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 - GOV-0002 Semantic Interaction Delta Failsafe review — **COMPLETE / PASS / PROMOTED UNDER DEC-0012**. Exact review: `../../research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md`; candidate2: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`.
 
-- Slice-4 Director implementation block — **ACTIVE**. Frozen boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`. Current forward gates are successor Slice-4 acceptance v2 review/freeze and inherited-verification adaptation closure. Coding remains forbidden.
+- Slice-4 Director implementation block — **CLOSED BY SATISFIED CONDITIONS**. Historical boundary remains immutable at `sfl-v0-slice4-implementation-boundary-blocked-v1`; release record: `../../plans/verification/SFL_V0/SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`. IMP-0004 is now the implementation critical path.
 
-- `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md` — **READY FOR DISPATCH / NO REVIEWER ACTIVE YET**. Fresh whole-plan losslessness/enforcement review of immutable `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate2` @ `68fddec788b5cf41db5934c8719a6fd1ce474d32` (plan blob `00c3e64a128fa00e91b99117e321a0e379dd61c5`). Candidate2 preserves the candidate1 semantic mapping and tightens only the mandatory Adaptation-B critical-seam fault control.
+- `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md` — **COMPLETE / PASS — ADAPTATION PLAN APPROVED**. Return: `../../research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md`. Approved ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`; gate-closure record: `../../plans/verification/SFL_V0/SLICE4_INHERITED_VERIFICATION_ADAPTATION_V2_APPROVAL_RECORD.md`.
 
 - Adaptation v2 candidate1 review — **COMPLETE / BLOCK — LOSSLESSNESS / ENFORCEMENT DEFECT**. Report: `../../research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md`. No semantic escalation; candidate2 repairs only the mandatory hidden-authority fault-control strength.
 

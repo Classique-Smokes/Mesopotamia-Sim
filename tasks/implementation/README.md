@@ -4,7 +4,7 @@
 
 ## Active
 
-No implementation task is currently active. The next critical-path work is the non-gating Slice-3 observation under `../research/IMP-0003_SLICE3_POSTIMPLEMENTATION_OBSERVATION.md`.
+No implementation task is currently active.
 
 ## Completed
 
@@ -15,7 +15,7 @@ No implementation task is currently active. The next critical-path work is the n
 
 ## Ready for dispatch
 
-No implementation task is ready for dispatch.
+- `IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` — **READY FOR DISPATCH / NO CODING BĀRÛ ACTIVE YET**. Frozen completion authority: `SFL-V0-S4-ACCEPTANCE-v2` / `sfl-v0-slice4-acceptance-v2`. Approved adaptation authority: `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`. The historical Director block is closed by `../../plans/verification/SFL_V0/SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`.
 
 ## Rules
 
