@@ -516,3 +516,102 @@ Use a verification-only scoring profile that isolates the accepted relative rule
 The numeric magnitudes are laboratory configuration; only `marriage incentive > strong-mutual-positive incentive` is a semantic assertion.
 
 This companion must not make marriage force residence change; it affects proposal motivation only.
+
+---
+
+## VS-SFL-107 — Participant self-alias and relation-diagonal classification
+
+**Level:** semantic boundary / identity / DEC-0015
+
+This card distinguishes interaction-role aliasing from typed-relation diagonal admissibility. It must not be implemented as one universal `A != B` rule.
+
+### A. Current self-counterparty proposal matrix
+
+For each current bounded-v0 meaning:
+
+- `OfferGift`;
+- `RequestGiftOrHelp`;
+- `OfferLoan`;
+- `RequestLoan`;
+- explicit benefit-for-favour;
+- relationship-mediated reciprocal help;
+- `CallFavor` holder versus called actor;
+
+construct an otherwise-valid proposal whose initiator/authorizer and named counterparty are the same PersonId.
+
+Assertions:
+
+- the term is categorically invalid before counterparty response activation;
+- no `ResponseDecisionContext(P, proposal)` opens for the self-counterparty proposal;
+- no material debit/credit commits;
+- no Debt/Favour is created;
+- no Gift/Help/Loan/CallFavor success/refusal attitude consequence fires;
+- no §6.7 social failed-attempt outcome is created;
+- diagnostic rejection may be retained without becoming a valid social interaction.
+
+### B. Valid diagonal Attitude
+
+Initialize one ordinary person P with:
+
+- `Attitude(P,P) = +5`;
+- a separate ordinary `Attitude(P,Q)` control.
+
+Assertions:
+
+- the self-edge is accepted as valid typed Attitude state;
+- it remains addressable as the exact directed pair `P -> P`;
+- ordinary bounds apply;
+- at the due five-cycle maintenance point, `+5 -> +3` exactly;
+- the separate P->Q edge is unaffected except by its own causes/maintenance;
+- no generic relation validator rejects the self-edge merely because endpoints match;
+- existence of the self-edge does not make any self-counterparty proposal in Part A valid.
+
+Repeat with a negative self-edge to verify ordinary -1-toward-zero maintenance.
+
+### C. Current diagonal Debt/Favour rejection
+
+Attempt current semantic ingress for:
+
+- `Debt(creditor=P, debtor=P)`;
+- `Favour(holder=P, debtor=P)`.
+
+Assertions:
+
+- both are rejected as invalid current relation states before they can become authoritative live claims;
+- neither produces due timing, repayment/call affordance, attitude consequence, or participant knowledge;
+- rejection is type-specific rather than evidence of a generic relation-container endpoint inequality.
+
+### D. Structural controls
+
+Confirm current:
+
+- parent/child P=P is invalid;
+- sibling P=P is invalid;
+- groom=bride one-PersonId marriage is invalid under bounded roles;
+- Residence remains Person->Dwelling and its proposal counterpart uses the existing **another person** rule.
+
+### E. Valid alias controls that must remain supported
+
+Re-exercise at least:
+
+- VS-SFL-105 personal initiative + separate incoming response for the same person;
+- VS-SFL-103 multiple response contexts for one target / shared scarce source;
+- a valid two-party `CallFavor(B, RepayDebt(B-owes-A))` where outer holder A is also inner debt creditor A.
+
+Assertions:
+
+- DEC-0015 self-counterparty rejection does not block these valid cross-action/cross-claim aliases;
+- each interaction/claim keeps its own provenance and participant roles;
+- no global all-roles-distinct invariant exists.
+
+### Required mutant controls
+
+The family must detect at least:
+
+- a generic relation-layer `endpointA != endpointB` guard that rejects `Attitude(P,P)`;
+- self-gift or self-loan reaching response activation;
+- diagonal current Debt becoming authoritative;
+- diagonal current Favour becoming authoritative;
+- a broad alias prohibition that breaks VS-SFL-105 or VS-SFL-103;
+- relation-diagonal permission being treated as automatic permission for self-addressed interaction.
+
