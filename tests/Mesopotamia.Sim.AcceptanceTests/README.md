@@ -1,5 +1,15 @@
 # Slice-1 through Slice-4 Acceptance Test Surface
 
+## Slice-1 successor v2 / DEC-0015
+
+`Slice1SuccessorV2AcceptanceTests` adds successor evidence without retargeting the historical catalog or the Slice-2/3/4 inherited bindings. It verifies both manifest blobs, byte-equivalent inherited status rows, and the exact six new IDs; reexecutes historical evidence; and emits every v2 row in `slice1-v2-results.json`. All 133 coder-owned REQUIRED rows must pass. `S1-GLOBAL-CONFORMANCE` remains awaiting fresh independent review. The historical 128/174/270 inheritance counts are unchanged.
+
+The separate `slice1-v2-cases`, `-fixtures`, `-boundary-probes`, `-structural-audit`, `-oracle-audit`, and `-fault-controls` artifacts distinguish public execution from detached invalid-state probes. `Dec0015Oracle` uses observations and explicit expected arithmetic, not production validity classifiers. `WorldState.Validate` and `ActionRules.Invalid` are targets only in explicitly recorded detached probes. Valid live state cannot contain a diagonal Favour; the holder=debtor classifier probe is separate from the public debtor-self-call response-suppression control.
+
+After canonical tests on a clean committed revision, run `tests/Run-Slice1V2Mutants.ps1` with absolute `-Dotnet`, new `-Checkout`, and `-Evidence` paths and `-Revision HEAD`. Use `artifacts/acceptance/slice1-v2-mutants` for evidence. The script requires exact-revision primary results, passes all six unmutated detectors, and builds/runs seven isolated production mutations. Each must fail its named semantic assertion; build failure, crash, timeout, and unrelated failures do not count. Patches, logs, TRX and classified results are retained. CI executes this step after the ordinary test sequence.
+
+`slice1-v2-results.json` reports `ExecutableEvidenceReady`; it never infers executed mutations from passing scenarios. The script writes `slice1-v2-candidate-gate.json`, which alone combines executable evidence with the completed mutation campaign into `CandidateReady`. Both outputs retain `FullFrozenCompletionGate=false` until independent review. The ordinary full suite contains 75 MSTest cases; the six focused detector cases are also rerun in each mutation checkout.
+
 ## Slice-4 candidate evidence
 
 `Slice4AcceptanceTests` verifies the exact frozen v2 manifest blob and approved adaptation-plan blob, executes the explicit case bindings in `Slice4Cases`, and writes all 176 rows individually: 165 REQUIRED, nine DEFERRED, two UNEXERCISED. It reruns the inherited chain and retains all 270 individual REQUIRED results. The results identify actual Git HEAD and dirty status. `slice4-cases.json` maps each full AcceptanceId to substantive methods; `slice4-fixtures.json` retains initial writes, every input, explicitly declared report prerequisites and internal boundary challenges, produced formation identities, causal history, decisions and final typed records. A green coder-owned report does not assert independent conformance.
