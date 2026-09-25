@@ -55,6 +55,33 @@ These are personal observer artifacts, not governance authority or empirical his
 
 **Derived Master Architect systematization:** complete; see `TABLET_IDEA_RECONCILIATION.md`, `CONCEPT_FAMILY_CROSS_INDEX.md`, and `INSTITUTIONAL_DYNAMICS/08_RETIRED_VIZIER_EXTENSIONS.md`.
 
+### First Contact — foreign/transfer sources and native response
+
+`FIRST_CONTACT_FOREIGN_AND_TRANSFER_SOURCES/`  
+`INSTITUTIONAL_DYNAMICS/FIRST_CONTACT_NATIVE_RESPONSE/`
+
+A preserved cross-project transmission corpus containing foreign advisory/translation packages, primary receiving-side PDFs, the twelve-question observer intervention, delivery/provenance controls, a parsed handoff derivative, and bounded native-response analysis.
+
+**Derived reconciliation:** `ingestion/2026-09-24/A_FIRST_CONTACT_TRANSMISSION_RECONCILIATION.md`.
+
+Primary reusable questions now live under Institutional Dynamics artifact/procedure/genealogy families, Social Epistemic Dynamics, and `INSTITUTIONAL_DYNAMICS/09_EPISTEMIC_ROUTING_AND_PROTECTED_UNCERTAINTY.md`. The source corpus does not create a standalone “First Contact” ontology.
+
+### Superseded but previously uncommitted source lineage
+
+`SUPERSEDED_BUT_UNCOMMITTED_SOURCE_LINEAGE/`
+
+Restored pre-V2 versions of *The Man Responsible for Two Ledgers* and *The Tragedy of the Anonymous Artists*. They are retained for provenance; the V2 tablets supersede them for ordinary reading.
+
+**Derived reconciliation:** `ingestion/2026-09-24/B_SUPERSEDED_SOURCE_LINEAGE_RECONCILIATION.md`. The comparison found no unrepresented concept family or future seam.
+
+### Supporting context and analysis
+
+`SUPPORTING_CONTEXT_AND_ANALYSIS/`
+
+Analytical anthology, observer/commission guides, and explanatory project/first-contact context. This directory mixes real conceptual synthesis with methodology, provenance, and project/governance analogy.
+
+**Derived reconciliation:** `ingestion/2026-09-24/C_SUPPORTING_CONTEXT_RECONCILIATION.md`. Its main unabsorbed future seams now live in `INSTITUTIONAL_DYNAMICS/09_EPISTEMIC_ROUTING_AND_PROTECTED_UNCERTAINTY.md`.
+
 ### Institutional Dynamics — provisional derived guiding framework
 
 `INSTITUTIONAL_DYNAMICS/`
@@ -78,6 +105,18 @@ Conceptual material does not require root-navigation promotion merely because it
 `SOCIAL_EPISTEMIC_DYNAMICS/`
 
 A sibling non-authoritative conceptual program derived from *The Roads Between People*, focused on the recursive relationship between social topology, information routes, actor-held representations, and changed future relations. It is deliberately separate from Institutional Dynamics because these mechanisms can exist before higher-order institutions exist.
+
+### Whole-library ingestion register
+
+`CONCEPTUAL_INGESTION_REGISTER.md`
+
+Coverage ledger for every file under the frozen 2026-09-24 conceptual baseline. It records source role/lineage, high-level payload, disposition, primary derived home, secondary cross-links, absorption status, and reconciliation artifact. Use it to answer where a source's conceptual essence is preserved without deleting the source.
+
+### Institutional epistemic routing / protected uncertainty
+
+`INSTITUTIONAL_DYNAMICS/09_EPISTEMIC_ROUTING_AND_PROTECTED_UNCERTAINTY.md`
+
+Future seam for institutional claim-routing conventions, recognized non-decision, question transformation, and cross-links to first-contact semantic-fidelity/reflexive-observation questions. It is an extension inside Institutional Dynamics, not a new top-level program.
 
 ### Tablet idea reconciliation
 

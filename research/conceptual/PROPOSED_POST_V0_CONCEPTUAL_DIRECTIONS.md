@@ -61,7 +61,10 @@ This stream now covers candidate mechanisms such as:
 - authenticity versus recognized authority;
 - official record versus objective event history;
 - actor-specific access, belief, and interpretation;
-- documentary support for institutional memory and authority.
+- documentary support for institutional memory and authority;
+- selective cross-boundary adoption, where receiving systems preserve some causal lessons while rejecting or transforming the sender's institutional package;
+- semantic-fidelity questions, where operational relations may survive translation even as vocabulary and mnemonic salience change;
+- reflexive observation / endogenous archival feedback, where inquiry or transfer changes the observed institution and the resulting records later become evidence about that change.
 
 Artifacts matter because they alter later actors and institutions, not because documents themselves become agents.
 
@@ -90,7 +93,8 @@ The three streams intersect through:
 - **subjective/objective separation** — what exists versus what different actors know/recognize;
 - **provenance and genealogy** — why current state exists, which histories actors believe, and how surviving archives may begin later than the actual causal chain;
 - **institutional age** — consequential event density, labor, succession, and maturity may diverge sharply from elapsed world time;
-- **higher-order grounding** — macro-action remains reconstructable through lower-level implementation.
+- **higher-order grounding** — macro-action remains reconstructable through lower-level implementation;
+- **institutional epistemic routing** — future questions about which evidence, artifact, authority, or procedure is recognized as competent to settle which class of claim, including the possibility of protected unresolved states.
 
 ## 6. Contingency on SFL v0
 
@@ -127,12 +131,22 @@ The Retired Vizier corpus adds a distinct future question about **role-condition
 
 This belongs with future motivation/attention/capacity/planning work. It is not yet mature enough to justify a standalone program or current v0 mechanics.
 
+### Institutional epistemic routing / protected uncertainty seam
+
+`INSTITUTIONAL_DYNAMICS/09_EPISTEMIC_ROUTING_AND_PROTECTED_UNCERTAINTY.md`
+
+The first-contact and supporting-context corpora add a future institutional question about learned conventions for what evidence, artifact, authority, or procedure can settle which kind of claim. They also preserve **recognized non-decision**: an issue may remain explicitly open, disputed, or outside present competence rather than being forced to closure.
+
+A related cross-program challenge is **question transformation**: inherited roles, evidence practices, and salience structures may change which problem a receiving institution believes it is facing before it answers. These belong inside/cross-linked to the existing Institutional and Social Epistemic programs, not in a new top-level program.
+
 ### Cross-program navigation
 
 Use:
 
+- `CONCEPTUAL_INGESTION_REGISTER.md` for whole-library source-to-home coverage and source lineage;
 - `TABLET_IDEA_RECONCILIATION.md` for idea-level current/later/redundancy disposition;
-- `CONCEPT_FAMILY_CROSS_INDEX.md` for overlap between programs.
+- `CONCEPT_FAMILY_CROSS_INDEX.md` for overlap between programs;
+- `CROSS_PROGRAM_CHALLENGE_CASES/THE_ACCIDENTAL_SPECIALIST.md` when testing whether an arbitrary origin can become a socially sustained continuation after the initiating cause is removed.
 
 ## 8. Explicit non-commitments
 

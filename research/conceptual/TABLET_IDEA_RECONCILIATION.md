@@ -411,3 +411,81 @@ The only current-slice effects are **interpretive/verification lenses**, not new
 - do not smuggle future trust/reputation/brokerage/group-mind mechanisms into the slice.
 
 Everything else in the tablets is now durably assigned to a later conceptual home or identified as already-established.
+
+## 9. Whole-library integration delta — Concept Wave D
+
+The Roads/Retired-Vizier reconciliation above remains the detailed idea-level record for those two collections. Whole-library audit adds three reconciled source families and one cross-program retrieval repair without replacing their source-specific reports.
+
+### 9.1 First-contact / cross-project transmission
+
+Primary source-family reconciliation:
+
+`ingestion/2026-09-24/A_FIRST_CONTACT_TRANSMISSION_RECONCILIATION.md`
+
+The reusable delta is smaller than the source corpus:
+
+- **selective transformation rather than copying** — a receiving system may adopt causal lessons while rejecting or changing the sender's vocabulary, roles, process package, and cultural imagery;
+- **semantic fidelity versus representational salience** — operational relations can survive translation while memory/attention effects change;
+- **reflexive observation / endogenous archival feedback** — questions, transfer, critique, or observation may change the institution, after which the resulting artifacts become evidence about the intervention itself;
+- **genre-conditioned self-description** — correspondence, retrospective history, and operational handoff may preserve different dimensions of one causal history;
+- **multiple inception thresholds / distributed founding** — prior function, recognition, naming, durable artifact creation, repository adoption, and later acceptance need not collapse into one founder event;
+- **function-before-name** — later naming can make an older function more legible/transmissible without retroactively creating its original authority;
+- **dimension-specific continuity and recoverability** — state, rationale, authority, recognition, practice, and lived judgment may survive different losses.
+
+Primary homes remain Institutional Dynamics H/I/L/C and Social Epistemic Dynamics. No standalone First Contact program is justified.
+
+### 9.2 Restored pre-V2 lineage
+
+Primary reconciliation:
+
+`ingestion/2026-09-24/B_SUPERSEDED_SOURCE_LINEAGE_RECONCILIATION.md`
+
+The restored predecessors of *Two Ledgers* and *Anonymous Artists* are **source lineage, not parallel later theories**. Their ordinary-reading V2 descendants plus current Institutional Dynamics already absorb every meaningful omitted idea found in the comparison.
+
+Result:
+
+- **0 new concept families**;
+- **0 new future seams**;
+- **0 new challenge-case families**.
+
+The predecessor files remain valuable because they preserve provenance and longer-form causal explanation.
+
+### 9.3 Supporting context / analytical meta-material
+
+Primary reconciliation:
+
+`ingestion/2026-09-24/C_SUPPORTING_CONTEXT_RECONCILIATION.md`
+
+Most of this material is existing-family synthesis, observer/commission methodology, provenance, or project/governance analogy.
+
+Two future seams now have a concise primary derived home:
+
+`INSTITUTIONAL_DYNAMICS/09_EPISTEMIC_ROUTING_AND_PROTECTED_UNCERTAINTY.md`
+
+- **institutional epistemic routing / epistemic constitution** — which evidence, artifact, authority, office, or procedure is recognized as competent to settle which class of claim;
+- **protected uncertainty / recognized non-decision** — open, disputed, outside-competence, or not-yet-earned can itself be durable institutional state.
+
+A related **question transformation** challenge asks whether inherited roles, evidence practices, and salience structures can change which problem an institution believes it is facing before it answers.
+
+These are extensions inside/cross-linked to Institutional Dynamics and Social Epistemic Dynamics, not a new umbrella.
+
+### 9.4 Cross-program composition repair — The Accidental Specialist
+
+`CROSS_PROGRAM_CHALLENGE_CASES/THE_ACCIDENTAL_SPECIALIST.md`
+
+The important payload is not merely “specialization.”
+
+It is the composition:
+
+**arbitrary low-level origin → repeated behavior → actor-held representation/reputation → changed treatment/routing → durable expectations/dependencies → informal role/centrality → socially sustained continuation after the initiating cause is removed.**
+
+This preserves the distinction between **origin** and **continuation**. A later meaningful social structure need not imply that the initiating contingency was socially meaningful.
+
+### 9.5 Whole-library coverage
+
+For the durable source-to-home ledger across all 81 files at the frozen conceptual baseline, including all 17 restored files, use:
+
+`CONCEPTUAL_INGESTION_REGISTER.md`
+
+The register is the coverage ledger; this document remains the idea-level reconciliation.
+
