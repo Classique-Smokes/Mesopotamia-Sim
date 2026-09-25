@@ -91,8 +91,10 @@ Active work:
   - conformance task: `tasks/implementation/SFL_V0_SLICE1_SUCCESSOR_V2_DEC0015_CONFORMANCE.md`
   - implementation candidate: `imp-0001-slice1-successor-v2-dec0015-conformance-candidate-v1` @ `a8ecacd98eb4835d6fb96c1e683f5b7dfcc9a96d`
   - final-head CI: `36124403519` — **PASS**
-  - independent review task: `tasks/research/SFL_V0_SLICE1_SUCCESSOR_V2_DEC0015_INDEPENDENT_CONFORMANCE_REVIEW_V1.md`
-  - implementation status: **COMPLETE CANDIDATE / FRESH REVIEW DISPATCHED**
+  - independent review: `research/technical/IMP-0001/IMP-0001_SUCCESSOR_V2_DEC0015_INDEPENDENT_CONFORMANCE_REVIEW_V1.md` — **PASS — PROMOTE**
+  - promotion merge: `ad87ec0bd04f689a60dc4d743a6c609e9645e3a7`
+  - post-promotion CI: `36132006829` — **IN PROGRESS**
+  - implementation status: **PROMOTED / POST-PROMOTION CI PENDING**
 
 Conceptual archive systematization: **COMPLETE / PASS**
 - ingestion register: `research/conceptual/CONCEPTUAL_INGESTION_REGISTER.md`
