@@ -30,6 +30,7 @@ Accepted foundation:
 - `ADR-0001 / DEC-0003` — Active Social-State Representation
 - `ADR-0002 / DEC-0004` — Hierarchical Individual Agency
 - `DEC-0005` — Architecture Development Policy
+- `DEC-0015` — Relation-specific diagonal admissibility + self-alias semantics; future typed relations classify diagonal admissibility when conceptualized
 - `ADR-0003 / DEC-0006` — Progressive Derived-State Specialization
 - `ADR-0004 / DEC-0007` — Reference Simulation Kernel
 - `ADR-0005 / DEC-0008` — C# 14 / .NET 10 LTS Host Runtime
@@ -68,18 +69,20 @@ Active work:
   - promotion merge: `c72ae67dc76ac091331fcd5494c6657eec57f703`
   - post-promotion CI: `36098636634` — **PASS**
   - final record: `research/technical/IMP-0004/IMP-0004_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
-- Slice 5: **CANDIDATE1 R2 PASS / FREEZE BLOCKED BY INHERITED RETRO-SID DECISION**
+- Slice 5: **CANDIDATE1 R2 PASS / SUPERSEDED FOR CURRENT FREEZE BY DEC-0015 INHERITED-AUTHORITY CHANGE**
   - MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
   - candidate1: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE.md`
   - candidate ref/blob: `sfl-v0-slice5-acceptance-v1-candidate1` @ `1dcfdac9a27679496b1484d5bf183a3f77ba9afc` / `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`
   - R2 review: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md` — **PASS — MAY FREEZE UNCHANGED**
   - R2 review blob: `828b75b53e7b555f668eff61b20b590f796c7ce6`
-  - freeze/coding: **BLOCKED by retro-SID inherited-authority decision; no coding task**
-- Slice-1 retro-SID Pass-B: **COMPLETE / DIRECTOR SEMANTIC DECISION REQUIRED**
+  - freeze/coding: **BLOCKED pending successor Slice-1 acceptance/conformance + corrected Slice-5 candidate/review; no coding task**
+- Slice-1 retro-SID: **SEMANTIC GAP CLOSED / DEC-0015 ACCEPTED / SUCCESSOR ACCEPTANCE REQUIRED**
   - task: `tasks/research/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
   - preserved return: `research/technical/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
   - MA reconciliation: `research/technical/SID_RETRO_SLICE1_PASSB_RECONCILIATION.md`
-  - Director packet: `proposals/SFL_V0_SLICE1_RETRO_SID_OPEN_SEMANTIC_DECISIONS.md`
+  - accepted decision: `decisions/DEC-0015_RELATION_DIAGONAL_ADMISSIBILITY_AND_SELF_ALIAS_SEMANTICS.md`
+  - promotion audit: `research/technical/DEC-0015_PROMOTION_RECONCILIATION.md`
+  - closure: `research/technical/SID_RETRO_SLICE1_CLOSURE_REVALIDATION.md` — **0 consequential semantic unresolved**
 
 Conceptual archive systematization: **COMPLETE / PASS**
 - ingestion register: `research/conceptual/CONCEPTUAL_INGESTION_REGISTER.md`
