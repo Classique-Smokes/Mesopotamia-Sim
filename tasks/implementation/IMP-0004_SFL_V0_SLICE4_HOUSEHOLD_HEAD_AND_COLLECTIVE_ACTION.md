@@ -2,13 +2,28 @@
 
 **Task ID:** IMP-0004  
 **Commissioned by:** Master Architect  
-**Status:** READY FOR DISPATCH / NO CODING BĀRÛ ACTIVE YET  
+**Status:** IN PROGRESS / ESCALATION 01 CLOSED / NOT A COMPLETE CANDIDATE  
 **Context mode:** CODING-PRIEST / PROJECT-CONTEXT — repository authority controls  
-**Planned implementation branch:** `implementation/imp-0004-slice4-household-head-collective-action`
+**Implementation branch:** `implementation/imp-0004-slice4-household-head-collective-action`  
+**Observed implementation head at escalation closure:** `1de66c3c02926e3c65818a083229dd421b60ca76`
+
+## Active implementation status
+
+The Project Director has dispatched the coding bārû and implementation work is active.
+
+Implementation escalation 01 identified an under-specified reconsideration semantic and correctly stopped.
+
+That escalation is now closed by:
+
+- `decisions/DEC-0014_HISTORICAL_MATERIAL_NEED_RECONSIDERATION_CONTEXT.md`;
+- `research/technical/IMP-0004/DEC-0014_ACCEPTANCE_AND_SID_FRESHNESS_REVALIDATION.md`;
+- `research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01_CLOSURE.md`.
+
+The bārû may continue after retrieving the canonical closure state. A new consequential ambiguity still requires STOP/escalation.
 
 ## Dispatch gate
 
-All pre-code Slice-4 gates are closed.
+All pre-code Slice-4 gates remain closed.
 
 ### Frozen completion authority
 

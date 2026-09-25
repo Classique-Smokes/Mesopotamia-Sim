@@ -242,7 +242,11 @@ The suite must detect or classify at least these project-specific faults:
 49. duplicate the Household funding allocator independently across resolver/dependency/commit/history surfaces so the same transaction can derive inconsistent funding participation;
 50. collapse accepted funding-leg provenance into aggregate deltas/free-form detail so private and commitment-backed source authority cannot be reconstructed;
 51. turn `MobilizableCapacity(H)` or another convenience cache into independent Household wealth authority;
-52. make commitment/capacity/private-X state define Household identity, sustaining participation, role identity/occupancy, or Recognition identity.
+52. make commitment/capacity/private-X state define Household identity, sustaining participation, role identity/occupancy, or Recognition identity;
+53. require a qualifying post-refusal Household material need to remain current until the eventual reconsideration request, incorrectly losing historical context;
+54. refuse to record an otherwise-valid positive-dowry material need solely because funding is infeasible / the mediated action becomes Unable;
+55. let a material-need occurrence before the latest refusal satisfy the context-change limb after a later refusal resets the baseline;
+56. manufacture reconsideration context change from ProposalId/container/replay identity without a qualifying semantic material-need occurrence.
 
 Report mutant outcome as:
 
