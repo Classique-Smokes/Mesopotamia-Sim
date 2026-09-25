@@ -106,3 +106,15 @@ Implementation may translate them into executable tests/harness code but may not
 - All 176 status-bearing rows are byte-for-byte identical to reviewed candidate2.
 - Frozen v1 remains immutable historical evidence.
 - Implementation remains blocked pending reassessed inherited-verification adaptation + fresh independent approval.
+
+
+## Reassessed inherited-verification adaptation candidate
+
+- Historical pre-DEC-0013 candidate: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` — retained only for provenance.
+- Reassessment: `../../../research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REASSESSMENT.md`.
+- Current candidate ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1` @ `4f12c30b0f16531fd1e82ac08c2b71e53934ba28`.
+- Current plan blob: `43e27cb6fed1086ffcc687002f7fffd494b528b5`.
+- Plan path: `../../../research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_PLAN.md`.
+- Fresh review task: `../../../tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md`.
+- Candidate preserves the four known inherited literal breakpoints but corrects commitment-provenance adaptation for accepted head self-commitment and strengthens DEC-0011/0013 funding/dependency guardrails.
+- No coding authorization exists until independent **PASS — ADAPTATION PLAN APPROVED** and explicit gate closure.
