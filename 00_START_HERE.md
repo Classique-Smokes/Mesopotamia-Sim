@@ -61,11 +61,14 @@ Active work:
 - Slice-4 implementation boundary: **RELEASED FOR BOUNDED IMPLEMENTATION**
   - historical blocked boundary remains immutable: `sfl-v0-slice4-implementation-boundary-blocked-v1`
   - release record: `plans/verification/SFL_V0/SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`
-- IMP-0004: **IN PROGRESS / ESCALATION 01 CLOSED**
+- IMP-0004: **COMPLETE CANDIDATE / FRESH CONFORMANCE READY**
   - task: `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md`
-  - implementation branch: `implementation/imp-0004-slice4-household-head-collective-action`
-  - accepted escalation closure: `decisions/DEC-0014_HISTORICAL_MATERIAL_NEED_RECONSIDERATION_CONTEXT.md`
-  - closure record: `research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01_CLOSURE.md`
+  - candidate: `imp-0004-slice4-conformance-candidate-v1` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`
+  - freeze record: `research/technical/IMP-0004/IMP-0004_CANDIDATE_V1_FREEZE_RECORD.md`
+  - exact-head CI: `36094176584` — **PASS**
+  - review packet: `tasks/implementation/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md`
+  - reviewer status: **NO REVIEWER ACTIVE YET**
+  - PR #109 remains draft/unmerged
 - checkpoint/restore remains Slice 5.
 
 Conceptual archive systematization: **COMPLETE / PASS**
