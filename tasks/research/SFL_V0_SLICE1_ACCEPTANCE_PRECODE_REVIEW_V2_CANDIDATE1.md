@@ -1,6 +1,6 @@
 # SFL v0 Slice 1 — Successor Acceptance v2 Candidate1 Fresh Pre-Code Review
 
-**Status:** ARCHITECT-DISPATCH READY / NO REVIEWER ACTIVE YET  
+**Status:** ARCHITECT-DISPATCHED / NO REVIEWER ACTIVE YET  
 **Review type:** fresh whole-candidate successor acceptance review  
 **Authority:** advisory PASS/BLOCK review only; do not edit accepted semantics, frozen v1, candidate1, verification authority, or production code
 
