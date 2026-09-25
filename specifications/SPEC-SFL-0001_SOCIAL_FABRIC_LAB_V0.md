@@ -723,7 +723,31 @@ The current head may also, when otherwise eligible under the v0 scaffold, explic
 After refusal, another request requires:
 
 - 3 full cycles elapsed; and
-- relevant context change since refusal: person's grain/NeedsGrain, attitude toward head, head occupant, or new household material need.
+- relevant context change since refusal: person's grain/NeedsGrain, attitude toward head, head occupant, or new Household material need.
+
+This cooldown is deliberately a **crude v0 anti-repeated-solicitation proxy** for:
+
+> do not repeatedly ask someone who already refused unless enough time has passed and circumstances have meaningfully changed.
+
+The three-cycle interval is an arbitrary laboratory constant. This rule is not a historical claim, psychological model, bargaining theory, demand-management system, or mature model of Household consent.
+
+For the `new Household material need` dimension, the context change is **historical relative to the latest refusal**:
+
+- a qualifying material-need occurrence after the refusal satisfies that limb even if the particular need later ends before the head asks again;
+- the material need does not need to remain current in the reconsideration cycle;
+- cooldown and context change remain separate requirements;
+- a later refusal establishes a new baseline, so material-need occurrences before that later refusal do not qualify again.
+
+Under the current bounded v0 material-use set:
+
+- **support:** a current sustaining participant newly enters or re-enters the accepted eligible Household-support need state after the refusal; a continuously unchanged support need already present at refusal is not itself new;
+- **mediated dowry:** an otherwise-valid mediated-marriage route presents a positive dowry requirement to the accepted H/current-head authority path after the refusal. Funding sufficiency is not required for this need occurrence. A route that becomes `Unable` because no valid funding plan exists may still establish the new-material-need context change.
+
+No additional head `adopt need`, pending-demand, requisition, budget, obligation, or generic demand-lifecycle state is introduced in v0.
+
+Technical proposal identity is not semantic newness. A new ProposalId/container slot/replay identity cannot by itself manufacture context change. The implementation must preserve authoritative causal provenance for the qualifying occurrence rather than reconstruct it ad hoc from observer history.
+
+Once one qualifying material-need occurrence has satisfied the context-change limb for a refusal baseline, later duplicate/repeated occurrences do not further change eligibility for that same baseline. The current v0 deliberately does not attempt to decide whether temporally separated identical dowry requests form one long-lived real-world obligation; richer demand persistence/negotiation belongs to later redesign.
 
 ### 8.3 Permitted collective material uses
 
