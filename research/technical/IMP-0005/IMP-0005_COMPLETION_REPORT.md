@@ -15,7 +15,7 @@ Status: coder-owned implementation candidate; fresh independent conformance rema
 - External `S5-122-FRESH-INDEPENDENT-CONFORMANCE`: AWAITING FRESH INDEPENDENT REVIEW.
 - Draft PR: https://github.com/Classique-Smokes/Mesopotamia-Sim/pull/129. No merge/promotion is performed.
 
-The implementation commit above pins all runtime, test and CI changes. A later report-only commit is the candidate head. The canonical CI artifact stamps its exact `ImplementationHead` in `slice5-results.json` and `slice5-candidate-gate.json`; the final candidate return supplies that SHA, canonical run and artifact digest. This avoids a self-referential report commit or evidence from a different head.
+The implementation commit above pins all runtime, test and CI changes. Later documentation/whitespace-only commits form the candidate head. The canonical CI artifact stamps its exact `ImplementationHead` in `slice5-results.json` and `slice5-candidate-gate.json`; the final candidate return supplies that SHA, canonical run and artifact digest. This avoids a self-referential report commit or evidence from a different head.
 
 ## Implementation
 
@@ -221,4 +221,3 @@ The following statuses and links are generated from executed case bindings, not 
 ## Return boundary
 
 No semantic or adaptation STOP was encountered. No deferred capability is promoted. Candidate readiness is conditional on the final-head canonical run, native/inherited evidence and executed mutation gate all passing. Fresh independent post-implementation review remains required before promotion; this report is coder-owned evidence only.
-

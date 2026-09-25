@@ -145,4 +145,3 @@ internal static class CheckpointValidation
         if (!condition) throw new InvalidDataException(reason);
     }
 }
-

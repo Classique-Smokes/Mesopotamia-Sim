@@ -163,4 +163,3 @@ internal sealed partial class HouseholdState
         nextHeadRole = value.NextHeadRole;
     }
 }
-

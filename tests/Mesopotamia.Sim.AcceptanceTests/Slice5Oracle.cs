@@ -93,4 +93,3 @@ internal static class Slice5Oracle
         }
     }
 }
-
