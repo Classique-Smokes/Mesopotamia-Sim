@@ -4,9 +4,11 @@
 
 ## Active
 
-- `IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` — **COMPLETE CANDIDATE / FROZEN FOR INDEPENDENT CONFORMANCE**. Candidate-v1: `imp-0004-slice4-conformance-candidate-v1` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`; exact-head CI `36094176584` PASS; artifact `10846019591`. Fresh review packet: `IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md` — **ARCHITECT-DISPATCHED / READY / NO REVIEWER ACTIVE YET**. PR #109 remains draft/unmerged.
+No implementation task is currently active.
 
 ## Completed
+
+- `IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` — **VERIFIED COMPLETE**. Candidate-v1 `bac53decaafb5edf4c5879be0f695f6a52ccc1ce` received fresh independent **PASS — PROMOTE**, was promoted at `c72ae67dc76ac091331fcd5494c6657eec57f703`, and passed post-promotion CI `36098636634`. Final record: `../../research/technical/IMP-0004/IMP-0004_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`.
 
 - `IMP-0003_SFL_V0_SLICE3_HOUSEHOLD_SUBSTRATE.md` — **VERIFIED COMPLETE**. Candidate-v4 `b5e5409ebcaec856a74ab08a7d120a67f6078e36` received fresh independent **PASS — PROMOTE**, was promoted at `f7ca9525d17ed20758058df7aff97b2f47e5a01a`, and passed post-promotion CI `35949005742`. Final record: `../../research/technical/IMP-0003/IMP-0003_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`.
 
@@ -15,7 +17,7 @@
 
 ## Ready for dispatch
 
-No coding implementation task is waiting for initial dispatch. IMP-0004 is awaiting independent conformance review, not additional coding.
+No coding implementation task is waiting for initial dispatch.
 
 ## Rules
 
