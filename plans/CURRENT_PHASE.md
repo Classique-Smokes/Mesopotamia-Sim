@@ -103,7 +103,7 @@ Semantic-interaction-delta failsafe:
 - reviewed rollout candidate2: `governance-semantic-interaction-delta-rollout-v1-candidate2` @ `dbd8f2f5b81c79b69973463010011fdd7b0e785a`
 - independent review: `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_REVIEW_CANDIDATE2.md` — **PASS — POLICY READY FOR DIRECTOR PROMOTION**
 - canonical promotion: **COMPLETE / VERIFIED** — `research/technical/GOV-0002_SEMANTIC_INTERACTION_DELTA_FAILSAFE_PROMOTION_RECORD.md`
-- mandatory next gate: Slice-4 SID pilot before any successor Slice-4 acceptance candidate
+- Slice-4 SID pilot: **COMPLETE / CLOSED / PASS**; policy remains active for future triggered slices
 
 SID retrospective screening wave:
 
@@ -131,7 +131,7 @@ TRES-0011 v0 resource scaffold confidence wave:
 - accepted semantic closure: `decisions/DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md` — **ACCEPTED BY PROJECT DIRECTOR**
 - TRES-0011 does not require a mature Household economy before Slice 4; it does require explicit v0/non-historical boundaries, a narrow funding/provenance seam, later sensitivity checks, and future historical/economic redesign triggers
 - D1–D6 + v0 resource-scaffold guardrails are **PROMOTED** into SPEC + canonical verification; promotion reconciliation: `research/technical/TRES-0011/DEC-0013_PROMOTION_RECONCILIATION.md`
-- Slice-4 implementation BLOCK remains active
+- Slice-4 implementation BLOCK: **CLOSED / RELEASED FOR BOUNDED IMP-0004 DISPATCH**
 
 Slice-4 SID pilot status: **CLOSED / PASS AFTER DEC-0013**
 
@@ -147,8 +147,8 @@ Slice-4 SID pilot status: **CLOSED / PASS AFTER DEC-0013**
 - `Consequential unresolved: 0`
 - `Accidental gaps outstanding: 0`
 - closure freshness: **CURRENT / CLOSED**
-- next gate: fresh independent review of exact inherited-verification adaptation v2 candidate2
-- Slice-4 implementation remains **DIRECTOR BLOCKED** until pilot + successor acceptance + inherited-adaptation gates close
+- next gate: dispatch bounded `IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` to a coding bārû
+- Slice-4 implementation is **RELEASED FOR BOUNDED DISPATCH**; SID, successor acceptance and inherited-adaptation gates are closed
 
 Slice-4 successor acceptance v2:
 
@@ -177,29 +177,27 @@ Private-resource supplementation semantic patch:
 - frozen Slice-4 acceptance v1 remains immutable but **insufficient for implementation authorization**
 - next local gate: successor Slice-4 acceptance candidate/version + fresh whole-candidate review
 
-Director-blocked Slice-4 implementation boundary:
+Slice-4 implementation release:
 
-- immutable boundary ref: `sfl-v0-slice4-implementation-boundary-blocked-v1`
-- exact boundary commit: `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
-- block record: `plans/verification/SFL_V0/SLICE4_BLOCKED_IMPLEMENTATION_BOUNDARY_RECORD.md`
-- cause: SID-ASSURANCE-v1 is closed and successor Slice-4 v2 acceptance is frozen; implementation remains blocked solely pending inherited-verification adaptation approval/closure
-- frozen Slice-4 v1 remains immutable historical evidence; frozen v2 is current completion authority but does **not** authorize implementation until adaptation closure
-- coding bārû dispatch: **FORBIDDEN while block is active**
+- historical blocked boundary ref remains immutable: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
+- historical block record: `plans/verification/SFL_V0/SLICE4_BLOCKED_IMPLEMENTATION_BOUNDARY_RECORD.md`
+- release record: `plans/verification/SFL_V0/SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`
+- disposition: **DIRECTOR BLOCK CLOSED BY SATISFIED CONDITIONS**
+- current completion authority: frozen `SFL-V0-S4-ACCEPTANCE-v2`
+- current inherited-adaptation authority: `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`
+- implementation packet: `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md`
+- dispatch status: **READY FOR DISPATCH / NO CODING BĀRÛ ACTIVE YET**
 
 Slice-4 inherited verification adaptation:
 
-- historical pre-DEC-0013 candidate: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` @ `51981cb0ad993fe4529341f2862f50d90d72ec26` — **STALE / HISTORICAL**
-- reassessment: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REASSESSMENT.md`
-- v2 candidate1: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1` @ `4f12c30b0f16531fd1e82ac08c2b71e53934ba28`, blob `43e27cb6fed1086ffcc687002f7fffd494b528b5`
-- candidate1 review: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md` — **BLOCK — LOSSLESSNESS / ENFORCEMENT DEFECT**
-- candidate1 blocker: Adaptation B allowed the required mutant to be satisfied by a generic unrelated hidden-field/cache fault instead of proving detection on current-head/funding/dependency authority
-- v2 candidate2 ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate2`
-- exact candidate2 commit: `68fddec788b5cf41db5934c8719a6fd1ce474d32`
-- candidate2 plan blob: `00c3e64a128fa00e91b99117e321a0e379dd61c5`
-- candidate2 repair: Adaptation B now **requires** a hidden/stale current-head, authoritative funding-resolution, or material-dependency authority mutant that can change semantic behavior and must be caught by the adapted structural evidence; an unrelated generic hidden-field mutant alone is insufficient
-- fresh review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md`
-- review status: **READY FOR DISPATCH / NO REVIEWER ACTIVE YET**
-- coding status: **FORBIDDEN** until verdict `PASS — ADAPTATION PLAN APPROVED` and explicit adaptation-gate closure.
+- historical pre-DEC-0013 candidate: `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` — **STALE / HISTORICAL**
+- v2 candidate1: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1` — **BLOCKED / PRESERVED**
+- v2 candidate2: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate2` @ `68fddec788b5cf41db5934c8719a6fd1ce474d32`, blob `00c3e64a128fa00e91b99117e321a0e379dd61c5`
+- candidate2 review: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md` — **PASS — ADAPTATION PLAN APPROVED**
+- approved exact ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`
+- approval/gate-closure record: `plans/verification/SFL_V0/SLICE4_INHERITED_VERIFICATION_ADAPTATION_V2_APPROVAL_RECORD.md`
+- gate status: **CLOSED / PASS**
+- any newly discovered inherited literal witness outside the approved plan remains **STOP / escalation** during implementation.
 
 Slice-4 acceptance candidate1:
 
@@ -426,10 +424,10 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Hand `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md` to a fresh independent reviewer against immutable ref `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate2`.
-2. If BLOCK, preserve candidate2 and repair only the identified losslessness/enforcement defect or semantic escalation.
-3. If **PASS — ADAPTATION PLAN APPROVED**, preserve the report and explicitly record the inherited-verification adaptation gate closed.
-4. Close the Director Slice-4 implementation BLOCK only after that gate closure record is committed.
-5. Then derive and issue the bounded Slice-4 implementation packet / coding bārû commission from frozen acceptance v2 + approved adaptation authority.
+1. Hand `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` to a coding bārû on the exact implementation branch created from the canonical release state.
+2. Coding bārû returns **COMPLETE CANDIDATE / BLOCKED / ESCALATED / INCOMPLETE**, never VERIFIED COMPLETE.
+3. On COMPLETE CANDIDATE, freeze an exact `imp-0004-slice4-conformance-candidate-vN` ref and exact-head CI/evidence identity.
+4. Commission a fresh independent post-implementation conformance review against frozen Slice-4 acceptance v2 + approved adaptation authority.
+5. Only **PASS — PROMOTE** permits canonical implementation merge and final post-promotion CI/completion record.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
