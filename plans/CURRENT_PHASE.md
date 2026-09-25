@@ -492,7 +492,9 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
   - inherited REQUIRED: **441 = 134 Slice 1 v2 + 46 Slice 2 v1 + 96 Slice 3 v1 + 165 Slice 4 v2**
   - delta from candidate1: **94 rows byte-identical; S5-R00 exact inherited count refreshed; one new REQUIRED S5-021 diagonal-Attitude checkpoint witness**
 - fresh whole-candidate review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`
-- review status: **READY FOR DISPATCH**
+- review dispatch ref: `sfl-v0-slice5-acceptance-v1-candidate2-review-dispatch` @ `84e7db0b80a5227d2e43b129a416aefecfce7e49`
+- return branch: `review/slice5-acceptance-v1-candidate2-return`
+- review status: **ARCHITECT-DISPATCHED / NO REVIEWER ACTIVE YET**
 - coding status: **NOT AUTHORIZED**
 - freeze status: **BLOCKED pending candidate2 PASS**
 
@@ -534,7 +536,7 @@ Inherited-assurance thread:
 
 ## Next
 
-1. Dispatch fresh whole-candidate review for exact candidate2.
+1. Await fresh whole-candidate review return for exact candidate2.
 2. If **PASS — MAY FREEZE UNCHANGED**, preserve the report and freeze exact candidate2.
 3. Evaluate the conditional inherited-verification adaptation gate against the actual Slice-5 implementation design.
 4. Only then commission a bounded Slice-5 coding bārû.
