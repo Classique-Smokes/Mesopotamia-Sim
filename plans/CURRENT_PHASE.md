@@ -37,7 +37,7 @@ Execute Roadmap Stage 4 in verified vertical slices, beginning with the lower-le
 
 ## Active
 
-**Roadmap Stage 4 — Slices 1–3 VERIFIED COMPLETE / IMP-0004 CANDIDATE-V1 FROZEN / FRESH INDEPENDENT CONFORMANCE READY.**
+**Roadmap Stage 4 — Slices 1–4 VERIFIED COMPLETE / Slice 5 not yet commissioned.**
 
 Verified Slice-1 completion:
 
@@ -68,6 +68,18 @@ Verified Slice-3 completion:
 - post-implementation observation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/` — **COMPLETE / RECONCILED**
 - observation MA reconciliation: `research/technical/SFL_V0_OBSERVATIONS/RUN-0003_HOUSEHOLD_PAUSE/MASTER_ARCHITECT_RECONCILIATION.md`
 - compact future lessons: `research/technical/IMP-0003/IMP-0003_FUTURE_LESSONS_INDEX.md`
+
+Verified Slice-4 completion:
+
+- task: `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md`
+- frozen candidate: `imp-0004-slice4-conformance-candidate-v1` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`
+- exact-head candidate CI: run `36094176584` — **PASS**
+- candidate artifact: `10846019591`, digest `sha256:22c05163d0f119c5ff04c5a1c3d86b1739bf56f15ed406ba8a7acec4706461f6`
+- fresh independent conformance: `research/technical/IMP-0004/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1.md` — **PASS — PROMOTE**
+- canonical promotion merge: `c72ae67dc76ac091331fcd5494c6657eec57f703`
+- post-promotion CI: run `36098636634` — **PASS**
+- post-promotion artifact: `10848053474`, digest `sha256:1345991365761c53d34e1e26a0bedd52ef74e95414cd9eaa43c8f7634559ef3e`
+- final record: `research/technical/IMP-0004/IMP-0004_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
 
 Slice-4 acceptance candidate1 review:
 
@@ -147,15 +159,12 @@ Slice-4 SID pilot status: **CLOSED / PASS AFTER DEC-0013**
 - `Consequential unresolved: 0`
 - `Accidental gaps outstanding: 0`
 - closure freshness: **CURRENT / CLOSED**
-- implementation status: **COMPLETE CANDIDATE / FROZEN CANDIDATE-V1**
-- implementation branch/head: `implementation/imp-0004-slice4-household-head-collective-action` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`
-- immutable candidate ref: `imp-0004-slice4-conformance-candidate-v1`
-- candidate freeze record: `research/technical/IMP-0004/IMP-0004_CANDIDATE_V1_FREEZE_RECORD.md`
-- exact-head CI: `36094176584` — **PASS**
-- evidence artifact: `10846019591`, digest `sha256:22c05163d0f119c5ff04c5a1c3d86b1739bf56f15ed406ba8a7acec4706461f6`
-- fresh conformance task: `tasks/implementation/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md`
-- reviewer status: **ARCHITECT-DISPATCHED / READY / NO REVIEWER ACTIVE YET**
-- PR #109: **DRAFT / UNMERGED** pending **PASS — PROMOTE**
+- implementation status: **VERIFIED COMPLETE / PROMOTED**
+- immutable reviewed candidate: `imp-0004-slice4-conformance-candidate-v1` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`
+- fresh independent conformance: `research/technical/IMP-0004/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1.md` — **PASS — PROMOTE**
+- canonical promotion merge: `c72ae67dc76ac091331fcd5494c6657eec57f703`
+- post-promotion CI: `36098636634` — **PASS**
+- final record: `research/technical/IMP-0004/IMP-0004_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
 
 Slice-4 successor acceptance v2:
 
@@ -193,7 +202,7 @@ Slice-4 implementation release:
 - current completion authority: frozen `SFL-V0-S4-ACCEPTANCE-v2`
 - current inherited-adaptation authority: `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`
 - implementation packet: `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md`
-- dispatch status: **DISPATCHED BY PROJECT DIRECTOR / CODING BĀRÛ ACTIVE / ESCALATION 01 CLOSED**
+- final implementation status: **VERIFIED COMPLETE / PROMOTED**
 
 IMP-0004 material-need reconsideration closure:
 
@@ -458,10 +467,9 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 
 ## Next
 
-1. Hand `tasks/implementation/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md` to a fresh independent reviewer against immutable `imp-0004-slice4-conformance-candidate-v1`.
-2. Reviewer returns exactly **PASS — PROMOTE**, **BLOCK — IMPLEMENTATION / VERIFICATION DEFECT**, or **BLOCK — SEMANTIC ESCALATION**.
-3. If BLOCK, preserve candidate-v1 and derive a new bounded repair/candidate lineage; coding-bārû repair dispatch must include the required Astra effort recommendation.
-4. If **PASS — PROMOTE**, verify candidate/CI/PR no-drift and merge PR #109 onto canonical `main`.
-5. Run post-promotion canonical CI and write the final IMP-0004 completion/promotion record.
+1. Slice 4 is closed; do not continue modifying its implementation outside an explicitly commissioned repair.
+2. The existing retrospective Slice-1 SID Pass-B alias challenge remains a separate assurance thread and may proceed in parallel; it does not by itself reopen verified Slice-4 completion.
+3. Any Slice-5 work must begin through the normal preimplementation path: retrieve `plans/SFL_V0_INTERSLICE_DISCOVERY_PROMPTS.md`, perform bounded authority/gap/surface/verification discovery, reconcile semantics, freeze completion authority, then dispatch implementation.
+4. No Slice-5 coding bārû is currently commissioned.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
