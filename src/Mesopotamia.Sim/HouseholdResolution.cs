@@ -53,7 +53,11 @@ public sealed partial class Simulation
                 .. epistemic.Candidates.Where(c => c.Core.Any(people.Contains)).Select(c => "C:" + c.Id.Value)];
             if (HouseholdRules.Target(proposal.Terms) is { } h) scope.Add("H:" + h.Value);
             if (proposal.Terms is CommunicateClaim && payloads.TryGetValue(proposal.Id, out var payload))
+            {
                 scope.UnionWith(payload.Select(f => f.Proposition).OfType<HouseholdExistenceFact>().Select(f => "H:" + f.Household.Value));
+                scope.UnionWith(payload.Select(f => f.Proposition).OfType<HeadRoleFact>().Select(f => "H:" + f.Household.Value));
+                scope.UnionWith(payload.Select(f => f.Proposition).OfType<SustainingParticipationFact>().Select(f => "H:" + f.Household.Value));
+            }
             return scope;
         }
     }

@@ -14,7 +14,6 @@ internal static class HouseholdHeadRules
         SustainingParticipant[] current = households.Current(terms.Household);
         if (!current.Any(a => a.Person == proposal.Actor)) return "NominatorNotParticipant";
         if (!current.Any(a => a.Person == terms.Nominee)) return "NomineeNotParticipant";
-        if (role.Occupant is { } occupant && occupant != proposal.Actor) return "NotOutgoingHead";
         if (role.Occupant == terms.Nominee) return "AlreadyHead";
         if (proposal.HouseholdContext is { } context && (context.Household != terms.Household ||
             context.Role != role.Id || context.Head != proposal.Actor || role.Occupant != context.Head ||
@@ -35,6 +34,13 @@ internal static class HouseholdHeadRules
 public sealed partial class Simulation
 {
     private const string HeadRulesVersion = "SFL-S4-v1";
+    internal void SupplyHeadEvidenceFixture(PersonId actor, HeadRoleFact fact, EvidenceOrigin origin)
+    {
+        if (faulted || !households.HeadRoles.ContainsKey(fact.Role) || households.HeadRoles[fact.Role].Household != fact.Household ||
+            string.IsNullOrWhiteSpace(origin.Fixture)) throw new ArgumentException("Declared head-report prerequisite required.", nameof(origin));
+        epistemic.Acquire(actor, fact, AcquisitionRoute.Fixture, origin);
+        publishedEpistemic = epistemic.Snapshot(cycle);
+    }
 
     private (Proposal Proposal, EventId Cause)? AcceptHeadNomination(Proposal proposal, EventId nomination,
         CycleInput input, EpistemicSnapshot snapshot, List<DecisionTrace> decisions, List<Outcome> outcomes)
@@ -58,17 +64,18 @@ public sealed partial class Simulation
             if (profile is not ("SCORE-RP-001" or "SCORE-RP-002")) throw new ArgumentException("Unsupported head consent profile.", nameof(input));
             bool participantAccepts = Choice(HeadConsentCapacity.Participant);
             bool nomineeAccepts = actor != terms.Nominee || Choice(HeadConsentCapacity.Nominee);
+            bool scripted = input.HeadConsents.Keys.Any(k => k.Proposal == proposal.Id && k.Actor == actor);
             SemanticEvent response = Record("HeadConsent", proposal.Id, [actor], [nomination], [],
                 $"Participant:{participantAccepts};Nominee:{(actor == terms.Nominee ? nomineeAccepts : null)}", rulesVersion: HeadRulesVersion);
             consents.Add(new(actor, HeadConsentCapacity.Participant, participantAccepts, response.Id, evidence));
             if (actor == terms.Nominee) consents.Add(new(actor, HeadConsentCapacity.Nominee, nomineeAccepts, response.Id, evidence));
-            decisions.Add(new(actor, proposal.Id, "HeadConsentResponse", profile,
+            decisions.Add(new(actor, proposal.Id, "HeadConsentResponse", scripted ? "MECHANISM-RESPONSE-v1" : profile,
                 [Candidate("Accept", participantAccepts && nomineeAccepts, profile == "SCORE-RP-001" ? 100 : 0),
                     Candidate("Decline", !participantAccepts || !nomineeAccepts, profile == "SCORE-RP-002" ? 100 : 0)],
                 [.. evidence.Select(f => $"HouseholdEvidence:{f.Id.Value}")], false));
             bool Choice(HeadConsentCapacity capacity) => input.HeadConsents.GetValueOrDefault(new(proposal.Id, actor, capacity), profile == "SCORE-RP-001");
-            static CandidateTrace Candidate(string meaning, bool selected, long score) => new(meaning, meaning, true, "",
-                ImmutableDictionary<string, long>.Empty.Add("ResponsePreference", score), score, selected);
+            CandidateTrace Candidate(string meaning, bool selected, long score) => new(meaning, meaning, true, "",
+                scripted ? ImmutableDictionary<string, long>.Empty : ImmutableDictionary<string, long>.Empty.Add("ResponsePreference", score), scripted ? null : score, selected);
         }
         Proposal accepted = proposal with { HeadAttempt = new(role, cohort, [.. consents]) };
         if (consents.Any(c => !c.Accepted))

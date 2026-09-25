@@ -20,7 +20,8 @@ public sealed partial class Simulation
         if (HouseholdRules.Before(a, b)) return true;
         WorldSnapshot world = state.Snapshot(cycle);
         int rankA = MaterialRank(a), rankB = MaterialRank(b);
-        if (rankA < rankB && MaterialPeople(a, world).Intersect(MaterialPeople(b, world)).Any()) return true;
+        if (rankA < rankB && (b.CollectiveAttempt is { Cost: > 0 } || Transfer(b, world) is not null) &&
+            MaterialPeople(a, world).Intersect(MaterialPeople(b, world)).Any()) return true;
         if (a.HeadAttempt is { } transition && b.Terms is EndHouseholdParticipation exit &&
             exit.Household == transition.Role.Household && transition.Cohort.Any(p => p.Person == b.Actor)) return true;
         if (a.CollectiveAttempt is not { } act) return false;

@@ -20,6 +20,7 @@ public sealed class Slice4MechanismTests
         Assert.AreEqual(roleId, lab.Role.Id);
         lab.Step(2, new EndHouseholdParticipation(h));
         Assert.IsNull(lab.Role.Occupant); Assert.AreEqual(roleId, lab.Role.Id); Assert.AreEqual(h, lab.H);
+        Slice4Oracle.Verify(lab);
     }
 
     [TestMethod]
@@ -33,6 +34,7 @@ public sealed class Slice4MechanismTests
             if (missing >= 2) overrides = overrides.Add(new(p.Id, Slice4Lab.P(missing), HeadConsentCapacity.Participant), false);
             Assert.AreEqual(OutcomeKind.Declined, lab.Run(new([p]) { HeadConsents = overrides }).Outcomes.Single().Kind);
             Assert.IsNull(lab.Role.Occupant);
+            Slice4Oracle.Verify(lab);
         }
     }
 
@@ -49,6 +51,7 @@ public sealed class Slice4MechanismTests
         Assert.AreEqual(Slice4Lab.P(3), support.Funding.Commitments.Single().Person);
         Assert.IsFalse(result.State.People[Slice4Lab.P(2)].NeedsGrain);
         Assert.AreEqual(1L, result.State.People[Slice4Lab.P(2)].Grain);
+        Slice4Oracle.Verify(lab);
     }
 
     [TestMethod]
@@ -66,6 +69,7 @@ public sealed class Slice4MechanismTests
             Assert.AreEqual(3 - (x ?? 0), committed.Funding.Commitments.Sum(l => l.Debit));
             Assert.AreEqual(1, result.State.Marriages.Count); Assert.AreEqual(1, result.State.Favours.Count);
             Assert.AreEqual(Slice4Lab.P(1), result.State.Favours.Values.Single().Holder);
+            Slice4Oracle.Verify(lab);
         }
     }
 
@@ -79,5 +83,6 @@ public sealed class Slice4MechanismTests
         Assert.IsTrue(result.Outcomes.All(o => o.Kind == OutcomeKind.Committed));
         Assert.IsNull(lab.Role.Occupant);
         Assert.IsTrue(result.Events.Single(e => e.Kind == "HouseholdSupport").ReactionIndex < result.Events.Single(e => e.Kind == "HouseholdParticipationEnded").ReactionIndex);
+        Slice4Oracle.Verify(lab);
     }
 }

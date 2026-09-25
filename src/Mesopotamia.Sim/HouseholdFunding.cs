@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Text.Json.Serialization;
 
 namespace Mesopotamia.Sim;
 
@@ -14,6 +15,10 @@ public sealed record ProvisionProcessKey(HouseholdId Household, PersonId Contrib
 public sealed record ProvisionContext(long Grain, bool NeedsGrain, int AttitudeTowardHead, PersonId Head,
     ImmutableArray<PersonId> NeedyParticipants);
 public sealed record ProvisionRefusal(ProvisionProcessKey Key, long Cycle, EventId Event, ProvisionContext Context);
+[JsonPolymorphic(TypeDiscriminatorPropertyName = "kind")]
+[JsonDerivedType(typeof(ProvisionFixtureProvenance), "controlled-fixture")]
+[JsonDerivedType(typeof(EndogenousProvisionOrigin), "endogenous-response")]
+[JsonDerivedType(typeof(SelfProvisionOrigin), "head-private-consent")]
 public abstract record ProvisionOrigin;
 public sealed record EndogenousProvisionOrigin(HouseholdDecisionContext Authority, ProposalId Proposal,
     EventId Request, EventId Acceptance, EventId Created, PersonId Contributor) : ProvisionOrigin;
@@ -35,8 +40,9 @@ public sealed record HouseholdPolicy(string Profile = "SCORE-VP-003")
 internal static class HouseholdFunding
 {
     internal static ImmutableArray<PersonId> Participants(HouseholdSnapshot households, HouseholdId household,
-        PersonId head, PersonId recipient) => [.. households.Commitments.Values.Where(c => c.Household == household && c.TerminatedBy is null)
-            .Select(c => c.Person).Append(head).Append(recipient).Distinct().OrderBy(p => p.Value)];
+        PersonId? privateOwner, PersonId recipient) => [.. households.Commitments.Values.Where(c => c.Household == household && c.TerminatedBy is null &&
+            households.Associations.TryGetValue(c.Association, out var a) && a.End is null && a.Person == c.Person && a.Household == household)
+            .Select(c => c.Person).Concat(privateOwner is { } owner ? [owner] : []).Append(recipient).Distinct().OrderBy(p => p.Value)];
 
     internal static (HouseholdFundingResult? Result, string? Failure) Evaluate(WorldSnapshot world,
         HouseholdSnapshot households, HouseholdDecisionContext authority, long cost, PrivateGrainAuthorization? supplement, PersonId recipient)
@@ -67,6 +73,6 @@ internal static class HouseholdFunding
         bool tie = capacities.Where(c => c.Capacity > 0).GroupBy(c => c.Capacity).Any(g => g.Count() > 1 &&
             legs.Any(l => g.Any(c => c.Commitment.Id == l.Commitment)));
         return (new(authority, cost, supplement, residual, [.. legs],
-            Participants(households, authority.Household, authority.Head, recipient), recipient, tie), null);
+            Participants(households, authority.Household, supplement?.Owner, recipient), recipient, tie), null);
     }
 }

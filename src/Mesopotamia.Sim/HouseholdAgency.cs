@@ -10,13 +10,20 @@ public sealed partial class Simulation
         foreach (var binding in input.HouseholdPolicies.OrderBy(p => p.Key.Value))
         {
             HouseholdId h = binding.Key; HouseholdPolicy policy = binding.Value;
-            if (policy.Profile != "SCORE-VP-003") throw new ArgumentException("Unsupported Household profile.", nameof(input));
+            if (policy.Profile is not ("SCORE-VP-003" or "SFL-HOUSEHOLD-REFERENCE-v1")) throw new ArgumentException("Unsupported Household profile.", nameof(input));
             if (!households.Households.TryGetValue(h, out Household? household)) throw new ArgumentException("Unknown Household policy binding.", nameof(input));
             HouseholdHeadRole role = households.HeadRoles.Values.Single(r => r.Household == h);
             if (household.Lifecycle != HouseholdLifecycle.Active || role.Occupant is not { } head) continue;
             HouseholdDecisionContext context = new(h, role.Id, head);
             if (proposals.Any(p => p.HouseholdContext?.Household == h)) throw new ArgumentException("Household context already has an initiative.", nameof(input));
             List<ActionTerms> terms = [];
+            if (policy.Profile == "SFL-HOUSEHOLD-REFERENCE-v1")
+                foreach (PersonId participant in households.Current(h).Select(a => a.Person).OrderBy(p => p.Value))
+                {
+                    if (world.People[participant].NeedsGrain) terms.Add(new HouseholdSupport(h, participant));
+                    if (!households.Commitments.Values.Any(c => c.Household == h && c.Person == participant && c.TerminatedBy is null))
+                        terms.Add(participant == head ? new AuthorizeOwnProvisionCommitment(h, true, true) : new RequestProvisionCommitment(h, participant));
+                }
             if (policy.NeedRecipient is { } recipient) terms.Add(new HouseholdSupport(h, recipient, policy.Private));
             if (policy.ProvisionTarget is { } target)
                 terms.Add(target == head ? new AuthorizeOwnProvisionCommitment(h, true, true) : new RequestProvisionCommitment(h, target));

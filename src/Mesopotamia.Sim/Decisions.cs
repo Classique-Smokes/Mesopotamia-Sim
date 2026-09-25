@@ -1,7 +1,13 @@
 using System.Collections.Immutable;
+using System.Text.Json.Serialization;
 
 namespace Mesopotamia.Sim;
 
+[JsonPolymorphic(TypeDiscriminatorPropertyName = "kind")]
+[JsonDerivedType(typeof(HeldFact), "fact")]
+[JsonDerivedType(typeof(HeldRecognition), "candidate-recognition")]
+[JsonDerivedType(typeof(HeldHouseholdRecognition), "household-recognition")]
+[JsonDerivedType(typeof(HeldHeadRecognition), "head-recognition")]
 public abstract record HeldClaim;
 public sealed record HeldFact(EvidenceId Evidence) : HeldClaim;
 public sealed record HeldRecognition(CandidateId Candidate) : HeldClaim;

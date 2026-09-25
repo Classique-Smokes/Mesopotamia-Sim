@@ -121,7 +121,7 @@ public sealed partial class Simulation
         MaterialPeople(a, snapshot).Intersect(MaterialPeople(b, snapshot)).Any();
 
     private PersonId[] MaterialPeople(Proposal proposal, WorldSnapshot snapshot) =>
-        proposal.CollectiveAttempt is { Cost: > 0 } a ? [.. HouseholdFunding.Participants(households.Snapshot(cycle), a.Authority.Household, a.Authority.Head, a.Recipient)] :
+        proposal.CollectiveAttempt is { Cost: > 0 } a ? [.. HouseholdFunding.Participants(households.Snapshot(cycle), a.Authority.Household, a.Private?.Owner, a.Recipient)] :
         Transfer(proposal, snapshot) is { } transfer ? [transfer.Giver, transfer.Recipient] :
         EffectiveTerms(proposal) is Farm ? [EffectiveActor(proposal, snapshot)] : [];
 

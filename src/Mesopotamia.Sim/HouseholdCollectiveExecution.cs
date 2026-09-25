@@ -55,12 +55,22 @@ public sealed partial class Simulation
             string profile = input.ProposalResponseProfiles.GetValueOrDefault(proposal.Id, input.ResponseProfiles.GetValueOrDefault(actor, "SCORE-RP-001"));
             if (profile is not ("SCORE-RP-001" or "SCORE-RP-002")) throw new ArgumentException("Unsupported collective response profile.", nameof(input));
             bool decline = policy.Decline || profile == "SCORE-RP-002" || input.Responses.GetValueOrDefault(proposal.Id, ResponseChoice.Accept) == ResponseChoice.Decline;
+            bool scripted = policy.Decline || input.Responses.ContainsKey(proposal.Id);
+            if (input.Responses.TryGetValue(proposal.Id, out var response) && response is not (ResponseChoice.Accept or ResponseChoice.Decline))
+                throw new ArgumentException("Response meaning does not belong to collective proposal.", nameof(input));
+            if (scripted) decline = policy.Decline || input.Responses.GetValueOrDefault(proposal.Id, ResponseChoice.Accept) == ResponseChoice.Decline;
             if (cost == 0) candidates.Add(new("Accept", "Accept", true, "", ImmutableDictionary<string, long>.Empty.Add("ResponsePreference", 100), 100, false));
-            candidates.Add(new("Decline", "Decline", true, "", ImmutableDictionary<string, long>.Empty.Add("ResponsePreference", decline ? 200 : 0), decline ? 200 : 0, false));
+            candidates = [.. candidates.Select(c => c with
+            {
+                Components = c.Components.SetItem("ResponsePreference", decline ? 0 : 100),
+                FinalScore = c.Eligible ? ReferenceScorer.Sum(c.Components.SetItem("ResponsePreference", decline ? 0 : 100).Values) : null
+            })];
+            candidates.Add(new("Decline", "Decline", true, "", ImmutableDictionary<string, long>.Empty.Add("ResponsePreference", decline ? 100 : 0), decline ? 100 : 0, false));
             var choice = ReferenceScorer.Select(candidates);
             candidates = [.. candidates.Select(c => c with { Selected = c.Key == choice.Key })];
             if (choice.Key is not null && plans.TryGetValue(choice.Key, out var chosen)) selected = chosen;
-            decisions.Add(new(actor, proposal.Id, "Response", profile, [.. candidates],
+            if (scripted) candidates = [.. candidates.Select(c => c with { Components = ImmutableDictionary<string, long>.Empty, FinalScore = null })];
+            decisions.Add(new(actor, proposal.Id, "Response", scripted ? "MECHANISM-RESPONSE-v1" : profile, [.. candidates],
                 [$"OwnGrain:{world.People[actor].Grain}", .. knowledgeSnapshot.Actors[actor].Facts.Where(f => f.Proposition is HeadRoleFact).Select(f => $"HeadEvidence:{f.Id.Value}")], choice.Fallback)
             { HouseholdContext = cost > 0 ? authority : null });
             acceptance = Record("Response", proposal.Id, [actor], [request], [], choice.Key!, rulesVersion: HeadRulesVersion).Id;

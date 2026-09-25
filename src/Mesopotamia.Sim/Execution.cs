@@ -1,7 +1,32 @@
 using System.Collections.Immutable;
+using System.Text.Json.Serialization;
 
 namespace Mesopotamia.Sim;
 
+[JsonPolymorphic(TypeDiscriminatorPropertyName = "kind")]
+[JsonDerivedType(typeof(Farm), "farm")]
+[JsonDerivedType(typeof(OfferGift), "offer-gift")]
+[JsonDerivedType(typeof(RequestGiftOrHelp), "request-help")]
+[JsonDerivedType(typeof(OfferLoan), "offer-loan")]
+[JsonDerivedType(typeof(RequestLoan), "request-loan")]
+[JsonDerivedType(typeof(RepayDebt), "repay-debt")]
+[JsonDerivedType(typeof(OfferBenefitForFavor), "benefit-for-favour")]
+[JsonDerivedType(typeof(RelationshipMediatedReciprocalHelp), "reciprocal-help")]
+[JsonDerivedType(typeof(CallFavor), "call-favour")]
+[JsonDerivedType(typeof(CancelReciprocalFavours), "cancel-favours")]
+[JsonDerivedType(typeof(ProposeMarriage), "direct-marriage")]
+[JsonDerivedType(typeof(MoveResidence), "move-residence")]
+[JsonDerivedType(typeof(InviteResidence), "invite-residence")]
+[JsonDerivedType(typeof(CommunicateClaim), "communicate")]
+[JsonDerivedType(typeof(RequestHouseholdParticipation), "request-participation")]
+[JsonDerivedType(typeof(InviteHouseholdParticipation), "invite-participation")]
+[JsonDerivedType(typeof(EndHouseholdParticipation), "end-participation")]
+[JsonDerivedType(typeof(NominateHouseholdHead), "nominate-head")]
+[JsonDerivedType(typeof(RequestProvisionCommitment), "request-provision")]
+[JsonDerivedType(typeof(AuthorizeOwnProvisionCommitment), "self-provision")]
+[JsonDerivedType(typeof(HouseholdSupport), "household-support")]
+[JsonDerivedType(typeof(RequestHouseholdSupport), "request-household-support")]
+[JsonDerivedType(typeof(ProposeMediatedMarriage), "mediated-marriage")]
 public abstract record ActionTerms;
 public sealed record Farm : ActionTerms;
 public sealed record Proposal(ProposalId Id, PersonId Actor, ActionTerms Terms)
@@ -65,7 +90,10 @@ public sealed partial class Simulation
     public ImmutableArray<SemanticEvent> History => events.ToImmutableArray();
     public ImmutableArray<DecisionTrace> DecisionHistory => decisionHistory.ToImmutableArray();
     public CycleResult RunAutonomousCycle() => RunCycle(new([])
-    { PersonalPolicies = state.People.Keys.ToImmutableDictionary(p => p, _ => new PersonalPolicy()) });
+    {
+        PersonalPolicies = state.People.Keys.ToImmutableDictionary(p => p, _ => new PersonalPolicy()),
+        HouseholdPolicies = households.Households.Keys.ToImmutableDictionary(h => h, _ => new HouseholdPolicy("SFL-HOUSEHOLD-REFERENCE-v1"))
+    });
     public ImmutableArray<ParticipantOutcome> KnowledgeOf(PersonId person) =>
         knowledge.TryGetValue(person, out var facts) ? facts.ToImmutableArray() : [];
 
@@ -239,7 +267,7 @@ public sealed partial class Simulation
             {
                 Cycle = cycle,
                 ConfigurationVersion = initial.Configuration.Version,
-                RulesVersion = d.Proposal is { } id ? events.Single(e => e.Kind == "Proposal" && e.Proposal == id).RulesVersion :
+                RulesVersion = d.HouseholdContext is not null ? HeadRulesVersion : d.Proposal is { } id ? events.Single(e => e.Kind == "Proposal" && e.Proposal == id).RulesVersion :
                     d.Candidates.Any(c => RulesVersionFor(c.Terms, decisionEpistemic.Actors[d.Actor]) == HouseholdRulesVersion)
                         ? HouseholdRulesVersion : Configuration.RulesVersion
             }).ToImmutableArray();
