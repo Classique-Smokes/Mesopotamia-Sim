@@ -514,14 +514,20 @@ Inherited-assurance thread:
 - review blob: `e49c41ad949251dac5b86d926c4d88829794af12`
 - freeze record: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_V2_FREEZE_RECORD.md`
 - frozen-ref hygiene: **PASS** — ref remains identical to freeze commit after external freeze-record creation
-- remaining inherited gate: current implementation conformance to frozen v2
+- successor conformance task: `tasks/implementation/SFL_V0_SLICE1_SUCCESSOR_V2_DEC0015_CONFORMANCE.md`
+- implementation branch: `implementation/slice1-v2-dec0015-conformance`
+- immutable dispatch ref: `sfl-v0-slice1-v2-dec0015-conformance-dispatch` @ `91feb1a0b2e8baf3ad67e7b8051da0b34e6917c3`
+- implementation agent / effort: **Astra / MEDIUM**
+- implementation status: **DISPATCHED / AWAITING RETURN**
+- remaining inherited gate: implementation candidate + fresh independent successor-conformance PASS
 
 ## Next
 
-1. Reconcile current implementation conformance to frozen Slice-1 successor v2 authority.
-2. Issue a corrected Slice-5 acceptance candidate reflecting the new inherited authority and run fresh whole-candidate review.
-3. Freeze Slice-5 acceptance only after those gates close.
-4. Evaluate any conditional inherited-verification adaptation trigger from the chosen Slice-5 design.
-5. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
+1. Complete `tasks/implementation/SFL_V0_SLICE1_SUCCESSOR_V2_DEC0015_CONFORMANCE.md` and return an exact unmerged implementation candidate.
+2. Run fresh independent successor-conformance review of that exact candidate.
+3. Issue a corrected Slice-5 acceptance candidate reflecting the new inherited authority and run fresh whole-candidate review.
+4. Freeze Slice-5 acceptance only after those gates close.
+5. Evaluate any conditional inherited-verification adaptation trigger from the chosen Slice-5 design.
+6. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
