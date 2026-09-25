@@ -422,6 +422,16 @@ Birth Run 001 raw package:
 
 This is not an extra acceptance requirement for Slice 1. It is an observational/project-understanding checkpoint: the raw autonomous history is now frozen; the Project Director should inspect it before Master Architect interpretation/classification becomes the dominant frame.
 
+## Parallel support — conceptual archive systematization wave
+
+- status: **ARCHITECT-DISPATCHED / NON-BLOCKING**
+- source baseline: `conceptual-archive-source-2026-09-24-v1` @ `76508f1f766451bdd5ea1a35a16c37adb0dfd682`
+- dispatch index: `tasks/research/CONCEPTUAL_ARCHIVE_SYSTEMATIZATION_WAVE_2026-09-24.md`
+- immediate family commissions: A first-contact / B source-lineage / C supporting-context
+- dependent commissions: D whole-library integration -> E fresh essence coverage audit
+- scope: `research/conceptual/` non-authoritative systematization only
+- IMP-0004 coding branch/work remains independent and is not blocked by this wave
+
 ## Next
 
 1. Hand `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` to a coding bārû on the exact implementation branch created from the canonical release state.
