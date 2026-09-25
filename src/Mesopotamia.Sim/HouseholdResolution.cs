@@ -47,6 +47,7 @@ public sealed partial class Simulation
             HashSet<PersonId> people = [proposal.Actor];
             if (ActionRules.Target(proposal.Terms, world) is { } target) people.Add(target);
             people.UnionWith(MaterialPeople(proposal, world));
+            if (proposal.HeadAttempt is { } nomination) people.UnionWith(nomination.Cohort.Select(a => a.Person));
             HashSet<string> scope = [.. people.Select(p => "P:" + p.Value),
                 .. households.Associations.Values.Where(a => people.Contains(a.Person)).Select(a => "H:" + a.Household.Value),
                 .. epistemic.Candidates.Where(c => c.Core.Any(people.Contains)).Select(c => "C:" + c.Id.Value)];
@@ -69,7 +70,7 @@ public sealed partial class Simulation
             var first = Evaluate(order);
             for (int i = 0; i + 1 < order.Length; i++)
             {
-                if (HouseholdRules.Before(order[i], order[i + 1])) continue;
+                if (BeforeAccepted(order[i], order[i + 1], accepted)) continue;
                 Proposal[] swapped = [.. order];
                 (swapped[i], swapped[i + 1]) = (swapped[i + 1], swapped[i]);
                 var second = Evaluate(swapped);
@@ -84,7 +85,7 @@ public sealed partial class Simulation
         void Enumerate(List<Proposal> prefix, List<Proposal> remaining)
         {
             if (remaining.Count == 0) { orders.Add([.. prefix]); return; }
-            foreach (Proposal p in remaining.Where(p => !remaining.Any(other => HouseholdRules.Before(other, p))))
+            foreach (Proposal p in remaining.Where(p => !remaining.Any(other => BeforeAccepted(other, p, accepted))))
                 Enumerate([.. prefix, p], [.. remaining.Where(other => other.Id != p.Id)]);
         }
 
@@ -106,13 +107,19 @@ public sealed partial class Simulation
             HashSet<PersonId> moved = [];
             AttitudeBatch batch = new();
             bool arithmeticFault = false;
-            foreach (Proposal p in order)
+            foreach (Proposal original in order)
             {
+                Proposal p = original;
                 if (arithmeticFault) { outcomes[p.Id] = "NotReached"; continue; }
                 string? loss = ResolutionLoss(p, projection.state.Snapshot(cycle), moved) ?? HouseholdRules.Invalid(p, projection.households) ??
                     HouseholdRules.Infeasible(p, projection.state.Snapshot(cycle), projection.households, projection.epistemic);
                 if (loss is null && p.Terms is CommunicateClaim claim && !CommunicationRules.StillHolds(projection.epistemic.Of(p.Actor), claim.Claim, payloads[p.Id]))
                     loss = "PropositionNoLongerHeld";
+                if (loss is null && p.CollectiveAttempt is { Cost: > 0 })
+                {
+                    var funding = projection.EvaluateFunding(p);
+                    loss = funding.Failure; p = p with { LiveFunding = funding.Result };
+                }
                 if (loss is not null) { outcomes[p.Id] = "InvalidatedAtResolution:" + loss; continue; }
                 try
                 {

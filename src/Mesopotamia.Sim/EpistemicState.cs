@@ -27,6 +27,8 @@ public sealed record EvidenceProvenance(AcquisitionRoute Route, EvidenceOrigin O
 [JsonDerivedType(typeof(ParticipationFact), "participation")]
 [JsonDerivedType(typeof(SupportFact), "support")]
 [JsonDerivedType(typeof(HouseholdExistenceFact), "household")]
+[JsonDerivedType(typeof(HeadRoleFact), "head-role")]
+[JsonDerivedType(typeof(SustainingParticipationFact), "sustaining-participation")]
 public abstract record FactualProposition;
 public sealed record OwnStateFact(Person Person) : FactualProposition;
 public sealed record ResidenceFact(PersonId Person, DwellingId Dwelling) : FactualProposition;
@@ -50,6 +52,7 @@ public sealed record ActorEpistemicState(PersonId Actor, ImmutableArray<KnownFac
     ImmutableArray<CandidateRecognition> Recognitions)
 {
     public ImmutableArray<HouseholdRecognition> HouseholdRecognitions { get; init; } = [];
+    public ImmutableArray<HeadRecognition> HeadRecognitions { get; init; } = [];
     public RecognitionStatus HouseholdRecognitionOf(HouseholdId household) =>
         HouseholdRecognitions.SingleOrDefault(r => r.Household == household)?.Status ?? RecognitionStatus.Unknown;
     public RecognitionStatus RecognitionOf(CandidateId candidate) =>
@@ -73,6 +76,8 @@ internal static class EpistemicRules
         (ParticipationFact x, ParticipationFact y) => x.Outcome.Event == y.Outcome.Event,
         (SupportFact x, SupportFact y) => x.Event == y.Event,
         (HouseholdExistenceFact x, HouseholdExistenceFact y) => x.Household == y.Household,
+        (HeadRoleFact x, HeadRoleFact y) => x.Household == y.Household,
+        (SustainingParticipationFact x, SustainingParticipationFact y) => x.Household == y.Household && x.Person == y.Person,
         _ => false
     };
 
@@ -186,6 +191,7 @@ internal sealed class EpistemicState
         ImmutableArray<KnownFact> held = [.. facts[actor].OrderBy(f => f.Id.Value)];
         return new(actor, held, [.. candidates.OrderBy(c => c.Id.Value).Select(c => EpistemicRules.Recognize(c, held))])
         {
+            HeadRecognitions = HeadRecognitionRules.Recognize(held),
             HouseholdRecognitions = [.. held.Where(f => f.Proposition is HouseholdExistenceFact)
                 .GroupBy(f => ((HouseholdExistenceFact)f.Proposition).Household).OrderBy(g => g.Key.Value)
                 .Select(g => new HouseholdRecognition(g.Key,

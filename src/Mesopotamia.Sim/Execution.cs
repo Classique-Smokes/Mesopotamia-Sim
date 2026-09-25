@@ -4,9 +4,18 @@ namespace Mesopotamia.Sim;
 
 public abstract record ActionTerms;
 public sealed record Farm : ActionTerms;
-public sealed record Proposal(ProposalId Id, PersonId Actor, ActionTerms Terms);
+public sealed record Proposal(ProposalId Id, PersonId Actor, ActionTerms Terms)
+{
+    public HouseholdDecisionContext? HouseholdContext { get; init; }
+    internal AcceptedHeadAttempt? HeadAttempt { get; init; }
+    internal AcceptedCollectiveAttempt? CollectiveAttempt { get; init; }
+    internal HouseholdFundingResult? LiveFunding { get; init; }
+}
 public sealed record CycleInput(ImmutableArray<Proposal> Proposals)
 {
+    public ImmutableDictionary<HeadConsentKey, bool> HeadConsents { get; init; } = ImmutableDictionary<HeadConsentKey, bool>.Empty;
+    public ImmutableDictionary<ProposalId, HouseholdFundingPolicy> FundingPolicies { get; init; } = ImmutableDictionary<ProposalId, HouseholdFundingPolicy>.Empty;
+    public ImmutableDictionary<HouseholdId, HouseholdPolicy> HouseholdPolicies { get; init; } = ImmutableDictionary<HouseholdId, HouseholdPolicy>.Empty;
     public static CycleInput Empty => new([]);
     public ImmutableDictionary<PersonId, string> ResponseProfiles { get; init; } = ImmutableDictionary<PersonId, string>.Empty;
     public ImmutableDictionary<ProposalId, ResponseChoice> Responses { get; init; } = ImmutableDictionary<ProposalId, ResponseChoice>.Empty;
@@ -20,6 +29,9 @@ public sealed record SemanticEvent(EventId Id, long Cycle, int ReactionIndex, st
     ProposalId? Proposal, ImmutableArray<PersonId> Participants, ImmutableArray<EventId> Causes,
     ImmutableArray<MaterialChange> Material, string Detail, string ConfigurationVersion, bool TechnicalFallback = false)
 {
+    public HouseholdDecisionContext? HouseholdContext { get; init; }
+    public HeadTransition? HeadTransition { get; init; }
+    public HouseholdFundingResult? Funding { get; init; }
     public ImmutableArray<AttitudeContribution> Contributions { get; init; } = [];
     public ActionTerms? Action { get; init; }
     public string RulesVersion { get; init; } = Configuration.RulesVersion;
@@ -61,9 +73,10 @@ public sealed partial class Simulation
     {
         ArgumentNullException.ThrowIfNull(input);
         if (faulted) throw new InvalidOperationException("A failed cycle cannot be resumed.");
-        if (input.Proposals.Select(p => p.Actor).Distinct().Count() != input.Proposals.Length)
+        if (input.Proposals.Where(p => p.HouseholdContext is null).GroupBy(p => p.Actor).Any(g => g.Count() > 1) ||
+            input.Proposals.Where(p => p.HouseholdContext is not null).GroupBy(p => p.HouseholdContext!.Household).Any(g => g.Count() > 1))
             throw new ArgumentException("At most one personal initiative per person/cycle.", nameof(input));
-        if (input.PersonalPolicies.Keys.Any(p => !state.People.ContainsKey(p) || input.Proposals.Any(proposal => proposal.Actor == p)))
+        if (input.PersonalPolicies.Keys.Any(p => !state.People.ContainsKey(p) || input.Proposals.Any(proposal => proposal.Actor == p && proposal.HouseholdContext is null)))
             throw new ArgumentException("A context cannot receive a scripted and autonomous initiative.", nameof(input));
         if (input.Proposals.Any(p => p.Id.Value <= 0 || usedProposals.Contains(p.Id) || !state.People.ContainsKey(p.Actor)) ||
             input.Proposals.Select(p => p.Id).Distinct().Count() != input.Proposals.Length)
@@ -91,6 +104,7 @@ public sealed partial class Simulation
                 }
                 decisions.Add(decision.Trace with { Proposal = id });
             }
+            DeliberateHouseholds(input, decisionSnapshot, decisionEpistemic, proposals, decisions);
             List<(Proposal Proposal, EventId Cause)> accepted = [];
             Dictionary<ProposalId, ImmutableArray<KnownFact>> communicationPayloads = [];
             AttitudeBatch batch = new();
@@ -102,7 +116,7 @@ public sealed partial class Simulation
                     !CommunicationRules.Holds(decisionEpistemic.Actors[proposal.Actor], claim.Claim)) invalid = "PropositionNotHeld";
                 SemanticEvent proposed = Record("Proposal", proposal.Id, [proposal.Actor], [], [], ActionRules.Describe(proposal.Terms),
                     rulesVersion: RulesVersionFor(proposal.Terms, decisionEpistemic.Actors[proposal.Actor]));
-                events[^1] = proposed with { Action = proposal.Terms };
+                events[^1] = proposed with { Action = proposal.Terms, HouseholdContext = proposal.HouseholdContext };
                 if (invalid is not null)
                 {
                     Finish(proposal, OutcomeKind.InvalidTerms, invalid, proposed.Id, outcomes);
@@ -110,6 +124,12 @@ public sealed partial class Simulation
                 }
                 if (proposal.Terms is CommunicateClaim communication)
                     communicationPayloads.Add(proposal.Id, CommunicationRules.Payload(decisionEpistemic.Actors[proposal.Actor], communication.Claim));
+                if (HouseholdCollectiveRules.IsCollective(proposal.Terms))
+                {
+                    var collective = AcceptCollective(proposal, proposed.Id, input, decisionSnapshot, decisionEpistemic, decisions, outcomes);
+                    if (collective is { } a) accepted.Add(a);
+                    continue;
+                }
                 string? inability = ActionRules.Infeasible(proposal, decisionSnapshot) ?? HouseholdRules.Infeasible(proposal, decisionSnapshot, households, epistemic);
                 PersonId? target = ActionRules.Target(proposal.Terms, decisionSnapshot);
                 if (inability is not null)
@@ -117,6 +137,12 @@ public sealed partial class Simulation
                     if (target is { } unableTarget && proposal.Terms is not CommunicateClaim)
                         decisions.Add(new(unableTarget, proposal.Id, "Response", "Feasibility", [], [inability, .. HouseholdDecisionEvidence(proposal, decisionEpistemic)], false));
                     Finish(proposal, OutcomeKind.Unable, inability, proposed.Id, outcomes);
+                    continue;
+                }
+                if (proposal.Terms is NominateHouseholdHead)
+                {
+                    var nomination = AcceptHeadNomination(proposal, proposed.Id, input, decisionEpistemic, decisions, outcomes);
+                    if (nomination is { } a) accepted.Add(a);
                     continue;
                 }
                 EventId cause = proposed.Id;
@@ -165,7 +191,7 @@ public sealed partial class Simulation
             }
             HashSet<PersonId> moved = [];
             HashSet<ProposalId> resolutionFallbacks = ResolutionFallbacks([.. accepted.Select(a => a.Proposal)], decisionSnapshot, communicationPayloads);
-            foreach (Proposal orderedProposal in HouseholdRules.Order(accepted.Select(a => a.Proposal)))
+            foreach (Proposal orderedProposal in OrderAccepted([.. accepted.Select(a => a.Proposal)]))
             {
                 var attempt = accepted.Single(a => a.Proposal.Id == orderedProposal.Id);
                 Proposal proposal = attempt.Proposal;
@@ -173,6 +199,12 @@ public sealed partial class Simulation
                     HouseholdRules.Infeasible(proposal, state.Snapshot(cycle), households, epistemic);
                 if (loss is null && proposal.Terms is CommunicateClaim claim &&
                     !CommunicationRules.StillHolds(epistemic.Of(proposal.Actor), claim.Claim, communicationPayloads[proposal.Id])) loss = "PropositionNoLongerHeld";
+                if (loss is null && proposal.CollectiveAttempt is { Cost: > 0 })
+                {
+                    var funding = EvaluateFunding(proposal);
+                    loss = funding.Failure;
+                    proposal = proposal with { LiveFunding = funding.Result };
+                }
                 bool fallback = resolutionFallbacks.Contains(proposal.Id);
                 if (loss is not null)
                     Finish(proposal, OutcomeKind.InvalidatedAtResolution, loss, attempt.Cause, outcomes, fallback);
@@ -236,6 +268,8 @@ public sealed partial class Simulation
     {
         PersonId? target = ActionRules.Target(proposal.Terms, state.Snapshot(cycle));
         PersonId[] participants = target is { } t ? [proposal.Actor, t] : [proposal.Actor];
+        if (proposal.HeadAttempt is { } roleAttempt) participants = [.. roleAttempt.Cohort.Select(a => a.Person)];
+        if (HouseholdCollectiveRules.IsCollective(proposal.Terms) && outcome.Kind == OutcomeKind.Committed) participants = [.. source.Participants];
         if (proposal.Terms is RepayDebt repay && state.Debts.TryGetValue(repay.Debt, out Debt? debt))
             participants = [proposal.Actor, debt.Creditor];
         if (proposal.Terms is CancelReciprocalFavours cancel) participants = [proposal.Actor, cancel.Target];
@@ -354,6 +388,8 @@ public sealed partial class Simulation
 
     private SemanticEvent Commit(Proposal proposal, EventId cause, bool fallback, AttitudeBatch batch, ImmutableArray<KnownFact> communicationPayload = default)
     {
+        if (proposal.Terms is NominateHouseholdHead) return CommitHead(proposal, cause, fallback);
+        if (HouseholdCollectiveRules.IsCollective(proposal.Terms)) return CommitCollective(proposal, cause, fallback);
         if (proposal.Terms is CommunicateClaim) return CommitCommunication(proposal, cause, fallback, communicationPayload);
         if (HouseholdRules.Target(proposal.Terms) is not null) return CommitHousehold(proposal, cause, fallback);
         Proposal outer = proposal;

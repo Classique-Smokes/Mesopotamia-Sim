@@ -28,6 +28,7 @@ public sealed record DecisionTrace(PersonId Actor, ProposalId? Proposal, string 
     string Profile, ImmutableArray<CandidateTrace> Candidates, ImmutableArray<string> SubjectiveInputs,
     bool TechnicalFallback)
 {
+    public HouseholdDecisionContext? HouseholdContext { get; init; }
     public long Cycle { get; init; }
     public string RulesVersion { get; init; } = Configuration.RulesVersion;
     public string ConfigurationVersion { get; init; } = "";
@@ -66,6 +67,12 @@ internal static class ActionRules
     internal static string Describe(ActionTerms terms) => terms switch
     {
         Farm => "Farm",
+        RequestProvisionCommitment a => FormattableString.Invariant($"RequestProvisionCommitment({a.Household.Value},{a.Contributor.Value})"),
+        AuthorizeOwnProvisionCommitment a => FormattableString.Invariant($"AuthorizeOwnProvisionCommitment({a.Household.Value},{a.InstitutionalRequest},{a.PrivateAuthorization})"),
+        HouseholdSupport a => FormattableString.Invariant($"HouseholdSupport({a.Household.Value},{a.Recipient.Value},X:{a.Private?.Amount})"),
+        RequestHouseholdSupport a => FormattableString.Invariant($"RequestHouseholdSupport({a.Household.Value},{a.Head.Value})"),
+        ProposeMediatedMarriage a => FormattableString.Invariant($"ProposeMediatedMarriage({a.Household.Value},{a.Head.Value},{a.Bride.Value},{a.Dowry})"),
+        NominateHouseholdHead a => FormattableString.Invariant($"NominateHouseholdHead({a.Household.Value},{a.Nominee.Value},{a.ParticipantAcceptance},{a.NomineeWillingness})"),
         RequestHouseholdParticipation a => FormattableString.Invariant($"RequestHouseholdParticipation({a.Household.Value},{a.Bridge.Value})"),
         InviteHouseholdParticipation a => FormattableString.Invariant($"InviteHouseholdParticipation({a.Household.Value},{a.Newcomer.Value})"),
         EndHouseholdParticipation a => FormattableString.Invariant($"EndHouseholdParticipation({a.Household.Value})"),
@@ -86,6 +93,9 @@ internal static class ActionRules
     };
     internal static PersonId? Target(ActionTerms terms, WorldSnapshot snapshot) => terms switch
     {
+        RequestProvisionCommitment a => a.Contributor,
+        RequestHouseholdSupport a => a.Head,
+        ProposeMediatedMarriage a => a.Head,
         CommunicateClaim a => a.Recipient,
         RequestHouseholdParticipation a => a.Bridge,
         InviteHouseholdParticipation a => a.Newcomer,
@@ -103,12 +113,15 @@ internal static class ActionRules
     };
     internal static string? Invalid(Proposal proposal, WorldSnapshot snapshot)
     {
+        if (proposal.HouseholdContext is not null && proposal.Terms is not (NominateHouseholdHead or RequestProvisionCommitment or AuthorizeOwnProvisionCommitment or HouseholdSupport)) return "OutOfScopeHouseholdAuthority";
+        if (HouseholdCollectiveRules.IsCollective(proposal.Terms)) return HouseholdCollectiveRules.Invalid(proposal, snapshot);
         PersonId? target = Target(proposal.Terms, snapshot);
         if (target is { } person && (person == proposal.Actor || !snapshot.People.ContainsKey(person)))
             return "InvalidCounterparty";
         return proposal.Terms switch
         {
-            CommunicateClaim a => a.Claim is HeldFact { Evidence.Value: > 0 } or HeldRecognition { Candidate.Value: > 0 } or HeldHouseholdRecognition { Household.Value: > 0 } ? null : "InvalidClaimReference",
+            NominateHouseholdHead a => snapshot.People.ContainsKey(a.Nominee) ? null : "UnknownNominee",
+            CommunicateClaim a => a.Claim is HeldFact { Evidence.Value: > 0 } or HeldRecognition { Candidate.Value: > 0 } or HeldHouseholdRecognition { Household.Value: > 0 } or HeldHeadRecognition { Household.Value: > 0 } ? null : "InvalidClaimReference",
             RequestHouseholdParticipation or InviteHouseholdParticipation or EndHouseholdParticipation => null,
             Farm => null,
             OfferGift gift => gift.Amount > 0 ? null : "PositiveIntegralGrainRequired",
@@ -132,6 +145,8 @@ internal static class ActionRules
     }
     internal static string? Infeasible(Proposal proposal, WorldSnapshot snapshot) => proposal.Terms switch
     {
+        NominateHouseholdHead => null,
+        RequestProvisionCommitment or AuthorizeOwnProvisionCommitment or HouseholdSupport or RequestHouseholdSupport or ProposeMediatedMarriage => null,
         CommunicateClaim => null,
         RequestHouseholdParticipation or InviteHouseholdParticipation or EndHouseholdParticipation => null,
         Farm => snapshot.People[proposal.Actor].NeedsGrain ? "NeedsGrain" : null,
