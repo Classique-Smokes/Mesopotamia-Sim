@@ -30,6 +30,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 | DEC-0012 | Semantic Interaction Delta Failsafe | ACCEPTED | Constitutional / process governance | 2026-09-24 | 2026-09-24 | `DEC-0012_SEMANTIC_INTERACTION_DELTA_FAILSAFE.md` |
 | DEC-0013 | Slice-4 SID Closure and V0 Resource-Scaffold Boundaries | ACCEPTED | Architectural / social-semantic | 2026-09-24 | 2026-09-24 | `DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md` |
 | DEC-0014 | Historical Material-Need Context for Provision Reconsideration | ACCEPTED | Architectural / social-semantic | 2026-09-25 | 2026-09-25 | `DEC-0014_HISTORICAL_MATERIAL_NEED_RECONSIDERATION_CONTEXT.md` |
+| DEC-0015 | Relation Diagonal Admissibility and Self-Alias Semantics | ACCEPTED | Architectural / social-semantic / architecture-governance | 2026-09-25 | 2026-09-25 | `DEC-0015_RELATION_DIAGONAL_ADMISSIBILITY_AND_SELF_ALIAS_SEMANTICS.md` |
 
 ## Accepted summaries
 
@@ -47,6 +48,7 @@ Silence, lack of objection, repetition, implementation momentum, or code existen
 - **DEC-0012:** consequential new semantic layers use the trigger-based `SID-ASSURANCE-v1` Semantic Interaction Delta Failsafe before acceptance freeze: bounded new↔old frontier analysis, independently frozen fresh-reviewer Pass A before MA-frontier reveal, Pass-B negative-space challenge over the reconciled union, authority-bearing dispositions, semantic-base freshness/revalidation, implementation stop-on-unclassified-interaction, and evidence-based sunset after 2–3 triggered slices.
 - **DEC-0013:** Slice-4 closes the six SID semantic gaps with bounded v0 rules for Household-vs-RepayDebt conflict, snapshot-bound succession consent cohorts, head-as-support-recipient, head self-commitment, self-nomination, and inert Inactive-H role filling; the current resource subsystem is explicitly a synthetic v0 scaffold with replaceability, provenance, nonidentity, sensitivity, and future-redesign guardrails.
 - **DEC-0014:** the deliberately crude v0 provision-reconsideration cooldown means “do not repeatedly solicit after refusal unless time passes and circumstances materially change”; a qualifying Household material-need occurrence after the latest refusal historically satisfies that context-change limb even if the need later ends, funding failure does not erase an otherwise-valid dowry need, and a new refusal resets the baseline.
+- **DEC-0015:** interaction-role aliasing and typed-relation diagonal admissibility are meaning-specific rather than globally forbidden/allowed; current Slice-1 self-counterparty proposal forms remain unenabled, `Attitude(P,P)` is valid, diagonal Debt/Favour are not enabled in current v0, generic relation infrastructure must preserve future diagonal seams, and every future typed relation must classify diagonal admissibility in its owning semantics when conceptualized.
 
 ## Entry template
 
