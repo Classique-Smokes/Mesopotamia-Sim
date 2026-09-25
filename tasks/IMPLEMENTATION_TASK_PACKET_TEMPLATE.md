@@ -3,7 +3,22 @@
 **Task ID:** IMP-XXXX  
 **Commissioned by:** Master Architect  
 **Status:** OPEN / IN PROGRESS / BLOCKED / ESCALATED / VERIFIED COMPLETE  
-**Context mode:** PROJECT-CONTEXT unless explicitly justified otherwise
+**Context mode:** PROJECT-CONTEXT unless explicitly justified otherwise  
+**Implementation agent assumption:** Astra unless this packet explicitly names another implementation agent  
+**Recommended implementation effort:** [REQUIRED — state the ideal effort level for Astra, or for the explicitly named alternate agent]
+
+## 0. Dispatch execution recommendation
+
+Every coding-bārû task, repair packet, continuation, or post-escalation resumption must state:
+
+- the implementation agent being assumed;
+- the recommended effort level for that agent.
+
+Unless explicitly overridden, plan for **Astra** as the implementation agent.
+
+The sender chooses effort based on the actual task: semantic/architectural ambiguity, implementation breadth, interaction density, verification burden, and cost of a subtle mistake. Do not reflexively recommend the maximum effort for routine local work.
+
+This effort recommendation is operational guidance only. It does not change the task's authority, scope, escalation rules, or completion standard.
 
 ## 1. Objective
 

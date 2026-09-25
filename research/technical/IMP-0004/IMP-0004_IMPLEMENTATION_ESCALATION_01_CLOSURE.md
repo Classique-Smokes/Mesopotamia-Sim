@@ -3,7 +3,9 @@
 **Status:** CLOSED / IMPLEMENTATION MAY CONTINUE  
 **Date:** 2026-09-25  
 **Escalation source:** `research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01.md` on `implementation/imp-0004-slice4-household-head-collective-action`  
-**Accepted closure:** `decisions/DEC-0014_HISTORICAL_MATERIAL_NEED_RECONSIDERATION_CONTEXT.md`
+**Accepted closure:** `decisions/DEC-0014_HISTORICAL_MATERIAL_NEED_RECONSIDERATION_CONTEXT.md`  
+**Implementation agent for continuation:** Astra  
+**Recommended continuation effort:** **HIGH**
 
 ## Plain-language closure
 
@@ -65,6 +67,12 @@ Implement/complete evidence for:
 - mutants 53–56.
 
 Frozen v2 acceptance remains unchanged and sufficient under the dedicated freshness revalidation.
+
+## Execution recommendation
+
+Use **Astra at HIGH effort** for this continuation.
+
+Reason: DEC-0014 removes the semantic-choice burden, so Extra High/maximal exploratory reasoning is unnecessary; the remaining task still spans role state, epistemic state, funding, replay/dependency behavior, inherited-verification adaptations, a 165-row Slice-4 completion surface, and 270 inherited REQUIRED regressions. High effort is the appropriate balance for implementation breadth and verification risk.
 
 ## Continuation
 
