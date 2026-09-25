@@ -9,9 +9,9 @@ internal sealed record Evidence(string Id, string Classification, string State, 
 
 internal static class AcceptanceCatalog
 {
-    internal const string Version = "SFL-V0-S1-ACCEPTANCE-v1";
-    internal const string Blob = "efd2d0aab4579a78a3e7a0fc8d027c15f2f5e766";
-    internal const string Freeze = "55377cc34b8bc3ccbf9cdf5029e9791dae965987";
+    internal const string Version = "SFL-V0-S1-ACCEPTANCE-v2";
+    internal const string Blob = "174ccbae57a64f06bd88de233b11a011b4a2b115";
+    internal const string Freeze = "bf77bb38a8a7bc964159188b7359cb8e9af2b483";
     internal static string Root
     {
         get
@@ -25,7 +25,7 @@ internal static class AcceptanceCatalog
 
     internal static ManifestRow[] Read()
     {
-        string content = File.ReadAllText(Path.Combine(Root, "plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST.md"))
+        string content = File.ReadAllText(Path.Combine(Root, "plans/verification/SFL_V0/SLICE1_ACCEPTANCE_MANIFEST_V2.md"))
             .Replace("\r\n", "\n", StringComparison.Ordinal);
         byte[] bytes = Encoding.UTF8.GetBytes(content);
         byte[] header = Encoding.ASCII.GetBytes($"blob {bytes.Length}\0");
@@ -39,8 +39,8 @@ internal static class AcceptanceCatalog
                 string classification = cells.Single(c => c is "REQUIRED" or "DEFERRED" or "N-A" or "UNEXERCISED");
                 return new ManifestRow(cells[1], classification, l);
             }).ToArray();
-        if (rows.Length != 167 || rows.Select(r => r.Id).Distinct(StringComparer.Ordinal).Count() != 167 ||
-            rows.Count(r => r.Classification == "REQUIRED") != 128 ||
+        if (rows.Length != 173 || rows.Select(r => r.Id).Distinct(StringComparer.Ordinal).Count() != 173 ||
+            rows.Count(r => r.Classification == "REQUIRED") != 134 ||
             rows.Count(r => r.Classification == "DEFERRED") != 33 ||
             rows.Count(r => r.Classification == "N-A") != 3 ||
             rows.Count(r => r.Classification == "UNEXERCISED") != 3)
@@ -64,7 +64,7 @@ internal static class AcceptanceCatalog
             ManifestVersion = Version,
             ManifestBlob = Blob,
             FreezeCommit = Freeze,
-            CandidateReady = evidence.Count(e => e.Classification == "REQUIRED" && e.State == "PASS") == 127 &&
+            CandidateReady = evidence.Count(e => e.Classification == "REQUIRED" && e.State == "PASS") == 133 &&
                 evidence.Single(e => e.Id == "S1-GLOBAL-CONFORMANCE").State == "AWAITING INDEPENDENT REVIEW",
             FullFrozenCompletionGate = false,
             Completion = "INDEPENDENT CONFORMANCE REQUIRED; coder evidence is not external review",
