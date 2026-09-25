@@ -8,7 +8,7 @@
 
 **Status:** ACCEPTED  
 **Authority:** Architecture-governance policy  
-**Decision:** DEC-0005
+**Decision:** DEC-0005; amended by DEC-0015
 
 ## Purpose
 
@@ -21,6 +21,24 @@ Keep future software architecture faithful to accepted simulation semantics whil
 Accepted simulation meaning must remain explicit and authoritative.
 
 Indexes, caches, materialized views, graph projections, optimized layouts, compiled kernels, parallel workers, and analytical stores may accelerate the model but must not silently redefine it.
+
+#### 1.1 Typed-relation endpoint identity is semantic authority
+
+When a new typed relation/claim is conceptualized, or an existing one is materially reconceptualized, explicitly classify endpoint identity before implementation.
+
+For every relation type, record locally in its owning decision/specification whether diagonal/self-endpoint identity is:
+
+- allowed;
+- not enabled in current semantics while a future seam is preserved; or
+- inapplicable/structurally excluded by endpoint typing or accepted meaning.
+
+Equivalent wording is acceptable; no global relation registry is required.
+
+Generic storage, indexing, schema, graph, or relation-container infrastructure must not impose a universal endpoint-inequality rule merely for implementation convenience. Type-specific validation may enforce the owning semantic rule.
+
+Relation-diagonal admissibility and participant-position aliasing inside actions are separate questions. A representable diagonal relation does not automatically authorize a self-addressed interaction that could create it.
+
+If the classification is intentionally deferred, current implementation must be unable to choose the deferred meaning accidentally and the trigger/owner for later classification must be durable.
 
 ### 2. Start with the simplest sufficient implementation
 
