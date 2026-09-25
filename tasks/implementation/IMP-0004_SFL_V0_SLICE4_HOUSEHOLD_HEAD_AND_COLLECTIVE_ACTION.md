@@ -2,16 +2,19 @@
 
 **Task ID:** IMP-0004  
 **Commissioned by:** Master Architect  
-**Status:** IN PROGRESS / ESCALATION 01 CLOSED / NOT A COMPLETE CANDIDATE  
+**Status:** COMPLETE CANDIDATE / FROZEN AS CONFORMANCE CANDIDATE V1 / INDEPENDENT REVIEW REQUIRED  
 **Context mode:** CODING-PRIEST / PROJECT-CONTEXT — repository authority controls  
 **Implementation agent:** Astra  
 **Recommended effort for DEC-0014 closure continuation:** **HIGH**  
 **Implementation branch:** `implementation/imp-0004-slice4-household-head-collective-action`  
-**Observed implementation head at escalation closure:** `1de66c3c02926e3c65818a083229dd421b60ca76`
+**Observed implementation head at escalation closure:** `1de66c3c02926e3c65818a083229dd421b60ca76`  
+**Frozen conformance candidate v1:** `imp-0004-slice4-conformance-candidate-v1` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`  
+**Exact-head CI:** run `36094176584` — **PASS**  
+**Evidence artifact:** `10846019591`, digest `sha256:22c05163d0f119c5ff04c5a1c3d86b1739bf56f15ed406ba8a7acec4706461f6`
 
 ## Active implementation status
 
-The Project Director has dispatched the coding bārû and implementation work is active.
+The coding bārû has returned **COMPLETE CANDIDATE**. Implementation coding is paused at exact frozen candidate-v1 pending fresh independent conformance.
 
 Implementation escalation 01 identified an under-specified reconsideration semantic and correctly stopped.
 
@@ -21,11 +24,13 @@ That escalation is now closed by:
 - `research/technical/IMP-0004/DEC-0014_ACCEPTANCE_AND_SID_FRESHNESS_REVALIDATION.md`;
 - `research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01_CLOSURE.md`.
 
-The bārû may continue after retrieving the canonical closure state.
+DEC-0014 closure was implemented and the continuation completed to candidate-v1.
 
-**Execution recommendation:** resume this task in **Astra / HIGH effort**. The semantic ambiguity that caused escalation 01 is closed, so this continuation does not warrant maximum exploratory effort; however, Slice 4 still has broad interacting implementation and verification obligations where subtle omissions are expensive.
+**Post-candidate state:** do not continue coding or alter candidate-v1 during conformance review. Any repair after a BLOCK must receive a new coding-bārû continuation/repair dispatch with a fresh Astra effort recommendation under the canonical implementation-task rule.
 
-A new consequential ambiguity still requires STOP/escalation.
+Fresh review packet: `tasks/implementation/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md`.
+
+A new consequential ambiguity discovered by the reviewer remains a semantic escalation rather than review/implementation discretion.
 
 ## Dispatch gate
 
