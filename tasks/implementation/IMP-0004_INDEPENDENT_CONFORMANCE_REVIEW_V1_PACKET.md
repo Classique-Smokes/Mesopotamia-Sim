@@ -5,7 +5,7 @@
 **Status:** COMPLETE / PASS — PROMOTE  
 **Implementation candidate ref:** `imp-0004-slice4-conformance-candidate-v1`  
 **Exact candidate SHA:** `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`  
-**Implementation PR:** #109 — draft / must remain unmerged during review  
+**Implementation PR:** #109 — **PROMOTED after PASS** at `c72ae67dc76ac091331fcd5494c6657eec57f703`  
 **Frozen Slice-4 authority:** `SFL-V0-S4-ACCEPTANCE-v2` / `sfl-v0-slice4-acceptance-v2`  
 **Frozen manifest blob:** `b0bc79e46f82630ab78cd2f0d0414b748212a411`  
 **Approved inherited-adaptation ref:** `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`  
