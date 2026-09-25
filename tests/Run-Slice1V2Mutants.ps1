@@ -116,7 +116,7 @@ try {
                     [pscustomobject]@{ Name = $_.testName; Message = [string]$_.Output.ErrorInfo.Message }
                 })
                 $detected = $test -eq 2 -and @($failures | Where-Object {
-                    $_.Name.Contains($mutant.Detector) -and $_.Message -match 'Assert\.'
+                    $_.Name.Contains($mutant.Detector) -and $_.Message -match 'Assertion failed|Assert\.'
                 }).Count -gt 0
             }
             $classification = if ($detected) { 'detected' } elseif ($test -eq -999) { 'timeout' } elseif ($test -eq 0) { 'survived' } else { 'crash-or-unrelated-failure' }
@@ -142,4 +142,3 @@ $gate = [ordered]@{
 }
 $gate | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $gatePath -Encoding utf8
 Write-Output "COMPLETE CANDIDATE evidence gate: $head"
-
