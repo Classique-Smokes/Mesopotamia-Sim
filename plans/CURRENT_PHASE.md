@@ -518,22 +518,22 @@ Inherited-assurance thread:
 - implementation branch: `implementation/slice1-v2-dec0015-conformance`
 - implementation return: **COMPLETE CANDIDATE**
 - candidate ref: `imp-0001-slice1-successor-v2-dec0015-conformance-candidate-v1` @ `a8ecacd98eb4835d6fb96c1e683f5b7dfcc9a96d`
-- draft PR: #125 — unmerged
-- final-head CI: run `36124403519` / #325 — **PASS**
+- candidate CI: run `36124403519` / #325 — **PASS**
 - evidence artifact: ID `10859307017`, digest `sha256:ac879968976bbb7e87b6dcd6edd7b7e93b03e0d37681d29d286c5cb02bfc92d5`
 - implementation report: `research/technical/IMP-0001/IMP-0001_SUCCESSOR_V2_DEC0015_CONFORMANCE_REPORT.md`
-- coder-owned REQUIRED: **133 / 133 PASS**; `S1-GLOBAL-CONFORMANCE` intentionally pending external review
-- independent review task: `tasks/research/SFL_V0_SLICE1_SUCCESSOR_V2_DEC0015_INDEPENDENT_CONFORMANCE_REVIEW_V1.md`
-- review dispatch ref: `imp-0001-slice1-successor-v2-dec0015-conformance-review-dispatch-v1` @ `cfffc67e2017076213c240328327d6b9ed45e170`
-- return branch: `review/slice1-v2-dec0015-conformance-v1-return`
-- review status: **ARCHITECT-DISPATCHED / NO REVIEWER ACTIVE YET**
-- remaining inherited gate: fresh independent successor-conformance PASS
+- independent review: `research/technical/IMP-0001/IMP-0001_SUCCESSOR_V2_DEC0015_INDEPENDENT_CONFORMANCE_REVIEW_V1.md` — **PASS — PROMOTE**
+- review blob: `b14752148e0d987dc6e61b25ee628422b412f935`
+- promotion PR: #125 — **MERGED**
+- promotion merge: `ad87ec0bd04f689a60dc4d743a6c609e9645e3a7`
+- successor REQUIRED conformance: **134 / 134 satisfied**, with the independent review supplying `S1-GLOBAL-CONFORMANCE`
+- post-promotion CI: run `36132006829` / #330 — **IN PROGRESS**
+- remaining inherited gate: post-promotion canonical CI PASS
 
 ## Next
 
-1. Await fresh independent successor-conformance review return for exact candidate `a8ecacd98eb4835d6fb96c1e683f5b7dfcc9a96d`.
-2. If PASS — PROMOTE, preserve the review and promote PR #125 without candidate drift, then verify post-promotion CI.
-3. Issue a corrected Slice-5 acceptance candidate reflecting the new inherited authority and run fresh whole-candidate review.
+1. Confirm post-promotion canonical CI #330 passes on merge `ad87ec0bd04f689a60dc4d743a6c609e9645e3a7`.
+2. Record final Slice-1 successor-v2 conformance/promotion closure.
+3. Issue a corrected Slice-5 acceptance candidate reflecting frozen Slice-1 v2 authority and run fresh whole-candidate review.
 4. Freeze Slice-5 acceptance only after those gates close.
 5. Evaluate any conditional inherited-verification adaptation trigger from the chosen Slice-5 design.
 6. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
