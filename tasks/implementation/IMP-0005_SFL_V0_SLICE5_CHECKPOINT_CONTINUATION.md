@@ -2,7 +2,7 @@
 
 **Task ID:** IMP-0005  
 **Commissioned by:** Master Architect  
-**Status:** ARCHITECT-DISPATCH READY / IMPLEMENTATION NOT YET ACTIVE  
+**Status:** ARCHITECT-DISPATCHED / IMPLEMENTATION ACTIVE  
 **Context mode:** CODING-BĀRÛ / PROJECT-CONTEXT — repository authority controls  
 **Implementation agent:** Astra  
 **Recommended effort:** **HIGH**  
