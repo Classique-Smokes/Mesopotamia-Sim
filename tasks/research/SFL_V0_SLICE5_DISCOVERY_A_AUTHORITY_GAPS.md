@@ -3,7 +3,9 @@
 **Task type:** fresh regular chat / clean context  
 **Role:** source-grounded authority analyst  
 **Authority:** advisory return only; no semantic promotion authority  
-**Status:** ARCHITECT-DISPATCHED / READY
+**Status:** COMPLETE / RETURN PRESERVED  
+**Return:** `research/technical/SFL_V0_SLICE5_AUTHORITY_AND_GAP_INVENTORY.md`  
+**Return head:** `779d3fafaeffb2ba2e91667a46b02a02f548d97b`
 
 ## Purpose
 
