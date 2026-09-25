@@ -124,15 +124,20 @@ internal sealed class WorldState
                 throw new ArgumentException("Unresolved residence reference.");
         foreach (Attitude attitude in Attitudes.Values)
         {
-            CheckPair(attitude.From, attitude.To);
+            CheckPeopleExist(attitude.From, attitude.To);
             if (attitude.Value is < -100 or > 100) throw new ArgumentException("Attitude outside bounds.");
         }
         if (Attitudes.Values.Select(a => (a.From, a.To)).Distinct().Count() != Attitudes.Count)
             throw new ArgumentException("Duplicate directed attitude.");
-        foreach (Kinship kinship in Kinships.Values) CheckPair(kinship.First, kinship.Second);
+        foreach (Kinship kinship in Kinships.Values)
+        {
+            CheckPeopleExist(kinship.First, kinship.Second);
+            if (kinship.First == kinship.Second) throw new ArgumentException("Kinship requires distinct people.");
+        }
         foreach (Marriage marriage in Marriages.Values)
         {
-            CheckPair(marriage.Groom, marriage.Bride);
+            CheckPeopleExist(marriage.Groom, marriage.Bride);
+            if (marriage.Groom == marriage.Bride) throw new ArgumentException("Marriage requires distinct people.");
             if (People[marriage.Groom].Sex != Sex.Male || People[marriage.Bride].Sex != Sex.Female ||
                 Snapshot(0).AreKin(marriage.Groom, marriage.Bride)) throw new ArgumentException("Invalid marriage.");
         }
@@ -140,18 +145,23 @@ internal sealed class WorldState
             throw new ArgumentException("Multiple established marriages.");
         foreach (Debt debt in Debts.Values)
         {
-            CheckPair(debt.Creditor, debt.Debtor);
+            CheckPeopleExist(debt.Creditor, debt.Debtor);
+            if (debt.Creditor == debt.Debtor) throw new ArgumentException("Debt requires distinct people.");
             if (debt.Original <= 0 || debt.Remaining < 0 || debt.Remaining > debt.Original)
                 throw new ArgumentException("Invalid debt balance.");
         }
-        foreach (Favour favour in Favours.Values) CheckPair(favour.Debtor, favour.Holder);
+        foreach (Favour favour in Favours.Values)
+        {
+            CheckPeopleExist(favour.Debtor, favour.Holder);
+            if (favour.Debtor == favour.Holder) throw new ArgumentException("Favour requires distinct people.");
+        }
         if (Favours.Values.Where(f => f.Outstanding).GroupBy(f => (f.Debtor, f.Holder)).Any(g => g.Count() > 1))
             throw new ArgumentException("Favour capacity exceeded.");
     }
 
-    private void CheckPair(PersonId a, PersonId b)
+    private void CheckPeopleExist(PersonId a, PersonId b)
     {
-        if (a == b || !People.ContainsKey(a) || !People.ContainsKey(b))
-            throw new ArgumentException("Invalid relation participants.");
+        if (!People.ContainsKey(a) || !People.ContainsKey(b))
+            throw new ArgumentException("Unresolved relation participants.");
     }
 }
