@@ -68,14 +68,17 @@ Active work:
   - promotion merge: `c72ae67dc76ac091331fcd5494c6657eec57f703`
   - post-promotion CI: `36098636634` — **PASS**
   - final record: `research/technical/IMP-0004/IMP-0004_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
-- Slice 5: **DISCOVERY RECONCILED / ACCEPTANCE CANDIDATE1 REVIEW READY / NO CODING TASK**
+- Slice 5: **CANDIDATE1 FIRST REVIEW BLOCK PRESERVED / EXTERNAL REF DEFECT REPAIRED / R2 REVIEW DISPATCHED / NO CODING TASK**
   - MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
   - candidate1: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE.md`
   - candidate ref/blob: `sfl-v0-slice5-acceptance-v1-candidate1` @ `1dcfdac9a27679496b1484d5bf183a3f77ba9afc` / `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`
   - candidate census: **95 = 81 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
-  - review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md`
-  - reviewer status: **NO REVIEWER ACTIVE YET**
-  - freeze/coding: **BLOCKED pending review + retro-SID consequence**
+  - first review: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1.md` — **BLOCK** solely on inherited Slice-4-v2 frozen-ref identity
+  - block reconciliation: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_CANDIDATE1_BLOCK_RECONCILIATION.md`
+  - repaired frozen ref: `sfl-v0-slice4-acceptance-v2` -> `66fe54c385f42eeb01308f19b63fff7c670b9bbe`
+  - R2 task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md`
+  - R2 return: `review/slice5-acceptance-v1-candidate1-r2-return`
+  - freeze/coding: **BLOCKED pending R2 PASS + retro-SID consequence**
 - Slice-1 retro-SID Pass-B: **ARCHITECT-DISPATCHED / READY IN PARALLEL**
   - task: `tasks/research/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
   - immutable dispatch: `sfl-v0-slice1-retro-sid-passb-dispatch-v1`
