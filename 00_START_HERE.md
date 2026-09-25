@@ -69,13 +69,16 @@ Active work:
   - promotion merge: `c72ae67dc76ac091331fcd5494c6657eec57f703`
   - post-promotion CI: `36098636634` — **PASS**
   - final record: `research/technical/IMP-0004/IMP-0004_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
-- Slice 5: **CANDIDATE1 R2 PASS / SUPERSEDED FOR CURRENT FREEZE BY DEC-0015 INHERITED-AUTHORITY CHANGE**
+- Slice 5: **CANDIDATE2 AUTHORED / CURRENT INHERITED AUTHORITY / FRESH REVIEW READY / NO CODING**
   - MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
-  - candidate1: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE.md`
-  - candidate ref/blob: `sfl-v0-slice5-acceptance-v1-candidate1` @ `1dcfdac9a27679496b1484d5bf183a3f77ba9afc` / `97b53dcc6f0e03b7c405b79e6fbc1c885662f8ea`
-  - R2 review: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md` — **PASS — MAY FREEZE UNCHANGED**
-  - R2 review blob: `828b75b53e7b555f668eff61b20b590f796c7ce6`
-  - freeze/coding: **BLOCKED pending successor Slice-1 acceptance/conformance + corrected Slice-5 candidate/review; no coding task**
+  - DEC-0015 refresh reconciliation: `research/technical/SFL_V0_SLICE5_DEC0015_INHERITED_AUTHORITY_REFRESH_RECONCILIATION.md`
+  - candidate2: `plans/verification/SFL_V0/SLICE5_ACCEPTANCE_MANIFEST_CANDIDATE2.md`
+  - candidate2 ref/commit/blob: `sfl-v0-slice5-acceptance-v1-candidate2` @ `946e95f87721d4c84af10a81e261ddc5fce77636` / `948118a655e002b4af0929e6c563a90608fb9456`
+  - candidate2 census: **96 = 82 REQUIRED / 12 DEFERRED / 2 UNEXERCISED**
+  - inherited REQUIRED: **441 = 134 Slice 1 v2 + 46 Slice 2 + 96 Slice 3 + 165 Slice 4 v2**
+  - fresh review task: `tasks/research/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE2.md`
+  - candidate1/R2 remain immutable historical evidence
+  - freeze/coding: **BLOCKED pending fresh whole-candidate PASS; no coding task**
 - Slice-1 retro-SID: **SEMANTIC GAP CLOSED / DEC-0015 ACCEPTED / SUCCESSOR ACCEPTANCE V2 FROZEN / CONFORMANCE PENDING**
   - task: `tasks/research/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
   - preserved return: `research/technical/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
