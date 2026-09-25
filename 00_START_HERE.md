@@ -61,15 +61,14 @@ Active work:
 - Slice-4 implementation boundary: **RELEASED FOR BOUNDED IMPLEMENTATION**
   - historical blocked boundary remains immutable: `sfl-v0-slice4-implementation-boundary-blocked-v1`
   - release record: `plans/verification/SFL_V0/SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`
-- IMP-0004: **COMPLETE CANDIDATE / FRESH CONFORMANCE READY**
+- IMP-0004 / Slice 4: **VERIFIED COMPLETE / PROMOTED**
   - task: `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md`
-  - candidate: `imp-0004-slice4-conformance-candidate-v1` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`
-  - freeze record: `research/technical/IMP-0004/IMP-0004_CANDIDATE_V1_FREEZE_RECORD.md`
-  - exact-head CI: `36094176584` — **PASS**
-  - review packet: `tasks/implementation/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1_PACKET.md`
-  - reviewer status: **NO REVIEWER ACTIVE YET**
-  - PR #109 remains draft/unmerged
-- checkpoint/restore remains Slice 5.
+  - reviewed candidate: `imp-0004-slice4-conformance-candidate-v1` @ `bac53decaafb5edf4c5879be0f695f6a52ccc1ce`
+  - independent conformance: `research/technical/IMP-0004/IMP-0004_INDEPENDENT_CONFORMANCE_REVIEW_V1.md` — **PASS — PROMOTE**
+  - promotion merge: `c72ae67dc76ac091331fcd5494c6657eec57f703`
+  - post-promotion CI: `36098636634` — **PASS**
+  - final record: `research/technical/IMP-0004/IMP-0004_FINAL_COMPLETION_AND_PROMOTION_RECORD.md`
+- checkpoint/restore and richer delayed-process continuation remain Slice 5; no Slice-5 coding task is currently commissioned.
 
 Conceptual archive systematization: **COMPLETE / PASS**
 - ingestion register: `research/conceptual/CONCEPTUAL_INGESTION_REGISTER.md`
