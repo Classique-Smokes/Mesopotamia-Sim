@@ -1,6 +1,6 @@
 # SFL v0 Slice 4 — Independent Inherited Verification Adaptation Review
 
-**Status:** SUSPENDED BY DIRECTOR SEMANTIC BLOCK — a return may be preserved, but cannot authorize implementation while the block is active  
+**Status:** SUPERSEDED / DO NOT DISPATCH — pre-DEC-0013 packet retained only for historical provenance; use `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md`  
 **Task type:** fresh regular chat / clean-context independent verification-adaptation review  
 **Role:** independent assurance reviewer  
 **Authority:** advisory verdict only; do not edit candidate plan, frozen manifests, or production code
