@@ -24,7 +24,14 @@ Use this index when a future reader encounters one concept and needs to find its
 | Sanctioned opposition / credible contradiction | Retired Vizier extension + Institutional Dynamics C/D/I | Current project governance analogy | Vizier: Priest |
 | Higher-order grounding / no collective ghost | Institutional Dynamics thesis + SFL household program | Social Epistemic Dynamics group-information cases | Roads: House, Fire |
 | Richer motivation / attention / planning | Future agency seam; not yet a standalone program | Birth Run reference-policy limitation; role-conditioned salience | Vizier: Seal |
-| Accidental specialization becoming socially sustained | `CROSS_PROGRAM_CHALLENGE_CASES/THE_ACCIDENTAL_SPECIALIST.md` | Social Epistemic Dynamics reputation; Institutional Dynamics J/K/L; future informal-role/agency work | Special Long Run 001 empirical seed |
+| Cross-boundary institutional transmission / selective adoption | Institutional Dynamics H | Social Epistemic Dynamics; institutional epistemic-routing seam | First Contact: First Reactions; Further Notes |
+| Semantic fidelity vs representational salience | Institutional Dynamics H | Social Epistemic Dynamics transformation/provenance; future attention/salience | First Contact: Lexicon, Margin Notes, First Reactions |
+| Reflexive observation / endogenous archival feedback | Institutional Dynamics H/I/L | Social Epistemic Dynamics; `INSTITUTIONAL_DYNAMICS/09_EPISTEMIC_ROUTING_AND_PROTECTED_UNCERTAINTY.md` | First Contact questionnaire, handoff, contact records |
+| Genre-conditioned self-description / multiple inception thresholds | Institutional Dynamics H/L | Roles/formalization; Social Epistemic plural memory | First Contact: History, Handoff |
+| Institutional epistemic routing / epistemic constitution | `INSTITUTIONAL_DYNAMICS/09_EPISTEMIC_ROUTING_AND_PROTECTED_UNCERTAINTY.md` | Institutional G/H/I; Social Epistemic Dynamics | Supporting anthology; First Contact handoff |
+| Protected uncertainty / recognized non-decision | `INSTITUTIONAL_DYNAMICS/09_EPISTEMIC_ROUTING_AND_PROTECTED_UNCERTAINTY.md` | Institutional G/H/I | Supporting anthology; First Contact handoff |
+| Question transformation by institutional epistemic culture | `INSTITUTIONAL_DYNAMICS/09_EPISTEMIC_ROUTING_AND_PROTECTED_UNCERTAINTY.md` | Social Epistemic Dynamics; role-conditioned salience; transmission | Supporting anthology; First Contact response form |
+| Accidental specialization: arbitrary origin vs socially sustained continuation | `CROSS_PROGRAM_CHALLENGE_CASES/THE_ACCIDENTAL_SPECIALIST.md` | Social Epistemic Dynamics representation/reputation; Institutional Dynamics J/K/L; future informal-role/agency work | Special Long Run 001: remove original driver after social expectations/dependencies form |
 
 ## Rules for future use
 
