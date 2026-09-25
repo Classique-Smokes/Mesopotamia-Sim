@@ -88,7 +88,9 @@ Active work:
   - fresh review: `research/technical/SFL_V0_SLICE1_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **PASS — MAY FREEZE UNCHANGED**
   - frozen census: **173 = 134 REQUIRED / 33 DEFERRED / 3 N-A / 3 UNEXERCISED**
   - freeze record: `plans/verification/SFL_V0/SLICE1_ACCEPTANCE_V2_FREEZE_RECORD.md`
-  - current implementation conformance: **PENDING**
+  - conformance task: `tasks/implementation/SFL_V0_SLICE1_SUCCESSOR_V2_DEC0015_CONFORMANCE.md`
+  - implementation branch: `implementation/slice1-v2-dec0015-conformance`
+  - implementation status: **DISPATCHED / AWAITING RETURN**
 
 Conceptual archive systematization: **COMPLETE / PASS**
 - ingestion register: `research/conceptual/CONCEPTUAL_INGESTION_REGISTER.md`
