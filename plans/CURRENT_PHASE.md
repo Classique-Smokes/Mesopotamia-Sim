@@ -147,8 +147,12 @@ Slice-4 SID pilot status: **CLOSED / PASS AFTER DEC-0013**
 - `Consequential unresolved: 0`
 - `Accidental gaps outstanding: 0`
 - closure freshness: **CURRENT / CLOSED**
-- next gate: dispatch bounded `IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` to a coding bārû
-- Slice-4 implementation is **RELEASED FOR BOUNDED DISPATCH**; SID, successor acceptance and inherited-adaptation gates are closed
+- implementation status: **IMP-0004 IN PROGRESS / ESCALATION 01 CLOSED**
+- coding bārû branch: `implementation/imp-0004-slice4-household-head-collective-action`
+- observed implementation head at escalation closure: `1de66c3c02926e3c65818a083229dd421b60ca76`
+- escalation 01 closure: `research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01_CLOSURE.md`
+- DEC-0014 acceptance/SID freshness: **CURRENT / REVALIDATED — NO FRONTIER CHANGE**
+- Slice-4 implementation remains bounded by frozen v2 + approved adaptation authority + DEC-0014
 
 Slice-4 successor acceptance v2:
 
@@ -186,7 +190,20 @@ Slice-4 implementation release:
 - current completion authority: frozen `SFL-V0-S4-ACCEPTANCE-v2`
 - current inherited-adaptation authority: `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`
 - implementation packet: `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md`
-- dispatch status: **READY FOR DISPATCH / NO CODING BĀRÛ ACTIVE YET**
+- dispatch status: **DISPATCHED BY PROJECT DIRECTOR / CODING BĀRÛ ACTIVE / ESCALATION 01 CLOSED**
+
+IMP-0004 material-need reconsideration closure:
+
+- implementation escalation: `research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01.md`
+- accepted decision: `decisions/DEC-0014_HISTORICAL_MATERIAL_NEED_RECONSIDERATION_CONTEXT.md`
+- intent: the three-cycle cooldown is a deliberately crude v0 anti-repeated-solicitation proxy — wait after refusal and only re-ask after circumstances meaningfully change
+- accepted material-need interpretation: **historical since the latest refusal**, not required to remain current at the later request
+- funding-infeasible otherwise-valid dowry need: **counts**
+- later refusal: **resets the baseline**
+- new pending-demand/adoption subsystem: **explicitly not introduced**
+- acceptance v2: **UNCHANGED / STILL SUFFICIENT**
+- SID freshness: `research/technical/IMP-0004/DEC-0014_ACCEPTANCE_AND_SID_FRESHNESS_REVALIDATION.md` — **REVALIDATED — NO FRONTIER CHANGE**
+- verification strengthened: VS-SFL-044 + cross-cutting mutants 53–56
 
 Slice-4 inherited verification adaptation:
 
@@ -422,12 +439,24 @@ Birth Run 001 raw package:
 
 This is not an extra acceptance requirement for Slice 1. It is an observational/project-understanding checkpoint: the raw autonomous history is now frozen; the Project Director should inspect it before Master Architect interpretation/classification becomes the dominant frame.
 
+## Parallel support — conceptual archive systematization wave
+
+- status: **ARCHITECT-DISPATCHED / NON-BLOCKING**
+- source baseline: `conceptual-archive-source-2026-09-24-v1` @ `76508f1f766451bdd5ea1a35a16c37adb0dfd682`
+- dispatch index: `tasks/research/CONCEPTUAL_ARCHIVE_SYSTEMATIZATION_WAVE_2026-09-24.md`
+- A/B/C family reconciliations: **COMPLETE**
+- D whole-library integration/register: **COMPLETE** at `13143137a7f71956807356fbc9e35f05082ddf3d`
+- E fresh essence coverage audit: **ARCHITECT-DISPATCHED / READY** against exact D head
+- scope: `research/conceptual/` non-authoritative systematization only
+- IMP-0004 coding branch/work remains independent and is not blocked by this wave
+
 ## Next
 
-1. Hand `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` to a coding bārû on the exact implementation branch created from the canonical release state.
-2. Coding bārû returns **COMPLETE CANDIDATE / BLOCKED / ESCALATED / INCOMPLETE**, never VERIFIED COMPLETE.
-3. On COMPLETE CANDIDATE, freeze an exact `imp-0004-slice4-conformance-candidate-vN` ref and exact-head CI/evidence identity.
-4. Commission a fresh independent post-implementation conformance review against frozen Slice-4 acceptance v2 + approved adaptation authority.
-5. Only **PASS — PROMOTE** permits canonical implementation merge and final post-promotion CI/completion record.
+1. Coding bārû retrieves canonical DEC-0014 + escalation-01 closure and continues IMP-0004 from its preserved implementation branch.
+2. In parallel, dispatch `tasks/research/CONCEPT_WAVE_E_ESSENCE_COVERAGE_AUDIT.md` for the final conceptual-library coverage audit.
+3. Coding bārû returns **COMPLETE CANDIDATE / BLOCKED / ESCALATED / INCOMPLETE**, never VERIFIED COMPLETE.
+4. On COMPLETE CANDIDATE, freeze an exact `imp-0004-slice4-conformance-candidate-vN` ref and exact-head CI/evidence identity.
+5. Commission a fresh independent post-implementation conformance review against frozen Slice-4 acceptance v2 + approved adaptation authority + DEC-0014.
+6. Only **PASS — PROMOTE** permits canonical implementation merge and final post-promotion CI/completion record.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.

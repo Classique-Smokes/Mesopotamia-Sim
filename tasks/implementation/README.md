@@ -4,7 +4,7 @@
 
 ## Active
 
-No implementation task is currently active.
+- `IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` — **IN PROGRESS / ESCALATION 01 CLOSED**. Coding bārû is active on `implementation/imp-0004-slice4-household-head-collective-action`. Escalation 01 is closed by DEC-0014 and `../../research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01_CLOSURE.md`. The task is not yet a complete conformance candidate.
 
 ## Completed
 
@@ -15,10 +15,12 @@ No implementation task is currently active.
 
 ## Ready for dispatch
 
-- `IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md` — **READY FOR DISPATCH / NO CODING BĀRÛ ACTIVE YET**. Frozen completion authority: `SFL-V0-S4-ACCEPTANCE-v2` / `sfl-v0-slice4-acceptance-v2`. Approved adaptation authority: `sfl-v0-slice4-inherited-verification-adaptation-v2-approved`. The historical Director block is closed by `../../plans/verification/SFL_V0/SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`.
+No implementation task is waiting for initial dispatch.
 
 ## Rules
 
 Implementation agents must read the task packet plus its listed authoritative inputs. Completion requires executable verification evidence.
+
+Every coding-bārû dispatch — initial task, repair, continuation, or post-escalation resumption — must state a recommended implementation effort. Unless the dispatch explicitly names another implementation agent, the recommendation is made assuming **Astra**.
 
 When a task is verified complete, update this index and the current-phase/navigation surfaces as appropriate.

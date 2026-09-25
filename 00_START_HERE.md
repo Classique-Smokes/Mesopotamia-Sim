@@ -61,9 +61,16 @@ Active work:
 - Slice-4 implementation boundary: **RELEASED FOR BOUNDED IMPLEMENTATION**
   - historical blocked boundary remains immutable: `sfl-v0-slice4-implementation-boundary-blocked-v1`
   - release record: `plans/verification/SFL_V0/SLICE4_IMPLEMENTATION_RELEASE_RECORD.md`
-- IMP-0004: **READY FOR DISPATCH / NO CODING BĀRÛ ACTIVE YET**
+- IMP-0004: **IN PROGRESS / ESCALATION 01 CLOSED**
   - task: `tasks/implementation/IMP-0004_SFL_V0_SLICE4_HOUSEHOLD_HEAD_AND_COLLECTIVE_ACTION.md`
+  - implementation branch: `implementation/imp-0004-slice4-household-head-collective-action`
+  - accepted escalation closure: `decisions/DEC-0014_HISTORICAL_MATERIAL_NEED_RECONSIDERATION_CONTEXT.md`
+  - closure record: `research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01_CLOSURE.md`
 - checkpoint/restore remains Slice 5.
+
+Conceptual archive systematization is in its final independent coverage-review stage:
+- Concept Wave D integration head: `13143137a7f71956807356fbc9e35f05082ddf3d`
+- Concept Wave E task: `tasks/research/CONCEPT_WAVE_E_ESSENCE_COVERAGE_AUDIT.md` — **READY**
 
 Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 
