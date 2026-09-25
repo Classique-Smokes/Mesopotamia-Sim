@@ -4,6 +4,22 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
+## Conceptual archive systematization wave — architect-dispatched
+
+Dispatch index: `CONCEPTUAL_ARCHIVE_SYSTEMATIZATION_WAVE_2026-09-24.md`  
+Frozen source baseline: `conceptual-archive-source-2026-09-24-v1` @ `76508f1f766451bdd5ea1a35a16c37adb0dfd682`
+
+**Dispatch semantics:** ARCHITECT-DISPATCHED means the task contract is formally available to a fresh scribe. It does not imply Project Director handoff or that a scribe is active.
+
+- `CONCEPT_WAVE_A_FIRST_CONTACT_TRANSMISSION_SYSTEMATIZATION.md` — **ARCHITECT-DISPATCHED / READY**. First-contact, Wonder Gather transfer, native-response, translation and retrospective-history systematization.
+- `CONCEPT_WAVE_B_SUPERSEDED_LINEAGE_RECONCILIATION.md` — **ARCHITECT-DISPATCHED / READY**. Pre-V2/V2 lineage and unique-delta reconciliation.
+- `CONCEPT_WAVE_C_SUPPORTING_CONTEXT_EXTRACTION.md` — **ARCHITECT-DISPATCHED / READY**. Supporting-context/meta-analysis concept extraction, including PDF anthology.
+- `CONCEPT_WAVE_D_LIBRARY_INTEGRATION_AND_REGISTER.md` — **ARCHITECT-DISPATCHED / WAITING ON A-B-C**. Whole-library integration, global cross-index repair and durable ingestion register.
+- `CONCEPT_WAVE_E_ESSENCE_COVERAGE_AUDIT.md` — **ARCHITECT-DISPATCHED / WAITING ON D**. Fresh silent-loss/source-lineage audit; may merge conceptual-only PASS repairs under its packet.
+
+This wave is **parallel support / non-blocking** for IMP-0004.
+
+
 - Slice-4 v2 candidate2 review — **COMPLETE / PASS — MAY FREEZE UNCHANGED**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md`. Frozen successor authority: `../../plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_V2.md` / `sfl-v0-slice4-acceptance-v2`.
 
 - Slice-4 v2 candidate1 review — **COMPLETE / BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`. No semantic escalation; repair is limited to missing DEC-0011 completion-gating coverage.
