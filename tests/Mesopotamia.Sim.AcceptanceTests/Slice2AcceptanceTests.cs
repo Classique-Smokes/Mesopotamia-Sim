@@ -54,7 +54,7 @@ public sealed class Slice2AcceptanceTests
         ManifestRow[] prior = AcceptanceCatalog.Read();
         Scenarios regressionSuite = new();
         Dictionary<string, List<bool>> regressionResults = regressions.ToDictionary(id => id, _ => new List<bool>(), StringComparer.Ordinal);
-        regressionResults["S1-GLOBAL-MANIFEST-INTEGRITY"].Add(prior.Length == 167);
+        regressionResults["S1-GLOBAL-MANIFEST-INTEGRITY"].Add(prior.Length == 173 && AcceptanceCatalog.Version == "SFL-V0-S1-ACCEPTANCE-v2" && AcceptanceCatalog.Blob == "174ccbae57a64f06bd88de233b11a011b4a2b115");
         foreach (Scenario scenario in regressionSuite.All().Where(s => s.Ids.Any(regressions.Contains)))
         {
             bool pass = true;
