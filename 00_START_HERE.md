@@ -56,11 +56,12 @@ Active work:
 - Slice-4 implementation boundary: **DIRECTOR BLOCK STILL ACTIVE**
   - immutable original boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`
   - current remaining gates: successor acceptance v2 PASS/freeze, then inherited-verification adaptation reassessment + fresh independent review
-- Slice-4 inherited verification adaptation: **REASSESSED CANDIDATE / FRESH REVIEW READY**
-  - candidate ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1` @ `4f12c30b0f16531fd1e82ac08c2b71e53934ba28`
-  - plan blob: `43e27cb6fed1086ffcc687002f7fffd494b528b5`
+- Slice-4 inherited verification adaptation: **CANDIDATE2 FRESH REVIEW READY**
+  - candidate1 review: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md` — **BLOCK — LOSSLESSNESS / ENFORCEMENT DEFECT**
+  - candidate2 ref: `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate2` @ `68fddec788b5cf41db5934c8719a6fd1ce474d32`
+  - candidate2 plan blob: `00c3e64a128fa00e91b99117e321a0e379dd61c5`
   - reassessment: `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REASSESSMENT.md`
-  - review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md`
+  - review task: `tasks/research/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2_CANDIDATE2.md`
   - reviewer status: **NO REVIEWER ACTIVE YET**
 - Slice-4 implementation: **NOT AUTHORIZED**. No implementation packet or coding bārû may proceed until adaptation PASS + explicit gate closure.
 - checkpoint/restore remains Slice 5.
