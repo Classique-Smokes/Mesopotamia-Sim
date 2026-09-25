@@ -1,7 +1,7 @@
 # SFL v0 Slice 4 — Inherited Verification Adaptation Plan Candidate 2
 
 **Status:** CANDIDATE / FRESH INDEPENDENT REVIEW REQUIRED  
-**Plan version:** `SFL-V0-S4-INHERITED-ADAPTATION-v2-candidate1`  
+**Plan version:** `SFL-V0-S4-INHERITED-ADAPTATION-v2-candidate2`  
 **Owner:** Master Architect  
 **Authority:** verification-enforcement adaptation only; no simulation-semantic authority  
 **Frozen Slice-4 successor authority:** `SFL-V0-S4-ACCEPTANCE-v2` / `sfl-v0-slice4-acceptance-v2`  
@@ -12,6 +12,9 @@
 **Trigger rows:** S4-170 through S4-175  
 **Reassessment:** `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REASSESSMENT.md`  
 **Historical candidate:** `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` @ `51981cb0ad993fe4529341f2862f50d90d72ec26`  
+**Candidate1 ref:** `sfl-v0-slice4-inherited-verification-adaptation-v2-candidate1` @ `4f12c30b0f16531fd1e82ac08c2b71e53934ba28`  
+**Candidate1 review:** `research/technical/SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW_V2.md` — **BLOCK — LOSSLESSNESS / ENFORCEMENT DEFECT**  
+**Candidate1 defect:** the mandatory Adaptation-B negative challenge could be satisfied by an unrelated hidden-field mutant instead of proving detection on the new current-head/funding/dependency authority seam  
 **Production coding:** NOT AUTHORIZED until this candidate receives **PASS — ADAPTATION PLAN APPROVED**
 
 ## 1. Purpose
@@ -172,9 +175,19 @@ A funding/dependency cache may not become a second source of truth alongside the
 
 ### Required negative challenge
 
-The adapted evidence must detect at least one intentionally introduced hidden behavior-affecting field/cache or equivalent mutation.
+The adapted structural evidence must fail under at least one deliberately introduced fault/mutant in which **behavior actually depends on a hidden or stale authority source from the new Slice-4 authority/resource/dependency seam**.
 
-A useful challenge may target hidden current-head state, hidden funding participation, stale capacity, or an independent dependency cache that changes resolution behavior.
+The mandatory challenge must target at least one of:
+
+- hidden/stale current-head or role-authority state;
+- hidden/stale authoritative funding-resolution state, including selected funding participation/capacity relevant to the committed result;
+- hidden/stale material-dependency participation state/cache that changes conflict grouping or resolution behavior.
+
+The mutant must change or be capable of changing observable semantic behavior if the hidden/stale state is trusted, and the adapted structural enforcement must detect/reject that mutant.
+
+A generic unrelated hidden-field/cache mutant is **not sufficient by itself** to satisfy this requirement.
+
+Additional generic hidden-state mutants may be retained as corroborating coverage, but they do not replace this critical-seam negative proof.
 
 ### Forbidden weakening
 
