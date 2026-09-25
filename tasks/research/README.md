@@ -11,11 +11,11 @@ Frozen source baseline: `conceptual-archive-source-2026-09-24-v1` @ `76508f1f766
 
 **Dispatch semantics:** ARCHITECT-DISPATCHED means the task contract is formally available to a fresh scribe. It does not imply Project Director handoff or that a scribe is active.
 
-- `CONCEPT_WAVE_A_FIRST_CONTACT_TRANSMISSION_SYSTEMATIZATION.md` — **ARCHITECT-DISPATCHED / READY**. First-contact, Wonder Gather transfer, native-response, translation and retrospective-history systematization.
-- `CONCEPT_WAVE_B_SUPERSEDED_LINEAGE_RECONCILIATION.md` — **ARCHITECT-DISPATCHED / READY**. Pre-V2/V2 lineage and unique-delta reconciliation.
-- `CONCEPT_WAVE_C_SUPPORTING_CONTEXT_EXTRACTION.md` — **ARCHITECT-DISPATCHED / READY**. Supporting-context/meta-analysis concept extraction, including PDF anthology.
-- `CONCEPT_WAVE_D_LIBRARY_INTEGRATION_AND_REGISTER.md` — **ARCHITECT-DISPATCHED / WAITING ON A-B-C**. Whole-library integration, global cross-index repair and durable ingestion register.
-- `CONCEPT_WAVE_E_ESSENCE_COVERAGE_AUDIT.md` — **ARCHITECT-DISPATCHED / WAITING ON D**. Fresh silent-loss/source-lineage audit; may merge conceptual-only PASS repairs under its packet.
+- `CONCEPT_WAVE_A_FIRST_CONTACT_TRANSMISSION_SYSTEMATIZATION.md` — **COMPLETE / RETURN PRESERVED ON FAMILY BRANCH**.
+- `CONCEPT_WAVE_B_SUPERSEDED_LINEAGE_RECONCILIATION.md` — **COMPLETE / RETURN PRESERVED ON FAMILY BRANCH**.
+- `CONCEPT_WAVE_C_SUPPORTING_CONTEXT_EXTRACTION.md` — **COMPLETE / RETURN PRESERVED ON FAMILY BRANCH**.
+- `CONCEPT_WAVE_D_LIBRARY_INTEGRATION_AND_REGISTER.md` — **COMPLETE / INTEGRATION HEAD `13143137a7f71956807356fbc9e35f05082ddf3d`**. Whole-library register and cross-program integration are ready for fresh coverage audit.
+- `CONCEPT_WAVE_E_ESSENCE_COVERAGE_AUDIT.md` — **ARCHITECT-DISPATCHED / READY AGAINST EXACT D HEAD**. Review `13143137a7f71956807356fbc9e35f05082ddf3d`; may merge conceptual-only PASS repairs under its packet.
 
 This wave is **parallel support / non-blocking** for IMP-0004.
 
