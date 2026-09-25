@@ -13,7 +13,7 @@ The historical acceptance harness and Slice-2/3/4 inheritance bindings now match
 
 **Verified code/test/mutation revision:** `171bef0d55604a918c5de1a050c83830bf412ed0` (clean working tree).
 
-This report is added by a subsequent documentation-only commit. The final implementation head is supplied in the PR and task return; CI checks out and verifies that exact PR head. This avoids a self-referential commit hash in the report.
+Subsequent commits add this report and remove two trailing blank lines; production and executable statements are unchanged. The final implementation head is supplied in the PR and task return; CI checks out and verifies that exact PR head. This avoids a self-referential commit hash in the report.
 
 Frozen identities:
 

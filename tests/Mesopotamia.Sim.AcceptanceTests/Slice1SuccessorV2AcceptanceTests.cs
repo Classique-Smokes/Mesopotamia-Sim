@@ -226,4 +226,3 @@ public sealed class Slice1SuccessorV2AcceptanceTests
         return result.Trim();
     }
 }
-

@@ -50,4 +50,3 @@ internal static class Dec0015Oracle
             actual.Favours.OrderBy(p => p.Key.Value).ToArray());
     }
 }
-
