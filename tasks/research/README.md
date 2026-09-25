@@ -4,6 +4,19 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
+## Slice-5 preimplementation discovery — architect-dispatched
+
+Dispatch index: `SFL_V0_SLICE5_PARALLEL_DISCOVERY_DISPATCH.md`  
+Canonical starting state: Slices 1–4 **VERIFIED COMPLETE**.
+
+- `SFL_V0_SLICE5_DISCOVERY_A_AUTHORITY_GAPS.md` — **ARCHITECT-DISPATCHED / READY**. Accepted checkpoint/delayed-process authority, stable-boundary meaning, exact-continuation semantics, Director-decision map.
+- `SFL_V0_SLICE5_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — **ARCHITECT-DISPATCHED / READY**. Exhaustive future-causal state inventory, ID/order/config state, scheduled inputs, caches/projections, architecture pressure.
+- `SFL_V0_SLICE5_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — **ARCHITECT-DISPATCHED / READY**. Fired deferred checkpoint rows, omission mutants, exact suffix, inherited regressions, acceptance-readiness.
+- `SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md` — **ARCHITECT-DISPATCHED / READY IN PARALLEL** from immutable historical dispatch ref. It does not block Slice-5 discovery; any real inherited semantic repair must be reconciled before Slice-5 acceptance freeze/coding.
+
+No Slice-5 coding bārû is authorized.
+
+
 ## Conceptual archive systematization wave — architect-dispatched
 
 Dispatch index: `CONCEPTUAL_ARCHIVE_SYSTEMATIZATION_WAVE_2026-09-24.md`  
