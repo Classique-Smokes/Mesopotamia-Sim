@@ -1,4 +1,14 @@
-# Slice-1 and Slice-2 Acceptance Test Surface
+# Slice-1 through Slice-4 Acceptance Test Surface
+
+## Slice-4 candidate evidence
+
+`Slice4AcceptanceTests` verifies the exact frozen v2 manifest blob and approved adaptation-plan blob, executes the explicit case bindings in `Slice4Cases`, and writes all 176 rows individually: 165 REQUIRED, nine DEFERRED, two UNEXERCISED. It reruns the inherited chain and retains all 270 individual REQUIRED results. The results identify actual Git HEAD and dirty status. `slice4-cases.json` maps each full AcceptanceId to substantive methods; `slice4-fixtures.json` retains initial writes, every input, explicitly declared report prerequisites and internal boundary challenges, produced formation identities, causal history, decisions and final typed records. A green coder-owned report does not assert independent conformance.
+
+`Slice4Lab` produces H with ordinary gifts and communicated evidence, then validates it with the inherited independent Household oracle before role work. Roles, consent, commitments, funding and marriages under test use real public actions. Explicit fixture head reports isolate conflicting/stale subjective prerequisites and are separately declared; they never replace transition acquisition witnesses. `Slice4Oracle` reconstructs role continuity and consent from raw snapshots/events, exact evidence receipts and association identities, and funding from initial grain and independent arithmetic. Its dependency audit forbids production role/Recognition/funding/resolution classifiers as expected-answer sources. Well-formed detached corruptions are passed to this checker for role identity/H links, consents/cohorts, evidence identity, funding rank/tie/source/debit, material effects, marriage/favour cardinality, and commitment-origin distinctions.
+
+The four inherited adaptations are recorded in `research/technical/IMP-0004/IMP-0004_ADAPTATION_LEDGER.md`. Historical Slice-3 formation/material and fixture-origin claims remain enforced. Exact field inventories include new typed authority and phase-carried records; S1 WorldState inventory is unchanged. `tests/Run-Slice4Mutants.ps1` creates a new detached checkout of an explicit revision and records exact patches, build/test logs and TRX assertion failures for the behavior-affecting hidden eligibility field and DEC-0014 mutants 53–56. Pass absolute `-Dotnet`, `-Checkout`, and `-Evidence` paths, with optional `-Revision`; the script refuses an existing checkout and never mutates the candidate branch.
+
+Run canonical restore, format verification, Release build and test from root. The existing CI workflow checks out exact PR HEAD and uploads all slice evidence as `sfl-slice1-slice2-slice3-slice4-acceptance-evidence`. The bounded material model and tests make no historical calibration claim, implement no treasury or general ledger, and do not implement deferred checkpoint, resignation, rival succession, general perception or richer personal planning.
 
 ## Slice-3 extension
 

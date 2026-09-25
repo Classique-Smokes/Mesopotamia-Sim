@@ -115,12 +115,13 @@ public sealed partial class Simulation
         return ActionRules.Mover(proposal) is { } mover && moved.Contains(mover) ? "CompetingResidenceTransition" : loss;
     }
 
-    private static bool PotentialDependency(Proposal a, Proposal b, WorldSnapshot snapshot) =>
+    private bool PotentialDependency(Proposal a, Proposal b, WorldSnapshot snapshot) =>
         SharesEpistemicDependency(a, b, snapshot) ||
         SharesResidenceDependency(a, b) || SharesMarriageCapacity(a, b) || SharesFavourDependency(a, b, snapshot) ||
         MaterialPeople(a, snapshot).Intersect(MaterialPeople(b, snapshot)).Any();
 
-    private static PersonId[] MaterialPeople(Proposal proposal, WorldSnapshot snapshot) =>
+    private PersonId[] MaterialPeople(Proposal proposal, WorldSnapshot snapshot) =>
+        proposal.CollectiveAttempt is { Cost: > 0 } a ? [.. HouseholdFunding.Participants(households.Snapshot(cycle), a.Authority.Household, a.Private?.Owner, a.Recipient)] :
         Transfer(proposal, snapshot) is { } transfer ? [transfer.Giver, transfer.Recipient] :
         EffectiveTerms(proposal) is Farm ? [EffectiveActor(proposal, snapshot)] : [];
 

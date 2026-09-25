@@ -130,7 +130,9 @@ internal static partial class HouseholdOracle
         }
         foreach (HouseholdProvisionCommitment commitment in h.Commitments.Values)
         {
-            Assert.IsFalse(string.IsNullOrWhiteSpace(commitment.Provenance.Fixture));
+            // Historical Slice-3 producer contexts retain their exact fixture restriction.
+            Assert.IsInstanceOfType<ProvisionFixtureProvenance>(commitment.Provenance);
+            Assert.IsFalse(string.IsNullOrWhiteSpace(((ProvisionFixtureProvenance)commitment.Provenance).Fixture));
             Assert.AreEqual(commitment.Person, h.Associations[commitment.Association].Person);
             if (h.Associations[commitment.Association].End is not null) Assert.IsNotNull(commitment.TerminatedBy);
         }

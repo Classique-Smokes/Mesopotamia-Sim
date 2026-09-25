@@ -1,6 +1,6 @@
-# Slice-1, Slice-2 and Slice-3 reference kernel
+# Slice-1 through Slice-4 reference kernel
 
-The production library implements IMP-0001's fixed-population, single-threaded lower-level laboratory, IMP-0002's bounded actor-specific epistemic extension, and IMP-0003's persistent household substrate. Repository semantic authority remains the accepted specification and ADRs linked from the task packets.
+The production library implements the fixed-population deterministic laboratory, actor-specific evidence, persistent Households, and IMP-0004's bounded head role and collective actions. Repository semantic authority remains the accepted specification and ADRs linked from the task packets.
 
 ## Running a world
 
@@ -33,7 +33,7 @@ Action commits prepare a complete copied state, check arithmetic and invariants,
 
 Invalid terms remain diagnostic `InvalidTerms` and do not activate responses or social failure knowledge. Valid attempts distinguish `Declined`, `Unable`, and `InvalidatedAtResolution`. Arithmetic/runtime failure faults the simulation, preserves its previously published snapshot, and prevents continuation; partial diagnostic history may remain for inspection and is not a completed cycle. The internal verification-only reaction challenge seam is inaccessible from the public API and exercises duplicate/closure controls.
 
-No checkpoint format, concurrency, stochastic policy, or head/office/spending authority is introduced. IDs and in-memory counters are explicit; future persistence needs its own accepted versioned contract.
+No checkpoint format, concurrency or stochastic policy is introduced. IDs and in-memory counters are explicit; future persistence needs its own accepted versioned contract.
 
 ## Subjective knowledge and communication
 
@@ -61,7 +61,7 @@ The closed ordinary-support classifier recognizes gift/help, loan provision and 
 
 Household dependency analysis partitions affected people, households and candidates, then uses detached copies of the same commit/closure implementation to identify consequential technical order conflicts. The explicit bridge-entry priority constrains admissible orders. Detached allocation cannot consume live IDs. As in the earlier reference resolver, permutation cost can grow with a tightly coupled proposal component; this is not a production-scale optimized resolver.
 
-Provision commitments are authoritative backing, not grain ownership or spending permission. The internal verification-only prerequisite seam requires fixture and producer provenance. Runtime solicitation, household spending and head/office state are absent. Exposed capacity is zero for NeedsGrain and otherwise `max(0, grain - 2)`; participation end and dissolution terminate backing without confiscation.
+Provision commitments are authoritative backing, not grain ownership. The internal verification-only prerequisite seam retains fixture and producer provenance for historical Slice-3 witnesses; Slice 4 adds the separately typed endogenous routes below. Exposed capacity is zero for NeedsGrain and otherwise `max(0, grain - 2)`; participation end and dissolution terminate backing without confiscation.
 
 Scenario configuration labels are arbitrary and do not select rule semantics. Household participation/exit proposals, responses and outcomes, household fact/Recognition communication, and household warrants/events identify `SFL-S3-v1`. Mixed cycles retain S2 provenance for ordinary inherited actions. Decision traces retain the scenario label separately as `ConfigurationVersion`. Slice-3 mechanism scenarios submit typed household actions; this slice does not extend the autonomous policy with new social motivation.
 
@@ -69,4 +69,22 @@ Continuation evidence is acquired only by direct parties to its causal entry/exi
 
 ## Verification
 
-Run the four canonical commands in root `AGENTS.md`. The acceptance runners emit individual frozen-row evidence and fixture/oracle/fault supplements under ignored `artifacts/acceptance/`; CI uploads these as `sfl-slice1-slice2-slice3-acceptance-evidence`. Slice-2 evidence is separately prefixed `slice2-`; frozen Slice-1 classifications remain unchanged. Fresh conformance review of the exact candidate remains required.
+Run the four canonical commands in root `AGENTS.md`. The acceptance runners emit individual frozen-row evidence and fixture/oracle/fault supplements under ignored `artifacts/acceptance/`; CI uploads these as `sfl-slice1-slice2-slice3-slice4-acceptance-evidence`. Each slice has its own prefix; frozen classifications remain unchanged. Fresh conformance review of the exact candidate remains required.
+
+## Household head and collective action (IMP-0004)
+
+Formation allocates one vacant `HouseholdHeadRoleId` per H. `NominateHouseholdHead` fills that persistent role through explicit nominator participant acceptance, nominee willingness, and acceptance by every participant captured at the common decision snapshot. `CycleInput.HeadConsents` addresses each proposal, actor and semantic consent capacity independently. A self-nomination carries that person's predicates in its terms and creates no self-response. The accepted attempt retains exact association identities and the predecessor role record for live revalidation. Participation end vacates the office only when the departing person is its occupant; Inactive appointment is inert and does not reactivate H.
+
+`HeadRoleFact`, `SustainingParticipationFact`, and `HeldHeadRecognition` use the existing evidence acquisition and communication routes. Head Recognition belongs to the person. Later entrants and uninvolved people learn no current head merely by being participants or reading objective state. A recognized vacancy, missing knowledge, and Contested evidence remain distinct. Immutable head transitions retain the cohort, consent predicates, exact evidence receipts, and rule/time provenance.
+
+An explicit Household proposal sets `Proposal.HouseholdContext = new(household, role, head)`. It occupies H's one initiative slot; the head can still take one personal initiative and respond to incoming interactions. A person heading multiple Active Households can act once for each H. `CycleInput.HouseholdPolicies` provides autonomous Household selection: canonical `SCORE-VP-003` gives eligible bound need relief 100 and its other declared components zero; `SFL-HOUSEHOLD-REFERENCE-v1` supplies the bounded support/provision vocabulary. Policies do not infer appointments or redesign inherited personal motivation. Vacant and Inactive H produce no Household context. Tagging an ordinary gift, move, debt or other personal action with H does not grant office authority.
+
+`RequestProvisionCommitment` asks the contributor through that person's response policy; acceptance creates backing without moving grain. `AuthorizeOwnProvisionCommitment` requires separate institutional-request and private-resource predicates in one head act. Refusals are keyed by H and contributor, preserving the baseline across succession. N+1, N+2 and N+3 are blocked after refusal at N; N+4 also requires an accepted context change. Under DEC-0014, a qualifying support onset/reentry or otherwise-valid positive mediated dowry demand is retained historically against the latest refusal even if it clears or lacks funding. A subsequent refusal resets this bounded record. Repeated technical proposal IDs create no need, and there is no pending-demand subsystem.
+
+`HouseholdSupport` is proactive one-grain support; `RequestHouseholdSupport` opens one role-scoped head response. A needy head may receive proactive support. `ProposeMediatedMarriage` requires groom-held bride participation, H Recognition and current head/scope Recognition, and opens one head response. Female-head self-mediation is permitted; groom=head is not. Direct strong-like marriage remains the inherited personal route.
+
+`HouseholdFundingPolicy` exposes no-private, exact configured X, shortfall and full-private plans before a role response is classified Unable. Default laboratory policy prefers feasible no-private funding; the holder may prefer a private plan or decline. Accepted X is immutable: present X is a positive integer no greater than cost C, owned by the current authorizing head, and subject to NeedsGrain/reserve restrictions. Commitments fund exactly C-X. The head's commitment-side exposure subtracts X before ranking by effective capacity descending, then semantic PersonId for exact ties. One live evaluator supplies commit and history. Personal deltas aggregate by person while typed private and commitment legs remain separate, including contributor/recipient overlaps. Mediated marriage, direct dowry credit to groom and one groom-to-head favour publish atomically. X carries no gift/help/loan attitude, extra favour or organizational-support meaning.
+
+Semantic ordering preserves bridge entry before its exit, accepted authority use before its paired destruction, and the accepted shared-grain support/expenditure priority over personal material actions, including repayment and called repayment. Other eligibility, knowledge, capacity and favour-slot gates still revalidate. Detached replay uses the same accepted envelopes and evaluator; causal normalization prevents allocation identity from manufacturing fallback. No new initiative starts after same-cycle appointment or reactivation.
+
+These grain stocks, reserve 2, provision commitments, fixed rank, private X and material priorities are a synthetic v0 grounding scaffold. They are not historical economic claims or a general property, treasury, accounting or payment architecture. The three-cycle reconsideration interval is the deliberately crude anti-repeated-solicitation proxy accepted by DEC-0014, not a psychological or historical model. Future resource and institutional redesign remains a separate accepted work boundary.

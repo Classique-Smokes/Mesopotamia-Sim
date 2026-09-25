@@ -41,6 +41,7 @@ public sealed partial class Simulation
                 HouseholdRules.Ties(world, [entry.Newcomer, .. households.Current(h).Select(a => a.Person)]), supports, recognition, Stamp(committed)));
             AssociationId association = households.AllocateAssociation();
             households.Associations.Add(association, new(association, entry.Newcomer, h, transition, null));
+            AcquireSustainingFact(households.Associations[association], committed, committed.Participants);
             HouseholdEvent("SustainingParticipationStarted", [entry.Newcomer], [committed.Id], $"Association:{association.Value};Household:{h.Value}");
         }
         else
@@ -50,9 +51,12 @@ public sealed partial class Simulation
                 $"Household:{h.Value};Warrant:{transition.Value};Association:{association.Id.Value}", proposal.Id, fallback);
             households.Exits.Add(transition, new(transition, h, proposal.Actor, association.Id, proposal.Id, Stamp(committed)));
             households.Associations[association.Id] = association with { End = transition };
+            AcquireSustainingFact(households.Associations[association.Id], committed, [proposal.Actor]);
             TerminateCommitments(h, proposal.Actor, committed.Id);
+            VacateHead(h, proposal.Actor, committed);
         }
-        events[events.FindIndex(e => e.Id == committed.Id)] = committed with { Action = proposal.Terms };
+        int committedIndex = events.FindIndex(e => e.Id == committed.Id);
+        events[committedIndex] = events[committedIndex] with { Action = proposal.Terms };
         ContinueHousehold(h, transition, prior, committed);
         if (Challenge == ReactionChallenge.DuplicateCauses) ContinueHousehold(h, transition, prior, committed);
         return committed;
@@ -160,10 +164,13 @@ public sealed partial class Simulation
         FormationWarrant warrant = new(id, h, candidate.Id, founders, world.HomeOf(founders[0]), ties, supports, recognition, earliest, Stamp(formed));
         households.Formations.Add(id, warrant);
         households.Households.Add(h, new(h, id, HouseholdLifecycle.Active, formed.Id, new(formed.Cycle, formed.ReactionIndex)));
+        HouseholdHeadRoleId role = households.AllocateHeadRole();
+        households.HeadRoles.Add(role, new(role, h, null, formed.Id, formed.Id));
         foreach (PersonId founder in founders)
         {
             AssociationId a = households.AllocateAssociation();
             households.Associations.Add(a, new(a, founder, h, id, null));
+            AcquireSustainingFact(households.Associations[a], formed, founders);
             HouseholdEvent("SustainingParticipationFounded", [founder], [formed.Id], $"Household:{h.Value};Association:{a.Value};Warrant:{id.Value}");
         }
         RecognizeHousehold(h, id, true, founders, formed);

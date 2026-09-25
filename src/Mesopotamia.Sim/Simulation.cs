@@ -30,6 +30,10 @@ public sealed partial class Simulation
     // Scenario names do not select semantics. Attribute each context to the rules it exercises.
     private static string RulesVersionFor(ActionTerms? terms, ActorEpistemicState actor) => terms switch
     {
+        NominateHouseholdHead => HeadRulesVersion,
+        RequestProvisionCommitment or AuthorizeOwnProvisionCommitment or HouseholdSupport or RequestHouseholdSupport or ProposeMediatedMarriage => HeadRulesVersion,
+        CommunicateClaim { Claim: HeldHeadRecognition } => HeadRulesVersion,
+        CommunicateClaim { Claim: HeldFact fact } when actor.Facts.Any(f => f.Id == fact.Evidence && f.Proposition is HeadRoleFact or SustainingParticipationFact) => HeadRulesVersion,
         RequestHouseholdParticipation or InviteHouseholdParticipation or EndHouseholdParticipation => HouseholdRulesVersion,
         CommunicateClaim { Claim: HeldHouseholdRecognition } => HouseholdRulesVersion,
         CommunicateClaim { Claim: HeldFact fact } when actor.Facts.Any(f => f.Id == fact.Evidence && f.Proposition is HouseholdExistenceFact) => HouseholdRulesVersion,

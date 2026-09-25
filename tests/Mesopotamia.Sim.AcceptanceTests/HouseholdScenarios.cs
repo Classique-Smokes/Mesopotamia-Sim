@@ -140,8 +140,12 @@ internal sealed partial class HouseholdScenarios
             EventId lastDelivery = lab.Sim.History.Last(e => e.Kind == "Communication").Id;
             Assert.IsTrue(lab.Sim.History.Any(e => e.Kind == "CandidateRecognitionEstablished" && e.Causes.Contains(lastDelivery)));
             Assert.IsTrue(lab.Sim.EpistemicSnapshot.Actors.Values.All(a => a.HouseholdRecognitionOf(H(lab)) == RecognitionStatus.Recognized));
-            string[] names = typeof(Simulation).Assembly.GetTypes().Select(t => t.Name).ToArray();
-            Assert.IsFalse(names.Any(n => n.Contains("HeadRole", StringComparison.Ordinal) || n.Contains("HouseholdDecisionContext", StringComparison.Ordinal)));
+            // Approved adaptation A: formation itself remains headless when later role types exist.
+            Assert.AreEqual(h.Households.Count, h.HeadRoles.Count);
+            Assert.IsTrue(h.HeadRoles.Values.All(r => r.Occupant is null && h.Households.ContainsKey(r.Household)));
+            Assert.IsEmpty(h.HeadTransitions);
+            Assert.IsFalse(lab.Sim.DecisionHistory.Any(d => d.HouseholdContext is not null));
+            Assert.IsFalse(lab.Sim.History.Any(e => e.HouseholdContext is not null || e.HeadTransition is not null));
         });
         yield return new("FoundingCardinalityAndPredicateAblations", ["002", "003", "004", "005", "006"], () =>
         {

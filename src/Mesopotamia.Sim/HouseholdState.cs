@@ -30,9 +30,9 @@ public sealed record FounderLineageSource(PersonId Founder, HouseholdId Predeces
 public sealed record LineageWarrant(WarrantId Id, HouseholdId Successor, WarrantId Formation,
     HouseholdLineageKind Kind, ImmutableHashSet<HouseholdId> Predecessors,
     ImmutableArray<FounderLineageSource> Sources, ImmutableArray<EventId> FreshEvidence, WarrantStamp Stamp);
-public sealed record ProvisionFixtureProvenance(string Fixture, string Producer, string OutputIdentity);
+public sealed record ProvisionFixtureProvenance(string Fixture, string Producer, string OutputIdentity) : ProvisionOrigin;
 public sealed record HouseholdProvisionCommitment(CommitmentId Id, PersonId Person, HouseholdId Household,
-    AssociationId Association, ProvisionFixtureProvenance Provenance, EventId? TerminatedBy);
+    AssociationId Association, ProvisionOrigin Provenance, EventId? TerminatedBy);
 public sealed record HouseholdRecognition(HouseholdId Household, RecognitionStatus Status, ImmutableArray<KnownFact> Evidence);
 public sealed record HouseholdExistenceFact(HouseholdId Household, bool Continues, WarrantId Warrant) : FactualProposition;
 public sealed record HeldHouseholdRecognition(HouseholdId Household) : HeldClaim;
@@ -51,6 +51,9 @@ public sealed record HouseholdSnapshot(long Cycle,
     ImmutableDictionary<WarrantId, LineageWarrant> Lineages,
     ImmutableDictionary<CommitmentId, HouseholdProvisionCommitment> Commitments)
 {
+    public ImmutableDictionary<HouseholdHeadRoleId, HouseholdHeadRole> HeadRoles { get; init; } = ImmutableDictionary<HouseholdHeadRoleId, HouseholdHeadRole>.Empty;
+    public ImmutableDictionary<EventId, HeadTransition> HeadTransitions { get; init; } = ImmutableDictionary<EventId, HeadTransition>.Empty;
+    public ImmutableDictionary<ProvisionProcessKey, ProvisionRefusal> ProvisionRefusals { get; init; } = ImmutableDictionary<ProvisionProcessKey, ProvisionRefusal>.Empty;
     public ImmutableArray<SustainingParticipant> Participants(HouseholdId household) =>
         [.. Associations.Values.Where(a => a.Household == household && a.End is null).OrderBy(a => a.Id.Value)];
     public bool DerivedFrom(HouseholdId successor, HouseholdId predecessor) =>
@@ -82,6 +85,10 @@ public sealed record HouseholdSnapshot(long Cycle,
 
 internal sealed class HouseholdState
 {
+    internal Dictionary<HouseholdHeadRoleId, HouseholdHeadRole> HeadRoles { get; } = [];
+    internal Dictionary<EventId, HeadTransition> HeadTransitions { get; } = [];
+    internal Dictionary<ProvisionProcessKey, ProvisionRefusal> ProvisionRefusals { get; } = [];
+    private long nextHeadRole = 1;
     internal Dictionary<HouseholdId, Household> Households { get; } = [];
     internal Dictionary<WarrantId, FormationWarrant> Formations { get; } = [];
     internal Dictionary<AssociationId, SustainingParticipant> Associations { get; } = [];
@@ -100,6 +107,8 @@ internal sealed class HouseholdState
     internal HouseholdState() { }
     private HouseholdState(HouseholdState source)
     {
+        HeadRoles = new(source.HeadRoles); HeadTransitions = new(source.HeadTransitions); nextHeadRole = source.nextHeadRole;
+        ProvisionRefusals = new(source.ProvisionRefusals);
         Households = new(source.Households); Formations = new(source.Formations);
         Associations = new(source.Associations); Entries = new(source.Entries);
         Exits = new(source.Exits); Continuations = new(source.Continuations);
@@ -108,6 +117,7 @@ internal sealed class HouseholdState
         nextAssociation = source.nextAssociation; nextCommitment = source.nextCommitment;
     }
     internal HouseholdState Copy() => new(this);
+    internal HouseholdHeadRoleId AllocateHeadRole() => new(checked(nextHeadRole++));
     internal HouseholdId AllocateHousehold() => new(checked(nextHousehold++));
     internal WarrantId AllocateWarrant() => new(checked(nextWarrant++));
     internal AssociationId AllocateAssociation() => new(checked(nextAssociation++));
@@ -116,7 +126,8 @@ internal sealed class HouseholdState
         [.. Associations.Values.Where(a => a.Household == h && a.End is null).OrderBy(a => a.Id.Value)];
     internal HouseholdSnapshot Snapshot(long cycle) => new(cycle, Households.ToImmutableDictionary(), Formations.ToImmutableDictionary(),
         Associations.ToImmutableDictionary(), Entries.ToImmutableDictionary(), Exits.ToImmutableDictionary(),
-        Continuations.ToImmutableDictionary(), Lineages.ToImmutableDictionary(), Commitments.ToImmutableDictionary());
+        Continuations.ToImmutableDictionary(), Lineages.ToImmutableDictionary(), Commitments.ToImmutableDictionary())
+    { HeadRoles = HeadRoles.ToImmutableDictionary(), HeadTransitions = HeadTransitions.ToImmutableDictionary(), ProvisionRefusals = ProvisionRefusals.ToImmutableDictionary() };
 }
 
 internal static class OrdinarySupport

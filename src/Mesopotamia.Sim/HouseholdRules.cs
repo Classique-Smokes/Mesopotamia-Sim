@@ -6,6 +6,12 @@ internal static class HouseholdRules
 {
     internal static HouseholdId? Target(ActionTerms terms) => terms switch
     {
+        NominateHouseholdHead a => a.Household,
+        RequestProvisionCommitment a => a.Household,
+        AuthorizeOwnProvisionCommitment a => a.Household,
+        HouseholdSupport a => a.Household,
+        RequestHouseholdSupport a => a.Household,
+        ProposeMediatedMarriage a => a.Household,
         RequestHouseholdParticipation a => a.Household,
         InviteHouseholdParticipation a => a.Household,
         EndHouseholdParticipation a => a.Household,
@@ -61,6 +67,8 @@ internal static class HouseholdRules
         if (Target(proposal.Terms) is not { } h) return null;
         if (households.Households[h].Lifecycle == HouseholdLifecycle.Dissolved) return "HouseholdDissolved";
         if (epistemic.Of(proposal.Actor).HouseholdRecognitionOf(h) != RecognitionStatus.Recognized) return "HouseholdNotRecognized";
+        if (proposal.Terms is NominateHouseholdHead) return HouseholdHeadRules.Infeasible(proposal, households, epistemic);
+        if (HouseholdCollectiveRules.IsCollective(proposal.Terms)) return HouseholdCollectiveRules.Infeasible(proposal, world, households, epistemic);
         SustainingParticipant[] current = households.Current(h);
         if (proposal.Terms is EndHouseholdParticipation)
             return current.Any(a => a.Person == proposal.Actor) ? null : "NotSustainingParticipant";

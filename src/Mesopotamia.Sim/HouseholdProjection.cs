@@ -44,6 +44,15 @@ public sealed partial class Simulation
         options.Converters.Add(new ProjectionIdentityConverter<EventId>(EventKey));
         options.Converters.Add(new ProjectionIdentityConverter<RelationId>(id => relations.GetValueOrDefault(id, "external:" + id.Value)));
         options.Converters.Add(new ProjectionIdentityConverter<EvidenceOrder>(time => times.TryGetValue(time, out EventId id) ? EventKey(id) : $"time:{time.Cycle}:{time.ReactionIndex}"));
+        options.Converters.Add(new ProjectionIdentityConverter<HouseholdHeadRoleId>(id => households.HeadRoles.ContainsKey(id)
+            ? "existing:" + id.Value : "role:" + EventKey(projection.households.HeadRoles[id].Origin)));
+        options.Converters.Add(new ProjectionIdentityConverter<CommitmentId>(id => households.Commitments.ContainsKey(id)
+            ? "existing:" + id.Value : projection.households.Commitments[id].Provenance switch
+            {
+                EndogenousProvisionOrigin origin => "commitment:" + EventKey(origin.Created),
+                SelfProvisionOrigin origin => "commitment:" + EventKey(origin.Created),
+                _ => "external:" + id.Value
+            }));
         HashSet<EventId> boundaryEvents = [.. events.Select(e => e.Id)];
         string FactKey(KnownFact f)
         {
@@ -98,12 +107,16 @@ public sealed partial class Simulation
             Continuations = Set(h.Continuations.Values),
             Lineages = Set(h.Lineages.Values),
             Commitments = Set(h.Commitments.Values),
+            HeadRoles = Set(h.HeadRoles.Values),
+            HeadTransitions = Set(h.HeadTransitions.Values),
+            ProvisionRefusals = Set(h.ProvisionRefusals.Values),
             Evidence = projection.epistemic.Snapshot(cycle).Actors.OrderBy(a => a.Key.Value).Select(a => new
             {
                 a.Key,
                 Facts = Set(a.Value.Facts),
                 Candidates = a.Value.Recognitions.Select(r => new { r.Candidate, r.Status, Evidence = Set(r.Evidence) }),
                 Households = a.Value.HouseholdRecognitions.Select(r => new { r.Household, r.Status, Evidence = Set(r.Evidence) }),
+                Heads = a.Value.HeadRecognitions.Select(r => new { r.Household, r.Role, r.Occupant, r.Status, Evidence = Set(r.Evidence) }),
                 // Order is significant between evidence about the same subject.
                 // Unrelated loan origins do not gain meaning from exchanged ordinals.
                 Precedence = a.Value.Facts.SelectMany(left => a.Value.Facts.Where(right =>

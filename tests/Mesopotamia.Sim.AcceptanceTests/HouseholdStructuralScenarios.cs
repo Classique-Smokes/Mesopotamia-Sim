@@ -21,6 +21,8 @@ internal sealed partial class HouseholdScenarios
             Assert.IsTrue(world.SequenceEqual(expected));
             string[] fields = typeof(HouseholdState).GetFields(BindingFlags.Instance | BindingFlags.NonPublic).Select(f => f.Name).Order(StringComparer.Ordinal).ToArray();
             string[] authoritative = new[] { "<Households>k__BackingField", "<Formations>k__BackingField", "<Associations>k__BackingField", "<Entries>k__BackingField", "<Exits>k__BackingField", "<Continuations>k__BackingField", "<Lineages>k__BackingField", "<Commitments>k__BackingField", "<Supports>k__BackingField", "nextHousehold", "nextWarrant", "nextAssociation", "nextCommitment" }.Order(StringComparer.Ordinal).ToArray();
+            // Approved adaptation B: enumerate each new typed authority field explicitly.
+            authoritative = [.. authoritative.Concat(["<HeadRoles>k__BackingField", "<HeadTransitions>k__BackingField", "<ProvisionRefusals>k__BackingField", "nextHeadRole"]).Order(StringComparer.Ordinal)];
             Assert.IsTrue(fields.SequenceEqual(authoritative));
             Assert.IsTrue(typeof(HouseholdSnapshot).GetFields(BindingFlags.Instance | BindingFlags.NonPublic).All(f => f.IsInitOnly));
             foreach (string file in new[] { "Agency.cs", "PersonalDecisionInputs.cs", "Decisions.cs" })

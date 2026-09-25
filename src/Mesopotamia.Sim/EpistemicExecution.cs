@@ -7,6 +7,7 @@ internal static class CommunicationRules
 {
     internal static bool Holds(ActorEpistemicState state, HeldClaim claim) => claim switch
     {
+        HeldHeadRecognition r => state.HeadRecognitions.Any(h => h.Household == r.Household && h.Status == RecognitionStatus.Recognized),
         HeldFact fact => state.Facts.Any(f => f.Id == fact.Evidence),
         HeldRecognition recognition => state.RecognitionOf(recognition.Candidate) == RecognitionStatus.Recognized,
         HeldHouseholdRecognition recognition => state.HouseholdRecognitionOf(recognition.Household) == RecognitionStatus.Recognized,
@@ -14,6 +15,7 @@ internal static class CommunicationRules
     };
     internal static ImmutableArray<KnownFact> Payload(ActorEpistemicState state, HeldClaim claim) => claim switch
     {
+        HeldHeadRecognition r => state.HeadRecognitions.Single(h => h.Household == r.Household && h.Status == RecognitionStatus.Recognized).Evidence,
         HeldFact fact => [state.Facts.Single(f => f.Id == fact.Evidence)],
         HeldRecognition recognition => state.Recognitions.Single(r => r.Candidate == recognition.Candidate && r.Status == RecognitionStatus.Recognized).Evidence,
         HeldHouseholdRecognition recognition => state.HouseholdRecognitions.Single(r => r.Household == recognition.Household && r.Status == RecognitionStatus.Recognized).Evidence,
@@ -66,6 +68,7 @@ public sealed partial class Simulation
     {
         AcquireCommittedFacts(epistemic, state, entry);
         if (OrdinarySupport.From(entry) is { } support) households.Supports.TryAdd(entry.Id, support);
+        ObserveSupportNeedTransitions(entry);
     }
 
     private static void AcquireCommittedFacts(EpistemicState epistemic, WorldState state, SemanticEvent entry)
