@@ -172,6 +172,14 @@ Ordinary participation ends lead H to Dissolved at stable cycle closure.
 
 **Level:** boundary
 
+### Interpretation boundary
+
+The three-cycle rule is a deliberately crude v0 anti-repeated-solicitation proxy:
+
+> do not repeatedly ask someone who already refused unless enough time has passed and circumstances have meaningfully changed.
+
+It is not a historical/psychological bargaining model and should remain replaceable by later richer behavior/negotiation machinery.
+
 ### Initial state
 
 Active H with head P and non-contributing sustaining participant A.
@@ -186,14 +194,48 @@ Active H with head P and non-contributing sustaining participant A.
    - A grain/NeedsGrain; or
    - A attitude toward P; or
    - head occupant; or
-   - new household material need.
+   - new Household material need.
 
 ### Assertions
 
 - before three full cycles: repeat request ineligible;
 - after cooldown alone but no relevant context change: still ineligible;
 - only after both cooldown completion and relevant context change: reconsideration becomes eligible when the head deliberates;
-- refusal does not create a provision commitment.
+- refusal does not create a provision commitment;
+- a later refusal establishes a fresh reconsideration baseline.
+
+### Material-need historical witness
+
+Use a target A who refuses at cycle N.
+
+Hold A's grain/`NeedsGrain`, attitude toward P, head occupant, and all other accepted context dimensions unchanged.
+
+At N+1, introduce an otherwise-valid mediated-marriage route with positive dowry through the recognized current H/head, but make every funding plan infeasible.
+
+Assertions:
+
+- the dowry material-need occurrence is recorded even though the action is `Unable` for lack of funding;
+- the need does not have to remain current through N+4;
+- before the three full cycles elapse, A remains ineligible;
+- at N+4, A is eligible because cooldown + historical material-need context change are both satisfied;
+- if A refuses again at N+4, the N+1 need cannot satisfy a later reconsideration after that new refusal.
+
+### Support-need companion
+
+After refusal, make an eligible current sustaining participant newly enter or re-enter the accepted Household-support need state.
+
+Assertions:
+
+- the new support-need occurrence satisfies the context-change limb;
+- an uninterrupted support need already present at the refusal does not become “new” merely because time passes;
+- clearing and later re-entering the eligible need state is a new occurrence.
+
+### Identity / provenance controls
+
+- ProposalId, container order, replay allocation identity, or retry-object identity alone cannot create context change;
+- qualifying material-need occurrence must have authoritative causal provenance;
+- once one qualifying need occurrence has satisfied the context-change limb for a refusal baseline, duplicate/repeated occurrences do not add further eligibility for that same baseline;
+- no generic pending-demand/adoption subsystem is required.
 
 ### Metamorphic companion
 
