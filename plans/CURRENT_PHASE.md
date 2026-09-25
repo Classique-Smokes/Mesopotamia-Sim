@@ -492,7 +492,7 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 - R2 return: `research/technical/SFL_V0_SLICE5_ACCEPTANCE_PRECODE_REVIEW_CANDIDATE1_R2.md` — **PASS — MAY FREEZE UNCHANGED**
 - R2 review blob: `828b75b53e7b555f668eff61b20b590f796c7ce6`
 - coding status: **NOT AUTHORIZED**
-- freeze status: **BLOCKED by inherited retro-SID Director decision; R2 PASS alone is insufficient**
+- freeze status: **BLOCKED because DEC-0015 materially changed inherited Slice-1 authority; candidate1 R2 PASS is historical evidence only**
 
 Inherited-assurance thread:
 
@@ -501,17 +501,18 @@ Inherited-assurance thread:
 - return: `research/technical/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
 - return blob: `400af240b8f4f5669531b03f4a82f2055d40070d`
 - MA reconciliation: `research/technical/SID_RETRO_SLICE1_PASSB_RECONCILIATION.md`
-- consequence: **REAL INHERITED SEMANTIC/ACCEPTANCE GAP**
-- Director packet: `proposals/SFL_V0_SLICE1_RETRO_SID_OPEN_SEMANTIC_DECISIONS.md`
-- Slice-5 freeze/coding remains blocked until the resulting inherited authority is promoted and reconciled
+- Project Director decision: `DEC-0015` — **ACCEPTED**
+- promotion audit: `research/technical/DEC-0015_PROMOTION_RECONCILIATION.md` — **PASS**
+- semantic closure: `research/technical/SID_RETRO_SLICE1_CLOSURE_REVALIDATION.md` — **CLOSED / PASS**
+- remaining inherited gate: successor Slice-1 acceptance + current implementation conformance
 
 ## Next
 
-1. Project Director decides the bounded retro-SID questions in `proposals/SFL_V0_SLICE1_RETRO_SID_OPEN_SEMANTIC_DECISIONS.md`.
-2. Promote the approved inherited rule losslessly into current semantic + verification authority without rewriting frozen Slice-1 v1.
-3. Create/review/freeze successor Slice-1 acceptance and reconcile current implementation conformance.
-4. Issue a corrected Slice-5 acceptance candidate reflecting the current inherited authority and run fresh whole-candidate review.
-5. Freeze Slice-5 acceptance only after those gates close.
+1. Create/review/freeze successor Slice-1 acceptance for DEC-0015 without rewriting frozen v1.
+2. Reconcile current implementation conformance to the successor Slice-1 authority.
+3. Issue a corrected Slice-5 acceptance candidate reflecting the new inherited authority and run fresh whole-candidate review.
+4. Freeze Slice-5 acceptance only after those gates close.
+5. Evaluate any conditional inherited-verification adaptation trigger from the chosen Slice-5 design.
 6. Only then may a Slice-5 coding bārû task be created, with explicit Astra effort recommendation.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.
