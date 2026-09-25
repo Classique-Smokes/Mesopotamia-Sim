@@ -68,9 +68,11 @@ Active work:
   - closure record: `research/technical/IMP-0004/IMP-0004_IMPLEMENTATION_ESCALATION_01_CLOSURE.md`
 - checkpoint/restore remains Slice 5.
 
-Conceptual archive systematization is in its final independent coverage-review stage:
-- Concept Wave D integration head: `13143137a7f71956807356fbc9e35f05082ddf3d`
-- Concept Wave E task: `tasks/research/CONCEPT_WAVE_E_ESSENCE_COVERAGE_AUDIT.md` — **READY**
+Conceptual archive systematization: **COMPLETE / PASS**
+- ingestion register: `research/conceptual/CONCEPTUAL_INGESTION_REGISTER.md`
+- coverage audit: `research/conceptual/CONCEPTUAL_ESSENCE_COVERAGE_AUDIT_2026-09-24.md`
+- final integration merge: `03bd1a4566de99d77b30fee0ae21ef4fc796ba00`
+- coverage: **81/81 baseline files, 17/17 restored files, 66/66 checked source-family blobs unchanged**
 
 Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 
