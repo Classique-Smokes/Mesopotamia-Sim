@@ -1,7 +1,7 @@
 # SFL v0 Slice 4 — Successor Acceptance Manifest Candidate
 
 **Status:** CANDIDATE / NOT FROZEN / FRESH PRE-CODE REVIEW REQUIRED  
-**Manifest version:** `SFL-V0-S4-ACCEPTANCE-v2-candidate1`  
+**Manifest version:** `SFL-V0-S4-ACCEPTANCE-v2-candidate2`  
 **Owner:** Master Architect  
 **Scope:** Roadmap Stage 4 / Slice 4 — persistent HouseholdHeadRole + occupancy/Recognition + dual-mode Household agency + scoped provision/spending/mediated-marriage authority + DEC-0013 SID closure/resource-scaffold boundaries  
 **Semantic authority:** accepted SPEC-SFL-0001 + accepted ADRs/decisions, including DEC-0010, DEC-0011 and `DEC-0013_SLICE4_SID_CLOSURE_AND_V0_RESOURCE_SCAFFOLD_BOUNDARIES.md`  
@@ -10,8 +10,10 @@
 **Predecessor Slice-4 authority:** `plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST.md` / `sfl-v0-slice4-acceptance-v1`  
 **Primary semantic reconciliation:** `research/technical/SFL_V0_SLICE4_SID_CLOSURE_REVALIDATION.md`  
 **TRES-0011 reconciliation:** `research/technical/TRES-0011/TRES-0011_MASTER_ARCHITECT_RECONCILIATION.md`  
-**Candidate ref:** `sfl-v0-slice4-acceptance-v2-candidate1`  
-**Coding status:** NOT AUTHORIZED — fresh whole-candidate pre-code PASS + successor freeze + inherited-verification adaptation reassessment/review are required
+**Candidate ref:** `sfl-v0-slice4-acceptance-v2-candidate2`  
+**Candidate1 review:** `research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md` — **BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**  
+**Candidate1 defect:** accepted DEC-0011 exact transaction-specific private-`X` semantics were present in SPEC/canonical verification but lacked status-bearing completion-gating AcceptanceIds  
+**Coding status:** NOT AUTHORIZED — fresh candidate2 whole-candidate pre-code PASS + successor freeze + inherited-verification adaptation reassessment/review are required
 
 ## 1. Purpose
 
@@ -30,10 +32,11 @@ Slice 4 makes executable the already-accepted representative/head layer:
 - scoped role authority, not sovereignty;
 - DEC-0010 authority-use-before-authority-destruction same-cycle precedence;
 - exact prior-slice regression protection and lossless inherited verification adaptation;
+- DEC-0011 exact transaction-specific private-`X` funding-plan semantics;
 - DEC-0013 closure of the six SID interaction gaps;
 - explicit v0 resource-scaffold replaceability/nonclaim guardrails without designing a future economy.
 
-This candidate inherits every frozen v1 AcceptanceId/status/obligation unchanged and adds only the post-v1 obligations required by accepted DEC-0013. It is not authority until fresh independent whole-candidate review passes and an exact successor version/ref is frozen. It cannot create or amend social rules.
+This candidate inherits every frozen v1 AcceptanceId/status/obligation unchanged and adds only the post-v1 completion obligations required by accepted DEC-0011, accepted DEC-0013, and the implementation-facing v0 resource-scaffold guardrails already promoted into accepted authority/canonical verification. It is not authority until fresh independent whole-candidate review passes and an exact successor version/ref is frozen. It cannot create or amend social rules.
 
 ## 2. Controlling boundary
 
@@ -57,7 +60,8 @@ Slice 4 must make executable and omission-detectable:
 14. lossless adaptation of inherited literal Slice-3 verification witnesses before coding where later accepted types/state make those literals obsolete;
 15. DEC-0013 bounded RepayDebt priority, snapshot-bound appointment/succession consent cohort, head-as-support-recipient, head self-commitment, self-nomination and Inactive-role-fill semantics;
 16. one authoritative funding-resolution seam, typed funding provenance, dependency/material-participation consistency and derived-capacity nonauthority;
-17. explicit proof that current resource mechanics do not define Household/role/Recognition identity and do not silently become generic economy/property architecture.
+17. explicit proof that current resource mechanics do not define Household/role/Recognition identity and do not silently become generic economy/property architecture;
+18. exact DEC-0011 transaction-specific private-`X` funding-plan, same-head commitment arithmetic, exact-term/nontransfer, and provenance/non-side-effect semantics.
 
 ### 2.2 Explicitly outside Slice 4
 
@@ -310,7 +314,7 @@ Detached corruptions must reach the actual independent checker and reject materi
 | S4-174-ADAPTATION-REVIEW-BEFORE-IMPLEMENTATION | REQUIRED | All triggered inherited structural/literal-witness adaptations are independently reviewed and recorded before the implementation task may alter those surfaces. |
 | S4-175-NO-FROZEN-MANIFEST-RECLASSIFICATION | REQUIRED | Later-slice capability is added by new Slice-4 rows; frozen Slice-3 REQUIRED/DEFERRED/UNEXERCISED statuses are never rewritten. |
 
-### I. DEC-0013 post-v1 semantic closure and resource-seam guardrails
+### I. DEC-0011 / DEC-0013 post-v1 semantic closure and resource-seam guardrails
 
 | AcceptanceId | Status | Obligation |
 |---|---|---|
@@ -326,6 +330,9 @@ Detached corruptions must reach the actual independent checker and reject materi
 | S4-185-DEPENDENCY-MATERIAL-PARTICIPATION | REQUIRED | Resolver/dependency discovery consumes the action's declared/evaluated possible or actual material participation rather than duplicating fixed-rank/private-X policy; conflict detection cannot disagree with the authoritative funding evaluation because it rediscovered the allocator independently. |
 | S4-186-MOBILIZABLE-CAPACITY-NONAUTHORITY | REQUIRED | MobilizableCapacity(H) remains rebuildable derived state, excludes transaction-specific private X, and never becomes an independently authoritative Household wealth balance/cache. |
 | S4-187-RESOURCE-NONIDENTITY | REQUIRED | Commitment presence, current capacity, contributor rank, private X and resource balance changes may gate/materially affect actions but do not define Household identity, sustaining participation, head-role identity/occupancy or Recognition identity. |
+| S4-188-DEC0011-EXACT-PRIVATE-X-FUNDING-PLAN | REQUIRED | For one permitted Household material action with total cost C, absence of X means no private contribution and commitments must fund C; a present X is an exact strictly positive integer with X<=C, requires distinct current-head role authority plus private-resource authorization, obeys protected-reserve/NeedsGrain limits, and fixes residual commitment requirement R=C-X. Partial X, shortfall supplementation and full-private X=C are valid when ordinary gates hold; invalid X never reaches downstream response/social effects; X creates no persistent commitment or standing MobilizableCapacity. When the current head is also the NeedsGrain support recipient, that head exposes no private-X capacity. |
+| S4-189-DEC0011-SAME-HEAD-COMMITMENT-X-ARITHMETIC | REQUIRED | If current head P both authorizes private X and has a valid persistent HouseholdProvisionCommitment(P->H), both legs draw from the same personal grain stock: P's transaction-local commitment-side exposed capacity is reduced by exact X before fixed-rank allocation of R, no grain is double-counted for feasibility/allocation or debit, and the whole action fails atomically when the exact private plus residual commitment plan lacks sufficient live capacity. |
+| S4-190-DEC0011-EXACT-TERM-NONTRANSFER-PROVENANCE | REQUIRED | The agreed X/R funding split revalidates exactly at commit and is never silently shrunk, increased, auto-rebalanced, renegotiated in-cycle or rebound/transferred to a successor; private supplementation consumes no extra personal initiative, opens no self-response context, creates no Gift/Help/Loan/favour/ordinary-transfer attitude meaning or independent formation/participation/continuity/lineage evidence, and semantic history preserves distinct role authority, private authorization/debit, residual requirement and every commitment-backed source/debit. |
 
 ### J. Exact inherited regression bundles
 
@@ -414,7 +421,7 @@ Fresh independent post-implementation conformance must review an exact immutable
 
 ## 9. Candidate census
 
-Candidate census: **173 unique AcceptanceIds = 162 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**.
+Candidate census: **176 unique AcceptanceIds = 165 REQUIRED / 9 DEFERRED / 2 UNEXERCISED**.
 
 Inherited frozen REQUIRED obligations additionally preserved one-by-one: **270 = 128 Slice 1 + 46 Slice 2 + 96 Slice 3**.
 
@@ -430,7 +437,7 @@ Implementation remains blocked.
 
 Required sequence:
 
-1. run a fresh independent whole-candidate pre-code review against the exact v2 candidate ref/blob;
+1. run a fresh independent whole-candidate pre-code review against the exact v2 candidate2 ref/blob;
 2. if BLOCK, preserve this candidate and repair only the identified acceptance/authority defect in a new candidate;
 3. if **PASS — MAY FREEZE UNCHANGED**, freeze an exact successor manifest/ref as `SFL-V0-S4-ACCEPTANCE-v2` without editing frozen v1;
 4. reassess the inherited verification adaptation plan against the accepted DEC-0013 + frozen successor-acceptance boundary;
