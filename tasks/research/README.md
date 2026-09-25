@@ -4,7 +4,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 ## Live / ready
 
-- `SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md` — **READY FOR DISPATCH / NO REVIEWER ACTIVE YET**. Fresh independent whole-candidate review of immutable `sfl-v0-slice4-acceptance-v2-candidate2` @ `f14868c7382f2d132ad6636851bd621613785018` (blob `ea5eb3b3a46f20a53a6e10131524d0e6c12b313d`). Candidate census: 176 = 165 REQUIRED / 9 DEFERRED / 2 UNEXERCISED. Candidate2 preserves all 173 candidate1 rows and adds exactly S4-188..190 for the accepted DEC-0011 private-X contract.
+- Slice-4 v2 candidate2 review — **COMPLETE / PASS — MAY FREEZE UNCHANGED**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE2.md`. Frozen successor authority: `../../plans/verification/SFL_V0/SLICE4_ACCEPTANCE_MANIFEST_V2.md` / `sfl-v0-slice4-acceptance-v2`.
 
 - Slice-4 v2 candidate1 review — **COMPLETE / BLOCK — ACCEPTANCE COVERAGE / WORDING DEFECT**. Report: `../../research/technical/SFL_V0_SLICE4_ACCEPTANCE_PRECODE_REVIEW_V2_CANDIDATE1.md`. No semantic escalation; repair is limited to missing DEC-0011 completion-gating coverage.
 
@@ -23,7 +23,7 @@ This directory contains bounded research, review and maintenance commissions. Th
 
 - Slice-4 Director implementation block — **ACTIVE**. Frozen boundary: `sfl-v0-slice4-implementation-boundary-blocked-v1` @ `7ce569456c87297e7349b3ca7d7917c5e30b1b88`. Current forward gates are successor Slice-4 acceptance v2 review/freeze and inherited-verification adaptation closure. Coding remains forbidden.
 
-- `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md` — **SUSPENDED AS FORWARD GATE BY DIRECTOR SEMANTIC BLOCK**. Independent losslessness review of immutable adaptation-plan candidate `sfl-v0-slice4-inherited-verification-adaptation-v1-candidate1` @ `51981cb0ad993fe4529341f2862f50d90d72ec26` (blob `eb7627a3c2d13a5ca06c844c7b0a9998b9530c51`). Slice-4 acceptance itself is already frozen.
+- `SFL_V0_SLICE4_INHERITED_VERIFICATION_ADAPTATION_REVIEW.md` — **STALE / DO NOT DISPATCH**. It targets pre-DEC-0013 adaptation candidate1. Frozen successor v2 now requires reassessment; a new review packet will be issued against the reassessed exact candidate.
 
 
 - Slice-4 preimplementation discovery — **RETURNS COMPLETE / RECONCILED / DECISION RESOLVED**. MA reconciliation: `../../research/technical/SFL_V0_SLICE4_PREIMPLEMENTATION_RECONCILIATION.md`. LATER-04 closed by accepted `../../decisions/DEC-0010_SLICE4_AUTHORITY_USE_BEFORE_DESTRUCTION.md`; LATER-05 closed from accepted authority. Acceptance drafting is active; coding remains unauthorized.
