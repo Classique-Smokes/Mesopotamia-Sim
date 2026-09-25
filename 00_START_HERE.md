@@ -86,6 +86,11 @@ Conceptual archive systematization: **COMPLETE / PASS**
 - final integration merge: `03bd1a4566de99d77b30fee0ae21ef4fc796ba00`
 - coverage: **81/81 baseline files, 17/17 restored files, 66/66 checked source-family blobs unchanged**
 
+Master Architect succession / chat retirement:
+- handoff: `plans/MASTER_ARCHITECT_HANDOFF_2026-09-25.md`
+- current successor responsibility: inspect and reconcile the exact Slice-5 acceptance candidate1 review return supplied by the Project Director
+- do not infer a review verdict from branch existence; verify exact ancestry/return contents first
+
 Current operational truth is maintained in `plans/CURRENT_PHASE.md`.
 
 ## Where to look
