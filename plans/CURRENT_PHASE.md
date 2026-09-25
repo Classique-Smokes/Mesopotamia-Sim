@@ -465,11 +465,34 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 - scope remains non-authoritative conceptual systematization only
 - no further conceptual-ingestion task is active
 
+## Active Slice-5 preimplementation discovery
+
+- dispatch status: **ARCHITECT-DISPATCHED / READY**
+- canonical pre-discovery baseline: `26277ed211baaaa9a1dcfaebf98c4fd00a9b4181`
+- dispatch index: `tasks/research/SFL_V0_SLICE5_PARALLEL_DISCOVERY_DISPATCH.md`
+- A authority/gaps: `tasks/research/SFL_V0_SLICE5_DISCOVERY_A_AUTHORITY_GAPS.md` — **READY**
+- B implementation/state surfaces: `tasks/research/SFL_V0_SLICE5_DISCOVERY_B_IMPLEMENTATION_SURFACES.md` — **READY**
+- C verification/applicability: `tasks/research/SFL_V0_SLICE5_DISCOVERY_C_VERIFICATION_TRIGGERS.md` — **READY**
+- expected MA reconciliation: `research/technical/SFL_V0_SLICE5_PREIMPLEMENTATION_RECONCILIATION.md`
+- coding status: **NOT AUTHORIZED**
+- no Slice-5 acceptance manifest exists yet
+
+Parallel inherited-assurance thread:
+
+- Slice-1 retro-SID Pass-B: **ARCHITECT-DISPATCHED / READY**
+- immutable dispatch ref: `sfl-v0-slice1-retro-sid-passb-dispatch-v1` @ `93fd589a911a9c862702389dd0f817cca5de8621`
+- task: `tasks/research/SID_RETRO_SLICE1_PASSB_ALIAS_CHALLENGE.md`
+- return branch: `review/slice1-retro-sid-passb-return`
+- does not block Slice-5 discovery
+- any material inherited semantic/acceptance repair found by retro-SID must be reconciled before Slice-5 acceptance freeze/coding authorization
+
 ## Next
 
-1. Slice 4 is closed; do not continue modifying its implementation outside an explicitly commissioned repair.
-2. The existing retrospective Slice-1 SID Pass-B alias challenge remains a separate assurance thread and may proceed in parallel; it does not by itself reopen verified Slice-4 completion.
-3. Any Slice-5 work must begin through the normal preimplementation path: retrieve `plans/SFL_V0_INTERSLICE_DISCOVERY_PROMPTS.md`, perform bounded authority/gap/surface/verification discovery, reconcile semantics, freeze completion authority, then dispatch implementation.
-4. No Slice-5 coding bārû is currently commissioned.
+1. Run Slice-5 discovery A/B/C independently from the exact dispatch baseline.
+2. Run retrospective Slice-1 SID Pass-B independently in parallel.
+3. Master Architect reconciles A/B/C plus any returned retro-SID consequence.
+4. Resolve any consequential semantic gap before drafting Slice-5 completion authority.
+5. Draft a Slice-5 acceptance/applicability candidate, fresh-review it, and freeze only on PASS.
+6. Only after frozen acceptance authority exists may a Slice-5 coding bārû packet be issued; that future packet must include the required Astra effort recommendation.
 
 Historical model refinement/calibration remains a separate Director-led concern and does not block reference implementation.

@@ -1,5 +1,9 @@
 # Slice 1 Retrospective SID — Pass B Alias / Distinct-Party Challenge
 
+**Status:** ARCHITECT-DISPATCHED / READY  
+**Immutable dispatch ref:** `sfl-v0-slice1-retro-sid-passb-dispatch-v1` @ `93fd589a911a9c862702389dd0f817cca5de8621`  
+**Return branch:** `review/slice1-retro-sid-passb-return`  
+
 **Task type:** fresh negative-space challenge over reconciled Slice-1 alias frontier  
 **Policy:** `SID-ASSURANCE-v1` / DEC-0012  
 **Historical scope:** Slice 1 only  
