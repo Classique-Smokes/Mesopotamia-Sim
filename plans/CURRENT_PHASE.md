@@ -465,6 +465,15 @@ This is not an extra acceptance requirement for Slice 1. It is an observational/
 - scope remains non-authoritative conceptual systematization only
 - no further conceptual-ingestion task is active
 
+## Master Architect handoff
+
+- current handoff record: `plans/MASTER_ARCHITECT_HANDOFF_2026-09-25.md`
+- outgoing chat/thread: **RETIRED AFTER HANDOFF**
+- incoming Master Architect owns reconciliation of the actual Slice-5 acceptance candidate1 review return
+- candidate/return refs remain untouched
+- no Slice-5 coding bārû is authorized
+- retrospective Slice-1 SID Pass-B remains a separate freeze gate as documented in the handoff
+
 ## Active Slice-5 acceptance planning
 
 - discovery A/B/C: **COMPLETE / PRESERVED**
