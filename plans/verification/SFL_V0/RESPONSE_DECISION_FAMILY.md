@@ -304,6 +304,7 @@ Where backing alone is insufficient but an X-bearing Accept plan would be feasib
 ## Family semantic mutants that must be detected
 
 - initiator's score directly determines target acceptance;
+- a current self-counterparty proposal reaches target response activation instead of categorical rejection;
 - categorically invalid term reaches response scoring or is mislabeled as a social failed attempt;
 - infeasible proposal is voluntarily Declined instead of Unable;
 - Accept preference bypasses feasibility;
